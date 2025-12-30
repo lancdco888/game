@@ -731,7 +731,7 @@ export class SpinResult {
             for (let i = 0; i < data.windows.length; ++i) {
                 const sizeArr: number[] = [];
                 for (let j = 0; j < data.windows[i].length; ++j) sizeArr.push(data.windows[i][j].length);
-                const slotWin = new SlotGameRuleManager.SlotWindows(sizeArr);
+                const slotWin = new SlotWindows(sizeArr);
                 slotWin.setWindowSymbols(data.windows[i]);
                 this.windows.push(slotWin);
             }
@@ -740,7 +740,7 @@ export class SpinResult {
         if (cc.isValid(data.window)) {
             const sizeArr: number[] = [];
             for (let i = 0; i < data.window.length; ++i) sizeArr.push(data.window[i].length);
-            const slotWin = new SlotGameRuleManager.SlotWindows(sizeArr);
+            const slotWin = new SlotWindows(sizeArr);
             slotWin.setWindowSymbols(data.window);
             this.window = slotWin;
         }

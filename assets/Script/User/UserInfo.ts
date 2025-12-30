@@ -8,6 +8,7 @@ export default class UserInfo extends SingtonClass {
     private _coin: number = 0;
     private _userPictureUrl: string = "";
     private _uid: number = 0;
+    slotZoneInfo: any;
 
     public getUserName(): string {
         return this._userName;

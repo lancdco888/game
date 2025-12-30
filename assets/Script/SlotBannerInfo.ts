@@ -2,8 +2,9 @@
 import SDefine from "./global_utility/SDefine";
 import TSUtility from "./global_utility/TSUtility";
 import SupersizeItManager from "./SupersizeItManager";
-import UserInfo from "../../User/UserInfo";
+// import UserInfo from "../../User/UserInfo";
 import SlotJackpotManager from "./manager/SlotJackpotManager";
+import UserInfo from "./User/UserInfo";
 
 const { ccclass, property } = cc._decorator;
 
@@ -79,9 +80,10 @@ export default class SlotBannerInfo {
 
     // 是否为 卷轴任务指定Slot
     public get isReelQuestSlot(): boolean {
-        const userInfo = UserInfo.default.instance();
-        return userInfo.hasActiveReelQuest() === 1 
-            && this.strSlotID === userInfo.getUserReelQuestInfo().curMissionSlot;
+        // const userInfo = UserInfo.default.instance();
+        // return userInfo.hasActiveReelQuest() === 1 
+        //     && this.strSlotID === userInfo.getUserReelQuestInfo().curMissionSlot;
+            return true;
     }
 
     // 是否为 联动大奖Slot (带联动机型标识)
@@ -105,7 +107,7 @@ export default class SlotBannerInfo {
 
     // ===== ✅ 核心方法 - 从用户信息中解析指定Zone的Slot数据 =====
     public setServerBannerInfo(zoneID: any, slotID: string): void {
-        const userInfo = UserInfo.default.instance();
+        const userInfo = UserInfo.instance();
         const slotZoneInfo = userInfo.slotZoneInfo[zoneID];
         
         if (TSUtility.isValid(slotZoneInfo)) {

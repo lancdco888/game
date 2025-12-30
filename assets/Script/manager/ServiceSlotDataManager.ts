@@ -156,7 +156,7 @@ export default class ServiceSlotDataManager extends cc.Component {
         return o;
     }
 
-    public getSlotBannerInfo(e: any, t?: string): SlotBannerInfo | null {
+    public getSlotBannerInfo(e: any, t?: any): SlotBannerInfo | null {
         if (!TSUtility.isValid(t) || t.length <= 0) return null;
         const n = this.getSlotZoneInfo(e);
         if (!TSUtility.isValid(n)) return null;
