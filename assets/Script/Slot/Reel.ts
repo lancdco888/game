@@ -5,7 +5,7 @@ import SlotUIRuleManager from "./rule/SlotUIRuleManager";
 import SlotGameResultManager from "../manager/SlotGameResultManager";
 import ReelShaderEffect from "../UI/ReelShaderEffect";
 import TSUtility from "../global_utility/TSUtility";
-import SlotManager from "../manager/SlotManager";
+import SlotManager, { SpecialType } from "../manager/SlotManager";
 
 @ccclass
 export default class Reel extends cc.Component {
@@ -355,8 +355,8 @@ export default class Reel extends cc.Component {
 
                     const newSymbolNode = this.getSymbolNode(nextSymbolId, specialInfo);
                     if (TSUtility.isValid(this._getNextSpecialInfo)) {
-                        const specialData = this._getNextSpecialInfo(SlotManager.SpecialType.FEVER);
-                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SlotManager.SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
+                        const specialData = this._getNextSpecialInfo(SpecialType.FEVER);
+                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
                     }
 
                     newSymbolNode.x = 0;
@@ -385,7 +385,7 @@ export default class Reel extends cc.Component {
                     const newSymbolNode = this.getSymbolNode(nextSymbolId, specialInfo);
                     TSUtility.isValid(this._getNextSpecialInfo) && (() => {
                         const specialData = this._getNextSpecialInfo();
-                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SlotManager.SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
+                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
                     })();
 
                     newSymbolNode.x = 0;
@@ -474,11 +474,11 @@ export default class Reel extends cc.Component {
     // ===== 发送特殊模式消息 - 原双层null校验保留，核心特征！ =====
     sendSpecialModeMessage(): void {
         for (let e = 0, t = this.node.children; e < t.length; e++) {
-            t[e].emit("sendSpecialModeMessage", SlotManager.SpecialType.FEVER);
+            t[e].emit("sendSpecialModeMessage", SpecialType.FEVER);
         }
         if (null != this.rootOverSizeSymbols && null != this.rootOverSizeSymbols) {
             for (let n = 0, o = this.rootOverSizeSymbols.children; n < o.length; n++) {
-                o[n].emit("sendSpecialModeMessage", SlotManager.SpecialType.FEVER);
+                o[n].emit("sendSpecialModeMessage", SpecialType.FEVER);
             }
         }
     }
