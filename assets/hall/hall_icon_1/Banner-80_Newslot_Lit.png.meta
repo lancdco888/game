@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "51f3314a-b708-4a9a-9b26-f70be5a53b8d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 88,
+  "height": 88,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_Newslot_Lit": {
+      "ver": "1.0.6",
+      "uuid": "aa806cd6-af58-414a-9df2-00bfb1809d7a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "51f3314a-b708-4a9a-9b26-f70be5a53b8d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -1.5,
+      "trimX": 22,
+      "trimY": 24,
+      "width": 43,
+      "height": 43,
+      "rawWidth": 88,
+      "rawHeight": 88,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

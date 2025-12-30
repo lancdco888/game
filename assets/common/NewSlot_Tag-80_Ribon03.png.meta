@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f37ee3db-05a7-41c3-8605-709014c3283e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 136,
+  "height": 64,
+  "platformSettings": {},
+  "subMetas": {
+    "NewSlot_Tag-80_Ribon03": {
+      "ver": "1.0.6",
+      "uuid": "cb7455db-9938-4df2-a6ef-aca57bdaaac2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f37ee3db-05a7-41c3-8605-709014c3283e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 134,
+      "height": 61,
+      "rawWidth": 136,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

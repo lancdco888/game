@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "759f6ad7-fc49-4753-8476-f8b345d26b31",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 22,
+  "height": 22,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_4_wheel_Cap": {
+      "ver": "1.0.6",
+      "uuid": "de79108d-3c1d-4a81-a136-fcdff9c0ffd8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "759f6ad7-fc49-4753-8476-f8b345d26b31",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 21,
+      "height": 21,
+      "rawWidth": 22,
+      "rawHeight": 22,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

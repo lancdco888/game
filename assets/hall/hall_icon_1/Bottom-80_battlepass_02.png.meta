@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4d59664f-5ab9-4e91-ae31-22bbbc5ee917",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 58,
+  "height": 62,
+  "platformSettings": {},
+  "subMetas": {
+    "Bottom-80_battlepass_02": {
+      "ver": "1.0.6",
+      "uuid": "91635bbd-288c-4bc3-9d44-fc7f1a0be3ce",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4d59664f-5ab9-4e91-ae31-22bbbc5ee917",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 57,
+      "height": 61,
+      "rawWidth": 58,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

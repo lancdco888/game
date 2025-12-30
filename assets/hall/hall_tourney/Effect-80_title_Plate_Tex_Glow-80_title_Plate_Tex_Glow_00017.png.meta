@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9cb131d6-b0dd-456f-8266-5668acc5cc33",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 86,
+  "height": 37,
+  "platformSettings": {},
+  "subMetas": {
+    "Effect-80_title_Plate_Tex_Glow-80_title_Plate_Tex_Glow_00017": {
+      "ver": "1.0.6",
+      "uuid": "740e3b0d-3b2b-4356-af2d-c373da5fbb29",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9cb131d6-b0dd-456f-8266-5668acc5cc33",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 36,
+      "offsetY": -1,
+      "trimX": 74,
+      "trimY": 3,
+      "width": 10,
+      "height": 33,
+      "rawWidth": 86,
+      "rawHeight": 37,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

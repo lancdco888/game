@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c235adb4-fe33-4b2d-b678-ff84c09fcb66",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 434,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-100_Neon_Blue": {
+      "ver": "1.0.6",
+      "uuid": "db3b4757-1b3f-4574-b777-413b3a32874f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c235adb4-fe33-4b2d-b678-ff84c09fcb66",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 117,
+      "height": 430,
+      "rawWidth": 120,
+      "rawHeight": 434,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 105.5,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

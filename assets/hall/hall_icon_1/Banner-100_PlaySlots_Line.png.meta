@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cd2fd838-c363-42da-9576-98ca2e61fff5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 24,
+  "height": 116,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-100_PlaySlots_Line": {
+      "ver": "1.0.6",
+      "uuid": "724a35cc-8fa8-4767-a763-3938c2954667",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cd2fd838-c363-42da-9576-98ca2e61fff5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 22,
+      "height": 114,
+      "rawWidth": 24,
+      "rawHeight": 116,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

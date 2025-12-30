@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "17a5df1b-a774-428f-9863-2885ae05334e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 16,
+  "platformSettings": {},
+  "subMetas": {
+    "League-Suite-80_Bmoney01": {
+      "ver": "1.0.6",
+      "uuid": "15b835ba-9490-4057-8fae-4c3fc802fdf3",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "17a5df1b-a774-428f-9863-2885ae05334e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 31,
+      "height": 15,
+      "rawWidth": 32,
+      "rawHeight": 16,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

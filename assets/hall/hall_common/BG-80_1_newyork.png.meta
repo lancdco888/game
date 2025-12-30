@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "342f333e-1e6b-4a15-b892-61e41c274ccc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 158,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_1_newyork": {
+      "ver": "1.0.6",
+      "uuid": "a1254dae-4dd9-4342-bfa9-82d78c7f3682",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "342f333e-1e6b-4a15-b892-61e41c274ccc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 112,
+      "height": 157,
+      "rawWidth": 115,
+      "rawHeight": 158,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

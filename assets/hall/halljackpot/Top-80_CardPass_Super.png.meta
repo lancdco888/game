@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4085613f-564b-4d3a-9771-f4d3b8c1ef48",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 51,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "Top-80_CardPass_Super": {
+      "ver": "1.0.6",
+      "uuid": "c91f3f2c-553e-4ebc-9763-8e6bfd5ea444",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4085613f-564b-4d3a-9771-f4d3b8c1ef48",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 50,
+      "height": 31,
+      "rawWidth": 51,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

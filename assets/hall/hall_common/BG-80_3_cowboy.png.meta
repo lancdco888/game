@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "85122c93-fee9-4c71-96d6-eb678d497b65",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 118,
+  "height": 152,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_3_cowboy": {
+      "ver": "1.0.6",
+      "uuid": "ccf3673d-f1f8-4e8b-9f16-98a23842422e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "85122c93-fee9-4c71-96d6-eb678d497b65",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 116,
+      "height": 151,
+      "rawWidth": 118,
+      "rawHeight": 152,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

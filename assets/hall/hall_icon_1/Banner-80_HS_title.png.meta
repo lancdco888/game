@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e82b0222-0f31-4c3e-90b3-d0724c95b676",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 285,
+  "height": 53,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_HS_title": {
+      "ver": "1.0.6",
+      "uuid": "d8ef3b79-936a-4133-86e9-15cc8485b126",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e82b0222-0f31-4c3e-90b3-d0724c95b676",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 283,
+      "height": 52,
+      "rawWidth": 285,
+      "rawHeight": 53,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

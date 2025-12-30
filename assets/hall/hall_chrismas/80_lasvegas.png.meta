@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5dd99731-98e1-4f38-a0a6-d0f85b31a85a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 155,
+  "height": 221,
+  "platformSettings": {},
+  "subMetas": {
+    "80_lasvegas": {
+      "ver": "1.0.6",
+      "uuid": "fc40c809-7439-433e-a446-dbe256450c42",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5dd99731-98e1-4f38-a0a6-d0f85b31a85a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 153,
+      "height": 220,
+      "rawWidth": 155,
+      "rawHeight": 221,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

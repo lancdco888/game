@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "29222671-7619-4678-bd86-b2e3b4913bba",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 102,
+  "height": 19,
+  "platformSettings": {},
+  "subMetas": {
+    "Lobby-levelbar-80_Glow_0005": {
+      "ver": "1.0.6",
+      "uuid": "d76d19be-e64d-4d93-8d59-e31ced65d410",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "29222671-7619-4678-bd86-b2e3b4913bba",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -22.5,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 0,
+      "width": 49,
+      "height": 19,
+      "rawWidth": 102,
+      "rawHeight": 19,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d207d450-ee30-49c7-a665-b301e9a73819",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 290,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "Top-80_Bankroll_BG": {
+      "ver": "1.0.6",
+      "uuid": "b1ae4e19-fe62-443f-93dc-4d08b8d088b8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d207d450-ee30-49c7-a665-b301e9a73819",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 290,
+      "height": 42,
+      "rawWidth": 290,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "67e3fbf3-a58b-4262-ab7a-230260438252",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 236,
+  "height": 102,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_ChainL_Neon": {
+      "ver": "1.0.6",
+      "uuid": "521cfa9f-d18a-480c-b67d-1307867f2c3b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "67e3fbf3-a58b-4262-ab7a-230260438252",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 234,
+      "height": 99,
+      "rawWidth": 236,
+      "rawHeight": 102,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

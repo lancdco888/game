@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b7b63945-f126-4dd7-af58-2b06491707e4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 299,
+  "height": 114,
+  "platformSettings": {},
+  "subMetas": {
+    "Coupon-80_lightFX": {
+      "ver": "1.0.6",
+      "uuid": "a4f5324c-3be7-487c-adb2-ef4d1c611b24",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b7b63945-f126-4dd7-af58-2b06491707e4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 297,
+      "height": 112,
+      "rawWidth": 299,
+      "rawHeight": 114,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

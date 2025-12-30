@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d722d345-27c6-4c67-a306-87f64167b0b8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 14,
+  "height": 14,
+  "platformSettings": {},
+  "subMetas": {
+    "Top-80_Piggly_Coin": {
+      "ver": "1.0.6",
+      "uuid": "fe2ca16f-49aa-4dd3-a3c2-3bb1e1844ea1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d722d345-27c6-4c67-a306-87f64167b0b8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 13,
+      "height": 14,
+      "rawWidth": 14,
+      "rawHeight": 14,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

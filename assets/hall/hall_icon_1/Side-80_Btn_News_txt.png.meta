@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "22419fdb-8179-42c3-a570-98623b2a6c2a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 46,
+  "height": 16,
+  "platformSettings": {},
+  "subMetas": {
+    "Side-80_Btn_News_txt": {
+      "ver": "1.0.6",
+      "uuid": "f14e418b-7434-4cd0-b71e-f5b746809dd6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "22419fdb-8179-42c3-a570-98623b2a6c2a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 46,
+      "height": 16,
+      "rawWidth": 46,
+      "rawHeight": 16,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

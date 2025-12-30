@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d6dfd7ae-81f1-4555-a553-267489108a05",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 180,
+  "height": 102,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_ClashL_Neon": {
+      "ver": "1.0.6",
+      "uuid": "d6eb32f3-c031-48b0-bcb9-869c34105375",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d6dfd7ae-81f1-4555-a553-267489108a05",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 177,
+      "height": 99,
+      "rawWidth": 180,
+      "rawHeight": 102,
+      "borderTop": 56.5,
+      "borderBottom": 0,
+      "borderLeft": 56.5,
+      "borderRight": 56.5,
+      "subMetas": {}
+    }
+  }
+}

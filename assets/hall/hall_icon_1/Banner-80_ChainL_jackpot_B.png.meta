@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b0ce66b4-060c-44e4-b01a-669333ac4c34",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 181,
+  "height": 342,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_ChainL_jackpot_B": {
+      "ver": "1.0.6",
+      "uuid": "3e29bbbe-4894-4fb5-b871-edecd51bf35b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b0ce66b4-060c-44e4-b01a-669333ac4c34",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 12,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 181,
+      "height": 316,
+      "rawWidth": 181,
+      "rawHeight": 342,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

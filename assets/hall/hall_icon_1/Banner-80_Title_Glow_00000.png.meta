@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "83ab5260-5299-4ba6-92a7-67beb74851b3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 157,
+  "height": 27,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_Title_Glow_00000": {
+      "ver": "1.0.6",
+      "uuid": "8735bece-df7c-491c-b351-2bfbec4b7388",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "83ab5260-5299-4ba6-92a7-67beb74851b3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -67,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 23,
+      "height": 25,
+      "rawWidth": 157,
+      "rawHeight": 27,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "82032cb5-777e-4f9f-bcbc-3e16e8c3a66d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 13,
+  "height": 14,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_Frame_Deco_R": {
+      "ver": "1.0.6",
+      "uuid": "e99df238-eba6-45dd-aebd-255934b38655",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "82032cb5-777e-4f9f-bcbc-3e16e8c3a66d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 12,
+      "height": 14,
+      "rawWidth": 13,
+      "rawHeight": 14,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

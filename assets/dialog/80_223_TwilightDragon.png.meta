@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f04e414e-8521-493f-ba0f-34233b932ede",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 762,
+  "height": 421,
+  "platformSettings": {},
+  "subMetas": {
+    "80_223_TwilightDragon": {
+      "ver": "1.0.6",
+      "uuid": "13f62d94-f02c-432a-bc0c-064d1f5f5cbc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f04e414e-8521-493f-ba0f-34233b932ede",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 0,
+      "trimY": 3,
+      "width": 762,
+      "height": 418,
+      "rawWidth": 762,
+      "rawHeight": 421,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

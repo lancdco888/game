@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6fa52f0c-da40-4f51-a4ce-f6965d9b70b9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 114,
+  "platformSettings": {},
+  "subMetas": {
+    "FX-Spark-100_Glow_0014": {
+      "ver": "1.0.6",
+      "uuid": "015f1904-5e6c-4907-af9e-98ac47c3c635",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6fa52f0c-da40-4f51-a4ce-f6965d9b70b9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": 31.5,
+      "trimX": 1,
+      "trimY": 7,
+      "width": 45,
+      "height": 37,
+      "rawWidth": 50,
+      "rawHeight": 114,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

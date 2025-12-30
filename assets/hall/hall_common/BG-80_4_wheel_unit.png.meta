@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "406af1f6-bb53-40c1-9723-9f8e2384ab53",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 18,
+  "height": 19,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_4_wheel_unit": {
+      "ver": "1.0.6",
+      "uuid": "6262428f-84cf-4ec1-af9e-92285d6022f6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "406af1f6-bb53-40c1-9723-9f8e2384ab53",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 18,
+      "height": 18,
+      "rawWidth": 18,
+      "rawHeight": 19,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

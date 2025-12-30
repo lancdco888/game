@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "125a0422-4d1c-4a54-b3d1-02160879ad7a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 56,
+  "height": 61,
+  "platformSettings": {},
+  "subMetas": {
+    "Bottom-80_mission_01": {
+      "ver": "1.0.6",
+      "uuid": "0b42b698-4778-45a7-91a6-4d0bc74760fc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "125a0422-4d1c-4a54-b3d1-02160879ad7a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 56,
+      "height": 61,
+      "rawWidth": 56,
+      "rawHeight": 61,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cc98e8ee-5f8f-460f-a35d-620123069b5f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 54,
+  "height": 40,
+  "platformSettings": {},
+  "subMetas": {
+    "CardPackBooster-80_Album2X": {
+      "ver": "1.0.6",
+      "uuid": "33ecf401-fbf9-48b0-9f83-3956b6819522",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cc98e8ee-5f8f-460f-a35d-620123069b5f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 52,
+      "height": 39,
+      "rawWidth": 54,
+      "rawHeight": 40,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

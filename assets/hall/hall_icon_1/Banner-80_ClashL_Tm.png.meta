@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "df5bd514-af18-4cda-840c-90963ffb6f21",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 21,
+  "height": 14,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_ClashL_Tm": {
+      "ver": "1.0.6",
+      "uuid": "64bc1a68-2953-4a26-b1a5-b850f38070ca",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "df5bd514-af18-4cda-840c-90963ffb6f21",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 20,
+      "height": 12,
+      "rawWidth": 21,
+      "rawHeight": 14,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

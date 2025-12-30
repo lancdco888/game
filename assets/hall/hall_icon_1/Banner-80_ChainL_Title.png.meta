@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "16ff44d8-aa4d-43f7-8e24-e1446903f2fa",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 226,
+  "height": 29,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-80_ChainL_Title": {
+      "ver": "1.0.6",
+      "uuid": "f3303e10-460b-45f3-aea0-07cee9cc1670",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "16ff44d8-aa4d-43f7-8e24-e1446903f2fa",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 226,
+      "height": 27,
+      "rawWidth": 226,
+      "rawHeight": 29,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

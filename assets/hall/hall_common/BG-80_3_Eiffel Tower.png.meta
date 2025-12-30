@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f89d68ac-a007-464d-9b9e-3dcea878663e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 245,
+  "height": 266,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_3_Eiffel Tower": {
+      "ver": "1.0.6",
+      "uuid": "f5ac01a6-36f5-4498-b93d-8175eb3526b9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f89d68ac-a007-464d-9b9e-3dcea878663e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 243,
+      "height": 264,
+      "rawWidth": 245,
+      "rawHeight": 266,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

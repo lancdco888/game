@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "eb0d1876-3d15-4c1f-98d6-31cf5a3e3a6d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 155,
+  "height": 208,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_3_lasvegas": {
+      "ver": "1.0.6",
+      "uuid": "826af068-c48e-4453-bc3e-102bc6277a72",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "eb0d1876-3d15-4c1f-98d6-31cf5a3e3a6d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 153,
+      "height": 206,
+      "rawWidth": 155,
+      "rawHeight": 208,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

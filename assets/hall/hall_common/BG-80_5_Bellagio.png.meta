@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "28c6e948-a0ce-4c63-bf99-9571d6046118",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 440,
+  "height": 269,
+  "platformSettings": {},
+  "subMetas": {
+    "BG-80_5_Bellagio": {
+      "ver": "1.0.6",
+      "uuid": "80e9eba2-a30d-40e8-82f4-08a577c3f995",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "28c6e948-a0ce-4c63-bf99-9571d6046118",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 440,
+      "height": 268,
+      "rawWidth": 440,
+      "rawHeight": 269,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
