@@ -1,8 +1,9 @@
 const { ccclass, property } = cc._decorator;
 import CurrencyFormatHelper from "../global_utility/CurrencyFormatHelper";
-import SlotManager from "./SlotManager";
+// import SlotManager from "./SlotManager";
 import SlotGameResultManager, { Cell } from "./SlotGameResultManager";
 import SubGame from "../SubGame";
+import SlotManager from "./SlotManager";
 
 @ccclass
 export default class SlotGameRuleManager extends cc.Component {

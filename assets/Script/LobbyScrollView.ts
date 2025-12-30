@@ -1,6 +1,6 @@
 // 保留原项目所有依赖导入，路径与原代码完全一致
 import TSUtility from "./global_utility/TSUtility";
-import PopupManager from "../../../../slot_common/Script/Popup/PopupManager";
+import PopupManager from "./manager/PopupManager";
 import ServiceInfoManager from "./ServiceInfoManager";
 import UIScrollViewData from "./UIScrollViewData";
 import UIScrollViewHorizontal from "./UIScrollViewHorizontal";

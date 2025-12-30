@@ -3,8 +3,8 @@ const { ccclass, property } = cc._decorator;
 
 // 导入项目所有依赖文件 (路径与原项目完全一致，请勿修改，完美兼容)
 import PopupManager from "./manager/PopupManager";
-import SoundManager from "../SlotCommon/SoundManager";
-import GameCommonSound from "../Sound/GameCommonSound";
+import SoundManager from "./manager/SoundManager";
+import GameCommonSound from "./GameCommonSound";
 import FireHoseSender from "./FireHoseSender";
 
 /**

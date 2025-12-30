@@ -55,6 +55,10 @@ export default class UserInfo extends SingtonClass {
         this._uid = uid;
     }
 
+    public getUid():number{
+        return 0;
+    }
+
     /** 批量赋值用户信息 - 完全对齐原JS的字段映射关系 */
     public setUserInfo(data: any): void {
         this.setUserName(data.name);

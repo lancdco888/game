@@ -459,8 +459,8 @@ export default class ServiceInfoManager {
 	}
 	
 	isEnableSecretDeal = function() {
-		// return !(r.default.instance().getUserInboxMainShopMessageCount() > 0) && 1 != SDefine.FB_Instant_iOS_Shop_Flag && 0 != this.isEnableStartSecretDeal() && (ServerStorageManager.getAsNumber(_.StorageByOsKeyType.SECRET_OPEN_TIME) + 43200 >= TSUtility.getServerBaseNowUnixTime() || 0 != this.isEnableStartSecretDeal() && !!(this.isSecretDealTarget() && this.dateDiff(ServerStorageManager.getAsNumber(_.StorageByOsKeyType.SECRET_OPEN_TIME)) >= 3) && (ServerStorageManager.save(_.StorageByOsKeyType.SECRET_INDEX, i.default.Instance().getSecretDealIndex()),
-		// ServerStorageManager.save(_.StorageByOsKeyType.SECRET_PRICES, i.default.Instance().getSecretDealPrices()),
+		// return !(r.default.instance().getUserInboxMainShopMessageCount() > 0) && 1 != SDefine.FB_Instant_iOS_Shop_Flag && 0 != this.isEnableStartSecretDeal() && (ServerStorageManager.getAsNumber(_.StorageByOsKeyType.SECRET_OPEN_TIME) + 43200 >= TSUtility.getServerBaseNowUnixTime() || 0 != this.isEnableStartSecretDeal() && !!(this.isSecretDealTarget() && this.dateDiff(ServerStorageManager.getAsNumber(_.StorageByOsKeyType.SECRET_OPEN_TIME)) >= 3) && (ServerStorageManager.save(_.StorageByOsKeyType.SECRET_INDEX, CurrencyFormatHelper.Instance().getSecretDealIndex()),
+		// ServerStorageManager.save(_.StorageByOsKeyType.SECRET_PRICES, CurrencyFormatHelper.Instance().getSecretDealPrices()),
 		// ServerStorageManager.saveCurrentServerTime(_.StorageByOsKeyType.SECRET_OPEN_TIME),
 		// true))
         return false;
@@ -528,13 +528,13 @@ export default class ServiceInfoManager {
 		// if (null != p.default.Instance().getSeasonalPromotionInfo_PopupType() || null != p.default.Instance().getSeasonalPromotionInfo_ShopType())
 		// 	return false;
 		// var t = r.default.instance().getPurchaseInfo().avgIn30Days2
-		//   , n = i.default.Instance().getMainShopSproutAvgProduct_2023(t);
-		// return !(e >= i.default.Instance().getHighestPrice()) && (0 == t || n <= e)
+		//   , n = CurrencyFormatHelper.Instance().getMainShopSproutAvgProduct_2023(t);
+		// return !(e >= CurrencyFormatHelper.Instance().getHighestPrice()) && (0 == t || n <= e)
         return false;
 	}
 	
 	isAvailableBigStackDeal = function(e) {
-		// return null == p.default.Instance().getSeasonalPromotionInfo_PopupType() && null == p.default.Instance().getSeasonalPromotionInfo_ShopType() && !(i.default.Instance().getHighestPrice() > e)
+		// return null == p.default.Instance().getSeasonalPromotionInfo_PopupType() && null == p.default.Instance().getSeasonalPromotionInfo_ShopType() && !(CurrencyFormatHelper.Instance().getHighestPrice() > e)
         return false;
     }
 	
@@ -636,7 +636,7 @@ export default class ServiceInfoManager {
 	}
 	
 	getSecretStashHighestMul = function() {
-		// return 100 * i.default.Instance().getSecretStashOfferInfo()[2].getMoreCoinsMultiplier()
+		// return 100 * CurrencyFormatHelper.Instance().getSecretStashOfferInfo()[2].getMoreCoinsMultiplier()
         return true;
 	}
 	
