@@ -1,8 +1,8 @@
 const { ccclass, property } = cc._decorator;
 
 // ===================== 所有依赖导入 - 路径与原项目完全一致，完美兼容 ✅ =====================
-import State from "../State";
-import SoundManager from "../SoundManager";
+import State from "../Slot/State";
+import SoundManager from "../manager/SoundManager";
 import SlotUIRuleManager from "./SlotUIRuleManager";
 import SlotGameRuleManager from "./SlotGameRuleManager";
 import SlotGameResultManager from "./SlotGameResultManager";
