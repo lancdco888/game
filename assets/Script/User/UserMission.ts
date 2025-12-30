@@ -21,11 +21,11 @@ export class MissionReward {
         if (data.itemId) reward.itemId = data.itemId;
         
         // 核心逻辑：新英雄周 奖励数量翻倍
-        if (data.addCnt) {
-            reward.addCnt = ServiceInfoManager.instance().getIsNewHeroWeek() === 0 
-                ? data.addCnt 
-                : 2 * data.addCnt;
-        }
+        // if (data.addCnt) {
+        //     reward.addCnt = ServiceInfoManager.instance().getIsNewHeroWeek() === 0 
+        //         ? data.addCnt 
+        //         : 2 * data.addCnt;
+        // }
         
         if (data.addTime) reward.addTime = data.addTime;
         if (data.extraInfo) {
@@ -120,12 +120,12 @@ export class MissionInfo {
 
     /** 获取奇妙宝箱奖励 */
     public getWonderBoxReward(): MissionReward | null {
-        for (let i = 0; i < this.rewards.length; ++i) {
-            const reward = this.rewards[i];
-            if (UserInven.WonderBoxItemInfo.isWonderBoxItem(reward.itemId)) {
-                return reward;
-            }
-        }
+        // for (let i = 0; i < this.rewards.length; ++i) {
+        //     const reward = this.rewards[i];
+        //     if (UserInven.WonderBoxItemInfo.isWonderBoxItem(reward.itemId)) {
+        //         return reward;
+        //     }
+        // }
         return null;
     }
 
@@ -241,7 +241,7 @@ export class UserMissionSimpleInfo {
 
     /** 更新用户任务进度 */
     public updateUserMission(data: any): void {
-        if (TSUtility.default.isValid(data) !== 0) {
+        if (TSUtility.isValid(data)) {
             this.curMissionCurCnt = Math.min(data.curCnt, this.curMissionGoalCnt);
         }
     }
@@ -277,7 +277,7 @@ export class UserMissionSimpleInfo {
 
     /** 是否超过刷新时间 */
     public isOverNextRefreshDate(): boolean {
-        return this.nextRefreshDate - TSUtility.default.getServerBaseNowUnixTime() < 0;
+        return this.nextRefreshDate - TSUtility.getServerBaseNowUnixTime() < 0;
     }
 }
 
@@ -307,7 +307,7 @@ export default class UserMission {
 
     /** 更新当前任务进度 */
     public updateUserMission(data: any): void {
-        if (TSUtility.default.isValid(data) !== 0 && this.curMission !== null && this.curMission.id === data.id) {
+        if (TSUtility.isValid(data)&& this.curMission !== null && this.curMission.id === data.id) {
             this.curMission.curCnt = Math.min(data.curCnt, this.curMission.goalCnt);
             this.curMission.isReset = data.isReset;
             this.curMission.curSubCnt = data.curSubCnt;
@@ -326,17 +326,17 @@ export default class UserMission {
 
     /** 是否在其他游戏中被锁定 (核心业务逻辑 完全保留) */
     public isLockedInOtherGame(): boolean {
-        if (UserInfo.default.instance().getLocation() === "Slot" 
-            && this.curMission!.type === MISSION_TYPE.SPIN_CNT_SLOT 
-            && this.curMission!.isCompleted !== true) 
-        {
-            const gameId = this.curMission!.getGameId();
-            if (gameId === SDefine.default.MISSION_SPIN_TOURNEY) {
-                return UserInfo.default.instance().getTourneyTier() === -1;
-            } else {
-                return UserInfo.default.instance().getGameId() !== gameId;
-            }
-        }
+        // if (UserInfo.default.instance().getLocation() === "Slot" 
+        //     && this.curMission!.type === MISSION_TYPE.SPIN_CNT_SLOT 
+        //     && this.curMission!.isCompleted !== true) 
+        // {
+        //     const gameId = this.curMission!.getGameId();
+        //     if (gameId === SDefine.default.MISSION_SPIN_TOURNEY) {
+        //         return UserInfo.default.instance().getTourneyTier() === -1;
+        //     } else {
+        //         return UserInfo.default.instance().getGameId() !== gameId;
+        //     }
+        // }
         return false;
     }
 
@@ -347,7 +347,7 @@ export default class UserMission {
 
     /** 是否超过任务刷新时间 */
     public isOverNextRefreshDate(): boolean {
-        return this.nextRefreshDate - TSUtility.default.getServerBaseNowUnixTime() < 0;
+        return this.nextRefreshDate - TSUtility.getServerBaseNowUnixTime() < 0;
     }
 
     /** 获取当前任务进度 */

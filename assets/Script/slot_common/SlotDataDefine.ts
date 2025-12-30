@@ -62,12 +62,12 @@ export class SlotJackpotInfo {
     private _hasLinkedJackpot: boolean = false;
     private _likedJackpotKey: string = ""; // ✅ 保留原代码拼写错误 liked 不修正
 
-    constructor(e: string) {
+    constructor(e: string|number) {
         this._id = "";
         this._mapReserveMoney = {};
         this._hasLinkedJackpot = false;
         this._likedJackpotKey = "";
-        this._id = e;
+        this._id = e+"";
     }
 
     public isJackpotMoneyExist(e: string): boolean {

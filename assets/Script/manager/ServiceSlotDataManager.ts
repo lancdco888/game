@@ -1,4 +1,5 @@
 import FireHoseSender, { FHLogType } from "../FireHoseSender";
+import SlotBannerInfo from "../SlotBannerInfo";
 import UserInfo from "../User/UserInfo";
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";

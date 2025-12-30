@@ -6,9 +6,11 @@ declare const cc: any; // Cocos全局对象声明(如果项目已有全局声明
 declare function __getVersion(): string | undefined; // 原生层版本获取方法声明
 declare const jsb: any; // Cocos原生层jsb对象声明
 
-// 扩展String原型的format方法 - TS必须先声明接口扩展，否则语法报错
-interface String {
-    format(...args: any[]): string;
+declare global {
+    // 扩展String原型的format方法 - TS必须先声明接口扩展，否则语法报错
+    interface String {
+        format(...args: any[]): string;
+    }
 }
 
 // 实现String.prototype.format 字符串格式化方法

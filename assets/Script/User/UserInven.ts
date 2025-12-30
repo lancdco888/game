@@ -1,11 +1,11 @@
 // 保留原项目所有依赖导入，路径与原代码完全一致
 import TSUtility from "../global_utility/TSUtility";
 import SDefine from "../global_utility/SDefine";
-import StarAlbumManager from "../Utility/StarAlbumManager";
-import UserPromotion from "./UserPromotion";
-import UserInfo from "./UserInfo";
-import ShopPromotionManager from "../Utility/ShopPromotionManager";
-import PowerGemManager from "../Popup/PowerGem/PowerGemManager";
+// import StarAlbumManager from "../Utility/StarAlbumManager";
+// import UserPromotion from "./UserPromotion";
+// import UserInfo from "./UserInfo";
+// import ShopPromotionManager from "../Utility/ShopPromotionManager";
+// import PowerGemManager from "../Popup/PowerGem/PowerGemManager";
 
 /** 全局工具类补全 - 原代码中存在调用，无导入的兼容声明 */
 declare const Utility: {
@@ -53,30 +53,31 @@ export class ItemInfo {
 
     /** 判断道具是否可用(核心校验逻辑 - 优先级最高) */
     public isAvailable(): boolean {
-        // 卡包/星店硬币 特殊校验：赛季匹配+可用数量
-        if (CardPackItemInfo.isCardPackItem(this.itemId) || this.itemId == SDefine.I_STAR_SHOP_COIN) {
-            const seasonInfo = SASeasonItemExtraInfo.parse(this.extraInfo);
-            const curSeason = StarAlbumManager.default.instance().getCurrentSeasonInfo();
-            return !(!this.isUseable() || seasonInfo.seasonID != curSeason.numSeasonID);
-        }
+        // // 卡包/星店硬币 特殊校验：赛季匹配+可用数量
+        // if (CardPackItemInfo.isCardPackItem(this.itemId) || this.itemId == SDefine.I_STAR_SHOP_COIN) {
+        //     const seasonInfo = SASeasonItemExtraInfo.parse(this.extraInfo);
+        //     const curSeason = StarAlbumManager.default.instance().getCurrentSeasonInfo();
+        //     return !(!this.isUseable() || seasonInfo.seasonID != curSeason.numSeasonID);
+        // }
 
-        // 联盟商店余额 无条件可用
-        if (this.itemId == SDefine.I_SUITE_LEAGUE_SHOP_BALANCE) {
-            return true;
-        }
+        // // 联盟商店余额 无条件可用
+        // if (this.itemId == SDefine.I_SUITE_LEAGUE_SHOP_BALANCE) {
+        //     return true;
+        // }
 
-        // 按道具类型分别校验
-        switch (this.type) {
-            case SDefine.ITEM_TYPE_TIMEBASE:
-                return !this.isExpire();
-            case SDefine.ITEM_TYPE_COUNTBASE:
-                return this.isUseable();
-            case SDefine.ITEM_TYPE_HYBRID:
-                return this.isUseable() && !this.isExpire();
-            default:
-                cc.error("invalid item type " + this.type);
-                return false;
-        }
+        // // 按道具类型分别校验
+        // switch (this.type) {
+        //     case SDefine.ITEM_TYPE_TIMEBASE:
+        //         return !this.isExpire();
+        //     case SDefine.ITEM_TYPE_COUNTBASE:
+        //         return this.isUseable();
+        //     case SDefine.ITEM_TYPE_HYBRID:
+        //         return this.isUseable() && !this.isExpire();
+        //     default:
+        //         cc.error("invalid item type " + this.type);
+        //         return false;
+        // }
+        return false
     }
 
     /** 校验每日充值道具是否有效 */
@@ -363,15 +364,15 @@ export default class UserInven {
     public getAllCardPackCnt(includeFree: boolean = true): number {
         let freeCardPackCnt = 0;
         // 统计免费卡包
-        if (includeFree) {
-            const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.StarShopFreeRewardPromotion.PromotionKeyName);
-            if (promotionInfo) {
-                const now = Utility.getUnixTimestamp();
-                if (promotionInfo.nextReceiveTime <= now) {
-                    freeCardPackCnt = 1;
-                }
-            }
-        }
+        // if (includeFree) {
+        //     const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.StarShopFreeRewardPromotion.PromotionKeyName);
+        //     if (promotionInfo) {
+        //         const now = Utility.getUnixTimestamp();
+        //         if (promotionInfo.nextReceiveTime <= now) {
+        //             freeCardPackCnt = 1;
+        //         }
+        //     }
+        // }
 
         // 统计付费/普通卡包 + 宝石兑换卡包 + 礼包卡包
         const normalCardPackCnt = this.getAllCardPackCnt_ExceptFreeCardPack();
@@ -383,22 +384,23 @@ export default class UserInven {
 
     /** 获取所有卡包总数(排除免费卡包) */
     public getAllCardPackCnt_ExceptFreeCardPack(): number {
-        if (ShopPromotionManager.default.Instance().isBountySale()) {
-            return this.getNormalCardPackCnt() + this.getHeroCardPackCnt() + this.getPaidCardPackCnt() + this.getBountyCardPackCnt();
-        } else {
-            return this.getNormalCardPackCnt() + this.getHeroCardPackCnt() + this.getPaidCardPackCnt();
-        }
+        // if (ShopPromotionManager.default.Instance().isBountySale()) {
+        //     return this.getNormalCardPackCnt() + this.getHeroCardPackCnt() + this.getPaidCardPackCnt() + this.getBountyCardPackCnt();
+        // } else {
+        //     return this.getNormalCardPackCnt() + this.getHeroCardPackCnt() + this.getPaidCardPackCnt();
+        // }
+        return 0;
     }
 
     /** 获取宝石兑换的卡包数量 */
     private getPowerGemExchangeCardPackCnt(): number {
-        if (PowerGemManager.default.instance.isAvailablePowerGemByStarAlbum()) {
-            const jokerItem = PowerGemManager.default.instance.getJokerPointItem();
-            if (TSUtility.isValid(jokerItem)) {
-                const useCount = PowerGemManager.default.instance.getJokerPointUseCount();
-                return Math.floor(jokerItem.curCnt / useCount);
-            }
-        }
+        // if (PowerGemManager.default.instance.isAvailablePowerGemByStarAlbum()) {
+        //     const jokerItem = PowerGemManager.default.instance.getJokerPointItem();
+        //     if (TSUtility.isValid(jokerItem)) {
+        //         const useCount = PowerGemManager.default.instance.getJokerPointUseCount();
+        //         return Math.floor(jokerItem.curCnt / useCount);
+        //     }
+        // }
         return 0;
     }
 
@@ -414,53 +416,53 @@ export default class UserInven {
     /** 获取普通卡包数量 */
     public getNormalCardPackCnt(): number {
         let total = 0;
-        const maxRarity = StarAlbumManager.default.instance().getCardMaxRarity();
-        for (let rarity = 1; rarity <= maxRarity; ++rarity) {
-            const itemId = SDefine.I_COLLECTION_CARD_PRIFIX + rarity.toString();
-            const items = this.getItemsByItemId(itemId);
-            items.forEach(item => total += item.curCnt);
-        }
+        // const maxRarity = StarAlbumManager.default.instance().getCardMaxRarity();
+        // for (let rarity = 1; rarity <= maxRarity; ++rarity) {
+        //     const itemId = SDefine.I_COLLECTION_CARD_PRIFIX + rarity.toString();
+        //     const items = this.getItemsByItemId(itemId);
+        //     items.forEach(item => total += item.curCnt);
+        // }
         return total;
     }
 
     /** 获取付费卡包数量 */
     public getPaidCardPackCnt(): number {
         let total = 0;
-        const maxRarity = StarAlbumManager.default.instance().getCardMaxRarity();
-        for (let rarity = 1; rarity <= maxRarity; ++rarity) {
-            const itemId = SDefine.I_COLLECTION_CARD_PAID_PRIFIX + rarity.toString();
-            const items = this.getItemsByItemId(itemId);
-            items.forEach(item => total += item.curCnt);
-        }
+        // const maxRarity = StarAlbumManager.default.instance().getCardMaxRarity();
+        // for (let rarity = 1; rarity <= maxRarity; ++rarity) {
+        //     const itemId = SDefine.I_COLLECTION_CARD_PAID_PRIFIX + rarity.toString();
+        //     const items = this.getItemsByItemId(itemId);
+        //     items.forEach(item => total += item.curCnt);
+        // }
         return total;
     }
 
     /** 获取英雄卡包数量 */
     public getHeroCardPackCnt(): number {
         let total = 0;
-        const maxRarity = StarAlbumManager.default.instance().getCardMaxRarity();
-        for (let rarity = 1; rarity <= maxRarity; ++rarity) {
-            // 普通英雄卡包
-            let itemId = SDefine.I_COLLECTION_CARD_HERO_PRIFIX + rarity.toString();
-            let items = this.getItemsByItemId(itemId);
-            items.forEach(item => total += item.curCnt);
+        // const maxRarity = StarAlbumManager.default.instance().getCardMaxRarity();
+        // for (let rarity = 1; rarity <= maxRarity; ++rarity) {
+        //     // 普通英雄卡包
+        //     let itemId = SDefine.I_COLLECTION_CARD_HERO_PRIFIX + rarity.toString();
+        //     let items = this.getItemsByItemId(itemId);
+        //     items.forEach(item => total += item.curCnt);
 
-            // 付费英雄卡包
-            itemId = SDefine.I_COLLECTION_CARD_HERO_PAID_PRIFIX + rarity.toString();
-            items = this.getItemsByItemId(itemId);
-            items.forEach(item => total += item.curCnt);
+        //     // 付费英雄卡包
+        //     itemId = SDefine.I_COLLECTION_CARD_HERO_PAID_PRIFIX + rarity.toString();
+        //     items = this.getItemsByItemId(itemId);
+        //     items.forEach(item => total += item.curCnt);
 
-            // 混合英雄卡包
-            itemId = SDefine.I_COLLECTION_CARD_HERO_HYBRID_PRIFIX + rarity.toString();
-            items = this.getItemsByItemId(itemId);
-            items.forEach(item => total += item.curCnt);
-        }
+        //     // 混合英雄卡包
+        //     itemId = SDefine.I_COLLECTION_CARD_HERO_HYBRID_PRIFIX + rarity.toString();
+        //     items = this.getItemsByItemId(itemId);
+        //     items.forEach(item => total += item.curCnt);
+        // }
         return total;
     }
 
     /** 获取悬赏卡包数量(原逻辑固定返回0) */
     public getBountyCardPackCnt(): number {
-        StarAlbumManager.default.instance().getCardMaxRarity();
+        // StarAlbumManager.default.instance().getCardMaxRarity();
         return 0;
     }
 

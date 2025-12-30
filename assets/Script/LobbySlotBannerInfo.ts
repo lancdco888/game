@@ -1,7 +1,7 @@
 
 const { ccclass } = cc._decorator;
-import PowerGemManager from "../../Popup/PowerGem/PowerGemManager";
-import SupersizeItManager from "../../Popup/SupersizeIt/SupersizeItManager";
+import PowerGemManager from "./manager/PowerGemManager";
+import SupersizeItManager from "./SupersizeItManager";
 // import SlotTourneyManager from "../../Utility/SlotTourneyManager";
 //import SlotBannerInfo from "../Banner/SlotBannerInfo";
 import TSUtility from './global_utility/TSUtility';
@@ -211,7 +211,7 @@ export class LobbySlotBannerInfo_SUPERSIZE_IT extends LobbySlotBannerInfo {
     }
 
     isAvailable() {
-        return 1 == SupersizeItManager.instance.isAvailablePromotion() && 1 == SupersizeItManager.instance.isEnableEvent();
+        return SupersizeItManager.instance.isAvailablePromotion() && SupersizeItManager.instance.isEnableEvent();
     }
 }
 

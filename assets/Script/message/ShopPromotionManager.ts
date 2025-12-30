@@ -1,6 +1,6 @@
 // 保留原项目所有依赖导入，路径与原代码完全一致
-import FirstBuyCouponManager from "../ServiceInfo/FirstBuyCouponManager";
-import ServiceInfoManager from "../ServiceInfo/ServiceInfoManager";
+// import FirstBuyCouponManager from "../ServiceInfo/FirstBuyCouponManager";
+// import ServiceInfoManager from "../ServiceInfo/ServiceInfoManager";
 import UserInfo from "../User/UserInfo";
 import TSUtility from "../global_utility/TSUtility";
 import InboxMessagePrefabManager, { INBOX_ITEM_TYPE } from "../InboxMessagePrefabManager";
@@ -63,25 +63,26 @@ export default class ShopPromotionManager {
 
     // ===== 判断是否存在其他可用优惠券 =====
     public hasOtherCoupon(): boolean {
-        const couponInfo = UserInfo.instance().getUserInboxCouponInfo();
+        // const couponInfo = UserInfo.instance().getUserInboxCouponInfo();
         let hasCoupon = false;
-        for (let i = 0; i < couponInfo.length; ++i) {
-            const info = couponInfo[i];
-            if ((info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_RENEWAL_2002 || 
-                info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_WELCOME_BACK) && 
-                info.message.expireDate > 0) {
-                hasCoupon = true;
-                break;
-            }
-        }
+        // for (let i = 0; i < couponInfo.length; ++i) {
+        //     const info = couponInfo[i];
+        //     if ((info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_RENEWAL_2002 || 
+        //         info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_WELCOME_BACK) && 
+        //         info.message.expireDate > 0) {
+        //         hasCoupon = true;
+        //         break;
+        //     }
+        // }
         return hasCoupon;
     }
 
     // ===== 判断是否新手商店促销活动中 =====
     public isNewbieShopPromotionIng(): boolean {
-        if (ServiceInfoManager.instance().isAbleNewbieShopPromotion() === 1) {
-            return true;
-        }
+        // if (ServiceInfoManager.instance().isAbleNewbieShopPromotion() === 1) {
+        //     return true;
+        // }
+        return false;
     }
 
     // ===== 根据key判断当前是否有指定促销活动 =====
@@ -102,7 +103,8 @@ export default class ShopPromotionManager {
 
     // ===== 校验是否有资格参与促销活动 =====
     public checkAblePromotion(): boolean {
-        return !FirstBuyCouponManager.default.instance.isHaveFirstBuyCouponByInbox();
+        // return !FirstBuyCouponManager.default.instance.isHaveFirstBuyCouponByInbox();
+        return false;
     }
 
     // ===== 获取通用促销活动信息 =====
@@ -161,30 +163,30 @@ export default class ShopPromotionManager {
     // ===== 获取【优惠券类型】促销活动信息 (5类型) =====
     public getSeasonalPromotionInfo_CouponType(): PromotionInfo | null {
         // 校验首购/回归优惠券
-        const couponInfo = UserInfo.instance().getUserInboxCouponInfo();
-        let hasSpecCoupon = false;
-        for (let i = 0; i < couponInfo.length; ++i) {
-            const info = couponInfo[i];
-            if ((info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_FIRST_BUY || 
-                info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_WELCOME_BACK) && 
-                info.message.expireDate >0) {
-                hasSpecCoupon = true;
-                break;
-            }
-        }
-        if (hasSpecCoupon) return null;
-        if (this.isNewbieShopPromotionIng()) return null;
+        // const couponInfo = UserInfo.instance().getUserInboxCouponInfo();
+        // let hasSpecCoupon = false;
+        // for (let i = 0; i < couponInfo.length; ++i) {
+        //     const info = couponInfo[i];
+        //     if ((info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_FIRST_BUY || 
+        //         info.message.mType === INBOX_ITEM_TYPE.INBOX_COUPON_WELCOME_BACK) && 
+        //         info.message.expireDate >0) {
+        //         hasSpecCoupon = true;
+        //         break;
+        //     }
+        // }
+        // if (hasSpecCoupon) return null;
+        // if (this.isNewbieShopPromotionIng()) return null;
 
-        const nowTime = TSUtility.getServerBaseNowUnixTime();
-        for (let i =0; i < this._seasonalPromotions.length; ++i) {
-            const promo = this._seasonalPromotions[i];
-            if (promo.startDate <= nowTime && 
-                nowTime <= promo.endDate && 
-                this.isPatchedPromotion(promo.key) && 
-                promo.promotionType ===5) {
-                return promo;
-            }
-        }
+        // const nowTime = TSUtility.getServerBaseNowUnixTime();
+        // for (let i =0; i < this._seasonalPromotions.length; ++i) {
+        //     const promo = this._seasonalPromotions[i];
+        //     if (promo.startDate <= nowTime && 
+        //         nowTime <= promo.endDate && 
+        //         this.isPatchedPromotion(promo.key) && 
+        //         promo.promotionType ===5) {
+        //         return promo;
+        //     }
+        // }
         return null;
     }
 

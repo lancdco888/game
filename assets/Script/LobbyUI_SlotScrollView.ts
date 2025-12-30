@@ -5,6 +5,7 @@ import { SlotBannerType } from "./LobbySlotBannerInfo";
 import LobbySlotObjectPool from "./LobbySlotObjectPool";
 import { LobbyUIType } from "./LobbyUIBase";
 import ServiceInfoManager from "./ServiceInfoManager";
+import SlotBannerInfo from "./SlotBannerInfo";
 import UserInfo from "./User/UserInfo";
 import AsyncHelper from "./global_utility/AsyncHelper";
 import SDefine from "./global_utility/SDefine";
@@ -192,8 +193,8 @@ export default class LobbyUI_SlotScrollView extends cc.Component {
             var o = new SlotBannerInfo;
             o.parseObj(t.slotList[f]);
             if (ServiceSlotDataManager.instance.isAvailableSlot(o)) {
-                1 == o.isEarlyAccessSlot ? n(SlotBannerType.EARLY_ACCESS, o) : 1 == o.isNewSlot ? n(SlotBannerType.NEW, o) : 1 == o.isHotSlot ? n(SlotBannerType.HOT, o) : 1 == o.isFeaturedSlot ? n(SlotBannerType.FEATURED, o) : 1 == o.isRevampSlot ? n(SlotBannerType.REVAMP, o) : 1 == o.isReelQuestSlot ? n(SlotBannerType.REEL_QUEST, o) : 1 == o.isSupersizeSlot && n(SlotBannerType.SUPERSIZE_IT, o);
-                TSUtility.isDynamicSlot(o.strSlotID) ? n(SlotBannerType.DYNAMIC, o) : (n(SlotBannerType.NORMAL, o), 1 == o.isLinkedSlot && n(SlotBannerType.LINKED, o));
+                o.isEarlyAccessSlot ? n(SlotBannerType.EARLY_ACCESS, o) : o.isNewSlot ? n(SlotBannerType.NEW, o) : o.isHotSlot ? n(SlotBannerType.HOT, o) : o.isFeaturedSlot ? n(SlotBannerType.FEATURED, o) : 1 == o.isRevampSlot ? n(SlotBannerType.REVAMP, o) : 1 == o.isReelQuestSlot ? n(SlotBannerType.REEL_QUEST, o) : 1 == o.isSupersizeSlot && n(SlotBannerType.SUPERSIZE_IT, o);
+                TSUtility.isDynamicSlot(o.strSlotID) ? n(SlotBannerType.DYNAMIC, o) : (n(SlotBannerType.NORMAL, o), o.isLinkedSlot && n(SlotBannerType.LINKED, o));
             }
         }
         e.forEach(function(e) {

@@ -1,10 +1,10 @@
 // 保留原项目所有依赖导入，路径与原代码完全一致
 import TSUtility from "./global_utility/TSUtility";
 import PopupManager from "../../../../slot_common/Script/Popup/PopupManager";
-import ServiceInfoManager from "../../../ServiceInfo/ServiceInfoManager";
-import UIScrollViewData from "../../../UI/UIScrollView/UIScrollViewData";
-import UIScrollViewHorizontal from "../../../UI/UIScrollView/UIScrollViewHorizontal";
-import UISwipe from "../../../UI/UISwipe/UISwipe";
+import ServiceInfoManager from "./ServiceInfoManager";
+import UIScrollViewData from "./UIScrollViewData";
+import UIScrollViewHorizontal from "./UIScrollViewHorizontal";
+import UISwipe from "./UISwipe";
 import UserInfo from "./User/UserInfo";
 import MessageRoutingManager from "./message/MessageRoutingManager";
 import LobbyScene from "../../LobbyScene";
