@@ -10,16 +10,30 @@ declare global {
     // 扩展String原型的format方法 - TS必须先声明接口扩展，否则语法报错
     interface String {
         format(...args: any[]): string;
+        trimLeft():string;
     }
 }
 
-// 实现String.prototype.format 字符串格式化方法
+// 实现SDefine.format 字符串格式化方法
 String.prototype.format = function (...args: any[]) {
     let str = this as string;
     for (const key in args) {
         str = str.replace(/%[a-z]/, args[key]);
     }
     return str;
+};
+
+// 实现SDefine.format 字符串格式化方法
+String.prototype.trimLeft = function () {
+    let str = this as string;
+    if (str.length === 0) return str;
+    let startIndex = 0;
+    // 循环判断字符串开头的字符是否是空白符，直到找到第一个非空白符
+    while (startIndex < str.length && this.isUnicodeSpace(str[startIndex])) {
+        startIndex++;
+    }
+    // 截取从第一个非空白符开始到末尾的字符串
+    return str.substring(startIndex);
 };
 
 // 全局变量 - 原代码的空对象/键值对

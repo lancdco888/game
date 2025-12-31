@@ -19,10 +19,10 @@ export default class SlotGameRuleManager extends cc.Component {
     public _subGames: { [key: string]: SubGame } = {};
     private _listPayline: PayLines[] = [];
     private _zoneBetPerLines: number[] | null = null;
-    private _maxBetLine: number = 0;
-    private _featureTotalBetRate100: number = 0;
-    private _currentBetPerLine: number = 0;
-    private _currentBetEllipsisCount: number = 0;
+    public _maxBetLine: number = 0;
+    public _featureTotalBetRate100: number = 0;
+    public _currentBetPerLine: number = 0;
+    public _currentBetEllipsisCount: number = 0;
     private _maxBetPerLine: number = 0;
     private _currentBetMoney: number = 0;
     private _defaultSubGame: string = "";

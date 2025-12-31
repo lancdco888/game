@@ -48,6 +48,15 @@ export default class TSUtility {
         TSUtility.testAudid = value;
     }
 
+    /**
+     * Vec2 转 Vec3 通用函数 (2D专用，z轴固定0)
+     * @param vec2 要转换的二维向量
+     * @returns 转换后的三维向量
+     */
+    public static vec2ToVec3(vec2: cc.Vec2): cc.Vec3 {
+        return new cc.Vec3(vec2.x, vec2.y, 0);
+    }
+
     // ===================== 全局工具方法 开始 =====================
     public static animationAction(target: cc.Animation | sp.Skeleton, animName: string): cc.ActionInterval | null {
         if (target instanceof cc.Animation) {

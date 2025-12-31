@@ -1,13 +1,13 @@
 const { ccclass } = cc._decorator;
 import TSUtility from "../global_utility/TSUtility";
 import MessageRoutingManager from "../message/MessageRoutingManager";
-import ServiceInfoManager from "../ServiceInfo/ServiceInfoManager";
+import ServiceInfoManager from "../ServiceInfoManager";
 import UserInfo from "./UserInfo";
-import TutorialCoinPromotion from "../Tutorial/TutorialCoinPromotion";
-import PowerGemManager from "../Popup/PowerGem/PowerGemManager";
-import UnlockContentsManager from "../Popup/UnlockContents/UnlockContentsManager";
-import ServerStorageManager from "../ServiceInfo/ServerStorageManager";
-import SlotGameRuleManager from "../../slot_common/Script/SlotCommon/SlotGameRuleManager";
+// import TutorialCoinPromotion from "../Tutorial/TutorialCoinPromotion";
+import PowerGemManager, { PowerGemInfo } from "../manager/PowerGemManager";
+// import UnlockContentsManager from "../Popup/UnlockContents/UnlockContentsManager";
+import ServerStorageManager, { StorageKeyType } from "../manager/ServerStorageManager";
+import SlotGameRuleManager from "../manager/SlotGameRuleManager";
 
 // 兼容原JS的__spreadArrays数组拷贝方法 1:1还原 原逻辑中大量使用该方法
 export function spreadArrays(...args: any[][]): any[] {
@@ -299,10 +299,10 @@ export class ServiceIntroduceCoinPromotion {
     }
 
     public getMainStep(): number {
-        const max = TutorialCoinPromotion.INTRODUCE_MAIN.END_INDEX;
-        for (let i = 0; i < max; i++) {
-            if (this.contains(this.completedSteps, i) === false) return i;
-        }
+        // const max = TutorialCoinPromotion.INTRODUCE_MAIN.END_INDEX;
+        // for (let i = 0; i < max; i++) {
+        //     if (this.contains(this.completedSteps, i) === false) return i;
+        // }
         return -1;
     }
 
@@ -335,12 +335,12 @@ export class NewServiceIntroduceCoinPromotion {
     }
 
     public getMainStep(): number {
-        const max = TutorialCoinPromotion.INTRODUCE_MAIN.END_INDEX;
-        for (let i = 0; i < max; i++) {
-            if (i === TutorialCoinPromotion.INTRODUCE_MAIN.FRIEND) continue;
-            if (i === TutorialCoinPromotion.INTRODUCE_MAIN.STARALBUM && ServiceInfoManager.default.instance().getUserLevel() < UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.STAR_ALBUM)) continue;
-            if (this.contains(this.completedSteps, i) === false) return i;
-        }
+        // const max = TutorialCoinPromotion.INTRODUCE_MAIN.END_INDEX;
+        // for (let i = 0; i < max; i++) {
+        //     if (i === TutorialCoinPromotion.INTRODUCE_MAIN.FRIEND) continue;
+        //     if (i === TutorialCoinPromotion.INTRODUCE_MAIN.STARALBUM && ServiceInfoManager.default.instance().getUserLevel() < UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.STAR_ALBUM)) continue;
+        //     if (this.contains(this.completedSteps, i) === false) return i;
+        // }
         return -1;
     }
 
@@ -371,12 +371,12 @@ export class GiftBalloonPromotion {
     public isReceived: boolean = false;
 
     public parseObj(data: any): void {
-        const prevTime = ServerStorageManager.default.getAsNumber(ServerStorageManager.StorageKeyType.PREV_BALLOON_TIME);
+        const prevTime = ServerStorageManager.getAsNumber(StorageKeyType.PREV_BALLOON_TIME);
         const showDate = data.showingDate;
         if (!Utility.isFacebookWeb() && UserInfo.instance() != null && data.isAcceptable === 1 && prevTime !== showDate) {
             this.endTime = data.showingDate;
             this.isReceived = data.isAcceptable;
-            ServerStorageManager.default.save(ServerStorageManager.StorageKeyType.PREV_BALLOON_TIME, data.showingDate);
+            ServerStorageManager.save(StorageKeyType.PREV_BALLOON_TIME, data.showingDate);
             MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.ADDGIFTBALLOON);
         }
     }
@@ -750,7 +750,7 @@ export class CardPackBoosterPromotion {
 	}
 
 	public isAvailableCardPackBooster(): boolean {
-		if (ServiceInfoManager.default.instance().getUserLevel() < UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.STAR_ALBUM)) return false;
+		//if (ServiceInfoManager.instance().getUserLevel() < UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.STAR_ALBUM)) return false;
 		const now = TSUtility.getServerBaseNowUnixTime();
 		return this.eventStart <= now && now < this.eventEnd;
 	}
@@ -762,26 +762,26 @@ export class CardPackBoosterPromotion {
 
 	public getConditionTotalBet(): number {
 		if (!this.isAvailableCardPackBooster()) return 0;
-		const vipLevel = UserInfo.instance().getUserVipInfo().level;
+		// const vipLevel = UserInfo.instance().getUserVipInfo().level;
 		let bet =0;
-		if (UserInfo.instance().getUserLevelInfo().level <=20) {
-			bet =27000;
-		} else {
-			if (vipLevel >=0 && vipLevel <=1) bet=108000;
-			else if (vipLevel >=2 && vipLevel <=5) bet=270000;
-			else if (vipLevel >=6 && vipLevel <=8) bet=540000;
-			else if (vipLevel >=9) bet=540000;
-		}
+		// if (UserInfo.instance().getUserLevelInfo().level <=20) {
+		// 	bet =27000;
+		// } else {
+		// 	if (vipLevel >=0 && vipLevel <=1) bet=108000;
+		// 	else if (vipLevel >=2 && vipLevel <=5) bet=270000;
+		// 	else if (vipLevel >=6 && vipLevel <=8) bet=540000;
+		// 	else if (vipLevel >=9) bet=540000;
+		// }
 		return bet;
 	}
 
 	public getDefaultBet(): number {
 		const targetBet = this.getConditionTotalBet();
-		const betList = SlotGameRuleManager.default.Instance.zoneBetPerLines;
+		const betList = SlotGameRuleManager.Instance.zoneBetPerLines;
 		let selected =0;
 		for (let i=0; i<betList.length; ++i) {
 			const bet = betList[i];
-			if (SlotGameRuleManager.default.Instance.getBetMoney(bet) >= targetBet) break;
+			if (SlotGameRuleManager.Instance.getBetMoney(bet) >= targetBet) break;
 			selected = bet;
 		}
 		const idx = betList.findIndex(v => v === selected);
@@ -822,21 +822,22 @@ export class HeroBuffPromotion {
 
 	public getTotalBetCheckCardPackAndHeroBuffPromotion(): number {
 		let bet =0;
-		if (UserInfo.instance().getUserLevelInfo().level <=20) {
-			bet =27000;
-		} else {
-			const vipLevel = UserInfo.instance().getUserVipInfo().level;
-			bet = vipLevel <=1 ? 0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(3) : vipLevel <=5 ?0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(4) :0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(5);
-		}
-		let finalBet =0;
-		const modeBet = UserInfo.instance().getModeBetDepthLast500Spins();
-		if (modeBet <0) {
-			finalBet = bet;
-		} else {
-			const tempBet =0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(modeBet-1);
-			finalBet = tempBet > UserInfo.instance().getTotalCoin()/100 ? tempBet :0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(modeBet);
-		}
-		return Math.max(bet, finalBet);
+		// if (UserInfo.instance().getUserLevelInfo().level <=20) {
+		// 	bet =27000;
+		// } else {
+		// 	const vipLevel = UserInfo.instance().getUserVipInfo().level;
+		// 	bet = vipLevel <=1 ? 0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(3) : vipLevel <=5 ?0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(4) :0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(5);
+		// }
+		// let finalBet =0;
+		// const modeBet = UserInfo.instance().getModeBetDepthLast500Spins();
+		// if (modeBet <0) {
+		// 	finalBet = bet;
+		// } else {
+		// 	const tempBet =0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(modeBet-1);
+		// 	finalBet = tempBet > UserInfo.instance().getTotalCoin()/100 ? tempBet :0.9 * ServiceInfoManager.default.instance().getGlobalBetDepth(modeBet);
+		// }
+		// return Math.max(bet, finalBet);
+        return 0;
 	}
 }
 
@@ -974,7 +975,8 @@ export class JiggyPuzzlePromotion {
 	}
 
 	public static isLevelLimit(): boolean {
-		return UserInfo.instance().getUserLevelInfo().level <10;
+		// return UserInfo.instance().getUserLevelInfo().level <10;
+        return false;
 	}
 }
 
@@ -1076,23 +1078,24 @@ export class HighRollerSuitePassPromotion {
 	}
 
 	public IsDuplicateNewSlotPass(): boolean {
-		const slotInfo = ServiceInfoManager.default.instance().getSuiteNewSlotInfo();
-		if (slotInfo == null) return false;
-		const start = slotInfo.openDate;
-		const expire = slotInfo.openDate +604800;
-		return this.lastNewDySlotReceivedTime >= start && this.lastNewDySlotReceivedTime <= expire;
+		// const slotInfo = ServiceInfoManager.instance().getSuiteNewSlotInfo();
+		// if (slotInfo == null) return false;
+		// const start = slotInfo.openDate;
+		// const expire = slotInfo.openDate +604800;
+		// return this.lastNewDySlotReceivedTime >= start && this.lastNewDySlotReceivedTime <= expire;
+        return false;
 	}
 
 	public CheckFreeSuitePass(): boolean {
-		const user = UserInfo.instance();
-		if (user == null) return false;
-		const vip = user.getUserVipInfo().level;
-		if (vip <5 || vip >6) return false;
-		if (user.getTotalCoin() <300000000) return false;
-		if (this.lastFreeTicketExpireDate >0) {
-			const now = TSUtility.getServerBaseNowUnixTime();
-			if (this.lastFreeTicketExpireDate +1209600 >= now) return false;
-		}
+		// const user = UserInfo.instance();
+		// if (user == null) return false;
+		// const vip = user.getUserVipInfo().level;
+		// if (vip <5 || vip >6) return false;
+		// if (user.getTotalCoin() <300000000) return false;
+		// if (this.lastFreeTicketExpireDate >0) {
+		// 	const now = TSUtility.getServerBaseNowUnixTime();
+		// 	if (this.lastFreeTicketExpireDate +1209600 >= now) return false;
+		// }
 		return true;
 	}
 }
@@ -1167,7 +1170,7 @@ export class AllMightyCouponPromotion {
 
 export class PowerGemPromotion {
 	public static readonly PromotionKeyName: string = "PowerGemPromotion";
-	public arrPowerGem: PowerGemManager.PowerGemInfo[] = [];
+	public arrPowerGem: PowerGemInfo[] = [];
 	public arrSlotID: number[] = [];
 	public numEventGetableExpireDate: number =0;
 	public numEventOpenableExpireDate: number =0;
@@ -1178,7 +1181,7 @@ export class PowerGemPromotion {
 	public parseObj(data: any): void {
 		if (TSUtility.isValid(data.powerGem)) {
 			for (let i=0; i<data.powerGem.length; i++) {
-				const gem = new PowerGemManager.PowerGemInfo();
+				const gem = new PowerGemInfo();
 				gem.parseObj(data.powerGem[i]);
 				this.arrPowerGem.push(gem);
 			}

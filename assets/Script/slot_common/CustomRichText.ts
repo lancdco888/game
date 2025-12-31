@@ -1,5 +1,5 @@
-import CRichTextParser from '../global_utility/CRichTextParser';
-import TextUtil from '../../global_utility/TextUtil';
+import CRichTextParser, { CRichTextStyleType } from '../global_utility/CRichTextParser';
+import TextUtil from '../global_utility/TextUtil';
 const { ccclass, property, executeInEditMode } = cc._decorator;
 
 /**
@@ -232,7 +232,7 @@ export default class CustomRichText extends cc.Component {
     private _createFontLabel(text: string): cc.Node { return this.getNewComp(text); }
 
     /** 测量文本宽度 - 核心排版计算 */
-    private _measureText(styleIdx: number, text?: string): number | Function {
+    private _measureText(styleIdx: number, text?: string): number | Function|any {
         const measureFunc = (txt: string) => {
             let node: cc.Node|any;
             if (this._labelSegmentsCache.length === 0) {
@@ -348,7 +348,7 @@ export default class CustomRichText extends cc.Component {
         }
         // 文本宽度超出 → 切割文本分段显示
         if (currWidth > this.maxWidth) {
-            const textFragments = this._textUtil.fragmentText(text, currWidth, this.maxWidth, this._measureText(styleIdx) as Function);
+            const textFragments = this._textUtil.fragmentText(text, currWidth, this.maxWidth, this._measureText(styleIdx));
             textFragments.forEach((fragment: string, idx: number) => {
                 const node = this._addLabelSegment(fragment, styleIdx);
                 this._lineOffsetX += node.getContentSize().width;
@@ -450,10 +450,10 @@ export default class CustomRichText extends cc.Component {
             if (text === "") {
                 // 空文本 → 处理换行/图片节点
                 switch (textItem.style.type) {
-                    case CRichTextParser.CRichTextStyleType.FontBase:
+                    case CRichTextStyleType.FontBase:
                         if (textItem.style.isNewLine) { this._updateLineInfo(); continue; }
                         break;
-                    case CRichTextParser.CRichTextStyleType.NodeBase:
+                    case CRichTextStyleType.NodeBase:
                         this._addRichTextNodeElement(textItem.style, i);
                         continue;
                 }

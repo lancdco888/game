@@ -3,7 +3,7 @@ import { LobbySceneUIType } from "./LobbySceneUI";
 import LobbyScrollView from "./LobbyScrollView";
 import { SlotBannerType } from "./LobbySlotBannerInfo";
 import LobbySlotObjectPool from "./LobbySlotObjectPool";
-import { LobbyUIType } from "./LobbyUIBase";
+import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import ServiceInfoManager from "./ServiceInfoManager";
 import SlotBannerInfo from "./SlotBannerInfo";
 import UserInfo from "./User/UserInfo";
@@ -15,7 +15,7 @@ import ServiceSlotDataManager, { ServiceSlotData } from "./manager/ServiceSlotDa
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class LobbyUI_SlotScrollView extends cc.Component {
+export default class LobbyUI_SlotScrollView extends LobbyUIBase {
 
     @property(cc.Node)
     nodeMoveA: cc.Node = null;
@@ -38,10 +38,21 @@ export default class LobbyUI_SlotScrollView extends cc.Component {
     _numCurrentScrollScale = 1
     _numPrevNodeY = 0
     private _objectPool: LobbySlotObjectPool = null;
-    lobbyUIType: LobbySceneUIType;
+    // lobbyUIType: LobbySceneUIType;
+
+    constructor(){
+        super()
+        LobbyUI_SlotScrollView._instance = this;
+    }
+
+    static _instance:LobbyUI_SlotScrollView = null;
 
     get eType() {
         return LobbyUIType.BANNER_SCROLL_VIEW
+    }
+
+    static get Instance(){
+        return LobbyUI_SlotScrollView._instance;
     }
 
     get objectPool() {
@@ -167,7 +178,7 @@ export default class LobbyUI_SlotScrollView extends cc.Component {
         }),
         t = 0, o = e;
         for (; t < o.length; t++) {
-            var a = o[t], i = ServiceSlotDataManager.instance.getSlotBannerInfo(a);
+            var a = o[t], i = ServiceSlotDataManager.instance.getSlotBannerInfo(a) as any;
             if (TSUtility.isValid(i)) {
                 var l = this._objectPool.getPrefabCount(i.type), s = i.preloadCount - l;
                 if (s > 0) {
@@ -193,7 +204,7 @@ export default class LobbyUI_SlotScrollView extends cc.Component {
             var o = new SlotBannerInfo;
             o.parseObj(t.slotList[f]);
             if (ServiceSlotDataManager.instance.isAvailableSlot(o)) {
-                o.isEarlyAccessSlot ? n(SlotBannerType.EARLY_ACCESS, o) : o.isNewSlot ? n(SlotBannerType.NEW, o) : o.isHotSlot ? n(SlotBannerType.HOT, o) : o.isFeaturedSlot ? n(SlotBannerType.FEATURED, o) : 1 == o.isRevampSlot ? n(SlotBannerType.REVAMP, o) : 1 == o.isReelQuestSlot ? n(SlotBannerType.REEL_QUEST, o) : 1 == o.isSupersizeSlot && n(SlotBannerType.SUPERSIZE_IT, o);
+                o.isEarlyAccessSlot ? n(SlotBannerType.EARLY_ACCESS, o) : o.isNewSlot ? n(SlotBannerType.NEW, o) : o.isHotSlot ? n(SlotBannerType.HOT, o) : o.isFeaturedSlot ? n(SlotBannerType.FEATURED, o) : o.isRevampSlot ? n(SlotBannerType.REVAMP, o) : o.isReelQuestSlot ? n(SlotBannerType.REEL_QUEST, o) : o.isSupersizeSlot && n(SlotBannerType.SUPERSIZE_IT, o);
                 TSUtility.isDynamicSlot(o.strSlotID) ? n(SlotBannerType.DYNAMIC, o) : (n(SlotBannerType.NORMAL, o), o.isLinkedSlot && n(SlotBannerType.LINKED, o));
             }
         }

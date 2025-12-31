@@ -100,7 +100,7 @@ export class SlotJackpotInfo {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getJackpotForDisplay() : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 
-    public getBunningState(e: string): number {
+    public getBunningState(e: string|number): number {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getBunningState() : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 

@@ -85,11 +85,11 @@ export default class TimeBonusManager extends cc.Component {
     public updateTimeBonus(): void {
         if (this._numExpireTime !== this.getExpirePSTTime()) {
             this._numExpireTime = this.getExpirePSTTime();
-            const userServiceInfo = UserInfo.instance().getUserServiceInfo();
-            if (TSUtility.isValid(userServiceInfo)) {
-                userServiceInfo.spinBooster = 1;
-                userServiceInfo.dailyAccBetCoinTimeBonus = 0;
-            }
+            // const userServiceInfo = UserInfo.instance().getUserServiceInfo();
+            // if (TSUtility.isValid(userServiceInfo)) {
+            //     userServiceInfo.spinBooster = 1;
+            //     userServiceInfo.dailyAccBetCoinTimeBonus = 0;
+            // }
             MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.REWARD_CENTER_UPDATE_UI_SPIN_BOOSTER);
             MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.REWARD_CENTER_UPDATE_UI_TIME_BONUS);
         }
@@ -101,49 +101,52 @@ export default class TimeBonusManager extends cc.Component {
     }
 
     public getSpinBoosterExp(): number {
-        const userServiceInfo = UserInfo.instance().getUserServiceInfo();
-        return !TSUtility.isValid(userServiceInfo) ? 0 : userServiceInfo.dailyAccBetCoinTimeBonus;
+        // const userServiceInfo = UserInfo.instance().getUserServiceInfo();
+        // return !TSUtility.isValid(userServiceInfo) ? 0 : userServiceInfo.dailyAccBetCoinTimeBonus;
+        return 0;
     }
 
     public addSpinBoosterExp(expVal: number): void {
-        const userServiceInfo = UserInfo.instance().getUserServiceInfo();
-        if (TSUtility.isValid(userServiceInfo)) {
-            userServiceInfo.dailyAccBetCoinTimeBonus += expVal;
-            userServiceInfo.spinBooster = this.getSpinBoosterMultiplierByExp(userServiceInfo.dailyAccBetCoinTimeBonus);
-        }
+        // const userServiceInfo = UserInfo.instance().getUserServiceInfo();
+        // if (TSUtility.isValid(userServiceInfo)) {
+        //     userServiceInfo.dailyAccBetCoinTimeBonus += expVal;
+        //     userServiceInfo.spinBooster = this.getSpinBoosterMultiplierByExp(userServiceInfo.dailyAccBetCoinTimeBonus);
+        // }
         MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.REWARD_CENTER_UPDATE_UI_SPIN_BOOSTER);
     }
 
     public getWheelBonusGauge(): number {
-        const itemList = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_DAILY_BONUS_WHEEL_TICKET);
+        // const itemList = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_DAILY_BONUS_WHEEL_TICKET);
         let totalCnt = 0;
-        for (let i = 0; i < itemList.length; ++i) {
-            totalCnt += itemList[i].curCnt;
-        }
+        // for (let i = 0; i < itemList.length; ++i) {
+        //     totalCnt += itemList[i].curCnt;
+        // }
         return totalCnt;
     }
 
     public getCoinShowerGauge(): number {
-        const itemList = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_COIN_SHOWER_TICKET);
+        // const itemList = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_COIN_SHOWER_TICKET);
         let totalCnt = 0;
-        for (let i = 0; i < itemList.length; ++i) {
-            totalCnt += itemList[i].curCnt;
-        }
+        // for (let i = 0; i < itemList.length; ++i) {
+        //     totalCnt += itemList[i].curCnt;
+        // }
         return totalCnt;
     }
 
     public getSpinBoosterLevelData(): Array<any> {
-        const userServiceInfo = UserInfo.instance().getUserServiceInfo();
-        if (!TSUtility.isValid(userServiceInfo)) return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
-        if (!TSUtility.isValid(userServiceInfo.SpinBoosterGroup)) return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
+        // const userServiceInfo = UserInfo.instance().getUserServiceInfo();
+        // if (!TSUtility.isValid(userServiceInfo)) return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
+        // if (!TSUtility.isValid(userServiceInfo.SpinBoosterGroup)) return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
         
-        switch (userServiceInfo.SpinBoosterGroup) {
-            case "A": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
-            case "B": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_B;
-            case "C": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_C;
-            case "D": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_D;
-            default: return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
-        }
+        // switch (userServiceInfo.SpinBoosterGroup) {
+        //     case "A": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
+        //     case "B": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_B;
+        //     case "C": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_C;
+        //     case "D": return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_D;
+        //     default: return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
+        // }
+
+        return this.SPIN_BOOSTER_LEVEL_DATA_GROUP_A;
     }
 
     public getSpinBoosterMaxLevel(): number {
@@ -191,8 +194,9 @@ export default class TimeBonusManager extends cc.Component {
     }
 
     public getCurSpinBoosterMultiplier(): number {
-        const userServiceInfo = UserInfo.instance().getUserServiceInfo();
-        return !TSUtility.isValid(userServiceInfo) ? 1 : userServiceInfo.spinBooster;
+        // const userServiceInfo = UserInfo.instance().getUserServiceInfo();
+        // return !TSUtility.isValid(userServiceInfo) ? 1 : userServiceInfo.spinBooster;
+        return 1;
     }
 
     public getCurSpinBoosterExpRatio(): number {
@@ -217,19 +221,21 @@ export default class TimeBonusManager extends cc.Component {
     }
 
     public isAvailableRainbowDice(): boolean {
-        const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.RainbowDiceBonusPromotion.PromotionKeyName);
-        if (!TSUtility.isValid(promotionInfo)) return false;
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.RainbowDiceBonusPromotion.PromotionKeyName);
+        // if (!TSUtility.isValid(promotionInfo)) return false;
         
-        const serverNow = TSUtility.getServerBaseNowUnixTime();
-        return (promotionInfo.nextReceiveTime - serverNow) <= 0;
+        // const serverNow = TSUtility.getServerBaseNowUnixTime();
+        // return (promotionInfo.nextReceiveTime - serverNow) <= 0;
+        return false;
     }
 
     public isAvailableFireDice(): boolean {
-        const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.FireDiceBonusPromotion.PromotionKeyName);
-        if (!TSUtility.isValid(promotionInfo)) return false;
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.FireDiceBonusPromotion.PromotionKeyName);
+        // if (!TSUtility.isValid(promotionInfo)) return false;
         
-        const serverNow = TSUtility.getServerBaseNowUnixTime();
-        return (promotionInfo.nextReceiveTime - serverNow) <= 0;
+        // const serverNow = TSUtility.getServerBaseNowUnixTime();
+        // return (promotionInfo.nextReceiveTime - serverNow) <= 0;
+        return false;
     }
 
     public getCurWheelBonusPurchaseMultiplier(): number {

@@ -61,8 +61,8 @@ export default class LobbyScrollView extends cc.Component {
 
         // 注册用户信息变更监听
         const userInfo = UserInfo.instance();
-        userInfo.addListenerTarget(UserInfo.MSG.UPDATE_VIP_POINT, this.onRefresh.bind(this), this);
-        userInfo.addListenerTarget(UserInfo.MSG.UPDATE_PURCHASE_INFO, this.onRefresh.bind(this), this);
+        // userInfo.addListenerTarget(UserInfo.MSG.UPDATE_VIP_POINT, this.onRefresh.bind(this), this);
+        // userInfo.addListenerTarget(UserInfo.MSG.UPDATE_PURCHASE_INFO, this.onRefresh.bind(this), this);
 
         // 添加上下滑动监听 - 切换大厅类型
         const swipeComp = this.node.addComponent(UISwipe);
@@ -78,7 +78,7 @@ export default class LobbyScrollView extends cc.Component {
         this.unscheduleAllCallbacks();
         // 取消所有消息监听
         MessageRoutingManager.instance().removeListenerTargetAll(this);
-        UserInfo.instance().removeListenerTargetAll(this);
+        // UserInfo.instance().removeListenerTargetAll(this);
     }
 
     // ===== 初始化滚动容器数据 =====
@@ -143,10 +143,10 @@ export default class LobbyScrollView extends cc.Component {
     }
 
     // ===== 核心方法 - 推入Banner数据到滚动容器 =====
-    public pushBannerData(type: SlotBannerType, data: any = null): void {
+    public pushBannerData(type: any, data: any = null): void {
         const bannerInfo = LobbySlotBannerInfo.getSlotBannerInfo(type);
         if (TSUtility.isValid(bannerInfo)) {
-            bannerInfo.prefabSize = LobbyUI_SlotScrollView.objectPool.getPrefabSize(type);
+            bannerInfo.prefabSize = LobbyUI_SlotScrollView.Instance.objectPool.getPrefabSize(type);
             bannerInfo.setData(data);
             
             if (bannerInfo.available) {
@@ -160,7 +160,7 @@ export default class LobbyScrollView extends cc.Component {
     }
 
     // ===== 获取指定类型的SlotBanner信息 =====
-    public getSlotBannerInfo(type: SlotBannerType): any[] {
+    public getSlotBannerInfo(type: any): any[] {
         const bannerItem = this._arrSlotBannerInfo.find((item) => item.eType === type);
         let arrInfo = [];
 
@@ -230,7 +230,7 @@ export default class LobbyScrollView extends cc.Component {
     }
 
     // ===== 消息回调 - 滚动到指定类型的Banner =====
-    private eventMoveToBanner(params: {type: SlotBannerType, duration?: number}): void {
+    private eventMoveToBanner(params: {type: any, duration?: number}): void {
         if (TSUtility.isValid(params)) {
             const type = params.type;
             if (TSUtility.isValid(type)&& type !== SlotBannerType.NONE) {
@@ -261,7 +261,7 @@ export default class LobbyScrollView extends cc.Component {
     }
 
     // ===== 滚动定位 - 滚动到指定类型的Banner =====
-    public moveToBanner(type: SlotBannerType, duration: number = 0.5): void {
+    public moveToBanner(type: any, duration: number = 0.5): void {
         if (!TSUtility.isValid(this._scrollView)) return;
         
         const targetIdx = this._arrUIScrollViewData.findIndex((item) => {
@@ -293,8 +293,8 @@ export default class LobbyScrollView extends cc.Component {
             for (let i = 0; i < visibleItems.length; i++) {
                 const item = visibleItems[i];
                 if (TSUtility.isValid(item)) {
-                    const banner = item.banner;
-                    if (TSUtility.isValid(banner)) banner.playOpenAction(delay);
+                    // const banner = item.banner;
+                    // if (TSUtility.isValid(banner)) banner.playOpenAction(delay);
                 }
             }
         }
@@ -304,11 +304,11 @@ export default class LobbyScrollView extends cc.Component {
     public changeLobbyType(type: LobbySceneUIType): void {
         const sideMenuUI = LobbyScene.instance.UI.getLobbyUI(LobbyUIType.SIDE_MENU);
         if (TSUtility.isValid(sideMenuUI)) {
-            switch(type) {
-                case LobbySceneUIType.LOBBY: sideMenuUI.onClick_Home(); break;
-                case LobbySceneUIType.SUITE: sideMenuUI.onClick_Suite(); break;
-                case LobbySceneUIType.YOURS: sideMenuUI.onClick_Yours(); break;
-            }
+            // switch(type) {
+            //     case LobbySceneUIType.LOBBY: sideMenuUI.onClick_Home(); break;
+            //     case LobbySceneUIType.SUITE: sideMenuUI.onClick_Suite(); break;
+            //     case LobbySceneUIType.YOURS: sideMenuUI.onClick_Yours(); break;
+            // }
         }
     }
 

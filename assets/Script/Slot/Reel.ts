@@ -59,7 +59,7 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 核心初始化方法 - 符号数组填充/节点挂载/坐标设置，原逻辑完全复刻，含所有冗余判断 =====
-    invalidate(symbolIds: number[], startIdx: number, reelCol: number, winSymbols: any, specialSymbols: any): void {
+    invalidate(symbolIds: number[], startIdx: number, reelCol: number, winSymbols: any, specialSymbols?: any): void {
         this.reelCol = reelCol;
         this.visibleRow;
         this.bufferRow;
@@ -260,7 +260,7 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 获取滚轮滚动时间 - 原逻辑不变 =====
-    getReelSpinTime(winLineIdx: number): number {
+    getReelSpinTime(winLineIdx: number|string): number {
         let totalTime, moveSpeed, spinCnt;
         const spinInfo = SlotUIRuleManager.Instance.getSpinControlInfo(winLineIdx).infoList[this.reelindex];
         totalTime = spinInfo.totalTimeInExpectEffect;
@@ -356,7 +356,7 @@ export default class Reel extends cc.Component {
                     const newSymbolNode = this.getSymbolNode(nextSymbolId, specialInfo);
                     if (TSUtility.isValid(this._getNextSpecialInfo)) {
                         const specialData = this._getNextSpecialInfo(SpecialType.FEVER);
-                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
+                        //TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
                     }
 
                     newSymbolNode.x = 0;
@@ -385,7 +385,7 @@ export default class Reel extends cc.Component {
                     const newSymbolNode = this.getSymbolNode(nextSymbolId, specialInfo);
                     TSUtility.isValid(this._getNextSpecialInfo) && (() => {
                         const specialData = this._getNextSpecialInfo();
-                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
+                        //TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
                     })();
 
                     newSymbolNode.x = 0;

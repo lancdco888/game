@@ -1,3 +1,4 @@
+import LobbyScene from "./LobbyScene";
 import UserInfo from "./User/UserInfo";
 import TSUtility from "./global_utility/TSUtility";
 import MessageRoutingManager from "./message/MessageRoutingManager";
@@ -57,7 +58,7 @@ export default class LobbyUIBase extends cc.Component {
     }
 
     get inventory(): any {
-        return UserInfo.instance().getItemInventory();
+        return 0;//UserInfo.instance().getItemInventory();
     }
 
     get isNewbie(): boolean {
