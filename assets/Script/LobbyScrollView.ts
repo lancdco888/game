@@ -7,7 +7,7 @@ import UIScrollViewHorizontal from "./UIScrollViewHorizontal";
 import UISwipe from "./UISwipe";
 import UserInfo from "./User/UserInfo";
 import MessageRoutingManager from "./message/MessageRoutingManager";
-import LobbyScene from "../../LobbyScene";
+import LobbyScene from "./LobbyScene";
 import LobbySceneUI, { LobbySceneUIType } from "./LobbySceneUI";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import LobbyUI_SlotScrollView from "./LobbyUI_SlotScrollView";

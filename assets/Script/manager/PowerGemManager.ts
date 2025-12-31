@@ -276,7 +276,7 @@ export default class PowerGemManager extends cc.Component {
 
     /** 宝石可领取是否过期 */
     public isPowerGemGetableExpireDate(): boolean {
-        return false;//PowerGemManager.instance.getPromotion().numEventGetableExpireDate > TSUtility.default.getServerBaseNowUnixTime();
+        return false;//PowerGemManager.instance.getPromotion().numEventGetableExpireDate > TSUtility.getServerBaseNowUnixTime();
     }
 
     /** 检查宝石系统是否可用(等级+时效+场景校验) */

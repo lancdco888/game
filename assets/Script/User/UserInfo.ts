@@ -1,6 +1,9 @@
 import SingtonClass from "../core/SingtonClass";
 
 export default class UserInfo extends SingtonClass {
+    getUserVipInfo() {
+        throw new Error("Method not implemented.");
+    }
     // 私有成员变量 + 初始值 完全对齐原JS
     private _userName: string = "";
     private _rank: number = -1;
@@ -57,6 +60,14 @@ export default class UserInfo extends SingtonClass {
 
     public getUid():number{
         return 0;
+    }
+
+    public getAccessToken():string{
+        return "";
+    }
+
+    public getUserPicUrl():string{
+        return "";
     }
 
     /** 批量赋值用户信息 - 完全对齐原JS的字段映射关系 */

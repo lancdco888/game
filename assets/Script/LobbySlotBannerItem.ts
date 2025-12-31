@@ -42,7 +42,7 @@ export default class LobbySlotBannerItem extends cc.Component {
     }
 
     public remove(): void {
-        if (TSUtility.default?.isValid(this._remove)) {
+        if (TSUtility?.isValid(this._remove)) {
             this._remove!();
         }
     }
@@ -67,14 +67,14 @@ export default class LobbySlotBannerItem extends cc.Component {
     }
 
     protected setSlotBannerInfo(info: any, banner: SlotBannerItem): void {
-        if (TSUtility.default?.isValid(banner)) {
+        if (TSUtility?.isValid(banner)) {
             banner!.setLocation("lobby");
             banner!.initialize(info, this.type);
         }
     }
 
     protected isSlotArrayEqual(arr1: any[], arr2: any[]): boolean {
-        if (!TSUtility.default?.isValid(arr1) || !TSUtility.default?.isValid(arr2)) {
+        if (!TSUtility?.isValid(arr1) || !TSUtility?.isValid(arr2)) {
             return false;
         }
         
@@ -83,8 +83,8 @@ export default class LobbySlotBannerItem extends cc.Component {
         }
         
         for (let i = 0; i < arr1.length; i++) {
-            if (TSUtility.default?.isValid(arr1[i].strSlotID) && 
-                TSUtility.default?.isValid(arr2[i].strSlotID) && 
+            if (TSUtility?.isValid(arr1[i].strSlotID) && 
+                TSUtility?.isValid(arr2[i].strSlotID) && 
                 arr1[i].strSlotID !== arr2[i].strSlotID) {
                 return false;
             }

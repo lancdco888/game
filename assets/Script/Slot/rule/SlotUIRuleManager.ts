@@ -1,6 +1,6 @@
 const { ccclass, property } = cc._decorator;
 import StateComponent from "../StateComponent";
-import State from "../State";
+import State, { ConcurrentState, SequencialState, WaitSecondState } from "../State";
 import SlotGameRuleManager from "../../manager/SlotGameRuleManager";
 import SlotGameResultManager, { Cell } from "../../manager/SlotGameResultManager";
 import TSUtility from "../../global_utility/TSUtility";
@@ -222,7 +222,7 @@ export default class SlotUIRuleManager extends cc.Component {
         if (void 0 !== stateCfg.type) {
             switch (stateCfg.type) {
                 case "SequencialState":
-                    const seqState = new State.SequencialState();
+                    const seqState = new SequencialState();
                     for (let i = 0; i < stateCfg.info.length; ++i) {
                         const cfg = stateCfg.info[i];
                         const childState = this.getState(cfg.state);
@@ -230,7 +230,7 @@ export default class SlotUIRuleManager extends cc.Component {
                     }
                     return seqState;
                 case "ConcurrentState":
-                    const concurState = new State.ConcurrentState();
+                    const concurState = new ConcurrentState();
                     for (let i = 0; i < stateCfg.info.length; ++i) {
                         const cfg = stateCfg.info[i];
                         const childState = this.getState(cfg.state);
@@ -238,7 +238,7 @@ export default class SlotUIRuleManager extends cc.Component {
                     }
                     return concurState;
                 case "WaitSecondState":
-                    return new State.WaitSecondState(stateCfg.time);
+                    return new WaitSecondState(stateCfg.time);
                 default:
                     cc.error("SlotUIRuleManager getState: error unknown type ", stateCfg.type);
                     return null;
