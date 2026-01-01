@@ -7,7 +7,7 @@ import TSUtility from "./TSUtility";
  * 音效映射配置实体类 - 编辑器可视化配置【音效ID】与【独立音频剪辑】的对应关系
  * 对应原代码的匿名SoundInfo类，转正命名+补全完整序列化装饰器，编辑器属性面板可见可配置
  */
-@ccclass('SoundInfo')
+@ccclass
 export class SoundInfo {
     /** 音效唯一标识ID (如：btn_etc / pop_etc) */
     @property({ type: cc.String, tooltip: "音效唯一标识ID" })
@@ -24,7 +24,7 @@ export class SoundInfo {
  * 核心定位：当音频图集(AudioAtlasSetter)不可用时，作为兜底方案提供音效资源，兼容单文件音频加载模式
  * 核心能力：重复ID校验、有效性校验、懒加载初始化、统一的音频片段查询入口
  */
-@ccclass('CommonSoundSetter')
+@ccclass
 export default class CommonSoundSetter extends cc.Component {
     // ===================== 【序列化属性】与原代码完全一致 (编辑器拖拽配置，属性名无任何修改，配置生效) =====================
     /** 音效映射配置数组 - 在编辑器中添加/配置 音效ID 和 对应的音频剪辑 */

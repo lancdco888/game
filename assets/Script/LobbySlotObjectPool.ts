@@ -15,7 +15,7 @@ interface SizeCacheItem {
 }
 
 
-@ccclass
+@ccclass("LobbySlotObjectPool")
 export default class LobbySlotObjectPool extends cc.Component {
 
 // ===================== 私有成员变量 =====================
@@ -42,6 +42,7 @@ export default class LobbySlotObjectPool extends cc.Component {
         this._arrObjectPool = [];
     }
 
+    
     /**
      * 获取指定预制体的尺寸 (带缓存，性能优化)
      * @param prefabName 预制体名称

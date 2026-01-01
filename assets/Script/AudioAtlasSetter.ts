@@ -1,7 +1,7 @@
 const { ccclass, property } = cc._decorator;
 
 // 导入项目依赖文件 (路径与原项目完全一致，请勿修改，完美兼容)
-import SoundManager from "../SlotCommon/SoundManager";
+import SoundManager from "./manager/SoundManager";
 
 /**
  * 音效切片信息实体类 - 解析音频图集的单个音效切片配置(start/end时间)
@@ -46,7 +46,7 @@ export class FxPlayInfo {
  * 音效键值对序列化类 - 编辑器配置音效标识与音频切片名称的映射关系
  * 对应原代码的匿名AudioKeyValue类，转正命名+补全序列化装饰器
  */
-@ccclass('AudioKeyValue')
+@ccclass
 export class AudioKeyValue {
     @property()
     public clipKey: string = "";
@@ -61,7 +61,7 @@ export class AudioKeyValue {
  * 支持：单次音效切片播放(自动停止)、循环音效切片循环播放(无限重复切片)、播放状态管理、调度器自动管理
  * 底层依赖：调用 SoundManager 完成音频的实际播放，是音效体系的高性能播放源
  */
-@ccclass('AudioAtlasSetter')
+@ccclass
 export default class AudioAtlasSetter extends cc.Component {
     // ===================== 【序列化属性】与原代码完全一致 (编辑器拖拽赋值，属性名无任何修改) =====================
     @property

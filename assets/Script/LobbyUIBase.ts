@@ -33,14 +33,8 @@ export enum LobbyUIType {
     REWARD_CENTER = "RewardCenter"
 }
 
-@ccclass
+@ccclass("LobbyUIBase")
 export default class LobbyUIBase extends cc.Component {
-
-    @property(cc.Label)
-    label: cc.Label = null;
-
-    @property
-    text: string = 'hello';
     get eType(): LobbyUIType {
         return LobbyUIType.NONE;
     }
@@ -100,6 +94,7 @@ export default class LobbyUIBase extends cc.Component {
         if (!TSUtility.isValid(this.infoIntroduce)) {
             return;
         }
+        
         // ServiceInfoManager.STRING_CURRENT_INTRODUCE_NAME = "";
         // if (coinType == this.infoIntroduce.coinType && TSUtility.isValid(this.infoIntroduce.callBack)) {
         //     this.infoIntroduce.callBack();

@@ -14,26 +14,12 @@ import LobbyScene from "./LobbyScene";
 // import LobbyTooltip from "./LobbyTooltip/LobbyTooltip";
 // import LobbyTutorial from "./LobbyTutorial/LobbyTutorial";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
+import SceneInfo, { LobbySceneUIType } from "./SceneInfo";
 
 
 // ===================== 枚举定义 - 与原JS完全一致 不可修改 =====================
-export enum LobbySceneUIType {
-    NONE = 0,
-    LOBBY = 1,
-    SUITE = 2,
-    YOURS = 3,
-    COUNT = 4
-};
 
-// ===================== 内部类 SceneInfo - 原JS中的匿名类R 完整复刻 =====================
-@ccclass("SceneInfo")
-class SceneInfo extends cc.Component {
-    @property({ type: LobbySceneUIType })
-    public type: LobbySceneUIType = LobbySceneUIType.NONE;
 
-    @property({ type: [cc.Node] })
-    public arrActiveObject: cc.Node[] = [];
-}
 
 // ===================== 主类 大厅场景UI管理器 - 核心 =====================
 @ccclass

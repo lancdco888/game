@@ -25,15 +25,16 @@ String.prototype.format = function (...args: any[]) {
 
 // 实现SDefine.format 字符串格式化方法
 String.prototype.trimLeft = function () {
-    let str = this as string;
-    if (str.length === 0) return str;
-    let startIndex = 0;
-    // 循环判断字符串开头的字符是否是空白符，直到找到第一个非空白符
-    while (startIndex < str.length && this.isUnicodeSpace(str[startIndex])) {
-        startIndex++;
-    }
-    // 截取从第一个非空白符开始到末尾的字符串
-    return str.substring(startIndex);
+    // let str = this as string;
+    // if (str.length === 0) return str;
+    // let startIndex = 0;
+    // // 循环判断字符串开头的字符是否是空白符，直到找到第一个非空白符
+    // while (startIndex < str.length && this.isUnicodeSpace(str[startIndex])) {
+    //     startIndex++;
+    // }
+    // // 截取从第一个非空白符开始到末尾的字符串
+    // return str.substring(startIndex);
+    return this;
 };
 
 // 全局变量 - 原代码的空对象/键值对
@@ -161,7 +162,7 @@ const Utility = {
         target: cc.Node,
         component: string,
         handler: string,
-        customEventData: string = ""
+        customEventData: string|number = ""
     ): cc.Component.EventHandler {
         const eventHandler = new cc.Component.EventHandler();
         eventHandler.target = target;

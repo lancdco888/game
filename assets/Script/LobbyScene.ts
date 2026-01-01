@@ -33,9 +33,10 @@ import SlotTourneyManager from "./manager/SlotTourneyManager";
 import TimeBonusManager from "./manager/TimeBonusManager";
 //import LobbyUIDecoManager from "./LobbyDeco/LobbyUIDecoManager";
 import LobbyMoveManager from "./manager/LobbyMoveManager";
-import LobbySceneUI, { LobbySceneUIType } from "./LobbySceneUI";
+import LobbySceneUI from "./LobbySceneUI";
 //import LobbyTutorial from "./LobbyTutorial/LobbyTutorial";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
+import { LobbySceneUIType } from "./SceneInfo";
 //import LobbyUIStartPopupManager from "./StartPopup/LobbyUIStartPopupManager";
 //import LobbyUIStartPopup_ADFreeOffer from "./StartPopup/Popup/LobbyUIStartPopup_ADFreeOffer";
 

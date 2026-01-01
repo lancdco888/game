@@ -387,7 +387,7 @@ export default class PowerGemManager extends cc.Component {
     public getJokerPointUseCount(): number { return this.JOKER_POINT_USE_COUNT; }
 
     /** 判断当前游戏是否为宝石插槽游戏 */
-    public isPowerGemSlot(gameId: number): boolean {
+    public isPowerGemSlot(gameId: number|string): boolean {
         const promotion = this.getPromotion();
         if (!TSUtility.isValid(promotion)) return false;
         const slotIds = promotion.arrSlotID;

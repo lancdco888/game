@@ -93,6 +93,7 @@ export default class LobbySlotBannerItem extends cc.Component {
                 }
             }
         }
+        
         return true;
     }
 }

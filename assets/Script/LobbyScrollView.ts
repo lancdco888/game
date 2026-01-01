@@ -8,10 +8,10 @@ import UISwipe from "./UISwipe";
 import UserInfo from "./User/UserInfo";
 import MessageRoutingManager from "./message/MessageRoutingManager";
 import LobbyScene from "./LobbyScene";
-import LobbySceneUI, { LobbySceneUIType } from "./LobbySceneUI";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import LobbyUI_SlotScrollView from "./LobbyUI_SlotScrollView";
 import LobbySlotBannerInfo, { SlotBannerType } from "./LobbySlotBannerInfo";
+import { LobbySceneUIType } from "./SceneInfo";
 
 const { ccclass, property } = cc._decorator;
 
@@ -19,7 +19,7 @@ const { ccclass, property } = cc._decorator;
  * 大厅核心横向滚动容器管理类
  * 负责大厅SLOT Banner的渲染、滚动、定位、滑动切换、消息响应等核心逻辑
  */
-@ccclass
+@ccclass()
 export default class LobbyScrollView extends cc.Component {
     // ===== 私有核心成员变量 =====
     private _scrollView: UIScrollViewHorizontal = null;
@@ -47,7 +47,7 @@ export default class LobbyScrollView extends cc.Component {
         return !TSUtility.isValid(this._scrollView) ? 0 : this._scrollView.offset.x;
     }
 
-    // ===== Cocos生命周期 - 组件加载 =====
+    
     onLoad(): void {
         this._scrollView = this.getComponent(UIScrollViewHorizontal);
         

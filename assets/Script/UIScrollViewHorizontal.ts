@@ -9,7 +9,7 @@ import UIScrollView from "./UIScrollView";
  * 封装所有横向滚动专属逻辑：横向布局算法、分页计算、鼠标滚轮横向滚动、横向缓动滚动、左右边界判断
  * 核心特性：子项对象池复用、可视区域裁剪、动态尺寸适配、平滑滚动动画、分页跳转，无业务耦合的通用组件
  */
-@ccclass('UIScrollViewHorizontal')
+@ccclass
 export default class UIScrollViewHorizontal extends UIScrollView {
     // ===== 私有核心成员变量 (原代码初始化值+类型 1:1完整保留 顺序不变) =====
     private _isAtLeft: boolean = true;          // 是否滚动到最左侧边界

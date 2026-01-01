@@ -1,7 +1,7 @@
 const { ccclass } = cc._decorator;
 import State from "./Slot/State";
 
-@ccclass('SymbolAnimationModule_Base')
+@ccclass
 export default class SymbolAnimationModule_Base extends cc.Component {
 
     /** 播放符号动画 - 基类空实现 子类重写 */

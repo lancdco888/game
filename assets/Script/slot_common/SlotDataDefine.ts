@@ -96,7 +96,7 @@ export class SlotJackpotInfo {
         return null == t ? (cc.warn("not found jackpot key ", e, " ", this._id), 0) : t.increaseRate;
     }
 
-    public getJackpotForDisplayMoney(e: string): number {
+    public getJackpotForDisplayMoney(e: string|number): number {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getJackpotForDisplay() : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 
@@ -104,7 +104,7 @@ export class SlotJackpotInfo {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getBunningState() : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 
-    public getJackpotForLobbySlot(e: string): number {
+    public getJackpotForLobbySlot(e: string|number): number {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getJackpotForLobbySlot() : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 
@@ -139,7 +139,7 @@ export class SlotJackpotInfo {
         this._mapReserveMoney[e].setNowJackpot(t, n, o, i, l, r, s, c, u);
     }
 
-    public getJackpotMoneyInfo(e: string): SlotJackpotMoney | undefined {
+    public getJackpotMoneyInfo(e: string|number): SlotJackpotMoney | undefined {
         return this._mapReserveMoney[e];
     }
 }

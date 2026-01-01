@@ -5,7 +5,7 @@ const {ccclass, property} = cc._decorator;
  * 作用：绑定【适配Key】+【需要适配的节点数组】+【目标缩放值】+【目标Y轴位移值】
  * 在编辑器中可视化配置，一个Key对应一组节点的适配规则
  */
-@ccclass('AutoScalingInfo')
+@ccclass
 export class AutoScalingInfo {
     /** 适配分组唯一标识Key */
     @property({ displayName: "适配Key", tooltip: "分组唯一标识，通过该Key获取适配因子" })

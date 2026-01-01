@@ -45,6 +45,7 @@ export var SlotBannerDecoType;
 export default class LobbySlotBannerInfo {
     _prefabSize = cc.size(0, 0);
     _data = null;
+    _strSlotID:string = ""
 
     static getSlotBannerInfo(e) {
         switch (e) {
@@ -109,6 +110,14 @@ export default class LobbySlotBannerInfo {
 
     set prefabSize(e) {
         this._prefabSize = e;
+    }
+
+    get strSlotID(){
+        return this._strSlotID;
+    }
+
+    set strSlotID(id:string){
+        this._strSlotID = id;
     }
 
     getPrefabSize() {

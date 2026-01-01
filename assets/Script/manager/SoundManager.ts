@@ -11,10 +11,14 @@ const { ccclass, property } = cc._decorator;
  * 读取本地存储的音效配置，自动管理音频源池，防止内存泄漏，原生/浏览器环境兼容处理
  * 项目中所有音效调用均通过该管理器，是音频体系的唯一入口
  */
-@ccclass('SoundManager')
+@ccclass
 export default class SoundManager extends cc.Component {
     // ===================== 【单例核心配置】与原代码完全一致 (调用方式不变，不可修改) =====================
     private static _instance: SoundManager = null;
+
+    constructor(){
+        super()
+    }
 
     /**
      * 获取单例实例 - 项目中唯一调用方式，与原代码一致

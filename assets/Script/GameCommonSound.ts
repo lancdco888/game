@@ -3,7 +3,7 @@ const { ccclass, property } = cc._decorator;
 // 导入项目所有依赖文件 (路径与原项目完全一致，请勿修改，完美兼容所有依赖)
 import CommonSoundSetter from "./global_utility/CommonSoundSetter";
 import AudioAtlasSetter from "./AudioAtlasSetter";
-import SoundManager from "./SoundManager";
+import SoundManager from "./manager/SoundManager";
 
 /**
  * 全局公共音效顶层封装类 - 单例模式 (音效体系门面类，项目唯一音效调用入口)

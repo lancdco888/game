@@ -1,15 +1,16 @@
 // HeroTooltipPopup.ts
 const { ccclass, property } = cc._decorator;
-import FireHoseSender from "../FireHoseSender";
+import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import DialogBase, { DialogState } from "../DialogBase";
-import HeroInfoUI from "../Popup/Hero/HeroInfoUI";
-import HeroSpineController from "../Popup/Hero/HeroSpineController";
+import HeroInfoUI, { HeroInfoUIType } from "../Hero/HeroInfoUI";
+import HeroSpineController, { HeroSpineState } from "../Slot/HeroSpineController";
 import PopupManager from "../manager/PopupManager";
 import SDefine from "../global_utility/SDefine";
-import CustomRichText from "../../slot_common/Script/UI/CustomRichText";
+import CustomRichText from "../slot_common/CustomRichText";
 import UserInfo from "../User/UserInfo";
 import TSUtility from "../global_utility/TSUtility";
-import UnlockContentsManager from "../manager/UnlockContentsManager";
+import UnlockContentsManager, { UnlockContentsType } from "../manager/UnlockContentsManager";
+import { Utility } from "../global_utility/Utility";
 
 /**
  * 箭头方向枚举 - 英雄提示弹窗的指向箭头类型
@@ -31,8 +32,8 @@ export class HT_HeroInfo {
     public offsetY: number = 0;
     public heroId: string = "";
     public heroRank: number = 0;
-    public iconType: HeroInfoUI.HeroInfoUIType = HeroInfoUI.HeroInfoUIType.Small;
-    public heroState: HeroSpineController.HeroSpineState = HeroSpineController.HeroSpineState.IDLE;
+    public iconType: HeroInfoUIType = HeroInfoUIType.Small;
+    public heroState: HeroSpineState = HeroSpineState.IDLE;
 
     public static parseObj(obj: any): HT_HeroInfo {
         const info = new HT_HeroInfo();
@@ -231,8 +232,8 @@ export default class HeroTooltipPopup extends DialogBase {
     private _sorceLocalPos: cc.Vec2 = cc.Vec2.ZERO;
     private _heroId: string = "";
     private _heroRank: number = 0;
-    private _heroIconType: HeroInfoUI.HeroInfoUIType = HeroInfoUI.HeroInfoUIType.Small;
-	private _heroState: HeroSpineController.HeroSpineState = HeroSpineController.HeroSpineState.IDLE;
+    private _heroIconType: HeroInfoUIType = HeroInfoUIType.Small;
+	private _heroState: HeroSpineState = HeroSpineState.IDLE;
     private _startAnis: HT_StartAniInfo[] = [];
     private _haveParent: boolean = false;
     //#endregion
@@ -247,7 +248,7 @@ export default class HeroTooltipPopup extends DialogBase {
         cc.loader.loadRes(resPath, (err, prefab) => {
             if (err) {
                 const error = new Error(`cc.loader.loadRes fail ${resPath}: ${JSON.stringify(err)}`);
-                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FireHoseSender.FHLogType.Exception, error));
+                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
                 callback && callback(error, null);
                 return;
             }
@@ -296,7 +297,7 @@ export default class HeroTooltipPopup extends DialogBase {
             this._openWithParent(null, parentNode);
             const worldPos = PopupManager.Instance().node.convertToWorldSpaceAR(cc.Vec2.ZERO);
             const localPos = this.node.parent!.convertToNodeSpaceAR(worldPos);
-            this.node.position = localPos;
+            this.node.position = TSUtility.vec2ToVec3(localPos);
         }
         return this;
     }
@@ -356,11 +357,11 @@ export default class HeroTooltipPopup extends DialogBase {
 
         // 英雄解锁等级判断 - 等级不足则替换为占位英雄
         if (makingInfo.heroInfo.heroId !== "") {
-            const unlockLevel = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.HERO);
-            if (UserInfo.instance().getUserLevelInfo().level < unlockLevel) {
-                makingInfo.heroInfo.heroId = "manager_july";
-                makingInfo.heroInfo.heroRank = 0;
-            }
+            // const unlockLevel = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.HERO);
+            // if (UserInfo.instance().getUserLevelInfo().level < unlockLevel) {
+            //     makingInfo.heroInfo.heroId = "manager_july";
+            //     makingInfo.heroInfo.heroRank = 0;
+            // }
             this.setHeroInfo(makingInfo.heroInfo.heroId, makingInfo.heroInfo.heroRank, makingInfo.heroInfo.iconType, makingInfo.heroInfo.heroState);
         }
 
@@ -431,7 +432,7 @@ export default class HeroTooltipPopup extends DialogBase {
      * @param iconType 展示尺寸
      * @param state 骨骼动画状态
      */
-    setHeroInfo(heroId: string, heroRank: number, iconType: HeroInfoUI.HeroInfoUIType, state: HeroSpineController.HeroSpineState): void {
+    setHeroInfo(heroId: string, heroRank: number, iconType: HeroInfoUIType, state: HeroSpineState): void {
         this._heroId = heroId;
         this._heroRank = heroRank;
         this._heroIconType = iconType;
@@ -439,12 +440,12 @@ export default class HeroTooltipPopup extends DialogBase {
         this._heroInfoUI = null;
 
         switch (iconType) {
-            case HeroInfoUI.HeroInfoUIType.Small:
+            case HeroInfoUIType.Small:
                 this.smallHeroUI.node.active = true;
                 this.middleHeroUI.node.active = false;
                 this._heroInfoUI = this.smallHeroUI;
                 break;
-            case HeroInfoUI.HeroInfoUIType.Middle:
+            case HeroInfoUIType.Middle:
                 this.smallHeroUI.node.active = false;
                 this.middleHeroUI.node.active = true;
                 this._heroInfoUI = this.middleHeroUI;
@@ -566,7 +567,7 @@ export default class HeroTooltipPopup extends DialogBase {
      * ✅【原代码笔误保留】设置文本水平对齐方式 - 请勿修正方法名！
      * @param align 对齐方式
      */
-    setInfoTextHorixonAlign(align: cc.Label.HorizontalAlign): void {
+    setInfoTextHorixonAlign(align: cc.macro.TextAlignment): void {
         this.infoText.horizontalAlign = align;
     }
 
@@ -948,7 +949,7 @@ export default class HeroTooltipPopup extends DialogBase {
     }
 
     public static getStarAlbumPopupText_HeroLock(): string {
-        const unlockLv = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsManager.UnlockContentsType.HERO);
+        const unlockLv = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsType.HERO);
         return "Reach Level %s to open Hero Card Packs.".format(unlockLv.toString());
     }
 
@@ -969,7 +970,7 @@ export default class HeroTooltipPopup extends DialogBase {
     }
 
     public static getTourneyInfoText(): string {
-        if (Utility.isFacebookInstant() === 1 && SDefine.FBInstant_Tournament_Use === 1) {
+        if (Utility.isFacebookInstant()&& SDefine.FBInstant_Tournament_Use) {
             return "Slot Tourney is held every 16mins. There are 3 different divisions.\nUpper divisions have bigger prize pools and higher minimum bet requirements.\nTotal winnings gained during Tourney determine the ranking and prizes.\nThe prizes are available for the top 10% players for each Tourney.\n\nDon't forget about the extra way to have fun.\nShare your Slot Tourney result and compete for the top score\nwith your Facebook friends.";
         } else {
             return "Slot Tourney is held every 16mins. There are 3 different divisions.\nUpper divisions have bigger prize pools and higher minimum bet requirements.\nTotal winnings gained during Tourney determine the ranking and prizes.\nThe prizes are available for the top 10% players for each Tourney.";
@@ -978,23 +979,23 @@ export default class HeroTooltipPopup extends DialogBase {
 
     public static getIngameNewHeroText(): string {
         let idx = 0;
-        const heroId = UserInfo.instance().getUserHeroInfo().activeHeroID;
-        switch (heroId) {
-            case "hero_cleopatra": idx = 0; break;
-            case "hero_poseidon": idx = 1; break;
-            case "hero_perkyturkey": idx = 2; break;
-            case "hero_lenny": idx = 3; break;
-            case "hero_sunnybunny": idx = 4; break;
-            case "hero_cactus": idx = 5; break;
-            case "hero_eagleeddy": idx = 6; break;
-            case "hero_cpthook": idx = 7; break;
-            case "hero_aurora": idx = 8; break;
-            case "hero_genie": idx = 9; break;
-            case "hero_raine": idx = 10; break;
-            case "hero_zelda": idx = 11; break;
-            case "hero_ragnar": idx = 12; break;
-            case "hero_santa": idx = 13; break;
-        }
+        // const heroId = UserInfo.instance().getUserHeroInfo().activeHeroID;
+        // switch (heroId) {
+        //     case "hero_cleopatra": idx = 0; break;
+        //     case "hero_poseidon": idx = 1; break;
+        //     case "hero_perkyturkey": idx = 2; break;
+        //     case "hero_lenny": idx = 3; break;
+        //     case "hero_sunnybunny": idx = 4; break;
+        //     case "hero_cactus": idx = 5; break;
+        //     case "hero_eagleeddy": idx = 6; break;
+        //     case "hero_cpthook": idx = 7; break;
+        //     case "hero_aurora": idx = 8; break;
+        //     case "hero_genie": idx = 9; break;
+        //     case "hero_raine": idx = 10; break;
+        //     case "hero_zelda": idx = 11; break;
+        //     case "hero_ragnar": idx = 12; break;
+        //     case "hero_santa": idx = 13; break;
+        // }
         const texts = [
             "<color=#FFFF00><size=35>GREETINGS!</size></color>\nI SHALL HELP YOU WITH WINNING MORE STAR CARDS.",
             "<color=#FFFF00><size=35>MORTAL!</size></color>\nI HAVE COME TO BLESS YOUR DAILY BLITZ MISSIONS.",

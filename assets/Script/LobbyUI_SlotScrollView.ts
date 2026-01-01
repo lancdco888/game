@@ -1,20 +1,21 @@
 import AutoScalingAdjuster from "./AutoScalingAdjuster";
-import { LobbySceneUIType } from "./LobbySceneUI";
 import LobbyScrollView from "./LobbyScrollView";
 import { SlotBannerType } from "./LobbySlotBannerInfo";
 import LobbySlotObjectPool from "./LobbySlotObjectPool";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
+import { LobbySceneUIType } from "./SceneInfo";
 import ServiceInfoManager from "./ServiceInfoManager";
 import SlotBannerInfo from "./SlotBannerInfo";
+import UISliderScrollBar from "./UISliderScrollBar";
 import UserInfo from "./User/UserInfo";
 import AsyncHelper from "./global_utility/AsyncHelper";
 import SDefine from "./global_utility/SDefine";
 import TSUtility from "./global_utility/TSUtility";
-import ServiceSlotDataManager, { ServiceSlotData } from "./manager/ServiceSlotDataManager";
+import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
 
 const {ccclass, property} = cc._decorator;
 
-@ccclass
+@ccclass("LobbyUI_SlotScrollView")
 export default class LobbyUI_SlotScrollView extends LobbyUIBase {
 
     @property(cc.Node)
@@ -23,15 +24,15 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     @property(cc.Node)
     nodeMoveB: cc.Node = null;
 
-    @property
-    text: string = 'hello';
+    @property(UISliderScrollBar)
+    scrollBar:UISliderScrollBar = null
+
 
     MOVE_TARGET_DEFAULT_Y = 500
     MOVE_OVER_Y = 15
     SCALE_ADJUSTER_SCROLL_NAME = "ScrollView"
-    scrollBar = null
     scrollMasking = null
-    _sceneType = LobbySceneUIType.NONE
+    _sceneType:LobbySceneUIType = LobbySceneUIType.NONE
     _arrLobbyScrollView = []
     _scaleAdjuster = null
     _nodeScrollViewRoot = null
