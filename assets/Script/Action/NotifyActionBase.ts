@@ -16,7 +16,7 @@ export default class NotifyActionBase extends cc.Component {
     protected _isDone: boolean = true;
 
     /** 获取当前通知类型 默认NONE，子类重写实现 */
-    public getType(): number {
+    public getType(): number|string {
         return NotifyType.NONE;
     }
 
@@ -80,12 +80,12 @@ export default class NotifyActionBase extends cc.Component {
 
     /** 判断当前是否是大厅场景 */
     public isLobbyScene(): number {
-        return UserInfo.default.instance().getCurrentSceneMode() == SDefine.Lobby ? 1 : 0;
+        return UserInfo.instance().getCurrentSceneMode() == SDefine.Lobby ? 1 : 0;
     }
 
     /** 判断当前是否是SLOT游戏场景 */
     public isSlotScene(): number {
-        return UserInfo.default.instance().getCurrentSceneMode() == SDefine.Slot ? 1 : 0;
+        return UserInfo.instance().getCurrentSceneMode() == SDefine.Slot ? 1 : 0;
     }
 
     /** 判断【有效】的大厅场景：是大厅+大厅UI实例有效 */

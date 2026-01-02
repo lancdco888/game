@@ -35,7 +35,7 @@ export default class DialogBase extends cc.Component {
     public rootNode: cc.Node = null;            // 弹窗根节点 (承载弹窗内容)
 
     // ===================== 【成员变量】补全TS类型注解，原默认值完全保留，私有成员修饰 =====================
-    private state: DialogState = DialogState.Init;          // 当前弹窗状态
+    public state: DialogState = DialogState.Init;          // 当前弹窗状态
     private closeCallback: Function | null = null;          // 弹窗关闭后的回调函数
     public isBlockingPopup: boolean = true;                 // 是否为阻塞型弹窗 (默认true，阻止下层交互)
     public isBlurBackScreen: boolean = false;               // 是否开启背景模糊效果 (默认false)

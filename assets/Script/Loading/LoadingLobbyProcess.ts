@@ -14,10 +14,10 @@ import ClubServerInfo, { ClubInfo } from "../Popup/Club/ClubServerInfo";
 // 导入所有子状态类
 import L_LoadLauncherToLobbyState from "../State/L_LoadLauncherToLobbyState";
 import L_LobbyInitState from "../State/L_LobbyInitState";
-import L_LoadSlotToLobbyState from "./State/L_LoadSlotToLobbyState";
-import L_LoadLobbyToLobbyState from "./State/L_LoadLobbyToLobbyState";
-import L_RefreshUserInfoState from "./State/L_RefreshUserInfoState";
-import L_RefreshJackpotState from "./State/L_RefreshJackpotState";
+import L_LoadSlotToLobbyState from "../State/L_LoadSlotToLobbyState";
+import L_LoadLobbyToLobbyState from "../State/L_LoadLobbyToLobbyState";
+import L_RefreshUserInfoState from "../State/L_RefreshUserInfoState";
+import L_RefreshJackpotState from "../State/L_RefreshJackpotState";
 import L_RefreshHeroInfoState from "./State/L_RefreshHeroInfoState";
 
 // 导入Launcher层状态类

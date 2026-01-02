@@ -1,11 +1,11 @@
 const { ccclass } = cc._decorator;
 
 import TSUtility from "../global_utility/TSUtility";
-import NotifyAction_CasinoJackpotWin from "./Action/NotifyAction_CasinoJackpotWin";
-import NotifyAction_ClubChat from "./Action/NotifyAction_ClubChat";
-import NotifyAction_Spin2Win from "./Action/NotifyAction_Spin2Win";
-import NotifyAction_SuiteLeagueResult from "./Action/NotifyAction_SuiteLeagueResult";
-import NotifyAction_SupersizeIt from "./Action/NotifyAction_SupersizeIt";
+import NotifyAction_CasinoJackpotWin from "../Action/NotifyAction_CasinoJackpotWin";
+import NotifyAction_ClubChat from "../Action/NotifyAction_ClubChat";
+import NotifyAction_Spin2Win from "../Action/NotifyAction_Spin2Win";
+import NotifyAction_SuiteLeagueResult from "../Action/NotifyAction_SuiteLeagueResult";
+import NotifyAction_SupersizeIt from "../Action/NotifyAction_SupersizeIt";
 import {NotifyInfo} from "./NotifyInfo";
 
 

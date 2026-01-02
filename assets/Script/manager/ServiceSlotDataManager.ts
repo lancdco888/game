@@ -79,7 +79,7 @@ export default class ServiceSlotDataManager extends cc.Component {
         return e in this._data;
     }
 
-    public getDataBySlotID(e: string): any {
+    public getDataBySlotID(e: string|number): any {
         return this._data[e];
     }
 
@@ -93,7 +93,7 @@ export default class ServiceSlotDataManager extends cc.Component {
         return t ? t.name : "";
     }
 
-    public getResourceDataBySlotID(e: string): SlotResourceData | null {
+    public getResourceDataBySlotID(e: string|number): SlotResourceData | null {
         const t = this.getDataBySlotID(e);
         return t ? t.resource : null;
     }
