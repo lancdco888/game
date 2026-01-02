@@ -37,11 +37,11 @@ export default class NotifyManager extends cc.Component {
 
     /** 初始化 注册所有通知Action */
     public initialize(): void {
-        this._arrNotifyAction.push(new NotifyAction_CasinoJackpotWin.default);
-        this._arrNotifyAction.push(new NotifyAction_SuiteLeagueResult.default);
-        this._arrNotifyAction.push(new NotifyAction_SupersizeIt.default);
-        this._arrNotifyAction.push(new NotifyAction_Spin2Win.default);
-        this._arrNotifyAction.push(new NotifyAction_ClubChat.default);
+        this._arrNotifyAction.push(new NotifyAction_CasinoJackpotWin);
+        this._arrNotifyAction.push(new NotifyAction_SuiteLeagueResult);
+        this._arrNotifyAction.push(new NotifyAction_SupersizeIt);
+        this._arrNotifyAction.push(new NotifyAction_Spin2Win);
+        this._arrNotifyAction.push(new NotifyAction_ClubChat);
     }
 
     /** 根据通知类型获取对应的处理Action */
@@ -97,7 +97,7 @@ export class PingRes {
 
         const pingRes = new PingRes();
         for (let i = 0; i < data.notiList.length; ++i) {
-            const info = new NotifyInfo.default();
+            const info = new NotifyInfo();
             if (TSUtility.isValid(info.parseObj(data.notiList[i]))) {
                 pingRes._arrNotify.push(info);
             }

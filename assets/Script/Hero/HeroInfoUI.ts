@@ -81,7 +81,7 @@ export default class HeroInfoUI extends cc.Component {
 
     // ===================== 私有成员属性 (补全强类型注解，初始值与原JS完全一致) =====================
     private heroController: HeroSpineController | any = null;
-    private heroId: string = "";
+    public heroId: string = "";
     private spineLoopState: HeroSpineLoopState = HeroSpineLoopState.LOOP;
     private _loadingDelayProgress: DelayProgress | any = null;
     private _isDimmedIdle: boolean = false;

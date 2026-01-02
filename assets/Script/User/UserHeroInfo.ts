@@ -106,7 +106,7 @@ export default class UserHeroInfo {
     }
 
     /** 获取指定英雄的详细信息 */
-    public getHeroInfo(heroId: string): HeroInfo | null {
+    public getHeroInfo(heroId: string|number): HeroInfo | null {
         for (let i = 0; i < this.heroes.length; i++) {
             if (this.heroes[i].id === heroId) {
                 return this.heroes[i];

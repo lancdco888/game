@@ -2,8 +2,8 @@ const { ccclass, property } = cc._decorator;
 
 import PayCode from "../../Config/PayCode";
 import SDefine from "../../global_utility/SDefine";
-import MembersClassBoostUpManager from "../../../ServiceInfo/MembersClassBoostUpManager";
-import MembersClassBoostUpNormalManager from "../../../ServiceInfo/MembersClassBoostUpNormalManager";
+import MembersClassBoostUpManager from "../../ServiceInfo/MembersClassBoostUpManager";
+import MembersClassBoostUpNormalManager from "../../ServiceInfo/MembersClassBoostUpNormalManager";
 import UserInfo from "../../User/UserInfo";
 import TSUtility from "../../global_utility/TSUtility";
 import ServerStorageManager, { StorageKeyType } from "../../manager/ServerStorageManager";
@@ -85,24 +85,24 @@ export default class DailyStampManager extends cc.Component {
     // ====================== 初始化方法 ======================
     public initialize(): void {
         // 初始化连续签到支付码配置
-        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.default.CoinPayCodeDailyStampV2ConsecutiveReward);
-        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.default.CardPackPayCodeDailyStampV2ConsecutiveReward);
-        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.default.CoinPayCodeDailyStampV2PremiumReward);
-        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.default.CardPackPayCodeDailyStampV2PremiumReward);
+        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.CoinPayCodeDailyStampV2ConsecutiveReward);
+        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.CardPackPayCodeDailyStampV2ConsecutiveReward);
+        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.CoinPayCodeDailyStampV2PremiumReward);
+        this.DAILY_STAMP_CONSECUTIVE_PAY_CODE.push(PayCode.CardPackPayCodeDailyStampV2PremiumReward);
         
         // 初始化累计签到支付码配置
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.CoinPayCodeDailyStampV2AccumulatedReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedFlipCoinReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedEmoji777Reward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedLevelUpBoosterReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedStarlightShopCoinReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.CoinPayCodeDailyStampV2AccumulatedFullPiggyBankCoinReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedMPassReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedSuitePassReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.CoinPayCodeDailyStampV2AccumulatedPassReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedBingoCardReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedJokerCardReward);
-        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.default.ItemPayCodeDailyStampV2AccumulatedMainShopCouponReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.CoinPayCodeDailyStampV2AccumulatedReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedFlipCoinReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedEmoji777Reward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedLevelUpBoosterReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedStarlightShopCoinReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.CoinPayCodeDailyStampV2AccumulatedFullPiggyBankCoinReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedMPassReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedSuitePassReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.CoinPayCodeDailyStampV2AccumulatedPassReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedBingoCardReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedJokerCardReward);
+        this.DAILY_STAMP_ACCUMULATED_PAY_CODE.push(PayCode.ItemPayCodeDailyStampV2AccumulatedMainShopCouponReward);
     }
 
     // ====================== 对外暴露核心方法 【原逻辑完全保留】 ======================
@@ -114,7 +114,7 @@ export default class DailyStampManager extends cc.Component {
     }
 
     public setSameDayUnProcessedInfo(data: any): void {
-        if (TSUtility.default.isValid(data) !== 0) {
+        if (TSUtility.isValid(data)) {
             this._unProcessedChangeResult = data;
             this._numConsecutiveDay = this._numConsecutiveDay - 1;
             if (this._numConsecutiveDay <= 0) {
@@ -132,7 +132,7 @@ export default class DailyStampManager extends cc.Component {
     }
 
     public isSameDayUnProcessed(): boolean {
-        return TSUtility.default.isValid(this._unProcessedChangeResult) === 1;
+        return TSUtility.isValid(this._unProcessedChangeResult);
     }
 
     public isNextDayUnProcessed(): boolean {
@@ -153,7 +153,7 @@ export default class DailyStampManager extends cc.Component {
 
     public getRewardCoinValueByDay(day: number): number {
         const reward = this.DAILY_STAMP_REWARD_DATA.find(item => item.key === day).value;
-        return TSUtility.default.isValid(reward) === 0 ? 0 : (TSUtility.default.isValid(reward.Coin) === 0 ? 0 : reward.Coin);
+        return !TSUtility.isValid(reward) ? 0 : (!TSUtility.isValid(reward.Coin) ? 0 : reward.Coin);
     }
 
     public getPurchaserRewardData(): Array<any> {
@@ -166,7 +166,7 @@ export default class DailyStampManager extends cc.Component {
 
     public getPurchaserRewardCoinValueByDay(day: number): number {
         const reward = this.DAILY_STAMP_PURCHASER_REWARD_DATA.find(item => item.key === day).value;
-        return TSUtility.default.isValid(reward) === 0 ? 0 : (TSUtility.default.isValid(reward.Coin) === 0 ? 0 : reward.Coin);
+        return !TSUtility.isValid(reward) ? 0 : (!TSUtility.isValid(reward.Coin) ? 0 : reward.Coin);
     }
 
     public getAccumulatedDayRewardData(): Array<any> {
@@ -175,12 +175,12 @@ export default class DailyStampManager extends cc.Component {
 
     public getAccumulatedDayRewardDataByDay(day: number): any {
         const reward = this.DAILY_STAMP_ACCUMULATED_REWARD_DATA.find(item => item.key === day);
-        return TSUtility.default.isValid(reward) === 1 ? reward.value : null;
+        return TSUtility.isValid(reward) ? reward.value : null;
     }
 
     public getAccumulatedDayRewardCoinValueByDay(day: number): number {
         const reward = this.DAILY_STAMP_ACCUMULATED_REWARD_DATA.find(item => item.key === day).value;
-        return TSUtility.default.isValid(reward) === 0 ? 0 : (TSUtility.default.isValid(reward.Coin) === 0 ? 0 : reward.Coin);
+        return !TSUtility.isValid(reward) ? 0 : (!TSUtility.isValid(reward.Coin) ? 0 : reward.Coin);
     }
 
     public getAccumulatedDayGageData(day: number): number {
@@ -199,15 +199,15 @@ export default class DailyStampManager extends cc.Component {
     }
 
     public isFirstOpen(): boolean {
-        return !ServerStorageManager.default.getAsBoolean(StorageKeyType.DAILY_STAMP_FIRST_OPEN);
+        return !ServerStorageManager.getAsBoolean(StorageKeyType.DAILY_STAMP_FIRST_OPEN);
     }
 
     public setFirstOpen(): void {
-        ServerStorageManager.default.save(StorageKeyType.DAILY_STAMP_FIRST_OPEN, true);
+        ServerStorageManager.save(StorageKeyType.DAILY_STAMP_FIRST_OPEN, true);
     }
 
     public setPurchaseOpenTime(): void {
-        ServerStorageManager.default.saveCurrentServerTime(StorageKeyType.DAILY_STAMP_PURCHASE_TIME);
+        ServerStorageManager.saveCurrentServerTime(StorageKeyType.DAILY_STAMP_PURCHASE_TIME);
     }
 
     public getDailyStampAccumulatedDay(): number {
@@ -227,24 +227,24 @@ export default class DailyStampManager extends cc.Component {
     }
 
     public getUserVIPLevel(): number {
-        if (MembersClassBoostUpManager.default.instance().isRunningMembersBoostUpProcess() === 1) {
-            return MembersClassBoostUpManager.default.instance().getBoostedMembersClass();
+        if (MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess() === 1) {
+            return MembersClassBoostUpManager.instance().getBoostedMembersClass();
         }
-        if (MembersClassBoostUpNormalManager.default.instance().isRunningMembersBoostUpExpandProcess() === 1) {
-            return MembersClassBoostUpNormalManager.default.instance().getBoostedMembersClass();
+        if (MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess() === 1) {
+            return MembersClassBoostUpNormalManager.instance().getBoostedMembersClass();
         }
-        const vipInfo = UserInfo.default.instance().getUserVipInfo();
-        return TSUtility.default.isValid(vipInfo) === 0 ? 0 : vipInfo.level;
+        const vipInfo = UserInfo.instance().getUserVipInfo();
+        return !TSUtility.isValid(vipInfo) ? 0 : vipInfo.level;
     }
 
     public getDailyStampProductItem(): any {
-        const item = UserInfo.default.instance().getItemInventory().getItemsByItemId(SDefine.default.I_DAILY_STAMP_PREMIUM);
-        if (TSUtility.default.isValid(item) === 0 || item.length <= 0) return null;
+        const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_DAILY_STAMP_PREMIUM);
+        if (!TSUtility.isValid(item) || item.length <= 0) return null;
         
         const productItem = item[0];
-        if (TSUtility.default.isValid(productItem) === 0) return null;
+        if (!TSUtility.isValid(productItem)) return null;
 
-        const remainDay = (productItem.expireDate - TSUtility.default.getServerBaseNowUnixTime()) / 60 / 60 / 24;
+        const remainDay = (productItem.expireDate - TSUtility.getServerBaseNowUnixTime()) / 60 / 60 / 24;
         const addDay = remainDay % 1 > 0 ? 1 : 0;
         let totalDay = Math.floor(remainDay) + addDay;
         if (totalDay < 0) totalDay = 0;
@@ -256,15 +256,15 @@ export default class DailyStampManager extends cc.Component {
     }
 
     public isProductPurchaser(): boolean {
-        return TSUtility.default.isValid(this._purchaseChangeResult) === 1 || this.getDailyStampProductItem() != null;
+        return TSUtility.isValid(this._purchaseChangeResult) || this.getDailyStampProductItem() != null;
     }
 
     public getPurchaseRemainCount(): number {
-        if (TSUtility.default.isValid(this._purchaseChangeResult) === 1 || this.isSameDayUnProcessed() || this.isNextDayUnProcessed()) {
+        if (TSUtility.isValid(this._purchaseChangeResult) || this.isSameDayUnProcessed() || this.isNextDayUnProcessed()) {
             return 7;
         }
         const item = this.getDailyStampProductItem();
-        return TSUtility.default.isValid(item) === 1 ? item.curCnt : 0;
+        return TSUtility.isValid(item) ? item.curCnt : 0;
     }
 
     public getPurchaseReceivedCount(): number {
@@ -298,15 +298,15 @@ export default class DailyStampManager extends cc.Component {
     }
 
     public isPurchaseProduct(): boolean {
-        return SDefine.default.FB_Instant_iOS_Shop_Flag !== 1 && this.isProductPurchaser() !== 1 && this.isNextPurchaseTime() !== 0;
+        return !SDefine.FB_Instant_iOS_Shop_Flag && !this.isProductPurchaser() && this.isNextPurchaseTime();
     }
 
     public isNextPurchaseTime(): boolean {
-        return !(TSUtility.default.getServerBaseNowUnixTime() < ServerStorageManager.default.getAsNumber(StorageKeyType.NEXT_DAILY_STAMP_PURCHASE_TIME));
+        return !(TSUtility.getServerBaseNowUnixTime() < ServerStorageManager.getAsNumber(StorageKeyType.NEXT_DAILY_STAMP_PURCHASE_TIME));
     }
 
     public isNextStampReward(): boolean {
-        return !(this.getDailyStampNextReceivedTime() - TSUtility.default.getServerBaseNowUnixTime() > 0);
+        return !(this.getDailyStampNextReceivedTime() - TSUtility.getServerBaseNowUnixTime() > 0);
     }
 
     public isGetRewardInRewardCenter(): void {}

@@ -20,7 +20,7 @@ export default class L_LoadLobbyToLobbyState extends State {
      * @param zoneId 目标区服ID
      * @param zoneName 目标区服名称
      */
-    constructor(zoneId: number, zoneName: string) {
+    constructor(zoneId?: number, zoneName?: string) {
         super();
         this.zoneId = zoneId;
         this.zoneName = zoneName;

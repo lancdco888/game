@@ -4,10 +4,10 @@ const { ccclass, property } = cc._decorator;
 import LocalStorageManager from "../manager/LocalStorageManager";
 import CommonServer from "../Network/CommonServer";
 import SDefine from "../global_utility/SDefine";
-import CenturionCliqueManager from "../Service/CenturionClique/CenturionCliqueManager";
+import CenturionCliqueManager from "../manager/CenturionCliqueManager";
 import UserInfo from "../User/UserInfo";
-import UserInven from "../User/UserInven";
-import UserPromotion from "../User/UserPromotion";
+import UserInven, { MembersClassBoostUpNormalExtraInfo } from "../User/UserInven";
+import UserPromotion, { MembersClassBoostUpExpandPromotion, UserWelcomeBackRenewalInfo } from "../User/UserPromotion";
 import ShopPromotionManager from "../message/ShopPromotionManager";
 import TSUtility from "../global_utility/TSUtility";
 import AllMightyCouponManager from "./AllMightyCouponManager";
@@ -68,21 +68,21 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
 
     // ===================== 对外暴露核心业务方法 【原逻辑一字不差完整保留】 =====================
     public isMembersBoostUpExpandPromotionAvailable(): boolean {
-        const createDate = UserInfo.default.instance().getCreateDate();
-        if (ServiceInfoManager.default.instance().isOverDay(createDate, 1) === 0) {
+        const createDate = UserInfo.instance().getCreateDate();
+        if (!ServiceInfoManager.instance.isOverDay(createDate, 1)) {
             return false;
         }
 
         const promotionInfo = this.getMembersBoostUpExpandPromotionInfo();
-        if (TSUtility.default.isValid(promotionInfo) === 0) {
+        if (!TSUtility.isValid(promotionInfo)) {
             return false;
         }
 
-        if (UserInfo.default.instance().getUserVipInfo().level < 3) {
+        if (UserInfo.instance().getUserVipInfo().level < 3) {
             return false;
         }
 
-        if (UserInfo.default.instance().getBoostPromotionCoolTime() > TSUtility.default.getServerBaseNowUnixTime()) {
+        if (UserInfo.instance().getBoostPromotionCoolTime() > TSUtility.getServerBaseNowUnixTime()) {
             return false;
         }
 
@@ -91,7 +91,7 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
         }
 
         const promotionStartDate = ShopPromotionManager.Instance().getReadyPromotionStartDate();
-        if (promotionStartDate > 0 && promotionStartDate - 90000 <= TSUtility.default.getServerBaseNowUnixTime()) {
+        if (promotionStartDate > 0 && promotionStartDate - 90000 <= TSUtility.getServerBaseNowUnixTime()) {
             return false;
         }
 
@@ -99,12 +99,12 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
             return false;
         }
 
-        const welcomeBackInfo = UserInfo.default.instance().getPromotionInfo(UserPromotion.UserWelcomeBackRenewalInfo.PromotionKeyName);
-        if (TSUtility.default.isValid(welcomeBackInfo) && welcomeBackInfo.rewardCoin !== 0 && welcomeBackInfo.isReceivedCoupon === 0) {
+        const welcomeBackInfo = UserInfo.instance().getPromotionInfo(UserWelcomeBackRenewalInfo.PromotionKeyName);
+        if (TSUtility.isValid(welcomeBackInfo) && welcomeBackInfo.rewardCoin !== 0 && welcomeBackInfo.isReceivedCoupon === 0) {
             return false;
         }
 
-        const inboxInfo = UserInfo.default.instance().getUserInboxInfo();
+        const inboxInfo = UserInfo.instance().getUserInboxInfo();
         return !(CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(inboxInfo) 
             || CenturionCliqueManager.Instance().isActiveCenturionClique() 
             || CenturionCliqueManager.Instance().isActiveHeroCenturionClique() 
@@ -113,34 +113,34 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
 
     public isRunningMembersBoostUpExpandProcess(): number {
         const boostItem = this.getMembersClassBoostUpExpandItem();
-        if (TSUtility.default.isValid(boostItem) === 0) return 0;
-        if (UserInfo.default.instance().getUserVipInfo().level >= this.getBoostedMembersClass()) return 0;
+        if (!TSUtility.isValid(boostItem)) return 0;
+        if (UserInfo.instance().getUserVipInfo().level >= this.getBoostedMembersClass()) return 0;
         if (this.isRunningOtherPromotion()) return 0;
         return 1;
     }
 
     public isAvailableMembersBoostVipPoint(): boolean {
-        const vipLevel = UserInfo.default.instance().getUserVipInfo().level;
-        const vipExp = UserInfo.default.instance().getUserVipInfo().exp;
+        const vipLevel = UserInfo.instance().getUserVipInfo().level;
+        const vipExp = UserInfo.instance().getUserVipInfo().exp;
         return vipExp >= this.availablePoint[vipLevel - 3];
     }
 
     public isRunningOtherPromotion(): boolean {
-        return !(AllMightyCouponManager.default.instance().isRunningAllMightyCouponProcess() === false && this.hasCoupon() !== 1);
+        return !(AllMightyCouponManager.instance().isRunningAllMightyCouponProcess() === 0 && this.hasCoupon() !== 1);
     }
 
     public hasCoupon(): number {
-        return ServiceInfoManager.default.instance().hasAnyCouponInbox() ? 1 : 0;
+        return ServiceInfoManager.instance.hasAnyCouponInbox() ? 1 : 0;
     }
 
     public getMembersBoostUpExpandPromotionInfo(): any {
-        return UserInfo.default.instance().getPromotionInfo(UserPromotion.MembersClassBoostUpExpandPromotion.PromotionKeyName);
+        return UserInfo.instance().getPromotionInfo(MembersClassBoostUpExpandPromotion.PromotionKeyName);
     }
 
     public getMembersClassBoostUpExpandItem(): any {
-        const itemInventory = UserInfo.default.instance().getItemInventory();
-        const nowUnix = TSUtility.default.getServerBaseNowUnixTime();
-        const boostItems = itemInventory.getItemsByItemId(SDefine.default.I_MEMBERS_CLASS_BOOSTUP_NORMAL);
+        const itemInventory = UserInfo.instance().getItemInventory();
+        const nowUnix = TSUtility.getServerBaseNowUnixTime();
+        const boostItems = itemInventory.getItemsByItemId(SDefine.I_MEMBERS_CLASS_BOOSTUP_NORMAL);
         
         for (let i = 0; i < boostItems.length; ++i) {
             if (nowUnix < boostItems[i].expireDate) {
@@ -152,33 +152,33 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
 
     public getBoostedMembersClass(): number {
         const boostItem = this.getMembersClassBoostUpExpandItem();
-        return TSUtility.default.isValid(boostItem) 
-            ? UserInven.MembersClassBoostUpNormalExtraInfo.parse(boostItem.extraInfo).boostLevel 
+        return TSUtility.isValid(boostItem) 
+            ? MembersClassBoostUpNormalExtraInfo.parse(boostItem.extraInfo).boostLevel 
             : -1;
     }
 
     public getRemainTime(): number {
-        const nowUnix = TSUtility.default.getServerBaseNowUnixTime();
+        const nowUnix = TSUtility.getServerBaseNowUnixTime();
         const boostItem = this.getMembersClassBoostUpExpandItem();
-        const expireDate = TSUtility.default.isValid(boostItem) ? boostItem.expireDate : 0;
+        const expireDate = TSUtility.isValid(boostItem) ? boostItem.expireDate : 0;
         return Math.max(0, expireDate - nowUnix);
     }
 
     public sendAcceptMembersClassBoostUpExpand(callback: Function): void {
         if (this.hasCoupon() !== 1) {
-            CommonServer.default.Instance().requestAcceptPromotion(
-                UserInfo.default.instance().getUid(),
-                UserInfo.default.instance().getAccessToken(),
-                UserPromotion.MembersClassBoostUpExpandPromotion.PromotionKeyName,
+            CommonServer.Instance().requestAcceptPromotion(
+                UserInfo.instance().getUid(),
+                UserInfo.instance().getAccessToken(),
+                MembersClassBoostUpExpandPromotion.PromotionKeyName,
                 1,
                 0,
                 "",
                 (response) => {
-                    if (CommonServer.default.isServerResponseError(response)) {
+                    if (CommonServer.isServerResponseError(response)) {
                         callback();
                     } else {
-                        const changeResult = UserInfo.default.instance().getServerChangeResult(response);
-                        UserInfo.default.instance().applyChangeResult(changeResult);
+                        const changeResult = UserInfo.instance().getServerChangeResult(response);
+                        UserInfo.instance().applyChangeResult(changeResult);
                         callback();
                     }
                 }
@@ -190,13 +190,13 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
 
     public setEndTimeShowMembersClassBoostUpExpandCenterEffectToLocalStorage(key: string, time: number): void {
         if (this.isRunningMembersBoostUpExpandProcess() !== 0) {
-            LocalStorageManager.default.setEndTimeShowMembersClassBoostUpCenterEffect(key, this.getRemainTime());
+            // LocalStorageManager.setEndTimeShowMembersClassBoostUpCenterEffect(key, this.getRemainTime());
         }
     }
 
     public canShowCenterEffect(key: string): boolean {
         return this.isRunningMembersBoostUpExpandProcess() !== 0 
-            && LocalStorageManager.default.getEndTimeShowMembersClassBoostUpExpandCenterEffect(key) < this.getRemainTime();
+            // && LocalStorageManager.getEndTimeShowMembersClassBoostUpExpandCenterEffect(key) < this.getRemainTime();
     }
 
     // ===================== 观察者模式 事件订阅/取消/触发 完整保留 =====================

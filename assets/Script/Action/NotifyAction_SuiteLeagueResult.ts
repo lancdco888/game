@@ -1,12 +1,12 @@
 import SDefine from '../global_utility/SDefine';
 import TSUtility from '../global_utility/TSUtility';
 import PopupManager from '../manager/PopupManager';
-import RewardCenterPopup from '../../../Popup/RewardCenter/RewardCenterPopup';
+import RewardCenterPopup from '../Popup/RewardCenterPopup';
 import { RewardCenterViewType } from '../../../Popup/RewardCenter/View/RewardCenterView';
-import SuiteLeagueResultPopup from '../../../Popup/SuiteLeague/SuiteLeagueResultPopup';
-import CenturionCliqueInvitePopup from '../../../Service/CenturionClique/CenturionCliqueInvitePopup';
-import CenturionCliqueManager from '../../../Service/CenturionClique/CenturionCliqueManager';
-import SuiteLeagueManager from '../../../ServiceInfo/SuiteLeagueManager';
+import SuiteLeagueResultPopup from '../Popup/SuiteLeagueResultPopup';
+import CenturionCliqueInvitePopup from '../Popup/CenturionCliqueInvitePopup';
+import CenturionCliqueManager from '../manager/CenturionCliqueManager';
+import SuiteLeagueManager from '../ServiceInfo/SuiteLeagueManager';
 import UserInfo from '../User/UserInfo';
 import { NotifyType } from '../Notify/NotifyManager';
 import NotifyActionBase from './NotifyActionBase';
@@ -55,7 +55,7 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
         const userInboxInfo = UserInfo.instance().getUserInboxInfo();
 
         // 判断是否需要展示套装联赛结果弹窗
-        if (SuiteLeagueManager.instance().isShowResultNotify(userInboxInfo) === 0) {
+        if (!SuiteLeagueManager.instance().isShowResultNotify(userInboxInfo)) {
             PopupManager.Instance().showBlockingBG(false);
             return;
         }
@@ -69,7 +69,7 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
                     return;
                 }
 
-                if (TSUtility.isValid(err) !== 1) {
+                if (!TSUtility.isValid(err)) {
                     const suiteLeagueResultInfo = SuiteLeagueManager.instance().getLatestSuiteLeagueResultInboxInfo(userInboxInfo);
                     popup.open(suiteLeagueResultInfo);
                     // 套装联赛结果弹窗关闭回调 - 链式执行后续弹窗逻辑
@@ -92,7 +92,7 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
     private async showCenturionCliqueInvitePopup(): Promise<void> {
         const userInboxInfo = UserInfo.instance().getUserInboxInfo();
         // 判断是否需要展示帮派邀请弹窗
-        if (CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(userInboxInfo) === 0) {
+        if (!CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(userInboxInfo)) {
             return Promise.resolve();
         }
 
@@ -105,7 +105,7 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
                     return;
                 }
 
-                if (TSUtility.isValid(err) !== 1) {
+                if (!TSUtility.isValid(err)) {
                     const cliqueRewardInfo = CenturionCliqueManager.Instance().getValidCenturionCliqueRewardInboxInfo(userInboxInfo);
                     popup.openPopup(cliqueRewardInfo);
                     popup.setCloseCallback(resolve);
@@ -146,7 +146,7 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
     /**
      * 原JS内置方法 - 判断是否是大厅场景
      */
-    private isLobbyScene(): number {
+    public isLobbyScene(): number {
         // 保留原逻辑的返回值规则 0=否 1=是
         return 0;
     }
@@ -154,7 +154,7 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
     /**
      * 原JS内置方法 - 判断老虎机场景是否有效
      */
-    private isValidSlotScene(): number {
+    public isValidSlotScene(): number {
         // 保留原逻辑的返回值规则 0=无效 1=有效
         return 1;
     }

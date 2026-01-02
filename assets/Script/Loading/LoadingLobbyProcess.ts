@@ -8,7 +8,7 @@ import SDefine from "../global_utility/SDefine";
 import UserInfo from "../User/UserInfo";
 import ServiceInfoManager from "../ServiceInfoManager";
 //import FBInstantUtil from "../Network/FBInstantUtil";
-import CenturionCliqueManager from "../Service/CenturionClique/CenturionCliqueManager";
+import CenturionCliqueManager from "../manager/CenturionCliqueManager";
 import ClubServerInfo, { ClubInfo } from "../Popup/Club/ClubServerInfo";
 
 // 导入所有子状态类
@@ -18,7 +18,7 @@ import L_LoadSlotToLobbyState from "../State/L_LoadSlotToLobbyState";
 import L_LoadLobbyToLobbyState from "../State/L_LoadLobbyToLobbyState";
 import L_RefreshUserInfoState from "../State/L_RefreshUserInfoState";
 import L_RefreshJackpotState from "../State/L_RefreshJackpotState";
-import L_RefreshHeroInfoState from "./State/L_RefreshHeroInfoState";
+import L_RefreshHeroInfoState from "../State/L_RefreshHeroInfoState";
 
 // 导入Launcher层状态类
 import L_GetSlotTourneyInfoState from "../Launcher/State/L_GetSlotTourneyInfoState";
@@ -32,6 +32,7 @@ import L_CheckFBSquadStatus from "../Launcher/State/L_CheckFBSquadStatus";
 import L_CheckBoosterInfoState from "../Launcher/State/L_CheckBoosterInfoState";
 import { Utility } from "../global_utility/Utility";
 import CommonServer from "../Network/CommonServer";
+import FBInstantUtil from "../Network/FBInstantUtil";
 
 // ===================== 状态类1: 获取宾果游戏信息 回调式网络请求 原JS逻辑1:1复刻 =====================
 @ccclass()
@@ -144,67 +145,71 @@ export class L_GetInstantInfoState extends State {
     // 读取大厅快捷方式展示状态
     private asyncFbinstantShortcutGetdata(): Promise<void> {
         return new Promise<void>((resolve) => {
-            (FBInstant as any).player.getDataAsync(["isShowedLobbyShortCut"]).then((data: any) => {
-                if (data && data.isShowedLobbyShortCut !== null) {
-                    ServiceInfoManager.BOOL_SHOWED_LOBBY_SHORTCUT = data.isShowedLobbyShortCut;
-                    cc.log("data : " + data.isShowedLobbyShortCut);
-                } else {
-                    ServiceInfoManager.BOOL_SHOWED_LOBBY_SHORTCUT = false;
-                    cc.log("No show data");
-                }
-                resolve();
-            }).catch(() => {
-                cc.log("error shortcut data");
-                resolve();
-            });
+            // (FBInstant as any).player.getDataAsync(["isShowedLobbyShortCut"]).then((data: any) => {
+            //     if (data && data.isShowedLobbyShortCut !== null) {
+            //         ServiceInfoManager.BOOL_SHOWED_LOBBY_SHORTCUT = data.isShowedLobbyShortCut;
+            //         cc.log("data : " + data.isShowedLobbyShortCut);
+            //     } else {
+            //         ServiceInfoManager.BOOL_SHOWED_LOBBY_SHORTCUT = false;
+            //         cc.log("No show data");
+            //     }
+            //     resolve();
+            // }).catch(() => {
+            //     cc.log("error shortcut data");
+            //     resolve();
+            // });
+            resolve();
         });
     }
 
     // 读取粉丝页打开次数
     private asyncFbinstantFanpageOpneTimedata(): Promise<void> {
         return new Promise<void>((resolve) => {
-            (FBInstant as any).player.getDataAsync(["openFanpageTime"]).then((data: any) => {
-                if (data && data.openFanpageTime !== null) {
-                    ServiceInfoManager.NUMBER_FAN_PAGE_POPUP_OPEN_TIME = data.openFanpageTime;
-                    cc.log("data : " + data.openFanpageTime);
-                }
-                resolve();
-            }).catch(() => {
-                cc.log("error openFanpageTime data");
-                resolve();
-            });
+            // (FBInstant as any).player.getDataAsync(["openFanpageTime"]).then((data: any) => {
+            //     if (data && data.openFanpageTime !== null) {
+            //         ServiceInfoManager.NUMBER_FAN_PAGE_POPUP_OPEN_TIME = data.openFanpageTime;
+            //         cc.log("data : " + data.openFanpageTime);
+            //     }
+            //     resolve();
+            // }).catch(() => {
+            //     cc.log("error openFanpageTime data");
+            //     resolve();
+            // });
+            resolve();
         });
     }
 
     // 读取粉丝页绑定时间
     private asyncFbinstantLinkedFanpagedata(): Promise<void> {
         return new Promise<void>((resolve) => {
-            (FBInstant as any).player.getDataAsync(["sendFanpageLinkTime"]).then((data: any) => {
-                if (data && data.sendFanpageLinkTime !== null) {
-                    ServiceInfoManager.NUMBER_LINKED_FAN_PAGE_OPEN_TIME = data.sendFanpageLinkTime;
-                    cc.log("data : " + data.sendFanpageLinkTime);
-                }
-                resolve();
-            }).catch(() => {
-                cc.log("error Sendfanpage data");
-                resolve();
-            });
+            // (FBInstant as any).player.getDataAsync(["sendFanpageLinkTime"]).then((data: any) => {
+            //     if (data && data.sendFanpageLinkTime !== null) {
+            //         ServiceInfoManager.NUMBER_LINKED_FAN_PAGE_OPEN_TIME = data.sendFanpageLinkTime;
+            //         cc.log("data : " + data.sendFanpageLinkTime);
+            //     }
+            //     resolve();
+            // }).catch(() => {
+            //     cc.log("error Sendfanpage data");
+            //     resolve();
+            // });
+            resolve();
         });
     }
 
     // 读取粉丝页奖励领取状态
     private asyncFbinstantRewardFanpagedata(): Promise<void> {
         return new Promise<void>((resolve) => {
-            (FBInstant as any).player.getDataAsync(["isReceivedFanpageReward"]).then((data: any) => {
-                if (data && data.isReceivedFanpageReward !== null) {
-                    ServiceInfoManager.BOOL_RECEIVED_FAN_PAGE_REWARD = data.isReceivedFanpageReward;
-                    cc.log("data : " + data.isReceivedFanpageReward);
-                }
-                resolve();
-            }).catch(() => {
-                cc.log("error isReceivedFanpageReward data");
-                resolve();
-            });
+            // (FBInstant as any).player.getDataAsync(["isReceivedFanpageReward"]).then((data: any) => {
+            //     if (data && data.isReceivedFanpageReward !== null) {
+            //         ServiceInfoManager.BOOL_RECEIVED_FAN_PAGE_REWARD = data.isReceivedFanpageReward;
+            //         cc.log("data : " + data.isReceivedFanpageReward);
+            //     }
+            //     resolve();
+            // }).catch(() => {
+            //     cc.log("error isReceivedFanpageReward data");
+            //     resolve();
+            // });
+            resolve();
         });
     }
 }

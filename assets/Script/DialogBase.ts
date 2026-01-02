@@ -36,7 +36,7 @@ export default class DialogBase extends cc.Component {
 
     // ===================== 【成员变量】补全TS类型注解，原默认值完全保留，私有成员修饰 =====================
     public state: DialogState = DialogState.Init;          // 当前弹窗状态
-    private closeCallback: Function | null = null;          // 弹窗关闭后的回调函数
+    public closeCallback: Function | null = null;          // 弹窗关闭后的回调函数
     public isBlockingPopup: boolean = true;                 // 是否为阻塞型弹窗 (默认true，阻止下层交互)
     public isBlurBackScreen: boolean = false;               // 是否开启背景模糊效果 (默认false)
     private openCompleteCallback: Function | null = null;   // 弹窗打开动画完成后的回调

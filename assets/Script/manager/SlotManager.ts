@@ -135,7 +135,7 @@ export default class SlotManager extends cc.Component {
     public fixedBottomUI: cc.Node = null;
 
     // ===================== 【私有成员变量】海量属性 - 补全精准TS类型注解，默认值完全保留 ✅ =====================
-    private curState: SlotGameState = null;
+    private curState: State = null;
     public isSkipCurrentSpin: boolean = false;
     private flagPlayingSubgame: boolean = false;
     private flagSpinRequest: boolean = false;
@@ -198,6 +198,16 @@ export default class SlotManager extends cc.Component {
     public readonly jackpotGrandShareImgName: string = "slot-jackpot-grand-191115.jpg";
     public readonly jackpotCommonShareImgName: string = "slot-jackpot-common-191115.jpg";
     public readonly lockandrollShareImgName: string = "slot-locknroll-191115.jpg";
+
+    public readonly TOOLTIP_MINIMUM_BET = "TOOLTIP_MINIMUM_BET";
+    public readonly TOOLTIP_SUITE_LEAGUE = "TOOLTIP_SUITE_LEAGUE";
+    public readonly TOOLTIP_FEVER_MODE = "TOOLTIP_FEVER_MODE";
+
+    prevPortrait: boolean;
+    private _special_select_cell: any;
+    private _special_ignore_symbolId: any;
+    private _listSlotTooltip: any;
+    private _symbol_width: number;
 
     // ===================== TS原生访问器(Get/Set) - 替换原JS Object.defineProperty 1:1精准复刻 =====================
     get bottomUI(): any { return this._bottomUI; }
@@ -803,7 +813,7 @@ export default class SlotManager extends cc.Component {
         }
 
         this.sendSpinRequest((res: any) => {
-            if (isValid(self)) {
+            if (TSUtility.isValid(self)) {
                 if (self.checkSpinErrorState(res) !== 0) {
                     SlotGameResultManager.Instance.resetGameResult();
                     SlotGameResultManager.Instance.setGameResult(res);
@@ -830,11 +840,11 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 作弊控制器开关 =====================
     toggleCheatObject(): void {
-        const cheatCtrl = this.cheatObjectLayer.getComponentInChildren(CheatController);
-        if (cheatCtrl) {
-            cheatCtrl.onClickToggleMain();
-            this.cheatObjectLayer.y = CameraControl.Instance.eStateOfCameraPosition === 1 ? 600 : 0;
-        }
+        // const cheatCtrl = this.cheatObjectLayer.getComponentInChildren(AbortController);
+        // if (cheatCtrl) {
+        //     cheatCtrl.onClickToggleMain();
+        //     this.cheatObjectLayer.y = CameraControl.Instance.eStateOfCameraPosition === 1 ? 600 : 0;
+        // }
     }
 
     // ===================== 初始化免费旋转信息 =====================
@@ -890,7 +900,7 @@ export default class SlotManager extends cc.Component {
                         this._freespinTextEffect.node.active = true;
                         this._freespinTextEffect.playRetriggerEffect(addCnt);
                         SlotSoundController.Instance().playAudio("FreespinRetrigger", "FX");
-                    }.bind(self));
+                    });
 
                     const complete = cc.callFunc(() => {
                         self._freespinTotalCount = subGameState.totalCnt;
@@ -1237,20 +1247,20 @@ export default class SlotManager extends cc.Component {
     getActionFreespinIntroText(): any {
         const play = cc.callFunc(() => {
             SlotManager.Instance.playFreespinTextEffect(SlotManager.Instance._freespinTotalCount);
-        }.bind(this));
+        });
         const hide = cc.callFunc(() => {
             SlotManager.Instance.hideSpecialModeText();
-        }.bind(this));
+        });
         return cc.sequence(play, cc.delayTime(2.7), hide, cc.delayTime(0.5));
     }
 
     getActionFreespinIntroTextIgnoreFreespinCount(): any {
         const play = cc.callFunc(() => {
             SlotManager.Instance.playFreespinTextEffect();
-        }.bind(this));
+        });
         const hide = cc.callFunc(() => {
             SlotManager.Instance.hideSpecialModeText();
-        }.bind(this));
+        });
         return cc.sequence(play, cc.delayTime(2.7), hide, cc.delayTime(0.5));
     }
 
@@ -1359,7 +1369,7 @@ export default class SlotManager extends cc.Component {
     }
 
     // ===================== 获取滚轮旋转开始状态 =====================
-    getReelSpinStartState(subGameKey: string): SequencialState {
+    getReelSpinStartState(subGameKey: any): SequencialState {
         const seq = new SequencialState();
         let idx = 0;
         seq.insert(idx++, SlotManager.Instance.reelMachine.getPreSpinUsingNextSubGameKeyState(subGameKey));
@@ -1373,7 +1383,7 @@ export default class SlotManager extends cc.Component {
         return seq;
     }
 
-    getOppositionReelSpinStartState(subGameKey: string): SequencialState {
+    getOppositionReelSpinStartState(subGameKey: any): SequencialState {
         const seq = new SequencialState();
         let idx = 0;
         seq.insert(idx++, SlotManager.Instance.reelMachine.getOppositionPreSpinUsingNextSubGameKeyState(subGameKey));

@@ -32,7 +32,7 @@ export default class NotifyActionBase extends cc.Component {
 
     /** 只读属性 - 获取游戏内UI实例 */
     public get inGameUI(): any {
-        return HRVSlotService.default.instance().getInGameUI();
+        return HRVSlotService.instance().getInGameUI();
     }
 
     /**

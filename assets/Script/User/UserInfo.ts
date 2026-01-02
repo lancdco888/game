@@ -9,7 +9,7 @@ import VipStatusUpPopup from "../Popup/Vip/VipStatusUpPopup";
 import SlotJackpotManager from "../manager/SlotJackpotManager";
 import TSUtility from "../global_utility/TSUtility";
 import SDefine from "../global_utility/SDefine";
-import PopupManager from "../slot_common/Popup/PopupManager";
+import PopupManager from "../manager/PopupManager";
 import LoadingPopup from "../Popup/LoadingPopup/LoadingPopup";
 import * as SlotDataDefine from "../slot_common/SlotDataDefine";
 import FacebookUtil from "../Network/FacebookUtil";
@@ -45,7 +45,7 @@ import IAPManager_AOS from "../NativeUtil/Purchase/IAPManager_AOS";
 import IAPManager_iOS from "../NativeUtil/Purchase/IAPManager_iOS";
 import MembersClassBoostUpNormalManager from "../ServiceInfo/MembersClassBoostUpNormalManager";
 import UnProgressedPurchasePopup from "../Popup/UnProgressedPurchasePopup/UnProgressedPurchasePopup";
-import DailyStampManager from "../Popup/DailyStamp/2024/DailyStampManager";
+import DailyStampManager from "../DailyStamp/2024/DailyStampManager";
 import UserInboxInfo from "./UserInboxInfo";
 import ShopPromotionManager from "../message/ShopPromotionManager";
 import UnprocessedPurchaseManager from "./UnprocessedPurchaseManager";
@@ -364,7 +364,7 @@ export default class UserInfo extends Component {
     public static isAuth: boolean = true;
 
     // 私有属性
-    private _userInfo: UserInfoData | null = null;
+    public _userInfo: UserInfoData | null = null;
     private _userFriendInfo: UserFriendInfo = {} as UserFriendInfo;
     private _userHeroInfo: UserHeroInfo | null = null;
     private _userInboxInfo: UserInboxInfo | null = null;

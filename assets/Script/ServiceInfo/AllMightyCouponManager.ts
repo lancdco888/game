@@ -1,16 +1,16 @@
 const { ccclass, property } = cc._decorator;
 
 // ===================== 原文件所有导入模块 路径完全不变 =====================
-import LocalStorageManager from "../../global_utility/LocalStorage/LocalStorageManager";
+import LocalStorageManager from "../manager/LocalStorageManager";
 import CommonServer from "../Network/CommonServer";
-import CenturionCliqueManager from "../Service/CenturionClique/CenturionCliqueManager";
+import CenturionCliqueManager from "../manager/CenturionCliqueManager";
 import UserInfo from "../User/UserInfo";
-import UserPromotion from "../User/UserPromotion";
-import ShopPromotionManager from "../Utility/ShopPromotionManager";
-import TSUtility from "../../global_utility/TSUtility";
+import UserPromotion, { AllMightyCouponPromotion, UserWelcomeBackRenewalInfo } from "../User/UserPromotion";
+import ShopPromotionManager from "../message/ShopPromotionManager";
+import TSUtility from "../global_utility/TSUtility";
 import MembersClassBoostUpManager from "./MembersClassBoostUpManager";
 import MembersClassBoostUpNormalManager from "./MembersClassBoostUpNormalManager";
-import ServiceInfoManager from "./ServiceInfoManager";
+import ServiceInfoManager from "../ServiceInfoManager";
 
 // ===================== 原文件导出枚举 KindOfOffers_AlmightyCoupon 完整保留 =====================
 export const KindOfOffers_AlmightyCoupon = {
@@ -62,16 +62,16 @@ export default class AllMightyCouponManager extends cc.Component {
 
     // ===================== 对外暴露核心业务方法 【原逻辑一字不差完整保留】 =====================
     public isPossibleStartAllMightyCoupon(): boolean {
-        const couponPromotion = UserInfo.default.instance().getPromotionInfo(UserPromotion.AllMightyCouponPromotion.PromotionKeyName);
-        if (TSUtility.default.isValid(couponPromotion) && couponPromotion.isValid()) {
+        const couponPromotion = UserInfo.instance().getPromotionInfo(AllMightyCouponPromotion.PromotionKeyName);
+        if (TSUtility.isValid(couponPromotion) && couponPromotion.isValid()) {
             return false;
         }
 
-        const isPurchased = UserInfo.default.instance().getUserServiceInfo().totalPurchaseCnt > 0;
-        const lastPurchaseDate = UserInfo.default.instance().getPurchaseInfo().lastPurchaseDateOverUsd3;
-        const nowUnix = TSUtility.default.getServerBaseNowUnixTime();
+        const isPurchased = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt > 0;
+        const lastPurchaseDate = UserInfo.instance().getPurchaseInfo().lastPurchaseDateOverUsd3;
+        const nowUnix = TSUtility.getServerBaseNowUnixTime();
 
-        if (isPurchased === 0 || nowUnix - lastPurchaseDate < this._date20Days) {
+        if (!isPurchased || nowUnix - lastPurchaseDate < this._date20Days) {
             return false;
         }
 
@@ -79,7 +79,7 @@ export default class AllMightyCouponManager extends cc.Component {
             return false;
         }
 
-        const inboxInfo = UserInfo.default.instance().getUserInboxInfo();
+        const inboxInfo = UserInfo.instance().getUserInboxInfo();
         if (CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(inboxInfo) 
             || CenturionCliqueManager.Instance().isActiveCenturionClique() 
             || CenturionCliqueManager.Instance().isActiveHeroCenturionClique()) 
@@ -87,20 +87,20 @@ export default class AllMightyCouponManager extends cc.Component {
             return false;
         }
 
-        const promotionStartDate = ShopPromotionManager.default.Instance().getReadyPromotionStartDate();
-        return !(promotionStartDate > 0 && promotionStartDate - 46800 <= TSUtility.default.getServerBaseNowUnixTime());
+        const promotionStartDate = ShopPromotionManager.Instance().getReadyPromotionStartDate();
+        return !(promotionStartDate > 0 && promotionStartDate - 46800 <= TSUtility.getServerBaseNowUnixTime());
     }
 
     public isPossibleRequestEndAlmightyCoupon(): boolean {
-        const couponPromotion = UserInfo.default.instance().getPromotionInfo(UserPromotion.AllMightyCouponPromotion.PromotionKeyName);
-        return TSUtility.default.isValid(couponPromotion) !== 0 
+        const couponPromotion = UserInfo.instance().getPromotionInfo(AllMightyCouponPromotion.PromotionKeyName);
+        return TSUtility.isValid(couponPromotion)
             && couponPromotion.isValid() !== 0 
             && this.isRunningOtherPromotion();
     }
 
     public isRunningAllMightyCouponProcess(): number {
-        const couponPromotion = UserInfo.default.instance().getPromotionInfo(UserPromotion.AllMightyCouponPromotion.PromotionKeyName);
-        if (TSUtility.default.isValid(couponPromotion) === 0) return 0;
+        const couponPromotion = UserInfo.instance().getPromotionInfo(AllMightyCouponPromotion.PromotionKeyName);
+        if (!TSUtility.isValid(couponPromotion)) return 0;
         if (couponPromotion.isValid() === 0) return 0;
         if (this.isRunningOtherPromotion()) return 0;
         return 1;
@@ -108,50 +108,50 @@ export default class AllMightyCouponManager extends cc.Component {
 
     public isRunningOtherPromotion(): boolean {
         let isRunning = false;
-        if (ShopPromotionManager.default.Instance().getSeasonalPromotionInfo_NotCheckPatchedPromotion() != null) {
+        if (ShopPromotionManager.Instance().getSeasonalPromotionInfo_NotCheckPatchedPromotion() != null) {
             isRunning = true;
         }
 
-        const welcomeBackInfo = UserInfo.default.instance().getPromotionInfo(UserPromotion.UserWelcomeBackRenewalInfo.PromotionKeyName);
-        const hasWelcomeBackReward = TSUtility.default.isValid(welcomeBackInfo) && welcomeBackInfo.rewardCoin !== 0 && welcomeBackInfo.isReceivedCoupon === 0;
+        const welcomeBackInfo = UserInfo.instance().getPromotionInfo(UserWelcomeBackRenewalInfo.PromotionKeyName);
+        const hasWelcomeBackReward = TSUtility.isValid(welcomeBackInfo) && welcomeBackInfo.rewardCoin !== 0 && welcomeBackInfo.isReceivedCoupon === 0;
         
-        const isBoostUpRunning = MembersClassBoostUpManager.default.instance().isRunningMembersBoostUpProcess();
-        const isNormalBoostUpRunning = MembersClassBoostUpNormalManager.default.instance().isRunningMembersBoostUpExpandProcess();
+        const isBoostUpRunning = MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess();
+        const isNormalBoostUpRunning = MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess();
         
         return !!(isRunning || isBoostUpRunning || isNormalBoostUpRunning || this.hasOtherCoupon() || hasWelcomeBackReward);
     }
 
     public isRunningOtherPromotionExceptCheckCoupon(): boolean {
         let isRunning = false;
-        if (ShopPromotionManager.default.Instance().getSeasonalPromotionInfo_NotCheckPatchedPromotion() != null) {
+        if (ShopPromotionManager.Instance().getSeasonalPromotionInfo_NotCheckPatchedPromotion() != null) {
             isRunning = true;
         }
 
-        const isBoostUpRunning = MembersClassBoostUpManager.default.instance().isRunningMembersBoostUpProcess();
-        const isNormalBoostUpRunning = MembersClassBoostUpNormalManager.default.instance().isRunningMembersBoostUpExpandProcess();
+        const isBoostUpRunning = MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess();
+        const isNormalBoostUpRunning = MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess();
         
         return !!(isRunning || isBoostUpRunning || isNormalBoostUpRunning || this.hasOtherCoupon());
     }
 
     public hasOtherCoupon(): boolean {
-        return ServiceInfoManager.default.instance().hasAnyCouponInbox();
+        return ServiceInfoManager.instance.hasAnyCouponInbox();
     }
 
     public sendAcceptAllMightyCoupon(callback: Function): void {
         if (this.hasOtherCoupon() !== true) {
-            CommonServer.default.Instance().requestAcceptPromotion(
-                UserInfo.default.instance().getUid(),
-                UserInfo.default.instance().getAccessToken(),
-                UserPromotion.AllMightyCouponPromotion.PromotionKeyName,
+            CommonServer.Instance().requestAcceptPromotion(
+                UserInfo.instance().getUid(),
+                UserInfo.instance().getAccessToken(),
+                AllMightyCouponPromotion.PromotionKeyName,
                 0,
                 0,
                 "",
                 (response) => {
-                    if (CommonServer.default.isServerResponseError(response)) {
+                    if (CommonServer.isServerResponseError(response)) {
                         callback();
                     } else {
-                        const changeResult = UserInfo.default.instance().getServerChangeResult(response);
-                        UserInfo.default.instance().applyChangeResult(changeResult);
+                        const changeResult = UserInfo.instance().getServerChangeResult(response);
+                        UserInfo.instance().applyChangeResult(changeResult);
                         callback();
                     }
                 }
@@ -162,28 +162,28 @@ export default class AllMightyCouponManager extends cc.Component {
     }
 
     public getAlmightyCouponPromotionInfo(): any {
-        return UserInfo.default.instance().getPromotionInfo(UserPromotion.AllMightyCouponPromotion.PromotionKeyName);
+        return UserInfo.instance().getPromotionInfo(AllMightyCouponPromotion.PromotionKeyName);
     }
 
     public getRemainTime(): number {
         const couponPromotion = this.getAlmightyCouponPromotionInfo();
-        return TSUtility.default.isValid(couponPromotion) && couponPromotion.isValid() ? couponPromotion.getRemainTime() : 0;
+        return TSUtility.isValid(couponPromotion) && couponPromotion.isValid() ? couponPromotion.getRemainTime() : 0;
     }
 
     public getCoinAddRate(): number {
         const couponPromotion = this.getAlmightyCouponPromotionInfo();
-        return TSUtility.default.isValid(couponPromotion) && couponPromotion.isValid() ? couponPromotion.coinAddrate : 1;
+        return TSUtility.isValid(couponPromotion) && couponPromotion.isValid() ? couponPromotion.coinAddrate : 1;
     }
 
     public canShowCenterEffect(key: string): boolean {
         return this.isRunningAllMightyCouponProcess() !== 0 
-            && LocalStorageManager.default.getEndTimeShowAlmightyCouponCenterEffect(key) !== this.getAlmightyCouponPromotionInfo().expireDate;
+            //&& LocalStorageManager.getEndTimeShowAlmightyCouponCenterEffect(key) !== this.getAlmightyCouponPromotionInfo().expireDate;
     }
 
     public setEndTimeShowAlmightyCouponCenterEffectToLocalStorage(key: string): void {
         if (this.isRunningAllMightyCouponProcess() !== 0) {
             const couponPromotion = this.getAlmightyCouponPromotionInfo();
-            LocalStorageManager.default.setEndTimeShowAlmightyCouponCenterEffect(key, couponPromotion.expireDate);
+           // LocalStorageManager.setEndTimeShowAlmightyCouponCenterEffect(key, couponPromotion.expireDate);
         }
     }
 
