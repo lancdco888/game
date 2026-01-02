@@ -34,7 +34,7 @@ export default class RewardCenterView_Main extends RewardCenterView {
 
     // ===================== 静态公有核心方法 - 计算奖励中心红点总数 跨天重置+遍历所有福利按钮可领取状态 =====================
     public static getReceiveCount(): number {
-        const redDotTime = ServerStorageManager.getAsNumber(ServerStorageManager.StorageKeyType.REWARD_CENTER_RED_DOT);
+        const redDotTime = ServerStorageManager.getAsNumber(StorageKeyType.REWARD_CENTER_RED_DOT);
         // 跨天判断：超过1天则重置红点计数为0
         if (!ServiceInfoManager.instance.isOverDay(redDotTime, 1)) {
             return 0;
@@ -45,12 +45,12 @@ export default class RewardCenterView_Main extends RewardCenterView {
         if (RewardCenterMainButton_Bingo.isCanReceive()) receiveCount++;
         if (RewardCenterMainButton_DailyBlitz.isCanReceive()) receiveCount++;
         if (RewardCenterMainButton_FacebookConnect.isCanReceive()) receiveCount++;
-        if (1 === RewardCenterMainButton_FanPage.isCanReceive()) receiveCount++;
-        if (1 === RewardCenterMainButton_Freebies.isCanReceive()) receiveCount++;
-        if (1 === RewardCenterMainButton_JiggyPrize.isCanReceive()) receiveCount++;
-        if (1 === RewardCenterMainButton_LevelPass.isCanReceive()) receiveCount++;
-        if (1 === RewardCenterMainButton_MembersBonus.isCanReceive()) receiveCount++;
-        if (1 === RewardCenterMainButton_ReelQuest.isCanReceive()) receiveCount++;
+        if (RewardCenterMainButton_FanPage.isCanReceive()) receiveCount++;
+        if (RewardCenterMainButton_Freebies.isCanReceive()) receiveCount++;
+        if (RewardCenterMainButton_JiggyPrize.isCanReceive()) receiveCount++;
+        if (RewardCenterMainButton_LevelPass.isCanReceive()) receiveCount++;
+        if (RewardCenterMainButton_MembersBonus.isCanReceive()) receiveCount++;
+        if (RewardCenterMainButton_ReelQuest.isCanReceive()) receiveCount++;
         
         return receiveCount;
     }

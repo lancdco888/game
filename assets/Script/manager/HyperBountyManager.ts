@@ -119,8 +119,8 @@ export default class HyperBountyManager extends Component {
     public missionCount: number = 5;
 
     // ===================== 【私有属性】 =====================
-    private _isOpenMainPopup: boolean = false;
-    private _arrCompletedSeasonMissionArray: Array<any> = [];
+    public _isOpenMainPopup: boolean = false;
+    public _arrCompletedSeasonMissionArray: Array<any> = [];
 
     // ===================== 【只读属性 GETTER】与混淆源码完全一致 =====================
     get isPurchaseProduct(): boolean { return TSUtility.isValid(this.getPurchaseProduct()); }

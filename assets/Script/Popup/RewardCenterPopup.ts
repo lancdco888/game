@@ -2,31 +2,35 @@ import FireHoseSender from "../FireHoseSender";
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
 import CustomButton from "../global_utility/CustomButton";
-import DialogBase from "../DialogBase";
+import DialogBase, { DialogState } from "../DialogBase";
 import PopupManager from "../manager/PopupManager";
 import GameCommonSound from "../GameCommonSound";
 import CommonServer from "../Network/CommonServer";
 import UserInfo from "../User/UserInfo";
 import { UserWelcomeBackRenewalInfo } from "../User/UserPromotion";
 import MessageRoutingManager from "../message/MessageRoutingManager";
+import RewardCenterView, { RewardCenterViewType } from "../View/RewardCenterView";
 import DailyStampManager from "../DailyStamp/2024/DailyStampManager";
-import HyperBountyManager from "../manager/HyperBountyManager";
-import WelcomeBackManager from "../Welcome/WelcomeBackRenewal_2025/WelcomeBackManager";
 import InboxMessagePrefabManager from "../InboxMessagePrefabManager";
-import RewardCenterTab from "./RewardCenterTab";
-import RewardCenterView, { RewardCenterViewType } from "./View/RewardCenterView";
-import RewardCenterView_CheckInBonus from "./View/RewardCenterView_CheckInBonus";
-import RewardCenterView_Inbox from "./View/RewardCenterView_Inbox";
-import RewardCenterView_InboxSendGift_ELS from "./View/RewardCenterView_InboxSendGift_ELS";
-import RewardCenterView_InboxSendGift_ELS_EmptyFriend from "./View/RewardCenterView_InboxSendGift_ELS_EmptyFriend";
-import RewardCenterView_InboxSendGift_HRV from "./View/RewardCenterView_InboxSendGift_HRV";
-import RewardCenterView_InboxSendGift_HRV_EmptyFriend from "./View/RewardCenterView_InboxSendGift_HRV_EmptyFriend";
-import RewardCenterView_InboxSendGift_HRV_Guest from "./View/RewardCenterView_InboxSendGift_HRV_Guest";
-import RewardCenterView_InboxSendGift_HRV_GuestFirst from "./View/RewardCenterView_InboxSendGift_HRV_GuestFirst";
-import RewardCenterView_InboxSendGift_HRV_Permission from "./View/RewardCenterView_InboxSendGift_HRV_Permission";
-import RewardCenterView_InboxShare from "./View/RewardCenterView_InboxShare";
-import RewardCenterView_Main from "./View/RewardCenterView_Main";
-import RewardCenterView_TimeBonus from "./View/RewardCenterView_TimeBonus";
+import HyperBountyManager from "../manager/HyperBountyManager";
+// import DailyStampManager from "../DailyStamp/2024/DailyStampManager";
+// import HyperBountyManager from "../manager/HyperBountyManager";
+// import WelcomeBackManager from "../Welcome/WelcomeBackRenewal_2025/WelcomeBackManager";
+// import InboxMessagePrefabManager from "../InboxMessagePrefabManager";
+// import RewardCenterTab from "./RewardCenterTab";
+// import RewardCenterView, { RewardCenterViewType } from "../View/RewardCenterView";
+// import RewardCenterView_CheckInBonus from "../View/RewardCenterView_CheckInBonus";
+// import RewardCenterView_Inbox from "./View/RewardCenterView_Inbox";
+// import RewardCenterView_InboxSendGift_ELS from "./View/RewardCenterView_InboxSendGift_ELS";
+// import RewardCenterView_InboxSendGift_ELS_EmptyFriend from "./View/RewardCenterView_InboxSendGift_ELS_EmptyFriend";
+// import RewardCenterView_InboxSendGift_HRV from "./View/RewardCenterView_InboxSendGift_HRV";
+// import RewardCenterView_InboxSendGift_HRV_EmptyFriend from "./View/RewardCenterView_InboxSendGift_HRV_EmptyFriend";
+// import RewardCenterView_InboxSendGift_HRV_Guest from "./View/RewardCenterView_InboxSendGift_HRV_Guest";
+// import RewardCenterView_InboxSendGift_HRV_GuestFirst from "./View/RewardCenterView_InboxSendGift_HRV_GuestFirst";
+// import RewardCenterView_InboxSendGift_HRV_Permission from "./View/RewardCenterView_InboxSendGift_HRV_Permission";
+// import RewardCenterView_InboxShare from "./View/RewardCenterView_InboxShare";
+// import RewardCenterView_Main from "./View/RewardCenterView_Main";
+// import RewardCenterView_TimeBonus from "./View/RewardCenterView_TimeBonus";
 
 const { ccclass, property } = cc._decorator;
 
@@ -42,17 +46,17 @@ export default class RewardCenterPopup extends DialogBase {
     private readonly ANIMATION_NAME_TAB_CHECK_IN_BONUS = "BTN_CB_Active_Ani";
 
     // Cocos 序列化属性
-    @property(Animation)
-    public aniTab: Animation = null!;
+    @property(cc.Animation)
+    public aniTab: cc.Animation = null!;
 
-    @property(Node)
-    public nodeBlockTouch: Node = null!;
+    @property(cc.Node)
+    public nodeBlockTouch: cc.Node = null!;
 
-    @property(Node)
-    public nodeLobbyBG: Node = null!;
+    @property(cc.Node)
+    public nodeLobbyBG: cc.Node = null!;
 
-    @property(Node)
-    public nodeSlotBG: Node = null!;
+    @property(cc.Node)
+    public nodeSlotBG: cc.Node = null!;
 
     // 内部成员变量
     private _arrTab: RewardCenterTab[] = [];
@@ -168,7 +172,7 @@ export default class RewardCenterPopup extends DialogBase {
      * 返回按钮点击逻辑
      */
     onBackBtnProcess(): boolean {
-        if (TSUtility.isValid(this._curView) !== 1 || this._curView.isOnBackAvailable() !== 0) {
+        if (TSUtility.isValid(this._curView) || this._curView.isOnBackAvailable() !== 0) {
             this.close();
             return true;
         }
@@ -410,7 +414,7 @@ export default class RewardCenterPopup extends DialogBase {
             if (!TSUtility.isValid(this._closeBtn)) {
                 this._closeBtn = this.closeBtn.node.getComponent(CustomButton);
             }
-            this._closeBtn.setInteractable(isDisable === 0);
+            this._closeBtn.setInteractable(!isDisable);
         }
     }
 
@@ -445,7 +449,7 @@ export default class RewardCenterPopup extends DialogBase {
 
         // 关闭弹窗动画 & 状态重置
         this.unscheduleAllCallbacks();
-        this.setState(DialogBase.prototype.DialogState.Close);
+        this.setState(DialogState.Close);
         this.clear();
         this._close(cc.fadeOut(0.15));
     }
