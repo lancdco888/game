@@ -44,7 +44,7 @@ import { Utility } from "../global_utility/Utility";
 import BingoBallContainer from "./BingoBallContainer";
 import BingoHistoryPopup from "./BingoHistoryPopup";
 import BingoRemainGameCollectUI from "./BingoRemainGameCollectUI";
-import BingoGameInfo, { BingoMirrorBallType, MaxRowBingoBallCnt, MirrorBallBastInfo, NextMirrorBallInfo } from "./BingoData";
+import BingoGameInfo, { BingoBoardState, BingoMarkingType, BingoMirrorBallType, MaxBingoBallCnt, MaxRowBingoBallCnt, MirrorBallBastInfo, NextMirrorBallInfo } from "./BingoData";
 import ServiceInfoManager from "../ServiceInfoManager";
 import BingoCellEffect from "./BingoCellEffect";
 import BingoStartPopup_2021 from "./BingoStartPopup_2021";
@@ -53,6 +53,14 @@ import CoinToTargetEffect from "../Popup/CoinToTargetEffect";
 import RewardCenterPopup from "../Popup/RewardCenterPopup";
 import { RewardCenterViewType } from "../View/RewardCenterView";
 import BingoResultPopup from "./BingoResultPopup";
+import UnlockContentsManager, { UnlockContentsType } from "../manager/UnlockContentsManager";
+import BingoInfoPopup from "./BingoInfoPopup";
+import CollectBingoBallEffect from "./CollectBingoBallEffect";
+import BingoBoard from "./BingoBoard";
+import MembersBoostUpPopupIntroEffect from "./MembersBoostUpPopupIntroEffect";
+import BingoPrize from "./BingoPrize";
+import BingoMarking from "./BingoMarking";
+import BingoData from "./BingoData";
 
 // ✅ 原文件匿名枚举 完整提取+规范命名 1:1复刻枚举值 Call=0 / Stop=1 核心按钮状态
 export enum CallState {
@@ -164,8 +172,8 @@ export default class BingoManager_New extends cc.Component {
     @property(cc.Label)
     public dailyRewardLabel: cc.Label = null;
 
-    @property(VipImageSetter)
-    public dailyRewardVipIcon: VipImageSetter = null;
+    // @property(VipImageSetter)
+    // public dailyRewardVipIcon: VipImageSetter = null;
 
     @property(cc.Prefab)
     public vipInboxImgPrefab: cc.Prefab = null;
@@ -413,7 +421,7 @@ export default class BingoManager_New extends cc.Component {
     public initBingoManager(bingoInfoJson: any, dailyReward: any, isRefresh: boolean = false): void {
         const self = this;
         this._soundSetter = this.node.getComponent(CommonSoundSetter);
-        this.historyPopup.init(MaxRowBingoBallCnt, MaxBoardSize);
+        this.historyPopup.init(MaxRowBingoBallCnt,BingoData.MaxBoardSize);
         this.closeHistoryPopup();
         this.remainGameCollect.hideCollectRoot();
         this.cheatEditBox.node.active = !TSUtility.isLiveService();
@@ -425,7 +433,7 @@ export default class BingoManager_New extends cc.Component {
         }
 
         this.BingoMarking.offResult();
-        this._bingoInfo = BingoGameInfo.parse(bingoInfoJson);
+        this._bingoInfo = BingoGameInfo.Parse(bingoInfoJson);
         ServiceInfoManager.INFO_BINGO = this._bingoInfo;
         this.setBingoBallCnt(UserInfo.instance().getBingoBallCnt().toString());
         this.levelLimitNode.active = false;
@@ -458,7 +466,7 @@ export default class BingoManager_New extends cc.Component {
             }
 
             this.dailyRewardPop.active = false;
-            this.dailyRewardVipIcon.setIcon(vipLv);
+            // this.dailyRewardVipIcon.setIcon(vipLv);
             this.dailyRewardLabel.string = dailyReward.getTotalChangeRewardBingoBall().toString();
             
             // // 会员加成特效 + 奖励发放
@@ -521,7 +529,7 @@ export default class BingoManager_New extends cc.Component {
 
         // 等级解锁判定
         const unlockLv = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsType.BINGO);
-        this.unLock_Icon.active = ServiceInfoManager.instance().getUserLevel() < unlockLv;
+        this.unLock_Icon.active = ServiceInfoManager.instance.getUserLevel() < unlockLv;
     }
 
     public refreshBingoManager(): void {
@@ -1022,7 +1030,7 @@ export default class BingoManager_New extends cc.Component {
 
         if (!this._boards[boardId].isBingo() && !this._boards[boardId].isMarking(col, row)) {
             // 镜球/普通标记音效区分
-            1 == this._boards[boardId].isMirrorBall(col, row) ? 
+            this._boards[boardId].isMirrorBall(col, row) ? 
                 SoundManager.Instance().playFxOnce(this._soundSetter.getAudioClip("markingChest")) :
                 SoundManager.Instance().playFxOnce(this._soundSetter.getAudioClip("marking"));
 
@@ -1108,7 +1116,7 @@ export default class BingoManager_New extends cc.Component {
     public onClickCallDisableButton(): void {
         const self = this;
         const unlockLv = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsType.BINGO);
-        if (!this.isInGame() && ServiceInfoManager.instance().getUserLevel() < unlockLv || UserInfo.instance().getBingoBallCnt() > 0) {
+        if (!this.isInGame() && ServiceInfoManager.instance.getUserLevel() < unlockLv || UserInfo.instance().getBingoBallCnt() > 0) {
             return;
         }
 
@@ -1116,10 +1124,10 @@ export default class BingoManager_New extends cc.Component {
         !SDefine.FB_Instant_iOS_Shop_Flag && (isShowOffer = this.showBingoBallOfferPopup());
         if (!isShowOffer) {
             PopupManager.Instance().showBlockingBG(true);
-            BingoBallZeroPopup.getPopup((err, popup) => {
-                PopupManager.Instance().showBlockingBG(false);
-                popup.open(() => { self.refreshBingoState(); });
-            });
+            // BingoBallZeroPopup.getPopup((err, popup) => {
+            //     PopupManager.Instance().showBlockingBG(false);
+            //     popup.open(() => { self.refreshBingoState(); });
+            // });
         }
     }
 
@@ -1159,7 +1167,7 @@ export default class BingoManager_New extends cc.Component {
         else {
             const bingoResult = this._boards[boardId]._boardData.getBingoCompleteResult();
             SoundManager.Instance().playFxOnce(this._soundSetter.getAudioClip("b_bingoway"));
-            this._boards[boardId].showBingoCompleteFx(bingoResult);
+            this._boards[boardId].showBingoCompleteFx([]);
         }
 
         // 金币奖励发放
@@ -1292,8 +1300,8 @@ export default class BingoManager_New extends cc.Component {
             self.scheduleOnce(() => {
                 for (let i = 0; i < mirrorBallInfo.result.length; ++i) {
                     const item = mirrorBallInfo.result[i];
-                    1 == self._boards[0].isInGame() && null != item.cell0 && self._boards[0].setBingoCellMirrorBall(item.cell0.col, item.cell0.row, item.mirrorBallType);
-                    1 == self._boards[1].isInGame() && null != item.cell1 && self._boards[1].setBingoCellMirrorBall(item.cell1.col, item.cell1.row, item.mirrorBallType);
+                    self._boards[0].isInGame() && null != item.cell0 && self._boards[0].setBingoCellMirrorBall(item.cell0.col, item.cell0.row, item.mirrorBallType);
+                    self._boards[1].isInGame() && null != item.cell1 && self._boards[1].setBingoCellMirrorBall(item.cell1.col, item.cell1.row, item.mirrorBallType);
                 }
             }, 1);
         });
@@ -1320,8 +1328,8 @@ export default class BingoManager_New extends cc.Component {
 
             self._bingoInfo.markingGauge = 0;
             self.scheduleOnce(() => {
-                1 == self._boards[0].isInGame() && null != mirrorBallInfo.cell0 && self._boards[0].setBingoCellMirrorBall(mirrorBallInfo.cell0.col, mirrorBallInfo.cell0.row, mirrorBallInfo.mirrorBallType);
-                1 == self._boards[1].isInGame() && null != mirrorBallInfo.cell1 && self._boards[1].setBingoCellMirrorBall(mirrorBallInfo.cell1.col, mirrorBallInfo.cell1.row, mirrorBallInfo.mirrorBallType);
+                self._boards[0].isInGame() && null != mirrorBallInfo.cell0 && self._boards[0].setBingoCellMirrorBall(mirrorBallInfo.cell0.col, mirrorBallInfo.cell0.row, mirrorBallInfo.mirrorBallType);
+                self._boards[1].isInGame() && null != mirrorBallInfo.cell1 && self._boards[1].setBingoCellMirrorBall(mirrorBallInfo.cell1.col, mirrorBallInfo.cell1.row, mirrorBallInfo.mirrorBallType);
             }, 1);
         });
     }

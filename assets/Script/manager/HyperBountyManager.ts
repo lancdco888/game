@@ -5,17 +5,20 @@ import CurrencyFormatHelper from "../global_utility/CurrencyFormatHelper";
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
 import PopupManager from "./PopupManager";
-import MembersClassBoostUpManager from "../../ServiceInfo/MembersClassBoostUpManager";
-import MembersClassBoostUpNormalManager from "../../ServiceInfo/MembersClassBoostUpNormalManager";
-import ServerStorageManager from "./ServerStorageManager";
+// import MembersClassBoostUpManager from "../../ServiceInfo/MembersClassBoostUpManager";
+// import MembersClassBoostUpNormalManager from "../../ServiceInfo/MembersClassBoostUpNormalManager";
+import ServerStorageManager, { StorageKeyType } from "./ServerStorageManager";
 import ServiceInfoManager from "../ServiceInfoManager";
 import UserInfo from "../User/UserInfo";
-import UserPromotion from "../User/UserPromotion";
-import ShopDataManager from "../Utility/ShopDataManager";
-import VipManager from "../../VIP/VipManager";
-import HyperBountyPopup from "./HyperBountyPopup";
-import HyperBountySeasonMissionCompletePopup from "./HyperBountySeasonMissionCompletePopup";
-import HyperBountyUI from "./HyperBountyUI";
+import UserPromotion, { HyperBountyDailyNormalPromotionInfo, HyperBountyDailySuperPromotionInfo, HyperBountyPassPromotionInfo, HyperBountySeasonPromotionInfo } from "../User/UserPromotion";
+import { HyperBountyUIType } from "../HyperBountyUI";
+import MembersClassBoostUpManager from "../ServiceInfo/MembersClassBoostUpManager";
+import MembersClassBoostUpNormalManager from "../ServiceInfo/MembersClassBoostUpNormalManager";
+// import ShopDataManager from "../Utility/ShopDataManager";
+// import VipManager from "../../VIP/VipManager";
+// import HyperBountyPopup from "./HyperBountyPopup";
+// import HyperBountySeasonMissionCompletePopup from "./HyperBountySeasonMissionCompletePopup";
+// import HyperBountyUI from "./HyperBountyUI";
 
 // ===================== 【全局枚举】超级赏金任务类型 =====================
 export enum HyperBountyMissionType {
@@ -43,12 +46,12 @@ export enum HyperBountyMissionType {
 
 // ===================== 【弹窗打开信息实体类】 =====================
 export class HyperBountyPopupOpenInfo {
-    private _eType: HyperBountyUI.HyperBountyUIType = HyperBountyUI.HyperBountyUIType.DAILY;
+    private _eType: HyperBountyUIType = HyperBountyUIType.DAILY;
     private _funcLoad: Function | null = null;
     private _funcClose: Function | null = null;
     private _funcOpen: Function | null = null;
 
-    constructor(type: HyperBountyUI.HyperBountyUIType, callbackObj?: { funcLoad?: Function, funcClose?: Function, funcOpen?: Function }) {
+    constructor(type: HyperBountyUIType, callbackObj?: { funcLoad?: Function, funcClose?: Function, funcOpen?: Function }) {
         this._eType = type;
         if (TSUtility.isValid(callbackObj)) {
             this._funcLoad = callbackObj.funcLoad;
@@ -57,7 +60,7 @@ export class HyperBountyPopupOpenInfo {
         }
     }
 
-    get eType(): HyperBountyUI.HyperBountyUIType { return this._eType; }
+    get eType(): HyperBountyUIType { return this._eType; }
     get funcLoad(): Function | null { return this._funcLoad; }
     get funcClose(): Function | null { return this._funcClose; }
     get funcOpen(): Function | null { return this._funcOpen; }
@@ -76,7 +79,7 @@ export class HyperBountyPopupOpenInfo {
 
 // ===================== 【核心单例类】超级赏金管理器 =====================
 @ccclass("HyperBountyManager")
-export default class HyperBountyManager extends Component {
+export default class HyperBountyManager extends cc.Component {
     // ===================== 【静态单例】 =====================
     private static _instance: HyperBountyManager | null = null;
     public static get instance(): HyperBountyManager {
@@ -100,18 +103,19 @@ export default class HyperBountyManager extends Component {
         { itemID: SDefine.I_STAR_SHOP_COIN, addCnt: 100 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_2, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 3000000 },
         { itemID: SDefine.I_GAMEMONEY, addCnt: 3000000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_3, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 3000000 }
     ];
+    
     /** 通行证付费奖励池数据 */
     public PASS_REWARD_PURCHASE_DATA: Array<{ itemID: string, addCnt: number | string, addTime?: number }> = [
-        { itemID: SDefine.I_GAMEMONEY, addCnt: 2500000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_4, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 2500000 },
-        { itemID: SDefine.I_STAR_SHOP_COIN, addCnt: 100 },{ itemID: SDefine.I_FULLED_PIGGY_BANK, addCnt: 1.99 },{ itemID: SDefine.I_BINGOBALL_FREE, addCnt: 20 },
-        { itemID: SDefine.I_GAMEMONEY, addCnt: 5000000 },{ itemID: SDefine.ITEM_LEVEL_UP_BOOSTER, addTime:30 },{ itemID: SDefine.I_GAMEMONEY, addCnt:5000000 },
-        { itemID: SDefine.I_INBOX_FLIPCOIN, addCnt:1.99 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },{ itemID: SDefine.I_GAMEMONEY, addCnt:5000000 },
-        { itemID: SDefine.I_STAR_SHOP_COIN, addCnt:250 },{ itemID: SDefine.I_GAMEMONEY, addCnt:5000000 },{ itemID: SDefine.I_INBOX_PIGGIES_LADDERS, addCnt:2.99 },
-        { itemID: SDefine.I_GAMEMONEY, addCnt:10000000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },{ itemID: SDefine.I_RANDOM_JOKER_CARD_1_MORE, addCnt:1 },
-        { itemID: SDefine.I_GAMEMONEY, addCnt:10000000 },{ itemID: SDefine.I_INBOX_SCRATCH_EMOJI777, addCnt:4.99 },{ itemID: SDefine.ITEM_LEVEL_UP_BOOSTER, addTime:60 },
-        { itemID: SDefine.I_GAMEMONEY, addCnt:20000000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },{ itemID: SDefine.I_GAMEMONEY, addCnt:20000000 },
-        { itemID: SDefine.I_INBOX_SCRATCH_8DRAGON, addCnt:7.99 },{ itemID: SDefine.I_STAR_SHOP_COIN, addCnt:500 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },
-        { itemID: SDefine.I_GAMEMONEY, addCnt:20000000 },{ itemID: SDefine.I_JOKER_CARD, addCnt:1 },{ itemID: SDefine.I_INBOX_LUCKY_WHEEL, addCnt:9.99 }
+        // { itemID: SDefine.I_GAMEMONEY, addCnt: 2500000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_4, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 2500000 },
+        // { itemID: SDefine.I_STAR_SHOP_COIN, addCnt: 100 },{ itemID: SDefine.I_FULLED_PIGGY_BANK, addCnt: 1.99 },{ itemID: SDefine.I_BINGOBALL_FREE, addCnt: 20 },
+        // { itemID: SDefine.I_GAMEMONEY, addCnt: 5000000 },{ itemID: SDefine.ITEM_LEVEL_UP_BOOSTER, addTime:30 },{ itemID: SDefine.I_GAMEMONEY, addCnt:5000000 },
+        // { itemID: SDefine.I_INBOX_FLIPCOIN, addCnt:1.99 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },{ itemID: SDefine.I_GAMEMONEY, addCnt:5000000 },
+        // { itemID: SDefine.I_STAR_SHOP_COIN, addCnt:250 },{ itemID: SDefine.I_GAMEMONEY, addCnt:5000000 },{ itemID: SDefine.I_INBOX_PIGGIES_LADDERS, addCnt:2.99 },
+        // { itemID: SDefine.I_GAMEMONEY, addCnt:10000000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },{ itemID: SDefine.I_RANDOM_JOKER_CARD_1_MORE, addCnt:1 },
+        // { itemID: SDefine.I_GAMEMONEY, addCnt:10000000 },{ itemID: SDefine.I_INBOX_SCRATCH_EMOJI777, addCnt:4.99 },{ itemID: SDefine.ITEM_LEVEL_UP_BOOSTER, addTime:60 },
+        // { itemID: SDefine.I_GAMEMONEY, addCnt:20000000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },{ itemID: SDefine.I_GAMEMONEY, addCnt:20000000 },
+        // { itemID: SDefine.I_INBOX_SCRATCH_8DRAGON, addCnt:7.99 },{ itemID: SDefine.I_STAR_SHOP_COIN, addCnt:500 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_5, addCnt:1 },
+        // { itemID: SDefine.I_GAMEMONEY, addCnt:20000000 },{ itemID: SDefine.I_JOKER_CARD, addCnt:1 },{ itemID: SDefine.I_INBOX_LUCKY_WHEEL, addCnt:9.99 }
     ];
     /** 通行证等级溢出后 拓展奖励所需经验值 */
     public EXTEND_REWARD_GOAL: number = 700;
@@ -150,12 +154,12 @@ export default class HyperBountyManager extends Component {
 
     /** 初始化：注册用户信息更新监听 */
     public initialize(): void {
-        UserInfo.instance().addListenerTarget(UserInfo.MSG.UPDATE_PROMOTION, this.updateCompleteSeasonMission, this);
+        // UserInfo.instance().addListenerTarget(MSG.UPDATE_PROMOTION, this.updateCompleteSeasonMission, this);
     }
 
     // ===================== 【基础通用方法】 =====================
     public isAvailable(): boolean { return false; }
-    public isHyperBountyStart(): boolean { return TSUtility.isValid(UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailyNormalPromotionInfo.PromotionKeyName)); }
+    public isHyperBountyStart(): boolean { return TSUtility.isValid(UserInfo.instance().getPromotionInfo(HyperBountyDailyNormalPromotionInfo.PromotionKeyName)); }
     /** 是否完成所有每日任务+超级任务 */
     public isCompleteAllMissionIncludeSuper(): boolean {
         const isDailyAllDone = this.getDailyCompleteCount() + this.getDailyReceiveCount() === this.missionCount;
@@ -192,8 +196,8 @@ export default class HyperBountyManager extends Component {
         const rewardArr: Array<any> = [];
         if (isPurchase === 1) {
             const productInfo = this.getPassProductInfo();
-            const vipPoint = ShopDataManager.Instance().getProductPurchaseVipPoint(productInfo.getPrice());
-            rewardArr.push({ itemID: "VipPoint", addCnt: vipPoint, addTime: 0 });
+            // const vipPoint = ShopDataManager.Instance().getProductPurchaseVipPoint(productInfo.getPrice());
+            // rewardArr.push({ itemID: "VipPoint", addCnt: vipPoint, addTime: 0 });
         }
         this.PASS_REWARD_PURCHASE_DATA.forEach((item, idx) => {
             const cloneItem = JSON.parse(JSON.stringify(item));
@@ -280,7 +284,7 @@ export default class HyperBountyManager extends Component {
             curLevel++;
         }
         if (curLevel >= this.numPassMaxLevel) {
-            const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyPassPromotionInfo.PromotionKeyName);
+            const promotionInfo = UserInfo.instance().getPromotionInfo(HyperBountyPassPromotionInfo.PromotionKeyName);
             if (TSUtility.isValid(promotionInfo)) {
                 curLevel = this.numPassMaxLevel + promotionInfo.numExtendRewardCollectCount;
             }
@@ -309,7 +313,7 @@ export default class HyperBountyManager extends Component {
     }
     /** 判断指定等级的奖励是否已领取 */
     public isReceivedLevel(level: number, isPremium: boolean): boolean {
-        const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyPassPromotionInfo.PromotionKeyName);
+        const promotionInfo = UserInfo.instance().getPromotionInfo(HyperBountyPassPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotionInfo)) return false;
         const rewardArr = isPremium ? promotionInfo.arrCollectPremiumRewardLevel : promotionInfo.arrCollectedRewardLevel;
         return rewardArr.includes(level);
@@ -331,7 +335,7 @@ export default class HyperBountyManager extends Component {
 
     // ===================== 【任务相关核心方法】 =====================
     /** 获取任务描述文本(带富文本/纯文本) */
-    public getMissionDescription(missionInfo: any, isRichText: boolean = true, uiType: HyperBountyUI.HyperBountyUIType = HyperBountyUI.HyperBountyUIType.NONE): string {
+    public getMissionDescription(missionInfo: any, isRichText: boolean = true, uiType: HyperBountyUIType = HyperBountyUIType.NONE): string {
         const goalNum = this.getStringGoalCount(missionInfo);
         const currNum = this.getStringCurrentCount(missionInfo);
         const subGoal = CurrencyFormatHelper.formatEllipsisNumberToFixedWholed(missionInfo.numSubGoalCount, 2);
@@ -358,7 +362,7 @@ export default class HyperBountyManager extends Component {
             case HyperBountyMissionType.HYPER_BOUNTY_MISSION_TYPE_BIG_WIN_MEGA:
                 return isRichText ? `Get   <color=#00FF00>${goalNum}</color> mega wins.` : `Get ${goalNum} mega wins.`;
             case HyperBountyMissionType.HYPER_BOUNTY_MISSION_TYPE_CARD_PACK:
-                HyperBountyUI.HyperBountyUIType.SEASON;
+                HyperBountyUIType.SEASON;
                 return isRichText ? `Obtain   <color=#00FF00>${goalNum}</color> card packs\nby making spins.` : `Obtain ${goalNum} card packs\nby making spins.`;
             case HyperBountyMissionType.HYPER_BOUNTY_MISSION_TYPE_MAKE_PURCHASE:
                 return isRichText ? `Make a\npurchase of\n$<color=#00FF00>${missionInfo.strValue_1}</color> or more.` : `Make a\npurchase of\n$${missionInfo.strValue_1} or more.`;
@@ -381,7 +385,7 @@ export default class HyperBountyManager extends Component {
             case HyperBountyMissionType.HYPER_BOUNTY_MISSION_TYPE_PLAY_WHEEL_BONUS:
                 return isRichText ? `Play   <color=#00FF00>${goalNum}</color> Wheel\nBonus.` : `Play ${goalNum} Wheel\nBonus.`;
             default:
-                error(`Unknown mission ID: ${missionInfo.numMissionID}`);
+                cc.error(`Unknown mission ID: ${missionInfo.numMissionID}`);
                 return "";
         }
     }
@@ -433,10 +437,11 @@ export default class HyperBountyManager extends Component {
         if (MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess()) {
             vipLevel = MembersClassBoostUpNormalManager.instance().getBoostedMembersClass();
         }
-        const vipGrade = VipManager.Instance().getGradeInfo(vipLevel);
-        if (!TSUtility.isValid(vipGrade)) return coin;
-        const bonusCoin = (vipGrade.benefit.shopBonus * coin).toFixed();
-        return parseInt(bonusCoin);
+        // const vipGrade = VipManager.Instance().getGradeInfo(vipLevel);
+        // if (!TSUtility.isValid(vipGrade)) return coin;
+        // const bonusCoin = (vipGrade.benefit.shopBonus * coin).toFixed();
+        // return parseInt(bonusCoin);
+        return 0;
     }
     /** 获取已购买的付费通行证道具信息 */
     public getPurchaseProduct(): any | null {
@@ -458,7 +463,7 @@ export default class HyperBountyManager extends Component {
     }
     /** 获取通行证商品信息 */
     public getPassProductInfo(): any {
-        return ShopDataManager.Instance().getHyperPassProductInfo();
+        return null;//ShopDataManager.Instance().getHyperPassProductInfo();
     }
     /** 获取奖励图标配置数据 */
     public getPassRewardIconData(itemId: string, addCnt: number | string, addTime: number, isPremium: boolean): Array<string> | undefined {
@@ -491,7 +496,7 @@ export default class HyperBountyManager extends Component {
 
     // ===================== 【每日/赛季/超级任务数据获取】 =====================
     public getCurrentSeasonAllMission(): Array<any> {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountySeasonPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountySeasonPromotionInfo.PromotionKeyName);
         return TSUtility.isValid(promotion) ? this.getSeasonAllMission(promotion) : [];
     }
     public getSeasonAllMission(promotionInfo: any): Array<any> {
@@ -515,7 +520,7 @@ export default class HyperBountyManager extends Component {
         return count;
     }
     public getSeasonMissionByIndex(index: number): any | null {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountySeasonPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountySeasonPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotion)) return null;
         if (index < 0) return null;
         const groupIdx = Math.floor(index /10) -1;
@@ -526,12 +531,12 @@ export default class HyperBountyManager extends Component {
         return missionIdx >= group.arrMission.length ? null : group.arrMission[missionIdx];
     }
     public getDailyMissionByIndex(index: number): any | null {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotion)) return null;
         return index <0 || index >= promotion.arrMission.length ? null : promotion.arrMission[index];
     }
     public getStartMissionOpenDate(): number {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountySeasonPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountySeasonPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotion)) return 0;
         return promotion.arrMission.length <=0 ?0 : promotion.arrMission[0].numMissionOpenDate;
     }
@@ -545,7 +550,7 @@ export default class HyperBountyManager extends Component {
         return 0;
     }
     public getDailyCompleteCount(): number {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotion)) return 0;
         let count =0;
         promotion.arrMission.forEach(mission => {
@@ -554,7 +559,7 @@ export default class HyperBountyManager extends Component {
         return count;
     }
     public getDailyReceiveCount(): number {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotion)) return 0;
         let count =0;
         promotion.arrMission.forEach(mission => {
@@ -563,7 +568,7 @@ export default class HyperBountyManager extends Component {
         return count;
     }
     public getDailyNextResetDate(): number {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
         return TSUtility.isValid(promotion) ? promotion.numNextResetDate :0;
     }
     public getSuperReceiveCount(): number {
@@ -571,15 +576,15 @@ export default class HyperBountyManager extends Component {
         return TSUtility.isValid(superMission) && superMission.isComplete && !superMission.isReceived ?1 :0;
     }
     public getSuperNextResetDate(): number {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailySuperPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailySuperPromotionInfo.PromotionKeyName);
         return TSUtility.isValid(promotion) ? promotion.numNextResetDate :0;
     }
     public getSuperMissionInfo(): any | null {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailySuperPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailySuperPromotionInfo.PromotionKeyName);
         return TSUtility.isValid(promotion) ? promotion.infoMission : null;
     }
     public getRunningMissionIndex(): number {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyDailyNormalPromotionInfo.PromotionKeyName);
         if (!TSUtility.isValid(promotion)) return 0;
         for (let i=0; i < promotion.arrMission.length; i++) {
             const mission = promotion.arrMission[i];
@@ -591,13 +596,13 @@ export default class HyperBountyManager extends Component {
     // ===================== 【倍率事件相关】 =====================
     /** 是否开启2倍积分事件 */
     public is2XEventActive(): boolean {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyPassPromotionInfo.PromotionKeyName);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyPassPromotionInfo.PromotionKeyName);
         return TSUtility.isValid(promotion) && promotion.isCheckedBoostUser && promotion.numPointBoostRate >1;
     }
     /** 是否可参与2倍积分事件 */
     public isPlay2XEventAction(): boolean {
-        const promotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountyPassPromotionInfo.PromotionKeyName);
-        const storageDate = ServerStorageManager.getAsNumber(ServerStorageManager.StorageKeyType.HYPER_BOUNTY_2X_SEASON_END_DATE);
+        const promotion = UserInfo.instance().getPromotionInfo(HyperBountyPassPromotionInfo.PromotionKeyName);
+        const storageDate = ServerStorageManager.getAsNumber(StorageKeyType.HYPER_BOUNTY_2X_SEASON_END_DATE);
         return TSUtility.isValid(promotion) && this.is2XEventOn && !(storageDate >= promotion.numNextResetDate);
     }
 
@@ -609,41 +614,41 @@ export default class HyperBountyManager extends Component {
             return;
         }
         PopupManager.Instance().showDisplayProgress(true);
-        HyperBountyPopup.getPopup((err: any, popup: HyperBountyPopup) => {
-            PopupManager.Instance().showDisplayProgress(false);
-            if (TSUtility.isValid(err)) {
-                openInfo.openFail();
-                return;
-            }
-            this._isOpenMainPopup = true;
-            TSUtility.isValid(openInfo.funcLoad) && openInfo.funcLoad!();
-            popup.setOpenComplete(() => { TSUtility.isValid(openInfo.funcOpen) && openInfo.funcOpen!(); });
-            popup.setCloseCallback(() => {
-                if (ServiceInfoManager.BOOL_IS_OPEN_NEW_SEASON_HYPER_BOUNTY) {
-                    PopupManager.Instance().showDisplayProgress(true);
-                    HyperBountyPopup.getPopup((err2: any, popup2: HyperBountyPopup) => {
-                        PopupManager.Instance().showDisplayProgress(false);
-                        if (!TSUtility.isValid(err2)) {
-                            popup2.setCloseCallback(() => {
-                                this._isOpenMainPopup = false;
-                                TSUtility.isValid(openInfo.funcClose) && openInfo.funcClose!();
-                            });
-                            popup2.open(openInfo.eType);
-                        }
-                    });
-                } else {
-                    this._isOpenMainPopup = false;
-                    TSUtility.isValid(openInfo.funcClose) && openInfo.funcClose!();
-                }
-            });
-            popup.open(openInfo.eType);
-        });
+        // HyperBountyPopup.getPopup((err: any, popup: HyperBountyPopup) => {
+        //     PopupManager.Instance().showDisplayProgress(false);
+        //     if (TSUtility.isValid(err)) {
+        //         openInfo.openFail();
+        //         return;
+        //     }
+        //     this._isOpenMainPopup = true;
+        //     TSUtility.isValid(openInfo.funcLoad) && openInfo.funcLoad!();
+        //     popup.setOpenComplete(() => { TSUtility.isValid(openInfo.funcOpen) && openInfo.funcOpen!(); });
+        //     popup.setCloseCallback(() => {
+        //         if (ServiceInfoManager.BOOL_IS_OPEN_NEW_SEASON_HYPER_BOUNTY) {
+        //             PopupManager.Instance().showDisplayProgress(true);
+        //             HyperBountyPopup.getPopup((err2: any, popup2: HyperBountyPopup) => {
+        //                 PopupManager.Instance().showDisplayProgress(false);
+        //                 if (!TSUtility.isValid(err2)) {
+        //                     popup2.setCloseCallback(() => {
+        //                         this._isOpenMainPopup = false;
+        //                         TSUtility.isValid(openInfo.funcClose) && openInfo.funcClose!();
+        //                     });
+        //                     popup2.open(openInfo.eType);
+        //                 }
+        //             });
+        //         } else {
+        //             this._isOpenMainPopup = false;
+        //             TSUtility.isValid(openInfo.funcClose) && openInfo.funcClose!();
+        //         }
+        //     });
+        //     popup.open(openInfo.eType);
+        // });
     }
 
     // ===================== 【事件回调】赛季任务完成更新 =====================
     public updateCompleteSeasonMission(msgType: string, oldVal: any, newVal: any): void {
-        if (msgType !== UserPromotion.HyperBountySeasonPromotionInfo.PromotionKeyName) return;
-        const oldPromotion = UserInfo.instance().getPromotionInfo(UserPromotion.HyperBountySeasonPromotionInfo.PromotionKeyName);
+        if (msgType !== HyperBountySeasonPromotionInfo.PromotionKeyName) return;
+        const oldPromotion = UserInfo.instance().getPromotionInfo(HyperBountySeasonPromotionInfo.PromotionKeyName);
         const newPromotion = newVal;
         if (!TSUtility.isValid(oldPromotion) || !TSUtility.isValid(newPromotion) || oldPromotion.numNextResetDate !== newPromotion.numNextResetDate) return;
         
@@ -666,25 +671,25 @@ export default class HyperBountyManager extends Component {
 
         // 调度任务完成弹窗
         if (needOpenPopupMission.length <= 0) return;
-        needOpenPopupMission.forEach(mission => {
-            if (!TSUtility.isValid(mission)) return;
-            const popupInfo = new PopupManager.OpenPopupInfo();
-            popupInfo.type = "HyperBountySeasonMissionCompletePopup";
-            popupInfo.openCallback = () => {
-                PopupManager.Instance().showDisplayProgress(true);
-                HyperBountySeasonMissionCompletePopup.getPopup((err: any, popup: HyperBountySeasonMissionCompletePopup) => {
-                    PopupManager.Instance().showDisplayProgress(false);
-                    if (TSUtility.isValid(err)) {
-                        PopupManager.Instance().checkNextOpenPopup();
-                        return;
-                    }
-                    popup.setCloseCallback(() => {
-                        this.scheduleOnce(() => { PopupManager.Instance().checkNextOpenPopup(); }, this._isOpenMainPopup ? 0.5 : 0);
-                    });
-                    popup.open(mission.numClientIndex);
-                });
-            };
-            this._arrCompletedSeasonMissionArray.push({ openPopupInfo: popupInfo, hyperBountyMissionInfo: mission });
-        });
+        // needOpenPopupMission.forEach(mission => {
+        //     if (!TSUtility.isValid(mission)) return;
+        //     const popupInfo = new PopupManager.OpenPopupInfo();
+        //     popupInfo.type = "HyperBountySeasonMissionCompletePopup";
+        //     popupInfo.openCallback = () => {
+        //         PopupManager.Instance().showDisplayProgress(true);
+        //         HyperBountySeasonMissionCompletePopup.getPopup((err: any, popup: HyperBountySeasonMissionCompletePopup) => {
+        //             PopupManager.Instance().showDisplayProgress(false);
+        //             if (TSUtility.isValid(err)) {
+        //                 PopupManager.Instance().checkNextOpenPopup();
+        //                 return;
+        //             }
+        //             popup.setCloseCallback(() => {
+        //                 this.scheduleOnce(() => { PopupManager.Instance().checkNextOpenPopup(); }, this._isOpenMainPopup ? 0.5 : 0);
+        //             });
+        //             popup.open(mission.numClientIndex);
+        //         });
+        //     };
+        //     this._arrCompletedSeasonMissionArray.push({ openPopupInfo: popupInfo, hyperBountyMissionInfo: mission });
+        // });
     }
 }
