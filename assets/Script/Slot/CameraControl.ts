@@ -37,7 +37,7 @@ export default class CameraControl extends cc.Component {
     // ====== 私有成员变量 (原JS所有私有属性，补全初始化值+类型) ======
     private pivotTopFramePosY: number = 250;
     private canvasHeight: number = 720;
-    private scaleAdjuster: AutoScalingAdjuster = null;
+    public scaleAdjuster: AutoScalingAdjuster = null;
 
     private nDefaultDownZoomOutYPosition: number = 39;
     private nDefaultDownZoomInYPosition: number = 0;

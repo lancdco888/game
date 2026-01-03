@@ -172,10 +172,10 @@ export default class SlotManager extends cc.Component {
     private _casinoJackpotWinID: number = 0;
     private _slotGameInfo: any = null;
     private _initFinish: boolean = false;
-    private _isAvailable: boolean = true;
+    public _isAvailable: boolean = true;
     private _isCheckTutorialItem: boolean = false;
     private _slotBaseBetPerSpinCnt: number = 0;
-    private _scaleAdjuster: any = null;
+    public _scaleAdjuster: any = null;
     private _isOpenMovePopup: boolean = false;
     private _isloungeNewSlot: boolean = false;
     private _machineFrame: any = null;
@@ -204,7 +204,7 @@ export default class SlotManager extends cc.Component {
     public readonly TOOLTIP_FEVER_MODE = "TOOLTIP_FEVER_MODE";
 
     prevPortrait: boolean;
-    private _special_select_cell: any;
+    public _special_select_cell: any;
     private _special_ignore_symbolId: any;
     private _listSlotTooltip: any;
     private _symbol_width: number;

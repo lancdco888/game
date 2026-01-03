@@ -680,7 +680,7 @@ export default class CommonServer {
         this.gsHttpCall(req, (res) => { completeFunc(res); }, 0);
     }
 
-    public requestBingoGameStart(uid: number, token: string, gameType: number, useNewbieTicket: boolean, useTicketCnt: number, completeFunc: Function): void {
+    public requestBingoGameStart(uid: number, token: string, gameType: number, useNewbieTicket: boolean|string, useTicketCnt: number, completeFunc: Function): void {
         const req = new ReqParamModel();
         req.url = this.commonServerBaseURL + "bingo/start";
         req.postData = JSON.stringify({ gameType: gameType, useNewbieTicket: useNewbieTicket, useTicketCnt: useTicketCnt });
@@ -699,7 +699,7 @@ export default class CommonServer {
         this.gsHttpCall(req, (res) => { completeFunc(res); }, 0);
     }
 
-    public requestBingoRemainGameCollect(uid: number, token: string, boardId: string, completeFunc: Function, isWatchedAd: boolean = false): void {
+    public requestBingoRemainGameCollect(uid: number, token: string, boardId: string|number, completeFunc: Function, isWatchedAd: boolean = false): void {
         const req = new ReqParamModel();
         req.url = this.commonServerBaseURL + "bingo/collectRemainGame";
         req.postData = JSON.stringify({ boardId: boardId, isWatchedAd: isWatchedAd });

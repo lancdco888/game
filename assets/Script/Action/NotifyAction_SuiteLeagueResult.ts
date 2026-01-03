@@ -2,7 +2,7 @@ import SDefine from '../global_utility/SDefine';
 import TSUtility from '../global_utility/TSUtility';
 import PopupManager from '../manager/PopupManager';
 import RewardCenterPopup from '../Popup/RewardCenterPopup';
-import { RewardCenterViewType } from '../../../Popup/RewardCenter/View/RewardCenterView';
+import { RewardCenterViewType } from '../View/RewardCenterView';
 import SuiteLeagueResultPopup from '../Popup/SuiteLeagueResultPopup';
 import CenturionCliqueInvitePopup from '../Popup/CenturionCliqueInvitePopup';
 import CenturionCliqueManager from '../manager/CenturionCliqueManager';

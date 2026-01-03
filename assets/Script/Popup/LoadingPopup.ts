@@ -307,7 +307,7 @@ export default class LoadingPopup extends DialogBase {
      * @param text 进度文本
      * @param isClose 是否加载完成后关闭弹窗
      */
-    setPostProgress(value: number, text: string, isClose: boolean): void {
+    setPostProgress(value: number, text: string, isClose?: boolean): void {
         value = Math.min(value, 1);
         const progress = (this._preProgress + this._midProgress + this._postProgress * value) / this._totalProgress;
         this.displayProgress(text, progress);

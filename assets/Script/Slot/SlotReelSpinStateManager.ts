@@ -20,8 +20,8 @@ export default class SlotReelSpinStateManager extends cc.Component {
     private jackpotFlag: boolean = false; // 大奖模式开关
     private respinFlag: boolean = false; // 重转模式开关
     private spinFlag: boolean = true; // 基础旋转可用开关
-    private customCaption: string = ""; // 自定义标题文案
-    private customMessage: string = ""; // 自定义提示文案
+    public customCaption: string = ""; // 自定义标题文案
+    public customMessage: string = ""; // 自定义提示文案
 
     // ✅ 核心单例访问入口，原代码getter逻辑100%复刻，全局唯一实例，项目所有地方通过该方法获取
     public static get Instance(): SlotReelSpinStateManager {

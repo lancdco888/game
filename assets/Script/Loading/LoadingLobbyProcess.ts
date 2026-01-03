@@ -9,7 +9,7 @@ import UserInfo from "../User/UserInfo";
 import ServiceInfoManager from "../ServiceInfoManager";
 //import FBInstantUtil from "../Network/FBInstantUtil";
 import CenturionCliqueManager from "../manager/CenturionCliqueManager";
-import ClubServerInfo, { ClubInfo } from "../Popup/Club/ClubServerInfo";
+// import ClubServerInfo, { ClubInfo } from "../Popup/Club/ClubServerInfo";
 
 // 导入所有子状态类
 import L_LoadLauncherToLobbyState from "../State/L_LoadLauncherToLobbyState";
@@ -21,15 +21,15 @@ import L_RefreshJackpotState from "../State/L_RefreshJackpotState";
 import L_RefreshHeroInfoState from "../State/L_RefreshHeroInfoState";
 
 // 导入Launcher层状态类
-import L_GetSlotTourneyInfoState from "../Launcher/State/L_GetSlotTourneyInfoState";
-import L_LoadingRecordAnalyticsState from "../Launcher/State/L_LoadSceneCompleteState";
-import L_GetFriendInfoState from "../Launcher/State/L_GetFriendInfoState";
-import L_GetJackpotInfo from "../Launcher/State/L_GetJackpotInfo";
-import L_GetFBTournamentInfoState from "../Launcher/State/L_GetFBTournamentInfoState";
-import L_AcceptPromotionState from "../Launcher/State/L_AcceptPromotionState";
-import L_SetOfferPopupInfo from "../Launcher/State/L_SetOfferPopupInfo";
-import L_CheckFBSquadStatus from "../Launcher/State/L_CheckFBSquadStatus";
-import L_CheckBoosterInfoState from "../Launcher/State/L_CheckBoosterInfoState";
+// import L_GetSlotTourneyInfoState from "../Launcher/State/L_GetSlotTourneyInfoState";
+// import L_LoadingRecordAnalyticsState from "../Launcher/State/L_LoadSceneCompleteState";
+// import L_GetFriendInfoState from "../Launcher/State/L_GetFriendInfoState";
+// import L_GetJackpotInfo from "../Launcher/State/L_GetJackpotInfo";
+// import L_GetFBTournamentInfoState from "../Launcher/State/L_GetFBTournamentInfoState";
+// import L_AcceptPromotionState from "../Launcher/State/L_AcceptPromotionState";
+// import L_SetOfferPopupInfo from "../Launcher/State/L_SetOfferPopupInfo";
+// import L_CheckFBSquadStatus from "../Launcher/State/L_CheckFBSquadStatus";
+// import L_CheckBoosterInfoState from "../Launcher/State/L_CheckBoosterInfoState";
 import { Utility } from "../global_utility/Utility";
 import CommonServer from "../Network/CommonServer";
 import FBInstantUtil from "../Network/FBInstantUtil";
@@ -86,6 +86,7 @@ export class L_GetInboxInfoState extends State {
     }
 }
 
+
 // ===================== 状态类3: 检查百夫长集团信息 最简单的状态类 原JS逻辑1:1复刻 =====================
 @ccclass()
 export class L_CheckCenturionCliqueInfoState extends State {
@@ -112,7 +113,7 @@ export class L_UpdateMyClubInfoState extends State {
     private async doProcess(): Promise<void> {
         const response = await CommonServer.Instance().asyncRequestGetMyClubInfo();
         if (!CommonServer.isServerResponseError(response)) {
-            UserInfo.instance().infoClub = ClubInfo.parseObj(response);
+            // UserInfo.instance().infoClub = ClubInfo.parseObj(response);
         }
         this.setDone();
     }
@@ -241,28 +242,28 @@ export default class LoadingLobbyProcess {
         const subState1 = new SequencialState();
         subState1.insert(o, new L_LoadLauncherToLobbyState());
         o++;
-        subState1.insert(o, new L_LoadingRecordAnalyticsState("load_lobby_complete"));
+        // subState1.insert(o, new L_LoadingRecordAnalyticsState("load_lobby_complete"));
         rootState.insert(n, subState1);
 
         // 子序列2: 拉取各类基础信息+埋点
         o = 0;
         const subState2 = new SequencialState();
-        subState2.insert(o, new L_GetFriendInfoState());
-        subState2.insert(o, new L_GetJackpotInfo());
-        subState2.insert(o, new L_GetFBTournamentInfoState());
-        subState2.insert(o, new L_RefreshHeroInfoState());
-        subState2.insert(o, new L_GetBingoGameInfoState());
-        subState2.insert(o++, new L_GetInboxInfoState());
-        o++;
-        subState2.insert(o, new L_CheckCenturionCliqueInfoState());
-        subState2.insert(o, new L_LoadingRecordAnalyticsState("getInfos_complete"));
-        o++;
-        subState2.insert(o, new L_AcceptPromotionState());
-        subState2.insert(o, new L_SetOfferPopupInfo());
-        subState2.insert(o, new L_CheckFBSquadStatus());
-        subState2.insert(o, new L_GetInstantInfoState());
-        o++;
-        subState2.insert(o, new L_LoadingRecordAnalyticsState("setInfos_complete"));
+        // subState2.insert(o, new L_GetFriendInfoState());
+        // subState2.insert(o, new L_GetJackpotInfo());
+        // subState2.insert(o, new L_GetFBTournamentInfoState());
+        // subState2.insert(o, new L_RefreshHeroInfoState());
+        // subState2.insert(o, new L_GetBingoGameInfoState());
+        // subState2.insert(o++, new L_GetInboxInfoState());
+        // o++;
+        // subState2.insert(o, new L_CheckCenturionCliqueInfoState());
+        // subState2.insert(o, new L_LoadingRecordAnalyticsState("getInfos_complete"));
+        // o++;
+        // subState2.insert(o, new L_AcceptPromotionState());
+        // subState2.insert(o, new L_SetOfferPopupInfo());
+        // subState2.insert(o, new L_CheckFBSquadStatus());
+        // subState2.insert(o, new L_GetInstantInfoState());
+        // o++;
+        // subState2.insert(o, new L_LoadingRecordAnalyticsState("setInfos_complete"));
         rootState.insert(n, subState2);
 
         // 最终: 大厅核心初始化
@@ -282,13 +283,13 @@ export default class LoadingLobbyProcess {
         state.insert(o, new L_RefreshJackpotState());
         state.insert(o, new L_RefreshHeroInfoState());
         state.insert(o, new L_GetBingoGameInfoState());
-        if (SDefine.SlotTournament_Use) {
-            state.insert(o, new L_GetSlotTourneyInfoState());
-        }
-        o++;
-        state.insert(o, new L_GetInboxInfoState());
-        o++;
-        state.insert(o, new L_CheckBoosterInfoState());
+        // if (SDefine.SlotTournament_Use) {
+        //     state.insert(o, new L_GetSlotTourneyInfoState());
+        // }
+        // o++;
+        // state.insert(o, new L_GetInboxInfoState());
+        // o++;
+        // state.insert(o, new L_CheckBoosterInfoState());
         o++;
         state.insert(o, new L_LobbyInitState());
 
@@ -308,8 +309,8 @@ export default class LoadingLobbyProcess {
         o++;
         state.insert(o, new L_GetInboxInfoState());
         o++;
-        state.insert(o, new L_CheckBoosterInfoState());
-        o++;
+        // state.insert(o, new L_CheckBoosterInfoState());
+        // o++;
         state.insert(o, new L_LobbyInitState());
 
         return state;

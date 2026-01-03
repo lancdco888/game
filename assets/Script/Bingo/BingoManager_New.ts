@@ -1,47 +1,58 @@
 const { ccclass, property } = cc._decorator;
 
 // ===================== 原文件所有导入模块 路径完全不变 顺序一致 无删减 =====================
-import BingoBoard from "./BingoBoard";
+// import BingoBoard from "./BingoBoard";
 import MessageRoutingManager from "../message/MessageRoutingManager";
-import BingoData, { BingoGameInfo, BingoBoardState, BingoMarkingType, BingoMirrorBallType, MaxRowBingoBallCnt, MaxBingoBallCnt, MaxBoardSize, MirrorBallBastInfo, NextMirrorBallInfo } from "./BingoData";
-import BingoBallContainer from "./BingoBallContainer";
-import BingoHistoryPopup from "./BingoHistoryPopup";
-import BingoResultPopup from "./BingoResultPopup";
+// import BingoBallContainer from "./BingoBallContainer";
+// import BingoHistoryPopup from "./BingoHistoryPopup";
+// import BingoResultPopup from "./BingoResultPopup";
 import UserInfo from "../User/UserInfo";
-import CommonServer from "../Network/CommonServer";
+import CommonServer, { PurchaseEntryReason } from "../Network/CommonServer";
 import SDefine from "../global_utility/SDefine";
-import CoinToTargetEffect from "../Popup/Coin/CoinToTargetEffect";
-import PopupManager from "../../slot_common/Script/Popup/PopupManager";
+// import CoinToTargetEffect from "../Popup/Coin/CoinToTargetEffect";
+import PopupManager from "../manager/PopupManager";
 import PayCode from "../Config/PayCode";
 import CommonSoundSetter from "../global_utility/CommonSoundSetter";
 import SoundManager from "../manager/SoundManager";
-import BingoInfoPopup from "./BingoInfoPopup";
+// import BingoInfoPopup from "./BingoInfoPopup";
 import TSUtility from "../global_utility/TSUtility";
-import BingoRemainGameCollectUI from "./BingoRemainGameCollectUI";
-import GameCommonSound from "../../slot_common/Script/Sound/GameCommonSound";
-import BingoBallZeroPopup from "./BingoBallZeroPopup";
-import ServiceInfoManager from "../ServiceInfo/ServiceInfoManager";
-import BingoCellEffect from "../Popup/Bingo/BingoCellEffect";
-import BingoPrize from "./BingoPrize";
-import BingoMarking from "./BingoMarking";
-import VipImageSetter from "../UI/VipImageStter";
-import FireHoseSender from "../FireHoseSender";
+// import BingoRemainGameCollectUI from "./BingoRemainGameCollectUI";
+import GameCommonSound from "../GameCommonSound";
+// import BingoBallZeroPopup from "./BingoBallZeroPopup";
+// import ServiceInfoManager from "../ServiceInfo/ServiceInfoManager";
+// import BingoCellEffect from "../Popup/Bingo/BingoCellEffect";
+// import BingoPrize from "./BingoPrize";
+// import BingoMarking from "./BingoMarking";
+// import VipImageSetter from "../UI/VipImageStter";
+import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import AsyncHelper from "../global_utility/AsyncHelper";
-import HeroTooltipPopup from "../Utility/HeroTooltipPopup";
-import CollectBingoBallEffect from "../Popup/BingoBall/CollectBingoBallEffect";
-import BingoStartPopup_2021 from "./BingoStartPopup_2021";
+import HeroTooltipPopup, { HT_MakingInfo } from "../Utility/HeroTooltipPopup";
+// import CollectBingoBallEffect from "../Popup/BingoBall/CollectBingoBallEffect";
+// import BingoStartPopup_2021 from "./BingoStartPopup_2021";
 import BingoResetTimer from "./BingoResetTimer";
 import BingoOfferPopup from "./BingoOfferPopup";
-import MembersBoostUpPopupIntroEffect from "../Popup/MembersBoostUp/MembersBoostUpPopupIntroEffect";
+// import MembersBoostUpPopupIntroEffect from "../Popup/MembersBoostUp/MembersBoostUpPopupIntroEffect";
 import MembersClassBoostUpManager from "../ServiceInfo/MembersClassBoostUpManager";
 import MembersClassBoostUpNormalManager from "../ServiceInfo/MembersClassBoostUpNormalManager";
-import BingoStartPopup_UI_2021, { BingoStartPopupType } from "./BingoStartPopup_UI_2021";
-import RewardCenterPopup from "../Popup/RewardCenter/RewardCenterPopup";
-import RewardCenterView, { RewardCenterViewType } from "../Popup/RewardCenter/View/RewardCenterView";
-import UnlockContentsManager, { UnlockContentsType } from "../Popup/UnlockContents/UnlockContentsManager";
-import ServerStorageManager from "../manager/ServerStorageManager";
+// import BingoStartPopup_UI_2021, { BingoStartPopupType } from "./BingoStartPopup_UI_2021";
+// import RewardCenterPopup from "../Popup/RewardCenter/RewardCenterPopup";
+// import RewardCenterView, { RewardCenterViewType } from "../Popup/RewardCenter/View/RewardCenterView";
+// import UnlockContentsManager, { UnlockContentsType } from "../Popup/UnlockContents/UnlockContentsManager";
+import ServerStorageManager, { StorageKeyType } from "../manager/ServerStorageManager";
 import HRVServiceUtil from "../HRVService/HRVServiceUtil";
 import { Utility } from "../global_utility/Utility";
+import BingoBallContainer from "./BingoBallContainer";
+import BingoHistoryPopup from "./BingoHistoryPopup";
+import BingoRemainGameCollectUI from "./BingoRemainGameCollectUI";
+import BingoGameInfo, { BingoMirrorBallType, MaxRowBingoBallCnt, MirrorBallBastInfo, NextMirrorBallInfo } from "./BingoData";
+import ServiceInfoManager from "../ServiceInfoManager";
+import BingoCellEffect from "./BingoCellEffect";
+import BingoStartPopup_2021 from "./BingoStartPopup_2021";
+import { BingoStartPopupType } from "./BingoStartPopup_UI_2021";
+import CoinToTargetEffect from "../Popup/CoinToTargetEffect";
+import RewardCenterPopup from "../Popup/RewardCenterPopup";
+import { RewardCenterViewType } from "../View/RewardCenterView";
+import BingoResultPopup from "./BingoResultPopup";
 
 // ✅ 原文件匿名枚举 完整提取+规范命名 1:1复刻枚举值 Call=0 / Stop=1 核心按钮状态
 export enum CallState {
@@ -238,7 +249,7 @@ export default class BingoManager_New extends cc.Component {
     // ✅ 原文件所有私有成员变量 补全强类型注解 命名/初始值完全一致 无任何修改
     // ==============================================================
     private heroTooltipBingoBallEffectPivot: cc.Node = null;
-    private _bingoInfo: BingoGameInfo = null;
+    private _bingoInfo: BingoGameInfo|any = null;
     private _isAutoCallStop: boolean = false;
     private _soundSetter: CommonSoundSetter = null;
     private _startPopup: BingoStartPopup_2021 = null;
@@ -390,7 +401,7 @@ export default class BingoManager_New extends cc.Component {
             this.chestAni.play("Chest_Close");
         } else {
             this.chestAni.play("Chest_Full_Effect");
-            0 == SoundManager.Instance().isPlayingFxOnce(this._soundSetter.getAudioClip("b_fullcase")) && 
+            !SoundManager.Instance().isPlayingFxOnce(this._soundSetter.getAudioClip("b_fullcase")) && 
                 SoundManager.Instance().playFxOnce(this._soundSetter.getAudioClip("b_fullcase"));
         }
     }
@@ -428,7 +439,7 @@ export default class BingoManager_New extends cc.Component {
         }, 1.1 / this._aniSpeed);
 
         this.resetBlastEffectAni();
-        if (0 == isRefresh) {
+        if (!isRefresh) {
             this.ballContainer.initBallContainer(this.bingoBallPrefab, this._bingoInfo.ballHistory, this._soundSetter);
             this._boards[0].initBingoBoard(0, this.bingoCellPrefab, this._bingoInfo.boards[0], this._bingoInfo);
             this._boards[1].initBingoBoard(1, this.bingoCellPrefab, this._bingoInfo.boards[1], this._bingoInfo);
@@ -450,19 +461,19 @@ export default class BingoManager_New extends cc.Component {
             this.dailyRewardVipIcon.setIcon(vipLv);
             this.dailyRewardLabel.string = dailyReward.getTotalChangeRewardBingoBall().toString();
             
-            // 会员加成特效 + 奖励发放
-            this.introEffectMembersBoostUp.playIntroEffect(null, MembersClassBoostUpManager.KindOfOffers.Popup_Bingo, () => {
-                self.scheduleOnce(() => {
-                    SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("get_dailybingoball"));
-                    self.dailyRewardPop.active = true;
-                    const canvas = cc.director.getScene().getComponentInChildren(cc.Canvas);
-                    self.dailyRewardBlockingBG.setContentSize(canvas.node.getContentSize());
-                }, .2);
-                UserInfo.instance().applyChangeResult(dailyReward);
-                self.scheduleOnce(() => {
-                    self.dailyRewardPop.active = false;
-                }, 3.2);
-            });
+            // // 会员加成特效 + 奖励发放
+            // this.introEffectMembersBoostUp.playIntroEffect(null, KindOfOffers.Popup_Bingo, () => {
+            //     self.scheduleOnce(() => {
+            //         SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("get_dailybingoball"));
+            //         self.dailyRewardPop.active = true;
+            //         const canvas = cc.director.getScene().getComponentInChildren(cc.Canvas);
+            //         self.dailyRewardBlockingBG.setContentSize(canvas.node.getContentSize());
+            //     }, .2);
+            //     UserInfo.instance().applyChangeResult(dailyReward);
+            //     self.scheduleOnce(() => {
+            //         self.dailyRewardPop.active = false;
+            //     }, 3.2);
+            // });
         } else {
             this.dailyRewardPop.active = false;
         }
@@ -479,7 +490,7 @@ export default class BingoManager_New extends cc.Component {
                 this.bingoResetTime.node.active = false;
             }
 
-            this._bingoInfo.boards[1].state == BingoBoardState.Normal ? this.setBoard2Inactive(true) : this.setBoard2Inactive(false);
+            this._bingoInfo.boards[1].state == BingoBoardState.Normal ? this.setBoard2Inactive(1) : this.setBoard2Inactive(0);
             this._boards[0].isBingo() && this._boards[0].showBingoWinAni();
             this._boards[1].isBingo() && this._boards[1].showBingoWinAni();
 
@@ -553,7 +564,7 @@ export default class BingoManager_New extends cc.Component {
             this._startPopup.node.active = false;
 
             // 棋盘2状态初始化
-            this._bingoInfo.boards[1].state == BingoBoardState.Normal ? this.setBoard2Inactive(true) : this.setBoard2Inactive(false);
+            this._bingoInfo.boards[1].state == BingoBoardState.Normal ? this.setBoard2Inactive(1) : this.setBoard2Inactive(0);
             this.bingoResetTime.node.active = true;
             this.bingoResetTime.setTimer(this._bingoInfo, () => { this.refreshBingoManager(); });
             this.setChestMarkingInfo(0);
@@ -573,24 +584,24 @@ export default class BingoManager_New extends cc.Component {
 
             // 英雄免费标记加成
             if (isFreeMarkingBoost) {
-                await this.asyncShowHeroFreeMarking(bingoInfo);
-                if (0 == TSUtility.isValid(this)) return;
+                await this.asyncShowHeroFreeMarking();
+                if (!TSUtility.isValid(this)) return;
             }
 
             // 英雄宝箱加成
             if (isMirrorBallBoost) {
                 await this.asyncShowHeroChestBoost();
-                if (0 == TSUtility.isValid(this)) return;
+                if (!TSUtility.isValid(this)) return;
             }
 
             // 英雄宾果球奖励
             if (heroBingoBallHist.getTotalChangeBingoBall() > 0) {
                 await this.asyncShowHeroBingoBall(heroBingoBallHist);
-                if (0 == TSUtility.isValid(this)) return;
+                if (!TSUtility.isValid(this)) return;
             }
 
         } catch (error) {
-            FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FireHoseSender.FHLogType.Exception, error));
+            FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
         } finally {
             this.bingoUIBlockingNode.active = false;
         }
@@ -618,7 +629,7 @@ export default class BingoManager_New extends cc.Component {
             tooltipCfg.heroInfo.heroRank = 0;
         }
 
-        tooltipPopup.setHero_HT_MakingInfo(HeroTooltipPopup.HT_MakingInfo.parseObj(tooltipCfg));
+        tooltipPopup.setHero_HT_MakingInfo(HT_MakingInfo.parseObj(tooltipCfg));
         tooltipPopup.refreshUI();
         await AsyncHelper.delayWithComponent(.8, this);
 
@@ -654,7 +665,7 @@ export default class BingoManager_New extends cc.Component {
             tooltipCfg.heroInfo.heroRank = 0;
         }
 
-        tooltipPopup.setHero_HT_MakingInfo(HeroTooltipPopup.HT_MakingInfo.parseObj(tooltipCfg));
+        tooltipPopup.setHero_HT_MakingInfo(HT_MakingInfo.parseObj(tooltipCfg));
         tooltipPopup.refreshUI();
         await AsyncHelper.delayWithComponent(.5, this);
 
@@ -691,7 +702,7 @@ export default class BingoManager_New extends cc.Component {
             tooltipCfg.heroInfo.heroRank = 0;
         }
 
-        tooltipPopup.setHero_HT_MakingInfo(HeroTooltipPopup.HT_MakingInfo.parseObj(tooltipCfg));
+        tooltipPopup.setHero_HT_MakingInfo(HT_MakingInfo.parseObj(tooltipCfg));
         tooltipPopup.refreshUI();
         await AsyncHelper.delayWithComponent(.5, this);
 
@@ -754,7 +765,7 @@ export default class BingoManager_New extends cc.Component {
     }
 
     public openHistoryPopup(): void {
-        0 == this.historyPopup.node.active ? this.historyPopup.open(this._bingoInfo.ballHistory) : this.closeHistoryPopup();
+        !this.historyPopup.node.active ? this.historyPopup.open(this._bingoInfo.ballHistory) : this.closeHistoryPopup();
     }
 
     public closeHistoryPopup(): void {
@@ -816,8 +827,8 @@ export default class BingoManager_New extends cc.Component {
     }
 
     public onAutoScheduleCallBall(): void {
-        if (1 != this._isAutoCallStop) {
-            if (0 != this.isInGame()) {
+        if (!this._isAutoCallStop) {
+            if (this.isInGame()) {
                 if (this._bingoInfo.ballHistory.length >= MaxBingoBallCnt) {
                     this.setCallBtnState(CallState.Call);
                     cc.error("invalid this._bingoInfo.ballHistory.length >= MaxBingoBallCnt");
@@ -833,7 +844,7 @@ export default class BingoManager_New extends cc.Component {
     }
 
     public callBall(): void {
-        if (this._bingoInfo.ballHistory.length >= MaxBingoBallCnt || 1 == this._isOpenOfferPopup || 
+        if (this._bingoInfo.ballHistory.length >= MaxBingoBallCnt || this._isOpenOfferPopup || 
             this._boards[0].checkSelectable() || this._boards[1].checkSelectable()) {
             return;
         }
@@ -846,11 +857,11 @@ export default class BingoManager_New extends cc.Component {
         }
 
         this.setCallBtnState(CallState.Stop);
-        if (1 != this._callState) {
+        if (!this._callState) {
             this._callState = true;
             PopupManager.Instance().showBlockingBG(true);
             // ✅ 日本区特殊逻辑：付费球优先使用
-            if (1 == HRVServiceUtil.isJapan()) {
+            if (HRVServiceUtil.isJapan()) {
                 UserInfo.instance().getPaidBingoBallCnt() > 0 ? this.paidBingoBallUse() : this.freeBingoBallUse();
             } else {
                 UserInfo.instance().getFreeBingoBallCnt() > 0 ? this.freeBingoBallUse() : this.paidBingoBallUse();
@@ -871,7 +882,7 @@ export default class BingoManager_New extends cc.Component {
 
             const changeResult = UserInfo.instance().getServerChangeResult(res);
             UserInfo.instance().applyChangeResult(changeResult);
-            if (0 != cc.isValid(self)) {
+            if (cc.isValid(self)) {
                 self.machineAni.play("bingo_machine_ani_call");
                 self.machineAni.setCurrentTime(0);
                 TSUtility.setAniSpeed(self.machineAni, self._aniSpeed);
@@ -911,7 +922,7 @@ export default class BingoManager_New extends cc.Component {
 
             const changeResult = UserInfo.instance().getServerChangeResult(res);
             UserInfo.instance().applyChangeResult(changeResult);
-            if (0 != cc.isValid(self)) {
+            if (cc.isValid(self)) {
                 self.machineAni.play("bingo_machine_ani_call");
                 self.machineAni.setCurrentTime(0);
                 TSUtility.setAniSpeed(self.machineAni, self._aniSpeed);
@@ -1097,13 +1108,13 @@ export default class BingoManager_New extends cc.Component {
     public onClickCallDisableButton(): void {
         const self = this;
         const unlockLv = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsType.BINGO);
-        if (0 == this.isInGame() && ServiceInfoManager.instance().getUserLevel() < unlockLv || UserInfo.instance().getBingoBallCnt() > 0) {
+        if (!this.isInGame() && ServiceInfoManager.instance().getUserLevel() < unlockLv || UserInfo.instance().getBingoBallCnt() > 0) {
             return;
         }
 
         let isShowOffer = false;
-        0 == SDefine.FB_Instant_iOS_Shop_Flag && (isShowOffer = this.showBingoBallOfferPopup());
-        if (0 == isShowOffer) {
+        !SDefine.FB_Instant_iOS_Shop_Flag && (isShowOffer = this.showBingoBallOfferPopup());
+        if (!isShowOffer) {
             PopupManager.Instance().showBlockingBG(true);
             BingoBallZeroPopup.getPopup((err, popup) => {
                 PopupManager.Instance().showBlockingBG(false);
@@ -1166,7 +1177,7 @@ export default class BingoManager_New extends cc.Component {
             self._boards[boardId].showBingoWinAni();
             self._boards[boardId].hideBingoCompleteFx();
             SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("gameResult"));
-            0 == self.isInGame() && SoundManager.Instance().stopAllFxLoop();
+            !self.isInGame() && SoundManager.Instance().stopAllFxLoop();
 
             self.scheduleOnce(() => {
                 BingoResultPopup.getPopup((err, popup) => {
@@ -1174,7 +1185,7 @@ export default class BingoManager_New extends cc.Component {
                     popup.open(bingoCnt, ballCnt, preCoin, coinReward, curCoin, isPrizeBlast);
                     popup.setCloseCallback(() => {
                         self.BingoMarking.offResult();
-                        if (0 == self.isInGame()) {
+                        if (!self.isInGame()) {
                             self.showStartPopup();
                         } else {
                             const remainBoardId = self.getRemainGameCollectBoardID();
@@ -1190,11 +1201,11 @@ export default class BingoManager_New extends cc.Component {
 
     public showBingoBallOfferPopup(): boolean {
         const self = this;
-        if (1 == this._isOpenOfferPopup) return false;
+        if (this._isOpenOfferPopup) return false;
         if (this._bingoInfo.nextResetTime - TSUtility.getServerBaseNowUnixTime() > 86400) return false;
 
         const gameKey = this._bingoInfo.gameKey;
-        if (gameKey == ServerStorageManager.getAsString(ServerStorageManager.StorageKeyType.LAST_BINGO_BALL_PURCHASE_GAME_KEY)) {
+        if (gameKey == ServerStorageManager.getAsString(StorageKeyType.LAST_BINGO_BALL_PURCHASE_GAME_KEY)) {
             cc.log("Already purchase gameKey", gameKey);
             return false;
         }
@@ -1204,10 +1215,10 @@ export default class BingoManager_New extends cc.Component {
         BingoOfferPopup.getPopup((err, popup) => {
             PopupManager.Instance().showDisplayProgress(false);
             self._showOfferButton = true;
-            const purchaseReason = new CommonServer.PurchaseEntryReason(SDefine.P_ENTRYPOINT_NOTENOUGHBINGOBALLS, false);
+            const purchaseReason = new PurchaseEntryReason(SDefine.P_ENTRYPOINT_NOTENOUGHBINGOBALLS, false);
             popup.open(purchaseReason, self._bingoInfo, true);
             popup.setOnBuySuccessCallback(() => {
-                ServerStorageManager.save(ServerStorageManager.StorageKeyType.LAST_BINGO_BALL_PURCHASE_GAME_KEY, self._bingoInfo.gameKey);
+                ServerStorageManager.save(StorageKeyType.LAST_BINGO_BALL_PURCHASE_GAME_KEY, self._bingoInfo.gameKey);
                 self.refreshBingoState();
             });
             popup.setCloseCallback(() => {
@@ -1260,7 +1271,7 @@ export default class BingoManager_New extends cc.Component {
         PopupManager.Instance().showBlockingBG(true);
         CommonServer.Instance().requestBingoBoostMirrorBall(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), (res) => {
             PopupManager.Instance().showBlockingBG(false);
-            if (CommonServer.isServerResponseError(res) || 0 == cc.isValid(self)) return;
+            if (CommonServer.isServerResponseError(res) || !cc.isValid(self)) return;
 
             const mirrorBallInfo = MirrorBallBastInfo.parse(res.result);
             const changeResult = UserInfo.instance().getServerChangeResult(res);
@@ -1268,7 +1279,7 @@ export default class BingoManager_New extends cc.Component {
 
             self.chestAni.play("Chest_Start_Ani");
             self.setChestIcon("ItemAll");
-            1 == SoundManager.Instance().isPlayingFxOnce(self._soundSetter.getAudioClip("b_fullcase")) && 
+            SoundManager.Instance().isPlayingFxOnce(self._soundSetter.getAudioClip("b_fullcase")) && 
                 SoundManager.Instance().stopFxOnce(self._soundSetter.getAudioClip("b_fullcase"));
             
             self.scheduleOnce(() => {
@@ -1293,12 +1304,12 @@ export default class BingoManager_New extends cc.Component {
         PopupManager.Instance().showBlockingBG(true);
         CommonServer.Instance().requestBingoOpenChest(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), (res) => {
             PopupManager.Instance().showBlockingBG(false);
-            if (CommonServer.isServerResponseError(res) || 0 == cc.isValid(self)) return;
+            if (CommonServer.isServerResponseError(res) || !cc.isValid(self)) return;
 
             const mirrorBallInfo = NextMirrorBallInfo.parse(res.result);
             self.chestAni.play("Chest_Start_Ani");
             self.setChestIcon(mirrorBallInfo.mirrorBallType);
-            1 == SoundManager.Instance().isPlayingFxOnce(self._soundSetter.getAudioClip("b_fullcase")) && 
+            SoundManager.Instance().isPlayingFxOnce(self._soundSetter.getAudioClip("b_fullcase")) && 
                 SoundManager.Instance().stopFxOnce(self._soundSetter.getAudioClip("b_fullcase"));
             
             self.scheduleOnce(() => {
@@ -1346,9 +1357,9 @@ export default class BingoManager_New extends cc.Component {
             BingoCellEffect.instance().offEffect(0);
             BingoCellEffect.instance().offEffect(1);
 
-            CommonServer.Instance().requestBingoRemainGameCollect(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), remainBoardId, (res) => {
+            CommonServer.Instance().requestBingoRemainGameCollect(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), remainBoardId+"", (res) => {
                 PopupManager.Instance().showDisplayProgress(false);
-                if (CommonServer.isServerResponseError(res) || 0 == cc.isValid(self)) return;
+                if (CommonServer.isServerResponseError(res) || !cc.isValid(self)) return;
 
                 self._bingoInfo.markingGauge = 0;
                 const changeResult = UserInfo.instance().getServerChangeResult(res);
@@ -1360,7 +1371,7 @@ export default class BingoManager_New extends cc.Component {
 
                 PopupManager.Instance().showBlockingBG(true);
                 CoinToTargetEffect.playEffectToMyCoin(self.remainGameCollect.collectBtn.node, preCoin, curCoin, coinReward, () => {
-                    if (0 != cc.isValid(self)) {
+                    if (cc.isValid(self)) {
                         PopupManager.Instance().showBlockingBG(false);
                         self.showStartPopup();
                         self.remainGameCollect.collectBtn.enabled = true;
@@ -1401,7 +1412,7 @@ export default class BingoManager_New extends cc.Component {
             if (CommonServer.isServerResponseError(res)) return;
 
             const changeResult = UserInfo.instance().getServerChangeResult(res);
-            const bingoInfo = BingoGameInfo.parse(res.bingoInfo);
+            const bingoInfo = BingoGameInfo.Parse(res.bingoInfo);
             ServiceInfoManager.INFO_BINGO = bingoInfo;
             
             SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("startGame"));
@@ -1455,7 +1466,7 @@ export default class BingoManager_New extends cc.Component {
 
     public onClickBingoBoardTooltip(): void {
         const self = this;
-        if (0 == this.remainBingoBoard_Tooltip_Node.active) {
+        if (!this.remainBingoBoard_Tooltip_Node.active) {
             this.remainBingoBoard_Tooltip_Node.active = true;
             this.scheduleOnce(() => {
                 self.remainBingoBoard_Tooltip_Node.active = false;

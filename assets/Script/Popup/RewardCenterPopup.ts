@@ -1,4 +1,4 @@
-import FireHoseSender from "../FireHoseSender";
+import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
 import CustomButton from "../global_utility/CustomButton";
@@ -17,7 +17,7 @@ import HyperBountyManager from "../manager/HyperBountyManager";
 // import HyperBountyManager from "../manager/HyperBountyManager";
 // import WelcomeBackManager from "../Welcome/WelcomeBackRenewal_2025/WelcomeBackManager";
 // import InboxMessagePrefabManager from "../InboxMessagePrefabManager";
-// import RewardCenterTab from "./RewardCenterTab";
+import RewardCenterTab from "./RewardCenterTab";
 // import RewardCenterView, { RewardCenterViewType } from "../View/RewardCenterView";
 // import RewardCenterView_CheckInBonus from "../View/RewardCenterView_CheckInBonus";
 // import RewardCenterView_Inbox from "./View/RewardCenterView_Inbox";
@@ -63,7 +63,7 @@ export default class RewardCenterPopup extends DialogBase {
     private _arrView: RewardCenterView[] = [];
     private _curView: RewardCenterView | null = null;
     private _closeBtn: CustomButton | null = null;
-	private _arrPopup: Node[] = [];
+	private _arrPopup: cc.Node[] = [];
 	private _eCurTabType: RewardCenterViewType = RewardCenterViewType.NONE;
 
     /**
@@ -74,7 +74,7 @@ export default class RewardCenterPopup extends DialogBase {
         cc.loader.loadRes(resPath, (err, prefab) => {
             if (err) {
                 const error = new Error(`cc.loader.loadRes fail ${resPath}: ${JSON.stringify(err)}`);
-                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FireHoseSender.prototype.FHLogType.Exception, error));
+                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
                 callback && callback(error, null);
                 return;
             }
@@ -123,30 +123,30 @@ export default class RewardCenterPopup extends DialogBase {
     public static getReceiveCount(typeKey: string): number {
         const viewType = RewardCenterViewType[typeKey];
         switch (viewType) {
-            case RewardCenterViewType.MAIN:
-                return RewardCenterView_Main.getReceiveCount();
-            case RewardCenterViewType.INBOX_INBOX:
-                return RewardCenterView_Inbox.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_HRV:
-                return RewardCenterView_InboxSendGift_HRV.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_HRV_EMPTY_FRIEND:
-                return RewardCenterView_InboxSendGift_HRV_EmptyFriend.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_HRV_GUEST_FIRST:
-                return RewardCenterView_InboxSendGift_HRV_GuestFirst.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_HRV_GUEST:
-                return RewardCenterView_InboxSendGift_HRV_Guest.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_HRV_PERMISSION:
-                return RewardCenterView_InboxSendGift_HRV_Permission.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_ELS:
-                return RewardCenterView_InboxSendGift_ELS.getReceiveCount();
-            case RewardCenterViewType.INBOX_SEND_GIFT_ELS_EMPTY_FRIEND:
-                return RewardCenterView_InboxSendGift_ELS_EmptyFriend.getReceiveCount();
-            case RewardCenterViewType.INBOX_SHARE:
-                return RewardCenterView_InboxShare.getReceiveCount();
-            case RewardCenterViewType.TIME_BONUS:
-                return RewardCenterView_TimeBonus.getReceiveCount();
-            case RewardCenterViewType.CHECK_IN_BONUS:
-                return RewardCenterView_CheckInBonus.getReceiveCount();
+            // case RewardCenterViewType.MAIN:
+            //     return RewardCenterView_Main.getReceiveCount();
+            // case RewardCenterViewType.INBOX_INBOX:
+            //     return RewardCenterView_Inbox.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_HRV:
+            //     return RewardCenterView_InboxSendGift_HRV.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_HRV_EMPTY_FRIEND:
+            //     return RewardCenterView_InboxSendGift_HRV_EmptyFriend.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_HRV_GUEST_FIRST:
+            //     return RewardCenterView_InboxSendGift_HRV_GuestFirst.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_HRV_GUEST:
+            //     return RewardCenterView_InboxSendGift_HRV_Guest.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_HRV_PERMISSION:
+            //     return RewardCenterView_InboxSendGift_HRV_Permission.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_ELS:
+            //     return RewardCenterView_InboxSendGift_ELS.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SEND_GIFT_ELS_EMPTY_FRIEND:
+            //     return RewardCenterView_InboxSendGift_ELS_EmptyFriend.getReceiveCount();
+            // case RewardCenterViewType.INBOX_SHARE:
+            //     return RewardCenterView_InboxShare.getReceiveCount();
+            // case RewardCenterViewType.TIME_BONUS:
+            //     return RewardCenterView_TimeBonus.getReceiveCount();
+            // case RewardCenterViewType.CHECK_IN_BONUS:
+            //     return RewardCenterView_CheckInBonus.getReceiveCount();
             default:
                 return 0;
         }
@@ -156,12 +156,12 @@ export default class RewardCenterPopup extends DialogBase {
     onLoad(): void {
         this.initDailogBase();
         const msgMgr = MessageRoutingManager.instance();
-        msgMgr.addListenerTarget(msgMgr.MSG.REWARD_CENTER_CHANGE_VIEW, this.changeViewEvent, this);
-        msgMgr.addListenerTarget(msgMgr.MSG.REWARD_CENTER_SHOW_SENT_POPUP, this.showSentSuccessFully, this);
-        msgMgr.addListenerTarget(msgMgr.MSG.REWARD_CENTER_UPDATE_VIEW, this.updateView, this);
-        msgMgr.addListenerTarget(msgMgr.MSG.REWARD_CENTER_UPDATE_UI_TIME_BONUS, this.updateView, this);
-        msgMgr.addListenerTarget(msgMgr.MSG.REWARD_CENTER_BLOCK_TOUCH, this.setBlockBG, this);
-        msgMgr.addListenerTarget(msgMgr.MSG.REWARD_CENTER_CLOSE_DISABLE, this.setCloseDisable, this);
+        msgMgr.addListenerTarget(MessageRoutingManager.MSG.REWARD_CENTER_CHANGE_VIEW, this.changeViewEvent, this);
+        msgMgr.addListenerTarget(MessageRoutingManager.MSG.REWARD_CENTER_SHOW_SENT_POPUP, this.showSentSuccessFully, this);
+        msgMgr.addListenerTarget(MessageRoutingManager.MSG.REWARD_CENTER_UPDATE_VIEW, this.updateView, this);
+        msgMgr.addListenerTarget(MessageRoutingManager.MSG.REWARD_CENTER_UPDATE_UI_TIME_BONUS, this.updateView, this);
+        msgMgr.addListenerTarget(MessageRoutingManager.MSG.REWARD_CENTER_BLOCK_TOUCH, this.setBlockBG, this);
+        msgMgr.addListenerTarget(MessageRoutingManager.MSG.REWARD_CENTER_CLOSE_DISABLE, this.setCloseDisable, this);
     }
 
     onDestroy(): void {
@@ -172,7 +172,7 @@ export default class RewardCenterPopup extends DialogBase {
      * 返回按钮点击逻辑
      */
     onBackBtnProcess(): boolean {
-        if (TSUtility.isValid(this._curView) || this._curView.isOnBackAvailable() !== 0) {
+        if (TSUtility.isValid(this._curView) || this._curView.isOnBackAvailable()) {
             this.close();
             return true;
         }
@@ -228,7 +228,7 @@ export default class RewardCenterPopup extends DialogBase {
                 if (TSUtility.isValid(btnNode)) {
                     const tab = btnNode.addComponent(RewardCenterTab);
                     if (TSUtility.isValid(tab)) {
-                        this._arrTab.push(tab.initialize(key));
+                        this._arrTab.push(tab.initialize(key as any));
                         const eventHandler = Utility.getComponent_EventHandler(this.node, "RewardCenterPopup", "onClick_ChangeView", RewardCenterViewType[key].toString());
                         tab.getButton().clickEvents.push(eventHandler);
                     }
@@ -302,7 +302,7 @@ export default class RewardCenterPopup extends DialogBase {
         // 设置标签按钮交互状态
         this._arrTab.forEach(tab => {
             const tabViewType = RewardCenterViewType[tab.getType()];
-            tab.getButton().interactable = viewType.includes(tabViewType) === 0;
+            tab.getButton().interactable = !viewType.includes(tabViewType);
         });
 
         this._eCurTabType = viewType;
@@ -342,7 +342,7 @@ export default class RewardCenterPopup extends DialogBase {
     /**
      * 根据名称获取弹窗节点
      */
-    private getPopup(popupName: string): Node | null {
+    private getPopup(popupName: string): cc.Node | null {
         const targetPopup = this._arrPopup.find(popup => popup.name === popupName);
         return TSUtility.isValid(targetPopup) ? targetPopup : null;
     }
@@ -388,22 +388,22 @@ export default class RewardCenterPopup extends DialogBase {
      * 检查欢迎回归任务-打开奖励中心
      */
     private checkWelcomeBackMission(): void {
-        if (WelcomeBackManager.instance.isContainsMission(WelcomeBackManager.prototype.WelcomeBackMissionType.OPEN_REWARD_CENTER)) {
-            PopupManager.Instance().showDisplayProgress(true);
-            CommonServer.Instance().requestAcceptPromotion(
-                UserInfo.instance().getUid(),
-                UserInfo.instance().getAccessToken(),
-                UserWelcomeBackRenewalInfo.PromotionKeyName,
-                3,7,"",
-                (res) => {
-                    PopupManager.Instance().showDisplayProgress(false);
-                    if (!CommonServer.isServerResponseError(res)) {
-                        const changeResult = UserInfo.instance().getServerChangeResult(res);
-                        UserInfo.instance().applyChangeResult(changeResult);
-                    }
-                }
-            );
-        }
+        // if (WelcomeBackManager.instance.isContainsMission(WelcomeBackManager.prototype.WelcomeBackMissionType.OPEN_REWARD_CENTER)) {
+        //     PopupManager.Instance().showDisplayProgress(true);
+        //     CommonServer.Instance().requestAcceptPromotion(
+        //         UserInfo.instance().getUid(),
+        //         UserInfo.instance().getAccessToken(),
+        //         UserWelcomeBackRenewalInfo.PromotionKeyName,
+        //         3,7,"",
+        //         (res) => {
+        //             PopupManager.Instance().showDisplayProgress(false);
+        //             if (!CommonServer.isServerResponseError(res)) {
+        //                 const changeResult = UserInfo.instance().getServerChangeResult(res);
+        //                 UserInfo.instance().applyChangeResult(changeResult);
+        //             }
+        //         }
+        //     );
+        // }
     }
 
     /**
@@ -427,9 +427,9 @@ export default class RewardCenterPopup extends DialogBase {
         // 清理数据 & 发送刷新消息
         InboxMessagePrefabManager.instance.clear();
         const msgMgr = MessageRoutingManager.instance();
-        msgMgr.emitMessage(msgMgr.MSG.REFRESH_LOBBY_UI);
-        msgMgr.emitMessage(msgMgr.MSG.REFRESH_INGAME_UI);
-        msgMgr.emitMessage(msgMgr.MSG.LOBBY_REFRESH_ALL_BANNER_ITEM);
+        msgMgr.emitMessage(MessageRoutingManager.MSG.REFRESH_LOBBY_UI);
+        msgMgr.emitMessage(MessageRoutingManager.MSG.REFRESH_INGAME_UI);
+        msgMgr.emitMessage(MessageRoutingManager.MSG.LOBBY_REFRESH_ALL_BANNER_ITEM);
 
         // 处理超级赏金完成的任务弹窗
         const hyperBountyInst = HyperBountyManager.instance;

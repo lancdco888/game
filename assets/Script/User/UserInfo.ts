@@ -370,7 +370,7 @@ export default class UserInfo extends Component {
     private _userInboxInfo: UserInboxInfo | null = null;
     private _accessToken: string = "";
     private _zoneId: number = 0;
-    private _zoneName: string = SDefine.HIGHROLLER_ZONENAME;
+    public _zoneName: string = SDefine.HIGHROLLER_ZONENAME;
     private _eventEmitter: EventTarget | null = null;
     private _isFromSlot: boolean = false;
     private _currentSceneMode: string = "";
