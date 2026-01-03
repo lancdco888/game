@@ -78,9 +78,9 @@ export class L_GetInboxInfoState extends State {
         if (CommonServer.isServerResponseError(response)) {
             const error = new Error("L_GetInboxInfoState fail");
             FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
-            UserInfo.instance().refreshInboxInfo([]);
+            // UserInfo.instance().refreshInboxInfo([]);
         } else {
-            UserInfo.instance().refreshInboxInfo(response.inbox);
+            // UserInfo.instance().refreshInboxInfo(response.inbox);
         }
         this.setDone();
     }

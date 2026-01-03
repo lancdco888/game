@@ -121,131 +121,131 @@ export default class HeroMainPopup extends DialogBase {
 
     // ===================== 核心UI初始化 英雄列表渲染+数据赋值+骨骼动画控制 完整保留 =====================
     private initUI(subPopupType: number): void {
-        const userHeroInfo = UserInfo.instance().getUserHeroInfo();
-        const allHeroIds = HeroManager.Instance().getAllHeroIds();
-        const activeHeroId = userHeroInfo.activeHeroID;
+        // const userHeroInfo = UserInfo.instance().getUserHeroInfo();
+        // const allHeroIds = HeroManager.Instance().getAllHeroIds();
+        // const activeHeroId = userHeroInfo.activeHeroID;
 
-        // 英雄排序规则 - 严格保留原排序逻辑
-        allHeroIds.sort((a, b) => {
-            const heroAInfo = userHeroInfo.getHeroInfo(a);
-            const heroBInfo = userHeroInfo.getHeroInfo(b);
-            return UserHeroInfo.compareHeroOrder(a, b, heroAInfo, heroBInfo, activeHeroId);
-        });
+        // // 英雄排序规则 - 严格保留原排序逻辑
+        // allHeroIds.sort((a, b) => {
+        //     const heroAInfo = userHeroInfo.getHeroInfo(a);
+        //     const heroBInfo = userHeroInfo.getHeroInfo(b);
+        //     return UserHeroInfo.compareHeroOrder(a, b, heroAInfo, heroBInfo, activeHeroId);
+        // });
 
-        this.heroTemplate.node.active = false;
-        this.heroInfos = [];
+        // this.heroTemplate.node.active = false;
+        // this.heroInfos = [];
 
-        // 遍历创建英雄项
-        for (let i = 0; i < allHeroIds.length; ++i) {
-            const heroId = allHeroIds[i];
-            const heroData = userHeroInfo.getHeroInfo(heroId);
+        // // 遍历创建英雄项
+        // for (let i = 0; i < allHeroIds.length; ++i) {
+        //     const heroId = allHeroIds[i];
+        //     const heroData = userHeroInfo.getHeroInfo(heroId);
             
-            // 过滤百夫长英雄无效数据
-            if (heroId === "hero_winston" && !TSUtility.isValid(heroData)) {
-                continue;
-            }
+        //     // 过滤百夫长英雄无效数据
+        //     if (heroId === "hero_winston" && !TSUtility.isValid(heroData)) {
+        //         continue;
+        //     }
 
-            const heroNode = cc.instantiate(this.heroTemplate.node);
-            const heroUI = heroNode.getComponent(HeroInfoUI);
-            heroNode.active = true;
-            this.heroLayout.node.addChild(heroNode);
-            heroNode.setPosition(cc.Vec2.ZERO);
+        //     const heroNode = cc.instantiate(this.heroTemplate.node);
+        //     const heroUI = heroNode.getComponent(HeroInfoUI);
+        //     heroNode.active = true;
+        //     this.heroLayout.node.addChild(heroNode);
+        //     heroNode.setPosition(cc.Vec2.ZERO);
 
-            // 英雄数据赋值
-            const isNewTag = HeroManager.Instance().isNewTag();
-            let isActive = false;
-            let heroRank = 1;
-            let heroForce = 0;
+        //     // 英雄数据赋值
+        //     const isNewTag = HeroManager.Instance().isNewTag();
+        //     let isActive = false;
+        //     let heroRank = 1;
+        //     let heroForce = 0;
 
-            if (heroData) {
-                heroRank = heroData.rank;
-                heroForce = heroData.force;
-                if (userHeroInfo.isActiveHero(heroId)) {
-                    isActive = true;
-                    heroUI.setPowerEffect(userHeroInfo.powerLevel);
-                } else {
-                    heroUI.setPowerEffect(0);
-                }
-            }
+        //     if (heroData) {
+        //         heroRank = heroData.rank;
+        //         heroForce = heroData.force;
+        //         if (userHeroInfo.isActiveHero(heroId)) {
+        //             isActive = true;
+        //             heroUI.setPowerEffect(userHeroInfo.powerLevel);
+        //         } else {
+        //             heroUI.setPowerEffect(0);
+        //         }
+        //     }
 
-            // 英雄UI状态设置
-            heroUI.setInfo(heroId, heroRank);
-            heroUI.loadSpineController(HeroInfoUIType.Spine);
-            heroUI.setActive(isActive);
-            heroUI.setNewTag(isNewTag);
-            heroUI.setExpProgress(heroForce);
+        //     // 英雄UI状态设置
+        //     heroUI.setInfo(heroId, heroRank);
+        //     heroUI.loadSpineController(HeroInfoUIType.Spine);
+        //     heroUI.setActive(isActive);
+        //     heroUI.setNewTag(isNewTag);
+        //     heroUI.setExpProgress(heroForce);
 
-            // 骨骼动画状态控制
-            if (heroData) {
-                if (isActive) {
-                    heroUI.controller_SetThanks(heroRank);
-                } else {
-                    heroUI.controller_SetIdle(heroRank);
-                }
-            } else {
-                heroUI.controller_SetSilhoutte();
-            }
+        //     // 骨骼动画状态控制
+        //     if (heroData) {
+        //         if (isActive) {
+        //             heroUI.controller_SetThanks(heroRank);
+        //         } else {
+        //             heroUI.controller_SetIdle(heroRank);
+        //         }
+        //     } else {
+        //         heroUI.controller_SetSilhoutte();
+        //     }
 
-            // 未解锁英雄状态处理
-            if (heroUI.controller_IsSilhoutteState()) {
-                heroUI.btn.interactable = false;
-                heroUI.hideInfo();
-            }
+        //     // 未解锁英雄状态处理
+        //     if (heroUI.controller_IsSilhoutteState()) {
+        //         heroUI.btn.interactable = false;
+        //         heroUI.hideInfo();
+        //     }
 
-            // 绑定英雄项点击事件
-            heroUI.btn.clickEvents.push(Utility.getComponent_EventHandler(this.node, "HeroMainPopup", "onClickOpenSubInfo", heroId));
-            this.heroInfos.push(heroUI);
-        }
+        //     // 绑定英雄项点击事件
+        //     heroUI.btn.clickEvents.push(Utility.getComponent_EventHandler(this.node, "HeroMainPopup", "onClickOpenSubInfo", heroId));
+        //     this.heroInfos.push(heroUI);
+        // }
 
         this.refreshUI();
 
-        // 子弹窗自动打开逻辑
-        if (subPopupType === TypeHeroSubPopup.activeHeroPopup) {
-            this.rootNode.opacity = 0;
-            this.subPopup.open(userHeroInfo.activeHeroID, true);
-        } else if (subPopupType === TypeHeroSubPopup.infoPopup) {
-            this.showInfoPopup();
-        }
+        // // 子弹窗自动打开逻辑
+        // if (subPopupType === TypeHeroSubPopup.activeHeroPopup) {
+        //     this.rootNode.opacity = 0;
+        //     this.subPopup.open(userHeroInfo.activeHeroID, true);
+        // } else if (subPopupType === TypeHeroSubPopup.infoPopup) {
+        //     this.showInfoPopup();
+        // }
     }
 
     // ===================== 刷新英雄列表 重新排序+状态更新 核心逻辑 =====================
     private refreshUI(): void {
-        const userHeroInfo = UserInfo.instance().getUserHeroInfo();
-        const activeHeroId = userHeroInfo.activeHeroID;
+        // const userHeroInfo = UserInfo.instance().getUserHeroInfo();
+        // const activeHeroId = userHeroInfo.activeHeroID;
 
-        // 重新排序英雄列表
-        this.heroInfos.sort((a, b) => {
-            const heroAInfo = userHeroInfo.getHeroInfo(a.heroId);
-            const heroBInfo = userHeroInfo.getHeroInfo(b.heroId);
-            return UserHeroInfo.compareHeroOrder(a.heroId, b.heroId, heroAInfo, heroBInfo, activeHeroId);
-        });
+        // // 重新排序英雄列表
+        // this.heroInfos.sort((a, b) => {
+        //     const heroAInfo = userHeroInfo.getHeroInfo(a.heroId);
+        //     const heroBInfo = userHeroInfo.getHeroInfo(b.heroId);
+        //     return UserHeroInfo.compareHeroOrder(a.heroId, b.heroId, heroAInfo, heroBInfo, activeHeroId);
+        // });
 
-        // 重新挂载节点
-        for (let i = 0; i < this.heroInfos.length; ++i) {
-            this.heroInfos[i].node.removeFromParent();
-        }
-        for (let i = 0; i < this.heroInfos.length; ++i) {
-            this.heroLayout.node.addChild(this.heroInfos[i].node);
-        }
+        // // 重新挂载节点
+        // for (let i = 0; i < this.heroInfos.length; ++i) {
+        //     this.heroInfos[i].node.removeFromParent();
+        // }
+        // for (let i = 0; i < this.heroInfos.length; ++i) {
+        //     this.heroLayout.node.addChild(this.heroInfos[i].node);
+        // }
 
-        // 更新英雄状态
-        for (let i = 0; i < this.heroInfos.length; ++i) {
-            const heroId = this.heroInfos[i].heroId;
-            this.heroInfos[i].setActive(userHeroInfo.isActiveHero(heroId));
+        // // 更新英雄状态
+        // for (let i = 0; i < this.heroInfos.length; ++i) {
+        //     const heroId = this.heroInfos[i].heroId;
+        //     this.heroInfos[i].setActive(userHeroInfo.isActiveHero(heroId));
             
-            const heroData = userHeroInfo.getHeroInfo(heroId);
-            if (heroData) {
-                const heroRank = heroData.rank;
-                if (userHeroInfo.isActiveHero(heroId)) {
-                    this.heroInfos[i].controller_SetThanks(heroRank);
-                    this.heroInfos[i].setPowerEffect(userHeroInfo.powerLevel);
-                } else {
-                    this.heroInfos[i].controller_SetIdle(heroRank);
-                    this.heroInfos[i].setPowerEffect(0);
-                }
-            }
-            this.heroInfos[i].setNewTag(HeroManager.Instance().isNewTag());
-        }
+        //     const heroData = userHeroInfo.getHeroInfo(heroId);
+        //     if (heroData) {
+        //         const heroRank = heroData.rank;
+        //         if (userHeroInfo.isActiveHero(heroId)) {
+        //             this.heroInfos[i].controller_SetThanks(heroRank);
+        //             this.heroInfos[i].setPowerEffect(userHeroInfo.powerLevel);
+        //         } else {
+        //             this.heroInfos[i].controller_SetIdle(heroRank);
+        //             this.heroInfos[i].setPowerEffect(0);
+        //         }
+        //     }
+        //     this.heroInfos[i].setNewTag(HeroManager.Instance().isNewTag());
+        // }
 
         this._startIndex = 0;
         this.refreshHeroLayout();

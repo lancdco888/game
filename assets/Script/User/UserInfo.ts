@@ -758,72 +758,73 @@ export default class UserInfo extends cc.Component {
         return this._userInfo!.uid;
     }
 
-    // public getUserName(): string {
-    //     return this._userInfo!.userMasterInfo!.name;
-    // }
+    public getUserName(): string {
+        return this._userInfo!.userMasterInfo!.name;
+    }
 
-    // public getUserPicUrl(): string {
-    //     return this._userInfo!.userMasterInfo!.picUrl;
-    // }
+    public getUserPicUrl(): string {
+        return this._userInfo!.userMasterInfo!.picUrl;
+    }
 
-    // public getUserFBPicUrl(): string {
-    //     return this._userInfo!.userExMasterInfo!.fbPicURL;
-    // }
+    public getUserFBPicUrl(): string {
+        return this._userInfo!.userExMasterInfo!.fbPicURL;
+    }
 
-    // public getFBID(): string {
-    //     return this._userInfo!.userMasterInfo!.fbid;
-    // }
+    public getFBID(): string {
+        return this._userInfo!.userMasterInfo!.fbid;
+    }
 
-    // public getAppleID(): string {
-    //     return this._userInfo!.userMasterInfo!.appleID;
-    // }
+    public getAppleID(): string {
+        return this._userInfo!.userMasterInfo!.appleID;
+    }
 
-    // public getLineID(): string {
-    //     return this._userInfo!.userMasterInfo!.lineID;
-    // }
+    public getLineID(): string {
+        return this._userInfo!.userMasterInfo!.lineID;
+    }
 
-    // public getEMail(): string {
-    //     return this._userInfo!.userMasterInfo!.email;
-    // }
+    public getEMail(): string {
+        return this._userInfo!.userMasterInfo!.email;
+    }
 
-    // public getAccessToken(): string {
-    //     return this._accessToken;
-    // }
+    public getAccessToken(): string {
+        return this._accessToken;
+    }
 
-    // public getCreateDate(): number {
-    //     return this._userInfo!.userMasterInfo!.createdDate;
-    // }
+    public getCreateDate(): number {
+        return this._userInfo!.userMasterInfo!.createdDate;
+    }
 
-    // public getUserLastLoginDate(): number {
-    //     return this._userInfo!.userMasterInfo!.lastLoginDate;
-    // }
+    public getUserLastLoginDate(): number {
+        return this._userInfo!.userMasterInfo!.lastLoginDate;
+    }
 
-    // public getUserLastLoginGapDate(): number {
-    //     return this._userInfo!.userMasterInfo!.lastLoginGap;
-    // }
+    public getUserLastLoginGapDate(): number {
+        return this._userInfo!.userMasterInfo!.lastLoginGap;
+    }
 
-    // public getUserStreakedJoinInfo(): StreakedJoinInfo {
-    //     return this._userInfo!.userMasterInfo!.streakedJoinInfo;
-    // }
+    public getUserStreakedJoinInfo(): StreakedJoinInfo {
+        return this._userInfo!.userMasterInfo!.streakedJoinInfo;
+    }
 
-    // public getUserSessionCnt(): number {
-    //     return this._userInfo!.userMasterInfo!.sessionCount;
-    // }
+    public getUserSessionCnt(): number {
+        return this._userInfo!.userMasterInfo!.sessionCount;
+    }
 
-    // public isFirstUserSession(): boolean {
-    //     console.log(`isFirstUserSession [${this.getUserLastLoginDate().toString()}][${this.getCreateDate().toString()}]`);
-    //     return this.getUserLastLoginDate() === this.getCreateDate();
-    // }
+    public isFirstUserSession(): boolean {
+        console.log(`isFirstUserSession [${this.getUserLastLoginDate().toString()}][${this.getCreateDate().toString()}]`);
+        return this.getUserLastLoginDate() === this.getCreateDate();
+    }
 
-    // public isGuestUser(): boolean {
-    //     if (SDefine.Use_Mobile_Auth_v2 === 0) {
-    //         console.log("isGuestUser this._userInfo.userMasterInfo.fbid", this._userInfo!.userMasterInfo!.fbid === "");
-    //         return this._userInfo!.userMasterInfo!.fbid === "";
-    //     } else {
-    //         console.log("isGuestUser FacebookUtil.isLogin", FacebookUtil.isLogin());
-    //         return FacebookUtil.isLogin() === 0;
-    //     }
-    // }
+    public isGuestUser(): boolean {
+        if (SDefine.Use_Mobile_Auth_v2 ) {
+            console.log("isGuestUser this._userInfo.userMasterInfo.fbid", this._userInfo!.userMasterInfo!.fbid === "");
+            return this._userInfo!.userMasterInfo!.fbid === "";
+        } else {
+            // console.log("isGuestUser FacebookUtil.isLogin", FacebookUtil.isLogin());
+            // return FacebookUtil.isLogin() === 0;
+            return true;
+        }
+    }
 
     // public isFacebookLoginUser(): boolean {
     //     if (SDefine.Use_Mobile_Auth_v2 === 0) {
@@ -853,13 +854,13 @@ export default class UserInfo extends cc.Component {
     //     return SDefine.Use_Mobile_Auth_v2 !== 0 && UserInfo.instance()!.getAppleID() !== "";
     // }
 
-    // public isFBShareDisableTarget(): boolean {
-    //     return this.isGuestUser() === true || NativeUtil.isFacebookInstant() === true;
-    // }
+    public isFBShareDisableTarget(): boolean {
+        return this.isGuestUser() === true;
+    }
 
-    // public getPromotionInfo(key: string): any {
-    //     return this._userInfo!.userPromotion!.getPromotionInfo(key);
-    // }
+    public getPromotionInfo(key: string): any {
+        return this._userInfo!.userPromotion!.getPromotionInfo(key);
+    }
 
     // public removePromotionInfo(key: string): void {
     //     this._userInfo!.userPromotion!.removePromotion(key);
@@ -1030,12 +1031,13 @@ export default class UserInfo extends cc.Component {
     //     return this._userInfo!.userMasterInfo!.serviceInfo!.promotionCoolTime;
     // }
 
-    // public getBingoBallCnt(): number {
-    //     let cnt = 0;
-    //     const items = UserInfo.instance()!.getItemInventory().getItemsByItemId(SDefine.I_BINGOBALL_OFFER);
-    //     for (const item of items) cnt += item.curCnt;
-    //     return this._userInfo!.userMasterInfo!.serviceInfo!.bingoBallCnt + cnt;
-    // }
+    public getBingoBallCnt(): number {
+        let cnt = 0;
+        // const items = UserInfo.instance()!.getItemInventory().getItemsByItemId(SDefine.I_BINGOBALL_OFFER);
+        // for (const item of items) cnt += item.curCnt;
+        // return this._userInfo!.userMasterInfo!.serviceInfo!.bingoBallCnt + cnt;
+        return 0;
+    }
 
     // public getFreeBingoBallCnt(): number {
     //     return this._userInfo!.userMasterInfo!.serviceInfo!.bingoBallCnt;
@@ -1318,17 +1320,17 @@ export default class UserInfo extends cc.Component {
     //     NativeUtil.setObjValue_FBCrash("ZoneId", val.toString());
     // }
 
-    // public getZoneId(): number {
-    //     return this._zoneId;
-    // }
+    public getZoneId(): number {
+        return this._zoneId;
+    }
 
-    // public setZoneName(val: string): void {
-    //     this._zoneName = val;
-    // }
+    public setZoneName(val: string): void {
+        this._zoneName = val;
+    }
 
-    // public getZoneName(): string {
-    //     return this._zoneName;
-    // }
+    public getZoneName(): string {
+        return this._zoneName;
+    }
 
     // public setPrevSceneSlot(val: boolean): void {
     //     this._isFromSlot = val;
@@ -1546,14 +1548,14 @@ export default class UserInfo extends cc.Component {
     //     this._userFriendInfo = UserInfo.parseUserFriendInfo({});
     // }
 
-    // public async asyncRefreshHeroInfo(): Promise<void> {
-    //     const res = await CommonServer.Instance().asyncRequestGetHeroInfo();
-    //     if (CommonServer.isServerResponseError(res)) {
-    //         console.error("CommonServer.Instance().asyncRefreshHeroInfo fail ");
-    //         return;
-    //     }
-    //     this.setUserHeroInfo(res.userHero);
-    // }
+    public async asyncRefreshHeroInfo(): Promise<void> {
+        const res = await CommonServer.Instance().asyncRequestGetHeroInfo();
+        if (CommonServer.isServerResponseError(res)) {
+            console.error("CommonServer.Instance().asyncRefreshHeroInfo fail ");
+            return;
+        }
+        // this.setUserHeroInfo(res.userHero);
+    }
 
     // public setUserHeroInfo(data: any): void {
     //     this._userHeroInfo = UserHeroInfo.parse(data);
@@ -1573,14 +1575,14 @@ export default class UserInfo extends cc.Component {
     //     this._userInboxInfo.initUserInboxInfo(data);
     // }
 
-    // public async asyncRefreshJackpotInfo(force: boolean): Promise<boolean> {
-    //     const zoneId = this.getZoneId();
-    //     const now = NativeUtil.getUnixTimestamp();
-    //     if (!force && this.refreshJackpotCheckTime +20 > now) return true;
-    //     console.log("TimeCheck asyncRefreshJackpotInfo start");
-    //     const res = await this.asyncRefreshJackpotInfoByZoneId(Math.min(1, zoneId));
-    //     return res;
-    // }
+    public async asyncRefreshJackpotInfo(force: boolean): Promise<boolean> {
+        const zoneId = this.getZoneId();
+        // const now = NativeUtil.getUnixTimestamp();
+        // if (!force && this.refreshJackpotCheckTime +20 > now) return true;
+        // console.log("TimeCheck asyncRefreshJackpotInfo start");
+        // const res = await this.asyncRefreshJackpotInfoByZoneId(Math.min(1, zoneId));
+        return null;//new Promise(re);
+    }
 
     // public async asyncRefreshJackpotInfoByZoneId(zoneId: number): Promise<boolean> {
     //     const res = await CommonServer.Instance().requestZoneInfo(this.getUid(), this.getAccessToken());

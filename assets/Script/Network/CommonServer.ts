@@ -341,8 +341,9 @@ export default class CommonServer {
     }
 
     public getGameLocationParam(): string {
-        if (UserInfo.instance() == null) return "HRVGameLocation=";
-        return "HRVGameLocation=" + TSUtility.btoa(JSON.stringify(UserInfo.instance()!.getGameLocation()));
+        // if (UserInfo.instance() == null) return "HRVGameLocation=";
+        // return "HRVGameLocation=" + TSUtility.btoa(JSON.stringify(UserInfo.instance()!.getGameLocation()));
+        return null;
     }
 
     public getUrlRequestSpin(zone: number, slot: string): string {
@@ -365,7 +366,7 @@ export default class CommonServer {
                     if (UserInfo.isAuthFail()) return true;
                     if (retryCnt === 0) {
                         UserInfo.setAuthFail();
-                        if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
+                        // if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
                         let btnTxt = "RELOAD";
                         if (Utility.isFacebookInstant()) btnTxt = "CLOSE";
                         CommonPopup.getCommonPopup((_, popup) => {
@@ -382,7 +383,7 @@ export default class CommonServer {
                 // 401 鉴权失败
                 if (res.errorStatusCode === 401) {
                     UserInfo.setAuthFail();
-                    if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
+                    // if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
                     const errMsg = res.errorMsg;
                     const isMismatch = errMsg.indexOf("accessToken is mismatch") > -1;
                     const isTimeout = errMsg.indexOf("model.DBStorage.GetUserSessionInfo") > -1;
@@ -413,19 +414,19 @@ export default class CommonServer {
                 // 版本过低错误
                 if (res.errorCode == SDefine.ERR_MINVERSION) {
                     UserInfo.setAuthFail();
-                    if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
-                    let btnTxt = "RELOAD";
-                    let tipMsg = "A new version is available.\nPlease restart the app to continue playing the slot game.";
-                    if (Utility.isFacebookInstant()) {
-                        btnTxt = "CLOSE";
-                        tipMsg = "A new version is available.\nPlease close the game.";
-                    }
-                    CommonPopup.getCommonPopup((_, popup) => {
-                        popup.open().setInfo("NOTICE", tipMsg, false).setOkBtn(btnTxt, () => { HRVServiceUtil.restartGame(); });
-                        if (Utility.isMobileGame()) {
-                            popup.setCloseBtn(true, () => { TSUtility.endGame(); });
-                        }
-                    });
+                    // if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
+                    // let btnTxt = "RELOAD";
+                    // let tipMsg = "A new version is available.\nPlease restart the app to continue playing the slot game.";
+                    // if (Utility.isFacebookInstant()) {
+                    //     btnTxt = "CLOSE";
+                    //     tipMsg = "A new version is available.\nPlease close the game.";
+                    // }
+                    // CommonPopup.getCommonPopup((_, popup) => {
+                    //     popup.open().setInfo("NOTICE", tipMsg, false).setOkBtn(btnTxt, () => { HRVServiceUtil.restartGame(); });
+                    //     if (Utility.isMobileGame()) {
+                    //         popup.setCloseBtn(true, () => { TSUtility.endGame(); });
+                    //     }
+                    // });
                     return true;
                 }
             }

@@ -67,25 +67,25 @@ export default class AllMightyCouponManager extends cc.Component {
             return false;
         }
 
-        const isPurchased = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt > 0;
-        const lastPurchaseDate = UserInfo.instance().getPurchaseInfo().lastPurchaseDateOverUsd3;
-        const nowUnix = TSUtility.getServerBaseNowUnixTime();
+        // const isPurchased = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt > 0;
+        // const lastPurchaseDate = UserInfo.instance().getPurchaseInfo().lastPurchaseDateOverUsd3;
+        // const nowUnix = TSUtility.getServerBaseNowUnixTime();
 
-        if (!isPurchased || nowUnix - lastPurchaseDate < this._date20Days) {
-            return false;
-        }
+        // if (!isPurchased || nowUnix - lastPurchaseDate < this._date20Days) {
+        //     return false;
+        // }
 
-        if (this.isRunningOtherPromotion()) {
-            return false;
-        }
+        // if (this.isRunningOtherPromotion()) {
+        //     return false;
+        // }
 
-        const inboxInfo = UserInfo.instance().getUserInboxInfo();
-        if (CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(inboxInfo) 
-            || CenturionCliqueManager.Instance().isActiveCenturionClique() 
-            || CenturionCliqueManager.Instance().isActiveHeroCenturionClique()) 
-        {
-            return false;
-        }
+        // const inboxInfo = UserInfo.instance().getUserInboxInfo();
+        // if (CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(inboxInfo) 
+        //     || CenturionCliqueManager.Instance().isActiveCenturionClique() 
+        //     || CenturionCliqueManager.Instance().isActiveHeroCenturionClique()) 
+        // {
+        //     return false;
+        // }
 
         const promotionStartDate = ShopPromotionManager.Instance().getReadyPromotionStartDate();
         return !(promotionStartDate > 0 && promotionStartDate - 46800 <= TSUtility.getServerBaseNowUnixTime());
@@ -150,8 +150,8 @@ export default class AllMightyCouponManager extends cc.Component {
                     if (CommonServer.isServerResponseError(response)) {
                         callback();
                     } else {
-                        const changeResult = UserInfo.instance().getServerChangeResult(response);
-                        UserInfo.instance().applyChangeResult(changeResult);
+                        // const changeResult = UserInfo.instance().getServerChangeResult(response);
+                        // UserInfo.instance().applyChangeResult(changeResult);
                         callback();
                     }
                 }

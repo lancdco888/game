@@ -103,7 +103,7 @@ export default class HyperBountyManager extends cc.Component {
         { itemID: SDefine.I_STAR_SHOP_COIN, addCnt: 100 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_2, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 3000000 },
         { itemID: SDefine.I_GAMEMONEY, addCnt: 3000000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_3, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 3000000 }
     ];
-    
+
     /** 通行证付费奖励池数据 */
     public PASS_REWARD_PURCHASE_DATA: Array<{ itemID: string, addCnt: number | string, addTime?: number }> = [
         // { itemID: SDefine.I_GAMEMONEY, addCnt: 2500000 },{ itemID: SDefine.I_COLLECTION_CARD_PACK_4, addCnt: 1 },{ itemID: SDefine.I_GAMEMONEY, addCnt: 2500000 },
@@ -430,13 +430,13 @@ export default class HyperBountyManager extends cc.Component {
     // ===================== 【物品/道具/数据获取相关】 =====================
     /** 获取VIP加成后的金币数量 */
     public getVIPBenefitCoin(coin: number): number {
-        let vipLevel = UserInfo.instance().getUserVipInfo().level;
-        if (MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess()) {
-            vipLevel = MembersClassBoostUpManager.instance().getBoostedMembersClass();
-        }
-        if (MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess()) {
-            vipLevel = MembersClassBoostUpNormalManager.instance().getBoostedMembersClass();
-        }
+        // let vipLevel = UserInfo.instance().getUserVipInfo().level;
+        // if (MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess()) {
+        //     vipLevel = MembersClassBoostUpManager.instance().getBoostedMembersClass();
+        // }
+        // if (MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess()) {
+        //     vipLevel = MembersClassBoostUpNormalManager.instance().getBoostedMembersClass();
+        // }
         // const vipGrade = VipManager.Instance().getGradeInfo(vipLevel);
         // if (!TSUtility.isValid(vipGrade)) return coin;
         // const bonusCoin = (vipGrade.benefit.shopBonus * coin).toFixed();
@@ -445,21 +445,24 @@ export default class HyperBountyManager extends cc.Component {
     }
     /** 获取已购买的付费通行证道具信息 */
     public getPurchaseProduct(): any | null {
-        const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_HYPER_BOUNTY_PASS_PREMIUM);
-        if (!TSUtility.isValid(item) || item.length <= 0) return null;
-        return item[0];
+        // const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_HYPER_BOUNTY_PASS_PREMIUM);
+        // if (!TSUtility.isValid(item) || item.length <= 0) return null;
+        // return item[0];
+        return null;
     }
     /** 获取拓展奖励箱信息 */
     public getExtendRewardBoxInfo(): any | null {
-        const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_HYPER_BOUNTY_EXTEND_REWARD_BOX);
-        if (!TSUtility.isValid(item) || item.length <= 0) return null;
-        return item[0];
+        // const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_HYPER_BOUNTY_EXTEND_REWARD_BOX);
+        // if (!TSUtility.isValid(item) || item.length <= 0) return null;
+        // return item[0];
+        return null;
     }
     /** 获取通行证积分信息 */
     public getPassPointInfo(): any | null {
-        const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_HYPER_BOUNTY_PASS_POINT);
-        if (item.length <= 0) return null;
-        return item[0];
+        // const item = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_HYPER_BOUNTY_PASS_POINT);
+        // if (item.length <= 0) return null;
+        // return item[0];
+        return null;
     }
     /** 获取通行证商品信息 */
     public getPassProductInfo(): any {

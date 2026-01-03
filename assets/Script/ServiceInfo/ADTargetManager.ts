@@ -43,10 +43,11 @@ export default class ADTargetManager extends cc.Component {
 
     /** 校验：一键领取广告是否启用 */
     public enableCollectAll(): boolean {
-        return AdsManager.Instance().isReadyRewardedAD() 
-            && (SDefine.AD_Target_Test 
-                || (Utility.isMobileGame() && 0 == UserInfo.instance().getPurchaseInfo().cntIn30Days) 
-                || Utility.isFacebookInstant());
+        // return AdsManager.Instance().isReadyRewardedAD() 
+        //     && (SDefine.AD_Target_Test 
+        //         || (Utility.isMobileGame() && 0 == UserInfo.instance().getPurchaseInfo().cntIn30Days) 
+        //         || Utility.isFacebookInstant());
+        return false;
     }
 
     /** 校验：收件箱-普通奖励广告是否启用 */
@@ -67,13 +68,13 @@ export default class ADTargetManager extends cc.Component {
                 return false;
             }
             
-            UserInfo.instance().getPurchaseInfo().cntIn30Days;
-            const promotionInfo = UserInfo.instance().getPromotionInfo(WatchRewardAdPromotion.PromotionKeyName);
-            if (SDefine.FB_Instant_iOS_Shop_Flag) {
-                if (promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Normal] < 15) return true;
-            } else if (!this.enableInboxReward_AllIn() && promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Normal] < 15) {
-                return true;
-            }
+            // UserInfo.instance().getPurchaseInfo().cntIn30Days;
+            // const promotionInfo = UserInfo.instance().getPromotionInfo(WatchRewardAdPromotion.PromotionKeyName);
+            // if (SDefine.FB_Instant_iOS_Shop_Flag) {
+            //     if (promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Normal] < 15) return true;
+            // } else if (!this.enableInboxReward_AllIn() && promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Normal] < 15) {
+            //     return true;
+            // }
         }
         return false;
     }
@@ -82,21 +83,21 @@ export default class ADTargetManager extends cc.Component {
     public enableInboxReward_AllIn(): boolean {
         if (SDefine.AD_Target_Test) return true;
 
-        if (Utility.isMobileGame()) {
-            UserInfo.instance().getPurchaseInfo().cntIn30Days;
-            ServiceInfoManager.instance.getUserLevel();
-            const totalCoin = UserInfo.instance().getTotalCoin();
-            const promotionInfo = UserInfo.instance().getPromotionInfo(WatchRewardAdPromotion.PromotionKeyName);
-            const isAllIn = ServiceInfoManager.BOOL_ALL_IN;
-            let receiveCount = 0;
+        // if (Utility.isMobileGame()) {
+        //     UserInfo.instance().getPurchaseInfo().cntIn30Days;
+        //     ServiceInfoManager.instance.getUserLevel();
+        //     const totalCoin = UserInfo.instance().getTotalCoin();
+        //     const promotionInfo = UserInfo.instance().getPromotionInfo(WatchRewardAdPromotion.PromotionKeyName);
+        //     const isAllIn = ServiceInfoManager.BOOL_ALL_IN;
+        //     let receiveCount = 0;
 
-            if (TSUtility.isValid(promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal])) {
-                receiveCount = promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal];
-            }
-            if (isAllIn && totalCoin <= 1000000 && receiveCount < this.maxCountInboxAllinReward) {
-                return true;
-            }
-        }
+        //     if (TSUtility.isValid(promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal])) {
+        //         receiveCount = promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal];
+        //     }
+        //     if (isAllIn && totalCoin <= 1000000 && receiveCount < this.maxCountInboxAllinReward) {
+        //         return true;
+        //     }
+        // }
 
         if (Utility.isFacebookInstant()) {
             if (FBInstantUtil.isTargetPlatform([FBInstantUtil.PLATFORM_IOS, FBInstantUtil.PLATFORM_ANDROID]) 
@@ -104,20 +105,20 @@ export default class ADTargetManager extends cc.Component {
                 return false;
             }
 
-            UserInfo.instance().getPurchaseInfo().cntIn30Days;
-            const totalCoin = UserInfo.instance().getTotalCoin();
-            const promotionInfo = UserInfo.instance().getPromotionInfo(WatchRewardAdPromotion.PromotionKeyName);
-            const isAllIn = ServiceInfoManager.BOOL_ALL_IN;
-            let receiveCount = 0;
+            // UserInfo.instance().getPurchaseInfo().cntIn30Days;
+            // const totalCoin = UserInfo.instance().getTotalCoin();
+            // const promotionInfo = UserInfo.instance().getPromotionInfo(WatchRewardAdPromotion.PromotionKeyName);
+            // const isAllIn = ServiceInfoManager.BOOL_ALL_IN;
+            // let receiveCount = 0;
 
-            if (TSUtility.isValid(promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal])) {
-                receiveCount = promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal];
-            }
-            if (SDefine.FB_Instant_iOS_Shop_Flag) {
-                if (isAllIn && totalCoin <= 3000000 && receiveCount < this.maxCountInboxAllinReward) return true;
-            } else if (isAllIn && totalCoin <= 1000000 && receiveCount < this.maxCountInboxAllinReward) {
-                return true;
-            }
+            // if (TSUtility.isValid(promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal])) {
+            //     receiveCount = promotionInfo.receiveCountMapper[ADREWARDTYPE.Inbox_Allin_Renewal];
+            // }
+            // if (SDefine.FB_Instant_iOS_Shop_Flag) {
+            //     if (isAllIn && totalCoin <= 3000000 && receiveCount < this.maxCountInboxAllinReward) return true;
+            // } else if (isAllIn && totalCoin <= 1000000 && receiveCount < this.maxCountInboxAllinReward) {
+            //     return true;
+            // }
         }
         return false;
     }
@@ -145,11 +146,11 @@ export default class ADTargetManager extends cc.Component {
 
     /** 校验：移动端 插屏广告基础投放条件 */
     public enableBasicConditionInterstitial_ForMobile(): boolean {
-        const totalPurchaseCnt = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt;
-        if (totalPurchaseCnt > 0) {
-            cc.log("enableDevMobileBasicCondition purchaseCount %s".format(totalPurchaseCnt.toString()));
-            return false;
-        }
+        // const totalPurchaseCnt = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt;
+        // if (totalPurchaseCnt > 0) {
+        //     cc.log("enableDevMobileBasicCondition purchaseCount %s".format(totalPurchaseCnt.toString()));
+        //     return false;
+        // }
 
         if (!ServiceInfoManager.instance.isOverCerateSevenDay()) {
             cc.log("enableDevMobileBasicCondition isOverCerateSevenDay");
@@ -183,9 +184,9 @@ export default class ADTargetManager extends cc.Component {
         if (!Utility.isFacebookInstant()) return false;
         if (TSUtility.getServerBaseNowUnixTime() - ServerStorageManager.getAsNumber(StorageKeyType.ADS_FREE) <= 86400) return false;
         
-        if (!SDefine.FB_Instant_iOS_Shop_Flag && UserInfo.instance().getUserServiceInfo().totalPurchaseCnt > 0) {
-            return false;
-        }
+        // if (!SDefine.FB_Instant_iOS_Shop_Flag && UserInfo.instance().getUserServiceInfo().totalPurchaseCnt > 0) {
+        //     return false;
+        // }
 
         if (FBInstantUtil.isTargetPlatform([FBInstantUtil.PLATFORM_IOS, FBInstantUtil.PLATFORM_ANDROID])) {
             if (ServiceInfoManager.instance.isLobbyEnterUnder2NewbieTarget()) return false;
@@ -220,29 +221,30 @@ export default class ADTargetManager extends cc.Component {
 
     /** 校验：开发环境-移动端 插屏广告投放条件 */
     public enableDevMobileBasicCondition(): boolean {
-        const totalPurchaseCnt = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt;
-        if (totalPurchaseCnt > 0) {
-            cc.log("enableDevMobileBasicCondition purchaseCount %s".format(totalPurchaseCnt.toString()));
-            return false;
-        }
+        // const totalPurchaseCnt = UserInfo.instance().getUserServiceInfo().totalPurchaseCnt;
+        // if (totalPurchaseCnt > 0) {
+        //     cc.log("enableDevMobileBasicCondition purchaseCount %s".format(totalPurchaseCnt.toString()));
+        //     return false;
+        // }
 
-        if (UserInfo.instance().getEightySpinCount() < 1) {
-            cc.log("enableDevMobileBasicCondition spinCnt %s".format(1..toString()));
-            return false;
-        }
+        // if (UserInfo.instance().getEightySpinCount() < 1) {
+        //     cc.log("enableDevMobileBasicCondition spinCnt %s".format(1..toString()));
+        //     return false;
+        // }
 
-        if (this.getLastTime() + 30 >= TSUtility.getServerBaseNowUnixTime()) {
-            cc.log("enableDevMobileBasicCondition getInterstitialAdLastTime");
-            return false;
-        }
+        // if (this.getLastTime() + 30 >= TSUtility.getServerBaseNowUnixTime()) {
+        //     cc.log("enableDevMobileBasicCondition getInterstitialAdLastTime");
+        //     return false;
+        // }
 
-        const playTime = this.getPlayTime();
-        const pstPlayTime = TSUtility.getServerBasePstBaseTime(playTime);
-        const pstNowTime = TSUtility.getServerBasePstBaseTime(TSUtility.getServerBaseNowUnixTime());
-        const adPlayCount = this.getADPlayCount();
+        // const playTime = this.getPlayTime();
+        // const pstPlayTime = TSUtility.getServerBasePstBaseTime(playTime);
+        // const pstNowTime = TSUtility.getServerBasePstBaseTime(TSUtility.getServerBaseNowUnixTime());
+        // const adPlayCount = this.getADPlayCount();
 
-        return !(TSUtility.getServerBaseNowUnixTime() - ServerStorageManager.getAsNumber(StorageKeyType.ADS_FREE) <= 86400 
-            || (pstNowTime <= pstPlayTime && adPlayCount >= 100 && (cc.log("enableDevMobileBasicCondition playCnt %s".format(100..toString())), 1)));
+        // return !(TSUtility.getServerBaseNowUnixTime() - ServerStorageManager.getAsNumber(StorageKeyType.ADS_FREE) <= 86400 
+        //     || (pstNowTime <= pstPlayTime && adPlayCount >= 100 && (cc.log("enableDevMobileBasicCondition playCnt %s".format(100..toString())), 1)));
+        return false;
     }
 
     // ==============================================================

@@ -41,8 +41,8 @@ export default class BingoBoard extends cc.Component {
     public initBingoBoard(boardId: number, cellPrefab: cc.Prefab, boardData: BingoData,para:any) {
         this.node.active = true;
         this._boardData = boardData;
-        this._friendInfo = UserInfo.instance().getUserFriendInfo();
-        this._activeFrinedIndex = Math.floor(Math.random() * this._friendInfo.activeFriends.length);
+        // this._friendInfo = UserInfo.instance().getUserFriendInfo();
+        // this._activeFrinedIndex = Math.floor(Math.random() * this._friendInfo.activeFriends.length);
         this.boardId = boardId;
         cc.log("init bingo board");
         
@@ -78,7 +78,6 @@ export default class BingoBoard extends cc.Component {
             this._boardData.state = BingoBoardState.Normal;
         }
     }
-
     // ===================== 特效初始化：宾果完成特效节点创建 =====================
     public initCompleteFx(lineFx: cc.Prefab, crossFx: cc.Prefab, centerFx: cc.Prefab) {
         let fxIdx = 0;
@@ -163,15 +162,15 @@ export default class BingoBoard extends cc.Component {
 
                     // 好友标记类型
                     if (this._boardData.cells[x][y].markingType == BingoMarkingType.Friend) {
-                        const friendInfo = UserInfo.instance().getFriendSimpleInfo(this._boardData.cells[x][y].friendUid);
-                        if (friendInfo) {
-                            this._cells[x][y].setFriendPicture(friendInfo.picUrl);
-                        } else {
-                            const friendPicUrl = this.getNextActiveFriendPicUrl();
-                            this._cells[x][y].setFriendPicture(friendPicUrl);
-                        }
-                        this._cells[x][y].setMarking(BingoMarkingType.NonMarking);
-                        this._cells[x][y].scheduleOnce(this._cells[x][y].setMarkingFriendWithAni.bind(this._cells[x][y]), 0.29);
+                        // const friendInfo = UserInfo.instance().getFriendSimpleInfo(this._boardData.cells[x][y].friendUid);
+                        // if (friendInfo) {
+                        //     this._cells[x][y].setFriendPicture(friendInfo.picUrl);
+                        // } else {
+                        //     const friendPicUrl = this.getNextActiveFriendPicUrl();
+                        //     this._cells[x][y].setFriendPicture(friendPicUrl);
+                        // }
+                        // this._cells[x][y].setMarking(BingoMarkingType.NonMarking);
+                        // this._cells[x][y].scheduleOnce(this._cells[x][y].setMarkingFriendWithAni.bind(this._cells[x][y]), 0.29);
                     } 
                     // 英雄标记类型
                     else if (this._boardData.cells[x][y].markingType == BingoMarkingType.Hero) {
@@ -200,10 +199,12 @@ export default class BingoBoard extends cc.Component {
 
                     // 好友标记类型
                     if (self._boardData.cells[x][y].markingType == BingoMarkingType.Friend) {
-                        const friendInfo = UserInfo.instance().getFriendSimpleInfo(self._boardData.cells[x][y].friendUid);
-                        if (friendInfo) {
-                            self._cells[x][y].setFriendPicture(friendInfo.picUrl);
-                        } else {
+                        // const friendInfo = UserInfo.instance().getFriendSimpleInfo(self._boardData.cells[x][y].friendUid);
+                        // if (friendInfo) 
+                        // {
+                        //     self._cells[x][y].setFriendPicture(friendInfo.picUrl);
+                        // } else 
+                        {
                             const friendPicUrl = self.getNextActiveFriendPicUrl();
                             self._cells[x][y].setFriendPicture(friendPicUrl);
                         }

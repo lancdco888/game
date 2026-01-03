@@ -558,7 +558,7 @@ export default class ChangeResult {
                 this.assetHist.splice(i, 1);
             }
         }
-        if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
+        // if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
         return total;
     }
 
@@ -572,7 +572,7 @@ export default class ChangeResult {
                 isRemove = true;
             }
         }
-        if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
+        // if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
         return isRemove;
     }
 
@@ -594,7 +594,7 @@ export default class ChangeResult {
                 }
             }
         }
-        if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
+        // if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
         return isSub;
     }
 
@@ -617,7 +617,7 @@ export default class ChangeResult {
                 }
             }
         }
-        if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
+        // if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
         return totalSub;
     }
 
@@ -628,7 +628,7 @@ export default class ChangeResult {
             paidCoin = this.assetHist[i].paidCoin;
             if (this.assetHist[i].payCode === payCode) arr.push(this.assetHist[i].changeCoin);
         }
-        if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
+        // if (paidCoin >= 0) UserInfo.instance().addUserAssetPaindMoney(paidCoin);
         return arr;
     }
 

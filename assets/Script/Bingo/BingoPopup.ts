@@ -113,17 +113,17 @@ export default class BingoPopup extends DialogBase {
             self.bingoManager.initBingoManager(bingoData.bingoInfo, rewardData);
 
             // 场景判断：大厅场景 / 其他场景 区分处理BGM
-            if (UserInfo.instance().getCurrentSceneMode() == SDefine.Lobby) {
-                const lobbyScene = LobbyScene.instance;
-                if (TSUtility.isValid(lobbyScene)) {
-                    lobbyScene.isOverrideBGM = true;
-                    SoundManager.Instance().playBGM(self.mainBGM);
-                }
-            } else {
-                // 缓存上一个BGM 弹窗关闭时恢复
-                self._prevMainBGM = SoundManager.Instance().getMainBGMClip();
-                SoundManager.Instance().playBGM(self.mainBGM);
-            }
+            // if (UserInfo.instance().getCurrentSceneMode() == SDefine.Lobby) {
+            //     const lobbyScene = LobbyScene.instance;
+            //     if (TSUtility.isValid(lobbyScene)) {
+            //         lobbyScene.isOverrideBGM = true;
+            //         SoundManager.Instance().playBGM(self.mainBGM);
+            //     }
+            // } else {
+            //     // 缓存上一个BGM 弹窗关闭时恢复
+            //     self._prevMainBGM = SoundManager.Instance().getMainBGMClip();
+            //     SoundManager.Instance().playBGM(self.mainBGM);
+            // }
 
             // ✅ 广告核心逻辑 完整保留：插屏广告播放+埋点+免费弹窗触发
             if (AdsManager.Instance().isUseable()) {
@@ -179,14 +179,14 @@ export default class BingoPopup extends DialogBase {
     /** 弹窗关闭核心流程 - 恢复BGM+标记弹窗状态+移除消息监听+广告逻辑 */
     public closeFlow(): void {
         // 恢复背景音乐：大厅场景取消覆盖 / 其他场景恢复上一个BGM
-        if (UserInfo.instance().getCurrentSceneMode() == SDefine.Lobby) {
-            const lobbyScene = LobbyScene.instance;
-            if (TSUtility.isValid(lobbyScene)) {
-                lobbyScene.isOverrideBGM = false;
-            }
-        } else {
+        // if (UserInfo.instance().getCurrentSceneMode() == SDefine.Lobby) {
+        //     const lobbyScene = LobbyScene.instance;
+        //     if (TSUtility.isValid(lobbyScene)) {
+        //         lobbyScene.isOverrideBGM = false;
+        //     }
+        // } else {
             if (this._prevMainBGM) SoundManager.Instance().playBGM(this._prevMainBGM);
-        }
+        // }
 
         // 标记Bingo弹窗为关闭状态
         ServiceInfoManager.instance.setBingoPopupOpen(false);

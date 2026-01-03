@@ -49,16 +49,16 @@ export default class BingoRemainGameCollectUI extends cc.Component {
         const worldPos = targetNode.convertToWorldSpaceAR(cc.Vec2.ZERO);
         this.node.setPosition(this.node.parent.convertToNodeSpaceAR(worldPos));
 
-        const purchaseCnt = UserInfo.instance().getPurchaseInfo().cntIn30Days;
-        if (!Utility.isMobileGame() && !Utility.isFacebookInstant() || !AdsManager2.Instance().isReadyRewardedAD() || purchaseCnt !==0) {
-            this.showCollectBtn.node.active = true;
-            this.ad_CollectBtn.node.active = false;
-        } else {
-            AdsManager2.Instance().ADLog_RewardedADShowUI(PlacementID_Type.BINGO_INSTANTLY);
-            this.showCollectBtn.node.active = false;
-            this.ad_CollectBtn.node.active = true;
-            this._isADCollect = false;
-        }
+        // const purchaseCnt = UserInfo.instance().getPurchaseInfo().cntIn30Days;
+        // if (!Utility.isMobileGame() && !Utility.isFacebookInstant() || !AdsManager2.Instance().isReadyRewardedAD() || purchaseCnt !==0) {
+        //     this.showCollectBtn.node.active = true;
+        //     this.ad_CollectBtn.node.active = false;
+        // } else {
+        //     AdsManager2.Instance().ADLog_RewardedADShowUI(PlacementID_Type.BINGO_INSTANTLY);
+        //     this.showCollectBtn.node.active = false;
+        //     this.ad_CollectBtn.node.active = true;
+        //     this._isADCollect = false;
+        // }
     }
 
     hideCollectRoot() {
@@ -85,9 +85,9 @@ export default class BingoRemainGameCollectUI extends cc.Component {
                     function(resData) {
                         PopupManager.Instance().showDisplayProgress(false);
                         if (!CommonServer.isServerResponseError(resData) && cc.isValid(self)) {
-                            const changeResult = UserInfo.instance().getServerChangeResult(resData);
-                            const changeCoin = changeResult.getTotalChangeCoin();
-                            const oldCoin = UserInfo.instance().getTotalCoin();
+                            // const changeResult = UserInfo.instance().getServerChangeResult(resData);
+                            // const changeCoin = changeResult.getTotalChangeCoin();
+                            // const oldCoin = UserInfo.instance().getTotalCoin();
 
                             PopupManager.Instance().showBlockingBG(true);
                             // InstantsRewardPopoup.getPopup(function(isError, popup) {

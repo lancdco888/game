@@ -214,13 +214,13 @@ export default class BingoOfferPopup extends DialogBase {
 
                         // 当前弹窗已关闭 → 仅更新数据不展示特效
                         if (!TSUtility.isValid(self) || self.isStateClose()) {
-                            const changeResult = UserInfo.instance().getServerChangeResult(serverRes);
-                            UserInfo.instance().applyChangeResult(changeResult);
+                            // const changeResult = UserInfo.instance().getServerChangeResult(serverRes);
+                            // UserInfo.instance().applyChangeResult(changeResult);
                         } 
                         // 弹窗正常 → 打开奖励弹窗+播放领取特效+关闭当前弹窗
                         else {
-                            const changeResult = UserInfo.instance().getServerChangeResult(serverRes);
-                            UserInfo.instance().applyChangeResult(changeResult);
+                            // const changeResult = UserInfo.instance().getServerChangeResult(serverRes);
+                            // UserInfo.instance().applyChangeResult(changeResult);
                             const bingoBallCnt = UserInfo.instance().getBingoBallCnt();
 
                             PopupManager.Instance().showDisplayProgress(true);

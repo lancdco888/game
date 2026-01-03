@@ -78,13 +78,13 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
             return false;
         }
 
-        if (UserInfo.instance().getUserVipInfo().level < 3) {
-            return false;
-        }
+        // if (UserInfo.instance().getUserVipInfo().level < 3) {
+        //     return false;
+        // }
 
-        if (UserInfo.instance().getBoostPromotionCoolTime() > TSUtility.getServerBaseNowUnixTime()) {
-            return false;
-        }
+        // if (UserInfo.instance().getBoostPromotionCoolTime() > TSUtility.getServerBaseNowUnixTime()) {
+        //     return false;
+        // }
 
         if (!this.isAvailableMembersBoostVipPoint()) {
             return false;
@@ -104,25 +104,27 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
             return false;
         }
 
-        const inboxInfo = UserInfo.instance().getUserInboxInfo();
-        return !(CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(inboxInfo) 
-            || CenturionCliqueManager.Instance().isActiveCenturionClique() 
-            || CenturionCliqueManager.Instance().isActiveHeroCenturionClique() 
-            || !promotionInfo.isValid());
+        // const inboxInfo = UserInfo.instance().getUserInboxInfo();
+        // return !(CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(inboxInfo) 
+        //     || CenturionCliqueManager.Instance().isActiveCenturionClique() 
+        //     || CenturionCliqueManager.Instance().isActiveHeroCenturionClique() 
+        //     || !promotionInfo.isValid());
+        return false;
     }
 
     public isRunningMembersBoostUpExpandProcess(): number {
-        const boostItem = this.getMembersClassBoostUpExpandItem();
-        if (!TSUtility.isValid(boostItem)) return 0;
-        if (UserInfo.instance().getUserVipInfo().level >= this.getBoostedMembersClass()) return 0;
-        if (this.isRunningOtherPromotion()) return 0;
+        // const boostItem = this.getMembersClassBoostUpExpandItem();
+        // if (!TSUtility.isValid(boostItem)) return 0;
+        // if (UserInfo.instance().getUserVipInfo().level >= this.getBoostedMembersClass()) return 0;
+        // if (this.isRunningOtherPromotion()) return 0;
         return 1;
     }
 
     public isAvailableMembersBoostVipPoint(): boolean {
-        const vipLevel = UserInfo.instance().getUserVipInfo().level;
-        const vipExp = UserInfo.instance().getUserVipInfo().exp;
-        return vipExp >= this.availablePoint[vipLevel - 3];
+        // const vipLevel = UserInfo.instance().getUserVipInfo().level;
+        // const vipExp = UserInfo.instance().getUserVipInfo().exp;
+        // return vipExp >= this.availablePoint[vipLevel - 3];
+        return false;
     }
 
     public isRunningOtherPromotion(): boolean {
@@ -138,15 +140,15 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
     }
 
     public getMembersClassBoostUpExpandItem(): any {
-        const itemInventory = UserInfo.instance().getItemInventory();
-        const nowUnix = TSUtility.getServerBaseNowUnixTime();
-        const boostItems = itemInventory.getItemsByItemId(SDefine.I_MEMBERS_CLASS_BOOSTUP_NORMAL);
+        // const itemInventory = UserInfo.instance().getItemInventory();
+        // const nowUnix = TSUtility.getServerBaseNowUnixTime();
+        // const boostItems = itemInventory.getItemsByItemId(SDefine.I_MEMBERS_CLASS_BOOSTUP_NORMAL);
         
-        for (let i = 0; i < boostItems.length; ++i) {
-            if (nowUnix < boostItems[i].expireDate) {
-                return boostItems[i];
-            }
-        }
+        // for (let i = 0; i < boostItems.length; ++i) {
+        //     if (nowUnix < boostItems[i].expireDate) {
+        //         return boostItems[i];
+        //     }
+        // }
         return null;
     }
 
@@ -177,8 +179,8 @@ export default class MembersClassBoostUpNormalManager extends cc.Component {
                     if (CommonServer.isServerResponseError(response)) {
                         callback();
                     } else {
-                        const changeResult = UserInfo.instance().getServerChangeResult(response);
-                        UserInfo.instance().applyChangeResult(changeResult);
+                        // const changeResult = UserInfo.instance().getServerChangeResult(response);
+                        // UserInfo.instance().applyChangeResult(changeResult);
                         callback();
                     }
                 }

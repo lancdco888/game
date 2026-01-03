@@ -307,7 +307,7 @@ export default class BingoManager_New extends cc.Component {
     // ==============================================================
     public onDestroy(): void {
         MessageRoutingManager.instance().removeListenerTargetAll(this);
-        null != UserInfo.instance() && UserInfo.instance().removeListenerTargetAll(this);
+        // null != UserInfo.instance() && UserInfo.instance().removeListenerTargetAll(this);
     }
 
     // ==============================================================
@@ -329,10 +329,10 @@ export default class BingoManager_New extends cc.Component {
     }
 
     public setBingoBallCnt(strCnt: string): void {
-        this.bingoBallMax_Node.active = UserInfo.instance().getFreeBingoBallCnt() >= SDefine.BINGO_HAVE_MAX_CNT;
-        for (let i = 0; i < this.remainBallCntLabels.length; ++i) {
-            this.remainBallCntLabels[i].string = strCnt;
-        }
+        // this.bingoBallMax_Node.active = UserInfo.instance().getFreeBingoBallCnt() >= SDefine.BINGO_HAVE_MAX_CNT;
+        // for (let i = 0; i < this.remainBallCntLabels.length; ++i) {
+        //     this.remainBallCntLabels[i].string = strCnt;
+        // }
     }
 
     public resetBlastEffectAni(): void {
@@ -347,8 +347,8 @@ export default class BingoManager_New extends cc.Component {
         if (1 == isInactive) {
             this.board2Inactive.active = true;
             this.board2Inactive_lock.active = true;
-            const activeFriendCnt = UserInfo.instance().getUserFriendInfo().getActiveFriendCnt();
-            this.activeFriendLabel.string = "%s".format(activeFriendCnt.toString());
+            // const activeFriendCnt = UserInfo.instance().getUserFriendInfo().getActiveFriendCnt();
+            this.activeFriendLabel.string = "%s".format("0");
             this._boards[1].node.setScale(.65, .65);
             this._boards[1].node.y = -65;
             this._boards[1].node.opacity = 200;
@@ -458,12 +458,12 @@ export default class BingoManager_New extends cc.Component {
         this.setBingoBoardCnt();
         if (null != dailyReward) {
             // 每日奖励逻辑 + VIP等级判定
-            let vipLv = UserInfo.instance().getUserVipInfo().level;
-            if (MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess()) {
-                vipLv = MembersClassBoostUpManager.instance().getBoostedMembersClass();
-            } else if (MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess()) {
-                vipLv = MembersClassBoostUpNormalManager.instance().getBoostedMembersClass();
-            }
+            // let vipLv = UserInfo.instance().getUserVipInfo().level;
+            // if (MembersClassBoostUpManager.instance().isRunningMembersBoostUpProcess()) {
+            //     vipLv = MembersClassBoostUpManager.instance().getBoostedMembersClass();
+            // } else if (MembersClassBoostUpNormalManager.instance().isRunningMembersBoostUpExpandProcess()) {
+            //     vipLv = MembersClassBoostUpNormalManager.instance().getBoostedMembersClass();
+            // }
 
             this.dailyRewardPop.active = false;
             // this.dailyRewardVipIcon.setIcon(vipLv);
@@ -553,11 +553,11 @@ export default class BingoManager_New extends cc.Component {
             SoundManager.Instance().stopAllFxLoop();
             
             const isFreeMarkingBoost = changeResult.getItemHistByItemId(SDefine.I_BINGO_FREE_MARKING_BOOST).length > 0;
-            const isMirrorBallBoost = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_BINGO_MIRRORBALL_BOOST).length > 0;
+            // const isMirrorBallBoost = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.I_BINGO_MIRRORBALL_BOOST).length > 0;
             const heroBingoBallHist = changeResult.splitChangeResult_BingoBallHistByPayCode(PayCode.HeroSkill_BingoBall);
 
             // 基础数据初始化
-            UserInfo.instance().applyChangeResult(changeResult);
+            // UserInfo.instance().applyChangeResult(changeResult);
             this._bingoInfo = bingoInfo;
             this.setBingoBallCnt(UserInfo.instance().getBingoBallCnt().toString());
             this.callCntLabel.string = this._bingoInfo.ballHistory.length.toString();
@@ -596,11 +596,11 @@ export default class BingoManager_New extends cc.Component {
                 if (!TSUtility.isValid(this)) return;
             }
 
-            // 英雄宝箱加成
-            if (isMirrorBallBoost) {
-                await this.asyncShowHeroChestBoost();
-                if (!TSUtility.isValid(this)) return;
-            }
+            // // 英雄宝箱加成
+            // if (isMirrorBallBoost) {
+            //     await this.asyncShowHeroChestBoost();
+            //     if (!TSUtility.isValid(this)) return;
+            // }
 
             // 英雄宾果球奖励
             if (heroBingoBallHist.getTotalChangeBingoBall() > 0) {
@@ -628,11 +628,12 @@ export default class BingoManager_New extends cc.Component {
 
         // 英雄弹窗配置
         const tooltipCfg = this._createHeroTooltipCfg(cc.v2(451,271), false);
-        const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(UserInfo.instance().getUserHeroInfo().activeHeroID);
-        if (heroInfo) {
-            tooltipCfg.heroInfo.heroId = heroInfo.id;
-            tooltipCfg.heroInfo.heroRank = heroInfo.rank;
-        } else {
+        // const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(UserInfo.instance().getUserHeroInfo().activeHeroID);
+        // if (heroInfo) {
+        //     tooltipCfg.heroInfo.heroId = heroInfo.id;
+        //     tooltipCfg.heroInfo.heroRank = heroInfo.rank;
+        // } else 
+        {
             tooltipCfg.heroInfo.heroId = "manager_july";
             tooltipCfg.heroInfo.heroRank = 0;
         }
@@ -647,7 +648,7 @@ export default class BingoManager_New extends cc.Component {
         this.heroTooltipBingoBallEffectPivot.setPosition(localPos.x, localPos.y - 25);
         await CollectBingoBallEffect.asyncOpenEffect(ballCnt, this.heroTooltipBingoBallEffectPivot);
 
-        UserInfo.instance().applyChangeResult(changeResult);
+        // UserInfo.instance().applyChangeResult(changeResult);
         await AsyncHelper.delayWithComponent(.5, this);
         tooltipPopup.close();
     }
@@ -664,11 +665,12 @@ export default class BingoManager_New extends cc.Component {
 
         // 英雄弹窗配置
         const tooltipCfg = this._createHeroTooltipCfg(cc.v2(-126,154), true);
-        const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(UserInfo.instance().getUserHeroInfo().activeHeroID);
-        if (heroInfo) {
-            tooltipCfg.heroInfo.heroId = heroInfo.id;
-            tooltipCfg.heroInfo.heroRank = heroInfo.rank;
-        } else {
+        // const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(UserInfo.instance().getUserHeroInfo().activeHeroID);
+        // if (heroInfo) {
+        //     tooltipCfg.heroInfo.heroId = heroInfo.id;
+        //     tooltipCfg.heroInfo.heroRank = heroInfo.rank;
+        // } else 
+        {
             tooltipCfg.heroInfo.heroId = "manager_july";
             tooltipCfg.heroInfo.heroRank = 0;
         }
@@ -701,11 +703,12 @@ export default class BingoManager_New extends cc.Component {
 
         // 英雄弹窗配置
         const tooltipCfg = this._createHeroTooltipCfg(cc.v2(-126,154), true);
-        const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(UserInfo.instance().getUserHeroInfo().activeHeroID);
-        if (heroInfo) {
-            tooltipCfg.heroInfo.heroId = heroInfo.id;
-            tooltipCfg.heroInfo.heroRank = heroInfo.rank;
-        } else {
+        // const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(UserInfo.instance().getUserHeroInfo().activeHeroID);
+        // if (heroInfo) {
+        //     tooltipCfg.heroInfo.heroId = heroInfo.id;
+        //     tooltipCfg.heroInfo.heroRank = heroInfo.rank;
+        // } else 
+        {
             tooltipCfg.heroInfo.heroId = "manager_july";
             tooltipCfg.heroInfo.heroRank = 0;
         }
@@ -869,11 +872,11 @@ export default class BingoManager_New extends cc.Component {
             this._callState = true;
             PopupManager.Instance().showBlockingBG(true);
             // ✅ 日本区特殊逻辑：付费球优先使用
-            if (HRVServiceUtil.isJapan()) {
-                UserInfo.instance().getPaidBingoBallCnt() > 0 ? this.paidBingoBallUse() : this.freeBingoBallUse();
-            } else {
-                UserInfo.instance().getFreeBingoBallCnt() > 0 ? this.freeBingoBallUse() : this.paidBingoBallUse();
-            }
+            // if (HRVServiceUtil.isJapan()) {
+            //     UserInfo.instance().getPaidBingoBallCnt() > 0 ? this.paidBingoBallUse() : this.freeBingoBallUse();
+            // } else {
+            //     UserInfo.instance().getFreeBingoBallCnt() > 0 ? this.freeBingoBallUse() : this.paidBingoBallUse();
+            // }
         }
     }
 
@@ -888,32 +891,32 @@ export default class BingoManager_New extends cc.Component {
                 return;
             }
 
-            const changeResult = UserInfo.instance().getServerChangeResult(res);
-            UserInfo.instance().applyChangeResult(changeResult);
-            if (cc.isValid(self)) {
-                self.machineAni.play("bingo_machine_ani_call");
-                self.machineAni.setCurrentTime(0);
-                TSUtility.setAniSpeed(self.machineAni, self._aniSpeed);
-                const delayTime = self.machineAni.currentClip.duration * (1 / self.machineAni.currentClip.speed) / self._aniSpeed - .3;
+            // const changeResult = UserInfo.instance().getServerChangeResult(res);
+            // UserInfo.instance().applyChangeResult(changeResult);
+            // if (cc.isValid(self)) {
+            //     self.machineAni.play("bingo_machine_ani_call");
+            //     self.machineAni.setCurrentTime(0);
+            //     TSUtility.setAniSpeed(self.machineAni, self._aniSpeed);
+            //     const delayTime = self.machineAni.currentClip.duration * (1 / self.machineAni.currentClip.speed) / self._aniSpeed - .3;
                 
-                SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("machineSpin"));
-                self.scheduleOnce(() => {
-                    self._callState = false;
-                    const ballNum = res.nextCallNumber;
-                    self._bingoInfo.ballHistory.push(ballNum);
-                    self.ballContainer.addBall(ballNum, true);
-                    self.callCntLabel.string = self._bingoInfo.ballHistory.length.toString();
-                    self.bingoPrize.SetEffect(self._bingoInfo.ballHistory.length);
+            //     SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("machineSpin"));
+            //     self.scheduleOnce(() => {
+            //         self._callState = false;
+            //         const ballNum = res.nextCallNumber;
+            //         self._bingoInfo.ballHistory.push(ballNum);
+            //         self.ballContainer.addBall(ballNum, true);
+            //         self.callCntLabel.string = self._bingoInfo.ballHistory.length.toString();
+            //         self.bingoPrize.SetEffect(self._bingoInfo.ballHistory.length);
 
-                    const isBoard0Select = self._boards[0].setSelectable(ballNum);
-                    const isBoard1Select = self._boards[1].setSelectable(ballNum);
-                    if (isBoard0Select || isBoard1Select) {
-                        SoundManager.Instance().playFxLoop(self._soundSetter.getAudioClip("guideSelectNum"));
-                    } else {
-                        self.scheduleOnce(self.onAutoScheduleCallBall, .7);
-                    }
-                }, delayTime);
-            }
+            //         const isBoard0Select = self._boards[0].setSelectable(ballNum);
+            //         const isBoard1Select = self._boards[1].setSelectable(ballNum);
+            //         if (isBoard0Select || isBoard1Select) {
+            //             SoundManager.Instance().playFxLoop(self._soundSetter.getAudioClip("guideSelectNum"));
+            //         } else {
+            //             self.scheduleOnce(self.onAutoScheduleCallBall, .7);
+            //         }
+            //     }, delayTime);
+            // }
         });
     }
 
@@ -928,32 +931,32 @@ export default class BingoManager_New extends cc.Component {
                 return;
             }
 
-            const changeResult = UserInfo.instance().getServerChangeResult(res);
-            UserInfo.instance().applyChangeResult(changeResult);
-            if (cc.isValid(self)) {
-                self.machineAni.play("bingo_machine_ani_call");
-                self.machineAni.setCurrentTime(0);
-                TSUtility.setAniSpeed(self.machineAni, self._aniSpeed);
-                const delayTime = self.machineAni.currentClip.duration * (1 / self.machineAni.currentClip.speed) / self._aniSpeed - .3;
+            // const changeResult = UserInfo.instance().getServerChangeResult(res);
+            // UserInfo.instance().applyChangeResult(changeResult);
+            // if (cc.isValid(self)) {
+            //     self.machineAni.play("bingo_machine_ani_call");
+            //     self.machineAni.setCurrentTime(0);
+            //     TSUtility.setAniSpeed(self.machineAni, self._aniSpeed);
+            //     const delayTime = self.machineAni.currentClip.duration * (1 / self.machineAni.currentClip.speed) / self._aniSpeed - .3;
                 
-                SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("machineSpin"));
-                self.scheduleOnce(() => {
-                    self._callState = false;
-                    const ballNum = res.nextCallNumber;
-                    self._bingoInfo.ballHistory.push(ballNum);
-                    self.ballContainer.addBall(ballNum, true);
-                    self.callCntLabel.string = self._bingoInfo.ballHistory.length.toString();
-                    self.bingoPrize.SetEffect(self._bingoInfo.ballHistory.length);
+            //     SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("machineSpin"));
+            //     self.scheduleOnce(() => {
+            //         self._callState = false;
+            //         const ballNum = res.nextCallNumber;
+            //         self._bingoInfo.ballHistory.push(ballNum);
+            //         self.ballContainer.addBall(ballNum, true);
+            //         self.callCntLabel.string = self._bingoInfo.ballHistory.length.toString();
+            //         self.bingoPrize.SetEffect(self._bingoInfo.ballHistory.length);
 
-                    const isBoard0Select = self._boards[0].setSelectable(ballNum);
-                    const isBoard1Select = self._boards[1].setSelectable(ballNum);
-                    if (isBoard0Select || isBoard1Select) {
-                        SoundManager.Instance().playFxLoop(self._soundSetter.getAudioClip("guideSelectNum"));
-                    } else {
-                        self.scheduleOnce(self.onAutoScheduleCallBall, .7);
-                    }
-                }, delayTime);
-            }
+            //         const isBoard0Select = self._boards[0].setSelectable(ballNum);
+            //         const isBoard1Select = self._boards[1].setSelectable(ballNum);
+            //         if (isBoard0Select || isBoard1Select) {
+            //             SoundManager.Instance().playFxLoop(self._soundSetter.getAudioClip("guideSelectNum"));
+            //         } else {
+            //             self.scheduleOnce(self.onAutoScheduleCallBall, .7);
+            //         }
+            //     }, delayTime);
+            // }
         });
     }
 
@@ -1037,75 +1040,75 @@ export default class BingoManager_New extends cc.Component {
             const cellNum = this._boards[boardId].getCellData(col, row).num;
             PopupManager.Instance().showBlockingBG(true);
             
-            CommonServer.Instance().requestBingoSelectNumber(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), boardId, cellNum, (res) => {
-                PopupManager.Instance().showBlockingBG(false);
-                if (CommonServer.isServerResponseError(res)) return;
+            // CommonServer.Instance().requestBingoSelectNumber(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), boardId, cellNum, (res) => {
+            //     PopupManager.Instance().showBlockingBG(false);
+            //     if (CommonServer.isServerResponseError(res)) return;
 
-                const changeResult = UserInfo.instance().getServerChangeResult(res);
-                self._boards[boardId].setCellMarkingType(col, row, BingoMarkingType.UserClick);
-                if (self._bingoInfo.markingGauge < 5) self._bingoInfo.markingGauge++;
+            //     const changeResult = UserInfo.instance().getServerChangeResult(res);
+            //     self._boards[boardId].setCellMarkingType(col, row, BingoMarkingType.UserClick);
+            //     if (self._bingoInfo.markingGauge < 5) self._bingoInfo.markingGauge++;
 
-                const cellData = self._boards[boardId].getCellData(col, row);
-                // 能量爆炸镜球 特殊逻辑
-                if (1 == cellData.isMirrorBall && cellData.mirrorBallType == BingoMirrorBallType.MirrorBallTypeEnergeBlast) {
-                    self._bingoInfo.markingGauge = 5;
-                    const cellNode = self._boards[boardId].getBingoCell(col, row);
-                    PopupManager.Instance().showBlockingBG(true);
-                    return self.showEnergeBlast(cellNode.node, () => {
-                        PopupManager.Instance().showBlockingBG(false);
-                        self.setChestMarkingInfo();
-                        self.checkGameOver(boardId, col, row, changeResult);
-                    });
-                }
+            //     const cellData = self._boards[boardId].getCellData(col, row);
+            //     // 能量爆炸镜球 特殊逻辑
+            //     if (1 == cellData.isMirrorBall && cellData.mirrorBallType == BingoMirrorBallType.MirrorBallTypeEnergeBlast) {
+            //         self._bingoInfo.markingGauge = 5;
+            //         const cellNode = self._boards[boardId].getBingoCell(col, row);
+            //         PopupManager.Instance().showBlockingBG(true);
+            //         return self.showEnergeBlast(cellNode.node, () => {
+            //             PopupManager.Instance().showBlockingBG(false);
+            //             self.setChestMarkingInfo();
+            //             self.checkGameOver(boardId, col, row, changeResult);
+            //         });
+            //     }
 
-                self.setChestMarkingInfo();
-                if (0 != cellData.isMirrorBall) {
-                    if (1 != cellData.isCoinBlast()) {
-                        // 宾果球奖励爆炸
-                        if (1 == cellData.isBingoBallBlast()) {
-                            const ballCnt = changeResult.getTotalChangeRewardBingoBall();
-                            const cellNode = self._boards[boardId].getBingoCell(col, row);
-                            PopupManager.Instance().showBlockingBG(true);
-                            return self.showBingoBallBalst(cellNode.node, ballCnt, () => {
-                                PopupManager.Instance().showBlockingBG(false);
-                                self.checkGameOver(boardId, col, row, changeResult);
-                            });
-                        }
-                        // 宾果爆炸
-                        if (1 == cellData.isBingoBlast()) {
-                            const cellNode = self._boards[boardId].getBingoCell(col, row);
-                            PopupManager.Instance().showBlockingBG(true);
-                            return self.showBingoBlast(cellNode.node, () => {
-                                PopupManager.Instance().showBlockingBG(false);
-                                self.checkGameOver(boardId, col, row, changeResult);
-                            });
-                        }
-                        // 奖励爆炸
-                        if (1 == cellData.isPrizeBlast()) {
-                            const cellNode = self._boards[boardId].getBingoCell(col, row);
-                            PopupManager.Instance().showBlockingBG(true);
-                            return self.showPrizeBlast(cellNode.node, () => {
-                                PopupManager.Instance().showBlockingBG(false);
-                                self._boards[boardId].setPrizeBlast();
-                                self.checkGameOver(boardId, col, row, changeResult);
-                            });
-                        }
-                    } else {
-                        // 金币奖励爆炸
-                        const coinCnt = changeResult.removeChangeCoinByPayCode(PayCode.BingoChestReward);
-                        if (coinCnt > 0) {
-                            const preCoin = UserInfo.instance().getTotalCoin();
-                            UserInfo.instance().addUserAssetMoney(coinCnt);
-                            const curCoin = UserInfo.instance().getTotalCoin();
-                            const cellNode = self._boards[boardId].getBingoCell(col, row);
-                            CoinToTargetEffect.playEffectToMyCoin(cellNode.node, preCoin, curCoin, coinCnt, () => {});
-                        }
-                        self.checkGameOver(boardId, col, row, changeResult);
-                    }
-                } else {
-                    self.checkGameOver(boardId, col, row, changeResult);
-                }
-            });
+            //     self.setChestMarkingInfo();
+            //     if (0 != cellData.isMirrorBall) {
+            //         if (1 != cellData.isCoinBlast()) {
+            //             // 宾果球奖励爆炸
+            //             if (1 == cellData.isBingoBallBlast()) {
+            //                 const ballCnt = changeResult.getTotalChangeRewardBingoBall();
+            //                 const cellNode = self._boards[boardId].getBingoCell(col, row);
+            //                 PopupManager.Instance().showBlockingBG(true);
+            //                 return self.showBingoBallBalst(cellNode.node, ballCnt, () => {
+            //                     PopupManager.Instance().showBlockingBG(false);
+            //                     self.checkGameOver(boardId, col, row, changeResult);
+            //                 });
+            //             }
+            //             // 宾果爆炸
+            //             if (1 == cellData.isBingoBlast()) {
+            //                 const cellNode = self._boards[boardId].getBingoCell(col, row);
+            //                 PopupManager.Instance().showBlockingBG(true);
+            //                 return self.showBingoBlast(cellNode.node, () => {
+            //                     PopupManager.Instance().showBlockingBG(false);
+            //                     self.checkGameOver(boardId, col, row, changeResult);
+            //                 });
+            //             }
+            //             // 奖励爆炸
+            //             if (1 == cellData.isPrizeBlast()) {
+            //                 const cellNode = self._boards[boardId].getBingoCell(col, row);
+            //                 PopupManager.Instance().showBlockingBG(true);
+            //                 return self.showPrizeBlast(cellNode.node, () => {
+            //                     PopupManager.Instance().showBlockingBG(false);
+            //                     self._boards[boardId].setPrizeBlast();
+            //                     self.checkGameOver(boardId, col, row, changeResult);
+            //                 });
+            //             }
+            //         } else {
+            //             // 金币奖励爆炸
+            //             const coinCnt = changeResult.removeChangeCoinByPayCode(PayCode.BingoChestReward);
+            //             if (coinCnt > 0) {
+            //                 // const preCoin = UserInfo.instance().getTotalCoin();
+            //                 // UserInfo.instance().addUserAssetMoney(coinCnt);
+            //                 // const curCoin = UserInfo.instance().getTotalCoin();
+            //                 const cellNode = self._boards[boardId].getBingoCell(col, row);
+            //                 // CoinToTargetEffect.playEffectToMyCoin(cellNode.node, preCoin, curCoin, coinCnt, () => {});
+            //             }
+            //             self.checkGameOver(boardId, col, row, changeResult);
+            //         }
+            //     } else {
+            //         self.checkGameOver(boardId, col, row, changeResult);
+            //     }
+            // });
         }
     }
 
@@ -1153,7 +1156,7 @@ export default class BingoManager_New extends cc.Component {
         } else if (1 == cellData.isBingoBlast()) {
             this.gameOverProgress(boardId, changeResult, 1, ballCnt, true);
         }
-        UserInfo.instance().applyChangeResult(changeResult);
+        // UserInfo.instance().applyChangeResult(changeResult);
     }
 
     public gameOverProgress(boardId: number, changeResult: any, bingoCnt: number, ballCnt: number, isBingoBlast: boolean): void {
@@ -1170,12 +1173,12 @@ export default class BingoManager_New extends cc.Component {
             this._boards[boardId].showBingoCompleteFx([]);
         }
 
-        // 金币奖励发放
-        const preCoin = UserInfo.instance().getTotalCoin();
-        const coinReward = changeResult.removeChangeCoinByPayCode(PayCode.BingoReward);
-        UserInfo.instance().addUserAssetMoney(coinReward);
-        const curCoin = UserInfo.instance().getTotalCoin();
-        const isPrizeBlast = this._boards[boardId].isPrizeBlast();
+        // // 金币奖励发放
+        // const preCoin = UserInfo.instance().getTotalCoin();
+        // const coinReward = changeResult.removeChangeCoinByPayCode(PayCode.BingoReward);
+        // UserInfo.instance().addUserAssetMoney(coinReward);
+        // const curCoin = UserInfo.instance().getTotalCoin();
+        // const isPrizeBlast = this._boards[boardId].isPrizeBlast();
 
         this._boards[boardId].setBingo();
         bingoCnt > 1 ? this.BingoMarking.setResult(bingoCnt) : this.BingoMarking.offResult();
@@ -1190,18 +1193,18 @@ export default class BingoManager_New extends cc.Component {
             self.scheduleOnce(() => {
                 BingoResultPopup.getPopup((err, popup) => {
                     PopupManager.Instance().showBlockingBG(false);
-                    popup.open(bingoCnt, ballCnt, preCoin, coinReward, curCoin, isPrizeBlast);
-                    popup.setCloseCallback(() => {
-                        self.BingoMarking.offResult();
-                        if (!self.isInGame()) {
-                            self.showStartPopup();
-                        } else {
-                            const remainBoardId = self.getRemainGameCollectBoardID();
-                            -1 != remainBoardId && self.remainGameCollect.showCollectRoot(remainBoardId, self._boards[remainBoardId].node, () => {
-                                self.onClickRemainGameCollectForAD();
-                            });
-                        }
-                    });
+                    // popup.open(bingoCnt, ballCnt, preCoin, coinReward, curCoin, isPrizeBlast);
+                    // popup.setCloseCallback(() => {
+                    //     self.BingoMarking.offResult();
+                    //     if (!self.isInGame()) {
+                    //         self.showStartPopup();
+                    //     } else {
+                    //         const remainBoardId = self.getRemainGameCollectBoardID();
+                    //         -1 != remainBoardId && self.remainGameCollect.showCollectRoot(remainBoardId, self._boards[remainBoardId].node, () => {
+                    //             self.onClickRemainGameCollectForAD();
+                    //         });
+                    //     }
+                    // });
                 });
             }, 4);
         }, delayTime);
@@ -1282,28 +1285,28 @@ export default class BingoManager_New extends cc.Component {
             if (CommonServer.isServerResponseError(res) || !cc.isValid(self)) return;
 
             const mirrorBallInfo = MirrorBallBastInfo.parse(res.result);
-            const changeResult = UserInfo.instance().getServerChangeResult(res);
-            UserInfo.instance().applyChangeResult(changeResult);
+            // const changeResult = UserInfo.instance().getServerChangeResult(res);
+            // UserInfo.instance().applyChangeResult(changeResult);
 
-            self.chestAni.play("Chest_Start_Ani");
-            self.setChestIcon("ItemAll");
-            SoundManager.Instance().isPlayingFxOnce(self._soundSetter.getAudioClip("b_fullcase")) && 
-                SoundManager.Instance().stopFxOnce(self._soundSetter.getAudioClip("b_fullcase"));
+            // self.chestAni.play("Chest_Start_Ani");
+            // self.setChestIcon("ItemAll");
+            // SoundManager.Instance().isPlayingFxOnce(self._soundSetter.getAudioClip("b_fullcase")) && 
+            //     SoundManager.Instance().stopFxOnce(self._soundSetter.getAudioClip("b_fullcase"));
             
-            self.scheduleOnce(() => {
-                self.setChestMarkingInfo();
-                const particles = self.chestAni.node.getComponentsInChildren(cc.ParticleSystem);
-                for (let i = 0; i < particles.length; ++i) particles[i].resetSystem();
-            }, self.chestAni.currentClip.duration);
+            // self.scheduleOnce(() => {
+            //     self.setChestMarkingInfo();
+            //     const particles = self.chestAni.node.getComponentsInChildren(cc.ParticleSystem);
+            //     for (let i = 0; i < particles.length; ++i) particles[i].resetSystem();
+            // }, self.chestAni.currentClip.duration);
 
-            self._bingoInfo.markingGauge = 0;
-            self.scheduleOnce(() => {
-                for (let i = 0; i < mirrorBallInfo.result.length; ++i) {
-                    const item = mirrorBallInfo.result[i];
-                    self._boards[0].isInGame() && null != item.cell0 && self._boards[0].setBingoCellMirrorBall(item.cell0.col, item.cell0.row, item.mirrorBallType);
-                    self._boards[1].isInGame() && null != item.cell1 && self._boards[1].setBingoCellMirrorBall(item.cell1.col, item.cell1.row, item.mirrorBallType);
-                }
-            }, 1);
+            // self._bingoInfo.markingGauge = 0;
+            // self.scheduleOnce(() => {
+            //     for (let i = 0; i < mirrorBallInfo.result.length; ++i) {
+            //         const item = mirrorBallInfo.result[i];
+            //         self._boards[0].isInGame() && null != item.cell0 && self._boards[0].setBingoCellMirrorBall(item.cell0.col, item.cell0.row, item.mirrorBallType);
+            //         self._boards[1].isInGame() && null != item.cell1 && self._boards[1].setBingoCellMirrorBall(item.cell1.col, item.cell1.row, item.mirrorBallType);
+            //     }
+            // }, 1);
         });
     }
 
@@ -1341,16 +1344,16 @@ export default class BingoManager_New extends cc.Component {
     public onClickBoard2InactiveBtn(): void {
         GameCommonSound.playFxOnce("btn_etc");
         let viewType = RewardCenterViewType.INBOX_SHARE;
-        const friendInfo = UserInfo.instance().getUserFriendInfo();
-        if (friendInfo.getActiveFriendCnt() + friendInfo.getNonActiveFriendCnt() >= 10) {
-            viewType = RewardCenterViewType.INBOX_SEND_GIFT;
-        }
+        // const friendInfo = UserInfo.instance().getUserFriendInfo();
+        // if (friendInfo.getActiveFriendCnt() + friendInfo.getNonActiveFriendCnt() >= 10) {
+        //     viewType = RewardCenterViewType.INBOX_SEND_GIFT;
+        // }
 
-        PopupManager.Instance().showDisplayProgress(true);
-        RewardCenterPopup.getPopup((err, popup) => {
-            PopupManager.Instance().showDisplayProgress(false);
-            null == err && popup.open(viewType);
-        });
+        // PopupManager.Instance().showDisplayProgress(true);
+        // RewardCenterPopup.getPopup((err, popup) => {
+        //     PopupManager.Instance().showDisplayProgress(false);
+        //     null == err && popup.open(viewType);
+        // });
     }
 
     public onClickRemainGameCollectBtn(): void {
@@ -1369,22 +1372,22 @@ export default class BingoManager_New extends cc.Component {
                 PopupManager.Instance().showDisplayProgress(false);
                 if (CommonServer.isServerResponseError(res) || !cc.isValid(self)) return;
 
-                self._bingoInfo.markingGauge = 0;
-                const changeResult = UserInfo.instance().getServerChangeResult(res);
-                const coinReward = changeResult.getTotalChangeCoin();
-                const preCoin = UserInfo.instance().getTotalCoin();
+                // self._bingoInfo.markingGauge = 0;
+                // const changeResult = UserInfo.instance().getServerChangeResult(res);
+                // const coinReward = changeResult.getTotalChangeCoin();
+                // const preCoin = UserInfo.instance().getTotalCoin();
                 
-                UserInfo.instance().applyChangeResult(changeResult);
-                const curCoin = UserInfo.instance().getTotalCoin();
+                // UserInfo.instance().applyChangeResult(changeResult);
+                // const curCoin = UserInfo.instance().getTotalCoin();
 
-                PopupManager.Instance().showBlockingBG(true);
-                CoinToTargetEffect.playEffectToMyCoin(self.remainGameCollect.collectBtn.node, preCoin, curCoin, coinReward, () => {
-                    if (cc.isValid(self)) {
-                        PopupManager.Instance().showBlockingBG(false);
-                        self.showStartPopup();
-                        self.remainGameCollect.collectBtn.enabled = true;
-                    }
-                });
+                // PopupManager.Instance().showBlockingBG(true);
+                // CoinToTargetEffect.playEffectToMyCoin(self.remainGameCollect.collectBtn.node, preCoin, curCoin, coinReward, () => {
+                //     if (cc.isValid(self)) {
+                //         PopupManager.Instance().showBlockingBG(false);
+                //         self.showStartPopup();
+                //         self.remainGameCollect.collectBtn.enabled = true;
+                //     }
+                // });
             });
         } else {
             this.remainGameCollect.hideCollectRoot();
@@ -1407,25 +1410,25 @@ export default class BingoManager_New extends cc.Component {
         let gameStartType = startType;
 
         // 门票优先级判定
-        const itemInv = UserInfo.instance().getItemInventory();
-        const normalTicket = itemInv.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
-        const rewardTicket = itemInv.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
-        if (gameStartType == BingoStartPopupType.PurchaseStart) {
-            gameStartType = normalTicket.length > 0 ? BingoStartPopupType.PurchaseStart : 
-                           rewardTicket.length > 0 ? BingoStartPopupType.RewardStart : gameStartType;
-        }
+        // const itemInv = UserInfo.instance().getItemInventory();
+        // const normalTicket = itemInv.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
+        // const rewardTicket = itemInv.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
+        // if (gameStartType == BingoStartPopupType.PurchaseStart) {
+        //     gameStartType = normalTicket.length > 0 ? BingoStartPopupType.PurchaseStart : 
+        //                    rewardTicket.length > 0 ? BingoStartPopupType.RewardStart : gameStartType;
+        // }
 
         CommonServer.Instance().requestBingoGameStart(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), gameStartType, payCode, payAmt, (res) => {
             PopupManager.Instance().showDisplayProgress(false);
             if (CommonServer.isServerResponseError(res)) return;
 
-            const changeResult = UserInfo.instance().getServerChangeResult(res);
+            // const changeResult = UserInfo.instance().getServerChangeResult(res);
             const bingoInfo = BingoGameInfo.Parse(res.bingoInfo);
             ServiceInfoManager.INFO_BINGO = bingoInfo;
             
             SoundManager.Instance().playFxOnce(self._soundSetter.getAudioClip("startGame"));
             MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.BINGO_GAME_START, null);
-            self.asyncStartGame(bingoInfo, changeResult);
+            // self.asyncStartGame(bingoInfo, changeResult);
         });
     }
 

@@ -572,8 +572,8 @@ export default class HRVSlotService extends cc.Component {
      */
     goToLobby(zoneId: number, zoneName: string): void {
         if (LoadingPopup.isAvailableLoadingPopup()) {
-            UserInfo.instance().setPrevGameId(SlotGameRuleManager.Instance.slotID);
-            UserInfo.instance().setZoneID(zoneId);
+            // UserInfo.instance().setPrevGameId(SlotGameRuleManager.Instance.slotID);
+            // UserInfo.instance().setZoneID(zoneId);
             UserInfo.instance().setZoneName(zoneName);
             SlotManager.Instance.setAvailble(false);
             LoadingLobbyProcess.Instance().getSlotToLobbyState(zoneId, zoneName).onStart();
@@ -775,43 +775,43 @@ export default class HRVSlotService extends cc.Component {
      * 游戏场景加载特效结束回调
      */
     async onGameStartSceneLoadEffectEnd(): Promise<void> {
-        if (UserInfo.instance().isJoinTourney() || UserInfo.instance().getZoneName() === SDefine.SUITE_ZONENAME) {
-            return;
-        }
-        if (!UserInfo.instance().hasActiveReelQuest()) {
-            return;
-        }
-        const reelQuestInfo = UserInfo.instance().getUserReelQuestInfo();
-        const curMissionSlot = reelQuestInfo.curMissionSlot;
-        if (SlotGameRuleManager.Instance.slotID !== curMissionSlot) {
-            return;
-        }
-        const promotionKey = UserInfo.instance().getActiveReelQuestPromotionKey();
-        const promotionInfo = UserInfo.instance().getPromotionInfo(promotionKey);
+        // if (UserInfo.instance().isJoinTourney() || UserInfo.instance().getZoneName() === SDefine.SUITE_ZONENAME) {
+        //     return;
+        // }
+        // if (!UserInfo.instance().hasActiveReelQuest()) {
+        //     return;
+        // }
+        // const reelQuestInfo = UserInfo.instance().getUserReelQuestInfo();
+        // const curMissionSlot = reelQuestInfo.curMissionSlot;
+        // if (SlotGameRuleManager.Instance.slotID !== curMissionSlot) {
+        //     return;
+        // }
+        // const promotionKey = UserInfo.instance().getActiveReelQuestPromotionKey();
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(promotionKey);
         await AsyncHelper.delayWithComponent(.15, this);
-        await this.asyncOpenReelQuestMissionStartPopup(reelQuestInfo, promotionInfo);
+        // await this.asyncOpenReelQuestMissionStartPopup(reelQuestInfo, promotionInfo);
     }
 
     /**
      * 游戏内UI淡入结束回调
      */
     async onGameStartInGameUIFadeInEnd(): Promise<void> {
-        if (UserInfo.instance().isJoinTourney() || UserInfo.instance().getZoneName() === SDefine.SUITE_ZONENAME) {
-            await this.getInGameUI().openSlotStartPopup();
-            return;
-        }
-        if (!UserInfo.instance().hasActiveReelQuest()) {
-            await this.getInGameUI().openSlotStartPopup();
-            return;
-        }
-        const reelQuestInfo = UserInfo.instance().getUserReelQuestInfo();
-        const curMissionSlot = reelQuestInfo.curMissionSlot;
-        const isCurSlot = SlotGameRuleManager.Instance.slotID === curMissionSlot;
-        this.getInGameUI().reelQuestUI.initPlayAni();
-        if (isCurSlot) {
-            await AsyncHelper.delayWithComponent(.2, this);
-            this.getInGameUI().reelQuestUI.openNormal(true);
-        }
+        // if (UserInfo.instance().isJoinTourney() || UserInfo.instance().getZoneName() === SDefine.SUITE_ZONENAME) {
+        //     await this.getInGameUI().openSlotStartPopup();
+        //     return;
+        // }
+        // if (!UserInfo.instance().hasActiveReelQuest()) {
+        //     await this.getInGameUI().openSlotStartPopup();
+        //     return;
+        // }
+        // const reelQuestInfo = UserInfo.instance().getUserReelQuestInfo();
+        // const curMissionSlot = reelQuestInfo.curMissionSlot;
+        // const isCurSlot = SlotGameRuleManager.Instance.slotID === curMissionSlot;
+        // this.getInGameUI().reelQuestUI.initPlayAni();
+        // if (isCurSlot) {
+        //     await AsyncHelper.delayWithComponent(.2, this);
+        //     this.getInGameUI().reelQuestUI.openNormal(true);
+        // }
         await this.getInGameUI().openSlotStartPopup();
     }
 
@@ -881,25 +881,25 @@ export default class HRVSlotService extends cc.Component {
             let tourneyId = -1;
             let tourneyTier = -1;
 
-            if (UserInfo.instance().isJoinTourney()) {
-                isTourney = true;
-                tourneyId = UserInfo.instance().getTourneyId();
-                tourneyTier = UserInfo.instance().getTourneyTier();
-                const curTourneyInfo = this.getInGameUI().tourneyUI._curTourneyInfo;
-                const currentTime = TSUtility.getServerBaseNowUnixTime();
+            // if (UserInfo.instance().isJoinTourney()) {
+            //     isTourney = true;
+            //     tourneyId = UserInfo.instance().getTourneyId();
+            //     tourneyTier = UserInfo.instance().getTourneyTier();
+            //     const curTourneyInfo = this.getInGameUI().tourneyUI._curTourneyInfo;
+            //     const currentTime = TSUtility.getServerBaseNowUnixTime();
 
-                if (curTourneyInfo.getCurrentSlotEndTime() >= currentTime) {
-                    const lastUpdateTime = SlotTourneyManager.Instance().getLastUpdateTimeProgressInfo(tourneyTier);
-                    if (lastUpdateTime + 60 <= currentTime && !SlotManager.Instance.isSpinState()) {
-                        await this.asyncRefreshTourneyInfo();
-                    }
-                } else {
-                    this.unschedule(this.tourneyInGameSchedule.bind(this));
-                    if (!SlotManager.Instance.isSpinState()) {
-                        await this.asyncTourneyShowGameResult(false);
-                    }
-                }
-            }
+            //     if (curTourneyInfo.getCurrentSlotEndTime() >= currentTime) {
+            //         const lastUpdateTime = SlotTourneyManager.Instance().getLastUpdateTimeProgressInfo(tourneyTier);
+            //         if (lastUpdateTime + 60 <= currentTime && !SlotManager.Instance.isSpinState()) {
+            //             await this.asyncRefreshTourneyInfo();
+            //         }
+            //     } else {
+            //         this.unschedule(this.tourneyInGameSchedule.bind(this));
+            //         if (!SlotManager.Instance.isSpinState()) {
+            //             await this.asyncTourneyShowGameResult(false);
+            //         }
+            //     }
+            // }
 
             const isComplete = await SlotTourneyManager.Instance().asyncCheckCompleteParticipateTourney(isTourney?1:0, tourneyId, tourneyTier);
             if (!isComplete) {
@@ -919,25 +919,25 @@ export default class HRVSlotService extends cc.Component {
      * 异步刷新锦标赛信息
      */
     async asyncRefreshTourneyInfo(): Promise<boolean> {
-        const tourneyId = UserInfo.instance().getTourneyId();
-        const tourneyTier = UserInfo.instance().getTourneyTier();
-        const res = await CommonServer.Instance().asyncRequestSlotTourneyInfoByTourneyInfo(tourneyId, tourneyTier);
-        console.log("asyncRequestSlotTourneyInfoByTourneyInfo", JSON.stringify(res));
+        // const tourneyId = UserInfo.instance().getTourneyId();
+        // const tourneyTier = UserInfo.instance().getTourneyTier();
+        // const res = await CommonServer.Instance().asyncRequestSlotTourneyInfoByTourneyInfo(tourneyId, tourneyTier);
+        // console.log("asyncRequestSlotTourneyInfoByTourneyInfo", JSON.stringify(res));
 
-        if (!TSUtility.isValid(this)) return false;
-        if (CommonServer.isServerResponseError(res)) {
-            console.error("asyncRequestSlotTourneyInfoByTourneyInfo fail.");
-            return false;
-        }
+        // if (!TSUtility.isValid(this)) return false;
+        // if (CommonServer.isServerResponseError(res)) {
+        //     console.error("asyncRequestSlotTourneyInfoByTourneyInfo fail.");
+        //     return false;
+        // }
 
-        const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
-        const currentTime = TSUtility.getServerBaseNowUnixTime();
-        const lastUpdateTime = SlotTourneyManager.Instance().getLastUpdateTimeProgressInfo(tourneyTier);
+        // const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
+        // const currentTime = TSUtility.getServerBaseNowUnixTime();
+        // const lastUpdateTime = SlotTourneyManager.Instance().getLastUpdateTimeProgressInfo(tourneyTier);
 
-        if (lastUpdateTime + 60 <= currentTime && !SlotManager.Instance.isSpinState()) {
-            SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
-            this.getInGameUI().tourneyUI.refreshInfo();
-        }
+        // if (lastUpdateTime + 60 <= currentTime && !SlotManager.Instance.isSpinState()) {
+        //     SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
+        //     this.getInGameUI().tourneyUI.refreshInfo();
+        // }
 
         console.log("asyncRefreshTourneyInfo");
         return true;
@@ -967,17 +967,17 @@ export default class HRVSlotService extends cc.Component {
      */
     async asyncInner_TourneyShowGameResult(isForce: boolean): Promise<boolean> {
         const curTourneyInfo = this.getInGameUI().tourneyUI._curTourneyInfo;
-        const tourneyId = UserInfo.instance().getTourneyId();
-        const tourneyTier = UserInfo.instance().getTourneyTier();
+        // const tourneyId = UserInfo.instance().getTourneyId();
+        // const tourneyTier = UserInfo.instance().getTourneyTier();
 
-        if (!curTourneyInfo) {
-            console.error("asycTourneyInGameWork invalid status");
-            return false;
-        }
+        // if (!curTourneyInfo) {
+        //     console.error("asycTourneyInGameWork invalid status");
+        //     return false;
+        // }
 
-        if (this._tourneyState === SlotTourneyIngameState.EndGame) {
-            return false;
-        }
+        // if (this._tourneyState === SlotTourneyIngameState.EndGame) {
+        //     return false;
+        // }
 
         let decisionState = -1;
         if (isForce) {
@@ -1013,9 +1013,9 @@ export default class HRVSlotService extends cc.Component {
             return true;
         }
 
-        if (decisionState !== 3) {
-            return await this.processTourneyNormalResult(decisionState, tourneyId, tourneyTier);
-        }
+        // if (decisionState !== 3) {
+        //     return await this.processTourneyNormalResult(decisionState, tourneyId, tourneyTier);
+        // }
 
         // 处理结束状态
         this.setSlotTourneyState(SlotTourneyIngameState.EndGame);
@@ -1225,10 +1225,10 @@ export default class HRVSlotService extends cc.Component {
             return;
         }
 
-        const curMissionSlot = UserInfo.instance().getUserReelQuestInfo().curMissionSlot;
-        if (SlotGameRuleManager.Instance.slotID === curMissionSlot) {
-            return;
-        }
+        // const curMissionSlot = UserInfo.instance().getUserReelQuestInfo().curMissionSlot;
+        // if (SlotGameRuleManager.Instance.slotID === curMissionSlot) {
+        //     return;
+        // }
 
         let recentPlays = UserInfo.instance()._userInfo.userGameInfo.recentPlaySlots;
         if (!TSUtility.isValid(recentPlays)) {
@@ -1236,11 +1236,11 @@ export default class HRVSlotService extends cc.Component {
         }
 
         let recentCount = recentPlays.length;
-        const currentSlotId = UserInfo.instance().getGameId();
-        const isCurrentInRecent = recentPlays.some(play => play.slotID === currentSlotId);
-        if (isCurrentInRecent) {
-            recentCount -= 1;
-        }
+        // const currentSlotId = UserInfo.instance().getGameId();
+        // const isCurrentInRecent = recentPlays.some(play => play.slotID === currentSlotId);
+        // if (isCurrentInRecent) {
+        //     recentCount -= 1;
+        // }
 
         if (recentCount <= 0) {
             return;
@@ -1334,7 +1334,7 @@ export default class HRVSlotService extends cc.Component {
         //     SlotManager.Instance._casinoJackpotWinID = casinoJackpotResult.casinoJackpotWinID;
         // }
 
-        const changeResult = UserInfo.instance().getServerChangeResult(res);
+        // const changeResult = UserInfo.instance().getServerChangeResult(res);
         // const betWithdraw = changeResult.removeChangeCoinByPayCode(PayCode.SlotBetWithdraw);
         // if (betWithdraw !== 0) {
         //     this.getInGameUI().onSpinBetting(changeResult);
@@ -1344,7 +1344,8 @@ export default class HRVSlotService extends cc.Component {
         // const levelPoint = changeResult.getTotalChangeLevelPoint();
         // this.getInGameUI().addLevelExp(levelPoint);
 
-        return changeResult;
+        // return changeResult;
+        return null;
     }
 
     /**
@@ -1353,15 +1354,15 @@ export default class HRVSlotService extends cc.Component {
      * @param changeResult 变更结果
      */
     onSpinProcess(res: any, changeResult: ChangeResult): void {
-        if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && res.slotTourneyProgressInfo) {
-            const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
-            SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
-        }
+        // if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && res.slotTourneyProgressInfo) {
+        //     const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
+        //     SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
+        // }
 
-        const jiggyPuzzleHist = changeResult.getPromotionHist(JiggyPuzzlePromotion.PromotionKeyName);
-        if (jiggyPuzzleHist) {
-            this.getInGameUI().jiggyPuzzleUI.refreshUI(jiggyPuzzleHist);
-        }
+        // const jiggyPuzzleHist = changeResult.getPromotionHist(JiggyPuzzlePromotion.PromotionKeyName);
+        // if (jiggyPuzzleHist) {
+        //     this.getInGameUI().jiggyPuzzleUI.refreshUI(jiggyPuzzleHist);
+        // }
     }
 
     /**
@@ -1374,7 +1375,7 @@ export default class HRVSlotService extends cc.Component {
         if (newUserMissionHist) {
             const newUserMissionReward = changeResult.removeChangeCoinByPayCode(PayCode.NEWUSERMISSION);
             ServiceInfoManager.NUMBER_NEW_USER_MISSION_REWARD = newUserMissionReward;
-            UserInfo.instance().setUserPromotionInfo(newUserMissionHist);
+            // UserInfo.instance().setUserPromotionInfo(newUserMissionHist);
         }
 
         this._spinChangeResult!.addChangeResult(changeResult);
@@ -1387,11 +1388,11 @@ export default class HRVSlotService extends cc.Component {
     onCheckSpinErrorState(res: any): boolean {
         const errorCode = CommonServer.getErrorCode(res);
 
-        if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && errorCode === SDefine.ERR_TOURNEY_ALREADY_END) {
-            console.log("spin fail", errorCode);
-            this.asyncTourneyShowGameResult(true);
-            return false;
-        }
+        // if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && errorCode === SDefine.ERR_TOURNEY_ALREADY_END) {
+        //     console.log("spin fail", errorCode);
+        //     this.asyncTourneyShowGameResult(true);
+        //     return false;
+        // }
 
         // if (CommonServer.isServerResponseError(res)) {
         //     if (!UserInfo.isAuthFail()) {
@@ -1820,16 +1821,16 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onApplyGameResultMoney = function(e) {
-        1 == this._spinChangeResult.removeChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
+        // 1 == this._spinChangeResult.removeChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
     }
     
     onApplyGameResultMoneyBySubFromResult = function(e) {
-        1 == this._spinChangeResult.subChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
+        // 1 == this._spinChangeResult.subChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
     }
    
     onApplyGameResultMoneyByMaxMoneyFromResult = function(e) {
         var t = this._spinChangeResult.subChangeCoinByPayCodeAndMaxMoney(PayCode.SpinResultPay, e);
-        t > 0 && UserInfo.instance().addUserAssetMoney(t)
+        // t > 0 && UserInfo.instance().addUserAssetMoney(t)
     }
     
     setSymbolSpecialInfo = function(e, t) {
@@ -1840,7 +1841,7 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onSpinUserAssetChange = function(e) {
-        UserInfo.instance().addUserAssetMoney(-e),
+        // UserInfo.instance().addUserAssetMoney(-e),
         MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.SPIN_COUNT_UPDATE),
         TimeBonusManager.instance.addSpinBoosterExp(e)
     }
@@ -2071,16 +2072,16 @@ export default class HRVSlotService extends cc.Component {
     }
     
     facebookShare = function(e, t) {
-        UserInfo.instance().facebookShare(e, t)
+        // UserInfo.instance().facebookShare(e, t)
     }
     
     makeBaseFacebookShareInfo = function() {
         var e = new FBShareInfo;
         return e.subInfo.puid = UserInfo.instance().getUid(),
         e.subInfo.st = "",
-        e.subInfo.sl = "%s".format(UserInfo.instance().getLocation()),
-        e.subInfo.ssl = UserInfo.instance().getGameId(),
-        e.subInfo.zid = UserInfo.instance().getZoneId(),
+        // e.subInfo.sl = "%s".format(UserInfo.instance().getLocation()),
+        // e.subInfo.ssl = UserInfo.instance().getGameId(),
+        // e.subInfo.zid = UserInfo.instance().getZoneId(),
         e.subInfo.img = "",
         e.subInfo.tl = "",
         e.desc = "",
@@ -2121,7 +2122,7 @@ export default class HRVSlotService extends cc.Component {
     }
     
     getUserMoney = function() {
-        return UserInfo.instance().getTotalCoin()
+        return 0;//UserInfo.instance().getTotalCoin()
     }
     
     getZoneName = function() {
@@ -2133,7 +2134,8 @@ export default class HRVSlotService extends cc.Component {
     }
     
     isJoinTourney = function() {
-        return UserInfo.instance().isJoinTourney()
+        // return UserInfo.instance().isJoinTourney()
+        return false;
     }
    
     onInitBottomUI_EX2 = function(e) {
@@ -2184,7 +2186,7 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onDestroyBottomUI_EX2 = function() {
-        UserInfo.instance().removeListenerTargetAll(this)
+        // UserInfo.instance().removeListenerTargetAll(this)
     }
     
     addMaxBettingUnlockEffect = function(e, t) {
@@ -2447,7 +2449,7 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onDestroy_BottomUIText = function(e) {
-        UserInfo.instance() && UserInfo.instance().removeListenerTargetAll(e)
+        // UserInfo.instance() && UserInfo.instance().removeListenerTargetAll(e)
     }
     
     isOpenFeverMode = function() {

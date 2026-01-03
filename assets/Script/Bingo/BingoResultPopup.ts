@@ -341,9 +341,9 @@ export default class BingoResultPopup extends DialogBase {
 
         shareInfo.subInfo.puid = UserInfo.instance().getUid();
         shareInfo.subInfo.st = "Bingo Win";
-        shareInfo.subInfo.sl = "%s".format(UserInfo.instance().getLocation());
-        shareInfo.subInfo.ssl = UserInfo.instance().getGameId();
-        shareInfo.subInfo.zid = UserInfo.instance().getZoneId();
+        // shareInfo.subInfo.sl = "%s".format(UserInfo.instance().getLocation());
+        // shareInfo.subInfo.ssl = UserInfo.instance().getGameId();
+        // shareInfo.subInfo.zid = UserInfo.instance().getZoneId();
         shareInfo.subInfo.img = randomImg;
         shareInfo.subInfo.tl = "Bingo! It's all mine.";
         shareInfo.desc = "Bingo! \nI just got a Bingo and collected a gooood bonus! \nStart playing now and collect yours!";

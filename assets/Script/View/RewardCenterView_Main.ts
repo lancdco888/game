@@ -18,7 +18,7 @@ import RewardCenterMainButton_ReelQuest from "../Main/RewardCenterMainButton_Ree
 import RewardCenterView, { RewardCenterViewType } from "./RewardCenterView";
 
 // ===================== 奖励中心主视图 继承奖励中心基类 =====================
-@ccclass
+@ccclass("RewardCenterView_Main")
 export default class RewardCenterView_Main extends RewardCenterView {
     // ===================== 序列化绑定节点属性 原数据完整保留 类型精准匹配 =====================
     @property(cc.Node)

@@ -117,63 +117,63 @@ export default class HeroSubPopup extends cc.Component {
         this.changeActiveHero = false;
         this.goToMainPopupBtn.node.active = isShowGoMainBtn;
 
-        // 获取用户英雄数据 & 当前英雄信息
-        const userHeroInfo = UserInfo.instance().getUserHeroInfo();
-        const curHeroInfo = userHeroInfo.getHeroInfo(heroId);
-        const heroRank = curHeroInfo.rank;
+        // // 获取用户英雄数据 & 当前英雄信息
+        // const userHeroInfo = UserInfo.instance().getUserHeroInfo();
+        // const curHeroInfo = userHeroInfo.getHeroInfo(heroId);
+        // const heroRank = curHeroInfo.rank;
 
-        // 设置英雄UI基础信息 + 加载骨骼动画
-        this.heroSubInfoUI.setInfo(heroId, heroRank);
-        this.heroSubInfoUI.loadSpineController(HeroInfoUIType.Spine);
+        // // 设置英雄UI基础信息 + 加载骨骼动画
+        // this.heroSubInfoUI.setInfo(heroId, heroRank);
+        // this.heroSubInfoUI.loadSpineController(HeroInfoUIType.Spine);
 
-        // 判断是否为 百夫长阵营英雄 - 切换不同的信息标签组
-        if (curHeroInfo.isCenturionCliqueHero()) {
-            this.rootForce.active = false;
-            this.listLabelInfoNormal.forEach(node => node.active = false);
-            this.listLabelInfoCenturionClique.forEach(node => node.active = true);
-        } else {
-            this.rootForce.active = true;
-            this.listLabelInfoNormal.forEach(node => node.active = true);
-            this.listLabelInfoCenturionClique.forEach(node => node.active = false);
-        }
+        // // 判断是否为 百夫长阵营英雄 - 切换不同的信息标签组
+        // if (curHeroInfo.isCenturionCliqueHero()) {
+        //     this.rootForce.active = false;
+        //     this.listLabelInfoNormal.forEach(node => node.active = false);
+        //     this.listLabelInfoCenturionClique.forEach(node => node.active = true);
+        // } else {
+        //     this.rootForce.active = true;
+        //     this.listLabelInfoNormal.forEach(node => node.active = true);
+        //     this.listLabelInfoCenturionClique.forEach(node => node.active = false);
+        // }
 
-        // 初始化选中按钮状态 & 英雄动画状态
-        this.subInfoSelectBtn.node.active = false;
-        let isActiveHero = false;
-        const heroForce = curHeroInfo.force;
+        // // 初始化选中按钮状态 & 英雄动画状态
+        // this.subInfoSelectBtn.node.active = false;
+        // let isActiveHero = false;
+        // const heroForce = curHeroInfo.force;
 
-        // 判断当前英雄是否为已激活英雄
-        if (userHeroInfo.isActiveHero(heroId)) {
-            isActiveHero = true;
-            this.heroSubInfoUI.controller_SetThanks(heroRank);
-            this.heroSubInfoUI.setPowerEffect(userHeroInfo.powerLevel);
-        } else {
-            // 未激活 - 显示选择按钮，并判断是否可切换英雄(冷却判断)
-            this.subInfoSelectBtn.node.active = true;
-            if (userHeroInfo.isActiveHeroChangeable()) {
-                this.subInfoSelectBtn.interactable = true;
-                this.subInfoSelectEffect.active = true;
-            } else {
-                this.subInfoSelectBtn.interactable = false;
-                this.subInfoSelectEffect.active = false;
-            }
-            this.heroSubInfoUI.controller_SetIdle(heroRank);
-            this.heroSubInfoUI.setPowerEffect(0);
-        }
+        // // 判断当前英雄是否为已激活英雄
+        // if (userHeroInfo.isActiveHero(heroId)) {
+        //     isActiveHero = true;
+        //     this.heroSubInfoUI.controller_SetThanks(heroRank);
+        //     this.heroSubInfoUI.setPowerEffect(userHeroInfo.powerLevel);
+        // } else {
+        //     // 未激活 - 显示选择按钮，并判断是否可切换英雄(冷却判断)
+        //     this.subInfoSelectBtn.node.active = true;
+        //     if (userHeroInfo.isActiveHeroChangeable()) {
+        //         this.subInfoSelectBtn.interactable = true;
+        //         this.subInfoSelectEffect.active = true;
+        //     } else {
+        //         this.subInfoSelectBtn.interactable = false;
+        //         this.subInfoSelectEffect.active = false;
+        //     }
+        //     this.heroSubInfoUI.controller_SetIdle(heroRank);
+        //     this.heroSubInfoUI.setPowerEffect(0);
+        // }
 
-        // 设置英雄激活状态 & 经验进度条
-        this.heroSubInfoUI.setActive(isActiveHero);
-        this.heroSubInfoUI.setExpProgress(heroForce);
+        // // 设置英雄激活状态 & 经验进度条
+        // this.heroSubInfoUI.setActive(isActiveHero);
+        // this.heroSubInfoUI.setExpProgress(heroForce);
 
-        // 绘制英雄属性图形 (单个+数组批量绘制)
-        this.statSetter.drawStat(heroId, heroRank);
-        this.listStatSetter.forEach(item => item.drawStat(heroId, heroRank));
+        // // 绘制英雄属性图形 (单个+数组批量绘制)
+        // this.statSetter.drawStat(heroId, heroRank);
+        // this.listStatSetter.forEach(item => item.drawStat(heroId, heroRank));
 
-        // 初始化属性图形节点 & Buff图标默认状态
-        this.nodeGraphNormal.active = true;
-        this.nodeGraphHeroBuff.active = false;
-        this.nodeIconHeroBuff.active = false;
-        this.nodeIconHeroBuff.getComponent(cc.Button).enabled = false;
+        // // 初始化属性图形节点 & Buff图标默认状态
+        // this.nodeGraphNormal.active = true;
+        // this.nodeGraphHeroBuff.active = false;
+        // this.nodeIconHeroBuff.active = false;
+        // this.nodeIconHeroBuff.getComponent(cc.Button).enabled = false;
 
         // 如果开启英雄Buff功能 - 切换为Buff属性图 + 显示Buff图标
         // if (ServiceInfoManager.instance.isAvailableHeroBuffInfo()) {
@@ -246,17 +246,17 @@ export default class HeroSubPopup extends cc.Component {
                         
                         // 请求成功 无错误
                         if (!CommonServer.isServerResponseError(res)) {
-                            UserInfo.instance().changeActiveHero(Number(curHeroId));
-                            this.changeActiveHero = true;
+                            // UserInfo.instance().changeActiveHero(Number(curHeroId));
+                            // this.changeActiveHero = true;
 
-                            const userHeroInfo = UserInfo.instance().getUserHeroInfo();
-                            const curHeroInfo = userHeroInfo.getHeroInfo(curHeroId);
+                            // const userHeroInfo = UserInfo.instance().getUserHeroInfo();
+                            // const curHeroInfo = userHeroInfo.getHeroInfo(curHeroId);
                             
-                            // 更新UI状态
-                            this.heroSubInfoUI.controller_SetThanks(curHeroInfo.rank);
-                            this.heroSubInfoUI.setPowerEffect(userHeroInfo.powerLevel);
-                            this.heroSubInfoUI.setActive(true);
-                            this.subInfoSelectBtn.node.active = false;
+                            // // 更新UI状态
+                            // this.heroSubInfoUI.controller_SetThanks(curHeroInfo.rank);
+                            // this.heroSubInfoUI.setPowerEffect(userHeroInfo.powerLevel);
+                            // this.heroSubInfoUI.setActive(true);
+                            // this.subInfoSelectBtn.node.active = false;
 
                             // 发送全局消息 - 通知英雄已切换
                             MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.CHANGE_ACTIVE_HERO, null);

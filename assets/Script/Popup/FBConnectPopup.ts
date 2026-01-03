@@ -129,7 +129,7 @@ export default class FBConnectPopup extends DialogBase {
                 // });
             } else {
                 // 新版：游客账号直接绑定FB账号
-                UserInfo.instance().checkAndAccountLinkFacebook();
+                // UserInfo.instance().checkAndAccountLinkFacebook();
             }
         } else {
             // 非游客账号 不执行任何逻辑 打印日志

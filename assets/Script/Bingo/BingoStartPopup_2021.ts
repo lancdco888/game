@@ -56,36 +56,36 @@ export default class BingoStartPopup_2021 extends cc.Component {
         }
 
         // 获取门票道具数据
-        const userInventory = UserInfo.instance().getItemInventory();
-        const gameTicketItems = userInventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
-        const rewardTicketItems = userInventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
+        // const userInventory = UserInfo.instance().getItemInventory();
+        // const gameTicketItems = userInventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
+        // const rewardTicketItems = userInventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
 
-        // 分支1: 拥有门票道具
-        if (gameTicketItems.length > 0 || rewardTicketItems.length > 0) {
-            this._setActivePopup(BingoStartPopupType.PurchaseStart);
-            this.popups[BingoStartPopupType.PurchaseStart].initStartPopup_UI(BingoStartPopupType.PurchaseStart, bingoData);
-            return;
-        }
+        // // 分支1: 拥有门票道具
+        // if (gameTicketItems.length > 0 || rewardTicketItems.length > 0) {
+        //     this._setActivePopup(BingoStartPopupType.PurchaseStart);
+        //     this.popups[BingoStartPopupType.PurchaseStart].initStartPopup_UI(BingoStartPopupType.PurchaseStart, bingoData);
+        //     return;
+        // }
 
-        // 分支2: 每日游戏次数达标
-        if (bingoData.dailyGameCnt >= 1) {
-            this._setActivePopup(BingoStartPopupType.PurchaseStart);
-            this.popups[BingoStartPopupType.PurchaseStart].initStartPopup_UI(BingoStartPopupType.PurchaseStart, bingoData);
-            return;
-        }
+        // // 分支2: 每日游戏次数达标
+        // if (bingoData.dailyGameCnt >= 1) {
+        //     this._setActivePopup(BingoStartPopupType.PurchaseStart);
+        //     this.popups[BingoStartPopupType.PurchaseStart].initStartPopup_UI(BingoStartPopupType.PurchaseStart, bingoData);
+        //     return;
+        // }
 
-        // 分支3: 好友数量判断 (FB小游戏特殊处理)
-        const friendInfo = UserInfo.instance().getUserFriendInfo();
-        let activeFriendCnt = friendInfo.getActiveFriendCnt();
-        if (Utility.isFacebookInstant()) {
-            activeFriendCnt = friendInfo.getActiveFriendCnt() + friendInfo.getNonActiveFriendCnt();
-        }
+        // // 分支3: 好友数量判断 (FB小游戏特殊处理)
+        // const friendInfo = UserInfo.instance().getUserFriendInfo();
+        // let activeFriendCnt = friendInfo.getActiveFriendCnt();
+        // if (Utility.isFacebookInstant()) {
+        //     activeFriendCnt = friendInfo.getActiveFriendCnt() + friendInfo.getNonActiveFriendCnt();
+        // }
 
-        if (activeFriendCnt >= SDefine.BINGO_FREEGAME_FRIEND_CNT) {
-            this._setActivePopup(BingoStartPopupType.ActiveFriendStart);
-            this.popups[BingoStartPopupType.ActiveFriendStart].initStartPopup_UI(BingoStartPopupType.ActiveFriendStart, bingoData);
-            return;
-        }
+        // if (activeFriendCnt >= SDefine.BINGO_FREEGAME_FRIEND_CNT) {
+        //     this._setActivePopup(BingoStartPopupType.ActiveFriendStart);
+        //     this.popups[BingoStartPopupType.ActiveFriendStart].initStartPopup_UI(BingoStartPopupType.ActiveFriendStart, bingoData);
+        //     return;
+        // }
 
         // 默认分支: 普通弹窗
         this._setActivePopup(BingoStartPopupType.NormalStart);

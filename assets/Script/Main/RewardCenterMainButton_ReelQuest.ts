@@ -7,7 +7,7 @@ import UserInfo from "../User/UserInfo";
 // import ReelQuestMainMapPopup from "../../ReelQuest/ReelQuestMainMapPopup";
 import RewardCenterMainButton, { RewardCenterMainButtonType } from "./RewardCenterMainButton";
 
-@ccclass
+@ccclass("RewardCenterMainButton_Bingo")
 export default class RewardCenterMainButton_ReelQuest extends RewardCenterMainButton {
     // ====================== 编辑器序列化绑定属性 (与原JS一一对应，双按钮结构，直接拖拽绑定) ======================
     @property(cc.Button)
@@ -28,19 +28,21 @@ export default class RewardCenterMainButton_ReelQuest extends RewardCenterMainBu
     /** 静态方法：判断是否可领取卷轴任务奖励 - 活动可用+完成所有卷轴任务 方可领取 */
     public static isCanReceive(): boolean {
         if (!this.isUseable()) return false;
-        const userReelQuestInfo = UserInfo.instance().getUserReelQuestInfo();
-        return TSUtility.isValid(userReelQuestInfo) && userReelQuestInfo.isCompleteAllMission() === 1;
+        // const userReelQuestInfo = UserInfo.instance().getUserReelQuestInfo();
+        // return TSUtility.isValid(userReelQuestInfo) && userReelQuestInfo.isCompleteAllMission() === 1;
+        return false;
     }
 
     /** 静态方法：判断当前按钮是否可用 (双层核心校验规则完整保留，优先级无变更) */
     public static isUseable(): boolean {
         // 校验1: 获取活跃的卷轴任务推广Key，无有效Key则不可用
-        const activePromotionKey = UserInfo.instance().getActiveReelQuestPromotionKey();
-        if (activePromotionKey.length <= 0) return false;
+        // const activePromotionKey = UserInfo.instance().getActiveReelQuestPromotionKey();
+        // if (activePromotionKey.length <= 0) return false;
         
-        // 校验2: 推广信息有效 + 活动剩余时间 ≥ 0 (活动未结束)
-        const promotionInfo = UserInfo.instance().getPromotionInfo(activePromotionKey);
-        return TSUtility.isValid(promotionInfo) && !(promotionInfo.getRemainTime() < 0);
+        // // 校验2: 推广信息有效 + 活动剩余时间 ≥ 0 (活动未结束)
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(activePromotionKey);
+        // return TSUtility.isValid(promotionInfo) && !(promotionInfo.getRemainTime() < 0);
+        return false;
     }
 
     // ====================== 重写父类保护方法 - 组件初始化【只执行一次，绑定所有按钮事件，无重复绑定风险】 ======================
@@ -72,16 +74,17 @@ export default class RewardCenterMainButton_ReelQuest extends RewardCenterMainBu
 
     // ====================== 核心公共方法 - 获取有效的卷轴任务推广信息【原JS核心原型方法，逻辑1:1还原】 ======================
     public getPromotionInfo(): any {
-        const activePromotionKey = UserInfo.instance().getActiveReelQuestPromotionKey();
-        // 无有效推广Key → 返回null
-        if (activePromotionKey.length <= 0) return null;
+        // const activePromotionKey = UserInfo.instance().getActiveReelQuestPromotionKey();
+        // // 无有效推广Key → 返回null
+        // if (activePromotionKey.length <= 0) return null;
 
-        const promotionInfo = UserInfo.instance().getPromotionInfo(activePromotionKey);
-        // 推广信息无效 或 活动已结束 → 返回null，反之返回有效推广信息
-        if (!TSUtility.isValid(promotionInfo)) return null;
-        if (promotionInfo.getRemainTime() < 0) return null;
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(activePromotionKey);
+        // // 推广信息无效 或 活动已结束 → 返回null，反之返回有效推广信息
+        // if (!TSUtility.isValid(promotionInfo)) return null;
+        // if (promotionInfo.getRemainTime() < 0) return null;
         
-        return promotionInfo;
+        // return promotionInfo;
+        return null;
     }
 
     // ====================== 核心按钮点击事件回调【两个按钮逻辑完全一致，原JS复制粘贴写法，精准保留不合并】 ======================

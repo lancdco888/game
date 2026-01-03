@@ -108,14 +108,14 @@ export default class RewardCenterMainButton_Bingo extends RewardCenterMainButton
                             GameCommonSound.playFxOnce("button_dailybingoball");
                             // 判断是否需要打开Bingo弹窗
                             if (!ServiceInfoManager.instance.getBingoPopupOpen()) {
-                                BingoPopup.openPopup(
-                                    UserInfo.instance().getServerChangeResult(response),
-                                    () => {},
-                                    () => {
-                                        self.btnCollect.interactable = true;
-                                        self.updateView(); // 派发全局刷新消息
-                                    }
-                                );
+                                // BingoPopup.openPopup(
+                                //     // UserInfo.instance().getServerChangeResult(response),
+                                //     // () => {},
+                                //     // () => {
+                                //     //     self.btnCollect.interactable = true;
+                                //     //     self.updateView(); // 派发全局刷新消息
+                                //     // }
+                                // );
                             } else {
                                 // Bingo弹窗已打开：关闭奖励中心弹窗
                                 if (self.mainPopupNode != null) {
@@ -157,14 +157,14 @@ export default class RewardCenterMainButton_Bingo extends RewardCenterMainButton
                             if (CommonServer.isServerResponseError(response)) {
                                 self.btnPlayNow.interactable = true;
                             } else {
-                                BingoPopup.openPopup(
-                                    UserInfo.instance().getServerChangeResult(response),
-                                    () => {},
-                                    () => {
-                                        self.updateView();
-                                        self.btnPlayNow.interactable = true;
-                                    }
-                                );
+                                // BingoPopup.openPopup(
+                                //     UserInfo.instance().getServerChangeResult(response),
+                                //     () => {},
+                                //     () => {
+                                //         self.updateView();
+                                //         self.btnPlayNow.interactable = true;
+                                //     }
+                                // );
                             }
                         }
                     );
