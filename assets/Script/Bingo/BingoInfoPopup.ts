@@ -6,7 +6,7 @@ import DialogBase, { DialogState } from "../DialogBase";
 import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import { Utility } from "../global_utility/Utility";
 
-@ccclass('BingoInfoPopup')
+@ccclass
 export default class BingoInfoPopup extends DialogBase {
     @property([cc.Button])
     public tabBtns: cc.Button[] = [];

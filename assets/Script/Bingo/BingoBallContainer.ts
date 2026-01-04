@@ -4,7 +4,7 @@ const { ccclass, property } = cc._decorator;
 import BingoBall from "./BingoBall";
 import SoundManager from "../manager/SoundManager";
 
-@ccclass('BingoBallContainer')
+@ccclass
 export default class BingoBallContainer extends cc.Component {
     //#region 序列化属性 - 对应原JS绑定的节点组件
     @property(Animation)

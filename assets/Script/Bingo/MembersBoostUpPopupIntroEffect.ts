@@ -4,7 +4,7 @@ const { ccclass, property } = cc._decorator;
 // import MembersClassBoostUpNormalManager from "../../ServiceInfo/MembersClassBoostUpNormalManager";
 import TSUtility from "../global_utility/TSUtility";
 
-@ccclass('MembersBoostUpPopupIntroEffect')
+@ccclass
 export default class MembersBoostUpPopupIntroEffect extends cc.Component {
     @property(cc.Node)
     public nodeCenterEffect: cc.Node = null;

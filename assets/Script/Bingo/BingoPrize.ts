@@ -1,6 +1,6 @@
 const { ccclass, property } = cc._decorator;
 
-@ccclass('BingoPrize')
+@ccclass
 export default class BingoPrize extends cc.Component {
     @property([cc.Label])
     public callLabels: cc.Label[] = [];

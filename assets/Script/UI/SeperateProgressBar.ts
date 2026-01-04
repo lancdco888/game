@@ -11,6 +11,8 @@ export enum ProgressMoveType {
     Radical = 1
 }
 
+cc.Enum(ProgressMoveType); // ✅ 关键修复：添加此行，解决枚举序列化识别问题
+
 /**
  * 分段进度条的单段配置信息类 (序列化自定义类 - 编辑器可见可编辑)
  * 作用：配置每一段进度条的精灵、填充范围、占比权重
@@ -22,20 +24,21 @@ export class SeperateInfo {
     public targetImg: cc.Sprite = null!;
 
     /** 当前分段的最大填充范围 (0-1) */
-    @property({ type: Number })
+    @property({ type: cc.Integer })
     public maxFillRange: number = 1;
 
     /** 当前分段的占比权重 */
-    @property({ type: Number })
+    @property({ type: cc.Integer })
     public range: number = 1;
+
 }
 
 /**
  * 进度条手柄的移动配置信息类 (序列化自定义类 - 编辑器可见可编辑)
  * 作用：配置手柄的移动/旋转规则、点位、角度等参数
  */
-@ccclass("HandleMoveInfo")
-export class HandleMoveInfo {
+@ccclass
+export class HandleMoveInfo{
     /** 手柄移动类型 */
     @property({ type: ProgressMoveType })
     public moveType: ProgressMoveType = ProgressMoveType.Move;
@@ -53,24 +56,25 @@ export class HandleMoveInfo {
     public distance: cc.Vec2 = cc.Vec2.ZERO;
 
     /** 根节点起始旋转角度 */
-    @property({ type: Number })
+    @property()
     public startRootRotation: number = 0;
 
     /** 根节点结束旋转角度 */
-    @property({ type: Number })
+    @property()
     public endRootRotation: number = 0;
 
     /** 手柄自身旋转角度 */
-    @property({ type: Number })
+    @property()
     public angle: number = 0;
 
     /** 当前配置的占比权重 */
-    @property({ type: Number })
+    @property()
     public range: number = 0;
 
     /** 绑定的目标根节点 */
     @property(cc.Node)
     public targetRoot: cc.Node = null!;
+
 }
 
 /**
@@ -78,11 +82,11 @@ export class HandleMoveInfo {
  * 核心特性：支持多段式精灵填充进度 + 手柄双模式(平移/旋转)跟随进度、被 LoadingProgressBar 作为备用进度条调用
  * 适配场景：异形/非规则的进度条UI，无法用原生ProgressBar实现的分段填充效果
  */
-@ccclass("SeperateProgressBar")
+@ccclass
 export default class SeperateProgressBar extends cc.Component {
     // ====================== Cocos 序列化绑定属性 - 编辑器拖拽赋值 ======================
     /** 分段进度条的配置信息数组【核心】 */
-    @property([SeperateInfo])
+    @property
     public infos: SeperateInfo[] = [];
 
     /** 手柄的根节点 */
@@ -93,13 +97,17 @@ export default class SeperateProgressBar extends cc.Component {
     @property(cc.Node)
     public handle: cc.Node = null!;
 
-    /** 手柄的移动配置信息数组【核心】 */
-    @property([HandleMoveInfo])
-    public handleInfos: HandleMoveInfo[] = [];
+    // /** 手柄的移动配置信息数组【核心】 */
+    // @property([HandleMoveInfo])
+    // public handleInfos: HandleMoveInfo[] = [];
 
     // ====================== 成员属性 ======================
     /** 当前进度值 (0-1) */
     private _progress: number = 0;
+
+    constructor(){
+        super()
+    }
 
     // ====================== 生命周期 ======================
     onLoad(): void {
@@ -149,33 +157,33 @@ export default class SeperateProgressBar extends cc.Component {
         // ========== 第二部分：处理手柄的移动/旋转逻辑 ==========
         if (this.handle) {
             let handleTotalRange = 0;
-            for (let i = 0; i < this.handleInfos.length; i++) {
-                const handleInfo = this.handleInfos[i];
-                const currentRange = handleInfo.range;
+            // for (let i = 0; i < this.handleInfos.length; i++) {
+            //     const handleInfo = this.handleInfos[i];
+            //     const currentRange = handleInfo.range;
                 
-                // 同步手柄根节点的锚点与位置
-                this.handleRoot.setPosition(handleInfo.targetRoot.position);
-                this.handleRoot.setAnchorPoint(handleInfo.targetRoot.getAnchorPoint());
+            //     // 同步手柄根节点的锚点与位置
+            //     this.handleRoot.setPosition(handleInfo.targetRoot.position);
+            //     this.handleRoot.setAnchorPoint(handleInfo.targetRoot.getAnchorPoint());
 
-                // 进度落在当前手柄配置区间内 → 执行对应移动/旋转逻辑
-                if (progress >= handleTotalRange && progress < handleTotalRange + currentRange) {
-                    const moveRatio = (progress - handleTotalRange) / currentRange;
-                    if (handleInfo.moveType === ProgressMoveType.Move) {
-                        // 平移模式：两点之间线性插值计算位置
-                        Utility.setRotation(this.handleRoot, 0);
-                        this.handle.setPosition(handleInfo.startPos.lerp(handleInfo.endPos, moveRatio));
-                    } else {
-                        // 旋转模式：根节点旋转角度插值 + 手柄固定位置 + 自身角度旋转
-                        const lerpRotation = cc.misc.lerp(handleInfo.startRootRotation, handleInfo.endRootRotation, moveRatio);
-                        Utility.setRotation(this.handleRoot, lerpRotation);
-                        this.handle.setPosition(handleInfo.distance);
-                    }
-                    // 设置手柄自身的固定旋转角度
-                    Utility.setRotation(this.handle, handleInfo.angle);
-                    return;
-                }
-                handleTotalRange += currentRange;
-            }
+            //     // 进度落在当前手柄配置区间内 → 执行对应移动/旋转逻辑
+            //     if (progress >= handleTotalRange && progress < handleTotalRange + currentRange) {
+            //         const moveRatio = (progress - handleTotalRange) / currentRange;
+            //         if (handleInfo.moveType === ProgressMoveType.Move) {
+            //             // 平移模式：两点之间线性插值计算位置
+            //             Utility.setRotation(this.handleRoot, 0);
+            //             this.handle.setPosition(handleInfo.startPos.lerp(handleInfo.endPos, moveRatio));
+            //         } else {
+            //             // 旋转模式：根节点旋转角度插值 + 手柄固定位置 + 自身角度旋转
+            //             const lerpRotation = cc.misc.lerp(handleInfo.startRootRotation, handleInfo.endRootRotation, moveRatio);
+            //             Utility.setRotation(this.handleRoot, lerpRotation);
+            //             this.handle.setPosition(handleInfo.distance);
+            //         }
+            //         // 设置手柄自身的固定旋转角度
+            //         Utility.setRotation(this.handle, handleInfo.angle);
+            //         return;
+            //     }
+            //     handleTotalRange += currentRange;
+            // }
         }
     }
 
@@ -200,16 +208,16 @@ export default class SeperateProgressBar extends cc.Component {
             this.infos[i].range = this.infos[i].range / totalInfoRange;
         }
 
-        // 归一化 手柄配置的权重
-        if (this.handle) {
-            let totalHandleRange = 0;
-            for (let i = 0; i < this.handleInfos.length; i++) {
-                totalHandleRange += this.handleInfos[i].range;
-            }
-            // 重新计算各手柄配置的归一化权重
-            for (let i = 0; i < this.handleInfos.length; i++) {
-                this.handleInfos[i].range = this.handleInfos[i].range / totalHandleRange;
-            }
-        }
+        // // 归一化 手柄配置的权重
+        // if (this.handle) {
+        //     let totalHandleRange = 0;
+        //     for (let i = 0; i < this.handleInfos.length; i++) {
+        //         totalHandleRange += this.handleInfos[i].range;
+        //     }
+        //     // 重新计算各手柄配置的归一化权重
+        //     for (let i = 0; i < this.handleInfos.length; i++) {
+        //         this.handleInfos[i].range = this.handleInfos[i].range / totalHandleRange;
+        //     }
+        // }
     }
 }

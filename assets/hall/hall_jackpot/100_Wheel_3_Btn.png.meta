@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "eb0663d4-1a02-49bd-9798-f5b37f6e7e77",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 42,
+  "height": 44,
+  "platformSettings": {},
+  "subMetas": {
+    "100_Wheel_3_Btn": {
+      "ver": "1.0.6",
+      "uuid": "e089cda5-3483-4182-9d8e-2b31bbd9c036",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "eb0663d4-1a02-49bd-9798-f5b37f6e7e77",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 42,
+      "height": 44,
+      "rawWidth": 42,
+      "rawHeight": 44,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -5,7 +5,7 @@ import BingoCell from "./BingoCell";
 import UserInfo from "../User/UserInfo";
 import { Utility } from "../global_utility/Utility";
 
-@ccclass('BingoBoard')
+@ccclass
 export default class BingoBoard extends cc.Component {
     @property([cc.Node])
     public bingoColumns: cc.Node[] = [];

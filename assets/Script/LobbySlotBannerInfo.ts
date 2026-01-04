@@ -220,7 +220,7 @@ export class LobbySlotBannerInfo_SUPERSIZE_IT extends LobbySlotBannerInfo {
     }
 
     isAvailable() {
-        return SupersizeItManager.instance.isAvailablePromotion() && SupersizeItManager.instance.isEnableEvent();
+        return true;//SupersizeItManager.instance.isAvailablePromotion() && SupersizeItManager.instance.isEnableEvent();
     }
 }
 

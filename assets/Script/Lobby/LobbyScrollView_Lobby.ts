@@ -30,7 +30,7 @@ export default class LobbyScrollView_Lobby extends LobbyScrollView {
         // 填充空占位横幅
         this.pushBannerData(SlotBannerType.EMPTY, 6);
         // 广告横幅 - 大厅首位
-        //this.pushBannerData(SlotBannerType.SERVICE_BANNER, ADBannerType.LOBBY_FIRST);
+        // this.pushBannerData(SlotBannerType.SERVICE_BANNER, ADBannerType.LOBBY_FIRST);
         // 各类业务横幅依次添加
         this.pushBannerData(SlotBannerType.EARLY_ACCESS, this.getSlotBannerInfo(SlotBannerType.EARLY_ACCESS));
         this.pushBannerData(SlotBannerType.NEW, this.getSlotBannerInfo(SlotBannerType.NEW));

@@ -103,7 +103,7 @@ export default class LobbyScrollView extends cc.Component {
 
     // ===== 核心更新滚动容器数据 - 带动画遮罩 =====
     public async updateScrollViewType(offset: cc.Vec2 = cc.v2(0, 0)): Promise<void> {
-        PopupManager.Instance().showBlockingBG(true);
+        // PopupManager.Instance().showBlockingBG(true);
         this._scrollView.clear();
         this._arrUIScrollViewData = [];
         
@@ -111,7 +111,7 @@ export default class LobbyScrollView extends cc.Component {
         this._scrollView.addArray(this._arrUIScrollViewData);
         this._scrollView.scrollToOffset(offset, 0);
         
-        PopupManager.Instance().showBlockingBG(false);
+        // PopupManager.Instance().showBlockingBG(false);
     }
 
     // ===== 滚动到下一页 =====

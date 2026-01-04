@@ -16,7 +16,7 @@ export default class LoadingProgressBar extends cc.Component {
     public progressBar: cc.ProgressBar = null!;
 
     /** 自定义分离式进度条组件（备用进度条，二选一使用） */
-    @property(SeperateProgressBar)
+    @property
     public progressBar2: SeperateProgressBar = null!;
 
     /** 进度百分比文本 (如: 50%) */

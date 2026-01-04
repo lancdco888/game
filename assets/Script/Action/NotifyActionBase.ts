@@ -1,3 +1,5 @@
+const { ccclass, property } = cc._decorator;
+
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
 import HRVSlotService from "../HRVService/HRVSlotService";
@@ -5,7 +7,6 @@ import LobbyScene from "../LobbyScene";
 import UserInfo from "../User/UserInfo";
 import { NotifyType } from "../Notify/NotifyManager";
 
-const { ccclass, property } = cc._decorator;
 
 /** 通知行为基类 - 所有通知Action的父类，继承Component */
 @ccclass
@@ -14,6 +15,10 @@ export default class NotifyActionBase extends cc.Component {
     protected _arrNotify: any[] = [];
     /** 通知执行完成状态标记 */
     protected _isDone: boolean = true;
+
+    constructor(){
+        super()
+    }
 
     /** 获取当前通知类型 默认NONE，子类重写实现 */
     public getType(): number|string {

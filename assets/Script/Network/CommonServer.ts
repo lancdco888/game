@@ -635,7 +635,7 @@ export default class CommonServer {
         });
     }
 
-    public async getSlotGameInfo(uid: number, token: string, zone: number, slot: number, postData: any): Promise<any> {
+    public async getSlotGameInfo(uid: number, token: string, zone: number, slot: number|string, postData: any): Promise<any> {
         return new Promise((resolve) => {
             const req = new ReqParamModel();
             req.url = this.commonServerBaseURL + "slots/" + zone + "/" + slot + "/info";

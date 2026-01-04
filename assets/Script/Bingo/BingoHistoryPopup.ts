@@ -3,7 +3,7 @@ const { ccclass, property } = cc._decorator;
 import BingoHistoryCell from "./BingoHistoryCell";
 import BingoData, { MaxBingoBallCnt } from "./BingoData";
 
-@ccclass('BingoHistoryPopup')
+@ccclass
 export default class BingoHistoryPopup extends cc.Component {
     @property(cc.Node)
     public selectLayer: cc.Node = null;

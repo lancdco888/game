@@ -1,6 +1,6 @@
 import AutoScalingAdjuster from "./AutoScalingAdjuster";
 import LobbyScrollView from "./LobbyScrollView";
-import { SlotBannerType } from "./LobbySlotBannerInfo";
+import LobbySlotBannerInfo, { SlotBannerType } from "./LobbySlotBannerInfo";
 import LobbySlotObjectPool from "./LobbySlotObjectPool";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import { LobbySceneUIType } from "./SceneInfo";
@@ -15,7 +15,7 @@ import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
 
 const {ccclass, property} = cc._decorator;
 
-@ccclass("LobbyUI_SlotScrollView")
+@ccclass
 export default class LobbyUI_SlotScrollView extends LobbyUIBase {
 
     @property(cc.Node)
@@ -38,12 +38,13 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     _nodeScrollViewRoot = null
     _numCurrentScrollScale = 1
     _numPrevNodeY = 0
-    private _objectPool: LobbySlotObjectPool = null;
+    public _objectPool: LobbySlotObjectPool = null;
     // lobbyUIType: LobbySceneUIType;
 
     constructor(){
         super()
         LobbyUI_SlotScrollView._instance = this;
+        
     }
 
     static _instance:LobbyUI_SlotScrollView = null;
@@ -69,6 +70,7 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
         this._scaleAdjuster.initRatio(),
         this._nodeScrollViewRoot = this.node.getChildByName(this.SCALE_ADJUSTER_SCROLL_NAME),
         this._numPrevNodeY = this.node.y
+        this.initialize()
     }
    
     onDestroy() {
@@ -76,8 +78,9 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     }
 
 
-    initialize= async function() {
+    initialize = async function() {
         this._sceneType = LobbySceneUIType.NONE;
+        // this.scrollMasking.updateScrollView(this.getCurrentScrollView());
         this.setAutoScaleByResolution();
         var e = 1;
         if (TSUtility.isValid(this._scaleAdjuster)) {
@@ -170,7 +173,7 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
             this.scrollBar.setOnRightButtonCallback(n.onMoveNextPage.bind(n));
         }
         this._sceneType = this.lobbyUIType;
-        this.scrollMasking.updateScrollView(this.getCurrentScrollView());
+        // this.scrollMasking.updateScrollView(this.getCurrentScrollView());
     }
     
     preloadSlotBanner =  async function() {
@@ -179,7 +182,7 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
         }),
         t = 0, o = e;
         for (; t < o.length; t++) {
-            var a = o[t], i = ServiceSlotDataManager.instance.getSlotBannerInfo(a) as any;
+            var a = o[t], i = LobbySlotBannerInfo.getSlotBannerInfo(a) as any;
             if (TSUtility.isValid(i)) {
                 var l = this._objectPool.getPrefabCount(i.type), s = i.preloadCount - l;
                 if (s > 0) {
@@ -193,6 +196,11 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     }
     
     updateSlotBannerInfo = async function() {
+
+        if(!TSUtility.isValid(UserInfo.instance())||!TSUtility.isValid(UserInfo.instance().slotZoneInfo)){
+            return;
+        }
+
         var e = [], t = UserInfo.instance().slotZoneInfo[SDefine.VIP_LOUNGE_ZONEID];
         if (!TSUtility.isValid(t)) return [];
         var n = function(t, n) {

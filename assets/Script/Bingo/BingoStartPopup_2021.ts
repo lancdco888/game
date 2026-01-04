@@ -8,7 +8,7 @@ import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import BingoStartPopup_UI_2021, { BingoStartPopupType } from "./BingoStartPopup_UI_2021";
 import { Utility } from "../global_utility/Utility";
 
-@ccclass('BingoStartPopup_2021')
+@ccclass
 export default class BingoStartPopup_2021 extends cc.Component {
     @property([BingoStartPopup_UI_2021])
     public popups: BingoStartPopup_2021[] = [];

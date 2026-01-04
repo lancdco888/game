@@ -13,7 +13,7 @@ import TSUtility from "../global_utility/TSUtility";
 import { Utility } from "../global_utility/Utility";
 // import Utility from "../Utility/Utility";
 
-@ccclass('BingoRemainGameCollectUI')
+@ccclass
 export default class BingoRemainGameCollectUI extends cc.Component {
     @property(cc.Button)
     public showCollectBtn: cc.Button = null;

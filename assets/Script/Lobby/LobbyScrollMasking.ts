@@ -44,7 +44,7 @@ export default class LobbyScrollMasking extends cc.Component {
     // ===================== 帧更新 - 核心滚动状态检测 带性能优化的间隔检测 =====================
     update(dt: number): void {
         // 滚动容器无效则直接返回
-        if (TSUtility.isValid(this._scr)) return;
+        if (!TSUtility.isValid(this._scr)) return;
 
         // 累计帧间隔时间 达到检测阈值才执行判断 → 帧率优化 避免每帧执行
         this.numElapsed += dt;

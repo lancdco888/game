@@ -26,7 +26,7 @@ export interface ResizeHandler {
  * 核心功能：监听屏幕尺寸变化/浏览器全屏切换、统一分发适配回调、横竖屏判断、虚拟横竖屏比例计算
  * 项目中所有需要做屏幕适配的组件（如PopupManager）都需注册到此管理器，是屏幕适配的核心中枢
  */
-@ccclass('ViewResizeManager')
+@ccclass
 export default class ViewResizeManager extends cc.Component {
     // ===================== 单例核心配置 (原逻辑完全保留，调用方式不变 不可修改) =====================
     private static _instance: ViewResizeManager = null;

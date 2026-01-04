@@ -20,6 +20,10 @@ export default class UIScrollViewHorizontal extends UIScrollView {
         super()
     }
 
+    protected onLoad(): void {
+        this.initialize()
+    }
+
 
     // ===== ✅ 只读访问器 (原逻辑完整保留 外部仅可读取边界状态 不可修改) =====
     public get isAtLeft(): boolean {

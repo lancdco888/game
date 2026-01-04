@@ -2,7 +2,7 @@ const { ccclass, property } = cc._decorator;
 
 import BingoData, { MaxRowBingoBallCnt } from "./BingoData";
 
-@ccclass('BingoBall')
+@ccclass
 export default class BingoBall extends cc.Component {
     @property(cc.Label)
     public numberLabel: cc.Label = null;

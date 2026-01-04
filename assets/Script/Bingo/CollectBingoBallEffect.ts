@@ -5,7 +5,7 @@ import GameCommonSound from "../GameCommonSound";
 import SoundManager from "../manager/SoundManager";
 import FireHoseSender, { FHLogType } from "../FireHoseSender";
 
-@ccclass('CollectBingoBallEffect')
+@ccclass
 export default class CollectBingoBallEffect extends cc.Component {
     @property(cc.Animation)
     public anim: cc.Animation = null;

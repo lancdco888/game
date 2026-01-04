@@ -10,11 +10,15 @@ import TSUtility from "./global_utility/TSUtility";
  * ✅ 核心能力：数据自动绑定、删除回调赋值、安全的节点删除方法、统一的数据读取入口
  * 所有滚动列表的子项预制体，都应挂载继承此类的脚本，实现标准化的子项开发
  */
-@ccclass('UIScrollViewItem')
+@ccclass
 export default class UIScrollViewItem extends cc.Component {
     // ===== 私有核心成员变量 (原代码初始化值+类型 1:1完整保留) =====
     private _data: any = null;          // 绑定的子项数据 (对应UIScrollViewData实例)
     private _remove: Function | null = null; // 删除当前子项的回调函数 (由滚动视图传入)
+
+    constructor(){
+        super()
+    }
 
     // ===== ✅ 核心访问器 - 数据绑定主入口 (原逻辑完整保留 重中之重) =====
     // 【核心特性】赋值data时，会自动触发setData()方法，子类重写该方法即可实现数据渲染

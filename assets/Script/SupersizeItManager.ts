@@ -3,7 +3,7 @@ const {ccclass, property} = cc._decorator;
 import SlotGameRuleManager from "./manager/SlotGameRuleManager";
 import ServiceInfoManager from "./ServiceInfoManager";
 import UserInfo from "./User/UserInfo";
-import UserPromotion from "./User/UserPromotion";
+import UserPromotion, { SupersizeJackpotEventInfo } from "./User/UserPromotion";
 import SDefine from "./global_utility/SDefine";
 import TSUtility from "./global_utility/TSUtility";
 import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
@@ -124,17 +124,19 @@ export default class SupersizeItManager extends cc.Component {
     }
 
     public getPromotion(): any {
-        return UserInfo.instance().getPromotionInfo(UserPromotion.SupersizeJackpotEventInfo.PromotionKeyName);
+        return UserInfo.instance().getPromotionInfo(SupersizeJackpotEventInfo.PromotionKeyName);
     }
 
     public getConditionCoin(): number {
-        for (var e = UserInfo.instance().getUserVipInfo().level, t = 0, n = 0; n < this.SUPERSIZE_IT_TARGET_DATA.length; n++) {
-            if (this.SUPERSIZE_IT_TARGET_DATA[n].vip == e) {
-                t = this.SUPERSIZE_IT_TARGET_DATA[n].coin;
-                break;
-            }
-        }
-        return 0 == t && e >7 && (t = this.SUPERSIZE_IT_TARGET_DATA[this.SUPERSIZE_IT_TARGET_DATA.length -1].coin), t;
+        // for (var e = UserInfo.instance().getUserVipInfo().level, t = 0, n = 0; n < this.SUPERSIZE_IT_TARGET_DATA.length; n++) {
+        //     if (this.SUPERSIZE_IT_TARGET_DATA[n].vip == e) {
+        //         t = this.SUPERSIZE_IT_TARGET_DATA[n].coin;
+        //         break;
+        //     }
+        // }
+        // return 0 == t && e >7 && (t = this.SUPERSIZE_IT_TARGET_DATA[this.SUPERSIZE_IT_TARGET_DATA.length -1].coin), t;
+
+        return this.SUPERSIZE_IT_TARGET_DATA[0].coin;
     }
 
     public getMaxTicketCount(): number {
@@ -151,10 +153,11 @@ export default class SupersizeItManager extends cc.Component {
     }
 
     public isAvailablePromotion(): boolean {
-        var e = this.getPromotion();
-        if (!TSUtility.isValid(e)) return false;
-        var t = UserInfo.instance().getUserLevelInfo().level;
-        return !(this.LIMIT_LEVEL > t);
+        // var e = this.getPromotion();
+        // if (!TSUtility.isValid(e)) return false;
+        // var t = UserInfo.instance().getUserLevelInfo().level;
+        // return !(this.LIMIT_LEVEL > t);
+        return true;
     }
 
     public isEnableStartPopup(): boolean {
@@ -195,7 +198,7 @@ export default class SupersizeItManager extends cc.Component {
     }
 
     public isPlayTargetSlot(): boolean {
-        return this.isTargetSlotID(UserInfo.instance().getGameId());
+        return false;//this.isTargetSlotID(UserInfo.instance().getGameId());
     }
 
     public isTargetSlotID(e: string): boolean {
@@ -215,11 +218,11 @@ export default class SupersizeItManager extends cc.Component {
     // ✅ 保留原代码多层嵌套判断逻辑 完全一致
     public canReceiveLoungePass(): boolean {
         if (!TSUtility.isValid(this.getPromotion())) return false;
-        if (UserInfo.instance().isPassAbleCasino(1, SDefine.VIP_LOUNGE_ZONENAME)) return false;
+        // if (UserInfo.instance().isPassAbleCasino(1, SDefine.VIP_LOUNGE_ZONENAME)) return false;
         if (this.getPromotion().isReceivedSlotPlayTicket) return false;
         
-        const ticketItem = UserInfo.instance().getItemInventory().getItemsByItemId("i_supersize_slot_play_ticket")[0];
-        if (TSUtility.isValid(ticketItem) && ticketItem.expireDate > TSUtility.getServerBaseNowUnixTime()) return false;
+        // const ticketItem = UserInfo.instance().getItemInventory().getItemsByItemId("i_supersize_slot_play_ticket")[0];
+        // if (TSUtility.isValid(ticketItem) && ticketItem.expireDate > TSUtility.getServerBaseNowUnixTime()) return false;
         
         if (ServiceInfoManager.BOOL_SUPERSIZE_TICKET_CLAIM) return false;
         
@@ -237,9 +240,9 @@ export default class SupersizeItManager extends cc.Component {
 
     public getSupersizeFreeTicketRemainTime(): number {
         var e = 0;
-        SupersizeItManager.instance.canReceiveLoungePass() 
-            ? e = TSUtility.getServerBaseNowUnixTime() + 10800 
-            : UserInfo.instance().hasSupersizeFreeTicket() && (e = UserInfo.instance().getItemInventory().getItemsByItemId("i_supersize_slot_play_ticket")[0].expireDate);
+        // SupersizeItManager.instance.canReceiveLoungePass() 
+        //     ? e = TSUtility.getServerBaseNowUnixTime() + 10800 
+        //     : UserInfo.instance().hasSupersizeFreeTicket() && (e = UserInfo.instance().getItemInventory().getItemsByItemId("i_supersize_slot_play_ticket")[0].expireDate);
         return e - TSUtility.getServerBaseNowUnixTime();
     }
 

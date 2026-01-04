@@ -22,7 +22,6 @@ export enum BingoResultType {
 }
 
 // ========== 内部子组件：单Bingo结果面板 ==========
-@ccclass('OneBingoResult')
 export class OneBingoResult extends cc.Component {
     @property(cc.Button)
     public closeBtn: cc.Button = null;
@@ -50,7 +49,6 @@ export class OneBingoResult extends cc.Component {
 }
 
 // ========== 内部子组件：多Bingo结果面板 ==========
-@ccclass('MultiBingoResult')
 export class MultiBingoResult extends cc.Component {
     @property(cc.Button)
     public closeBtn: cc.Button = null;
@@ -81,7 +79,7 @@ export class MultiBingoResult extends cc.Component {
 }
 
 // ========== 主弹窗类 ==========
-@ccclass('BingoResultPopup')
+@ccclass
 export default class BingoResultPopup extends DialogBase {
     @property([cc.Node])
     public rewardPopups: cc.Node[] = [];

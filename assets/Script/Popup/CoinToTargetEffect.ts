@@ -8,7 +8,7 @@ import UserInfo from "../User/UserInfo";
 import SDefine from "../global_utility/SDefine";
 // import MyBankrollInfoPopup from "./MyBankrollInfoPopup";
 
-@ccclass('CoinToTargetEffect')
+@ccclass
 export default class CoinToTargetEffect extends cc.Component {
     @property(cc.Node)
     public coinTemplate: cc.Node = null;

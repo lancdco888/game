@@ -7,7 +7,7 @@ import UserInfo from "../User/UserInfo";
 // import ReelQuestMainMapPopup from "../../ReelQuest/ReelQuestMainMapPopup";
 import RewardCenterMainButton, { RewardCenterMainButtonType } from "./RewardCenterMainButton";
 
-@ccclass("RewardCenterMainButton_Bingo")
+@ccclass
 export default class RewardCenterMainButton_ReelQuest extends RewardCenterMainButton {
     // ====================== 编辑器序列化绑定属性 (与原JS一一对应，双按钮结构，直接拖拽绑定) ======================
     @property(cc.Button)

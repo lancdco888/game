@@ -24,7 +24,7 @@ export enum BingoStartPopupType {
     RewardStart = 3
 }
 
-@ccclass('BingoStartPopup_UI_2021')
+@ccclass
 export default class BingoStartPopup_UI_2021 extends cc.Component {
     @property(cc.Button)
     public playOneBoardBtn: cc.Button = null;
@@ -128,20 +128,20 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
         }
 
         this.popupType = popupType;
-        const friendInfo = UserInfo.instance().getUserFriendInfo();
+        // const friendInfo = UserInfo.instance().getUserFriendInfo();
 
-        // 弹窗类型分支初始化
-        switch (this.popupType) {
-            case BingoStartPopupType.NormalStart:
-                this.init_Normal();
-                break;
-            case BingoStartPopupType.ActiveFriendStart:
-                this.init_ActiveFriend(friendInfo);
-                break;
-            case BingoStartPopupType.PurchaseStart:
-                this.init_Purchase(bingoData);
-                break;
-        }
+        // // 弹窗类型分支初始化
+        // switch (this.popupType) {
+        //     case BingoStartPopupType.NormalStart:
+        //         this.init_Normal();
+        //         break;
+        //     case BingoStartPopupType.ActiveFriendStart:
+        //         this.init_ActiveFriend(friendInfo);
+        //         break;
+        //     case BingoStartPopupType.PurchaseStart:
+        //         this.init_Purchase(bingoData);
+        //         break;
+        // }
     }
 
     // 普通弹窗初始化
@@ -162,31 +162,31 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
         this._purchasePopupType = "BINGO_CARD";
         Analytics.viewShop("offer", this._purchasePopupType, "BINGO_CARD", this._purchaseEntryReason);
 
-        // 新手门票判断
-        const newbieTicket = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.ITEM_NEWBIE_BINGO_TICKET);
-        if (newbieTicket.length > 0 && newbieTicket[0].isAvailable()) {
-            this.priceLabel1.node.active = false;
-            if (SDefine.FB_Instant_iOS_Shop_Flag) {
-                for (let i = 0; i < this.instantIOSShopDisableNodes.length; ++i) {
-                    this.instantIOSShopDisableNodes[i].active = true;
-                }
-                for (let i = 0; i < this.free_UI_Nodes.length; i++) {
-                    this.free_UI_Nodes[i].active = false;
-                }
-                for (let i = 0; i < this.trial_UI_Nodes.length; i++) {
-                    this.trial_UI_Nodes[i].active = true;
-                }
-            } else {
-                for (let i = 0; i < this.free_UI_Nodes.length; i++) {
-                    this.free_UI_Nodes[i].active = true;
-                }
-            }
-        } else {
+        // // 新手门票判断
+        // const newbieTicket = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.ITEM_NEWBIE_BINGO_TICKET);
+        // if (newbieTicket.length > 0 && newbieTicket[0].isAvailable()) {
+        //     this.priceLabel1.node.active = false;
+        //     if (SDefine.FB_Instant_iOS_Shop_Flag) {
+        //         for (let i = 0; i < this.instantIOSShopDisableNodes.length; ++i) {
+        //             this.instantIOSShopDisableNodes[i].active = true;
+        //         }
+        //         for (let i = 0; i < this.free_UI_Nodes.length; i++) {
+        //             this.free_UI_Nodes[i].active = false;
+        //         }
+        //         for (let i = 0; i < this.trial_UI_Nodes.length; i++) {
+        //             this.trial_UI_Nodes[i].active = true;
+        //         }
+        //     } else {
+        //         for (let i = 0; i < this.free_UI_Nodes.length; i++) {
+        //             this.free_UI_Nodes[i].active = true;
+        //         }
+        //     }
+        // } else {
             this.priceLabel1.node.active = true;
             for (let i = 0; i < this.free_UI_Nodes.length; i++) {
                 this.free_UI_Nodes[i].active = false;
             }
-        }
+        // }
     }
 
     // 好友激活弹窗初始化
@@ -234,27 +234,27 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
         let remainTime = this.nextResetTime - TSUtility.getServerBaseNowUnixTime();
         this.refreshResetTime(remainTime);
 
-        const inventory = UserInfo.instance().getItemInventory();
-        const gameTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
-        const rewardTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
+        // const inventory = UserInfo.instance().getItemInventory();
+        // const gameTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
+        // const rewardTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
 
-        // 拥有门票道具 自动使用
-        if (gameTicket.length > 0 || rewardTicket.length > 0) {
-            PopupManager.Instance().showDisplayProgress(true);
-            await Promise.all([AsyncHelper.delayWithComponent(1, this), this.showIncompletePurchaseTooltip(rewardTicket.length > 0)]);
-            await AsyncHelper.delayWithComponent(1, this);
-            this.hideIncompletePurchaseTooltip();
+        // // 拥有门票道具 自动使用
+        // if (gameTicket.length > 0 || rewardTicket.length > 0) {
+        //     PopupManager.Instance().showDisplayProgress(true);
+        //     await Promise.all([AsyncHelper.delayWithComponent(1, this), this.showIncompletePurchaseTooltip(rewardTicket.length > 0)]);
+        //     await AsyncHelper.delayWithComponent(1, this);
+        //     this.hideIncompletePurchaseTooltip();
             
-            if ((gameTicket.length > 0 && gameTicket[0].curCnt >= 2) || (rewardTicket.length > 0 && rewardTicket[0].curCnt >= 2)) {
-                this.onClickPlayTwoBoardBtn();
-            } else {
-                this.onClickPlayOneBoardBtn();
-            }
-            PopupManager.Instance().showDisplayProgress(false);
-        } else {
-            // 无门票 开启倒计时刷新
-            this.schedule(this.updateRemainTimeSchedule, 1);
-        }
+        //     if ((gameTicket.length > 0 && gameTicket[0].curCnt >= 2) || (rewardTicket.length > 0 && rewardTicket[0].curCnt >= 2)) {
+        //         this.onClickPlayTwoBoardBtn();
+        //     } else {
+        //         this.onClickPlayOneBoardBtn();
+        //     }
+        //     PopupManager.Instance().showDisplayProgress(false);
+        // } else {
+        //     // 无门票 开启倒计时刷新
+        //     this.schedule(this.updateRemainTimeSchedule, 1);
+        // }
     }
 
     // ===================== 按钮点击事件 =====================
@@ -266,19 +266,19 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
                 this._onStartCallback(this.popupType, false, 0);
                 break;
             case BingoStartPopupType.PurchaseStart:
-                const inventory = UserInfo.instance().getItemInventory();
-                const gameTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
-                const rewardTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
-                // 有门票直接开始
-                if (gameTicket.length > 0 && gameTicket[0].curCnt >=1 || rewardTicket.length >0 && rewardTicket[0].curCnt >=1) {
-                    this._onStartCallback(this.popupType, false, 1);
-                } else {
-                    // 无门票 购买单张
-                    // const productId = ShopDataManager.Instance().getProductIdByItemKey("bingoGameTicket_01");
-                    // this.purchase(productId, 1, () => {
-                    //     self._onStartCallback(self.popupType, false, 1);
-                    // });
-                }
+                // const inventory = UserInfo.instance().getItemInventory();
+                // const gameTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
+                // const rewardTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
+                // // 有门票直接开始
+                // if (gameTicket.length > 0 && gameTicket[0].curCnt >=1 || rewardTicket.length >0 && rewardTicket[0].curCnt >=1) {
+                //     this._onStartCallback(this.popupType, false, 1);
+                // } else {
+                //     // 无门票 购买单张
+                //     // const productId = ShopDataManager.Instance().getProductIdByItemKey("bingoGameTicket_01");
+                //     // this.purchase(productId, 1, () => {
+                //     //     self._onStartCallback(self.popupType, false, 1);
+                //     // });
+                // }
                 break;
         }
     }
@@ -293,19 +293,19 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
                 this._onStartCallback(this.popupType, false, 0);
                 break;
             case BingoStartPopupType.PurchaseStart:
-                const inventory = UserInfo.instance().getItemInventory();
-                const gameTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
-                const rewardTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
-                // 有两张门票直接开始
-                if (gameTicket.length >0 && gameTicket[0].curCnt >=2 || rewardTicket.length>0 && rewardTicket[0].curCnt >=2) {
-                    this._onStartCallback(this.popupType, false, 2);
-                } else {
-                    // 无门票 购买两张
-                    // const productId = ShopDataManager.Instance().getProductIdByItemKey("bingoGameTicket_02");
-                    // this.purchase(productId, 1, () => {
-                    //     self._onStartCallback(self.popupType, false, 2);
-                    // });
-                }
+                // const inventory = UserInfo.instance().getItemInventory();
+                // const gameTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET);
+                // const rewardTicket = inventory.getItemsByItemId(SDefine.ITEM_BINGO_GAMETICKET_REWARD);
+                // // 有两张门票直接开始
+                // if (gameTicket.length >0 && gameTicket[0].curCnt >=2 || rewardTicket.length>0 && rewardTicket[0].curCnt >=2) {
+                //     this._onStartCallback(this.popupType, false, 2);
+                // } else {
+                //     // 无门票 购买两张
+                //     // const productId = ShopDataManager.Instance().getProductIdByItemKey("bingoGameTicket_02");
+                //     // this.purchase(productId, 1, () => {
+                //     //     self._onStartCallback(self.popupType, false, 2);
+                //     // });
+                // }
                 break;
         }
     }
@@ -313,8 +313,8 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
     // 普通弹窗-双棋盘开始逻辑
     private playTwoBoardNormalStart() {
         const self = this;
-        const inventory = UserInfo.instance().getItemInventory();
-        const newbieTicket = inventory.getItemsByItemId(SDefine.ITEM_NEWBIE_BINGO_TICKET);
+        // const inventory = UserInfo.instance().getItemInventory();
+        // const newbieTicket = inventory.getItemsByItemId(SDefine.ITEM_NEWBIE_BINGO_TICKET);
         // 新手门票
         // if (newbieTicket.length >0 && newbieTicket[0].isAvailable() ===1) {
         //     this._onStartCallback(BingoStartPopupType.NormalStart, true, 0);
@@ -340,15 +340,15 @@ export default class BingoStartPopup_UI_2021 extends cc.Component {
         const reasonStr = JSON.stringify(this._purchaseEntryReason);
         const popupType = this._purchasePopupType;
 
-        UserInfo.instance().buyProduct(productId, popupType, reasonStr, (resData) => {
-            PopupManager.Instance().showDisplayProgress(false);
-            if (resData) {
-                UserInfo.instance().applyChangeResult(resData);
-                let purchaseCnt = UserInfo.instance().getPurchaseInfo().cntIn30Days;
-                UserInfo.instance().getPurchaseInfo().cntIn30Days = purchaseCnt +1;
-                callFunc();
-            }
-        });
+        // UserInfo.instance().buyProduct(productId, popupType, reasonStr, (resData) => {
+        //     PopupManager.Instance().showDisplayProgress(false);
+        //     if (resData) {
+        //         UserInfo.instance().applyChangeResult(resData);
+        //         let purchaseCnt = UserInfo.instance().getPurchaseInfo().cntIn30Days;
+        //         UserInfo.instance().getPurchaseInfo().cntIn30Days = purchaseCnt +1;
+        //         callFunc();
+        //     }
+        // });
     }
 
     // ===================== 倒计时刷新 =====================

@@ -29,6 +29,7 @@ import SlotBannerItem from "./SlotBannerItem";
 import LobbyTitleEffectSelector from "./LobbyTitleEffectSelector";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import { Utility } from "./global_utility/Utility";
+import CommonServer from "./Network/CommonServer";
 
 /**
  * 老虎机进入弹窗的类型枚举 - 与原JS完全一致，字符串枚举
@@ -46,7 +47,7 @@ export type SlotType = typeof SlotType[keyof typeof SlotType];
  * 负责老虎机的档位切换、收藏、大奖展示、进入游戏等核心逻辑
  * 100%还原原JS逻辑，Cocos 2.4.13 TS标准写法
  */
-@ccclass("LobbySlotEntryPopup")
+@ccclass
 export default class LobbySlotEntryPopup extends DialogBase {
     // ===================== 【序列化属性】编辑器拖拽绑定，原JS核心绑定项，语法完全适配2.4.13 =====================
     @property(cc.Prefab)

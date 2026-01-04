@@ -18,19 +18,19 @@ export default class UIScrollView extends cc.Component {
     @property({ type: cc.Prefab, displayName: "滚动子项预制体" })
     public prefab: cc.Prefab = null;
 
-    @property({ type: Number, displayName: "对象池初始化数量" })
+    @property({ type: cc.Integer, displayName: "对象池初始化数量" })
     public numNodePoolSize: number = 20;
 
-    @property({ type: Number, displayName: "子项间距" })
+    @property({ type: cc.Integer, displayName: "子项间距" })
     public numSpacing: number = 0;
 
     @property({ type: cc.Vec2, displayName: "容器内边距" })
     public numPadding: cc.Vec2 = new cc.Vec2(0, 0);
 
-    @property({ type: Number, displayName: "可视区域扩展范围" })
+    @property({ type: cc.Integer, displayName: "可视区域扩展范围" })
     public numExtendVisibleRange: number = 0;
 
-    @property({ type: Number, displayName: "鼠标滚轮滚动速度" })
+    @property({ type: cc.Integer, displayName: "鼠标滚轮滚动速度" })
     public numWheelSpeed: number = 5;
 
     // ===== ✅ 私有核心成员变量 (原代码初始化值+类型 1:1完整保留 顺序不变) =====
@@ -42,6 +42,10 @@ export default class UIScrollView extends cc.Component {
     public _moveAsync: Promise<any> | null = null;// 异步滚动动画Promise对象
     public _nunViewWidth: number = 0;             // 蒙版宽度缓存
     public _numViewHeight: number = 0;            // 蒙版高度缓存
+
+    constructor(){
+        super()
+    }
 
     // ===== ✅ 只读/读写访问器 (原逻辑完整保留 外部统一访问入口 无任何修改) =====
     public get scrollView(): cc.ScrollView {

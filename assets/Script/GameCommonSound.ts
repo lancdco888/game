@@ -11,7 +11,7 @@ import SoundManager from "./manager/SoundManager";
  * 优先级规则：AudioAtlasSetter(音效图集) > CommonSoundSetter(普通音效)，优先使用图集加载的音效，性能更优
  * 底层依赖：最终调用 SoundManager 完成音频的实际播放，是音效调用的统一封装层
  */
-@ccclass('GameCommonSound')
+@ccclass
 export default class GameCommonSound extends cc.Component {
     // ===================== 【序列化属性】与原代码完全一致 (编辑器拖拽赋值，属性名无任何修改) =====================
     @property(CommonSoundSetter)

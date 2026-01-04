@@ -129,9 +129,9 @@ export class CustomJackpotMoney {
  * 无序列化属性，无需编辑器绑定，挂载到常驻节点即可全局调用
  */
 @ccclass("CustomJackpotDataManager")
-export default class CustomJackpotDataManager extends cc.Component {
+export default class CustomJackpotDataManager{
     // ===================== 【单例核心】原JS完整还原 函数式单例 全局调用方式不变 =====================
-    private static _instance: CustomJackpotDataManager | null = null;
+    private static _instance: CustomJackpotDataManager = null;
 
     public static instance(): CustomJackpotDataManager {
         if (this._instance === null) {

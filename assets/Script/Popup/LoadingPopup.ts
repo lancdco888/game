@@ -30,7 +30,7 @@ export enum LoadingBGType {
     Login_To_Lobby = 4
 }
 
-@ccclass("LoadingPopup")
+@ccclass
 export default class LoadingPopup extends DialogBase {
     // ====================== Cocos 序列化绑定属性 ======================
     @property(cc.Label)
@@ -364,7 +364,7 @@ export default class LoadingPopup extends DialogBase {
      * 异步加载大厅场景 核心方法 (供外部状态类调用)
      */
     public async asyncLoadLobbyScene(sceneName: string): Promise<void> {
-        UserInfo.instance().resetInfoBeforeSceneLoad();
+        // UserInfo.instance().resetInfoBeforeSceneLoad();
         await AsyncHelper.delayWithComponent(0, this);
         
         let blurTime = 0.5;
@@ -425,7 +425,7 @@ export default class LoadingPopup extends DialogBase {
      * @param preProgress 预加载进度占比
      */
     private loadSceneWithProgress(preProgress: number): void {
-        UserInfo.instance().resetInfoBeforeSceneLoad();
+        // UserInfo.instance().resetInfoBeforeSceneLoad();
         cc.log("loadSceneWithProgress ", this._sceneName);
 
         const progressWeight = 1 - preProgress;

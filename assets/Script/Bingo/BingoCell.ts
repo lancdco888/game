@@ -11,7 +11,7 @@ import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import HeroSpineController from "../Slot/HeroSpineController";
 import { Utility } from "../global_utility/Utility";
 
-@ccclass('BingoCell')
+@ccclass
 export default class BingoCell extends cc.Component {
     @property(cc.Label)
     public numberLabel: cc.Label = null;
@@ -85,12 +85,12 @@ export default class BingoCell extends cc.Component {
         // 好友标记类型 - 加载好友头像
         if (cellData.markingType == BingoMarkingType.Friend) {
             this.friendImg.node.active = true;
-            const friendInfo = UserInfo.instance().getFriendSimpleInfo(cellData.friendUid);
-            if (friendInfo) {
-                this.setFriendPicture(friendInfo.picUrl);
-            } else {
-                this.setFriendPicture(friendPicUrl);
-            }
+            // const friendInfo = UserInfo.instance().getFriendSimpleInfo(cellData.friendUid);
+            // if (friendInfo) {
+            //     this.setFriendPicture(friendInfo.picUrl);
+            // } else {
+            //     this.setFriendPicture(friendPicUrl);
+            // }
         }
         // 英雄标记类型 - 加载英雄UI
         else if (cellData.markingType == BingoMarkingType.Hero) {
@@ -116,32 +116,32 @@ export default class BingoCell extends cc.Component {
     // ===================== 加载英雄UI：异步加载英雄预制体 + Spine动画设置 =====================
     public loadHeroUI() {
         const self = this;
-        const heroInfoData = UserInfo.instance().getUserHeroInfo();
-        const heroInfo = heroInfoData.getHeroInfo(heroInfoData.activeHeroID);
+        // const heroInfoData = UserInfo.instance().getUserHeroInfo();
+        // const heroInfo = heroInfoData.getHeroInfo(heroInfoData.activeHeroID);
 
-        if (heroInfo) {
-            // 拼接英雄资源路径
-            const heroResPath = `Hero/${heroInfoData.activeHeroID}_${HeroInfoUIType.Small}`;
-            cc.loader.loadRes(heroResPath, (err, prefab) => {
-                // 节点有效性校验 防止内存泄漏
-                if (!TSUtility.isValid(self)) return;
+        // if (heroInfo) {
+        //     // 拼接英雄资源路径
+        //     const heroResPath = `Hero/${heroInfoData.activeHeroID}_${HeroInfoUIType.Small}`;
+        //     cc.loader.loadRes(heroResPath, (err, prefab) => {
+        //         // 节点有效性校验 防止内存泄漏
+        //         if (!TSUtility.isValid(self)) return;
 
-                if (err) {
-                    // 加载失败 错误上报
-                    const error = new Error(`cc.loader.loadRes fail ${heroResPath}: ${JSON.stringify(err)}`);
-                    FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
-                    return;
-                }
+        //         if (err) {
+        //             // 加载失败 错误上报
+        //             const error = new Error(`cc.loader.loadRes fail ${heroResPath}: ${JSON.stringify(err)}`);
+        //             FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
+        //             return;
+        //         }
 
-                // 实例化英雄UI 并设置Spine愉悦度
-                const heroNode = cc.instantiate(prefab);
-                const heroSpineCom = heroNode.getComponent(HeroSpineController);
-                self.heroPivot.removeAllChildren();
-                self.heroPivot.addChild(heroNode);
-                heroNode.setPosition(cc.Vec2.ZERO);
-                heroSpineCom.setPleasure(heroInfo.rank);
-            });
-        }
+        //         // 实例化英雄UI 并设置Spine愉悦度
+        //         const heroNode = cc.instantiate(prefab);
+        //         const heroSpineCom = heroNode.getComponent(HeroSpineController);
+        //         self.heroPivot.removeAllChildren();
+        //         self.heroPivot.addChild(heroNode);
+        //         heroNode.setPosition(cc.Vec2.ZERO);
+        //         heroSpineCom.setPleasure(heroInfo.rank);
+        //     });
+        // }
     }
 
     // ===================== 按钮点击事件：派发单元格点击消息 =====================

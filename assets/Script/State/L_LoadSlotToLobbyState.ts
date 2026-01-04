@@ -2,7 +2,7 @@
 "use strict";
 
 import State from "../Slot/State";
-import LoadingPopup, { LoadingBGType } from "../../Popup/LoadingPopup/LoadingPopup";
+//import LoadingPopup, { LoadingBGType } from "../../Popup/LoadingPopup/LoadingPopup";
 import SlotManager from "../manager/SlotManager";
 import SDefine from "../global_utility/SDefine";
 
@@ -37,18 +37,18 @@ export default class L_LoadSlotToLobbyState extends State {
         // 获取老虎机管理器的当前区服ID
         SlotManager.Instance.getZoneId();
         // 获取【老虎机→大厅】的专属加载弹窗，加载成功后执行业务逻辑
-        LoadingPopup.getPopup(LoadingBGType.Slot_To_Lobby, this.zoneId, this.zoneName, (isError: boolean, popupIns: LoadingPopup) => {
-            if (!isError) {
-                this.doProcess(popupIns);
-            }
-        });
+        // LoadingPopup.getPopup(LoadingBGType.Slot_To_Lobby, this.zoneId, this.zoneName, (isError: boolean, popupIns: LoadingPopup) => {
+        //     if (!isError) {
+        //         this.doProcess(popupIns);
+        //     }
+        // });
     }
 
     /**
      * 核心业务处理逻辑
      * @param loadingPopup 加载弹窗实例对象
      */
-    public doProcess(loadingPopup: LoadingPopup): void {
+    public doProcess(loadingPopup: any): void {
         const self = this;
         // 设置加载完成的回调函数
         loadingPopup.setOnLoadCompletaFunc(() => {

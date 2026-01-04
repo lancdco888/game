@@ -4,7 +4,7 @@ const { ccclass } = cc._decorator;
 import TSUtility from "./global_utility/TSUtility";
 import SlotBannerItem from "./SlotBannerItem";
 
-@ccclass('LobbySlotBannerItem')
+@ccclass
 export default class LobbySlotBannerItem extends cc.Component {
     // ===================== 私有内部属性 (强类型注解) =====================
     private _info: any = null;
@@ -58,8 +58,8 @@ export default class LobbySlotBannerItem extends cc.Component {
     public playOpenAction(): void { }
 
     // ===================== 核心方法：创建老虎机Banner节点 (✅ Vec2 → Vec3 已替换) =====================
-    public createSlotBanner(prefab: cc.Node, parentNode: cc.Node): SlotBannerItem {
-        const bannerNode = cc.instantiate(prefab);
+    public createSlotBanner(prefab: cc.Node|cc.Prefab, parentNode: cc.Node): SlotBannerItem {
+        const bannerNode = cc.instantiate(prefab) as cc.Node;
         parentNode.addChild(bannerNode);
         bannerNode.setPosition(cc.v3(0, 0, 0)); // ✅ 原cc.v2(0,0) → 改为cc.v3(0,0,0) 完美适配
         return bannerNode.getComponent(SlotBannerItem);

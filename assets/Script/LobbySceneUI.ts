@@ -75,6 +75,8 @@ export default class LobbySceneUI extends cc.Component {
         msgMgr.addListenerTarget(MessageRoutingManager.MSG.LOBBY_OPEN_TOOLTIP, this.openTooltip, this);
         msgMgr.addListenerTarget(MessageRoutingManager.MSG.OPEN_MESSAGE_BOX, this.openMessageBox, this);
         msgMgr.addListenerTarget(MessageRoutingManager.MSG.OPEN_SLOT_ERROR_MESSAGE_BOX, this.openSlotErrorMessageBox, this);
+
+        this.initialize(LobbySceneUIType.LOBBY)
     }
 
     // ===================== 生命周期回调 - ONDESTROY 1:1复刻原逻辑 =====================
@@ -113,7 +115,7 @@ export default class LobbySceneUI extends cc.Component {
         ServiceInfoManager.ARRAY_SHUFFLE_HOT_SLOT = [];
 
         // 刷新奖池信息
-        //await UserInfo.instance().asyncRefreshJackpotInfo(true);
+        await UserInfo.instance().asyncRefreshJackpotInfo(true);
         
         // 重置类型后重新初始化
         const oldType = this._type;

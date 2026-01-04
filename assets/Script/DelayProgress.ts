@@ -5,7 +5,7 @@ const { ccclass, property } = cc._decorator;
  * 核心功能：显示全局阻塞遮罩(禁止所有交互)、显示加载转圈动画、半透明暗层淡入淡出动画、尺寸适配屏幕变化
  * 所有阻塞式操作(弹窗加载/网络请求/资源加载)的遮罩层均由该组件统一管理，全局唯一实例
  */
-@ccclass('DelayProgress')
+@ccclass
 export default class DelayProgress extends cc.Component {
     // ===================== 【序列化属性】与原代码完全一致 (编辑器拖拽赋值，可见可改，属性名无任何修改) =====================
     @property(cc.Node)

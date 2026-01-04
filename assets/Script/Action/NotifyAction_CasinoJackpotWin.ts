@@ -1,3 +1,5 @@
+const { ccclass } = cc._decorator;
+
 import AsyncHelper from "../global_utility/AsyncHelper";
 import TSUtility from "../global_utility/TSUtility";
 import PopupManager from "../manager/PopupManager";
@@ -8,13 +10,16 @@ import UserInfo from "../User/UserInfo";
 import { NotifyType } from "../Notify/NotifyManager";
 import NotifyActionBase from "./NotifyActionBase";
 
-const { ccclass } = cc._decorator;
 
 /** 赌场大奖中奖 通知处理类 - 继承通知基类 */
 @ccclass
 export default class NotifyAction_CasinoJackpotWin extends NotifyActionBase {
     /** 弹窗有效时限 60秒 */
     public LIMIT_TIME: number = 60;
+
+    constructor(){
+        super()
+    }
 
     /** 获取当前通知处理类对应的类型 */
     public getType(): string|number {

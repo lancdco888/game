@@ -2,7 +2,7 @@ const { ccclass, property } = cc._decorator;
 
 import ServerStorageManager, { StorageKeyType } from "../manager/ServerStorageManager";
 
-@ccclass('BingoCellEffect')
+@ccclass
 export default class BingoCellEffect extends cc.Component {
     @property(cc.Node)
     public effectNode: cc.Node = null;

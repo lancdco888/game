@@ -27,28 +27,28 @@ export default class SDefine{
 	}
 	
 	static preInit = function() {
-		if (cc.sys.os != cc.sys.OS_IOS && cc.sys.os != cc.sys.OS_OSX || (e.Mobile_SpineAnimationStart_Flag = true),
-		Utility.isMobileGame() && cc.sys.os == cc.sys.OS_IOS && (e.Mobile_iOS_PurchaseLimit_Flag = true),
-		Utility.isMobileGame()) {
-			var t = Utility.getApplicationVersion()
-			  , n = Utility.getApplicationVersionCode(t)
-			  , o = 0;
-			cc.sys.os == cc.sys.OS_IOS ? o = Utility.getApplicationVersionCode("2.2.1") : cc.sys.os == cc.sys.OS_ANDROID ? o = Utility.getApplicationVersionCode("2.2.1") : cc.sys.os == cc.sys.OS_WINDOWS ? o = Utility.getApplicationVersionCode("2.2.1") : (cc.log("auth V2 not defined minversion"),
-			o = Utility.getApplicationVersionCode("99.99.99")),
-			o <= n && SDefine.setUseMobileAuth2(),
-			cc.sys.os == cc.sys.OS_IOS ? o = Utility.getApplicationVersionCode("2.5.1") : cc.sys.os == cc.sys.OS_ANDROID ? o = Utility.getApplicationVersionCode("2.5.1") : (cc.log("auth V2 not defined minversion"),
-			o = Utility.getApplicationVersionCode("99.99.99"))
-		}
+		// if (cc.sys.os != cc.sys.OS_IOS && cc.sys.os != cc.sys.OS_OSX || (e.Mobile_SpineAnimationStart_Flag = true),
+		// Utility.isMobileGame() && cc.sys.os == cc.sys.OS_IOS && (e.Mobile_iOS_PurchaseLimit_Flag = true),
+		// Utility.isMobileGame()) {
+		// 	var t = Utility.getApplicationVersion()
+		// 	  , n = Utility.getApplicationVersionCode(t)
+		// 	  , o = 0;
+		// 	cc.sys.os == cc.sys.OS_IOS ? o = Utility.getApplicationVersionCode("2.2.1") : cc.sys.os == cc.sys.OS_ANDROID ? o = Utility.getApplicationVersionCode("2.2.1") : cc.sys.os == cc.sys.OS_WINDOWS ? o = Utility.getApplicationVersionCode("2.2.1") : (cc.log("auth V2 not defined minversion"),
+		// 	o = Utility.getApplicationVersionCode("99.99.99")),
+		// 	o <= n && SDefine.setUseMobileAuth2(),
+		// 	cc.sys.os == cc.sys.OS_IOS ? o = Utility.getApplicationVersionCode("2.5.1") : cc.sys.os == cc.sys.OS_ANDROID ? o = Utility.getApplicationVersionCode("2.5.1") : (cc.log("auth V2 not defined minversion"),
+		// 	o = Utility.getApplicationVersionCode("99.99.99"))
+		// }
 	}
 	
 	static setFBInstant_IOS_Shop_Flag = function() {
 		if (Utility.isFacebookInstant()) {
-			var t = FBInstant.getSupportedAPIs()
-			  , n = false;
-              SDefine.contains(t, "payments.purchaseAsync") ? (cc.log("Can Use purchaseAsync"),
-			n = true) : (cc.log("Can not Use purchaseAsync"),
-			n = false),
-			!n && (SDefine.FB_Instant_iOS_Shop_Flag = true)
+			// var t = FBInstant.getSupportedAPIs()
+			//   , n = false;
+            //   SDefine.contains(t, "payments.purchaseAsync") ? (cc.log("Can Use purchaseAsync"),
+			// n = true) : (cc.log("Can not Use purchaseAsync"),
+			// n = false),
+			// !n && (SDefine.FB_Instant_iOS_Shop_Flag = true)
 		}
 	}
 	
@@ -60,31 +60,31 @@ export default class SDefine{
 	}
 	
 	static Init = function() {
-		if (TSUtility.isDevService() && (SDefine.LEAGUE_GAME_INTERVAL = 3600),
-		Utility.isMobileGame()) {
-			var t = Utility.getApplicationVersion()
-			  , n = Utility.getApplicationVersionCode(t)
-			  , a = 0;
-			if (cc.sys.os == cc.sys.OS_IOS ? a = Utility.getApplicationVersionCode("2.3.5") : cc.sys.os == cc.sys.OS_ANDROID ? a = Utility.getApplicationVersionCode("2.3.5") : cc.sys.os == cc.sys.OS_WINDOWS ? a = Utility.getApplicationVersionCode("2.3.1") : (cc.log("Mobile_MultiTouch_OnOff is not defined minversion"),
-			a = Utility.getApplicationVersionCode("99.99.99")),
-			a <= n && (cc.log("Mobile_MultiTouch_OnOff true"),
-			SDefine.Mobile_MultiTouch_OnOff = true),
-			cc.sys.os == cc.sys.OS_IOS && (a = Utility.getApplicationVersionCode("2.2.18")) <= n && (e.Mobile_Use_iOS_Liftoff = true),
-			cc.sys.os == cc.sys.OS_ANDROID && ((a = Utility.getApplicationVersionCode("3.0.8")) <= n && (e.Mobile_Use_AOS_GetSkuInfo = true),
-			n <= (i = Utility.getApplicationVersionCode("3.1.19")) && (SDefine.Mobile_AF_PurchaseLog_Revenue_Rounding = true)),
-			Utility.isMobileGame()) {
-				(a = Utility.getApplicationVersionCode("3.0.38")) <= n && (SDefine.Mobile_Use_Google_CMP = true),
-				a = Utility.getApplicationVersionCode("3.0.42");
-				var i = Utility.getApplicationVersionCode("3.0.51");
-				a <= n && i >= n && (SDefine.Mobile_ShowCMP_At_Start = true),
-				(a = Utility.getApplicationVersionCode("3.0.45")) <= n && (SDefine.Mobile_Use_IAA_DoubleBidding = true),
-				(a = Utility.getApplicationVersionCode("3.0.51")) <= n && (SDefine.IOS_Facebook_ATT_Update = true),
-				(a = Utility.getApplicationVersionCode("3.1.1")) <= n && (SDefine.Mobile_IAP_Renewal = true),
-				(a = Utility.getApplicationVersionCode("3.1.35")) <= n && (SDefine.Mobile_AppLovin_S2S_Impression = true),
-				(a = Utility.getApplicationVersionCode("3.1.50")) <= n && (SDefine.Mobile_AF_PurchaseConnector_Use = true),
-				(a = Utility.getApplicationVersionCode("3.2.1")) <= n && (SDefine.Mobile_Admob_Use = true)
-			}
-		}
+		// if (TSUtility.isDevService() && (SDefine.LEAGUE_GAME_INTERVAL = 3600),
+		// Utility.isMobileGame()) {
+		// 	var t = Utility.getApplicationVersion()
+		// 	  , n = Utility.getApplicationVersionCode(t)
+		// 	  , a = 0;
+		// 	if (cc.sys.os == cc.sys.OS_IOS ? a = Utility.getApplicationVersionCode("2.3.5") : cc.sys.os == cc.sys.OS_ANDROID ? a = Utility.getApplicationVersionCode("2.3.5") : cc.sys.os == cc.sys.OS_WINDOWS ? a = Utility.getApplicationVersionCode("2.3.1") : (cc.log("Mobile_MultiTouch_OnOff is not defined minversion"),
+		// 	a = Utility.getApplicationVersionCode("99.99.99")),
+		// 	a <= n && (cc.log("Mobile_MultiTouch_OnOff true"),
+		// 	SDefine.Mobile_MultiTouch_OnOff = true),
+		// 	cc.sys.os == cc.sys.OS_IOS && (a = Utility.getApplicationVersionCode("2.2.18")) <= n && (e.Mobile_Use_iOS_Liftoff = true),
+		// 	cc.sys.os == cc.sys.OS_ANDROID && ((a = Utility.getApplicationVersionCode("3.0.8")) <= n && (e.Mobile_Use_AOS_GetSkuInfo = true),
+		// 	n <= (i = Utility.getApplicationVersionCode("3.1.19")) && (SDefine.Mobile_AF_PurchaseLog_Revenue_Rounding = true)),
+		// 	Utility.isMobileGame()) {
+		// 		(a = Utility.getApplicationVersionCode("3.0.38")) <= n && (SDefine.Mobile_Use_Google_CMP = true),
+		// 		a = Utility.getApplicationVersionCode("3.0.42");
+		// 		var i = Utility.getApplicationVersionCode("3.0.51");
+		// 		a <= n && i >= n && (SDefine.Mobile_ShowCMP_At_Start = true),
+		// 		(a = Utility.getApplicationVersionCode("3.0.45")) <= n && (SDefine.Mobile_Use_IAA_DoubleBidding = true),
+		// 		(a = Utility.getApplicationVersionCode("3.0.51")) <= n && (SDefine.IOS_Facebook_ATT_Update = true),
+		// 		(a = Utility.getApplicationVersionCode("3.1.1")) <= n && (SDefine.Mobile_IAP_Renewal = true),
+		// 		(a = Utility.getApplicationVersionCode("3.1.35")) <= n && (SDefine.Mobile_AppLovin_S2S_Impression = true),
+		// 		(a = Utility.getApplicationVersionCode("3.1.50")) <= n && (SDefine.Mobile_AF_PurchaseConnector_Use = true),
+		// 		(a = Utility.getApplicationVersionCode("3.2.1")) <= n && (SDefine.Mobile_Admob_Use = true)
+		// 	}
+		// }
 	}
    
 	static InitAfterGetUserInfo = function() {}
@@ -270,7 +270,7 @@ export default class SDefine{
 	static SUBGAMEID_SLOT_JOLLYROGERJACKPOT = "jollyrogerjackpot"
 	static SUBGAMEID_SLOT_HOROSCOPEBLESSINGS = "horoscopeblessings"
 	static SUBGAMEID_SLOT_SUPERNOVABLASTS = "supernovablasts"
-	static SUBGAMEID_SLOT_MONEYSTAX = "moneystax",
+	static SUBGAMEID_SLOT_MONEYSTAX = "moneystax"
 	static SUBGAMEID_SLOT_FORTUNESHRINE = "fortuneshrine"
 	static SUBGAMEID_SLOT_VAMPRESSMANSION = "vampressmansion"
 	static SUBGAMEID_SLOT_VOLCANICTAHITI = "volcanictahiti"
@@ -2346,7 +2346,7 @@ export default class SDefine{
 	static LOBBY_SCENE_SUITE_LOUNGE_NAME = "L_SUITE_Lounge_2024"
 	static HIGHROLLER_ZONEID = 0
 	static LIGHTNING_ZONEID = 0
-	static VIP_LOUNGE_ZONEID = 1
+	static VIP_LOUNGE_ZONEID = 0
 	static SUITE_ZONEID = 1
 	static MAJORROLLER_ZONEID = 1
 	static ASTROROLLER_ZONEID = 2

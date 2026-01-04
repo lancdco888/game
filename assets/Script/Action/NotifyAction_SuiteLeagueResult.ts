@@ -11,9 +11,9 @@ import UserInfo from '../User/UserInfo';
 import { NotifyType } from '../Notify/NotifyManager';
 import NotifyActionBase from './NotifyActionBase';
 
-const { ccclass: ccClass } = cc._decorator;
+const { ccclass } = cc._decorator;
 
-@ccClass('NotifyAction_SuiteLeagueResult')
+@ccclass
 export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
     /**
      * 获取当前通知的类型
@@ -52,13 +52,13 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
         PopupManager.Instance().showBlockingBG(true);
         // 异步刷新收件箱信息
         await UserInfo.instance().asyncRefreshInboxInfo();
-        const userInboxInfo = UserInfo.instance().getUserInboxInfo();
+        // const userInboxInfo = UserInfo.instance().getUserInboxInfo();
 
-        // 判断是否需要展示套装联赛结果弹窗
-        if (!SuiteLeagueManager.instance().isShowResultNotify(userInboxInfo)) {
-            PopupManager.Instance().showBlockingBG(false);
-            return;
-        }
+        // // 判断是否需要展示套装联赛结果弹窗
+        // if (!SuiteLeagueManager.instance().isShowResultNotify(userInboxInfo)) {
+        //     PopupManager.Instance().showBlockingBG(false);
+        //     return;
+        // }
 
         return new Promise<void>((resolve) => {
             SuiteLeagueResultPopup.getPopup((err: any, popup: SuiteLeagueResultPopup) => {
@@ -70,15 +70,15 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
                 }
 
                 if (!TSUtility.isValid(err)) {
-                    const suiteLeagueResultInfo = SuiteLeagueManager.instance().getLatestSuiteLeagueResultInboxInfo(userInboxInfo);
-                    popup.open(suiteLeagueResultInfo);
-                    // 套装联赛结果弹窗关闭回调 - 链式执行后续弹窗逻辑
-                    popup.setCloseCallback(async () => {
-                        await this.showCenturionCliqueInvitePopup();
-                        await this.showInboxPopup(suiteLeagueResultInfo);
-                        this.done();
-                        resolve();
-                    });
+                    // const suiteLeagueResultInfo = SuiteLeagueManager.instance().getLatestSuiteLeagueResultInboxInfo(userInboxInfo);
+                    // popup.open(suiteLeagueResultInfo);
+                    // // 套装联赛结果弹窗关闭回调 - 链式执行后续弹窗逻辑
+                    // popup.setCloseCallback(async () => {
+                    //     await this.showCenturionCliqueInvitePopup();
+                    //     await this.showInboxPopup(suiteLeagueResultInfo);
+                    //     this.done();
+                    //     resolve();
+                    // });
                 } else {
                     resolve();
                 }
@@ -90,30 +90,31 @@ export default class NotifyAction_SuiteLeagueResult extends NotifyActionBase {
      * 展示百夫长帮派邀请弹窗逻辑
      */
     private async showCenturionCliqueInvitePopup(): Promise<void> {
-        const userInboxInfo = UserInfo.instance().getUserInboxInfo();
-        // 判断是否需要展示帮派邀请弹窗
-        if (!CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(userInboxInfo)) {
-            return Promise.resolve();
-        }
+        // const userInboxInfo = UserInfo.instance().getUserInboxInfo();
+        // // 判断是否需要展示帮派邀请弹窗
+        // if (!CenturionCliqueManager.Instance().isShowCenturionCliqueInvitePopup(userInboxInfo)) {
+        //     return Promise.resolve();
+        // }
 
-        return new Promise<void>((resolve) => {
-            PopupManager.Instance().showBlockingBG(true);
-            CenturionCliqueInvitePopup.getPopup((err: any, popup: CenturionCliqueInvitePopup) => {
-                PopupManager.Instance().showBlockingBG(false);
-                if (this.isValidSlotScene() === 0) {
-                    resolve();
-                    return;
-                }
+        // return new Promise<void>((resolve) => {
+        //     PopupManager.Instance().showBlockingBG(true);
+        //     CenturionCliqueInvitePopup.getPopup((err: any, popup: CenturionCliqueInvitePopup) => {
+        //         PopupManager.Instance().showBlockingBG(false);
+        //         if (this.isValidSlotScene() === 0) {
+        //             resolve();
+        //             return;
+        //         }
 
-                if (!TSUtility.isValid(err)) {
-                    const cliqueRewardInfo = CenturionCliqueManager.Instance().getValidCenturionCliqueRewardInboxInfo(userInboxInfo);
-                    popup.openPopup(cliqueRewardInfo);
-                    popup.setCloseCallback(resolve);
-                } else {
-                    resolve();
-                }
-            });
-        });
+        //         if (!TSUtility.isValid(err)) {
+        //             const cliqueRewardInfo = CenturionCliqueManager.Instance().getValidCenturionCliqueRewardInboxInfo(userInboxInfo);
+        //             popup.openPopup(cliqueRewardInfo);
+        //             popup.setCloseCallback(resolve);
+        //         } else {
+        //             resolve();
+        //         }
+        //     });
+        // });
+        return null;
     }
 
     /**
