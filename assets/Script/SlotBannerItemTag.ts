@@ -25,7 +25,7 @@ export const SlotBannerTagType = cc.Enum({
  * SlotBannerItem的标签子组件脚本
  * 负责根据父组件Banner的状态，控制对应标签的显隐
  */
-@ccclass("SlotBannerItemTag")
+@ccclass()
 export default class SlotBannerItemTag extends cc.Component {
     // ===================== 序列化属性（编辑器可拖拽选择标签类型，原JS核心属性） =====================
     @property({

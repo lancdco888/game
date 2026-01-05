@@ -561,9 +561,9 @@ export default class UserInfo extends cc.Component {
     //     NativeUtil.setObjValue_FBCrash("GameId", val);
     // }
 
-    // public getGameId(): string {
-    //     return this._gameId;
-    // }
+    public getGameId(): string {
+        return this._gameId;
+    }
 
     // public setTourneyTierInfo(tier: number, id: number): void {
     //     this._prevTourneyTier = this._tourneyTier;

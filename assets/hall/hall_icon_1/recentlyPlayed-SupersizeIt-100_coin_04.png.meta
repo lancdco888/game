@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d358e2b0-c2e7-4616-89af-91f1da6e0d3e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 26,
+  "height": 24,
+  "platformSettings": {},
+  "subMetas": {
+    "recentlyPlayed-SupersizeIt-100_coin_04": {
+      "ver": "1.0.6",
+      "uuid": "6da77d6c-c6d9-4535-bd20-a5c29f121628",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d358e2b0-c2e7-4616-89af-91f1da6e0d3e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 23,
+      "height": 21,
+      "rawWidth": 26,
+      "rawHeight": 24,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

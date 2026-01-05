@@ -4,7 +4,7 @@ const { ccclass, property } = cc._decorator;
  * 老虎机加载弹窗的子预制体组件
  * 作用：控制老虎机的普通Banner图/高级Banner图/普通边框的显示与隐藏
  */
-@ccclass("LoadingSlotPrefabComponent")
+@ccclass()
 export default class LoadingSlotPrefabComponent extends cc.Component {
     // ====================== Cocos 序列化绑定属性 ======================
     /** 老虎机普通Banner图精灵 */

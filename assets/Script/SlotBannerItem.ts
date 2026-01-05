@@ -21,6 +21,7 @@ import LobbySlotEntryPopup from "./LobbySlotEntryPopup";
 import LobbySlotBannerInfo, { SlotBannerType } from "./LobbySlotBannerInfo";
 import SlotBannerItemTag from "./SlotBannerItemTag";
 import { Utility } from "./global_utility/Utility";
+import SlotBannerInfo from "./SlotBannerInfo";
 
 /**
  * 老虎机Banner项脚本
@@ -44,19 +45,19 @@ export default class SlotBannerItem extends cc.Component {
 
     // ===================== 私有成员变量 =====================
     private _nodeRoot: cc.Node  = null;
-    private _infoScene: any = null;
-    private _infoBanner: LobbySlotBannerInfo | any = null;
+    public _infoScene: any = null;
+    public _infoBanner: LobbySlotBannerInfo | any = null;
     private _funcEntryEvent: Function = this.openEntryPopup.bind(this);
     private _eBannerType: any = SlotBannerType.NONE;
-    private _strSlotID: string = "";
+    public _strSlotID: string = "";
     private _strSceneName: string = "";
     private _strLocation: string = "";
     private _isGotoSlot: boolean = false;
     private _isUseWithDynamicSlot: boolean = true;
-    private _numZoneID: number = SDefine.VIP_LOUNGE_ZONEID;
-    private _arrJackpotType: any[] = [];
-    private _arrTag: SlotBannerItemTag[] = [];
-    private _arrHideTagType: any[] = [];
+    public _numZoneID: number = SDefine.VIP_LOUNGE_ZONEID;
+    public _arrJackpotType: any[] = [];
+    public _arrTag: SlotBannerItemTag[] = [];
+    public _arrHideTagType: any[] = [];
 
     // ===================== 只读属性(getter) 完整还原原JS逻辑 =====================
     get lobbyUI() {
@@ -252,7 +253,7 @@ export default class SlotBannerItem extends cc.Component {
 
     onMouseLeave(): void {}
 
-    async initialize(infoBanner: LobbySlotBannerInfo, bannerType: any = SlotBannerType.NONE): Promise<void> {
+    async initialize(infoBanner: LobbySlotBannerInfo|SlotBannerInfo, bannerType: any = SlotBannerType.NONE): Promise<void> {
         this._eBannerType = bannerType;
         if (!TSUtility.isValid(infoBanner)) {
             this._infoBanner = null;

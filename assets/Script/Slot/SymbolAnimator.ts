@@ -10,10 +10,10 @@ export class AniController {
     @property({ type: cc.Animation })
     public animator: cc.Animation = null;
 
-    @property({ type: cc.String })
+    @property()
     public aniKey: string = "";
 
-    @property({ type: cc.String })
+    @property()
     public clipName: string = "";
 
     @property({ type: cc.AudioClip })
@@ -69,10 +69,10 @@ export class AniController {
 @ccclass
 export default class SymbolAnimator extends StateComponent {
     // ===== 序列化属性 - 原JS @property配置100%复刻，含serializable:true核心配置，缺一不可 =====
-    @property({ type: cc.String })
+    @property()
     public symbolId: string = "";
 
-    @property({ type: cc.String })
+    @property()
     public defaultAniKey: string = "";
 
     @property({

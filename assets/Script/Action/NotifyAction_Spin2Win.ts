@@ -12,7 +12,7 @@ import NotifyActionBase from "./NotifyActionBase";
  * 继承自通知基类，处理【幸运转盘/Spin2Win】相关的全局通知刷新逻辑
  * 负责大厅/老虎机场景的票券数量刷新、状态同步、UI更新
  */
-@ccclass("NotifyAction_Spin2Win")
+@ccclass()
 export default class NotifyAction_Spin2Win extends NotifyActionBase {
     // ===================== 【重写基类方法】获取当前通知类型 =====================
     public getType(): string|number {

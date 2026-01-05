@@ -64,7 +64,7 @@ export class TitleEffect {
  * 负责：大奖金额滚动展示、燃烧状态特效切换、通行证倒计时更新、解锁/锁定动画播放、大奖弹窗触发
  * 与 LobbySlotEntryPopup.ts 强联动，100%还原原JS逻辑，Cocos 2.4.13 TS标准写法
  */
-@ccclass("LobbyTitleEffectSelector")
+@ccclass
 export default class LobbyTitleEffectSelector extends cc.Component {
     // ===================== 【动画常量】原JS内置所有动画名称，一字未改，完全一致 =====================
     private readonly ANIMATION_NAME_JACKPOT_STATE_1 = "Lobby_Jackpot_Ani";

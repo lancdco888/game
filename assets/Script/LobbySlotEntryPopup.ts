@@ -2,7 +2,7 @@ const { ccclass, property } = cc._decorator;
 
 // 导入所有依赖模块，路径与原JS完全一致，无需修改
 import CurrencyFormatHelper from "./global_utility/CurrencyFormatHelper";
-import FireHoseSender from "./FireHoseSender";
+import FireHoseSender, { FHLogType } from "./FireHoseSender";
 import SDefine from "./global_utility/SDefine";
 import TSUtility from "./global_utility/TSUtility";
 import DialogBase, { DialogState } from "./DialogBase";
@@ -29,7 +29,7 @@ import SlotBannerItem from "./SlotBannerItem";
 import LobbyTitleEffectSelector from "./LobbyTitleEffectSelector";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import { Utility } from "./global_utility/Utility";
-import CommonServer from "./Network/CommonServer";
+import CommonServer, { PurchaseEntryReason } from "./Network/CommonServer";
 
 /**
  * 老虎机进入弹窗的类型枚举 - 与原JS完全一致，字符串枚举
@@ -153,23 +153,23 @@ export default class LobbySlotEntryPopup extends DialogBase {
 
     // ===================== 【只读属性(Getter)】100%还原原JS逻辑，无任何改动 =====================
     get isPassableHigh(): boolean {
-        return UserInfo.instance().isPassAbleCasino(SDefine.VIP_LOUNGE_ZONEID, SDefine.VIP_LOUNGE_ZONENAME);
+        return false;//UserInfo.instance().isPassAbleCasino(SDefine.VIP_LOUNGE_ZONEID, SDefine.VIP_LOUNGE_ZONENAME);
     }
 
     get isPassableDynamic(): boolean {
-        return UserInfo.instance().isPassAbleCasino(SDefine.SUITE_ZONEID, SDefine.SUITE_ZONENAME);
+        return false;//UserInfo.instance().isPassAbleCasino(SDefine.SUITE_ZONEID, SDefine.SUITE_ZONENAME);
     }
 
     get numUserLevel(): number {
-        return UserInfo.instance().getUserLevelInfo().level;
+        return 0;//UserInfo.instance().getUserLevelInfo().level;
     }
 
     get numUserVIPLevel(): number {
-        return UserInfo.instance().getUserVipInfo().level;
+        return 0;//UserInfo.instance().getUserVipInfo().level;
     }
 
     get numTotalCoin(): number {
-        return UserInfo.instance().getTotalCoin();
+        return 0;//UserInfo.instance().getTotalCoin();
     }
 
     get nodeTabRoot(): cc.Node | null {
@@ -182,7 +182,7 @@ export default class LobbySlotEntryPopup extends DialogBase {
         cc.loader.loadRes(resPath, (err, prefab) => {
             if (err) {
                 const error = new Error(`cc.loader.loadRes fail ${resPath}: ${JSON.stringify(err)}`);
-                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FireHoseSender.FHLogType.Exception, error));
+                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
                 callback && callback(error, null);
                 return;
             }
@@ -365,31 +365,31 @@ export default class LobbySlotEntryPopup extends DialogBase {
 
         this._updateLoungePassTime = () => {
             const user = UserInfo.instance();
-            const inventory = UserInfo.instance().getItemInventory();
-            if (user.hasVipPassBenefit(SDefine.VIP_LOUNGE_ZONEID, SDefine.VIP_LOUNGE_ZONENAME) === 0 && user.hasMajorRollerFreeTicket()) {
-                const ticket = inventory.getItemsByItemId(SDefine.ITEM_MAJORROLLER_FREETICKET)[0];
-                if (TSUtility.isValid(ticket) && ticket.expireDate <= TSUtility.getServerBaseNowUnixTime()) {
-                    if (self._eType === SlotType.HIGH) self.updateSlotBanner(self._numIndex, SlotType.REGULAR);
-                    self.updateLock();
-                    self._updateLoungePassTime && self.unschedule(self._updateLoungePassTime);
-                    self._updateLoungePassTime = null;
-                }
-            }
+            // const inventory = UserInfo.instance().getItemInventory();
+            // if (user.hasVipPassBenefit(SDefine.VIP_LOUNGE_ZONEID, SDefine.VIP_LOUNGE_ZONENAME) === 0 && user.hasMajorRollerFreeTicket()) {
+            //     const ticket = inventory.getItemsByItemId(SDefine.ITEM_MAJORROLLER_FREETICKET)[0];
+            //     if (TSUtility.isValid(ticket) && ticket.expireDate <= TSUtility.getServerBaseNowUnixTime()) {
+            //         if (self._eType === SlotType.HIGH) self.updateSlotBanner(self._numIndex, SlotType.REGULAR);
+            //         self.updateLock();
+            //         self._updateLoungePassTime && self.unschedule(self._updateLoungePassTime);
+            //         self._updateLoungePassTime = null;
+            //     }
+            // }
             self.updateLock();
         };
 
         this._updateSuitePassTime = () => {
             const user = UserInfo.instance();
-            const inventory = UserInfo.instance().getItemInventory();
-            if (user.hasVipPassBenefit(SDefine.SUITE_ZONEID, SDefine.SUITE_ZONENAME) === 0 && user.hasSuitePass()) {
-                const pass = inventory.getItemsByItemId(SDefine.ITEM_SUITE_PASS)[0];
-                if (TSUtility.isValid(pass) && pass.expireDate <= TSUtility.getServerBaseNowUnixTime()) {
-                    if (self._eType === SlotType.DYNAMIC) self.updateSlotBanner(self._numIndex, SlotType.REGULAR);
-                    self.updateLock();
-                    self._updateSuitePassTime && self.unschedule(self._updateSuitePassTime);
-                    self._updateSuitePassTime = null;
-                }
-            }
+            // const inventory = UserInfo.instance().getItemInventory();
+            // if (user.hasVipPassBenefit(SDefine.SUITE_ZONEID, SDefine.SUITE_ZONENAME) === 0 && user.hasSuitePass()) {
+            //     const pass = inventory.getItemsByItemId(SDefine.ITEM_SUITE_PASS)[0];
+            //     if (TSUtility.isValid(pass) && pass.expireDate <= TSUtility.getServerBaseNowUnixTime()) {
+            //         if (self._eType === SlotType.DYNAMIC) self.updateSlotBanner(self._numIndex, SlotType.REGULAR);
+            //         self.updateLock();
+            //         self._updateSuitePassTime && self.unschedule(self._updateSuitePassTime);
+            //         self._updateSuitePassTime = null;
+            //     }
+            // }
             self.updateLock();
         };
 
@@ -409,36 +409,36 @@ export default class LobbySlotEntryPopup extends DialogBase {
         if (this._eEntryBannerType === SlotBannerType.NONE) {
             const bannerInfo = ServiceSlotDataManager.instance.getSlotBannerInfo(SDefine.VIP_LOUNGE_ZONEID, slotID);
             if (!TSUtility.isValid(bannerInfo)) return 0;
-            this._arrEntrySlotBanner.push(bannerInfo);
+            // this._arrEntrySlotBanner.push(bannerInfo);
             return 0;
         }
 
         const bannerScrollUI = LobbyScene.instance.UI.getLobbyUI(LobbyUIType.BANNER_SCROLL_VIEW);
         if (!TSUtility.isValid(bannerScrollUI)) return 0;
 
-        this._arrNormalSlot = bannerScrollUI.getSlotBannerInfo(SlotBannerType.NORMAL);
-        this._arrDynamicSlot = bannerScrollUI.getSlotBannerInfo(SlotBannerType.DYNAMIC);
+        // this._arrNormalSlot = bannerScrollUI.getSlotBannerInfo(SlotBannerType.NORMAL);
+        // this._arrDynamicSlot = bannerScrollUI.getSlotBannerInfo(SlotBannerType.DYNAMIC);
 
         let targetIndex = -1;
-        const scrollData = Array.from(bannerScrollUI.getScrollViewData());
-        for (let i = 0; i < scrollData.length; i++) {
-            const item = scrollData[i].itemData;
-            if (!TSUtility.isValid(item)) continue;
-            const bannerList = item.arrSlotBanner;
-            if (!TSUtility.isValid(bannerList) || bannerList.length <= 0) continue;
+        // const scrollData = Array.from(bannerScrollUI.getScrollViewData());
+        // for (let i = 0; i < scrollData.length; i++) {
+        //     const item = scrollData[i].itemData;
+        //     if (!TSUtility.isValid(item)) continue;
+        //     const bannerList = item.arrSlotBanner;
+        //     if (!TSUtility.isValid(bannerList) || bannerList.length <= 0) continue;
 
-            for (let j = 0; j < bannerList.length; j++) {
-                const banner = bannerList[j];
-                if (!TSUtility.isValid(banner)) continue;
-                if (banner.isEarlyAccessSlot && !this.isPassableHigh && !(banner.isSupersizeSlot && SupersizeItManager.instance.isHasSupersizeFreeTicket())) continue;
-                if (TSUtility.isDynamicSlot(banner.strSlotID) && !this.isPassableDynamic) continue;
+        //     for (let j = 0; j < bannerList.length; j++) {
+        //         const banner = bannerList[j];
+        //         if (!TSUtility.isValid(banner)) continue;
+        //         if (banner.isEarlyAccessSlot && !this.isPassableHigh && !(banner.isSupersizeSlot && SupersizeItManager.instance.isHasSupersizeFreeTicket())) continue;
+        //         if (TSUtility.isDynamicSlot(banner.strSlotID) && !this.isPassableDynamic) continue;
 
-                this._arrEntrySlotBanner.push(banner);
-                if (item.type === this._eEntryBannerType && banner.strSlotID === slotID) {
-                    targetIndex = this._arrEntrySlotBanner.length - 1;
-                }
-            }
-        }
+        //         this._arrEntrySlotBanner.push(banner);
+        //         if (item.type === this._eEntryBannerType && banner.strSlotID === slotID) {
+        //             targetIndex = this._arrEntrySlotBanner.length - 1;
+        //         }
+        //     }
+        // }
         return targetIndex;
     }
 
@@ -753,7 +753,7 @@ export default class LobbySlotEntryPopup extends DialogBase {
                     EnterCasinoOfferPopup.getPopup(zoneName, (err, popup) => {
                         PopupManager.Instance().showDisplayProgress(false);
                         if (err) return resolve(false);
-                        popup.open(zoneID, zoneName, "", new CommonServer.PurchaseEntryReason(SDefine.P_ENTRYPOINT_VIPLIMITSLOTBANNER, true), true, null);
+                        popup.open(zoneID, zoneName, "", new PurchaseEntryReason(SDefine.P_ENTRYPOINT_VIPLIMITSLOTBANNER, true), true, null);
                         popup.setUnlockHigherBet(true);
                         popup.setCloseCallback(() => {
                             if (popup.isBuyItem()) {

@@ -13,7 +13,7 @@ import NotifyActionBase from "./NotifyActionBase";
  * 继承通知基类，处理【超级奖励/SupersizeIt】的全局通知刷新逻辑
  * 核心特性：分「大厅/老虎机游戏」双场景差异化规则 + 防重复刷新 + 冷却限流 + 中奖用户特权放行
  */
-@ccclass("NotifyAction_SupersizeIt")
+@ccclass()
 export default class NotifyAction_SupersizeIt extends NotifyActionBase {
     // ===================== 私有成员变量 - 初始化值与混淆源码完全一致 =====================
     /** 上一次的票券数量，初始值-1 作为【首次加载】的判断标识 */

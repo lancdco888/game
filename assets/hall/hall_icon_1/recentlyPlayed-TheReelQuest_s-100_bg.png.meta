@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bc5044f2-24a1-45d7-b9ca-7eaa604c039e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 64,
+  "height": 50,
+  "platformSettings": {},
+  "subMetas": {
+    "recentlyPlayed-TheReelQuest_s-100_bg": {
+      "ver": "1.0.6",
+      "uuid": "3b0d651d-a6de-4ae9-a60d-c0ab6b672d36",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bc5044f2-24a1-45d7-b9ca-7eaa604c039e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 62,
+      "height": 47,
+      "rawWidth": 64,
+      "rawHeight": 50,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

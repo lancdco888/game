@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "19b29077-d6fd-4bee-a9f9-8058c1eec09b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 80,
+  "height": 70,
+  "platformSettings": {},
+  "subMetas": {
+    "recentlyPlayed-100_Icon_JiggyPrize_S": {
+      "ver": "1.0.6",
+      "uuid": "2ce39890-9fd6-408c-950f-f4688221ce85",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "19b29077-d6fd-4bee-a9f9-8058c1eec09b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 12,
+      "trimY": 8,
+      "width": 56,
+      "height": 56,
+      "rawWidth": 80,
+      "rawHeight": 70,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -131,7 +131,7 @@ declare const Utility: {
     isMobileGame(): boolean;
 };
 
-@ccclass('HRVSlotService')
+@ccclass
 export default class HRVSlotService extends cc.Component {
     // 单例实例
     private static _instance: HRVSlotService = null;

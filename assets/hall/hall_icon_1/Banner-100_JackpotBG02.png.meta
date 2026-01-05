@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f4a039b0-953a-408a-a6e1-53df578b3458",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 56,
+  "height": 34,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-100_JackpotBG02": {
+      "ver": "1.0.6",
+      "uuid": "0cfcec4e-039e-43ed-a2ff-f1b738636e88",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f4a039b0-953a-408a-a6e1-53df578b3458",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 54,
+      "height": 33,
+      "rawWidth": 56,
+      "rawHeight": 34,
+      "borderTop": 14.5,
+      "borderBottom": 14.5,
+      "borderLeft": 11,
+      "borderRight": 11,
+      "subMetas": {}
+    }
+  }
+}

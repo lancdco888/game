@@ -108,7 +108,7 @@ export class SlotJackpotInfo {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getJackpotForLobbySlot() : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 
-    public isExistJackpotType(e: string): boolean {
+    public isExistJackpotType(e: string|number): boolean {
         return !!this._mapReserveMoney[e];
     }
 
@@ -121,7 +121,7 @@ export class SlotJackpotInfo {
         return t;
     }
 
-    public isProgressiveJackpot(e: string): boolean {
+    public isProgressiveJackpot(e: string|number): boolean {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].isProgressiveJackpot() : (cc.warn("not found jackpot type ", e, " ", this._id), false);
     }
 

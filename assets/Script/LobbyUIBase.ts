@@ -33,7 +33,7 @@ export enum LobbyUIType {
     REWARD_CENTER = "RewardCenter"
 }
 
-@ccclass("LobbyUIBase")
+@ccclass()
 export default class LobbyUIBase extends cc.Component {
     get eType(): LobbyUIType {
         return LobbyUIType.NONE;

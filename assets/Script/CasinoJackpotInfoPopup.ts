@@ -18,7 +18,7 @@ import UserInfo from "./User/UserInfo";
  * 功能：展示赌场大奖投注区间、大奖金额特效、最近中奖玩家信息、中奖金额/游戏/投注/时间、玩家头像加载
  * 与 LobbyTitleEffectSelector.ts 强联动，完美兼容所有前置TS脚本
  */
-@ccclass("CasinoJackpotInfoPopup")
+@ccclass()
 export default class CasinoJackpotInfoPopup extends DialogBase {
     // ===================== 【序列化属性】原JS所有拖拽绑定项，100%还原，2.4.13语法适配 =====================
     @property({ type: cc.Prefab, tooltip: "大奖标题特效预制体(关联LobbyTitleEffectSelector)" })
