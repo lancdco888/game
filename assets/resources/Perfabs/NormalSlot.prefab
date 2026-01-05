@@ -529,8 +529,12 @@
       "__id__": 1
     },
     "_enabled": true,
-    "prefabSmall": null,
-    "prefabLong": null,
+    "prefabSmall": {
+      "__uuid__": "d6e2a24a-f840-4b35-9ad8-99cd6173e5db"
+    },
+    "prefabLong": {
+      "__uuid__": "7cdd4ee8-99a7-4c16-bdd7-5e80b5ebdee3"
+    },
     "nodeSmallBanner_1": {
       "__id__": 4
     },
