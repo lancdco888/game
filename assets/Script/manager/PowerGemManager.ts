@@ -156,7 +156,7 @@ export class PowerGemInfo {
  * 封装宝石系统全部业务逻辑：配置管理、等级映射、品质计算、时效校验、奖励计算、插槽管理、全局状态控制
  * 项目中所有宝石相关逻辑均通过该单例调用，是宝石玩法的核心入口
  */
-@ccclass('PowerGemManager')
+@ccclass()
 export default class PowerGemManager extends cc.Component {
     // ===================== 宝石系统核心配置常量 原数据完全复刻 一字不差 =====================
     public readonly POWER_GEM_LEVEL_DATA = [

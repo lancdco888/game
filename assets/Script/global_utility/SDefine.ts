@@ -2346,7 +2346,7 @@ export default class SDefine{
 	static LOBBY_SCENE_SUITE_LOUNGE_NAME = "L_SUITE_Lounge_2024"
 	static HIGHROLLER_ZONEID = 0
 	static LIGHTNING_ZONEID = 0
-	static VIP_LOUNGE_ZONEID = 0
+	static VIP_LOUNGE_ZONEID = 1
 	static SUITE_ZONEID = 1
 	static MAJORROLLER_ZONEID = 1
 	static ASTROROLLER_ZONEID = 2

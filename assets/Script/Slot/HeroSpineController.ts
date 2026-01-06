@@ -23,7 +23,7 @@ export enum HeroSpineLoopState {
     LOOP = 1
 }
 
-@ccclass('HeroSpineController')
+@ccclass()
 export default class HeroSpineController extends cc.Component {
     // ===================== 编辑器序列化属性 (与原JS完全一致，带强类型) =====================
     @property(MultiNodeActivator)

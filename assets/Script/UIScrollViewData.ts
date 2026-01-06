@@ -5,7 +5,7 @@ const { ccclass, property } = cc._decorator;
  * 通用型核心类 - 为ScrollView的每个子节点统一封装：子项索引、显示尺寸、绑定的业务数据
  * 所有滚动列表的子项脚本均可继承/挂载此类，统一管理数据与尺寸，无业务耦合
  */
-@ccclass('UIScrollViewData')
+@ccclass()
 export default class UIScrollViewData extends cc.Component {
     // ===== 私有核心成员变量 (原代码初始化值+类型 1:1完整保留) =====
     private _numIndex: number = 0;    // 子项在滚动列表中的索引位置

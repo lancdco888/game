@@ -27,7 +27,7 @@ import SlotBannerInfo from "./SlotBannerInfo";
  * 老虎机Banner项脚本
  * 完全还原原JS逻辑，Cocos 2.4.13 TS标准写法
  */
-@ccclass("SlotBannerItem")
+@ccclass()
 export default class SlotBannerItem extends cc.Component {
     // ===================== 序列化属性（拖拽绑定，原JS对应属性） =====================
     @property(cc.Button)

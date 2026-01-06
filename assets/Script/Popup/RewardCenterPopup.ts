@@ -37,7 +37,7 @@ const { ccclass, property } = cc._decorator;
 // 声明全局Utility 兼容原代码调用
 declare const Utility: any;
 
-@ccclass("RewardCenterPopup")
+@ccclass()
 export default class RewardCenterPopup extends DialogBase {
     // 标签切换动画常量
     private readonly ANIMATION_NAME_TAB_MAIN = "BTN_Main_Active_Ani";

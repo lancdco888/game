@@ -25,10 +25,13 @@
     "_components": [
       {
         "__id__": 61
+      },
+      {
+        "__id__": 62
       }
     ],
     "_prefab": {
-      "__id__": 62
+      "__id__": 63
     },
     "_opacity": 255,
     "_color": {
@@ -2329,6 +2332,28 @@
       "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
     },
     "_N$target": null,
+    "_id": ""
+  },
+  {
+    "__type__": "44750mvCwNHjoaPVRRXM0qJ",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "lblPrize": {
+      "__id__": 31
+    },
+    "lblRemainTime": {
+      "__id__": 34
+    },
+    "sprImage": {
+      "__id__": 20
+    },
+    "nodeLoadingBG": {
+      "__id__": 22
+    },
     "_id": ""
   },
   {

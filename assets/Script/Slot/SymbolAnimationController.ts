@@ -9,7 +9,7 @@ import State from "./State";
 import SymbolAnimationModule_Base from "../SymbolAnimationModule_Base";
 import TSUtility from "../global_utility/TSUtility";
 
-@ccclass('SymbolAnimationController')
+@ccclass()
 export default class SymbolAnimationController extends cc.Component {
     // ===================== 编辑器序列化属性 (可视化配置) =====================
     @property(cc.Node)

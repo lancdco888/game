@@ -101,7 +101,7 @@ export default class SlotManager extends cc.Component {
     @property(cc.Node)
     public machineFrameLayer: cc.Node = null;
 
-    @property({ type: Boolean })
+    @property()
     public flagShowFrameBG: boolean = true;
 
     @property(cc.Node)
@@ -122,13 +122,13 @@ export default class SlotManager extends cc.Component {
     @property(cc.Node)
     public cheatObjectLayer: cc.Node = null;
 
-    @property({ type: Number })
+    @property()
     public timeOfSymbolEffect: number = 0;
 
-    @property({ type: Number })
+    @property()
     public loopCountOfSymbolEffect: number = 0;
 
-    @property({ type: [String] })
+    @property()
     public bonusModeList: string[] = [];
 
     @property(cc.Node)

@@ -10,7 +10,7 @@ import UserPromotion from "../User/UserPromotion";
  * 核心功能：校验Jiggy活动是否可用、根据用户等级/VIP获取投注金额上限、判断投注是否超限、刷新活动剩余时间
  * 强联动：UserInfo(用户信息) / UserPromotion(活动配置) / TSUtility(工具类)
  */
-@ccclass("JiggyPrizeManager")
+@ccclass()
 export default class JiggyPrizeManager extends cc.Component {
     // ===================== 【全局单例核心】原JS完整还原，唯一实例，全局调用：JiggyPrizeManager.instance =====================
     private static _instance: JiggyPrizeManager | null = null;
@@ -28,11 +28,12 @@ export default class JiggyPrizeManager extends cc.Component {
      * @returns boolean 活动是否开启/可用
      */
     public isAvailable(): boolean {
-        const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.JiggyPuzzlePromotion.PromotionKeyName);
-        return TSUtility.isValid(promotionInfo) 
-            && promotionInfo.isAvailable() 
-            && promotionInfo.curStage > 0 
-            && UserPromotion.JiggyPuzzlePromotion.isLevelLimit();
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.JiggyPuzzlePromotion.PromotionKeyName);
+        // return TSUtility.isValid(promotionInfo) 
+        //     && promotionInfo.isAvailable() 
+        //     && promotionInfo.curStage > 0 
+        //     //&& UserPromotion.JiggyPuzzlePromotion.isLevelLimit();
+        return true;
     }
 
     /**
@@ -41,22 +42,23 @@ export default class JiggyPrizeManager extends cc.Component {
      * @returns number 投注限额金币数
      */
     public getBettingLimitCoin(): number {
-        // 玩家等级 < 20级 固定限额 27000
-        if (UserInfo.instance().getUserLevelInfo().level < 20) {
-            return 27000;
-        }
+        // // 玩家等级 < 20级 固定限额 27000
+        // if (UserInfo.instance().getUserLevelInfo().level < 20) {
+        //     return 27000;
+        // }
         
-        // 等级≥20级 按VIP等级阶梯限额
-        const userVipInfo = UserInfo.instance().getUserVipInfo();
-        if (userVipInfo.level <= 1) {
-            return 54000;
-        } else if (userVipInfo.level <= 3) {
-            return 108000;
-        } else if (userVipInfo.level <= 5) {
-            return 270000;
-        } else {
-            return 540000;
-        }
+        // // 等级≥20级 按VIP等级阶梯限额
+        // const userVipInfo = UserInfo.instance().getUserVipInfo();
+        // if (userVipInfo.level <= 1) {
+        //     return 54000;
+        // } else if (userVipInfo.level <= 3) {
+        //     return 108000;
+        // } else if (userVipInfo.level <= 5) {
+        //     return 270000;
+        // } else {
+        //     return 540000;
+        // }
+        return 540000;
     }
 
     /**
@@ -73,10 +75,10 @@ export default class JiggyPrizeManager extends cc.Component {
      * 原JS核心逻辑：活动过期后自动停止所有调度任务，无内存泄漏
      */
     public updatePrizeRemainTime(): void {
-        const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.PromotionKeyName);
-        const remainTime = promotionInfo.endDate - TSUtility.getServerBaseNowUnixTime();
-        if (remainTime <= 0) {
+        // const promotionInfo = UserInfo.instance().getPromotionInfo(UserPromotion.PromotionKeyName);
+        // const remainTime = promotionInfo.endDate - TSUtility.getServerBaseNowUnixTime();
+        // if (remainTime <= 0) {
             this.unscheduleAllCallbacks();
-        }
+        // }
     }
 }

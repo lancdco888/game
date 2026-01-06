@@ -32,19 +32,19 @@ export default class LobbyScrollView_Lobby extends LobbyScrollView {
         // 广告横幅 - 大厅首位
         // this.pushBannerData(SlotBannerType.SERVICE_BANNER, ADBannerType.LOBBY_FIRST);
         // 各类业务横幅依次添加
-        this.pushBannerData(SlotBannerType.EARLY_ACCESS, this.getSlotBannerInfo(SlotBannerType.EARLY_ACCESS));
-        this.pushBannerData(SlotBannerType.NEW, this.getSlotBannerInfo(SlotBannerType.NEW));
-        this.pushBannerData(SlotBannerType.SUPERSIZE_IT, this.getSlotBannerInfo(SlotBannerType.SUPERSIZE_IT));
-        this.pushBannerData(SlotBannerType.RECENTLY);
-        this.pushBannerData(SlotBannerType.POWER_GEM);
-        this.pushBannerData(SlotBannerType.HOT, this.getSlotBannerInfo(SlotBannerType.HOT));
+        // this.pushBannerData(SlotBannerType.EARLY_ACCESS, this.getSlotBannerInfo(SlotBannerType.EARLY_ACCESS));
+        // this.pushBannerData(SlotBannerType.NEW, this.getSlotBannerInfo(SlotBannerType.NEW));
+        // this.pushBannerData(SlotBannerType.SUPERSIZE_IT, this.getSlotBannerInfo(SlotBannerType.SUPERSIZE_IT));
+        // this.pushBannerData(SlotBannerType.RECENTLY);
+        // this.pushBannerData(SlotBannerType.POWER_GEM);
+        // this.pushBannerData(SlotBannerType.HOT, this.getSlotBannerInfo(SlotBannerType.HOT));
         // 广告横幅 - 大厅第二位
         //this.pushBannerData(SlotBannerType.SERVICE_BANNER, ADBannerType.LOBBY_SECOND);
-        this.pushBannerData(SlotBannerType.TOURNEY);
-        this.pushBannerData(SlotBannerType.REVAMP, this.getSlotBannerInfo(SlotBannerType.REVAMP));
-        this.pushBannerData(SlotBannerType.REEL_QUEST, this.getSlotBannerInfo(SlotBannerType.REEL_QUEST));
-        // 装饰横幅 - 所有老虎机通用
-        this.pushBannerData(SlotBannerType.DECO, SlotBannerDecoType.ALL_SLOTS);
+        // this.pushBannerData(SlotBannerType.TOURNEY);
+        // this.pushBannerData(SlotBannerType.REVAMP, this.getSlotBannerInfo(SlotBannerType.REVAMP));
+        // this.pushBannerData(SlotBannerType.REEL_QUEST, this.getSlotBannerInfo(SlotBannerType.REEL_QUEST));
+        // // 装饰横幅 - 所有老虎机通用
+        // this.pushBannerData(SlotBannerType.DECO, SlotBannerDecoType.ALL_SLOTS);
 
         // 过滤普通横幅 排除联动横幅已包含的SlotID
         let normalBannerList = Array.from(this.getSlotBannerInfo(SlotBannerType.NORMAL));

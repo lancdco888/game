@@ -14,7 +14,7 @@ const JACKPOT_OFFSET_Y = -16;
  * 大厅热门老虎机Banner列表项 - HOT版本
  * 继承自基础Banner项，拓展HOT标签样式+双布局切换逻辑
  */
-@ccclass('LobbySlotBannerItem_HOT')
+@ccclass()
 export default class LobbySlotBannerItem_HOT extends LobbySlotBannerItem {
     // ===== Cocos序列化属性 =====
     @property({ type: cc.Prefab, displayName: "Banner项预制体" })
