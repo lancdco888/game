@@ -303,7 +303,7 @@ export default class SlotBannerItem extends cc.Component {
             this._arrTag = this.nodeTagRoot.getComponentsInChildren(SlotBannerItemTag);
         }
         this._arrTag.forEach((tag) => {
-            if (!this._arrHideTagType.includes(tag.type)) {
+            if (this._arrHideTagType.includes(tag.type)) {
                 tag.updateTag(this);
             } else {
                 tag.node.active = false;

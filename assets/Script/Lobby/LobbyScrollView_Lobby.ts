@@ -32,7 +32,7 @@ export default class LobbyScrollView_Lobby extends LobbyScrollView {
         // 广告横幅 - 大厅首位
         // this.pushBannerData(SlotBannerType.SERVICE_BANNER, ADBannerType.LOBBY_FIRST);
         // 各类业务横幅依次添加
-        // this.pushBannerData(SlotBannerType.EARLY_ACCESS, this.getSlotBannerInfo(SlotBannerType.EARLY_ACCESS));
+        this.pushBannerData(SlotBannerType.EARLY_ACCESS, this.getSlotBannerInfo(SlotBannerType.EARLY_ACCESS));
         // this.pushBannerData(SlotBannerType.NEW, this.getSlotBannerInfo(SlotBannerType.NEW));
         // this.pushBannerData(SlotBannerType.SUPERSIZE_IT, this.getSlotBannerInfo(SlotBannerType.SUPERSIZE_IT));
         // this.pushBannerData(SlotBannerType.RECENTLY);

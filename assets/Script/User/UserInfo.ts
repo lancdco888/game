@@ -427,6 +427,7 @@ export default class UserInfo extends cc.Component {
         const node = new cc.Node();
         const userInfo = node.addComponent(UserInfo);
         userInfo._userInfo = userInfoData;
+        userInfo._userInfo.userPromotion = new UserPromotion()
         userInfo._accessToken = token;
 
         if (!userData.serverTime) {
@@ -864,13 +865,13 @@ export default class UserInfo extends cc.Component {
         return  this._userInfo!.userPromotion!.getPromotionInfo(key);
     }
 
-    // public removePromotionInfo(key: string): void {
-    //     this._userInfo!.userPromotion!.removePromotion(key);
-    // }
+    public removePromotionInfo(key: string): void {
+        this._userInfo!.userPromotion!.removePromotion(key);
+    }
 
-    // public getItemInventory(): UserInven {
-    //     return this._userInfo!.userInven!;
-    // }
+    public getItemInventory(): UserInven {
+        return this._userInfo!.userInven!;
+    }
 
     // public getUserReelQuestInfo(): UserReelQuestInfo {
     //     return this._userInfo!.userReelQuest!;

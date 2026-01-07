@@ -53,7 +53,3 @@ export default class LobbySlotBannerItem_REEL_QUEST extends LobbySlotBannerItem 
         this.setSlotBannerInfo(this.info.arrSlotBanner[0], this._itemBanner);
     }
 }
-
-// ===================== Cocos Creator 2.4.13 关键兼容配置 【必加】 =====================
-// 解决2.x编辑器识别组件、require导入组件失败的问题，和你之前要求的导出规则一致
-module.exports = LobbySlotBannerItem_REEL_QUEST;

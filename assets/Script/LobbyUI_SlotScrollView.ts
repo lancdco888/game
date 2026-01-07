@@ -70,7 +70,7 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
         this._scaleAdjuster.initRatio(),
         this._nodeScrollViewRoot = this.node.getChildByName(this.SCALE_ADJUSTER_SCROLL_NAME),
         this._numPrevNodeY = this.node.y
-        this.initialize()
+        // this.initialize()
     }
    
     onDestroy() {

@@ -317,7 +317,8 @@ export default class TSUtility {
     }
 
     public static getCommonResourceUrl(): string {
-        return TSUtility._commonResourceURL;
+        // return TSUtility._commonResourceURL;
+        return "https://highrollervegas.akamaized.net/common/";
     }
 
     public static setServiceMode(mode: string): void {

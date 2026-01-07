@@ -38,6 +38,7 @@ import LobbySceneUI from "./LobbySceneUI";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import { LobbySceneUIType } from "./SceneInfo";
 import ConfigManager from "./manager/ConfigManager";
+import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
 //import LobbyUIStartPopupManager from "./StartPopup/LobbyUIStartPopupManager";
 //import LobbyUIStartPopup_ADFreeOffer from "./StartPopup/Popup/LobbyUIStartPopup_ADFreeOffer";
 
@@ -243,6 +244,7 @@ export default class LobbyScene extends cc.Component {
 
                 // 进度条更新 80% - 各类管理器初始化
                 //loadingPopup.setPostProgress(0.8, "Initialize manager ...");
+                
                 PowerGemManager.instance.initialize();
                 TimeBonusManager.instance.initialize();
                 SupersizeItManager.instance.initialize();

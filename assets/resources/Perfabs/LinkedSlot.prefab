@@ -568,7 +568,7 @@
     "_spriteFrame": {
       "__uuid__": "3e29bbbe-4894-4fb5-b871-edecd51bf35b"
     },
-    "_type": 0,
+    "_type": 1,
     "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
@@ -2616,12 +2616,24 @@
       "__id__": 3
     },
     "_enabled": true,
-    "prefab": null,
-    "nodeLeftBanner": null,
-    "nodeRightBanner": null,
-    "lblCenterJackpot": null,
-    "lblLeftJackpot": null,
-    "lblRightJackpot": null,
+    "prefab": {
+      "__uuid__": "7cdd4ee8-99a7-4c16-bdd7-5e80b5ebdee3"
+    },
+    "nodeLeftBanner": {
+      "__id__": 13
+    },
+    "nodeRightBanner": {
+      "__id__": 15
+    },
+    "lblCenterJackpot": {
+      "__id__": 27
+    },
+    "lblLeftJackpot": {
+      "__id__": 58
+    },
+    "lblRightJackpot": {
+      "__id__": 64
+    },
     "_id": ""
   },
   {
@@ -5107,12 +5119,24 @@
       "__id__": 71
     },
     "_enabled": true,
-    "prefab": null,
-    "nodeLeftBanner": null,
-    "nodeRightBanner": null,
-    "lblCenterJackpot": null,
-    "lblLeftJackpot": null,
-    "lblRightJackpot": null,
+    "prefab": {
+      "__uuid__": "7cdd4ee8-99a7-4c16-bdd7-5e80b5ebdee3"
+    },
+    "nodeLeftBanner": {
+      "__id__": 83
+    },
+    "nodeRightBanner": {
+      "__id__": 81
+    },
+    "lblCenterJackpot": {
+      "__id__": 95
+    },
+    "lblLeftJackpot": {
+      "__id__": 126
+    },
+    "lblRightJackpot": {
+      "__id__": 132
+    },
     "_id": ""
   },
   {
@@ -5145,7 +5169,9 @@
       "__id__": 1
     },
     "_enabled": true,
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "7cdd4ee8-99a7-4c16-bdd7-5e80b5ebdee3"
+    },
     "infoLinkedBlue": {
       "__id__": 69
     },

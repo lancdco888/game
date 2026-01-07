@@ -15,6 +15,8 @@ import LobbyScene from "./LobbyScene";
 // import LobbyTutorial from "./LobbyTutorial/LobbyTutorial";
 import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import SceneInfo, { LobbySceneUIType } from "./SceneInfo";
+import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
+import LobbyUI_SlotScrollView from "./LobbyUI_SlotScrollView";
 
 
 // ===================== 枚举定义 - 与原JS完全一致 不可修改 =====================
@@ -92,6 +94,8 @@ export default class LobbySceneUI extends cc.Component {
 
     // ===================== 核心初始化方法 - 异步 完整复刻原逻辑 =====================
     public initialize = async (uiType: LobbySceneUIType): Promise<void> => {
+        await ServiceSlotDataManager.instance.initialize();
+        await LobbyUI_SlotScrollView.Instance.initialize();
         await this.updateSceneInfo(uiType);
 
         // 遍历初始化所有子UI组件

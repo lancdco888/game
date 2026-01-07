@@ -7,6 +7,7 @@ import SupersizeItManager from "./SupersizeItManager";
 import TSUtility from './global_utility/TSUtility';
 import SDefine from './global_utility/SDefine';
 import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
+import SlotBannerInfo from "./SlotBannerInfo";
 
 export var SlotBannerType;
 (function (SlotBannerType) {
@@ -142,7 +143,7 @@ export default class LobbySlotBannerInfo {
 
     getSlotBannerInfoArray() {
         return Array.isArray(this.data) && this.data.every(function (e) {
-            return !TSUtility.isValid(e) ;//|| e instanceof SlotBannerInfo;
+            return !TSUtility.isValid(e) || e instanceof SlotBannerInfo;
         }) ? this.data : [];
     }
 
