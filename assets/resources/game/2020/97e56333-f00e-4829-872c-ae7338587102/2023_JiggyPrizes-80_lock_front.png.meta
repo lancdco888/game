@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "62e60dd4-5ff5-41bf-8e73-eb800e0121f6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 26,
+  "height": 24,
+  "platformSettings": {},
+  "subMetas": {
+    "2023_JiggyPrizes-80_lock_front": {
+      "ver": "1.0.6",
+      "uuid": "74900b1a-5e36-4a18-b66f-0ae2da72d8ee",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "62e60dd4-5ff5-41bf-8e73-eb800e0121f6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 25,
+      "height": 24,
+      "rawWidth": 26,
+      "rawHeight": 24,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

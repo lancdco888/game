@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4b884b02-4abd-496e-bc16-5e7230f7a068",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 64,
+  "height": 16,
+  "platformSettings": {},
+  "subMetas": {
+    "Offer-StepUpChance-80_Txt_1_Add_04": {
+      "ver": "1.0.6",
+      "uuid": "bb8cb510-8d37-4a67-ab2b-b50ba0a76168",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4b884b02-4abd-496e-bc16-5e7230f7a068",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -25,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 14,
+      "height": 16,
+      "rawWidth": 64,
+      "rawHeight": 16,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

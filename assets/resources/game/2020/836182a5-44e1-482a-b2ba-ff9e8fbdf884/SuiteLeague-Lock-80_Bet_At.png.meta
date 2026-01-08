@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "fba9bd23-ee22-4f5e-87f7-dd7cefdc20c8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 18,
+  "platformSettings": {},
+  "subMetas": {
+    "SuiteLeague-Lock-80_Bet_At": {
+      "ver": "1.0.6",
+      "uuid": "0cbd5ae5-1b80-441b-8660-e6b23b0d81dd",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "fba9bd23-ee22-4f5e-87f7-dd7cefdc20c8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 50,
+      "height": 17,
+      "rawWidth": 50,
+      "rawHeight": 18,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

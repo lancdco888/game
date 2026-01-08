@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c8eca451-3992-4cd0-9d4a-eb597e465b02",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 75,
+  "height": 27,
+  "platformSettings": {},
+  "subMetas": {
+    "Offer-JustForYou-80_Ribbond": {
+      "ver": "1.0.6",
+      "uuid": "78f60acc-456e-4a4b-a12f-c377eb1a75bb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c8eca451-3992-4cd0-9d4a-eb597e465b02",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 75,
+      "height": 27,
+      "rawWidth": 75,
+      "rawHeight": 27,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

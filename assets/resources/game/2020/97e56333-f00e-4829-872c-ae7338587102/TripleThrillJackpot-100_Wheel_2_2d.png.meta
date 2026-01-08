@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6fff29c1-7d4a-4a42-bcf0-a2c9ec70131f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 92,
+  "height": 98,
+  "platformSettings": {},
+  "subMetas": {
+    "TripleThrillJackpot-100_Wheel_2_2d": {
+      "ver": "1.0.6",
+      "uuid": "f5232799-f7f1-471d-bf82-7ab5b2bd44c6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6fff29c1-7d4a-4a42-bcf0-a2c9ec70131f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -2.5,
+      "trimX": 4,
+      "trimY": 32,
+      "width": 84,
+      "height": 39,
+      "rawWidth": 92,
+      "rawHeight": 98,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

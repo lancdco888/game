@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7e18c2fd-a852-42c8-a800-5a55d390f059",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 102,
+  "height": 102,
+  "platformSettings": {},
+  "subMetas": {
+    "DailyBlitz-80_hero_level_shadowd": {
+      "ver": "1.0.6",
+      "uuid": "6cc2262d-5fc0-40f9-b1c1-16131aa74808",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7e18c2fd-a852-42c8-a800-5a55d390f059",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 28,
+      "trimX": 34,
+      "trimY": 13,
+      "width": 35,
+      "height": 20,
+      "rawWidth": 102,
+      "rawHeight": 102,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

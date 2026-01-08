@@ -238,8 +238,8 @@ export default class SlotManager extends cc.Component {
 
     get freespinPastCount(): number { return this._freespinPastCount; }
 
-    private get _inGameUI(): any { return this.slotInterface.getInGameInterface(); }
-    private get _spinChangeResult(): any { return this.slotInterface.getSpinChangeResult(); }
+    public get _inGameUI(): any { return this.slotInterface.getInGameInterface(); }
+    public get _spinChangeResult(): any { return this.slotInterface.getSpinChangeResult(); }
 
     get isloungeNewSlot(): boolean { return this._isloungeNewSlot; }
     set setIsloungeNewSlot(val: boolean) { this._isloungeNewSlot = val; }

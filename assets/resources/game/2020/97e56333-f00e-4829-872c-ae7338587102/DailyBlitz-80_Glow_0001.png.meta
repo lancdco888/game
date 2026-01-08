@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c2919a4b-8b09-4a5d-8359-c516730a6bd3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 69,
+  "height": 58,
+  "platformSettings": {},
+  "subMetas": {
+    "DailyBlitz-80_Glow_0001": {
+      "ver": "1.0.6",
+      "uuid": "28bc15be-8864-4be1-810f-de26574b236a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c2919a4b-8b09-4a5d-8359-c516730a6bd3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -18.5,
+      "offsetY": -11,
+      "trimX": 2,
+      "trimY": 27,
+      "width": 28,
+      "height": 26,
+      "rawWidth": 69,
+      "rawHeight": 58,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

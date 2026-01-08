@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d42f14f8-8dff-4683-99c3-5f137e66f6a8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 93,
+  "height": 78,
+  "platformSettings": {},
+  "subMetas": {
+    "HB-80_N_IconB": {
+      "ver": "1.0.6",
+      "uuid": "63d9f0ca-68c4-4122-9d65-263f7f1879e0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d42f14f8-8dff-4683-99c3-5f137e66f6a8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -4,
+      "offsetY": -4,
+      "trimX": 16,
+      "trimY": 17,
+      "width": 53,
+      "height": 52,
+      "rawWidth": 93,
+      "rawHeight": 78,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

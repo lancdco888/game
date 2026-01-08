@@ -10,8 +10,8 @@ import SoundManager from "../manager/SoundManager";
 // ===================== 核心内部类 - TutorialState 完整复刻 (原JS的h类) 教程状态基类 =====================
 export class TutorialState extends cc.Component {
     // 私有成员变量 补全TS类型标注
-    private _tutorialBase: TutorialBase | null = null;
-    private _listData: any[] | null = null;
+    public _tutorialBase: TutorialBase | null = null;
+    public _listData: any[] | null = null;
 
     // 构造函数 接收可变参数 与原JS完全一致
     constructor(...args: any[]) {

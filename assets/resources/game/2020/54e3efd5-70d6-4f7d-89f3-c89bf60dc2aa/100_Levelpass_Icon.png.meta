@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "57159251-4f57-4c69-8d44-56c73d1bea07",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 86,
+  "height": 74,
+  "platformSettings": {},
+  "subMetas": {
+    "100_Levelpass_Icon": {
+      "ver": "1.0.6",
+      "uuid": "ccfa2e56-501a-4e43-8f29-142bb297df38",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "57159251-4f57-4c69-8d44-56c73d1bea07",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 84,
+      "height": 72,
+      "rawWidth": 86,
+      "rawHeight": 74,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

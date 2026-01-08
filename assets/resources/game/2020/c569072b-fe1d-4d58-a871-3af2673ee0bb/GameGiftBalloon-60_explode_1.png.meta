@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ce813fa3-6bc0-46c5-a54c-02e0153e396b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 143,
+  "height": 143,
+  "platformSettings": {},
+  "subMetas": {
+    "GameGiftBalloon-60_explode_1": {
+      "ver": "1.0.6",
+      "uuid": "bc38a38a-24e7-4da3-b0ad-d282cc4fce3f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ce813fa3-6bc0-46c5-a54c-02e0153e396b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 5,
+      "trimY": 5,
+      "width": 133,
+      "height": 133,
+      "rawWidth": 143,
+      "rawHeight": 143,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

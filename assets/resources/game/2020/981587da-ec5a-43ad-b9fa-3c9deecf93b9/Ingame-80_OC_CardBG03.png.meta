@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "351b7bad-02c0-4f2f-8b12-9f91ccf01d0b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 29,
+  "height": 30,
+  "platformSettings": {},
+  "subMetas": {
+    "Ingame-80_OC_CardBG03": {
+      "ver": "1.0.6",
+      "uuid": "ae6e4299-3d81-425f-b815-6bd84dbf2c99",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "351b7bad-02c0-4f2f-8b12-9f91ccf01d0b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 28,
+      "height": 30,
+      "rawWidth": 29,
+      "rawHeight": 30,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

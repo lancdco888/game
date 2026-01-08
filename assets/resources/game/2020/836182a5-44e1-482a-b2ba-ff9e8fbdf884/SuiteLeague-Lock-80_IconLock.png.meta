@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5e8dea3f-fd06-4836-8df1-4bd5ec4e6c90",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 122,
+  "height": 91,
+  "platformSettings": {},
+  "subMetas": {
+    "SuiteLeague-Lock-80_IconLock": {
+      "ver": "1.0.6",
+      "uuid": "b8d1b225-76cf-45fb-a759-1c87bb75b87d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5e8dea3f-fd06-4836-8df1-4bd5ec4e6c90",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 119,
+      "height": 88,
+      "rawWidth": 122,
+      "rawHeight": 91,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

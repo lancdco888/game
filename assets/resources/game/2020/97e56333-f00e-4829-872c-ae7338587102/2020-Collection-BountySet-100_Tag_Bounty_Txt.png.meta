@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7434b2ed-d9fa-49fb-b52d-86b52d1b6ef8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 68,
+  "height": 24,
+  "platformSettings": {},
+  "subMetas": {
+    "2020-Collection-BountySet-100_Tag_Bounty_Txt": {
+      "ver": "1.0.6",
+      "uuid": "de824957-f10e-48c9-8d76-b8e8a8264f5a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7434b2ed-d9fa-49fb-b52d-86b52d1b6ef8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 66,
+      "height": 21,
+      "rawWidth": 68,
+      "rawHeight": 24,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

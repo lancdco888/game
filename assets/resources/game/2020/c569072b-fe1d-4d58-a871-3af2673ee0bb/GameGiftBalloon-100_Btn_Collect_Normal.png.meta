@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "20ea3cf8-e1b2-4565-9faa-12dce590c2e9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 36,
+  "height": 62,
+  "platformSettings": {},
+  "subMetas": {
+    "GameGiftBalloon-100_Btn_Collect_Normal": {
+      "ver": "1.0.6",
+      "uuid": "46b4f9c8-de1b-4daf-aa2e-8f158f238079",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "20ea3cf8-e1b2-4565-9faa-12dce590c2e9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 36,
+      "height": 61,
+      "rawWidth": 36,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "01787e39-7781-4715-9e2f-836ad0215ce1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 106,
+  "height": 26,
+  "platformSettings": {},
+  "subMetas": {
+    "2021-RankGauge-100_Rankup": {
+      "ver": "1.0.6",
+      "uuid": "343a3f38-5299-4e84-b57c-20f7926ba3d6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "01787e39-7781-4715-9e2f-836ad0215ce1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 104,
+      "height": 24,
+      "rawWidth": 106,
+      "rawHeight": 26,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

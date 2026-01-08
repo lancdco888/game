@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ebd444e4-58fb-4578-8ee5-eb96c8e926f5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 29,
+  "platformSettings": {},
+  "subMetas": {
+    "Ingame-SqFx-80_E_Roll_0004": {
+      "ver": "1.0.6",
+      "uuid": "03011203-820a-4554-aa1d-71cd837869f8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ebd444e4-58fb-4578-8ee5-eb96c8e926f5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 20,
+      "trimY": 6,
+      "width": 10,
+      "height": 20,
+      "rawWidth": 50,
+      "rawHeight": 29,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

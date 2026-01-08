@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ddf4e41b-ec03-47a7-b75c-d1a5541b684c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 102,
+  "height": 102,
+  "platformSettings": {},
+  "subMetas": {
+    "TripleThrillJackpot-Fx-80_Wheel_Fx_2": {
+      "ver": "1.0.6",
+      "uuid": "cff42d41-4ef7-466b-8697-8c5e514e964f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ddf4e41b-ec03-47a7-b75c-d1a5541b684c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 4,
+      "trimY": 5,
+      "width": 93,
+      "height": 93,
+      "rawWidth": 102,
+      "rawHeight": 102,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

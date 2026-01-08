@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d791da2d-4069-453d-a179-d306d0e33fcc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 60,
+  "height": 62,
+  "platformSettings": {},
+  "subMetas": {
+    "Coin_Icon-70_Reward_Coins01": {
+      "ver": "1.0.6",
+      "uuid": "81a458bb-f55b-42e4-912e-e7a64b20e64b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d791da2d-4069-453d-a179-d306d0e33fcc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 60,
+      "height": 62,
+      "rawWidth": 60,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

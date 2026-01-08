@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b88e6380-c42f-4147-8b81-dda0294f3ff0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 70,
+  "height": 34,
+  "platformSettings": {},
+  "subMetas": {
+    "DailyBlitz-80_ingame_hero_front": {
+      "ver": "1.0.6",
+      "uuid": "91713a45-30cd-41b6-9a18-fdc7cbc8efc6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b88e6380-c42f-4147-8b81-dda0294f3ff0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 68,
+      "height": 34,
+      "rawWidth": 70,
+      "rawHeight": 34,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

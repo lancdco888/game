@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3e6a93e8-322f-45bb-b5ba-03b686e0a157",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 29,
+  "height": 48,
+  "platformSettings": {},
+  "subMetas": {
+    "HeroPowerUp2X-80_HeroPower2X_Icon_Add": {
+      "ver": "1.0.6",
+      "uuid": "75e97904-eb8a-418f-b051-e39660e94e03",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3e6a93e8-322f-45bb-b5ba-03b686e0a157",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 28,
+      "height": 48,
+      "rawWidth": 29,
+      "rawHeight": 48,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a93811db-f62d-471b-8237-4e1188de2d0a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 56,
+  "height": 18,
+  "platformSettings": {},
+  "subMetas": {
+    "2020-100_PiggyBank_Fatter_Txtd": {
+      "ver": "1.0.6",
+      "uuid": "cb6794d6-a1ee-4c98-bb0c-abc235bd28d4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a93811db-f62d-471b-8237-4e1188de2d0a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 53,
+      "height": 15,
+      "rawWidth": 56,
+      "rawHeight": 18,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

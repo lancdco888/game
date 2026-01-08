@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "81423b6d-5d28-4533-b050-d918a591d474",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 67,
+  "height": 12,
+  "platformSettings": {},
+  "subMetas": {
+    "100_Plate_PRIZE-POOL": {
+      "ver": "1.0.6",
+      "uuid": "51eb2712-e98a-42ac-85f4-d5ae4590213b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "81423b6d-5d28-4533-b050-d918a591d474",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 65,
+      "height": 9,
+      "rawWidth": 67,
+      "rawHeight": 12,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

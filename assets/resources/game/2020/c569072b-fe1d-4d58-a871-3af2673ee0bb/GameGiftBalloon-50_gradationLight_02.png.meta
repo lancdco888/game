@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2f36ecf2-a402-4dfa-a24b-c6bf12f99a65",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 81,
+  "height": 81,
+  "platformSettings": {},
+  "subMetas": {
+    "GameGiftBalloon-50_gradationLight_02": {
+      "ver": "1.0.6",
+      "uuid": "dc7276aa-c9e0-4f38-9f40-7bcaed77f96c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2f36ecf2-a402-4dfa-a24b-c6bf12f99a65",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 81,
+      "height": 81,
+      "rawWidth": 81,
+      "rawHeight": 81,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

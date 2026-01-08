@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8c44e7c2-f196-401a-b643-13ea73530351",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 74,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "Coupon-100_coupon_Lobby": {
+      "ver": "1.0.6",
+      "uuid": "92646ce4-13d3-41f9-9252-3d78c583b4a4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8c44e7c2-f196-401a-b643-13ea73530351",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 72,
+      "height": 39,
+      "rawWidth": 74,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

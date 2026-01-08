@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f17d1ff5-e69c-411e-91eb-0417afa4c810",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 56,
+  "height": 18,
+  "platformSettings": {},
+  "subMetas": {
+    "SuiteLeague-80_Title_2": {
+      "ver": "1.0.6",
+      "uuid": "762acbeb-1aed-42ec-b405-e3a5d3ba838c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f17d1ff5-e69c-411e-91eb-0417afa4c810",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 55,
+      "height": 17,
+      "rawWidth": 56,
+      "rawHeight": 18,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

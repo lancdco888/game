@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "607a7ab4-6a9e-4890-88f8-c668a07b2df6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 90,
+  "height": 72,
+  "platformSettings": {},
+  "subMetas": {
+    "100_CasinoJackpot_Icon": {
+      "ver": "1.0.6",
+      "uuid": "987e1792-8b78-4a77-8498-70bda9019911",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "607a7ab4-6a9e-4890-88f8-c668a07b2df6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 88,
+      "height": 69,
+      "rawWidth": 90,
+      "rawHeight": 72,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

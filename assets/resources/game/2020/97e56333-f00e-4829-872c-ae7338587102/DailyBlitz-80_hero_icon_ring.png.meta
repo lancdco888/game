@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "43374c5c-9801-4dd0-a984-64c3b5b68389",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 102,
+  "height": 102,
+  "platformSettings": {},
+  "subMetas": {
+    "DailyBlitz-80_hero_icon_ring": {
+      "ver": "1.0.6",
+      "uuid": "4c0b5cfd-51fc-4ccd-9288-be2412784f92",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "43374c5c-9801-4dd0-a984-64c3b5b68389",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 14,
+      "trimY": 15,
+      "width": 74,
+      "height": 73,
+      "rawWidth": 102,
+      "rawHeight": 102,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
