@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "30f8eb38-4bb5-4cb0-9b19-da4906e01d7a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 165,
+  "height": 238,
+  "platformSettings": {},
+  "subMetas": {
+    "MiniGame-80_Cheese_1": {
+      "ver": "1.0.6",
+      "uuid": "dde6c843-6791-4918-a66c-e2c8d1b7954e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "30f8eb38-4bb5-4cb0-9b19-da4906e01d7a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 164,
+      "height": 238,
+      "rawWidth": 165,
+      "rawHeight": 238,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

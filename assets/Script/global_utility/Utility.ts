@@ -162,7 +162,7 @@ const Utility = {
         target: cc.Node,
         component: string,
         handler: string,
-        customEventData: string|number = ""
+        customEventData: string|number|any = ""
     ): cc.Component.EventHandler {
         const eventHandler = new cc.Component.EventHandler();
         eventHandler.target = target;

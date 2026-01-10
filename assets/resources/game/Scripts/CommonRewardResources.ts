@@ -6,8 +6,10 @@ import CommonSoundSetter from '../../../Script/global_utility/CommonSoundSetter'
 import TSUtility from '../../../Script/global_utility/TSUtility';
 import HeroManager from '../../../Script/manager/HeroManager';
 import SoundManager from '../../../Script/manager/SoundManager';
+import CommonRewardAction from './CommonRewardAction';
 /** 奖励枚举模块（复用之前定义的枚举） */
 import * as CommonRewardEnum from './CommonRewardEnum';
+import { CommonRewardActionType } from './CommonRewardEnum';
 import CommonRewardNodes from './CommonRewardNodes';
 
 
@@ -228,24 +230,24 @@ export default class CommonRewardResources extends cc.Component {
                             heroKey = CommonRewardEnum.CommonRewardHeroInfo.getHeroName(heroId);
                         }
 
-                        // 获取用户英雄信息
-                        const userHeroInfo = UserInfo.instance().getUserHeroInfo();
-                        if (TSUtility.isValid(heroKey) && heroKey.length > 0 && TSUtility.isValid(userHeroInfo)) {
-                            if (!userHeroInfo.hasHero(heroKey)) {
-                                // 新英雄
-                                prefabName += "_NEW";
-                            } else {
-                                // 已有英雄：判断是否升级
-                                const heroInfo = userHeroInfo.getHeroInfo(heroKey);
-                                const currentRank = heroInfo.rank;
-                                const heroConfig = HeroManager.Instance().getHeroConfig(heroKey);
-                                const newForce = heroInfo.force + rarity;
-                                const newRank = heroConfig.getHeroLevel(newForce);
+                        // // 获取用户英雄信息
+                        // const userHeroInfo = UserInfo.instance().getUserHeroInfo();
+                        // if (TSUtility.isValid(heroKey) && heroKey.length > 0 && TSUtility.isValid(userHeroInfo)) {
+                        //     if (!userHeroInfo.hasHero(heroKey)) {
+                        //         // 新英雄
+                        //         prefabName += "_NEW";
+                        //     } else {
+                        //         // 已有英雄：判断是否升级
+                        //         const heroInfo = userHeroInfo.getHeroInfo(heroKey);
+                        //         const currentRank = heroInfo.rank;
+                        //         const heroConfig = HeroManager.Instance().getHeroConfig(heroKey);
+                        //         const newForce = heroInfo.force + rarity;
+                        //         const newRank = heroConfig.getHeroLevel(newForce);
 
-                                // 升级/战力提升后缀
-                                prefabName += currentRank !== newRank ? "_RANK_UP" : "_FORCE_CHARGE";
-                            }
-                        }
+                        //         // 升级/战力提升后缀
+                        //         prefabName += currentRank !== newRank ? "_RANK_UP" : "_FORCE_CHARGE";
+                        //     }
+                        // }
                     }
                     break;
 
@@ -317,7 +319,7 @@ export default class CommonRewardResources extends cc.Component {
      * 获取移动根节点
      * @returns 移动根节点
      */
-    public getMoveRoot(): Node | null {
+    public getMoveRoot(): cc.Node | null {
         return this.nodeMoveRoot;
     }
 }

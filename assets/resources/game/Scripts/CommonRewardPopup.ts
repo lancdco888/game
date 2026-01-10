@@ -362,50 +362,50 @@ export default class CommonRewardPopup extends DialogBase {
      * @returns 奖励信息处理器实例
      */
     private getRewardInfo(rewardInfo: any): RewardInfo {
-        // 无配置时返回默认处理器
-        if (!TSUtility.isValid(rewardInfo)) {
-            return new CommonRewardInfo_Normal();
-        }
+        // // 无配置时返回默认处理器
+        // if (!TSUtility.isValid(rewardInfo)) {
+        //     return new CommonRewardInfo_Normal();
+        // }
 
-        // 根据配置类型返回对应处理器
-        if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_SingleResult, rewardInfo)) {
-            return new CommonRewardInfo_SingleResult();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_DailyStamp, rewardInfo)) {
-            return new CommonRewardInfo_DailyStamp();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_InBox, rewardInfo)) {
-            return new CommonRewardInfo_Inbox();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_SuiteLeagueShop, rewardInfo)) {
-            return new CommonRewardInfo_SuiteLeagueShop();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_StarAlbumShop, rewardInfo)) {
-            return new CommonRewardInfo_StarAlbumShop();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_ReelQuest, rewardInfo)) {
-            return new CommonRewardInfo_ReelQuest();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_ShareReward, rewardInfo)) {
-            return new CommonRewardInfo_ShareReward();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_DailyBlitz, rewardInfo)) {
-            return new CommonRewardInfo_DailyBlitz();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_DailyBlast, rewardInfo)) {
-            return new CommonRewardInfo_DailyBlast();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_SlotCardPackReward, rewardInfo)) {
-            return new CommonRewardInfo_SlotCardPackReward();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_LevelUpPass, rewardInfo)) {
-            return new CommonRewardInfo_LevelUpPass();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_PowerGem, rewardInfo)) {
-            return new CommonRewardInfo_PowerGem();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_RewardCenterTimeBonus, rewardInfo)) {
-            return new CommonRewardInfo_RewardCenterTimeBonus();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_WelcomeBack, rewardInfo)) {
-            return new CommonRewardInfo_WelcomeBack();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_Spin2Win, rewardInfo)) {
-            return new CommonRewardInfo_Spin2Win();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_HyperBounty, rewardInfo)) {
-            return new CommonRewardInfo_HyperBounty();
-        } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_Club_Reward, rewardInfo)) {
-            return new CommonRewardInfo_ClubReward();
-        } else {
-            // 默认返回普通奖励处理器
-            return new CommonRewardInfo_Normal();
-        }
+        // // 根据配置类型返回对应处理器
+        // if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_SingleResult, rewardInfo)) {
+        //     return new CommonRewardInfo_SingleResult();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_DailyStamp, rewardInfo)) {
+        //     return new CommonRewardInfo_DailyStamp();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_InBox, rewardInfo)) {
+        //     return new CommonRewardInfo_Inbox();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_SuiteLeagueShop, rewardInfo)) {
+        //     return new CommonRewardInfo_SuiteLeagueShop();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_StarAlbumShop, rewardInfo)) {
+        //     return new CommonRewardInfo_StarAlbumShop();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_ReelQuest, rewardInfo)) {
+        //     return new CommonRewardInfo_ReelQuest();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_ShareReward, rewardInfo)) {
+        //     return new CommonRewardInfo_ShareReward();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_DailyBlitz, rewardInfo)) {
+        //     return new CommonRewardInfo_DailyBlitz();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_DailyBlast, rewardInfo)) {
+        //     return new CommonRewardInfo_DailyBlast();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_SlotCardPackReward, rewardInfo)) {
+        //     return new CommonRewardInfo_SlotCardPackReward();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_LevelUpPass, rewardInfo)) {
+        //     return new CommonRewardInfo_LevelUpPass();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_PowerGem, rewardInfo)) {
+        //     return new CommonRewardInfo_PowerGem();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_RewardCenterTimeBonus, rewardInfo)) {
+        //     return new CommonRewardInfo_RewardCenterTimeBonus();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_WelcomeBack, rewardInfo)) {
+        //     return new CommonRewardInfo_WelcomeBack();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_Spin2Win, rewardInfo)) {
+        //     return new CommonRewardInfo_Spin2Win();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_HyperBounty, rewardInfo)) {
+        //     return new CommonRewardInfo_HyperBounty();
+        // } else if (this.checkRewardInfoType(CommonRewardPopupInfo.CommonRewardPopupInfo_Club_Reward, rewardInfo)) {
+        //     return new CommonRewardInfo_ClubReward();
+        // } else {
+        //     // 默认返回普通奖励处理器
+        //     return new CommonRewardInfo_Normal();
+        // }
     }
 
     /**

@@ -51,15 +51,15 @@ export default class CameraControl extends cc.Component {
     private nOriginalUpYZoomInPosition: number = 836;
     private nOriginalUpYBottomPosition: number = 476;
 
-    private currentDefaultPosition: cc.Vec2 = cc.v2(0, 0);
-    private eStateOfCameraPosition: CameraPositionState = CameraPositionState.Down;
-    private bFlagSwipe: boolean = true;
-    private _scrollAction: cc.Action = null;
+    public currentDefaultPosition: cc.Vec2 = cc.v2(0, 0);
+    public eStateOfCameraPosition: CameraPositionState = CameraPositionState.Down;
+    public bFlagSwipe: boolean = true;
+    public _scrollAction: cc.Action = null;
 
-    private onStartScrollUp: Function = null;
-    private onStartScrollDown: Function = null;
-    private callbackScrollUp: Function = null;
-    private callbackScrollDown: Function = null;
+    public onStartScrollUp: Function = null;
+    public onStartScrollDown: Function = null;
+    public callbackScrollUp: Function = null;
+    public callbackScrollDown: Function = null;
 
     private bFlagZoom: boolean = true;
     private eStateOfChangeZoomRatio: CameraZoomState = CameraZoomState.ZoomIn;

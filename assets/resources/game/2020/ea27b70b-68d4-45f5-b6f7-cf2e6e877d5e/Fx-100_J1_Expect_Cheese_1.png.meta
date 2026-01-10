@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "965f5166-81b3-4e0d-b875-f8eb0ba46384",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 64,
+  "height": 56,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-100_J1_Expect_Cheese_1": {
+      "ver": "1.0.6",
+      "uuid": "fc90b14c-7528-49de-b408-a2d04168ee6a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "965f5166-81b3-4e0d-b875-f8eb0ba46384",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 62,
+      "height": 54,
+      "rawWidth": 64,
+      "rawHeight": 56,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

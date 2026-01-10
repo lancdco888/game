@@ -81,7 +81,7 @@ export default class PrizeSymbol_MoooreCheddar extends cc.Component {
      * 通过高符号信息设置符号内容
      * @param highSymbolInfo [奖励金额, Jackpot子ID, 预留, 倍数]
      */
-    public SetSymbolInfoByHighSymbol(highSymbolInfo: [number, number, any, number]): void {
+    public SetSymbolInfoByHighSymbol(highSymbolInfo: [number, number, any, number]|any): void {
         this.initialize();
 
         // 设置奖励金额

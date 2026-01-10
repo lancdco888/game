@@ -1,13 +1,25 @@
 import HRVSlotService from "../../../Script/HRVService/HRVSlotService";
+import LobbyUI_Bankroll from "../../../Script/Lobby/LobbyUI_Bankroll";
+import LobbyUI_Coupon from "../../../Script/Lobby/LobbyUI_Coupon";
+import LobbyUI_Hero from "../../../Script/Lobby/LobbyUI_Hero";
+import LobbyUI_LevelBooster from "../../../Script/Lobby/LobbyUI_LevelBooster";
+import LobbyUI_Profile from "../../../Script/Lobby/LobbyUI_Profile";
 import LobbyScene from "../../../Script/LobbyScene";
 import { LobbyUIType } from "../../../Script/LobbyUIBase";
 import ServiceInfoManager from "../../../Script/ServiceInfoManager";
+import TutorialCoinPromotion from "../../../Script/TutorialCoinPromotion";
 import UserInfo from "../../../Script/User/UserInfo";
 import SDefine from "../../../Script/global_utility/SDefine";
 import TSUtility from "../../../Script/global_utility/TSUtility";
 import PowerGemManager from "../../../Script/manager/PowerGemManager";
 import SlotGameRuleManager from "../../../Script/manager/SlotGameRuleManager";
 import AnimationButton from "./AnimationButton";
+import CommonRewardInGameHeroIcon from "./CommonRewardInGameHeroIcon";
+import InGameBankRollPromotionUI from "./InGameBankRollPromotionUI";
+import InGameHeroUI from "./InGameHeroUI";
+import InGameUI_Bankroll from "./InGameUI_Bankroll";
+import LevelInfoUI_2020 from "./LevelInfoUI_2020";
+import LobbyUI_StarAlbum from "./LobbyUI_StarAlbum";
 
 const { ccclass, property } = cc._decorator;
 
@@ -60,27 +72,27 @@ export default class CommonRewardNodes extends cc.Component {
 
     // ===================== 私有属性（UI实例缓存） =====================
     /** 游戏内英雄收集战力组件 */
-    private _inGameHeroCollectForce: CommonRewardInGameHeroIcon | null = null;
+    private _inGameHeroCollectForce: CommonRewardInGameHeroIcon = null;
     /** 大厅星册UI实例 */
-    private _lobbyStarAlbum: LobbyUI_StarAlbum | null = null;
+    private _lobbyStarAlbum: LobbyUI_StarAlbum = null;
     /** 大厅英雄UI实例 */
-    private _lobbyHero: LobbyUI_Hero | null = null;
+    private _lobbyHero: LobbyUI_Hero = null;
     /** 大厅银行roll UI实例 */
-    private _lobbyBankroll: LobbyUI_Bankroll | null = null;
+    private _lobbyBankroll: LobbyUI_Bankroll = null;
     /** 大厅优惠券UI实例 */
-    private _lobbyCoupon: LobbyUI_Coupon | null = null;
+    private _lobbyCoupon: LobbyUI_Coupon  = null;
     /** 大厅个人资料UI实例 */
-    private _lobbyProfile: LobbyUI_Profile | null = null;
+    private _lobbyProfile: LobbyUI_Profile  = null;
     /** 大厅等级Booster UI实例 */
-    private _lobbyLevelBooster: LobbyUI_LevelBooster | null = null;
+    private _lobbyLevelBooster: LobbyUI_LevelBooster  = null;
     /** 游戏内银行roll UI实例 */
-    private _inGameBankroll: InGameUI_Bankroll | null = null;
+    private _inGameBankroll: InGameUI_Bankroll = null;
     /** 游戏内星册UI实例 */
     private _inGameStarAlbum: { node: cc.Node; setCardPackCntLabel: (count: number) => void; playActiveStarAlbumAni: () => void } | null = null;
     /** 游戏内个人资料节点 */
-    private _inGameProfile: Node | null = null;
+    private _inGameProfile: cc.Node | null = null;
     /** 游戏内等级Booster UI实例 */
-    private _inGameLevelBooster: LevelInfoUI_2020 | null = null;
+    private _inGameLevelBooster: LevelInfoUI_2020 = null;
 
     // ===================== 核心控制方法 =====================
     /**
@@ -286,12 +298,12 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 银行roll UI节点
      */
-    public activeBankrollUI(isActive: boolean): Node | null {
+    public activeBankrollUI(isActive: boolean): cc.Node | null {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (!TSUtility.isValid(this._lobbyBankroll)) {
                 // 获取大厅银行roll UI并克隆
-                const lobbyBankrollUI = LobbyScene.instance.UI.getLobbyUI(LobbyUIType.BANKROLL);
+                const lobbyBankrollUI = LobbyScene.instance.UI.getLobbyUI(LobbyUIType.BANKROLL) as any;
                 lobbyBankrollUI.hideAllButton();
                 const cloneNode = this.createCloneNode(lobbyBankrollUI.node, this.node);
                 this._lobbyBankroll = cloneNode.getComponent(LobbyUI_Bankroll);
@@ -323,7 +335,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 优惠券图标节点
      */
-    public activeBankrollCouponUI(isActive: boolean): Node | null {
+    public activeBankrollCouponUI(isActive: boolean): cc.Node | null {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (TSUtility.isValid(this._lobbyCoupon)) {
@@ -351,7 +363,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 个人资料UI节点
      */
-    public activeProfileUI(isActive: boolean): Node | null {
+    public activeProfileUI(isActive: boolean): cc.Node | null {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (!TSUtility.isValid(this._lobbyProfile)) {
@@ -393,7 +405,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param value Booster数值
      * @returns 等级Booster UI节点
      */
-    public activeLevelBoosterUI(isActive: boolean, value: number): Node | null {
+    public activeLevelBoosterUI(isActive: boolean, value: number): cc.Node | null {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (TSUtility.isValid(this._lobbyLevelBooster)) {
@@ -419,7 +431,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 英雄UI节点
      */
-    public activeHeroUI(isActive: boolean): Node | null {
+    public activeHeroUI(isActive: boolean): cc.Node | null {
         // 先隐藏游戏内英雄图标
         if (TSUtility.isValid(this.nodeInGameHeroIcon)) {
             this.nodeInGameHeroIcon.node.active = false;

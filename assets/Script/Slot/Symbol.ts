@@ -34,6 +34,10 @@ export default class Symbol extends cc.Component {
     @property({ type: Number })
     public customDimmA: number = -1;
 
+    constructor(){
+        super()
+    }
+
     // ===== 生命周期回调 - onLoad 原逻辑为空，严格保留空方法 =====
     onLoad(): void { }
 
@@ -87,7 +91,7 @@ export default class Symbol extends cc.Component {
     }
 
     // ===== 递归子节点颜色变更 - 原逻辑完全复刻，含所有组件类型/龙骨特殊处理，核心方法 =====
-    searchAllChildNodeChangeColor(targetNode: cc.Node, targetColor: cc.Color, delay: number, isDimmActive: boolean): void {
+    searchAllChildNodeChangeColor(targetNode: cc.Node, targetColor: cc.Color|any, delay: number, isDimmActive: boolean): void {
         void 0 === delay && (delay = 0);
         void 0 === isDimmActive && (isDimmActive = false);
 

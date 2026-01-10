@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4dbc1fe1-d557-48d0-98b8-df81d5881787",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 220,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "MiniGame-100_Result_1More_Pick": {
+      "ver": "1.0.6",
+      "uuid": "219d7eef-8feb-47f1-aaa5-8a5f08cd7e64",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4dbc1fe1-d557-48d0-98b8-df81d5881787",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 219,
+      "height": 41,
+      "rawWidth": 220,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

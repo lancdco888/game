@@ -17,17 +17,17 @@ export default class SlotGameRuleManager extends cc.Component {
     private _symbols: { [key: string]: any } = {};
     private _rules: { [key: string]: any } = {};
     public _subGames: { [key: string]: SubGame } = {};
-    private _listPayline: PayLines[] = [];
-    private _zoneBetPerLines: number[] | null = null;
+    public _listPayline: PayLines[] = [];
+    public _zoneBetPerLines: number[] | null = null;
     public _maxBetLine: number = 0;
     public _featureTotalBetRate100: number = 0;
     public _currentBetPerLine: number = 0;
     public _currentBetEllipsisCount: number = 0;
-    private _maxBetPerLine: number = 0;
-    private _currentBetMoney: number = 0;
-    private _defaultSubGame: string = "";
-    private _flagLockIncreaseBetMoneyUpperGuideBetPerLine: boolean = false;
-    private _guideBetPerLine: number = 0;
+    public _maxBetPerLine: number = 0;
+    public _currentBetMoney: number = 0;
+    public _defaultSubGame: string = "";
+    public _flagLockIncreaseBetMoneyUpperGuideBetPerLine: boolean = false;
+    public _guideBetPerLine: number = 0;
     public observers: any[] = [];
 
     public static Instance: SlotGameRuleManager = null;

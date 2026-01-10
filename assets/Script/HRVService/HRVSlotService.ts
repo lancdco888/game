@@ -158,7 +158,7 @@ export default class HRVSlotService extends cc.Component {
         openSlotStartPopup: () => Promise<void>;
         bigwinCoinTarget: cc.Node;
         starAlbumUI: { init: (value: number) => void };
-        heroUI: { init: () => void };
+        heroUI: any;
         setStateBlockInput: (block: boolean) => void;
         setADSFreePopup: () => void;
         checkB2BUI: () => void;

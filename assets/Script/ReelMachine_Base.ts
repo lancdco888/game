@@ -238,7 +238,7 @@ export default class ReelMachine_Base extends cc.Component {
     }
 
     // ===================== 核心状态方法 - 普通旋转(升级版) 带请求耗时日志 + 旋转时间控制 =====================
-    public getNormalSpinReelStateRenewal(spinRequestTime: any): SequencialState {
+    public getNormalSpinReelStateRenewal(spinRequestTime?: any): SequencialState {
         const self = this;
         const seqState = new SequencialState();
         let idx = 0;
@@ -262,7 +262,7 @@ export default class ReelMachine_Base extends cc.Component {
     }
 
     // ===================== 核心状态方法 - 免费旋转(升级版) 带旋转时间控制 =====================
-    public getFreeSpinReelStateRenewal(spinRequestTime: any): SequencialState {
+    public getFreeSpinReelStateRenewal(spinRequestTime?: any): SequencialState {
         const seqState = new SequencialState();
         const concurState = new ConcurrentState();
 

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c743a19a-f659-4fb6-921d-d333d0f7a45e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 35,
+  "platformSettings": {},
+  "subMetas": {
+    "Mask-70_Mask_SuperWin01": {
+      "ver": "1.0.6",
+      "uuid": "5c416e2f-f58f-4cb9-ae70-60107265b688",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c743a19a-f659-4fb6-921d-d333d0f7a45e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 256,
+      "height": 35,
+      "rawWidth": 256,
+      "rawHeight": 35,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

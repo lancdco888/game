@@ -19,6 +19,7 @@ import { Utility } from "../../../Script/global_utility/Utility";
 import PopupManager from "../../../Script/manager/PopupManager";
 import PowerGemManager from "../../../Script/manager/PowerGemManager";
 import SoundManager from "../../../Script/manager/SoundManager";
+import { CommonRewardButtonType, CommonRewardTitleInfo, CommonRewardTitleType } from "./CommonRewardEnum";
 import CommonRewardPopup from "./CommonRewardPopup";
 import { PowerGemSlotOpenType } from "./PowerGemSlotPopup";
 
@@ -301,7 +302,7 @@ export default class PowerGemSlotPopup_Main extends cc.Component {
 
             // 移动端/FB小游戏且广告就绪时显示广告按钮
             if ((!Utility.isFacebookInstant() && !Utility.isMobileGame()) || 
-                (Utility.isReadyRewardedAD() && adSlotIndex)) {
+                (adSlotIndex)) {
                 this.btnAD.node.active = adSlotIndex;
             }
         }
@@ -710,14 +711,14 @@ export default class PowerGemSlotPopup_Main extends cc.Component {
                     this._changeResult.key,
                     new CommonRewardTitleInfo({ title: CommonRewardTitleType.SCORE_GOT_ONE }),
                     CommonRewardButtonType.NONE,
-                    new CommonRewardPopupInfo_PowerGem()
+                    null// new CommonRewardPopupInfo_PowerGem()
                 );
 
                 // 设置弹窗关闭回调
                 popup.setCloseCallback(() => {
                     // 刷新卡牌包数量UI
                     if (UserInfo.instance().getCurrentSceneMode() === SDefine.Slot && TSUtility.isValid(HRVSlotService.instance().getInGameUI())) {
-                        HRVSlotService.instance().getInGameUI().starAlbumUI.refreshCardPackCntUI();
+                        // HRVSlotService.instance().getInGameUI().starAlbumUI.refreshCardPackCntUI();
                     }
 
                     // 重置收集状态

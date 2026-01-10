@@ -1,26 +1,8 @@
+import UserInfo from "../../../Script/User/UserInfo";
+import HeroManager from "../../../Script/manager/HeroManager";
+
 const { ccclass } = cc._decorator;
 
-// ===================== 外部依赖类型声明（实际项目中替换为真实import） =====================
-/** UserInfo模块类型声明 */
-declare const UserInfo: {
-    instance(): {
-        getUserHeroInfo(): {
-            getHeroInfo(heroId: number): {
-                rank: number;
-                force: number;
-            } | null;
-        };
-    };
-};
-
-/** HeroManager模块类型声明 */
-declare const HeroManager: {
-    Instance(): {
-        getHeroConfig(heroId: number): {
-            getHeroLevel(force: number): number;
-        };
-    };
-};
 
 /** TSUtility模块类型声明 */
 declare const TSUtility: {
@@ -216,22 +198,23 @@ export class CommonRewardHeroInfo {
      * @returns true=升级，false=未升级/英雄信息无效
      */
     public static isHeroRankUp(heroId: number, addForce: number): boolean {
-        // 获取用户英雄信息
-        const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(heroId);
+        // // 获取用户英雄信息
+        // const heroInfo = UserInfo.instance().getUserHeroInfo().getHeroInfo(heroId);
         
-        // 空值保护：英雄信息无效直接返回false
-        if (!TSUtility.isValid(heroInfo) || heroInfo === null) {
-            return false;
-        }
+        // // 空值保护：英雄信息无效直接返回false
+        // if (!TSUtility.isValid(heroInfo) || heroInfo === null) {
+        //     return false;
+        // }
 
-        // 获取当前英雄等级和配置
-        const currentRank = heroInfo.rank;
-        const heroConfig = HeroManager.Instance().getHeroConfig(heroId);
-        const newForce = heroInfo.force + addForce;
-        const newRank = heroConfig.getHeroLevel(newForce);
+        // // 获取当前英雄等级和配置
+        // const currentRank = heroInfo.rank;
+        // const heroConfig = HeroManager.Instance().getHeroConfig(heroId);
+        // const newForce = heroInfo.force + addForce;
+        // const newRank = heroConfig.getHeroLevel(newForce);
 
-        // 判断等级是否变化
-        return currentRank !== newRank;
+        // // 判断等级是否变化
+        // return currentRank !== newRank;
+        return false;
     }
 }
 

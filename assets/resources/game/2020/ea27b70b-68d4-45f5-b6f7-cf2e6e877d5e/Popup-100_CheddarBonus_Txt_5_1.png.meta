@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "65d71d6b-c048-4c0b-9eb0-f3d8ffa16d4f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 226,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "Popup-100_CheddarBonus_Txt_5_1": {
+      "ver": "1.0.6",
+      "uuid": "afe70870-f4b4-404e-b3f6-b0782fe89f92",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "65d71d6b-c048-4c0b-9eb0-f3d8ffa16d4f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 225,
+      "height": 42,
+      "rawWidth": 226,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

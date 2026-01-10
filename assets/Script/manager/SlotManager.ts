@@ -23,6 +23,9 @@ import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import AsyncHelper from "../global_utility/AsyncHelper";
 import CameraControl from "../Slot/CameraControl";
 import ViewResizeManager from "../global_utility/ViewResizeManager";
+import BottomUI_EX2 from "../../resources/game/Scripts/BottomUI_EX2";
+import BottomUI from "../../resources/game/Scripts/BottomUI";
+import BottomUIText from "../../resources/game/Scripts/BottomUIText";
 
 // ===================== 核心枚举定义 - 100%保留原值+键名，无任何修改 ✅ =====================
 /** 老虎机特殊模式类型 */
@@ -137,13 +140,14 @@ export default class SlotManager extends cc.Component {
     // ===================== 【私有成员变量】海量属性 - 补全精准TS类型注解，默认值完全保留 ✅ =====================
     private curState: State = null;
     public isSkipCurrentSpin: boolean = false;
+    public bottomUIText:BottomUIText = null;
     private flagPlayingSubgame: boolean = false;
-    private flagSpinRequest: boolean = false;
+    public flagSpinRequest: boolean = false;
     private timeStampSendSpinRequest: number = 0;
     private timeStampRecvSpinRequest: number = 0;
     private slotViewSetting: SlotViewSettingInfo | null = null;
-    private _bottomUI: any = null;
-    private bottomUiInstance: any = null;
+    public _bottomUI: BottomUI_EX2 = null;
+    public bottomUiInstance: any = null;
     private _slotInterface: any = null;
     private _userInfoInterface: any = null;
     private _bottomUIInterface: any = null;
@@ -159,8 +163,8 @@ export default class SlotManager extends cc.Component {
     private _cheatComponent: any = null;
     private spinEndTime: number = 0;
     public _freespinTotalCount: number = 0;
-    private _freespinPastCount: number = 0;
-    private _freespinMultiplier: number = 0;
+    public _freespinPastCount: number = 0;
+    public _freespinMultiplier: number = 0;
     private _zoneId: number = 0;
     private _zoneName: string = "";
     private _reelSpinTexts: any[] = [];
@@ -183,31 +187,36 @@ export default class SlotManager extends cc.Component {
     public background_scale_component: any = null;
 
     // ===================== 【资源常量】中奖弹窗/分享图片名称 - 100%原值保留，不可修改 ✅ =====================
-    public readonly bannerImgNameMinorWin: string = "slot-win-super-191115.jpg";
-    public readonly bannerImgNameBigwin: string = "slot-win-big-191115.jpg";
-    public readonly bannerImgNameSuperwin: string = "slot-win-huge-191115.jpg";
-    public readonly bannerImgNameMegawin: string = "slot-win-mega-191115.jpg";
-    public readonly respinShareImgName: string = "";
-    public readonly bonusShareImgName: string = "slot-bonus-game-191115.jpg";
-    public readonly freespinShareImgName: string = "slot-free-spins-191115.jpg";
-    public readonly jackpotmodeShareImgName: string = "slot-jackpot-mode-191115.jpg";
-    public readonly jackpotMiniShareImgName: string = "slot-jackpot-mini-191115.jpg";
-    public readonly jackpotMinorShareImgName: string = "slot-jackpot-minor-191115.jpg";
-    public readonly jackpotMajorShareImgName: string = "slot-jackpot-major-191115.jpg";
-    public readonly jackpotMegaShareImgName: string = "slot-jackpot-mega-191115.jpg";
-    public readonly jackpotGrandShareImgName: string = "slot-jackpot-grand-191115.jpg";
-    public readonly jackpotCommonShareImgName: string = "slot-jackpot-common-191115.jpg";
-    public readonly lockandrollShareImgName: string = "slot-locknroll-191115.jpg";
+    public bannerImgNameMinorWin: string = "slot-win-super-191115.jpg";
+    public bannerImgNameBigwin: string = "slot-win-big-191115.jpg";
+    public bannerImgNameSuperwin: string = "slot-win-huge-191115.jpg";
+    public bannerImgNameMegawin: string = "slot-win-mega-191115.jpg";
+    public respinShareImgName: string = "";
+    public bonusShareImgName: string = "slot-bonus-game-191115.jpg";
+    public freespinShareImgName: string = "slot-free-spins-191115.jpg";
+    public jackpotmodeShareImgName: string = "slot-jackpot-mode-191115.jpg";
+    public jackpotMiniShareImgName: string = "slot-jackpot-mini-191115.jpg";
+    public jackpotMinorShareImgName: string = "slot-jackpot-minor-191115.jpg";
+    public jackpotMajorShareImgName: string = "slot-jackpot-major-191115.jpg";
+    public jackpotMegaShareImgName: string = "slot-jackpot-mega-191115.jpg";
+    public jackpotGrandShareImgName: string = "slot-jackpot-grand-191115.jpg";
+    public jackpotCommonShareImgName: string = "slot-jackpot-common-191115.jpg";
+    public lockandrollShareImgName: string = "slot-locknroll-191115.jpg";
 
-    public readonly TOOLTIP_MINIMUM_BET = "TOOLTIP_MINIMUM_BET";
-    public readonly TOOLTIP_SUITE_LEAGUE = "TOOLTIP_SUITE_LEAGUE";
-    public readonly TOOLTIP_FEVER_MODE = "TOOLTIP_FEVER_MODE";
+    public TOOLTIP_MINIMUM_BET = "TOOLTIP_MINIMUM_BET";
+    public TOOLTIP_SUITE_LEAGUE = "TOOLTIP_SUITE_LEAGUE";
+    public TOOLTIP_FEVER_MODE = "TOOLTIP_FEVER_MODE";
 
     prevPortrait: boolean;
     public _special_select_cell: any;
-    private _special_ignore_symbolId: any;
-    private _listSlotTooltip: any;
-    private _symbol_width: number;
+    public _special_ignore_symbolId: any;
+    public _listSlotTooltip: any;
+    public _symbol_width: number;
+    static reelMachine: any;
+
+    constructor(){
+        super()
+    }
 
     // ===================== TS原生访问器(Get/Set) - 替换原JS Object.defineProperty 1:1精准复刻 =====================
     get bottomUI(): any { return this._bottomUI; }
@@ -1369,7 +1378,7 @@ export default class SlotManager extends cc.Component {
     }
 
     // ===================== 获取滚轮旋转开始状态 =====================
-    getReelSpinStartState(subGameKey: any): SequencialState {
+    getReelSpinStartState(subGameKey?: any): SequencialState {
         const seq = new SequencialState();
         let idx = 0;
         seq.insert(idx++, SlotManager.Instance.reelMachine.getPreSpinUsingNextSubGameKeyState(subGameKey));

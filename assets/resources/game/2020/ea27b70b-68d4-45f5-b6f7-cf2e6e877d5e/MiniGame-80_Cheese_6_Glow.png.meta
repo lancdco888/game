@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "357db88e-4dc4-4df0-a455-55bf18b520fb",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 59,
+  "height": 48,
+  "platformSettings": {},
+  "subMetas": {
+    "MiniGame-80_Cheese_6_Glow": {
+      "ver": "1.0.6",
+      "uuid": "a8b88be4-3666-4699-b968-c1726f98ff12",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "357db88e-4dc4-4df0-a455-55bf18b520fb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 59,
+      "height": 48,
+      "rawWidth": 59,
+      "rawHeight": 48,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

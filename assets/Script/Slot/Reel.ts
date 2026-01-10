@@ -59,7 +59,7 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 核心初始化方法 - 符号数组填充/节点挂载/坐标设置，原逻辑完全复刻，含所有冗余判断 =====
-    invalidate(symbolIds: number[], startIdx: number, reelCol: number, winSymbols: any, specialSymbols?: any): void {
+    invalidate(symbolIds: number[], startIdx: number, reelCol: number, winSymbols?: any, specialSymbols?: any): void {
         this.reelCol = reelCol;
         this.visibleRow;
         this.bufferRow;

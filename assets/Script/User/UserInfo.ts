@@ -324,7 +324,7 @@ export interface ExceptionAuthInfo {
 }
 
 // ===================== 常量枚举定义 =====================
-const enum MSG {
+export enum MSG {
     UPDATE_ASSET = "UPDATE_ASSET",
     UPDATE_VIP_POINT = "UPDATE_VIPPOINT",
     UPDATE_SHOP_VIP = "UPDATE_SHOP_VIP",
@@ -645,12 +645,12 @@ export default class UserInfo extends cc.Component {
     //     this._firstPurchaseState = 0;
     // }
 
-    // public getServerChangeResult(data: any): any {
-    //     const res = CommonServer.getServerChangeResult(data);
-    //     const reward = RewardResult.parse(data.changeResult, res);
-    //     UserInfo.instance()!.addRewardResult(reward);
-    //     return res;
-    // }
+    public getServerChangeResult(data: any): any {
+        const res = CommonServer.getServerChangeResult(data);
+        const reward = RewardResult.parse(data.changeResult, res);
+        // UserInfo.instance()!.addRewardResult(reward);
+        return res;
+    }
 
     // public getExceptionAuthInfo(): ExceptionAuthInfo {
     //     if (!this._exceptionAuthInfo) {
@@ -694,7 +694,9 @@ export default class UserInfo extends cc.Component {
     //     }
     // }
 
-    // public applyChangeResult(changeResult: any): void {
+    public applyChangeResult(changeResult: any): void {
+        
+    }
     //     let addVipExp = 0;
     //     for (const vip of changeResult.vipHist) addVipExp += vip.addExp;
     //     if (addVipExp > 0) this.addUserVipPoint(addVipExp);
@@ -897,9 +899,9 @@ export default class UserInfo extends cc.Component {
     //     return this._userInfo!.userAssetInfo!.paidCoin;
     // }
 
-    // public getUserLevelInfo(): LevelInfo {
-    //     return this._userInfo!.userMasterInfo!.levelInfo;
-    // }
+    public getUserLevelInfo(): LevelInfo {
+        return this._userInfo!.userMasterInfo!.levelInfo;
+    }
 
     // public getUserVipInfo(): VipInfo {
     //     return this._userInfo!.userMasterInfo!.vipInfo;
@@ -979,9 +981,9 @@ export default class UserInfo extends cc.Component {
     //     this._userInfo!.collectEnableCnt = val;
     // }
 
-    // public getUserInboxMainShopMessageCount(): number {
-    //     return this._userInfo!.userInboxMainShopCnt;
-    // }
+    public getUserInboxMainShopMessageCount(): number {
+        return this._userInfo!.userInboxMainShopCnt;
+    }
 
     // public setUserInboxMainShopMessageCnt(val: number): void {
     //     this._userInfo!.userInboxMainShopCnt = val;
@@ -1195,10 +1197,10 @@ export default class UserInfo extends cc.Component {
     //     this._eventEmitter!.emit(MSG.RELEASE_BETTINGLOCK);
     // }
 
-    // public changeUserProfilePicUrl(val: string): void {
-    //     this._userInfo!.userMasterInfo!.picUrl = val;
-    //     this._eventEmitter!.emit(MSG.UPDATE_PICTURE);
-    // }
+    public changeUserProfilePicUrl(val: string): void {
+        this._userInfo!.userMasterInfo!.picUrl = val;
+        this._eventEmitter!.emit(MSG.UPDATE_PICTURE);
+    }
 
     // public hasMajorRollerFreeTicket(): boolean {
     //     return UserInfo.instance()!.getItemInventory().getItemsByItemId(SDefine.ITEM_MAJORROLLER_FREETICKET).length >0;
@@ -1271,9 +1273,9 @@ export default class UserInfo extends cc.Component {
     //     return info.curCore;
     // }
 
-    // public getUserHeroInfo(): UserHeroInfo | null {
-    //     return this._userHeroInfo;
-    // }
+    public getUserHeroInfo(): UserHeroInfo | null {
+        return this._userHeroInfo;
+    }
 
     // public changeActiveHero(heroId: number): boolean {
     //     if (this._userHeroInfo!.changeActiveHero(heroId) ===0) {
@@ -1285,16 +1287,16 @@ export default class UserInfo extends cc.Component {
     //     return true;
     // }
 
-    // public addHeroExp(heroId: number, exp: number): void {
-    //     const isNew = this._userHeroInfo!.hasHero(heroId) ===0;
-    //     const oldLevel = this._userHeroInfo!.getHeroLevel(heroId);
-    //     this._userHeroInfo!.addHeroExp(heroId, exp);
-    //     const newLevel = this._userHeroInfo!.getHeroLevel(heroId);
+    public addHeroExp(heroId: any, exp: number): void {
+        const isNew = !this._userHeroInfo!.hasHero(heroId);
+        const oldLevel = this._userHeroInfo!.getHeroLevel(heroId);
+        this._userHeroInfo!.addHeroExp(heroId, exp);
+        const newLevel = this._userHeroInfo!.getHeroLevel(heroId);
         
-    //     this._eventEmitter!.emit(MSG.UPDATE_HERO_EXPUP);
-    //     if (oldLevel !== newLevel) this._eventEmitter!.emit(MSG.UPDATE_HERO_RANKUP, heroId);
-    //     if (isNew) this._eventEmitter!.emit(MSG.ADD_NEW_HERO, heroId);
-    // }
+        this._eventEmitter!.emit(MSG.UPDATE_HERO_EXPUP);
+        if (oldLevel !== newLevel) this._eventEmitter!.emit(MSG.UPDATE_HERO_RANKUP, heroId);
+        if (isNew) this._eventEmitter!.emit(MSG.ADD_NEW_HERO, heroId);
+    }
 
     public isPassAbleCasino(zoneId: number, zoneName: string, slotId: string = ""): boolean {
         // if (this.hasVipPassBenefit(zoneId, zoneName)) return true;
@@ -1351,17 +1353,17 @@ export default class UserInfo extends cc.Component {
         return this._currentSceneMode;
     }
 
-    // public addListenerTarget(event: string, cb: Function, target: any): void {
-    //     this._eventEmitter!.on(event, cb, target);
-    // }
+    public addListenerTarget(event: string, cb: Function, target: any): void {
+        this._eventEmitter!.on(event, cb, target);
+    }
 
-    // public removeListenerTarget(event: string, cb: Function, target: any): void {
-    //     this._eventEmitter!.off(event, cb, target);
-    // }
+    public removeListenerTarget(event: string, cb: Function, target: any): void {
+        this._eventEmitter!.off(event, cb, target);
+    }
 
-    // public removeListenerTargetAll(target: any): void {
-    //     this._eventEmitter!.targetOff(target);
-    // }
+    public removeListenerTargetAll(target: any): void {
+        this._eventEmitter!.targetOff(target);
+    }
 
     // public pingSchedule(): void {
     //     this.asyncRequestPing();
@@ -1560,9 +1562,9 @@ export default class UserInfo extends cc.Component {
         // this.setUserHeroInfo(res.userHero);
     }
 
-    // public setUserHeroInfo(data: any): void {
-    //     this._userHeroInfo = UserHeroInfo.parse(data);
-    // }
+    public setUserHeroInfo(data: any): void {
+        this._userHeroInfo = UserHeroInfo.parse(data);
+    }
 
     public async asyncRefreshInboxInfo(): Promise<void> {
         const res = await CommonServer.Instance().asyncRequestInboxInfo(this.getUid(), this.getAccessToken());
@@ -3004,7 +3006,11 @@ export default class UserInfo extends cc.Component {
     // }
 
     // // ===================== 账号绑定相关异步方法 =====================
-    // public async checkAndAccountLinkFacebook(): Promise<boolean> {
+    public async checkAndAccountLinkFacebook(): Promise<boolean> {
+        return new Promise(()=>{
+            
+        })
+    }
     //     try {
     //         const uid = ServiceInfoManager.instance().getUid();
     //         LoadingPopup.default.Instance().showDisplayProgress(true);

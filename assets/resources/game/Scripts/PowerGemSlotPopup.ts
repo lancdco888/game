@@ -11,6 +11,9 @@ import PowerGemManager, { PowerGemGradeType } from "../../../Script/manager/Powe
 import ServerStorageManager, { StorageKeyType } from "../../../Script/manager/ServerStorageManager";
 import PowerGemInfoPopup from "./PowerGemInfoPopup";
 import PowerGemSlotItem from "./PowerGemSlotItem";
+import PowerGemSlotPopup_Main from "./PowerGemSlotPopup_Main";
+import PowerGemSlotPopup_Tutorial from "./PowerGemSlotPopup_Tutorial";
+import PowerGemSlotPopup_Upgrade from "./PowerGemSlotPopup_Upgrade";
 
 const { ccclass, property } = cc._decorator;
 

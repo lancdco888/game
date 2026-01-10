@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "33fc6c2f-61dc-474b-877d-9f4a565e7926",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 42,
+  "height": 29,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-80_Cheese_Shadow_2": {
+      "ver": "1.0.6",
+      "uuid": "9441f23f-4737-48a3-b9b6-57607d91b5ec",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "33fc6c2f-61dc-474b-877d-9f4a565e7926",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 40,
+      "height": 28,
+      "rawWidth": 42,
+      "rawHeight": 29,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
