@@ -16,7 +16,7 @@ export enum CameraPositionState {
     Down = 2
 }
 
-@ccclass
+@ccclass()
 export default class CameraControl extends cc.Component {
     // ====== 序列化属性 (原JS的@property配置，保持序列化能力) ======
     @property([cc.Node])
