@@ -87,7 +87,7 @@ export default class BingoResultPopup extends DialogBase {
     @property(cc.Node)
     public prizeBlastIcon: cc.Node = null;
 
-    @property(MultiNodeActivator)
+    @property()
     public bingoExtraCoinIcon: MultiNodeActivator = null;
 
     @property(OneBingoResult)

@@ -1,5 +1,3 @@
-// 导入Cocos核心模块
-import { _decorator, Component, Node, Action, Sequence, CallFunc, DelayTime, Repeat, RepeatForever, Vec2, director, ccclass } from 'cc';
 // 导入项目业务模块（请根据实际项目路径调整）
 import SlotManager from './manager/SlotManager';
 import State from './Slot/State';
@@ -31,7 +29,7 @@ export default class SubGameStateManager_Base {
     /** 符号名称列表 */
     public symbolNameList: string[] = [];
     /** 单行支付线动画action */
-    public actionSingleLine: Action | null = null;
+    public actionSingleLine: cc.Action = null;
     /** 特殊奖金前的金币倍增系数 */
     public increaseMoneyMultiplierBeforePlaySpecialWin: number = 8;
     /** 子游戏流程映射 */
@@ -150,7 +148,7 @@ export default class SubGameStateManager_Base {
                     const bigWinEffect = SlotManager.Instance.getComponent(GameComponents_Base).effectBigWinNew;
                     const increaseTime = SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect;
 
-                    const increaseAction = CallFunc(() => {
+                    const increaseAction = cc.callFunc(() => {
                         SlotSoundController.Instance().playAudio("IncrementCoin", "FXLoop");
                         SlotManager.Instance.bottomUIText.playChangeWinMoney(
                             0, 
@@ -162,7 +160,7 @@ export default class SubGameStateManager_Base {
                         SlotManager.Instance.setMouseDragEventFlag(false);
                     });
 
-                    const winEffectAction = CallFunc(() => {
+                    const winEffectAction = cc.callFunc(() => {
                         const effectDuration = bigWinEffect.playWinEffect(
                             totalWin, 
                             bet, 
@@ -182,7 +180,7 @@ export default class SubGameStateManager_Base {
                         );
                     });
 
-                    SlotManager.Instance.node.runAction(Sequence(increaseAction, DelayTime(increaseTime), winEffectAction));
+                    SlotManager.Instance.node.runAction(cc.sequence(increaseAction, cc.delayTime(increaseTime), winEffectAction));
                 } else {
                     SlotSoundController.Instance().playAudio("IncrementCoin", "FXLoop");
                     SlotManager.Instance.bottomUIText.setWinMoney(0);
@@ -250,7 +248,7 @@ export default class SubGameStateManager_Base {
                     tempTarget = startMoney + 0.3 * (targetMoney - startMoney);
                 }
 
-                const increaseAction = CallFunc(() => {
+                const increaseAction = cc.callFunc(() => {
                     SlotSoundController.Instance().playAudio("IncrementCoin", "FXLoop");
                     SlotManager.Instance.bottomUIText.playChangeWinMoney(
                         startMoney,
@@ -262,7 +260,7 @@ export default class SubGameStateManager_Base {
                     SlotManager.Instance.setMouseDragEventFlag(false);
                 });
 
-                const winEffectAction = CallFunc(() => {
+                const winEffectAction = cc.callFunc(() => {
                     const effectDuration = bigWinEffect.playWinEffect(
                         targetMoney,
                         bet,
@@ -284,7 +282,7 @@ export default class SubGameStateManager_Base {
                     );
                 });
 
-                SlotManager.Instance.node.runAction(Sequence(increaseAction, DelayTime(increaseTime), winEffectAction));
+                SlotManager.Instance.node.runAction(cc.sequence(increaseAction, cc.delayTime(increaseTime), winEffectAction));
             } else {
                 SlotSoundController.Instance().playAudio("IncrementCoin", "FXLoop");
                 SlotManager.Instance.bottomUIText.setWinMoney(0);
@@ -469,7 +467,7 @@ export default class SubGameStateManager_Base {
             if (lineCount !== 0) {
                 let isFirstPlaySound = false;
 
-                const lineEffectAction = CallFunc(function(this: SubGameStateManager_Base) {
+                const lineEffectAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                     const payLine = payOutResults[index].payLine;
                     
                     // 绘制支付线
@@ -539,9 +537,9 @@ export default class SubGameStateManager_Base {
                 self.stopSingleLineAction();
                 
                 // 循环播放单行特效
-                self.actionSingleLine = RepeatForever(Sequence(
+                self.actionSingleLine = cc.repeatForever(cc.sequence(
                     lineEffectAction,
-                    DelayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect)
+                    cc.delayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect)
                 ));
                 
                 SlotManager.Instance.node.runAction(self.actionSingleLine);
@@ -593,9 +591,9 @@ export default class SubGameStateManager_Base {
                 }
             }
 
-            const symbolEffectAction = CallFunc(function(this: SubGameStateManager_Base) {
+            const symbolEffectAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                 const symbolId = symbolList[symbolIndex];
-                const winPosList: Vec2[] = [];
+                const winPosList: cc.Vec2[] = [];
                 
                 // 停止所有符号动画
                 SymbolAnimationController.Instance.stopAllAnimationSymbol();
@@ -628,7 +626,7 @@ export default class SubGameStateManager_Base {
                                 const row = payOutResults[i].winningCell[j][0];
                                 const cell = new Cell(col, row);
                                 cellList.push(cell);
-                                winPosList.push(new Vec2(col, row));
+                                winPosList.push(new cc.Vec2(col, row));
                                 if (col + 1 > maxCol) maxCol = col + 1;
                             }
                         } else {
@@ -638,7 +636,7 @@ export default class SubGameStateManager_Base {
                                     const cell = new Cell(j, row - 1);
                                     if (!isCellExist(cell)) {
                                         cellList.push(cell);
-                                        winPosList.push(new Vec2(j, row - 1));
+                                        winPosList.push(new cc.Vec2(j, row - 1));
                                     }
                                     if (j + 1 > maxCol) maxCol = j + 1;
                                 }
@@ -688,9 +686,9 @@ export default class SubGameStateManager_Base {
             self.stopSingleLineAction();
             
             // 循环播放符号特效
-            self.actionSingleLine = RepeatForever(Sequence(
+            self.actionSingleLine = cc.repeatForever(cc.sequence(
                 symbolEffectAction,
-                DelayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect)
+                cc.delayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect)
             ));
             
             SlotManager.Instance.node.runAction(self.actionSingleLine);
@@ -732,7 +730,7 @@ export default class SubGameStateManager_Base {
      */
     public checkPaylineRenderer(): void {
         if (SlotManager.Instance.paylineRenderer == null) {
-            const children = director.getScene().children;
+            const children = cc.director.getScene().children;
             for (let i = 0; i < children.length; ++i) {
                 SlotManager.Instance.paylineRenderer = children[i].getComponentInChildren(v2_PayLineRenderer);
                 if (SlotManager.Instance.paylineRenderer != null) {
@@ -800,7 +798,7 @@ export default class SubGameStateManager_Base {
                 }
 
                 let currentLine = 0;
-                const drawLineAction = CallFunc(function(this: SubGameStateManager_Base) {
+                const drawLineAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                     if (currentLine >= payOutResults.length) return;
                     
                     // 找到有效支付线
@@ -816,13 +814,13 @@ export default class SubGameStateManager_Base {
                 }.bind(self));
 
                 // 重复绘制所有支付线
-                const repeatAction = Repeat(Sequence(drawLineAction, DelayTime(0.05)), lineCount);
-                const completeAction = CallFunc(function(this: SubGameStateManager_Base) {
+                const repeatAction = cc.repeat(cc.sequence(drawLineAction, cc.delayTime(0.05)), lineCount);
+                const completeAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                     state.setDone();
                 }.bind(self));
 
                 if (repeatAction != null) {
-                    SlotManager.Instance.node.runAction(Sequence(repeatAction, DelayTime(0.2), completeAction));
+                    SlotManager.Instance.node.runAction(cc.sequence(repeatAction, cc.delayTime(0.2), completeAction));
                 } else {
                     state.setDone();
                 }
@@ -912,7 +910,7 @@ export default class SubGameStateManager_Base {
                 }
 
                 let currentLine = 0;
-                const drawLineAction = CallFunc(function(this: SubGameStateManager_Base) {
+                const drawLineAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                     if (currentLine >= payOutResults.length) return;
                     
                     // 找到有效支付线
@@ -928,22 +926,22 @@ export default class SubGameStateManager_Base {
                 }.bind(self));
 
                 // 重复绘制所有支付线
-                const repeatAction = Repeat(Sequence(drawLineAction, DelayTime(0.1)), lineCount);
-                const delayAction = DelayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect);
-                const completeAction = CallFunc(function(this: SubGameStateManager_Base) {
+                const repeatAction = cc.repeat(cc.sequence(drawLineAction, cc.delayTime(0.1)), lineCount);
+                const delayAction = cc.delayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect);
+                const completeAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                     state.setDone();
                 }.bind(self));
 
                 if (repeatAction != null) {
-                    SlotManager.Instance.node.runAction(Sequence(
+                    SlotManager.Instance.node.runAction(cc.sequence(
                         repeatAction,
-                        DelayTime(0.2),
-                        CallFunc(() => self.showTotalSymbolEffectOnPaylines()),
+                        cc.delayTime(0.2),
+                        cc.callFunc(() => self.showTotalSymbolEffectOnPaylines()),
                         delayAction,
                         completeAction
                     ));
                 } else {
-                    SlotManager.Instance.node.runAction(Sequence(delayAction, completeAction));
+                    SlotManager.Instance.node.runAction(cc.sequence(delayAction, completeAction));
                 }
             } else {
                 state.setDone();
@@ -970,8 +968,8 @@ export default class SubGameStateManager_Base {
             const lastHistoryWindows = SlotGameResultManager.Instance.getLastHistoryWindows();
             
             if (payOutResults != null && payOutResults.length > 0) {
-                const drawWinRectAction = CallFunc(() => {
-                    const winPosList: Vec2[] = [];
+                const drawWinRectAction = cc.callFunc(() => {
+                    const winPosList: cc.Vec2[] = [];
                     
                     for (let i = 0; i < payOutResults.length; ++i) {
                         if (payOutResults[i].payLine === -1 || 
@@ -981,7 +979,7 @@ export default class SubGameStateManager_Base {
                                 const col = payOutResults[i].winningCell[j][1];
                                 const row = payOutResults[i].winningCell[j][0];
                                 if (lastHistoryWindows.GetWindow(col).getSymbol(row) !== 51) {
-                                    winPosList.push(new Vec2(col, row));
+                                    winPosList.push(new cc.Vec2(col, row));
                                 }
                             }
                         } else {
@@ -1001,7 +999,7 @@ export default class SubGameStateManager_Base {
                                         }
                                     }
                                     if (isNewPos) {
-                                        winPosList.push(new Vec2(j, row - 1));
+                                        winPosList.push(new cc.Vec2(j, row - 1));
                                     }
                                 }
                             }
@@ -1017,15 +1015,15 @@ export default class SubGameStateManager_Base {
                     }
                 });
 
-                const delayAction = DelayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect);
-                const completeAction = CallFunc(function(this: SubGameStateManager_Base) {
+                const delayAction = cc.delayTime(SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect);
+                const completeAction = cc.callFunc(function(this: SubGameStateManager_Base) {
                     state.setDone();
                 }.bind(self));
 
                 if (drawWinRectAction != null) {
-                    SlotManager.Instance.node.runAction(Sequence(
+                    SlotManager.Instance.node.runAction(cc.sequence(
                         drawWinRectAction,
-                        CallFunc(() => self.showTotalSymbolEffectOnAllLines()),
+                        cc.callFunc(() => self.showTotalSymbolEffectOnAllLines()),
                         delayAction,
                         completeAction
                     ));
@@ -1404,17 +1402,17 @@ export default class SubGameStateManager_Base {
                 if (winType === SlotGameResultManager.WINSTATE_NORMAL || (cameraState !== 1 && CameraControl.Instance.isOriginalPos())) {
                     state.setDone();
                 } else {
-                    const scrollDownAction = CallFunc(() => {
+                    const scrollDownAction = cc.callFunc(() => {
                         SlotManager.Instance.setMouseDragEventFlag(false);
                         CameraControl.Instance.scrollDownScreen(0.8);
                     });
 
-                    const completeAction = CallFunc(() => {
+                    const completeAction = cc.callFunc(() => {
                         SlotManager.Instance.setMouseDragEventFlag(true);
                         state.setDone();
                     });
 
-                    const sequence = Sequence(scrollDownAction, DelayTime(0.8), completeAction);
+                    const sequence = cc.sequence(scrollDownAction, cc.delayTime(0.8), completeAction);
                     SlotManager.Instance.node.runAction(sequence);
                 }
             } else {
@@ -1439,16 +1437,16 @@ export default class SubGameStateManager_Base {
                 const cameraState = CameraControl.Instance.eStateOfCameraPosition;
 
                 if (cameraState === 1 || !CameraControl.Instance.isOriginalPos()) {
-                    const scrollDownAction = CallFunc(() => {
+                    const scrollDownAction = cc.callFunc(() => {
                         CameraControl.Instance.scrollDownScreen(0.8);
                     });
 
-                    const completeAction = CallFunc(() => {
+                    const completeAction = cc.callFunc(() => {
                         SlotManager.Instance.setMouseDragEventFlag(true);
                         state.setDone();
                     });
 
-                    const sequence = Sequence(scrollDownAction, DelayTime(0.8), completeAction);
+                    const sequence = cc.sequence(scrollDownAction, cc.delayTime(0.8), completeAction);
                     SlotManager.Instance.node.runAction(sequence);
                 } else {
                     state.setDone();
@@ -1502,15 +1500,15 @@ export default class SubGameStateManager_Base {
             const isOriginalPos = CameraControl.Instance.isOriginalPos();
 
             if (cameraState === 1 || !CameraControl.Instance.isOriginalPos()) {
-                const scrollDownAction = CallFunc(() => {
+                const scrollDownAction = cc.callFunc(() => {
                     CameraControl.Instance.scrollDownScreen(duration);
                 });
 
-                const completeAction = CallFunc(() => {
+                const completeAction = cc.callFunc(() => {
                     state.setDone();
                 });
 
-                const sequence = Sequence(scrollDownAction, DelayTime(duration), completeAction);
+                const sequence = cc.sequence(scrollDownAction, cc.delayTime(duration), completeAction);
                 SlotManager.Instance.node.runAction(sequence);
             } else {
                 state.setDone();

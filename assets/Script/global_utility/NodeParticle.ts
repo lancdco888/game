@@ -26,7 +26,7 @@ export class ParticleModeB {
 }
 
 /** 单个粒子的核心渲染与逻辑控制器 - 粒子系统的最小单元 */
-@ccclass('NodeParticle')
+@ccclass()
 export default class NodeParticle extends cc.Component {
     // ===================== 粒子运行时核心属性 1:1还原原JS =====================
     public pos: cc.Vec2 = cc.Vec2.ZERO;

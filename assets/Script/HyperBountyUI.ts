@@ -12,7 +12,7 @@ export enum HyperBountyUIType {
     TUTORIAL = "TUTORIAL"
 }
 
-@ccclass('HyperBountyUI')
+@ccclass()
 export default class HyperBountyUI extends cc.Component {
     // 私有核心属性 - 弹窗容器引用
     private _popup: any = null;

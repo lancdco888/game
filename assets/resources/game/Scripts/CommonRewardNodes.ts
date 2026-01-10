@@ -23,36 +23,12 @@ import LobbyUI_StarAlbum from "./LobbyUI_StarAlbum";
 
 const { ccclass, property } = cc._decorator;
 
-
-// 实际项目中请替换为真实导入路径
-// import SDefine from '../../../global_utility/SDefine';
-// import ServiceInfoManager from '../../ServiceInfo/ServiceInfoManager';
-// import InGameHeroUI from '../../SlotGame/InGameUI/InGameHeroUI';
-// import UserInfo from '../../User/UserInfo';
-// import TSUtility from '../../../global_utility/TSUtility';
-// import CommonRewardInGameHeroIcon from '../CommonRewardPopup/CommonRewardInGameHeroIcon';
-// import HRVSlotService from '../../HRVService/HRVSlotService';
-// import PowerGemManager from '../PowerGem/PowerGemManager';
-// import SlotGameRuleManager from '../../../slot_common/Script/SlotCommon/SlotGameRuleManager';
-// import LobbyScene from '../../Lobby/LobbyScene';
-// import LobbyUIBase from '../../Lobby/LobbyUI/LobbyUIBase';
-// import LobbyUI_StarAlbum from '../../Lobby/LobbyUI/LobbyUI_StarAlbum';
-// import LobbyUI_Hero from '../../Lobby/LobbyUI/LobbyUI_Hero';
-// import LobbyUI_Bankroll from '../../Lobby/LobbyUI/LobbyUI_Bankroll';
-// import LobbyUI_Coupon from '../../Lobby/LobbyUI/LobbyUI_Coupon';
-// import LobbyUI_Profile from '../../Lobby/LobbyUI/LobbyUI_Profile';
-// import LobbyUI_LevelBooster from '../../Lobby/LobbyUI/LobbyUI_LevelBooster';
-// import InGameUI_Bankroll from '../../SlotGame/InGameUI/InGameUI_Bankroll';
-// import InGameBankRollPromotionUI from '../../SlotGame/InGameUI/InGameBankRollPromotionUI';
-// import TutorialCoinPromotion from '../../Tutorial/TutorialCoinPromotion';
-// import LevelInfoUI_2020 from '../../SlotGame/InGameUI/LevelInfoUI_2020';
-// import AnimationButton from '../../../global_utility/UI/AnimationButton';
-
 // ===================== 奖励节点管理组件 =====================
 /**
  * 奖励系统-节点管理组件
  * 功能：管理奖励相关UI节点（星册/银行roll/英雄/等级Booster/PowerGem），适配大厅/游戏内场景
  */
+@ccclass()
 export default class CommonRewardNodes extends cc.Component {
     /** 游戏内英雄图标节点 */
     @property({

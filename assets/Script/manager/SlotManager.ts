@@ -89,7 +89,7 @@ export class SpecialSymbolInfo {
  * 9. 屏幕适配：视图缩放/偏移量配置，兼容横竖屏
  * 10. 数据管理：投注金额/免费旋转次数/倍率/游戏信息等核心数据存储
  */
-@ccclass('SlotManager')
+@ccclass()
 export default class SlotManager extends cc.Component {
     // ===================== 【单例模式】全局唯一实例 - 原逻辑完全保留 ✅ =====================
     public static Instance: SlotManager = null;

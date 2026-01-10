@@ -222,7 +222,6 @@ export class CommonRewardHeroInfo {
 /**
  * 奖励系统-动作信息类
  */
-@ccclass('CommonRewardActionInfo')
 export class CommonRewardActionInfo {
     /** 动作类型 */
     private _eActionType: CommonRewardActionType = CommonRewardActionType.NONE;
@@ -314,7 +313,6 @@ export class CommonRewardActionInfo {
 /**
  * 奖励系统-标题信息类
  */
-@ccclass('CommonRewardTitleInfo')
 export class CommonRewardTitleInfo {
     /** 标题类型 */
     private _eTitle: CommonRewardTitleType = CommonRewardTitleType.NONE;
@@ -384,7 +382,6 @@ export class CommonRewardTitleInfo {
 /**
  * 奖励系统-标题显示类
  */
-@ccclass('CommonRewardTitle')
 export class CommonRewardTitle {
     /** 标题节点 */
     private _node: cc.Node | null = null;

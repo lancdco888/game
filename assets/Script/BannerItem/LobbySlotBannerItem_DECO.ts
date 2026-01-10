@@ -9,7 +9,7 @@ const { ccclass } = cc._decorator;
  * LobbySlotBannerItem_DECO
  * Cocos Creator 2.4.13 完美兼容 零语法报错
  */
-@ccclass("LobbySlotBannerItem_DECO")
+@ccclass()
 export default class LobbySlotBannerItem_DECO extends LobbySlotBannerItem {
     // ===================== 私有成员变量 【与原JS完全对应，补充TS枚举类型约束】 =====================
     private _eType: typeof SlotBannerDecoType = SlotBannerDecoType.NONE;

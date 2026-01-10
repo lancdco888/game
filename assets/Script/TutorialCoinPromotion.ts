@@ -25,7 +25,7 @@ export interface IntroduceInfo {
  * 教程金币奖励组件（TutorialCoinPromotion）
  * 负责教程引导中的金币奖励领取、网络请求、金币动画播放、状态同步
  */
-@ccclass("TutorialCoinPromotion")
+@ccclass()
 export default class TutorialCoinPromotion extends cc.Component {
     // ================= 枚举定义 =================
     /** 引导主类型 */

@@ -327,7 +327,7 @@ export default class SlotGameRuleManager extends cc.Component {
 	}
 }
 
-@ccclass
+
 export class Window {
     private _size: number = 0;
     private _symbols: number[] = [];
@@ -375,7 +375,7 @@ export class Window {
     }
 }
 
-@ccclass
+
 export class SlotWindows {
     private _windows: Window[] = [];
 	private _sizeInfo: number[] = [];

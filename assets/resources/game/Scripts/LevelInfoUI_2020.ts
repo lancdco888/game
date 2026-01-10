@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * 等级信息显示组件（LevelInfoUI_2020）
  * 负责等级数值、经验进度条的显示与动画，Booster倍数（x2/x3）节点控制
  */
-@ccclass("LevelInfoUI_2020")
+@ccclass()
 export default class LevelInfoUI_2020 extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Label)

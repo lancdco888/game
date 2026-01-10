@@ -22,7 +22,7 @@ export enum DialogState {
  * 所有自定义弹窗都必须继承该类，统一规范弹窗的打开/关闭/初始化/适配/返回键处理逻辑
  * 由 PopupManager 统一管理该类的所有实例，是项目弹窗体系的核心基类
  */
-@ccclass('DialogBase')
+@ccclass()
 export default class DialogBase extends cc.Component {
     // ===================== 【序列化属性】与原代码完全一致 (拖拽赋值，Cocos编辑器可见) =====================
     @property(cc.Button)

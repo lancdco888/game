@@ -29,7 +29,7 @@ export class Popup_Msg {
  * 弹窗管理核心组件（PopupSetting）
  * 负责所有弹窗的打开/关闭、动画、音效、分享、视图适配、金币特效等逻辑
  */
-@ccclass("PopupSetting")
+@ccclass()
 export default class PopupSetting extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property([PopupData])

@@ -1,6 +1,4 @@
-const { ccclass } = cc._decorator;
 
-@ccclass
 export default class TimeFormatHelper {
     private _time: number = 0;
 

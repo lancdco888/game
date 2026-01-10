@@ -19,7 +19,7 @@ export default class CustomButton extends cc.Component {
     @property({ type: cc.Node, displayName: "禁用节点" })
     public disabled: cc.Node = null;
 
-    @property({ type: cc.Boolean, displayName: "是否播放特效" })
+    @property({ displayName: "是否播放特效" })
     public isShowEffect: boolean = true;
 
     // ====================== 私有成员变量 ======================
@@ -30,11 +30,11 @@ export default class CustomButton extends cc.Component {
     private _onButtonVisibleState: ((state: string) => void) | null = null;
 
     // 事件回调函数 - 区分移动端/桌面端
-    private _mouseEnterCallback: Function | null = null;
-    private _mouseLeaveCallback: Function | null = null;
-    private _touchStartCallback: Function | null = null;
-    private _touchEndCallback: Function | null = null;
-    private _touchCancelCallback: Function | null = null;
+    private _mouseEnterCallback: Function = null;
+    private _mouseLeaveCallback: Function = null;
+    private _touchStartCallback: Function = null;
+    private _touchEndCallback: Function = null;
+    private _touchCancelCallback: Function = null;
 
     // ====================== 生命周期 ======================
     onEnable(): void {

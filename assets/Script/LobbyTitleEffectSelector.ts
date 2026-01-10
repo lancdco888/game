@@ -64,7 +64,7 @@ export class TitleEffect {
  * 负责：大奖金额滚动展示、燃烧状态特效切换、通行证倒计时更新、解锁/锁定动画播放、大奖弹窗触发
  * 与 LobbySlotEntryPopup.ts 强联动，100%还原原JS逻辑，Cocos 2.4.13 TS标准写法
  */
-@ccclass
+@ccclass()
 export default class LobbyTitleEffectSelector extends cc.Component {
     // ===================== 【动画常量】原JS内置所有动画名称，一字未改，完全一致 =====================
     private readonly ANIMATION_NAME_JACKPOT_STATE_1 = "Lobby_Jackpot_Ani";
@@ -76,7 +76,7 @@ export default class LobbyTitleEffectSelector extends cc.Component {
     private readonly ANIMATION_NAME_LOCK_JACKPOT = "UnLock_N_Ani";
 
     // ===================== 【序列化属性】编辑器拖拽绑定，原JS核心绑定项，2.4.13语法完美适配 =====================
-    @property({ type: Number, tooltip: "所属区域ID" })
+    @property({tooltip: "所属区域ID" })
     public zoneID: number = 0;
 
     @property({ tooltip: "所属区域名称" })
@@ -127,7 +127,7 @@ export default class LobbyTitleEffectSelector extends cc.Component {
     @property(cc.AudioClip)
     public triggerSoundFx: cc.AudioClip = null!;
 
-    @property({ type: [TitleEffect], serializable: true, override: true, tooltip: "特效数组(骨骼+粒子)" })
+    @property({ serializable: true, override: true, tooltip: "特效数组(骨骼+粒子)" })
     public effects: TitleEffect[] = [];
 
     @property(cc.Animation)

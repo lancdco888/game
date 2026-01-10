@@ -12,7 +12,6 @@ const { ccclass, property } = cc._decorator;
 export default class PopupData extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置，保留原tooltip） =================
     @property({
-        type: Number, // 对应ResultPopupType枚举（数字类型）
         tooltip: `UnknownType = -1
                 ResultCommon = 0
                 JackpotResultMini = 1
@@ -31,36 +30,34 @@ export default class PopupData extends cc.Component {
     public result_type: ResultPopupType = ResultPopupType.UnknownType; // 弹窗结果类型
 
     @property(cc.Node)
-    public ani_pivot: cc.Node | null = null; // 弹窗动画根节点
+    public ani_pivot: cc.Node = null; // 弹窗动画根节点
 
     @property(cc.Node)
-    public blockingBG: cc.Node | null = null; // 弹窗遮罩层节点
+    public blockingBG: cc.Node = null; // 弹窗遮罩层节点
 
     @property(cc.Button)
-    public btnCollect: cc.Button | null = null; // 收集按钮
+    public btnCollect: cc.Button = null; // 收集按钮
 
     @property(cc.Toggle)
-    public btnShare: cc.Toggle | null = null; // 分享按钮（Toggle类型）
+    public btnShare: cc.Toggle = null; // 分享按钮（Toggle类型）
 
-    @property(String)
+    @property()
     public sound_id: string = ""; // 弹窗打开音效ID
 
     @property({
-        type: Number,
         tooltip: "버튼이 나오는 애니메이션 시간 변수" // 按钮出现动画时长（秒）
     })
     public animation_time: number = 2.1;
 
     @property({
-        type: Number,
         tooltip: "자동으로 넘어가는 시간 변수" // 自动关闭延迟时间（秒）
     })
     public auto_time: number = 15;
 
-    @property(String)
+    @property()
     public end_animation: string = ""; // 弹窗关闭动画名称
 
-    @property(String)
+    @property()
     public end_sound_id: string = ""; // 弹窗关闭音效ID
 
     @property({
@@ -68,10 +65,10 @@ export default class PopupData extends cc.Component {
     })
     public ignore_end_animation_delay: boolean = false; // 是否忽略关闭动画延迟
 
-    @property(Boolean)
+    @property()
     public play_coin_effect: boolean = false; // 是否播放金币爆炸特效
 
-    @property(Boolean)
+    @property()
     public playing_coin_direct_next: boolean = false; // 金币特效后是否直接跳转下一轮
 
     @property([cc.Label])
@@ -84,7 +81,7 @@ export default class PopupData extends cc.Component {
     public etc_list: cc.Node[] = []; // 弹窗内其他节点列表
 
     @property(cc.Node)
-    public effect_target: cc.Node | null = null; // 金币特效目标节点
+    public effect_target: cc.Node = null; // 金币特效目标节点
 
     // ================= 私有属性 =================
     public origin_sound_id: string = ""; // 原始音效ID（用于重置）

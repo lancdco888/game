@@ -36,7 +36,7 @@ export default class LoadingPopup extends DialogBase {
     @property(cc.Label)
     public infoLabel: cc.Label = null!;
 
-    @property(LoadingProgressBar)
+    @property()
     public progressBar: LoadingProgressBar = null!;
 
     @property(cc.Sprite)

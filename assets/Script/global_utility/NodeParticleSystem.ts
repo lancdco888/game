@@ -2,7 +2,7 @@ const { ccclass, property } = cc._decorator;
 import NodeParticle, { ParticleModeA, ParticleModeB } from "./NodeParticle";
 import { Utility } from "./Utility";
 
-@ccclass('NodeParticleSystem')
+@ccclass()
 export default class NodeParticleSystem extends cc.Component {
     // ====== 编辑器可配置属性 (和原生粒子系统一致) ======
     @property(NodeParticle)

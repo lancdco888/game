@@ -20,7 +20,7 @@ const { ccclass, property } = cc._decorator;
 /**
  * 大厅资金（金币）UI组件
  */
-@ccclass('LobbyUI_Bankroll')
+@ccclass()
 export default class LobbyUI_Bankroll extends LobbyUIBase {
     // ===================== 序列化属性（对应编辑器绑定） =====================
     @property({ type: cc.Button })

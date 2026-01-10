@@ -6,31 +6,16 @@ import TSUtility from "../../../Script/global_utility/TSUtility";
 import TimeFormatHelper from "../../../Script/global_utility/TimeFormatHelper";
 import PowerGemManager from "../../../Script/manager/PowerGemManager";
 import CustomRichText from "../../../Script/slot_common/CustomRichText";
-import PowerGemSlotPopup, { PowerGemSlotOpenType } from "./PowerGemSlotPopup";
+import { PowerGemSlotOpenType } from "./PowerGemSlotPopup";
+import { PowerGemSlotUpgrade } from "./PowerGemSlotUpgrade";
 
-/**
- * PowerGem插槽升级子组件（单等级项）
- */
-@ccclass("PowerGemSlotUpgrade")
-export class PowerGemSlotUpgrade extends cc.Component {
-    // ================= 可序列化属性（编辑器面板配置） =================
-    @property({ type: Number, displayName: "等级类型" })
-    public grade: number = 0; // 等级类型
 
-    @property({ type: [cc.Node], displayName: "箭头节点列表" })
-    public arrArrow: cc.Node[] = []; // 箭头节点列表
 
-    @property({ type: [cc.Animation], displayName: "动画组件列表" })
-    public arrAni: cc.Animation[] = []; // 动画组件列表
-
-    @property({ type: CustomRichText, displayName: "等级文本" })
-    public lblLevel: CustomRichText | null = null; // 等级富文本标签
-}
 
 /**
  * PowerGem插槽升级弹窗主组件
  */
-@ccclass("PowerGemSlotPopup_Upgrade")
+@ccclass()
 export default class PowerGemSlotPopup_Upgrade extends cc.Component {
     // ================= 动画名称常量 =================
     private readonly ANIMATION_NAME_OPEN: string = "Upgrade_Glow_Ani"; // 解锁动画
@@ -83,14 +68,15 @@ export default class PowerGemSlotPopup_Upgrade extends cc.Component {
         getPowerGemGradeType: () => number;
         getPowerGemLevel: () => number;
         getPowerGemClearDate: () => number;
-    } | null = null;
-    private _setUI: ((type: PowerGemSlotOpenType, index: number, isForce?: boolean) => void) | null = null; // UI更新回调
-    private _close: (() => void) | null = null; // 弹窗关闭回调
-    private _remainTimeFormat: TimeFormatHelper | null = null; // 剩余时间格式化实例
+    } = null;
+    private _setUI: ((type: PowerGemSlotOpenType, index: number, isForce?: boolean) => void) = null; // UI更新回调
+    private _close: (() => void) = null; // 弹窗关闭回调
+    private _remainTimeFormat: TimeFormatHelper = null; // 剩余时间格式化实例
     private _numRemainMaxTime: number = 0; // 最大剩余时间（秒）
     private _numRemainTime: number = 0; // 当前剩余时间（秒）
     private _numExpireDate: number = 0; // 过期时间戳（秒）
     private _isUpgradeAction: boolean = false; // 是否正在执行升级动作
+
 
     // ================= 核心方法 =================
     /**

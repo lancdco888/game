@@ -14,7 +14,7 @@ import PowerGemWinEffect from "../PowerGemWinEffect";
 import AsyncHelper from "../global_utility/AsyncHelper";
 import ViewResizeManager from "../global_utility/ViewResizeManager";
 
-@ccclass('SlotBigWinEffectController_1022')
+@ccclass()
 export default class SlotBigWinEffectController_1022 extends cc.Component {
     // ===================== 【编辑器绑定-动画组件】 =====================
     @property(cc.Animation)

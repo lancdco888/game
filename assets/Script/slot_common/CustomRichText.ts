@@ -34,7 +34,7 @@ export class CRichTextNodeTemplate {
  * 功能：富文本解析/多字体切换/图文混排/自动换行/对齐排版/节点缓存池优化
  * 依赖：CRichTextParser(富文本标签解析)、TextUtil(文本测量/切割工具)
  */
-@ccclass('CustomRichText')
+@ccclass()
 @executeInEditMode
 export default class CustomRichText extends cc.Component {
     //#region ====== 静态常量 & 依赖实例 ======

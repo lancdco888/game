@@ -21,7 +21,7 @@ import AnimationButton from "./AnimationButton";
  * 大厅星册UI组件（LobbyUI_StarAlbum）
  * 负责星册解锁状态、红点、赛季时间、Booster显示，弹窗打开与引导逻辑
  */
-@ccclass("LobbyUI_StarAlbum")
+@ccclass()
 export default class LobbyUI_StarAlbum extends LobbyUIBase {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Button)

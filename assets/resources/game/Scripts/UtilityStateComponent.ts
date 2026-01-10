@@ -6,14 +6,10 @@ import SlotGameResultManager from "../../../Script/manager/SlotGameResultManager
 import SlotGameRuleManager from "../../../Script/manager/SlotGameRuleManager";
 import SlotManager from "../../../Script/manager/SlotManager";
 
-const { ccclass, property } = cc._decorator;
-
-
 /**
  * 通用状态工具组件
  * 封装游戏通用逻辑：弹窗控制、相机移动、奖励金额滚动、音效播放、赢奖状态处理等
  */
-@ccclass()
 export default class UtilityStateComponent {
     // ================= 配置常量（位运算选项） =================
     public readonly option_skip = 1;                  // 跳过动画

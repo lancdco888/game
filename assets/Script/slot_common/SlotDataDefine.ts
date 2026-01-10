@@ -55,7 +55,7 @@ export class SlotJackpotMoney {
     }
 }
 
-@ccclass
+
 export class SlotJackpotInfo {
     private _id: string = "";
     private _mapReserveMoney: { [key: string]: SlotJackpotMoney } = {};

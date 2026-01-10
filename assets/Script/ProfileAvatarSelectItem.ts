@@ -14,7 +14,7 @@ const { ccclass, property } = cc._decorator;
  * 个人资料头像选择项（ProfileAvatarSelectItem）
  * 负责单个头像素材加载、游客头像显示、选中状态控制、FB登录/金币引导逻辑
  */
-@ccclass("ProfileAvatarSelectItem")
+@ccclass()
 export default class ProfileAvatarSelectItem extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(FBPictureSetter)

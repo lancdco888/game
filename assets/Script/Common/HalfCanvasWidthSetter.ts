@@ -8,8 +8,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass()
 export default class HalfCanvasWidthSetter extends cc.Component {
     // ===================== Cocos 序列化属性 【与原JS @property 1:1精准对应，默认值false】 =====================
-    @property({ 
-        type: Boolean, 
+    @property({
         displayName: "使用Canvas高度", 
         tooltip: "是否将节点高度设置为Canvas的高度（默认使用节点自身高度）" 
     })

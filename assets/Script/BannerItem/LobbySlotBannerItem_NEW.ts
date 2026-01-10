@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * LobbySlotBannerItem_NEW
  * Cocos Creator 2.4.13 完美兼容 零语法报错
  */
-@ccclass("LobbySlotBannerItem_NEW")
+@ccclass()
 export default class LobbySlotBannerItem_NEW extends LobbySlotBannerItem {
     // ===================== Cocos 序列化属性 【与原JS @property 1:1精准对应，无遗漏/无错配】 =====================
     @property({ type: cc.Prefab, displayName: "新横幅预制体" })

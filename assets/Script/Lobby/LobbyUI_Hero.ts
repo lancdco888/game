@@ -19,7 +19,7 @@ const { ccclass, property } = cc._decorator;
  * 大厅英雄UI组件
  * 核心功能：英雄入口按钮控制、解锁判断、红点显示、弹窗交互
  */
-@ccclass("LobbyUI_Hero")
+@ccclass()
 export default class LobbyUI_Hero extends LobbyUIBase {
     // ================= 组件绑定（与原代码property一一对应） =================
     @property(cc.Button)

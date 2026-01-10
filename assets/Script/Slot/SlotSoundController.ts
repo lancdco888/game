@@ -3,7 +3,7 @@ import SoundManager from "../manager/SoundManager";
 const { ccclass, property } = cc._decorator;
 
 /** 音效信息实体类 - 原JS内联构造函数 SlotSoundInfo 转换 */
-@ccclass("SlotSoundInfo")
+@ccclass()
 export class SlotSoundInfo {
     @property({ type: cc.String })
     public soundId: string = "";
@@ -16,7 +16,7 @@ export class SlotSoundInfo {
 }
 
 /** 中奖符号音效信息实体类 - 原JS内联构造函数 SymbolWinSoundInfo 转换 */
-@ccclass("SymbolWinSoundInfo")
+@ccclass()
 export class SymbolWinSoundInfo {
     @property({ type: Number })
     public symbolId: number = 0;

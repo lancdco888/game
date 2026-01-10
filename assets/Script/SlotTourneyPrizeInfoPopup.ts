@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * SlotTourneyPrizeInfoPopup
  * Cocos Creator 2.4.13 完美兼容 零语法报错
  */
-@ccclass("SlotTourneyPrizeInfoPopup")
+@ccclass()
 export default class SlotTourneyPrizeInfoPopup extends cc.Component {
     // ===================== Cocos 序列化属性 【与原JS @property 1:1完全对应，无遗漏/无新增】 =====================
     @property({ type: cc.Label, displayName: "参赛所需金额文本" })

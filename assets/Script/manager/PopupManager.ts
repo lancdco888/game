@@ -17,7 +17,7 @@ export class OpenPopupInfo {
  * 核心功能：弹窗统一管理、弹窗层级控制、阻塞遮罩显示、返回键监听处理、弹窗队列调度、背景模糊(截屏)、屏幕适配刷新
  * 所有弹窗(DialogBase子类)均通过该管理器统一打开/关闭，是项目弹窗体系的唯一入口
  */
-@ccclass('PopupManager')
+@ccclass()
 export default class PopupManager extends cc.Component {
     // ===================== 单例核心配置 (原逻辑完全保留，调用方式不变) =====================
     private static _instance: PopupManager = null;

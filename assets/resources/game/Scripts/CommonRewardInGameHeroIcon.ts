@@ -10,7 +10,7 @@ const { ccclass, property } = cc._decorator; // 沿用指定的装饰器导出�
  * 游戏内英雄奖励通用图标组件（CommonRewardInGameHeroIcon）
  * 负责英雄战力收集动画、经验进度条更新、等级提升视觉反馈
  */
-@ccclass("CommonRewardInGameHeroIcon")
+@ccclass()
 export default class CommonRewardInGameHeroIcon extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Animation)

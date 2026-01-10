@@ -6,10 +6,10 @@ import SDefine from "../global_utility/SDefine";
 @ccclass
 export default class PlayAniOnActiveCurrentNode extends cc.Component {
     // ===================== 编辑器序列化属性 (与原JS完全一致，默认值精准匹配) =====================
-    @property({ type: cc.Boolean })
+    @property()
     public loop: boolean = false;
 
-    @property({ type: cc.Boolean })
+    @property()
     public ignoreLoopFlag: boolean = false;
 
     // ===================== 生命周期回调 =====================

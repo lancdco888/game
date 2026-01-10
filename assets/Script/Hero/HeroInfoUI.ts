@@ -22,7 +22,7 @@ export enum HeroDirectionType {
     Reverse = "Reverse"
 }
 
-@ccclass('HeroInfoUI')
+@ccclass()
 export default class HeroInfoUI extends cc.Component {
     // ===================== 编辑器序列化属性 (与原JS完全一致，强类型补全，顺序不变) =====================
     @property(cc.Label)

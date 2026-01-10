@@ -8,7 +8,6 @@ const { ccclass, property } = cc._decorator;
 export default class PlaySpineAnimationOnActive extends cc.Component {
     /** 要播放的Spine动画名称（为空则使用默认动画） */
     @property({
-        type: String,
         displayName: 'Spine动画名称',
         tooltip: '留空则使用Spine组件的默认动画'
     })
@@ -16,13 +15,12 @@ export default class PlaySpineAnimationOnActive extends cc.Component {
 
     /** 是否循环播放动画 */
     @property({
-        type: Boolean,
         displayName: '是否循环播放',
         tooltip: 'true：循环播放；false：播放一次'
     })
     public bLoop: boolean = false;
 
-    // ========== 生命周期方法 ==========
+    
     onLoad(): void {
         // 原代码onLoad为空，保留扩展空间
     }

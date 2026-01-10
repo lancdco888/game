@@ -9,7 +9,7 @@ import UIScrollViewItem from "./UIScrollViewItem";
  * ✅ 设计思想：基类只做通用逻辑，所有【方向相关】的布局/滚动逻辑均为【空方法】，由子类(横向/纵向)继承重写
  * ✅ 核心特性：节点对象池(性能优化)、数据与视图解耦、编辑器序列化配置、无缝支持子类扩展
  */
-@ccclass('UIScrollView')
+@ccclass()
 export default class UIScrollView extends cc.Component {
     // ===== 滚动动画默认时长 常量 (原代码完整保留) =====
     public SCROLL_DURATION: number = 0.1;
@@ -24,7 +24,7 @@ export default class UIScrollView extends cc.Component {
     @property({ type: cc.Integer, displayName: "子项间距" })
     public numSpacing: number = 0;
 
-    @property({ type: cc.Vec2, displayName: "容器内边距" })
+    @property({ displayName: "容器内边距" })
     public numPadding: cc.Vec2 = new cc.Vec2(0, 0);
 
     @property({ type: cc.Integer, displayName: "可视区域扩展范围" })

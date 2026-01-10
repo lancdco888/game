@@ -16,7 +16,7 @@ import PowerGemSlotPopup, { PowerGemSlotOpenType } from "./PowerGemSlotPopup";
  * PowerGem首次打开教程主组件
  * 继承自教程基类，负责PowerGem新手引导的整体控制
  */
-@ccclass("PowerGemSlotPopup_Tutorial")
+@ccclass()
 export default class PowerGemSlotPopup_Tutorial extends TutorialBase {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Node)

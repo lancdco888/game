@@ -8,7 +8,7 @@ export type FB_PICTURE_TYPE = typeof FBPictureSetter.FB_PICTURE_TYPE[keyof typeo
  * FB/自定义头像设置组件（FBPictureSetter）
  * 负责FB头像（不同尺寸）、自定义头像（hrvavatar协议）的加载与显示
  */
-@ccclass("FBPictureSetter")
+@ccclass()
 export default class FBPictureSetter extends cc.Component {
     // ================= 枚举定义（FB头像尺寸） =================
     public static readonly FB_PICTURE_TYPE = {

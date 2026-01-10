@@ -13,7 +13,7 @@ const { ccclass, property } = cc._decorator;
  * 奖励动作管理组件
  * 功能：管理奖励相关动画流程（UI显示、节点动画、按钮交互、音效、网络请求等）
  */
-@ccclass('CommonRewardAction')
+@ccclass()
 export default class CommonRewardAction extends cc.Component {
     // ===================== 私有属性（UI节点缓存） =====================
     /** 标题UI节点 */

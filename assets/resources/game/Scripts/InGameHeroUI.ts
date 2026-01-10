@@ -20,7 +20,7 @@ const { ccclass, property } = cc._decorator;
  * 游戏内英雄UI组件（InGameHeroUI）
  * 负责英雄图标显示、动画控制、点击交互、Tooltip提示、状态切换
  */
-@ccclass("InGameHeroUI")
+@ccclass()
 export default class InGameHeroUI extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Button)

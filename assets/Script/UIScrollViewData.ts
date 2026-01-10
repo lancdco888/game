@@ -13,10 +13,12 @@ export default class UIScrollViewData extends cc.Component {
     private _data: any = null;        // 子项绑定的业务数据（任意类型，按需赋值）
 
     // ===== 构造函数 (原逻辑完整复刻：接收子项尺寸作为入参并初始化) =====
-    constructor(itemSize: cc.Size) {
+    constructor(itemSize:cc.Size = cc.size(0, 0)) {
         super();
         this._numIndex = 0;
-        this._itemSize = itemSize;
+        if(itemSize){
+            this._itemSize = itemSize;
+        }
         this._data = null;
     }
 

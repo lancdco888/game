@@ -29,7 +29,7 @@ import CommonRewardNodes from './CommonRewardNodes';
  * 奖励系统-资源管理组件
  * 功能：加载奖励预制体、拼接奖励节点名称、管理奖励动作实例、播放奖励音效
  */
-@ccclass('CommonRewardResources')
+@ccclass()
 export default class CommonRewardResources extends cc.Component {
     /** 奖励节点根节点（实例化的奖励预制体添加到该节点下） */
     @property({

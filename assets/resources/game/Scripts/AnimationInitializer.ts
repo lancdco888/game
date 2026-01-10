@@ -8,7 +8,6 @@ const { ccclass, property } = cc._decorator;
 export default class AnimationInitializer extends cc.Component {
     /** 基础激活标识（控制节点初始激活状态） */
     @property({
-        type: Boolean,
         displayName: '基础激活标识',
         tooltip: '组件加载时节点的初始激活状态'
     })
@@ -16,7 +15,6 @@ export default class AnimationInitializer extends cc.Component {
 
     /** 是否递归处理所有子节点 */
     @property({
-        type: Boolean,
         displayName: '递归所有子节点',
         tooltip: 'true：处理当前节点下所有子节点；false：仅处理init_data中的指定节点'
     })

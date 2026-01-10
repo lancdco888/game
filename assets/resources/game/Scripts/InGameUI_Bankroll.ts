@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
  * 游戏内资金UI组件（InGameUI_Bankroll）
  * 负责资金相关按钮点击、金币数值动画、弹窗打开、事件监听与清理
  */
-@ccclass("InGameUI_Bankroll")
+@ccclass()
 export default class InGameUI_Bankroll extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Button)

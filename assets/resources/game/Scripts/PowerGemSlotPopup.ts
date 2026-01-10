@@ -33,7 +33,7 @@ export enum PowerGemSlotOpenType {
 /**
  * PowerGem等级激活节点类
  */
-@ccclass("PowerGemSlotActiveNode")
+@ccclass()
 export class PowerGemSlotActiveNode {
     @property({ type: cc.Integer, displayName: "等级" })
     public grade: number = 0;
@@ -97,7 +97,7 @@ export default class PowerGemSlotPopup extends DialogBase {
     @property({ type: PowerGemSlotPopup_Upgrade, displayName: "升级弹窗组件" })
     public upgrade: PowerGemSlotPopup_Upgrade = null;
 
-    @property({ type: PowerGemSlotPopup_Tutorial, displayName: "教程组件" })
+    @property({ displayName: "教程组件" })
     public tutorial: PowerGemSlotPopup_Tutorial = null;
 
     @property({ type: [cc.Node], displayName: "等级节点数组" })
@@ -118,7 +118,7 @@ export default class PowerGemSlotPopup extends DialogBase {
     @property({ type: [cc.Animation], displayName: "宝石动画数组" })
     public arrGemAnimation: cc.Animation[] = [];
 
-    @property({ type: [PowerGemSlotActiveNode], displayName: "激活节点数组" })
+    @property({ displayName: "激活节点数组" })
     public arrActiveNode: PowerGemSlotActiveNode[] = [];
 
     // ===================== 私有成员变量 【补充TS强类型声明】 =====================

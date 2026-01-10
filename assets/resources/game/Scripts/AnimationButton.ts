@@ -5,7 +5,7 @@ const { ccclass, property } = cc._decorator;
  * 功能：为按钮绑定不同交互状态的动画，适配移动端/PC端交互事件，同步按钮可交互状态
  * 支持状态：normal（正常）、pressed（按下）、hover（悬浮）、disabled（禁用）
  */
-@ccclass('AnimationButton')
+@ccclass()
 export default class AnimationButton extends cc.Component {
     /** 按钮动画组件 */
     @property({

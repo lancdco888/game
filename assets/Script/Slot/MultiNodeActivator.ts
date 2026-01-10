@@ -27,7 +27,7 @@ export class MultiNode {
 }
 
 /** 多节点分组激活控制器 - 主类 */
-@ccclass('MultiNodeActivator')
+@ccclass()
 export default class MultiNodeActivator extends cc.Component {
     // ===================== 编辑器序列化属性 (与原JS配置完全一致) =====================
     @property({

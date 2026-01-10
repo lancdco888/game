@@ -1,9 +1,9 @@
 const { ccclass, property } = cc._decorator;
 
 // ===================== 原文件嵌套序列化数据类 CommonPrefabInfo 完整保留 序列化标记精准 =====================
-@ccclass("CommonPrefabInfo")
+@ccclass()
 export class CommonPrefabInfo {
-    @property({type: cc.String})
+    @property()
     public key: string = "";
 
     @property({type: cc.Prefab})

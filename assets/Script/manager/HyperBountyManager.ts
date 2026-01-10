@@ -78,7 +78,7 @@ export class HyperBountyPopupOpenInfo {
 }
 
 // ===================== 【核心单例类】超级赏金管理器 =====================
-@ccclass("HyperBountyManager")
+@ccclass()
 export default class HyperBountyManager extends cc.Component {
     // ===================== 【静态单例】 =====================
     private static _instance: HyperBountyManager | null = null;

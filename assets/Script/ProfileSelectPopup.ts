@@ -35,7 +35,7 @@ export default class ProfileSelectPopup extends DialogBase {
     @property(cc.Button)
     public rightPageMove: cc.Button | null = null; // 右分页按钮
 
-    @property(ProfileAvatarSelectItem)
+    @property()
     public avatarTemplate: ProfileAvatarSelectItem  = null; // 头像项模板
 
     @property(cc.Node)

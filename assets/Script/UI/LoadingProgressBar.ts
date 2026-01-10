@@ -8,7 +8,7 @@ import SeperateProgressBar from "./SeperateProgressBar";
  * 特性：支持原生ProgressBar/自定义分离式进度条双适配 + 进度平滑过渡动画 + 百分比文本实时更新 + 进度最小值阈值限制
  * 被 LoadingPopup 核心弹窗组件依赖调用
  */
-@ccclass("LoadingProgressBar")
+@ccclass()
 export default class LoadingProgressBar extends cc.Component {
     // ====================== Cocos 序列化绑定属性 - 编辑器拖拽赋值 ======================
     /** Cocos原生进度条组件（主进度条） */

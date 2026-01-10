@@ -9,7 +9,7 @@ export enum LobbySceneUIType {
     COUNT = 4
 };
 
-@ccclass("SceneInfo")
+@ccclass()
 export default class SceneInfo extends cc.Component {
     // ✅【核心修复点】：移除 { type: LobbySceneUIType }，只保留 @property()
     // 枚举本质是number，Cocos自动识别为数值类型，序列化正常，无任何报错

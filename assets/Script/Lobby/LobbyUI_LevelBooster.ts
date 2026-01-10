@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
 /**
  * 大厅等级增益UI组件
  */
-@ccclass('LobbyUI_LevelBooster')
+@ccclass()
 export default class LobbyUI_LevelBooster extends LobbyUIBase {
     // 序列化属性（对应编辑器绑定）
     @property({ type: cc.Label })

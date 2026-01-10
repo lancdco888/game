@@ -11,7 +11,7 @@ const { ccclass, property } = cc._decorator;
 /**
  * 大厅优惠券UI组件
  */
-@ccclass('LobbyUI_Coupon')
+@ccclass()
 export default class LobbyUI_Coupon extends LobbyUIBase {
     // ===================== 序列化属性（对应编辑器绑定） =====================
     @property({ type: cc.Node })

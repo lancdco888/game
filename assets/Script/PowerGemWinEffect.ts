@@ -5,7 +5,7 @@ import AsyncHelper from "./global_utility/AsyncHelper";
 import TSUtility from "./global_utility/TSUtility";
 import SlotManager from "./manager/SlotManager";
 
-@ccclass('PowerGemWinEffect')
+@ccclass()
 export default class PowerGemWinEffect extends cc.Component {
     // ===================== 动画名称常量 (与原JS完全一致) =====================
     public readonly ANIMATION_NAME_GAGE_NORMAL = "PowerGem_Gauge_Normal_Ani";

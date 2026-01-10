@@ -27,7 +27,7 @@ export enum BottomTextType {
  * 底部UI文本管理组件（BottomUIText）
  * 负责底部所有文本/金额的显示、格式化、动画、多语言、分辨率适配等
  */
-@ccclass("BottomUIText")
+@ccclass()
 export default class BottomUIText extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Node)
@@ -63,13 +63,13 @@ export default class BottomUIText extends cc.Component {
     @property(cc.Label)
     public bottomTextInfo: cc.Label | null = null; // 底部信息文本标签
 
-    @property({ type: Boolean })
+    @property()
     public useEllipsisTotalBet: boolean = false; // 是否使用省略格式显示总投注
 
     @property(cc.Sprite)
     public winImg: cc.Sprite | null = null; // 胜利图标
 
-    @property({ type: Boolean })
+    @property()
     public winMoneyUseCenter: boolean = false; // 胜利金额是否居中显示
 
     @property(cc.Node)

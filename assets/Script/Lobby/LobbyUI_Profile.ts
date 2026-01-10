@@ -17,7 +17,7 @@ const { ccclass, property } = cc._decorator;
  * 大厅个人资料UI组件（LobbyUI_Profile）
  * 负责用户头像显示、等级进度条更新、个人资料弹窗交互
  */
-@ccclass("LobbyUI_Profile")
+@ccclass()
 export default class LobbyUI_Profile extends LobbyUIBase {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Button)
@@ -29,7 +29,7 @@ export default class LobbyUI_Profile extends LobbyUIBase {
     @property(cc.ProgressBar)
     public bar: cc.ProgressBar = null; // 等级进度条
 
-    @property(FBPictureSetter)
+    @property()
     public pictureSetter: FBPictureSetter = null; // FB头像设置组件
 
     // ================= 只读属性（UI类型标识） =================
