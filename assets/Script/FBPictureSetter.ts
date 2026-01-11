@@ -1,3 +1,4 @@
+import ProfileImageManager from "./ProfileImageManager";
 import TSUtility from "./global_utility/TSUtility";
 import { Utility } from "./global_utility/Utility";
 

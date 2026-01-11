@@ -19,8 +19,8 @@ export default class CoinMoveComponent extends cc.Component {
     public coinObject: cc.Node = null!;
 
     /** 大额奖金控制器（新版） */
-    @property()
-    public bigWinControllerNew: SlotBigWinEffectController_1022 | null = null;
+    @property(SlotBigWinEffectController_1022)
+    public bigWinControllerNew: SlotBigWinEffectController_1022 = null;
 
     // ===================== 生命周期函数 =====================
     /**
