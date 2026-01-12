@@ -1,0 +1,276 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Base_Light_Move_top_TopText_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.1,
+  "sample": 60,
+  "speed": 1.3,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Particle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 1.1,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 100
+              },
+              {
+                "frame": 0.75,
+                "value": 100
+              },
+              {
+                "frame": 0.7666666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Light_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 0.8,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Light_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 0.8,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": -50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 150
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.7333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.75,
+              "value": 1
+            },
+            {
+              "frame": 0.8,
+              "value": 255,
+              "curve": [
+                0.11343839541547278,
+                0.7182234957020057,
+                0.3010601719197708,
+                0.9140401146131805
+              ]
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.75,
+              "curve": [
+                0.1922349570200573,
+                0.5964469914040115,
+                0.39776504297994275,
+                0.9032951289398281
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "loaded": true,
+  "_nativeUrl": "",
+  "_ref": 2,
+  "frameRate": 60,
+  "__onLoadInvoked__": true
+}
