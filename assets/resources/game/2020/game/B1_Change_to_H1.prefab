@@ -24,14 +24,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 62
+        "__id__": 63
       },
       {
-        "__id__": 63
+        "__id__": 64
       }
     ],
     "_prefab": {
-      "__id__": 64
+      "__id__": 65
     },
     "_opacity": 255,
     "_color": {
@@ -105,10 +105,13 @@
     "_components": [
       {
         "__id__": 60
+      },
+      {
+        "__id__": 61
       }
     ],
     "_prefab": {
-      "__id__": 61
+      "__id__": 62
     },
     "_opacity": 255,
     "_color": {
@@ -256,7 +259,7 @@
     "_playTimes": 0,
     "_isAniComplete": true,
     "_N$skeletonData": {
-      "__uuid__": "25a745e7-e2f2-4005-a263-fcd460e67fef"
+      "__uuid__": "7e6c53a6-39a9-4f82-8cf8-2d425a7d13f0"
     },
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
@@ -319,8 +322,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 192,
-      "height": 192
+      "width": 256,
+      "height": 256
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -367,7 +370,7 @@
     "_materials": [],
     "paused": false,
     "defaultSkin": "default",
-    "defaultAnimation": "B1_Idle",
+    "defaultAnimation": "H1_Change",
     "_preCacheMode": 0,
     "_cacheMode": 0,
     "loop": true,
@@ -378,13 +381,13 @@
     "_frameCache": null,
     "_curFrame": null,
     "_skeletonCache": null,
-    "_animationName": "B1_Idle",
+    "_animationName": "H1_Change",
     "_animationQueue": [],
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
     "_N$skeletonData": {
-      "__uuid__": "1a7238c9-6552-4d01-a96a-4e3df66fb381"
+      "__uuid__": "fd743d23-60e4-4bea-b81a-2e6544c61fff"
     },
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
@@ -2204,7 +2207,9 @@
     "isAllChild": false,
     "init_ani": [],
     "init_data": [
-      null,
+      {
+        "__id__": 3
+      },
       {
         "__id__": 7
       },
@@ -2215,6 +2220,25 @@
         "__id__": 34
       }
     ],
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "90bdb256-bfa4-4933-a5ab-adc1fa556a78"
+    },
+    "_clips": [
+      {
+        "__uuid__": "90bdb256-bfa4-4933-a5ab-adc1fa556a78"
+      }
+    ],
+    "playOnLoad": false,
     "_id": ""
   },
   {

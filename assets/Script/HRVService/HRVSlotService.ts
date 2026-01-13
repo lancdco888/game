@@ -468,7 +468,7 @@ export default class HRVSlotService extends cc.Component {
 
             // 延迟执行开局动画+逻辑
             this.scheduleOnce(async () => {
-                this.getInGameUI().suiteLeagueUI.playStartAni();
+                // this.getInGameUI().suiteLeagueUI.playStartAni();
                 if (SlotManager.Instance._bottomUI) {
                     // if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME && SlotFeverModeManager.instance.isOpenFeverMode()) {
                     //     this._feverModeIcon && this._feverModeIcon.playStartAni();

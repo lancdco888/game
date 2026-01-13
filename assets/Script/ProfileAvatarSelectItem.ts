@@ -62,18 +62,18 @@ export default class ProfileAvatarSelectItem extends cc.Component {
         // 获取金币引导配置
         const promotionInfo = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
         
-        // 金币引导可用：绑定事件 + 显示金币引导节点
-        if (promotionInfo && promotionInfo.enableSubStep(INTRODUCE_MAIN.INBOX, INTRODUCE_SUB.PROFILE_CONNECT)) {
-            MessageRoutingManager.instance().addListenerTarget(
-                MessageRoutingManager.MSG.UPDATE_SERVICE_INTRODUCE_COIN,
-                this.updateServiceintroduce.bind(this),
-                this
-            );
-            this.introduce_Coin!.active = true;
-        } else {
+        // // 金币引导可用：绑定事件 + 显示金币引导节点
+        // if (promotionInfo && promotionInfo.enableSubStep(INTRODUCE_MAIN.INBOX, INTRODUCE_SUB.PROFILE_CONNECT)) {
+        //     MessageRoutingManager.instance().addListenerTarget(
+        //         MessageRoutingManager.MSG.UPDATE_SERVICE_INTRODUCE_COIN,
+        //         this.updateServiceintroduce.bind(this),
+        //         this
+        //     );
+        //     this.introduce_Coin!.active = true;
+        // } else {
             // 金币引导不可用：隐藏金币引导节点
-            this.introduce_Coin!.active = false;
-        }
+        this.introduce_Coin!.active = false;
+        // }
     }
 
     /**
@@ -122,17 +122,17 @@ export default class ProfileAvatarSelectItem extends cc.Component {
 
             // 处理FB登录/账号绑定
             if (!SDefine.Use_Mobile_Auth_v2) {
-                FacebookUtil.initAndLogin((loginResult) => {
-                    PopupManager.Instance().showDisplayProgress(false);
-                    if (loginResult === 1) {
-                        // FB登录成功：设置登录类型 + 重启游戏
-                        LocalStorageManager.setLoginTypeFacebook();
-                        PopupManager.Instance().showDisplayProgress(true);
-                        this.scheduleOnce(() => {
-                            HRVServiceUtil.restartGame();
-                        }, 0.1);
-                    }
-                });
+                // FacebookUtil.initAndLogin((loginResult) => {
+                //     PopupManager.Instance().showDisplayProgress(false);
+                //     if (loginResult === 1) {
+                //         // FB登录成功：设置登录类型 + 重启游戏
+                //         LocalStorageManager.setLoginTypeFacebook();
+                //         PopupManager.Instance().showDisplayProgress(true);
+                //         this.scheduleOnce(() => {
+                //             HRVServiceUtil.restartGame();
+                //         }, 0.1);
+                //     }
+                // });
             } else {
                 // 新版认证：检查并绑定FB账号
                 UserInfo.instance().checkAndAccountLinkFacebook();

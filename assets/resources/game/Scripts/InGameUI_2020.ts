@@ -1413,9 +1413,9 @@ export default class InGameUI_2020 extends cc.Component {
 
         // 各种提示显示
         this.openJiggyPrizeTooltip();
-        this.heroUI?.openNewHeroTooltip();
-        this.setNewBiePromotion();
-        this.openSupersizeItIcon();
+        // this.heroUI?.openNewHeroTooltip();
+        // this.setNewBiePromotion();
+        // this.openSupersizeItIcon();
         this.showLockedTooltip_JiggyPuzzle();
     }
 

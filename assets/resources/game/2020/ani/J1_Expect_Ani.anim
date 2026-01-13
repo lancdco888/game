@@ -1,0 +1,52 @@
+{
+  "_name": "J1_Expect_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Prize": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "curve": [
+                0.46,
+                0.05,
+                0.2946419098143237,
+                0.9002652519893899
+              ],
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

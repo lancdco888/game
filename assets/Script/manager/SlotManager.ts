@@ -579,7 +579,7 @@ export default class SlotManager extends cc.Component {
     spinProcessRenewal(): void {
         if (this.isAvailable() === 0) return;
 
-        SlotUIRuleManager.Instance.applyFastMode();
+        //SlotUIRuleManager.Instance.applyFastMode();
         const curSpinState = SlotReelSpinStateManager.Instance.getCurrentState();
         if (curSpinState !== SlotReelSpinStateManager.STATE_CUSTOM_ACTIVE_SPINBUTTON) {
             if (this.curState) {
@@ -761,7 +761,7 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 处理跳过旋转的逻辑 =====================
     processSkipReel(): void {
-        SlotSoundController.Instance().stopAudio("ReelExpect", "FX");
+        // SlotSoundController.Instance().stopAudio("ReelExpect", "FX");
         this.reelMachine.hideAllExpectEffects();
     }
 
@@ -1195,11 +1195,11 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 播放/停止滚轮旋转音效 =====================
     playReelSpinSound(): void {
-        SlotSoundController.Instance().playAudio("ReelSpin", "FXLoop");
+        // SlotSoundController.Instance().playAudio("ReelSpin", "FXLoop");
     }
 
     stopReelSpinSound(): void {
-        SlotSoundController.Instance().stopAudio("ReelSpin", "FXLoop");
+        // SlotSoundController.Instance().stopAudio("ReelSpin", "FXLoop");
     }
 
     showScatterRetriggerEffect(): number { return 0; }

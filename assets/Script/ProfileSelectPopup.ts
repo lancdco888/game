@@ -140,11 +140,11 @@ export default class ProfileSelectPopup extends DialogBase {
             // 非游客：添加FB头像项
             const fbAvatarNode = cc.instantiate(this.avatarTemplate!.node);
             const fbAvatarItem = fbAvatarNode.getComponent(ProfileAvatarSelectItem)!;
-            fbAvatarItem.picImg.loadPictureByUrl(
-                UserInfo.instance().getUserFBPicUrl(),
-                FB_PICTURE_TYPE.NORMAL,
-                null
-            );
+            // fbAvatarItem.picImg.loadPictureByUrl(
+            //     UserInfo.instance().getUserFBPicUrl(),
+            //     FB_PICTURE_TYPE.NORMAL,
+            //     null
+            // );
             fbAvatarItem.avatarId = "-1";
             avatarItems.push(fbAvatarItem);
         } else if (Utility.isMobileGame()) {
@@ -349,12 +349,12 @@ export default class ProfileSelectPopup extends DialogBase {
         if (Utility.isMobileGame && !isInit && avatarId === "-2") {
             const promotionInfo = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
             
-            // 金币引导可用：禁用按钮 + 领取金币
-            if (targetItem.introduce_Coin.active && promotionInfo && promotionInfo.enableSubStep(INTRODUCE_MAIN.INBOX, INTRODUCE_SUB.PROFILE_CONNECT)) {
-                targetItem.getComponent(cc.Button).interactable = false;
-                targetItem.introduce_Coin.getComponent(TutorialCoinPromotion).onCollect();
-                return;
-            }
+            // // 金币引导可用：禁用按钮 + 领取金币
+            // if (targetItem.introduce_Coin.active && promotionInfo && promotionInfo.enableSubStep(INTRODUCE_MAIN.INBOX, INTRODUCE_SUB.PROFILE_CONNECT)) {
+            //     targetItem.getComponent(cc.Button).interactable = false;
+            //     targetItem.introduce_Coin.getComponent(TutorialCoinPromotion).onCollect();
+            //     return;
+            // }
 
             // 金币引导不可用：处理FB登录
             if (!SDefine.Use_Mobile_Auth_v2) {

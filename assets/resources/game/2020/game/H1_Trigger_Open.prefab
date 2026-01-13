@@ -31,10 +31,13 @@
       },
       {
         "__id__": 29
+      },
+      {
+        "__id__": 30
       }
     ],
     "_prefab": {
-      "__id__": 30
+      "__id__": 31
     },
     "_opacity": 255,
     "_color": {
@@ -179,7 +182,7 @@
     "_playTimes": 0,
     "_isAniComplete": true,
     "_N$skeletonData": {
-      "__uuid__": "0c48540b-a4ca-428d-8091-804294630945"
+      "__uuid__": "fd743d23-60e4-4bea-b81a-2e6544c61fff"
     },
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
@@ -1090,6 +1093,25 @@
     "prize_label": {
       "__id__": 24
     },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "05c69719-bb62-4a7e-927b-71272d578ab5"
+    },
+    "_clips": [
+      {
+        "__uuid__": "05c69719-bb62-4a7e-927b-71272d578ab5"
+      }
+    ],
+    "playOnLoad": false,
     "_id": ""
   },
   {

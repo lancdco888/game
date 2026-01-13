@@ -28,10 +28,13 @@
     "_components": [
       {
         "__id__": 28
+      },
+      {
+        "__id__": 29
       }
     ],
     "_prefab": {
-      "__id__": 29
+      "__id__": 30
     },
     "_opacity": 255,
     "_color": {
@@ -1057,6 +1060,36 @@
         "__id__": 2
       }
     ],
+    "_id": ""
+  },
+  {
+    "__type__": "facfbxkHMxMOb+rOdBwacpe",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "jackpot_type": [
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 10
+      },
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 16
+      }
+    ],
+    "multiplier_label": {
+      "__id__": 20
+    },
+    "prize_label": {
+      "__id__": 24
+    },
     "_id": ""
   },
   {

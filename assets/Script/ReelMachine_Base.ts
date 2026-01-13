@@ -210,7 +210,7 @@ export default class ReelMachine_Base extends cc.Component {
             const reel = this.reels[i];
             if (reel) reel.setShowExpectEffects(false);
         }
-        SlotSoundController.Instance().stopAudio("ReelExpect_2", "FX");
+        // SlotSoundController.Instance().stopAudio("ReelExpect_2", "FX");
     }
 
     // ===================== 业务方法 - 显示指定索引的滚轮期待特效 =====================
