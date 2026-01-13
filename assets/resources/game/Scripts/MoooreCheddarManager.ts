@@ -16,6 +16,8 @@ import GameComponent_MoooreCheddar from "./GameComponent_MoooreCheddar";
 import { EXPLANE_MSG, PICK_RECOVERY, SIDE_ANI } from "./MsgDataType_MoooreCheddar";
 import PrizeSymbol_MoooreCheddar from "./PrizeSymbol_MoooreCheddar";
 import SubGameStateManager_MoooreCheddar from "./SubGameStateManager_MoooreCheddar";
+import HRVSlotService from "../../../Script/HRVService/HRVSlotService";
+import InGameUI_2020 from "./InGameUI_2020";
 
 // 严格遵循指定的装饰器导出方式
 const { ccclass, property } = cc._decorator;
@@ -68,7 +70,7 @@ export default class MoooreCheddarManager extends SlotManager {
      * 组件加载初始化
      * 绑定父类逻辑、初始化子游戏状态、注册动画/事件监听
      */
-    onLoad(): void {
+    async onLoad(): Promise<void> {
         super.onLoad(); // 调用父类onLoad
 
         // 初始化游戏组件和子游戏状态
@@ -100,6 +102,55 @@ export default class MoooreCheddarManager extends SlotManager {
         this.node.on("onIdleBonusSymbol", this.onIdleBonusSymbol, this);
         this.node.on("stepUpgradeFreeInfo", this.stepUpgradeFreeInfo, this);
         this.node.on("onGameRuleText", this.onGameRuleText, this);
+
+        
+        HRVSlotService.createInstance()
+        HRVSlotService.instance().init(SlotManager.Instance);
+        this.scheduleOnce(async ()=>{
+            await this.asyncLoadInGameUI()
+            await HRVSlotService.instance().onInitSlotGameProcess()
+            await HRVSlotService.instance().onInit()
+            this.asyncSceneLoadEffect()
+        },1)
+   
+
+    }
+
+    asyncLoadInGameUI(){
+        return new Promise<boolean>((resolve) => {
+            // 1. 加载IngameUI预制体（指定类型为Prefab，提升类型安全）
+            cc.loader.loadRes(
+                "game/2020/game/InGameUI_2020",
+                cc.Prefab,
+                (err: Error, prefab: cc.Prefab) => {
+                    // 2. 加载失败处理：记录异常并发送到FireHose
+                    if (err) {
+                        const errorObj = new Error(
+                            `cc.loader.loadRes fail asyncLoadInGameUI: ${JSON.stringify(err)}`
+                        );
+                        cc.error(errorObj.message); // Cocos TS 标准日志输出
+                        
+                        // // 发送异常日志到AWS FireHose
+                        // FireHoseSender.Instance().sendAws(
+                        //     FireHoseSender.Instance().getRecord(
+                        //         FireHoseSender.FHLogType.Exception,
+                        //         errorObj
+                        //     )
+                        // );
+                        resolve(false);
+                        return;
+                    }
+
+                    // 3. 加载成功处理：实例化预制体并获取组件
+                    const uiNode = cc.instantiate(prefab);
+                    const ingameUI = uiNode.getComponent(InGameUI_2020);
+                    
+                    // 4. 将UI组件赋值给全局管理器单例
+                    SlotManager.Instance.ingameUI = ingameUI;
+                    resolve(true);
+                }
+            );
+        });
     }
 
     /**
@@ -135,11 +186,11 @@ export default class MoooreCheddarManager extends SlotManager {
      */
     playMainBgm(): void {
         const nextSubGameKey = SlotGameResultManager.Instance.getNextSubGameKey();
-        if (nextSubGameKey.includes("bonus")) {
-            SlotSoundController.Instance().playAudio("bonus", "BGM");
-        } else {
-            SlotSoundController.Instance().playAudio(nextSubGameKey, "BGM");
-        }
+        // if (nextSubGameKey.includes("bonus")) {
+        //     SlotSoundController.Instance().playAudio("bonus", "BGM");
+        // } else {
+        //     SlotSoundController.Instance().playAudio(nextSubGameKey, "BGM");
+        // }
     }
 
     /**
@@ -217,7 +268,7 @@ export default class MoooreCheddarManager extends SlotManager {
             this.subgame_state.setCheddaCheese();
         } else {
             // 非bonusGame逻辑
-            SlotSoundController.Instance().playAudio("Intro", "FX");
+            // SlotSoundController.Instance().playAudio("Intro", "FX");
             await AsyncHelper.delay(3.5);
 
             // 处理滚轮停止后逻辑

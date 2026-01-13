@@ -11,6 +11,6 @@ export default class v2_PayLine extends cc.Component {
     public m_lineWidth: number = 0;
 
     /** 赔付线颜色 */
-    @property({ type: cc.Color })
+    @property()
     public m_color: cc.Color = cc.Color.WHITE;
 }

@@ -92,8 +92,8 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     private _earnMoney: number = 0;
     private _totalBet: number = 0;
     private fnCallback: Function | null = null;
-    private coinTargetNode: cc.Node | null = null;
-    private coinTargetNodeFreespin: cc.Node | null = null;
+    public coinTargetNode: cc.Node | null = null;
+    public coinTargetNodeFreespin: cc.Node | null = null;
     private skipFunc: Function | null = null;
     private _isEpicWin: boolean = false;
     private _isOverBigWin: boolean = false;

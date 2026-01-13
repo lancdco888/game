@@ -177,7 +177,7 @@ export default class LobbySlotEntryPopup extends DialogBase {
     }
 
     // ===================== 【静态方法】弹窗单例加载，原JS核心逻辑 =====================
-    public static getPopup(callback: (err: Error | null, popup: LobbySlotEntryPopup | null) => void): void {
+    public static getPopup(callback: (err: Error, popup: LobbySlotEntryPopup) => void): void {
         const resPath = "Service/01_Lobby/LobbySlotEntry/LobbySlotEntryPopup";
         cc.loader.loadRes(resPath, (err, prefab) => {
             if (err) {

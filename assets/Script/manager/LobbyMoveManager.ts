@@ -20,6 +20,7 @@ import MessageRoutingManager from "../message/MessageRoutingManager";
 import LobbyScene from "../LobbyScene";
 import SlotTourneyManager from "./SlotTourneyManager";
 import ServiceSlotDataManager from "./ServiceSlotDataManager";
+import LoadingSlotProcess from "./LoadingSlotProcess";
 
 
 @ccclass
@@ -58,39 +59,39 @@ export default class LobbyMoveManager extends cc.Component {
             return;
         }
 
-        this._info = data;
+        this._info ={slotID:"mooorecheddar"};
         this.setZoneInfo();
         PopupManager.Instance().showDisplayProgress(true);
 
         // 老虎机合法性校验
-        const isValid = await this.isSlotValidation();
-        if (!isValid) {
-            PopupManager.Instance().showDisplayProgress(false);
-            return;
-        }
+        // const isValid = await this.isSlotValidation();
+        // if (!isValid) {
+        //     PopupManager.Instance().showDisplayProgress(false);
+        //     return;
+        // }
 
         this._isMoveScene = true;
         this.setTournamentInfo();
-        this.setSlotMoveLog();
+        // this.setSlotMoveLog();
 
-        // 进入赌场权限校验
-        if (!this.isPassableCasino()) {
-            this._isMoveScene = false;
-            return;
-        }
+        // // 进入赌场权限校验
+        // if (!this.isPassableCasino()) {
+        //     this._isMoveScene = false;
+        //     return;
+        // }
 
         try {
             // 更新老虎机场景资源信息
-            const isNeedDownload = await this.updateSlotScene();
-            if (!isNeedDownload) {
+            // const isNeedDownload = await this.updateSlotScene();
+            // if (!isNeedDownload) {
                 await this.moveToSlot();
-            }
+            // }
         } catch (err) {
             const errorMsg = err as Error;
             cc.error("exception ", errorMsg.toString());
-            FireHoseSender.Instance().sendAws(
-                FireHoseSender.Instance().getRecord(FHLogType.Exception, errorMsg)
-            );
+            // FireHoseSender.Instance().sendAws(
+            //     FireHoseSender.Instance().getRecord(FHLogType.Exception, errorMsg)
+            // );
         }
     }
 
@@ -165,10 +166,10 @@ export default class LobbyMoveManager extends cc.Component {
     private updateSlotScene = async (): Promise<boolean> => {
         return new Promise(async (resolve) => {
             // 无需补丁/非iOS环境 → 直接跳转
-            if (!AssetBundleManager.Instance().isUsePatchSystem() || !SDefine.Mobile_iOS_DownloadNotiPopup_Flag) {
-                resolve(false);
-                return;
-            }
+            // if (!AssetBundleManager.Instance().isUsePatchSystem() || !SDefine.Mobile_iOS_DownloadNotiPopup_Flag) {
+            //     resolve(false);
+            //     return;
+            // }
 
             PopupManager.Instance().showDisplayProgress(true);
             const downloadInfo = await AssetBundleManager.Instance().getDownloadSceneInfoSync(this._info.sceneName);
@@ -299,6 +300,10 @@ export default class LobbyMoveManager extends cc.Component {
         //         ServiceInfoManager.STRING_MOVE_SLOT_INFO = "";
         //     });
         // }
+         // 3. 执行Cocos场景加载
+         cc.director.loadScene(
+            "222_MoooreCheddar"
+        );
     }
 
     // ===================== 私有方法 - 设置锦标赛信息 =====================

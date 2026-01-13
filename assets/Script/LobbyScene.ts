@@ -39,6 +39,8 @@ import LobbyUIBase, { LobbyUIType } from "./LobbyUIBase";
 import { LobbySceneUIType } from "./SceneInfo";
 import ConfigManager from "./manager/ConfigManager";
 import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
+import HRVSlotService from "./HRVService/HRVSlotService";
+import SlotManager from "./manager/SlotManager";
 //import LobbyUIStartPopupManager from "./StartPopup/LobbyUIStartPopupManager";
 //import LobbyUIStartPopup_ADFreeOffer from "./StartPopup/Popup/LobbyUIStartPopup_ADFreeOffer";
 
@@ -144,6 +146,8 @@ export default class LobbyScene extends cc.Component {
         MessageRoutingManager.instance().addListenerTarget(MessageRoutingManager.MSG.LOBBY_NEXT_STEP, this.openLobbyStartPopup, this);
         MessageRoutingManager.instance().addListenerTarget(MessageRoutingManager.MSG.RESET_START_POPUP, this.resetOpenLobbyStartPopup, this);
 
+
+        this.initialize()
     }
 
     // ===== 生命周期回调 - ON_DESTROY 大厅销毁逻辑，原代码完整复刻，内存释放核心 =====
@@ -171,7 +175,7 @@ export default class LobbyScene extends cc.Component {
                 // loadingPopup.setPostProgress(0, "Authenticating ...");
                 
                 // 初始化埋点+用户信息重置
-                Analytics.lobbyInitStartInit();
+                //Analytics.lobbyInitStartInit();
                 const userInstance = UserInfo.instance();
                 // userInstance.setLocation("Lobby");
                 // userInstance.setGameId("");
@@ -195,23 +199,23 @@ export default class LobbyScene extends cc.Component {
                 }
 
                 // 进度条更新 20%
-                Analytics.customLoadingRecord("lob_setUi_complete_" + (ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT - 1).toString());
+                //Analytics.customLoadingRecord("lob_setUi_complete_" + (ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT - 1).toString());
                 //loadingPopup.setPostProgress(0.2, "Verifying game ...");
-                this.refreshBGM();
+                //this.refreshBGM();
 
                 // 移动端新手引导标记
-                if (1 == Utility.isMobileGame() && !ServerStorageManager.getAsBoolean(StorageKeyType.MOBILE_GUIDE)) {
-                    ServerStorageManager.save(StorageKeyType.MOBILE_GUIDE, true);
-                }
+                // if (Utility.isMobileGame() && !ServerStorageManager.getAsBoolean(StorageKeyType.MOBILE_GUIDE)) {
+                //     ServerStorageManager.save(StorageKeyType.MOBILE_GUIDE, true);
+                // }
 
                 // 锦标赛定时调度 - 每秒执行一次
-                if (SDefine.SlotTournament_Use) {
-                    this.schedule(this.tourneyLobbySchedule, 1);
-                }
+                // if (SDefine.SlotTournament_Use) {
+                //     this.schedule(this.tourneyLobbySchedule, 1);
+                // }
 
                 // 进度条更新 60%
                 //loadingPopup.setPostProgress(0.6, "Entering lobby ...");
-                const slotZoneInfo = userInstance.slotZoneInfo[Math.min(this._numZoneID, 1)];
+                // const slotZoneInfo = userInstance.slotZoneInfo[Math.min(this._numZoneID, 1)];
                 
                 // // 分区信息校验 + 大奖信息刷新
                 // if (!TSUtility.isValid(slotZoneInfo)) {
@@ -250,10 +254,10 @@ export default class LobbyScene extends cc.Component {
                 SupersizeItManager.instance.initialize();
 
                 // 大厅移动管理器初始化
-                Analytics.lobbyInitStartLobbyMoveManager();
+                //Analytics.lobbyInitStartLobbyMoveManager();
                 this._mgrLobbyUIMove = new LobbyMoveManager();
                 await this._mgrLobbyUIMove.initialize();
-                Analytics.lobbyInitCompleteLobbyMoveManager();
+                //Analytics.lobbyInitCompleteLobbyMoveManager();
 
                 // // 大厅启动弹窗管理器初始化
                 // Analytics.lobbyInitStartStartPopupManager();
@@ -286,33 +290,33 @@ export default class LobbyScene extends cc.Component {
 
                 // 进度条更新 90% - UI初始化
                 //loadingPopup.setPostProgress(0.9, "Initialize UI ...");
-                const uiType = this._strZoneName == SDefine.SUITE_ZONENAME ? LobbySceneUIType.SUITE : LobbySceneUIType.LOBBY;
-                await this.UI.initialize(uiType);
+                //const uiType = this._strZoneName == SDefine.SUITE_ZONENAME ? LobbySceneUIType.SUITE : LobbySceneUIType.LOBBY;
+                //await this.UI.initialize(uiType);
 
                 // 进度条100%完成 + 入场动画播放
-                Analytics.lobbyInitAfterCompleteDelay();
+                //Analytics.lobbyInitAfterCompleteDelay();
                 //loadingPopup.setPostProgress(1, "Completed", true);
-                await this.UI.playEnterAction();
+                //await this.UI.playEnterAction();
 
-                // 首次进入校验未处理的内购订单
-                const enterLobbyCnt = ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT;
-                const enterSlotCnt = ServiceInfoManager.NUMBER_SLOT_ENTER_COUNT;
-                if (enterLobbyCnt + enterSlotCnt <= 1) {
-                    Analytics.lobbyInitStartCheckUnprocessedPurchase();
-                    //await UnprocessedPurchaseManager.Instance().doProcess();
-                    Analytics.lobbyInitCompleteCheckUnprocessedPurchase();
-                }
+                // // 首次进入校验未处理的内购订单
+                // const enterLobbyCnt = ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT;
+                // const enterSlotCnt = ServiceInfoManager.NUMBER_SLOT_ENTER_COUNT;
+                // if (enterLobbyCnt + enterSlotCnt <= 1) {
+                //     //Analytics.lobbyInitStartCheckUnprocessedPurchase();
+                //     //await UnprocessedPurchaseManager.Instance().doProcess();
+                //     //Analytics.lobbyInitCompleteCheckUnprocessedPurchase();
+                // }
 
-                // 初始化完成收尾逻辑
-                const completeInit = () => {
-                    if (!ServerStorageManager.getAsBoolean(StorageKeyType.FIRST_VISIT_LOBBY)) {
-                        ServerStorageManager.save(StorageKeyType.FIRST_VISIT_LOBBY, true);
-                    }
-                    Analytics.lobbyInitCompleteAll();
-                    Analytics.enterCasinoComplete(this._numZoneID);
-                    ServiceInfoManager.STRING_SNEAK_PEEK_GAME_ID = "";
-                    this.openLobbyStartPopup();
-                };
+                // // 初始化完成收尾逻辑
+                // const completeInit = () => {
+                //     if (!ServerStorageManager.getAsBoolean(StorageKeyType.FIRST_VISIT_LOBBY)) {
+                //         ServerStorageManager.save(StorageKeyType.FIRST_VISIT_LOBBY, true);
+                //     }
+                //     Analytics.lobbyInitCompleteAll();
+                //     Analytics.enterCasinoComplete(this._numZoneID);
+                //     ServiceInfoManager.STRING_SNEAK_PEEK_GAME_ID = "";
+                //     this.openLobbyStartPopup();
+                // };
 
                 // // 从老虎机返回大厅时的广告逻辑
                 // if ("Slot" == userInstance.getPrevLocation() && 1 == AdsManager.Instance().isUseable()) {
@@ -347,7 +351,8 @@ export default class LobbyScene extends cc.Component {
                 // }
             } catch (error) {
                 // 异常上报
-                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
+                //FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
+                resolve();
             } finally {
                 resolve();
             }

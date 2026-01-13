@@ -1,0 +1,76 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Loading_Circle_Ani_0",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "100_Round_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.49778337531486144,
+                0.09722921914357685,
+                0.5053652392947103,
+                0.8996221662468513
+              ]
+            },
+            {
+              "frame": 1,
+              "value": -360
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0,
+                "value": 0.225,
+                "curve": "quadIn"
+              },
+              {
+                "frame": 0.5,
+                "value": -0.1,
+                "curve": "quadOut"
+              },
+              {
+                "frame": 1,
+                "value": 0.225
+              }
+            ],
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0.05,
+                "curve": "quadIn"
+              },
+              {
+                "frame": 0.5,
+                "value": 0.7,
+                "curve": "quadOut"
+              },
+              {
+                "frame": 1,
+                "value": 0.05
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "loaded": true,
+  "_nativeUrl": "",
+  "_ref": 6,
+  "frameRate": 60,
+  "__onLoadInvoked__": true
+}

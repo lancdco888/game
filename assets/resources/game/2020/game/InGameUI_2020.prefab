@@ -58,9 +58,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 5430
+      }
+    ],
     "_prefab": {
-      "__id__": 5430
+      "__id__": 5431
     },
     "_opacity": 255,
     "_color": {
@@ -53250,7 +53254,7 @@
         "__id__": 1434
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 2707
@@ -101123,7 +101127,7 @@
         "__id__": 2715
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 5173
@@ -202373,6 +202377,55 @@
     },
     "fileId": "5bYrKIbaJM4rZYOtScI2ry",
     "sync": false
+  },
+  {
+    "__type__": "e55474eBfRPW4L8mn+CuV2j",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "homeBtn": null,
+    "blockingBG": null,
+    "bigwinCoinTarget": null,
+    "levelUI": null,
+    "levelBoosterUI": null,
+    "menuBtn": null,
+    "heroUI": null,
+    "tourneyLayoutIcon": null,
+    "topLeftNode": {
+      "__id__": 2715
+    },
+    "topRightNode": {
+      "__id__": 1434
+    },
+    "leftNode": {
+      "__id__": 3494
+    },
+    "rightNode": {
+      "__id__": 3
+    },
+    "bottomRightNode": {
+      "__id__": 8
+    },
+    "bankRollNode": null,
+    "nodeProfile": null,
+    "popupParentRoot": null,
+    "bankRoll_IntroduceCoin": null,
+    "payTable_IntoduceCoin": null,
+    "right_Layout": null,
+    "thrillWheelJackpotGaugeUI": null,
+    "leftUI_Layout": null,
+    "fastModeTooltip": null,
+    "fastModeInfos": [],
+    "sideMenu_Nodes": [],
+    "cheatObjNode": null,
+    "block_Node": null,
+    "blockInputBeforeAnimNode": null,
+    "nodeMenu": null,
+    "nodeRightLayout": null,
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",

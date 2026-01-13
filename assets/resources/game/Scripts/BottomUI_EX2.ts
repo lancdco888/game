@@ -67,6 +67,7 @@ export default class BottomUI_EX2 extends BottomUI {
 
     // ========== 业务状态 ==========
     betClips: any[] = [];                // 下注音效剪辑数组
+
     changeAutospinModeAction: any = null;// 自动旋转模式切换动作
     interactableFlagChangeBetPerLineBtn: boolean = true; // 下注调整按钮交互标记
     interactableFlagChangeMaxbetBtn: boolean = true;    // 最大下注按钮交互标记
@@ -101,10 +102,10 @@ export default class BottomUI_EX2 extends BottomUI {
         const slotManager = SlotManager.Instance;
         const slotSoundCtrl = SlotSoundController.Instance();
         
-        // 加载下注音效
-        for (let i = 0; i < 9; ++i) {
-            this.betClips.push(slotSoundCtrl.getAudioClip(`Betting_${i.toString()}`));
-        }
+        // // 加载下注音效
+        // for (let i = 0; i < 9; ++i) {
+        //     this.betClips.push(slotSoundCtrl.getAudioClip(`Betting_${i.toString()}`));
+        // }
 
         // ========== 按钮事件绑定 ==========
         // 旋转按钮
@@ -115,7 +116,7 @@ export default class BottomUI_EX2 extends BottomUI {
             
             // 添加点击事件（替换原Utility.getComponent_EventHandler，适配Cocos 2.4 TS）
             this.btnSpin.clickEvents.push(this.createEventHandler(slotManager.node, "SlotManager", "spinAll"));
-            this.btnSpin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickSpinBtn", "FX"])));
+            //this.btnSpin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickSpinBtn", "FX"])));
             this.btnSpin.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "hideLockChangeTotalBetPopup"));
             this.btnSpin.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "setPlaySlotID"));
         }
@@ -123,53 +124,53 @@ export default class BottomUI_EX2 extends BottomUI {
         // 停止自动旋转按钮
         if (this.btnStopAutospin) {
             this.btnStopAutospin.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickStopAutoSpin"));
-            this.btnStopAutospin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+            //this.btnStopAutospin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
         }
 
         // 自动旋转状态下的停止按钮
         if (this.btnStopInAutospin) {
             this.btnStopInAutospin.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickStop"));
-            this.btnStopInAutospin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+            //this.btnStopInAutospin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
         }
 
         // 普通停止按钮
         if (this.btnStop) {
             this.btnStop.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickStop"));
-            this.btnStop.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+            //this.btnStop.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
         }
 
         // 单线下注减少按钮
         if (this.btnMinusBetPerLine) {
             this.btnMinusBetPerLine.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickDecreaseTotalBet"));
             if (this.betClips.length === 0) {
-                this.btnMinusBetPerLine.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+                // this.btnMinusBetPerLine.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
             }
         }
 
         // 下注选择按钮
         if (this.btnBetSelect) {
             this.btnBetSelect.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickBetSelect"));
-            this.btnBetSelect.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+            // this.btnBetSelect.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
         }
 
         // 单线下注增加按钮
         if (this.btnPlusBetPerLine) {
             this.btnPlusBetPerLine.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickIncreaseTotalBet"));
             if (this.betClips.length === 0) {
-                this.btnPlusBetPerLine.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+                // this.btnPlusBetPerLine.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
             }
         }
 
         // 最大下注按钮
         if (this.btnMaxBet) {
             this.btnMaxBet.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickMaxBet"));
-            this.btnMaxBet.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickSpinBtn", "FX"])));
+            // this.btnMaxBet.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickSpinBtn", "FX"])));
         }
 
         // 购买金币按钮
         if (this.btnBuyCoins) {
             this.btnBuyCoins.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickBuyCoinBtn"));
-            this.btnBuyCoins.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+            // this.btnBuyCoins.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
         }
 
         // 旋转按钮按住特效初始化
@@ -191,14 +192,14 @@ export default class BottomUI_EX2 extends BottomUI {
         // 自动旋转选择按钮
         if (this.btnAutoSpinSelect) {
             this.btnAutoSpinSelect.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "onClickAutoSpinSelect"));
-            this.btnAutoSpinSelect.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
+            // this.btnAutoSpinSelect.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickOtherButton", "FX"])));
         }
 
         // ========== 快速模式初始化 ==========
         const userOption = LocalStorageManager.getLocalUserOptionInfo(slotManager.getUserId());
         this.fastMode = userOption.lastFastMode;
-        SlotUIRuleManager.Instance.setFastMode(this.fastMode);
-        SlotUIRuleManager.Instance.applyFastMode();
+        // SlotUIRuleManager.Instance.setFastMode(this.fastMode);
+        // SlotUIRuleManager.Instance.applyFastMode();
         this.setActiveFastModeBtn(this.fastMode);
 
         // ========== 事件监听 ==========

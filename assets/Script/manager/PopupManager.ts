@@ -36,7 +36,7 @@ export default class PopupManager extends cc.Component {
         node.setPosition(canvasSize.width / 2, canvasSize.height / 2);
         node.setContentSize(canvas.node.getContentSize());
         // 异步加载延迟进度条(阻塞遮罩)预制体
-        cc.loader.loadRes("SlotCommon/Prefab/DelayProgress", (err, prefab) => {
+        cc.loader.loadRes("Prefabs/DelayProgress", (err, prefab) => {
             if (err) {
                 cc.log("DelayProgress load error, ", JSON.stringify(err));
                 return;

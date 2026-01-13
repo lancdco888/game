@@ -362,7 +362,7 @@ export default class SlotBannerItem extends cc.Component {
     }
 
     isCheckOpenEntryPopup(): number {
-        return 1;//(UserInfo.instance().hasMajorRollerFreeTicket() || 
+        return 0;//(UserInfo.instance().hasMajorRollerFreeTicket() || 
                // this.ENTRY_POPUP_UNLOCK_LEVEL <= this.numUserLevel || 
                // this.ENTRY_POPUP_UNLOCK_VIP_LEVEL <= this.numUserVIPLevel) ? 1 : 0;
     }

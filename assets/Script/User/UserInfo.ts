@@ -34,7 +34,7 @@ import UserHeroInfo from "./UserHeroInfo";
 import HeroManager from "../manager/HeroManager";
 // import StarAlbumManager from "../Utility/StarAlbumManager";
 // import HeroTooltipTest from "../Test/HeroTooltipTest";
-import SlotTourneyManager from "../manager/SlotTourneyManager";
+import SlotTourneyManager, { SlotTourneyTierType } from "../manager/SlotTourneyManager";
 // import PiggyBankPromotionManager from "../Popup/PiggyBank/PiggyBankPromotionManager";
 // import FBSquadManager from "../Utility/FBSquadManager";
 import AdsManager from "../Utility/AdsManager";
@@ -584,9 +584,9 @@ export default class UserInfo extends cc.Component {
     //     return this._tourneyID;
     // }
 
-    // public isJoinTourney(): boolean {
-    //     return this._tourneyTier !== SlotTourneyManager.SlotTourneyTierType.INVALID;
-    // }
+    public isJoinTourney(): boolean {
+        return this._tourneyTier !== SlotTourneyTierType.INVALID;
+    }
 
     // public getPrevTourneyTier(): number {
     //     return this._prevTourneyTier;
@@ -1320,10 +1320,10 @@ export default class UserInfo extends cc.Component {
     //     return 0;
     // }
 
-    // public setZoneID(val: number): void {
-    //     this._zoneId = val;
-    //     NativeUtil.setObjValue_FBCrash("ZoneId", val.toString());
-    // }
+    public setZoneID(val: any): void {
+        this._zoneId = val;
+        // NativeUtil.setObjValue_FBCrash("ZoneId", val.toString());
+    }
 
     public getZoneId(): number {
         return this._zoneId;

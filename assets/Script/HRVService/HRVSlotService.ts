@@ -120,6 +120,13 @@ import TimeBonusManager from "../manager/TimeBonusManager";
 import { FBShareInfo } from "../slot_common/SlotDataDefine";
 import SlotJackpotManager from "../manager/SlotJackpotManager";
 import { ResultPopupType } from "../Slot/GameResultPopup";
+import MachineFrame from "../../resources/game/Scripts/MachineFrame";
+import SlotmachineBackgroundSide from "../manager/SlotmachineBackgroundSide";
+import SlotmachineBackground from "../../resources/game/Scripts/SlotmachineBackground";
+import BottomUI from "../../resources/game/Scripts/BottomUI";
+import BottomUIText, { BottomTextType } from "../../resources/game/Scripts/BottomUIText";
+import GameComponents_Base from "../game/GameComponents_Base";
+import LoadingSlotProcess from "../manager/LoadingSlotProcess";
 
 // 当前模块依赖
 // import HRVSlotBigWinEffectService from "./HRVSlotBigWinEffectService";
@@ -246,251 +253,255 @@ export default class HRVSlotService extends cc.Component {
      * 异步初始化游戏核心逻辑
      */
     async onInit(): Promise<void> {
-        // try {
-        //     // 广告打点 + 页面位置记录
-        //     if (UserInfo.instance().getPrevLocation() === "Lobby" && AdsManager.Instance().isUseable()) {
-        //         AdsManager.Instance().ADLog_InterstitialShowUI(PlacementID_InterstitalType.LOBBYTOSLOT);
-        //         if (ADTargetManager.instance().enableInterstitialAD()) {
-        //             AdsManager.Instance().InterstitialAdplay(PlacementID_InterstitalType.LOBBYTOSLOT, () => {
-        //                 ServiceInfoManager.instance.addInterstitialADPlayCount();
-        //             }, () => {
-        //                 if (!TSUtility.isLiveService()) ServiceInfoManager.instance.addInterstitialADPlayCount();
-        //             });
-        //         } else if (ADTargetManager.instance().enableInterstitialAD(false)) {
-        //             console.log("Slot Check enableInterstitialAD true");
-        //             AdsManager.Instance().preloadInterstitialAD();
-        //         }
-        //     }
-        //     UserInfo.instance().setPrevLocation("Slot");
-        //     CameraControl.Instance.setOrderTypeTopPos(ORDER_TYPE_TOPPOS_CENTER);
-        //     ServiceInfoManager.NUMBER_SPIN_COUNT = 0;
-        //     ServiceInfoManager.NUMBER_BET_SPIN_COUNT = 0;
-        //     ServiceInfoManager.STRING_PREV_SLOT_ID = SlotGameRuleManager.Instance.slotID;
+        //try {
+            // // 广告打点 + 页面位置记录
+            // if (UserInfo.instance().getPrevLocation() === "Lobby" && AdsManager.Instance().isUseable()) {
+            //     AdsManager.Instance().ADLog_InterstitialShowUI(PlacementID_InterstitalType.LOBBYTOSLOT);
+            //     if (ADTargetManager.instance().enableInterstitialAD()) {
+            //         AdsManager.Instance().InterstitialAdplay(PlacementID_InterstitalType.LOBBYTOSLOT, () => {
+            //             ServiceInfoManager.instance.addInterstitialADPlayCount();
+            //         }, () => {
+            //             if (!TSUtility.isLiveService()) ServiceInfoManager.instance.addInterstitialADPlayCount();
+            //         });
+            //     } else if (ADTargetManager.instance().enableInterstitialAD(false)) {
+            //         console.log("Slot Check enableInterstitialAD true");
+            //         AdsManager.Instance().preloadInterstitialAD();
+            //     }
+            // }
 
-        //     await AsyncHelper.delayWithComponent(0, this);
-        //     SlotManager.Instance._scaleAdjuster = CameraControl.Instance.scaleAdjuster;
-        //     if (SlotManager.Instance._scaleAdjuster) SlotManager.Instance.setAutoScaleByResoultion();
-        //     PopupManager.Instance().setBaseBackBtnCallback(SlotManager.baseBackBtnProcess);
+            //UserInfo.instance().setPrevLocation("Slot");
+            CameraControl.Instance.setOrderTypeTopPos(CameraControl.ORDER_TYPE_TOPPOS_CENTER);
+            ServiceInfoManager.NUMBER_SPIN_COUNT = 0;
+            ServiceInfoManager.NUMBER_BET_SPIN_COUNT = 0;
+            ServiceInfoManager.STRING_PREV_SLOT_ID = SlotGameRuleManager.Instance.slotID;
 
-        //     // 加载弹窗进度更新
-        //     const loadingPopup = LoadingPopup.getCurrentOpenPopup();
-        //     loadingPopup.setPostProgress(0, "Authenticating ...");
-        //     this._spinChangeResult = new ChangeResult();
-        //     this.setZoneInfo();
+            await AsyncHelper.delayWithComponent(0, this);
+            SlotManager.Instance._scaleAdjuster = CameraControl.Instance.scaleAdjuster;
+            if (SlotManager.Instance._scaleAdjuster) SlotManager.Instance.setAutoScaleByResoultion();
+            PopupManager.Instance().setBaseBackBtnCallback(SlotManager.baseBackBtnProcess);
 
-        //     // 初始化老虎机游戏核心
-        //     console.log("initSlotGameProcess start");
-        //     loadingPopup.setPostProgress(.25, "Setting up Slot .");
-        //     const initSlotRes = await SlotManager.Instance.initSlotGameProcess();
-        //     console.log("initSlotGameProcess end");
-        //     if (!initSlotRes) {
-        //         this.showLoginErrorPopup();
-        //         return;
-        //     }
+            // // 加载弹窗进度更新
+            // const loadingPopup = LoadingPopup.getCurrentOpenPopup();
+            // loadingPopup.setPostProgress(0, "Authenticating ...");
+            this._spinChangeResult = new ChangeResult();
+            this.setZoneInfo();
 
-        //     // 初始化文本特效+游戏结果弹窗
-        //     loadingPopup.setPostProgress(.27, "Setting up Slot ..");
-        //     const [textEffectRes, gameResultRes] = await Promise.all([
-        //         SlotManager.Instance.initTextEffectProcess(),
-        //         SlotManager.Instance.initGameResultPopupProcess()
-        //     ]);
-        //     if (!textEffectRes || !gameResultRes) {
-        //         this.showLoginErrorPopup();
-        //         return;
-        //     }
-        //     Analytics.customSlotLoadingRecord("initSlotRes_complete");
-        //     ServiceInfoManager.instance.resetSpinOpenPopup();
-        //     loadingPopup.setPostProgress(.3, "Setting up Slot ...");
+            // 初始化老虎机游戏核心
+            console.log("initSlotGameProcess start");
+            // loadingPopup.setPostProgress(.25, "Setting up Slot .");
+            const initSlotRes = await SlotManager.Instance.initSlotGameProcess();
+            console.log("initSlotGameProcess end");
+            if (!initSlotRes) {
+                this.showLoginErrorPopup();
+                return;
+            }
 
-        //     // 初始化游戏内UI
-        //     this.setInGameUI();
-        //     if (SDefine.SlotTournament_Use) this.getInGameUI().initSlotTourney();
-        //     else this.getInGameUI().tourneyUI.close();
+            // 初始化文本特效+游戏结果弹窗
+            // loadingPopup.setPostProgress(.27, "Setting up Slot ..");
+            const [textEffectRes, gameResultRes] = await Promise.all([
+                SlotManager.Instance.initTextEffectProcess(),
+                SlotManager.Instance.initGameResultPopupProcess()
+            ]);
+            if (!textEffectRes || !gameResultRes) {
+                this.showLoginErrorPopup();
+                return;
+            }
+            Analytics.customSlotLoadingRecord("initSlotRes_complete");
+            ServiceInfoManager.instance.resetSpinOpenPopup();
+            // loadingPopup.setPostProgress(.3, "Setting up Slot ...");
+
+            // 初始化游戏内UI
+            this.setInGameUI();
+            // if (SDefine.SlotTournament_Use) this.getInGameUI().initSlotTourney();
+            // else this.getInGameUI().tourneyUI.close();
             
-        //     if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME || UserInfo.instance()._zoneName === SDefine.VIP_LOUNGE_ZONENAME) {
-        //         this.getInGameUI().initDynamicReelsUI();
-        //     } else {
-        //         this.getInGameUI().hideDynamicReelsUI();
-        //     }
+            // if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME || UserInfo.instance()._zoneName === SDefine.VIP_LOUNGE_ZONENAME) {
+            //     this.getInGameUI().initDynamicReelsUI();
+            // } else {
+                this.getInGameUI().hideDynamicReelsUI();
+            // }
 
-        //     await AsyncHelper.delayWithComponent(0, this);
-        //     this.getInGameUI().fadeOut(0);
-        //     loadingPopup.setPostProgress(.4, "Setting up Slot ....");
+            await AsyncHelper.delayWithComponent(0, this);
+            this.getInGameUI().fadeOut(0);
+            // loadingPopup.setPostProgress(.4, "Setting up Slot ....");
             
-        //     // 投注信息 + 窗口初始化
-        //     SlotManager.Instance.setBetInfo();
-        //     SlotManager.Instance.setEntranceWindow();
-        //     SlotManager.Instance.setOverSizeSymbolAfterSetEntranceWindow();
-        //     loadingPopup.setPostProgress(.8, "Setting up Slot .....");
+            // 投注信息 + 窗口初始化
+            SlotManager.Instance.setBetInfo();
+            SlotManager.Instance.setEntranceWindow();
+            SlotManager.Instance.setOverSizeSymbolAfterSetEntranceWindow();
+            // loadingPopup.setPostProgress(.8, "Setting up Slot .....");
 
-        //     await AsyncHelper.delayWithComponent(0, this);
-        //     // 加载老虎机框架
-        //     if (SlotManager.Instance.machineFrameLayer) {
-        //         const machineFramePrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("machineFrame"));
-        //         SlotManager.Instance.machineFrameLayer.addChild(machineFramePrefab);
-        //         SlotManager.Instance.setMachineFrame = machineFramePrefab.getComponent(MachineFrame);
-        //         SlotManager.Instance.machineFrame.setShowBG(SlotManager.Instance.flagShowFrameBG, SlotManager.Instance.frameBGNode);
-        //     }
+            await AsyncHelper.delayWithComponent(0, this);
+            // 加载老虎机框架
+            if (SlotManager.Instance.machineFrameLayer) {
+                var machineFramePrefab = SlotManager.Instance.machineFrameLayer.getChildByName("MUI_Yellow_Frame");
+                SlotManager.Instance.setMachineFrame = machineFramePrefab.getComponent(MachineFrame);
+                // SlotManager.Instance.machineFrame.setShowBG(SlotManager.Instance.flagShowFrameBG, SlotManager.Instance.frameBGNode);
+            }
 
-        //     // 加载背景
-        //     if (SlotManager.Instance.backgroundLayer) {
-        //         if (SlotPrefabManager.Instance().isPrefabExist("BackgroundSide")) {
-        //             const bgSide = cc.instantiate(SlotPrefabManager.Instance().getPrefab("BackgroundSide"));
-        //             const bgSideComp = bgSide.getComponent(SlotmachineBackgroundSide);
-        //             await bgSideComp.asyncLoadBg();
-        //             SlotManager.Instance.backgroundLayer.addChild(bgSide);
-        //             bgSide.setPosition(cc.Vec2.ZERO);
-        //         }
-        //         const bg = cc.instantiate(SlotPrefabManager.Instance().getPrefab("Background"));
-        //         SlotManager.Instance.background_scale_component = bg.getComponent(SlotmachineBackground);
-        //         console.log("asyncLoadBg start");
-        //         await SlotManager.Instance.background_scale_component.asyncLoadBg();
-        //         SlotManager.Instance.backgroundLayer.addChild(bg);
-        //         bg.setPosition(cc.Vec2.ZERO);
-        //         console.log("asyncLoadBg end");
-        //     }
+            // 加载背景
+            if (SlotManager.Instance.backgroundLayer) {
+                if (SlotPrefabManager.Instance().isPrefabExist("BackgroundSide")) {
+                    const bgSide = cc.instantiate(SlotPrefabManager.Instance().getPrefab("BackgroundSide"));
+                    const bgSideComp = bgSide.getComponent(SlotmachineBackgroundSide);
+                    await bgSideComp.asyncLoadBg();
+                    SlotManager.Instance.backgroundLayer.addChild(bgSide);
+                    bgSide.setPosition(cc.Vec2.ZERO);
+                }
 
-        //     // 初始化底部UI
-        //     if (SlotManager.Instance.bottomUiInstance) {
-        //         const bottomUI = SlotManager.Instance.bottomUiInstance.getComponent(BottomUI);
-        //         bottomUI.initBottomUI_EX(this);
-        //         bottomUI.initUI();
-        //         SlotManager.Instance._bottomUI = bottomUI;
-        //     } else {
-        //         const bottomUIPrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("bottomUI"));
-        //         SlotManager.Instance.bottomUiLayer.addChild(bottomUIPrefab);
-        //         const bottomUI = bottomUIPrefab.getComponent(BottomUI);
-        //         bottomUI.initBottomUI_EX(this);
-        //         bottomUI.initUI();
-        //         SlotManager.Instance._bottomUI = bottomUI;
-        //         if (!SlotManager.Instance.bottomUIText) {
-        //             SlotManager.Instance.bottomUIText = bottomUIPrefab.getComponent(BottomUIText);
-        //         }
-        //         SlotManager.Instance.bottomUIText.setBottomUIAutoScaleByResoultion();
-        //     }
+                var bg = SlotManager.Instance.backgroundLayer.getChildByName("Background");
+                SlotManager.Instance.background_scale_component = bg.getComponent(SlotmachineBackground);
+                console.log("asyncLoadBg start");
+                await SlotManager.Instance.background_scale_component.asyncLoadBg();
+               
+                bg.setPosition(cc.Vec2.ZERO);
+                console.log("asyncLoadBg end");
+            }
 
-        //     // 内容选择器初始化
-        //     this.setContentSelector();
-        //     // 宝石系统初始化
-        //     if (PowerGemManager.instance.isAvailablePowerGem(true) && this.getPowerGemSlotBottomIcon()) {
-        //         this.getPowerGemSlotBottomIcon().updatePowerGemEvent(true);
-        //     }
+            // // 初始化底部UI
+            // if (SlotManager.Instance.bottomUiInstance) {
+            //     const bottomUI = SlotManager.Instance.bottomUiInstance.getComponent(BottomUI);
+            //     bottomUI.initBottomUI_EX(this);
+            //     bottomUI.initUI();
+            //     SlotManager.Instance._bottomUI = bottomUI;
+            // } else {
 
-        //     // 测试模式-作弊组件
-        //     if (!TSUtility.isLiveService() && SlotManager.Instance.cheatObjectLayer) {
-        //         const cheatPrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("cheatObject"));
-        //         SlotManager.Instance.cheatObjectLayer.addChild(cheatPrefab);
-        //         SlotManager.Instance.setCheatComponent = cheatPrefab.getComponent("CheatController");
-        //         SlotManager.Instance.cheatComponent.setGameId(SlotGameRuleManager.Instance.slotID);
-        //         // const balanceName = LocalStorageManager.getMultiBalanceName(SlotGameRuleManager.Instance.slotID);
-        //         // if (TSUtility.isValid(balanceName)) {
-        //         //     this.sendChangeBalanceID(balanceName, SlotManager.Instance.cheatComponent.responseMultiBalanceSet.bind(SlotManager.Instance.cheatComponent));
-        //         // }
-        //     }
+           var node = SlotManager.Instance.bottomUiLayer.getChildByName("MUI_Yellow_Bottom")
+            // const bottomUIPrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("bottomUI"));
+            // SlotManager.Instance.bottomUiLayer.addChild(bottomUIPrefab);
+            const bottomUI = node.getComponent(BottomUI);
+            bottomUI.initBottomUI_EX(this);
+            bottomUI.initUI();
+            SlotManager.Instance._bottomUI = bottomUI;
+            if (!SlotManager.Instance.bottomUIText) {
+                SlotManager.Instance.bottomUIText = node.getComponent(BottomUIText);
+            }
+            SlotManager.Instance.bottomUIText.setBottomUIAutoScaleByResoultion();
+            // }
 
-        //     // 赔付线初始化
-        //     if (SlotManager.Instance.paylineRenderer) {
-        //         const paylines = SlotGameRuleManager.Instance.getPaylines();
-        //         if (paylines.payLineListType && paylines.payLineListType === "cellNo") {
-        //             const x = SlotManager.Instance.paylineRenderer.m_reelLayout.x;
-        //             const y = SlotManager.Instance.paylineRenderer.m_reelLayout.y;
-        //             SlotManager.Instance.paylineRenderer.initPaylineRendererWithCellInfo("AllPayLine", paylines.getAllPaylineCellDataArray(x, y));
-        //         } else {
-        //             SlotManager.Instance.paylineRenderer.initPaylineRenderer("AllPayLine", paylines.getAllPaylineDataArray());
-        //         }
-        //     }
+            // 内容选择器初始化
+            this.setContentSelector();
+            // 宝石系统初始化
+            // if (PowerGemManager.instance.isAvailablePowerGem(true) && this.getPowerGemSlotBottomIcon()) {
+            //     this.getPowerGemSlotBottomIcon().updatePowerGemEvent(true);
+            // }
 
-        //     // 底部文本初始化
-        //     if (SlotManager.Instance.bottomUIText) {
-        //         SlotManager.Instance.bottomUIText.initUI(this);
-        //     }
+            // // 测试模式-作弊组件
+            // if (!TSUtility.isLiveService() && SlotManager.Instance.cheatObjectLayer) {
+            //     const cheatPrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("cheatObject"));
+            //     SlotManager.Instance.cheatObjectLayer.addChild(cheatPrefab);
+            //     SlotManager.Instance.setCheatComponent = cheatPrefab.getComponent("CheatController");
+            //     SlotManager.Instance.cheatComponent.setGameId(SlotGameRuleManager.Instance.slotID);
+            //     // const balanceName = LocalStorageManager.getMultiBalanceName(SlotGameRuleManager.Instance.slotID);
+            //     // if (TSUtility.isValid(balanceName)) {
+            //     //     this.sendChangeBalanceID(balanceName, SlotManager.Instance.cheatComponent.responseMultiBalanceSet.bind(SlotManager.Instance.cheatComponent));
+            //     // }
+            // }
 
-        //     // 大奖特效绑定
-        //     if (SlotManager.Instance.getComponent(GameComponents_Base)?.effectBigWinNew) {
-        //         SlotManager.Instance.getComponent(GameComponents_Base)!.effectBigWinNew.coinTargetNode = this.getInGameUI().bigwinCoinTarget;
-        //         SlotManager.Instance.getComponent(GameComponents_Base)!.effectBigWinNew.coinTargetNodeFreespin = SlotManager.Instance.bottomUIText.getCoinTargetBigWinEffectInFreespin();
-        //     }
+            // 赔付线初始化
+            if (SlotManager.Instance.paylineRenderer) {
+                const paylines = SlotGameRuleManager.Instance.getPaylines();
+                if (paylines.payLineListType && paylines.payLineListType === "cellNo") {
+                    const x = SlotManager.Instance.paylineRenderer.m_reelLayout.x;
+                    const y = SlotManager.Instance.paylineRenderer.m_reelLayout.y;
+                    SlotManager.Instance.paylineRenderer.initPaylineRendererWithCellInfo("AllPayLine", paylines.getAllPaylineCellDataArray(x, y));
+                } else {
+                    SlotManager.Instance.paylineRenderer.initPaylineRenderer("AllPayLine", paylines.getAllPaylineDataArray());
+                }
+            }
 
-        //     SlotManager.Instance.bottomUIText.setBottomTextInfo(BottomTextType.EnterGame);
-        //     SlotManager.Instance.initBottomUIButtonEnableStateOnEnterRoom();
-        //     this.getInGameUI().setPromotionUI();
+            // 底部文本初始化
+            if (SlotManager.Instance.bottomUIText) {
+                SlotManager.Instance.bottomUIText.initUI(this);
+            }
 
-        //     // 狂热模式初始化
-        //     const feverCallback = () => {
-        //         this.getInGameUI().suiteLeagueUI.feverUI.updateFeverMode(true);
-        //     };
-        //     SlotFeverModeManager.instance.useFeverTicket(feverCallback.bind(this));
-        //     this.getInGameUI().suiteLeagueUI.setLoungeSlotInfo();
-        //     this.node.on("changeMoneyState", this.getInGameUI().onBettingMoneyChange.bind(this.getInGameUI()));
-        //     this.setFeverModeUI();
+            // 大奖特效绑定
+            if (SlotManager.Instance.getComponent(GameComponents_Base)?.effectBigWinNew) {
+                SlotManager.Instance.getComponent(GameComponents_Base)!.effectBigWinNew.coinTargetNode = this.getInGameUI().bigwinCoinTarget;
+                SlotManager.Instance.getComponent(GameComponents_Base)!.effectBigWinNew.coinTargetNodeFreespin = SlotManager.Instance.bottomUIText.getCoinTargetBigWinEffectInFreespin();
+            }
 
-        //     console.log("asyncSceneLoadPrepare start");
-        //     await SlotManager.Instance.asyncSceneLoadPrepare();
-        //     await AsyncHelper.delayWithComponent(.2, this);
-        //     console.log("asyncSceneLoadPrepare end");
+            SlotManager.Instance.bottomUIText.setBottomTextInfo(BottomTextType.EnterGame);
+            SlotManager.Instance.initBottomUIButtonEnableStateOnEnterRoom();
+            this.getInGameUI().setPromotionUI();
 
-        //     loadingPopup.setPostProgress(1, "Complete Slot Loading", true);
-        //     Analytics.customSlotLoadingRecord("load_slotgame_complete");
-        //     SlotManager.Instance.registerIgnoreSymbols();
-        //     SlotManager.Instance.initCameraSetting();
-        //     await SlotManager.Instance.asyncSceneLoadEffect();
-        //     await this.onGameStartSceneLoadEffectEnd();
+            // 狂热模式初始化
+            const feverCallback = () => {
+                this.getInGameUI().suiteLeagueUI.feverUI.updateFeverMode(true);
+            };
+            SlotFeverModeManager.instance.useFeverTicket(feverCallback.bind(this));
+            // this.getInGameUI().suiteLeagueUI.setLoungeSlotInfo();
+            this.node.on("changeMoneyState", this.getInGameUI().onBettingMoneyChange.bind(this.getInGameUI()));
+            this.setFeverModeUI();
 
-        //     // 星级相册 + 英雄UI初始化
-        //     const betIndex = SlotGameRuleManager.Instance.getCurrentBetPerLineIndex();
-        //     const maxBetIndex = SlotGameRuleManager.Instance.getMaxBetPerLineCnt() - 1;
-        //     this.getInGameUI().starAlbumUI.init(betIndex / maxBetIndex);
-        //     this.getInGameUI().heroUI.init();
-        //     this.getInGameUI().setADSFreePopup();
-        //     this.getInGameUI().checkB2BUI();
-        //     this.getInGameUI().setStateBlockInput(true);
-        //     await this.getInGameUI().fadeIn(.3);
+            console.log("asyncSceneLoadPrepare start");
+            await SlotManager.Instance.asyncSceneLoadPrepare();
+            await AsyncHelper.delayWithComponent(.2, this);
+            console.log("asyncSceneLoadPrepare end");
 
-        //     // 未处理的购买项
-        //     const lobbyCount = ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT;
-        //     const slotCount = ServiceInfoManager.NUMBER_SLOT_ENTER_COUNT;
-        //     if (lobbyCount + slotCount <= 1) {
-        //         await UnprocessedPurchaseManager.Instance().doProcess();
-        //     }
+            // loadingPopup.setPostProgress(1, "Complete Slot Loading", true);
+            // Analytics.customSlotLoadingRecord("load_slotgame_complete");
+            SlotManager.Instance.registerIgnoreSymbols();
+            SlotManager.Instance.initCameraSetting();
+            await SlotManager.Instance.asyncSceneLoadEffect();
+            await this.onGameStartSceneLoadEffectEnd();
 
-        //     await this.onGameStartInGameUIFadeInEnd();
-        //     SlotManager.Instance.setEventCheckerEnableState();
+            // 星级相册 + 英雄UI初始化
+            const betIndex = SlotGameRuleManager.Instance.getCurrentBetPerLineIndex();
+            const maxBetIndex = SlotGameRuleManager.Instance.getMaxBetPerLineCnt() - 1;
+            // this.getInGameUI().starAlbumUI.init(betIndex / maxBetIndex);
+            // this.getInGameUI().heroUI.init();
+            // this.getInGameUI().setADSFreePopup();
+            this.getInGameUI().checkB2BUI();
+            this.getInGameUI().setStateBlockInput(true);
+            await this.getInGameUI().fadeIn(.3);
 
-        //     // 延迟执行开局动画+逻辑
-        //     this.scheduleOnce(async () => {
-        //         this.getInGameUI().suiteLeagueUI.playStartAni();
-        //         if (SlotManager.Instance._bottomUI) {
-        //             if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME && SlotFeverModeManager.instance.isOpenFeverMode()) {
-        //                 this._feverModeIcon && this._feverModeIcon.playStartAni();
-        //             } else {
-        //                 this._feverModeIcon && this._feverModeIcon.activeTooltipUI(false);
-        //             }
-        //             this.getPowerGemSlotBottomIcon() && this.getPowerGemSlotBottomIcon().openPowerGemInfo();
-        //         }
-        //         SlotGameRuleManager.Instance.addObserver(this.node);
-        //         SlotManager.Instance.refreshStarAlbumGauge();
-        //         await this.getInGameUI().openSlotStartTooltip();
+            // 未处理的购买项
+            const lobbyCount = ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT;
+            const slotCount = ServiceInfoManager.NUMBER_SLOT_ENTER_COUNT;
+            if (lobbyCount + slotCount <= 1) {
+                await UnprocessedPurchaseManager.Instance().doProcess();
+            }
 
-        //         // 锦标赛UI打开
-        //         if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney()) {
-        //             this.getInGameUI().tourneyUI.openWithUserRank();
-        //         }
-        //         this.getInGameUI().setStateBlockInput(false);
-        //     }, .3);
+            await this.onGameStartInGameUIFadeInEnd();
+            SlotManager.Instance.setEventCheckerEnableState();
 
-        //     // 游戏可用状态+定时任务
-        //     SlotManager.Instance._isAvailable = true;
-        //     SlotManager.Instance._initFinish = true;
-        //     if (SDefine.SlotTournament_Use) {
-        //         this.schedule(this.tourneyInGameSchedule.bind(this), 1);
-        //     }
+            // 延迟执行开局动画+逻辑
+            this.scheduleOnce(async () => {
+                this.getInGameUI().suiteLeagueUI.playStartAni();
+                if (SlotManager.Instance._bottomUI) {
+                    // if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME && SlotFeverModeManager.instance.isOpenFeverMode()) {
+                    //     this._feverModeIcon && this._feverModeIcon.playStartAni();
+                    // } else {
+                    //     this._feverModeIcon && this._feverModeIcon.activeTooltipUI(false);
+                    // }
+                    this.getPowerGemSlotBottomIcon() && this.getPowerGemSlotBottomIcon().openPowerGemInfo();
+                }
+                SlotGameRuleManager.Instance.addObserver(this.node);
+                SlotManager.Instance.refreshStarAlbumGauge();
+                await this.getInGameUI().openSlotStartTooltip();
 
-        //     // 埋点统计
-        //     const slotEnterInfo = new AnalyticsSlotEnterInfo();
-        //     slotEnterInfo.location = ServiceInfoManager.STRING_SLOT_ENTER_LOCATION;
-        //     slotEnterInfo.flag = ServiceInfoManager.STRING_SLOT_ENTER_FLAG;
-        //     this.playRecentlyPlayedTutorial();
-        //     Analytics.slotEnter(SlotManager.Instance.getZoneId(), SlotGameRuleManager.Instance.slotID, slotEnterInfo);
+                // // 锦标赛UI打开
+                // if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney()) {
+                //     this.getInGameUI().tourneyUI.openWithUserRank();
+                // }
+
+                this.getInGameUI().setStateBlockInput(false);
+            }, .3);
+
+            // 游戏可用状态+定时任务
+            SlotManager.Instance._isAvailable = true;
+            SlotManager.Instance._initFinish = true;
+            if (SDefine.SlotTournament_Use) {
+                this.schedule(this.tourneyInGameSchedule.bind(this), 1);
+            }
+
+            // // 埋点统计
+            // const slotEnterInfo = new AnalyticsSlotEnterInfo();
+            // slotEnterInfo.location = ServiceInfoManager.STRING_SLOT_ENTER_LOCATION;
+            // slotEnterInfo.flag = ServiceInfoManager.STRING_SLOT_ENTER_FLAG;
+            // this.playRecentlyPlayedTutorial();
+            // Analytics.slotEnter(SlotManager.Instance.getZoneId(), SlotGameRuleManager.Instance.slotID, slotEnterInfo);
         // } catch (error) {
         //     this.showLoginErrorPopup();
         //     FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error as Error));
@@ -709,13 +720,13 @@ export default class HRVSlotService extends cc.Component {
      * 设置游戏内UI实例
      */
     setInGameUI(): void {
-        // const ingameUINode = LoadingSlotProcess.Instance().ingameUI.node;
-        // if (!SlotManager.Instance.inGameUILayer) {
-        //     ingameUINode.parent = this.node;
-        // } else {
-        //     ingameUINode.parent = SlotManager.Instance.inGameUILayer;
-        // }
-        // this._inGameUI = LoadingSlotProcess.Instance().ingameUI;
+        const ingameUINode = SlotManager.Instance.ingameUI.node;
+        if (!SlotManager.Instance.inGameUILayer) {
+            ingameUINode.parent = this.node;
+        } else {
+            ingameUINode.parent = SlotManager.Instance.inGameUILayer;
+        }
+        this._inGameUI = SlotManager.Instance.ingameUI;
     }
 
     /**
@@ -1280,37 +1291,40 @@ export default class HRVSlotService extends cc.Component {
             //         return;
             //     }
 
-            //     SlotManager.Instance._slotGameInfo = res;
-            //     SlotGameRuleManager.Instance.setSlotInfo(res);
-            //     SlotGameResultManager.Instance.setSlotInfo(res);
+                var res = JSON.parse('{"casinoJackpots":[{"zoneID":0,"slotID":"","jackpotSubID":0,"jackpotSubKey":"","jackpot":193224426.62395665,"basePrize":20000000,"basePrizeType":"FixedCoin","maxBasePrize":0,"minPrize":321288768,"maxPrize":505760789,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":1,"slotID":"","jackpotSubID":0,"jackpotSubKey":"","jackpot":1009484880,"basePrize":1000000000,"basePrizeType":"FixedCoin","maxBasePrize":0,"minPrize":10078061493,"maxPrize":20339598748,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""}],"error":{"code":0,"msg":""},"isActive":true,"leagueInfo":{"leaguekey":"suite:20260112","uid":451249740898304,"rank":-1,"rankTier":1,"leaguePoint":0,"expireDate":1768809600,"totalRankCount":102,"hallOfFameUsers":null,"rankUserTiers":[{"uid":433,"name":"Camila Mohan","rank":0,"rankTier":1,"picURL":"https://highrollervegas.akamaized.net/common/misc/profilepic/432.jpg","leaguePoint":76791},{"uid":1,"name":"Aamina Davila","rank":1,"rankTier":1,"picURL":"https://highrollervegas.akamaized.net/common/misc/profilepic/0.jpg","leaguePoint":51975},{"uid":371498512629760,"name":"Prete Fabio","rank":2,"rankTier":1,"picURL":"https://graph.facebook.com/10221149055031055/picture","leaguePoint":50615},{"uid":331031597121536,"name":"Jim","rank":3,"rankTier":2,"picURL":"https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=10228102087370398&gaming_photo_type=unified_picture&ext=1770421909&hash=AT8GW0nDDfjClU25Vs7YkkNR","leaguePoint":29933},{"uid":170460278996992,"name":"Guest28531","rank":4,"rankTier":3,"picURL":"hrvavatar://110","leaguePoint":25379}],"feverInfo":{"feverModeStartDate":1718868900,"feverLevel":1,"nextRefreshDate":1768291199}},"reqId":1768224357,"slotInfo":{"slotID":"mooorecheddar","windowSize":[3,3,3,3,3],"maxBetLine":25,"defaultSubGame":"base","maxCoinSizes":{"0":4800000,"1":120000000,"9":100000000},"payLineType":"list2","payLines":[[1,1,1,1,1],[0,0,0,0,0],[2,2,2,2,2],[0,1,2,1,0],[2,1,0,1,2],[1,0,0,0,1],[1,2,2,2,1],[0,0,1,2,2],[2,2,1,0,0],[1,2,1,0,1],[1,0,1,2,1],[0,1,1,1,0],[2,1,1,1,2],[0,1,0,1,0],[2,1,2,1,2],[1,1,0,1,1],[1,1,2,1,1],[0,0,2,0,0],[2,2,0,2,2],[0,2,2,2,0],[2,0,0,0,2],[1,2,0,2,1],[1,0,2,0,1],[0,2,0,2,0],[2,0,2,0,2]],"playLineInfos":{"__default__":{"key":"","payLineType":"list2","payLines":[[1,1,1,1,1],[0,0,0,0,0],[2,2,2,2,2],[0,1,2,1,0],[2,1,0,1,2],[1,0,0,0,1],[1,2,2,2,1],[0,0,1,2,2],[2,2,1,0,0],[1,2,1,0,1],[1,0,1,2,1],[0,1,1,1,0],[2,1,1,1,2],[0,1,0,1,0],[2,1,2,1,2],[1,1,0,1,1],[1,1,2,1,1],[0,0,2,0,0],[2,2,0,2,2],[0,2,2,2,0],[2,0,0,0,2],[1,2,0,2,1],[1,0,2,0,1],[0,2,0,2,0],[2,0,2,0,2]]}},"clientReels":{"physicalBaseReel":{"reels":[{"band":[14,13,13,24,24,24,31,12,12,23,23,91,91,12,14,14,14,23,23,91,91,13,25,31,25,25,23,23,21,21,12,12,22,22,31,21,25,91,91,11,21,21,12,12,91,91,23,12,12,12,25,91,91,12,12,25,11,11,11,23,25,91,25,25,31,13,25,91,22,22,12,14,13,13,13,13,91,91,11,11,23,22,14,91,91,22,13,13,25,23,91,91,23],"length":93,"weights":null,"weightSum":0},{"band":[22,22,91,91,91,12,71,91,91,14,71,13,22,31,24,71,71,91,91,91,23,14,61,13,13,24,12,91,91,91,21,21,21,22,22,22,11,11,91,91,25,61,23,22,22,24,24,61,14,14,14,71,71,24,24,25,25,61,23,23,71,71,71,25,25,23,25,14,61,91,91,91,71,71,71,12,25,25,91,91,91,23,23,23,21,25,25,25,61,14,14,14,24],"length":93,"weights":null,"weightSum":0},{"band":[12,91,91,13,13,71,71,91,91,12,12,12,31,11,71,24,24,71,71,14,14,14,24,24,11,71,71,23,12,91,91,22,22,61,25,25,25,61,22,23,11,11,71,13,13,61,25,25,25,25,61,23,23,23,91,91,91,12,12,25,21,23,23,13,13,71,25,25,61,24,12,12,14,13,13,11,31,11,11,21,21,23,71,71,25,25,91,91,91,71,14,14,13],"length":93,"weights":null,"weightSum":0},{"band":[22,22,31,71,91,91,91,61,23,23,91,91,91,22,11,11,61,23,24,24,24,21,91,91,12,12,25,91,91,91,91,13,12,61,14,14,21,91,91,91,22,22,31,61,22,22,25,25,61,13,13,13,14,71,71,25,25,61,91,91,91,61,14,31,14,71,12,25,91,91,31,71,71,22,91,91,24,24,13,91,91,22,22,22,71,71,14,14,14,31,61,23,23],"length":93,"weights":null,"weightSum":0},{"band":[31,22,91,91,11,11,22,12,12,14,91,91,24,24,24,91,91,71,12,12,25,23,23,91,91,91,22,14,14,13,91,91,91,24,24,24,13,12,12,24,91,91,24,24,24,25,25,22,22,22,22,21,25,25,71,13,13,25,91,91,91,21,14,14,71,71,23,11,11,31,11,71,22,22,22,71,71,21,91,91,91,25,23,23,21,21,23,22,12,12,91,23,23],"length":93,"weights":null,"weightSum":0}]},"physicalfreeSpinReel":{"reels":[{"band":[12,12,12,23,31,23,13,13,13,31,22,22,22,13,13,31,91,22,22,31,22,91,91,22,23,23,11,21,31,23,11,11,11,31,25,12,25,31,25,22,31,22,22,22,22,31,23,23,23,13,14,25,25,11,11,31,14,11,23,23,31,24,23,21,31,23,21,21,21,31,23,23,23,23,23,31,25,14,14,13,13,31,12,12,31,24,24,24,24,14,13,31,14],"length":93,"weights":null,"weightSum":0},{"band":[61,14,21,12,12,31,61,14,21,21,23,23,23,31,25,61,14,25,61,23,21,21,31,91,13,13,31,23,14,61,22,24,31,13,25,25,71,71,14,13,25,25,61,21,11,11,31,25,12,61,31,11,14,61,23,14,14,61,12,12,12,14,61,14,25,25,25,71,71,25,25,12,91,31,24,71,61,21,31,31,12,71,21,24,31,25,25,91,91,31,21,11,11],"length":93,"weights":null,"weightSum":0},{"band":[25,61,22,11,61,11,13,13,13,13,13,61,31,23,61,11,11,31,23,61,11,11,71,13,13,31,12,24,24,24,61,11,11,31,13,13,31,25,11,25,61,22,11,31,71,61,21,21,21,91,91,91,31,23,22,31,12,22,22,31,71,71,24,61,24,12,31,91,91,91,24,24,12,91,24,21,31,91,14,14,25,61,22,22,22,22,31,12,12,11,31,11,12],"length":93,"weights":null,"weightSum":0},{"band":[13,13,24,12,25,61,22,31,22,61,24,24,61,21,21,91,22,22,61,25,12,12,23,23,24,24,91,31,71,71,14,61,14,25,61,22,11,25,31,11,12,61,14,14,91,25,12,31,23,23,61,12,12,12,61,24,24,31,71,71,25,31,23,91,91,91,14,61,71,71,14,31,24,24,61,11,12,12,61,71,71,71,11,31,23,23,23,61,22,22,11,61,25],"length":93,"weights":null,"weightSum":0},{"band":[71,71,71,24,23,31,23,24,24,24,91,13,31,91,22,22,21,21,71,71,31,11,11,23,31,13,24,91,91,13,23,23,71,31,23,11,31,12,25,25,31,25,25,12,14,14,14,31,23,71,71,25,31,22,71,31,22,31,13,24,24,11,31,71,11,21,31,23,31,71,13,24,24,12,31,25,22,22,12,31,12,91,12,13,91,91,31,13,12,31,11,11,12],"length":93,"weights":null,"weightSum":0}]}},"subGames":{"base":{"gameType":"basicReel","physicalReelStripsKey":"physicalBaseReel","physicalReelStripsKeys":null,"bet":true,"lockBet":false,"entranceWindow":[[14,25,24,23,11],[13,25,61,23,12],[12,25,61,23,13],[11,25,61,23,14],[21,25,24,23,21]]},"bonusGame":{"gameType":"basicRandomChoose","physicalReelStripsKey":"","physicalReelStripsKeys":null,"bet":false,"lockBet":false,"entranceWindow":null},"bonusGame_infreespin":{"gameType":"basicRandomChoose","physicalReelStripsKey":"","physicalReelStripsKeys":null,"bet":false,"lockBet":false,"entranceWindow":null},"freeSpin":{"gameType":"basicFreeSpinReel","physicalReelStripsKey":"physicalfreeSpinReel","physicalReelStripsKeys":null,"bet":false,"lockBet":false,"entranceWindow":[[14,25,24,23,11],[13,25,61,23,12],[12,25,61,23,13],[11,25,61,23,14],[21,25,24,23,21]]}},"jackpotInfo":{"type":"zoneBasedProgressiveJackpot","isActive":true,"jackpots":[{"key":"grand","subID":3,"progressiveRate":0,"basePrize":25000,"basePrizeType":"BetPerLine"},{"key":"major","subID":2,"progressiveRate":0,"basePrize":2500,"basePrizeType":"BetPerLine"},{"key":"minor","subID":1,"progressiveRate":0,"basePrize":250,"basePrizeType":"BetPerLine"},{"key":"mini","subID":0,"progressiveRate":0,"basePrize":125,"basePrizeType":"BetPerLine"}]},"ruleFileHashValue":"330a4ab370197e6e8e1bbf637231e37a07cc5312e0813e837c3530095d5b35d8"},"slotJackpots":[{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":3,"jackpotSubKey":"grand","jackpot":0,"basePrize":25000,"basePrizeType":"BetPerLine","maxBasePrize":120000000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":2,"jackpotSubKey":"major","jackpot":0,"basePrize":2500,"basePrizeType":"BetPerLine","maxBasePrize":12000000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":1,"jackpotSubKey":"minor","jackpot":0,"basePrize":250,"basePrizeType":"BetPerLine","maxBasePrize":1200000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":0,"jackpotSubKey":"mini","jackpot":0,"basePrize":125,"basePrizeType":"BetPerLine","maxBasePrize":600000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""}],"slotState":{"revisionNumber":0,"machineID":"SMID-451249740898304-mooorecheddar-0","nextSubGameKey":"base","spinBetIndex":1768129424686545000,"subGameState":{"base":{"subGameKey":"base","spinCnt":29,"multiplier":1,"spinMultiplier":1,"betPerLines":4800,"betLines":25,"gauges":{"freespinTrigger":0},"lastFullWindow":[[25,31,25,25,23],[61,14,31,71,22],[24,24,21,21,21],[14,24,24,24,22],[11,11,31,11,71]],"lastWindows":[[31,25,25],[14,31,71],[24,21,21],[24,24,24],[11,31,11]],"lastSymbolInfoWindow":[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,null]],"ReelStripsKey":"","PayKey":""}}},"zoneBetPerLines":[480,1200,2400,4800,12000,24000,48000,120000,240000,480000,1200000,2400000,3600000,4800000]}');
 
-            //     const leagueInfo = TSUtility.isValid(res.leagueInfo) ? res.leagueInfo : null;
-            //     SlotSuiteLeagueManager.Instance.setLeagueInfo(leagueInfo);
-            //     SlotFeverModeManager.instance.setFeverModeInfo(leagueInfo);
+                SlotManager.Instance._slotGameInfo = res;
+                SlotGameRuleManager.Instance.setSlotInfo(res);
+                SlotGameResultManager.Instance.setSlotInfo(res);
 
-            //     UserInfo.instance().setLocation("Slot");
-            //     UserInfo.instance().setGameId(SlotGameRuleManager.Instance.slotID);
+                const leagueInfo = TSUtility.isValid(res.leagueInfo) ? res.leagueInfo : null;
+                //SlotSuiteLeagueManager.Instance.setLeagueInfo(leagueInfo);
+                SlotFeverModeManager.instance.setFeverModeInfo(leagueInfo);
 
-            //     if (SDefine.SlotTournament_Use) {
-            //         if (SlotTourneyManager.Instance().isEnterSlotTourney()) {
-            //             if (!res.slotTourneyProgressInfo) {
-            //                 SlotTourneyManager.Instance().clearEnterSlotTourney();
-            //                 resolve(false);
-            //                 return;
-            //             }
-            //             const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
-            //             SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
-            //             const tourneyTier = SlotTourneyManager.Instance().getEnterTourneyTier();
-            //             const tourneyId = SlotTourneyManager.Instance().getEnterTourneyID();
-            //             UserInfo.instance().setTourneyTierInfo(tourneyTier, tourneyId);
-            //         } else {
-            //             UserInfo.instance().resetTourneyTier();
-            //         }
-            //         SlotTourneyManager.Instance().clearEnterSlotTourney();
-            //     }
+                //UserInfo.instance().setLocation("Slot");
+                //UserInfo.instance().setGameId(SlotGameRuleManager.Instance.slotID);
 
-            //     SlotManager.Instance.processChangeShareInfo();
-            //     resolve(true);
+                if (SDefine.SlotTournament_Use) {
+                    if (SlotTourneyManager.Instance().isEnterSlotTourney()) {
+                        if (!res.slotTourneyProgressInfo) {
+                            SlotTourneyManager.Instance().clearEnterSlotTourney();
+                            resolve(false);
+                            return;
+                        }
+                        const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
+                        SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
+                        const tourneyTier = SlotTourneyManager.Instance().getEnterTourneyTier();
+                        const tourneyId = SlotTourneyManager.Instance().getEnterTourneyID();
+                        //UserInfo.instance().setTourneyTierInfo(tourneyTier, tourneyId);
+                    } 
+                    //else {
+                    //    UserInfo.instance().resetTourneyTier();
+                    //}
+                    SlotTourneyManager.Instance().clearEnterSlotTourney();
+                }
+
+                SlotManager.Instance.processChangeShareInfo();
+                resolve(true);
             // }).catch(() => {
             //     resolve(false);
             // });
@@ -2296,13 +2310,13 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onSetButtonActiveState_EX2 = function() {
-        var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
-        null != e && null != e && this.getInGameUI().setIntroduceCoin()
+        // var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
+        // null != e && null != e && this.getInGameUI().setIntroduceCoin()
     }
     
     onSetChangeMaxBetBtnInteractable_EX2 = function() {
-        var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
-        null != e && null != e && this.getInGameUI().setIntroduceCoin()
+        // var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
+        // null != e && null != e && this.getInGameUI().setIntroduceCoin()
     }
     
     onClickFastModeBtn = function(e) {

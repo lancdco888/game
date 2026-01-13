@@ -53,7 +53,7 @@ export default class JackpotDisplay_MoooreCheddar extends cc.Component {
     }
 
     start() {
-        this.initJackpot();
+        // this.initJackpot();
     }
 
     onDestroy() {

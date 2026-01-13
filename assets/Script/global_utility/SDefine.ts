@@ -13,9 +13,13 @@ export default class SDefine{
 	}
 
 	static getSlotSceneInfo = function(t) {
-		return null == SDefine._slotSceneInfo && SDefine._initSlotSceneInfo(),
-		null == SDefine._slotSceneInfo[t] ? (cc.error("not found slotid ", t),
-		null) : SDefine._slotSceneInfo[t]
+		null == SDefine._slotSceneInfo && SDefine._initSlotSceneInfo()
+		if(null == SDefine._slotSceneInfo[t]) {
+			// cc.error("not found slotid ", t)
+			return null;
+		} else {
+			return SDefine._slotSceneInfo[t]
+		}
 	}
 	
 	static getSlotSceneInfoBySceneName = function(t) {
@@ -2483,7 +2487,7 @@ export default class SDefine{
 	static ATTrackingAuthorizationStatus_Restricted = 1
 	static ATTrackingAuthorizationStatus_Denied = 2
 	static ATTrackingAuthorizationStatus_Authorized = 3
-	static tutorialBetLine = 3e4
+	static tutorialBetLine = 30000
 	static _slotSceneInfo = null
 	static _slotGameIdInfo = null
 	static P_ENTRYPOINT_LOBBYBANKROLL = "LobbyBankroll"
@@ -2550,7 +2554,7 @@ export default class SDefine{
 	static Mobile_SpineAnimationStart_Flag = false
 	static FB_Instant_iOS_Shop_Flag = false
 	static Mobile_iOS_PurchaseLimit_Flag = false
-	static Mobile_iOS_DownloadNotiPopup_Flag = false
+	static Mobile_iOS_DownloadNotiPopup_Flag = true
 	static FBInstant_PurchaseAPI_Useable = false
 	static Mobile_AOS_ReviceVersion_Limitation = false
 	static Use_CF_AccelerationServer_Flag = false

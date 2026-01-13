@@ -24,7 +24,7 @@ export default class LobbySlotObjectPool extends cc.Component {
     /** 预制体尺寸缓存数组 - 缓存已加载预制体的尺寸，避免重复获取 */
     private _arrSize: SizeCacheItem[] = [];
 
-    private PREFAB_PATH = "Perfabs/"
+    private PREFAB_PATH = "Prefabs/"
     private DYNAMIC_PREFAB_PATH = "SlotBanner/DynamicReels/"
 
     // ===================== 公有核心方法 =====================

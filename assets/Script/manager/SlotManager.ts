@@ -146,7 +146,7 @@ export default class SlotManager extends cc.Component {
     private timeStampSendSpinRequest: number = 0;
     private timeStampRecvSpinRequest: number = 0;
     private slotViewSetting: SlotViewSettingInfo | null = null;
-    public _bottomUI: BottomUI_EX2 = null;
+    public _bottomUI: any = null;
     public bottomUiInstance: any = null;
     private _slotInterface: any = null;
     private _userInfoInterface: any = null;
@@ -174,8 +174,8 @@ export default class SlotManager extends cc.Component {
     private _linkedJackpotPopup: any = null;
     private _wheelOfVegasResultPopup: any = null;
     private _casinoJackpotWinID: number = 0;
-    private _slotGameInfo: any = null;
-    private _initFinish: boolean = false;
+    public _slotGameInfo: any = null;
+    public _initFinish: boolean = false;
     public _isAvailable: boolean = true;
     private _isCheckTutorialItem: boolean = false;
     private _slotBaseBetPerSpinCnt: number = 0;
@@ -213,6 +213,8 @@ export default class SlotManager extends cc.Component {
     public _listSlotTooltip: any;
     public _symbol_width: number;
     static reelMachine: any;
+    static SlotManager: any;
+    ingameUI: any;
 
     constructor(){
         super()
@@ -1426,7 +1428,11 @@ export default class SlotManager extends cc.Component {
     private _setOriginalPosition(): void {
         if (!this._scaleAdjuster) return;
         for (let i = 0; i < this._scaleAdjuster.infos.length; ++i) {
-            const info = this._scaleAdjuster.infos[i];
+            var info = this._scaleAdjuster.infos[i];
+            if (info.orignalPosYInfos == undefined){
+                info.orignalPosYInfos = []
+            }
+
             if (info.orignalPosYInfos.length !== info.nodes.length) {
                 for (let j = 0; j < info.nodes.length; ++j) {
                     info.orignalPosYInfos.push(info.nodes[j].y);

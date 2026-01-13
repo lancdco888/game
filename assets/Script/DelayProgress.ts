@@ -14,7 +14,7 @@ export default class DelayProgress extends cc.Component {
     @property(cc.Node)
     public dimmedBG: cc.Node = null;       // 半透明暗层节点 - 视觉暗化效果，带淡入淡出动画
 
-    @property(Animation)
+    @property(cc.Animation)
     public progressAni: cc.Animation = null; // 加载进度动画组件(转圈/进度条) - 播放加载动画
 
     @property(cc.Label)

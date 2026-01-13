@@ -138,7 +138,7 @@ export default class AssetBundleManager {
 
     // 获取补丁系统启用状态
     public isUsePatchSystem(): boolean {
-        return this._usePatchSystem;
+        return false;//this._usePatchSystem;
     }
 
     // 获取变更的资源列表

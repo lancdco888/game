@@ -22,16 +22,16 @@ export default class Symbol extends cc.Component {
     @property({ type: cc.Boolean })
     public ignoreSetDimmColor: boolean = false;
 
-    @property({ type: Number })
+    @property()
     public customDimmR: number = -1;
 
-    @property({ type: Number })
+    @property()
     public customDimmG: number = -1;
 
-    @property({ type: Number })
+    @property()
     public customDimmB: number = -1;
 
-    @property({ type: Number })
+    @property()
     public customDimmA: number = -1;
 
     constructor(){
