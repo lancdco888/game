@@ -337,9 +337,17 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 绑定回调函数 - 三个回调全保留，变量名不变 =====
-    setNextSymbolIdCallback(cb: Function): void { this._getNextSymbolId = cb; }
-    setNextSymbolInfoCallback(cb: Function): void { this._getNextSymbolInfo = cb; }
-    setNextSpecialInfoCallback(cb: Function): void { this._getNextSpecialInfo = cb; }
+    setNextSymbolIdCallback(cb: Function): void { 
+        this._getNextSymbolId = cb; 
+    }
+    
+    setNextSymbolInfoCallback(cb: Function): void { 
+        this._getNextSymbolInfo = cb; 
+    }
+
+    setNextSpecialInfoCallback(cb: Function): void { 
+        this._getNextSpecialInfo = cb; 
+    }
 
     // ===== 核心帧更新 - 滚轮滚动/符号池复用逻辑，100%原逻辑复刻，重中之重！ =====
     update(): void {
