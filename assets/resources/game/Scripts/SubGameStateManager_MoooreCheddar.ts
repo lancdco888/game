@@ -91,6 +91,7 @@ export default class SubGameStateManager_MoooreCheddar extends SubGameStateManag
         initState.insert(idx++, this.game_manager.bottomUIText.getChangeWinMoneyTextState(0));
         initState.insert(idx++, this.onSpinInit());
         initState.insert(idx++, this.game_manager.getReelSpinStartState());
+        
         baseState.insert(0, initState);
 
         const spinResultState = new SequencialState();

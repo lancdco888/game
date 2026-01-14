@@ -569,7 +569,7 @@ export default class SlotManager extends cc.Component {
     }
 
     // ===================== 核心入口 - 触发所有滚轮旋转 =====================
-    async spinAll(): Promise<void> {
+    spinAll(){
         if (this.slotInterface.checkSpinAll() !== 0) {
             this.spinProcessRenewal();
         }
@@ -803,11 +803,11 @@ export default class SlotManager extends cc.Component {
     getSendSpinRequestState(): State {
         const self = this;
         const state = new State();
-        // state.addOnStartCallback(() => {
-        //     self.sendSpinRequestProc(() => {
-        //         state.setDone();
-        //     }, param);
-        // });
+        state.addOnStartCallback(() => {
+            self.sendSpinRequestProc(() => {
+                state.setDone();
+            });
+        });
         return state;
     }
 

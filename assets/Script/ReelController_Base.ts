@@ -477,6 +477,7 @@ export default class ReelController_Base extends cc.Component {
         const subGameKey = SlotGameResultManager.Instance.getNextSubGameKey();
         const preSpinState = ReelSpinBehaviors.Instance.getPreSpinUpDownState(reelCom, reelStopWindows, subGameKey);
         preSpinState.flagSkipActive = true;
+
         return preSpinState;
     }
 

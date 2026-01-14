@@ -49,7 +49,7 @@ export default class ReelSpinBehaviors {
 
     // ===================== 普通模式 - 预旋转(上下抖动)状态 =====================
     public getPreSpinUpDownState(reelCom: Reel, windowData: any, subGameKey: string): State {
-        const state = new State();
+        const state = new State("test");
         let action = null;
 
         state.addOnStartCallback(() => {
@@ -85,13 +85,23 @@ export default class ReelSpinBehaviors {
             const easeAct = this.getEaseAction(easingType, easingRate);
             const moveDown = cc.moveBy(duration, new cc.Vec2(0, distance)).easing(easeAct);
             const moveUp = cc.moveBy(symbolSpeed / 5, new cc.Vec2(0, -distance));
-            action = reelCom.node.runAction(cc.sequence(moveDown, moveUp, cc.callFunc(state.setDone.bind(state))));
+
+             // 动画完成回调
+            const callFunc = cc.callFunc(() => {
+                state.setDone();
+            });
+
+
+            action = reelCom.node.runAction(cc.sequence(moveDown, moveUp,callFunc)); 
+                //cc.callFunc(state.setDone.bind(state))));
         });
 
         state.addOnEndCallback(() => {
-            if (action && !action.isDone()) {
-                reelCom.node.stopAction(action);
-            }
+            // if (action && !action.isDone()) {
+            //     reelCom.node.stopAction(action);
+            // }
+
+            null == action || action.isDone() || reelCom.node.stopAction(action)
         });
 
         return state;

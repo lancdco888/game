@@ -13,8 +13,9 @@ export class State {
     private _flagSkipActive: boolean = false;
 
     // ===== 构造函数 - 原JS构造逻辑完全复刻，包含闭包绑定setSkipFlagDuringPlay =====
-    constructor() {
+    constructor(name="") {
         const self = this;
+        this.name = name
         this.setSkipFlagDuringPlay = function (isSkip: boolean) {
             self._isSkip = isSkip;
             self._flagSkipActive && self.setDone();
