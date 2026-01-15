@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3d69ad74-9b3c-4410-ac4b-d3e895dab827",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 150,
+  "height": 360,
+  "platformSettings": {},
+  "subMetas": {
+    "50_Bg_AstroRoller05": {
+      "ver": "1.0.6",
+      "uuid": "9e2914b7-a3a1-4ad8-a5a4-a8ecd3894abd",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3d69ad74-9b3c-4410-ac4b-d3e895dab827",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 150,
+      "height": 360,
+      "rawWidth": 150,
+      "rawHeight": 360,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

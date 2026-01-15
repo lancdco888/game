@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "722a81ea-0e3c-483a-b8a0-91e6e203c53e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 450,
+  "height": 227,
+  "platformSettings": {},
+  "subMetas": {
+    "50_Bg_HighRoller08": {
+      "ver": "1.0.6",
+      "uuid": "cccd7b4c-47b3-499e-84a4-bffd1e0d4dc6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "722a81ea-0e3c-483a-b8a0-91e6e203c53e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 450,
+      "height": 227,
+      "rawWidth": 450,
+      "rawHeight": 227,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

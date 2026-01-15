@@ -1,0 +1,543 @@
+{
+  "_name": "Option_Result_Win_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    },
+    "paths": {
+      "SunLay": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Glow_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 100
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 100
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Light/Light_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Light/Light_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": -180
+            }
+          ]
+        }
+      },
+      "Txt": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": [
+                0.46,
+                0.05,
+                0.2008315098468272,
+                0.9035010940919037
+              ],
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": [
+                0.46,
+                0.05,
+                0.2008315098468272,
+                0.9035010940919037
+              ],
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Explode_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.15,
+              "value": 1
+            },
+            {
+              "frame": 0.2,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.15,
+              "curve": [
+                0.19829321663019694,
+                0.5008315098468271,
+                0.5011159737417943,
+                0.9042669584245077
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": {
+                "x": 3,
+                "y": 3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "curve": [
+                0.19829321663019694,
+                0.503566739606127,
+                0.5065864332603939,
+                0.9015317286652079
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": {
+                "x": 3,
+                "y": 3,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "SunLay/SunLay": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": -140
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Explode_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.9,
+              "value": true
+            },
+            {
+              "frame": 1.45,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.23333333333333334,
+              "value": 1
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.9,
+              "value": 1
+            },
+            {
+              "frame": 0.95,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.45,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.23333333333333334,
+              "curve": [
+                0.19829321663019694,
+                0.503566739606127,
+                0.5011159737417943,
+                0.8960612691466083
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": {
+                "x": 3,
+                "y": 3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9,
+              "curve": [
+                0.19829321663019694,
+                0.5008315098468271,
+                0.5011159737417943,
+                0.9015317286652079
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.45,
+              "value": {
+                "x": 3,
+                "y": 3,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Plus_6Fs": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/label": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Grand": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Major": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Mini": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Minor": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Multi": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/CheddarBonus": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Txt/1More_Pick": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

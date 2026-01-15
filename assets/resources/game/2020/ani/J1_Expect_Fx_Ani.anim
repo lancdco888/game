@@ -1,0 +1,564 @@
+{
+  "_name": "J1_Expect_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Root/Mask/1_1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 250
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 360
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Root/Mask/2_1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.25,
+              "value": 250
+            },
+            {
+              "frame": 1.25,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 1.25,
+              "value": -270
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.25,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Root/Mask/3_1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 250
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 360
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.0833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Root/Mask/4_1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 41.666666666666714
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 250
+            },
+            {
+              "frame": 1.5,
+              "value": 41.666666666666714
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -299.99999999999994
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -360
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": -299.99999999999994
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128.0000000000001
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 128.0000000000001
+            }
+          ]
+        }
+      },
+      "Root/Mask/1_2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 125.00000000000001
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 250
+            },
+            {
+              "frame": 1.5,
+              "value": 125.00000000000001
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 179.99999999999997
+            },
+            {
+              "frame": 0.5,
+              "value": 360
+            },
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 179.99999999999997
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 1,
+              "curve": "constant"
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Root/Mask/1_3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 166.66666666666669
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 250
+            },
+            {
+              "frame": 1.5,
+              "value": 166.66666666666669
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 119.99999999999997
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 360
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 119.99999999999997
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 1,
+              "curve": "constant"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Root/Mask/3_2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 208.33333333333337
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 250
+            },
+            {
+              "frame": 1.5,
+              "value": 208.33333333333337
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 59.999999999999964
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 360
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 59.999999999999964
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 1,
+              "curve": "constant"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Root/Mask/3_3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 83.33333333333331
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 250
+            },
+            {
+              "frame": 1.5,
+              "value": 83.33333333333331
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 240.00000000000003
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 360
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 240.00000000000003
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Root/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.75,
+              "value": 1
+            },
+            {
+              "frame": 0.7833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.25,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1.4,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.25,
+              "value": {
+                "x": 1.4,
+                "y": 1.2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Root/Light_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.75,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 1.4,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1.4,
+                "y": 1.2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

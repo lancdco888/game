@@ -2354,7 +2354,7 @@ export default class SDefine{
 	static SUITE_ZONEID = 1
 	static MAJORROLLER_ZONEID = 1
 	static ASTROROLLER_ZONEID = 2
-	static HIGHROLLER_ZONENAME = "HighRoller"
+	static HIGHROLLER_ZONENAME = "HighRoller" //
 	static LIGHTNING_ZONENAME = "Lightning"
 	static VIP_LOUNGE_ZONENAME = "VipLounge"
 	static SUITE_ZONENAME = "Suite"
