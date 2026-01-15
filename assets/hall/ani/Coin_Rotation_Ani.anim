@@ -1,0 +1,201 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Coin_Rotation_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Coin": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 1
+            },
+            {
+              "frame": 0.4,
+              "value": -1
+            },
+            {
+              "frame": 0.7,
+              "value": -1
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "664d0b1f-1ce0-4505-a72a-7dab57a4f9ea"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "510aa42c-dd67-4390-9ea2-8bdb0e1e45f1"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "75d1aee9-3690-4682-90d8-47fd367ba389"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "217c91b8-bdaf-47a7-a3e6-3c7536aa4638"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "217c91b8-bdaf-47a7-a3e6-3c7536aa4638"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "75d1aee9-3690-4682-90d8-47fd367ba389"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "510aa42c-dd67-4390-9ea2-8bdb0e1e45f1"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "circleLight_21": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 80
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 200
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 80
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 200
+            },
+            {
+              "frame": 0.7,
+              "value": 80
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.1,
+              "value": {
+                "x": 0.9,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": {
+                "x": 0.9,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.2,
+              "value": {
+                "x": 0.75,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": {
+                "x": 0.75,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.3,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 0.75,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 0.75,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.6,
+              "value": {
+                "x": 0.9,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,211 @@
+{
+  "_name": "BG_04_Wheel_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 10,
+  "sample": 60,
+  "speed": 0.3,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "BG-80_4_wheel_round": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": 360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_01": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_02": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_03": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_04": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_05": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_06": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_07": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_08": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_09": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_10": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_11": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_12": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "BG-80_4_wheel_round/BG-80_4_wheel_unit_13": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 10,
+              "value": -360
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
