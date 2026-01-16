@@ -285,25 +285,25 @@ export default class LobbyMoveManager extends cc.Component {
             PopupManager.Instance().showDisplayProgress(false);
         }
 
-        // // 启动加载流程
-        // const loadingState = LoadingSlotProcess.Instance().getLobbyToSlotState();
-        // if (TSUtility.isValid(loadingState)) {
-        //     ServiceInfoManager.STRING_MOVE_SLOT_INFO = JSON.stringify({
-        //         slotID: this._info.slotID,
-        //         zoneID: this._info.zoneID,
-        //         zoneName: this._info.zoneName,
-        //         sceneName: SDefine.getSlotSceneInfo(this._info.slotID).sceneName
-        //     });
+        // 启动加载流程
+        const loadingState = LoadingSlotProcess.Instance().getLobbyToSlotState();
+        if (TSUtility.isValid(loadingState)) {
+            ServiceInfoManager.STRING_MOVE_SLOT_INFO = JSON.stringify({
+                slotID: this._info.slotID,
+                zoneID: this._info.zoneID,
+                zoneName: this._info.zoneName,
+                sceneName: SDefine.getSlotSceneInfo(this._info.slotID).sceneName
+            });
 
-        //     loadingState.onStart();
-        //     loadingState.addOnEndCallback(() => {
-        //         ServiceInfoManager.STRING_MOVE_SLOT_INFO = "";
-        //     });
-        // }
-         // 3. 执行Cocos场景加载
-         cc.director.loadScene(
-            "222_MoooreCheddar"
-        );
+            loadingState.onStart();
+            loadingState.addOnEndCallback(() => {
+                ServiceInfoManager.STRING_MOVE_SLOT_INFO = "";
+            });
+        }
+        //  // 3. 执行Cocos场景加载
+        //  cc.director.loadScene(
+        //     "222_MoooreCheddar"
+        // );
     }
 
     // ===================== 私有方法 - 设置锦标赛信息 =====================

@@ -18,6 +18,7 @@ import PrizeSymbol_MoooreCheddar from "./PrizeSymbol_MoooreCheddar";
 import SubGameStateManager_MoooreCheddar from "./SubGameStateManager_MoooreCheddar";
 import HRVSlotService from "../../../Script/HRVService/HRVSlotService";
 import InGameUI_2020 from "./InGameUI_2020";
+import SDefine from "../../../Script/global_utility/SDefine";
 
 // 严格遵循指定的装饰器导出方式
 const { ccclass, property } = cc._decorator;
@@ -787,3 +788,15 @@ export default class MoooreCheddarManager extends SlotManager {
     onPlayChangeAnimation(data:any): void {}
     recoveryMachine(): void {}
 }
+
+SDefine.setSlotSceneInfo({
+    sceneName: "222_MoooreCheddar",
+    gameId: MoooreCheddarManager.SUBGAMEID_SLOT,
+    name: MoooreCheddarManager.NAME_SLOT,
+    prefabName: "simpleImg",
+    useDev: true,
+    useQA: true,
+    useLive: true,
+    sImg: "80_222_MoooreCheddar_S",
+    nImg: "80_222_MoooreCheddar_L"
+})

@@ -187,30 +187,6 @@
           ]
         }
       },
-      "BG/OutGlow/particlesystem copy/particlesystem": {
-        "comps": {
-          "cc.ParticleSystem": {
-            "totalParticles": [
-              {
-                "frame": 0,
-                "value": 0
-              }
-            ]
-          }
-        }
-      },
-      "BG/OutGlow/particlesystem copy/particlesystem copy": {
-        "comps": {
-          "cc.ParticleSystem": {
-            "totalParticles": [
-              {
-                "frame": 0,
-                "value": 0
-              }
-            ]
-          }
-        }
-      },
       "BG/OutGlow/particlesystem": {
         "props": {
           "opacity": [
@@ -219,30 +195,6 @@
               "value": 0
             }
           ]
-        }
-      },
-      "BG/OutGlow/particlesystem/particlesystem": {
-        "comps": {
-          "cc.ParticleSystem": {
-            "totalParticles": [
-              {
-                "frame": 0,
-                "value": 0
-              }
-            ]
-          }
-        }
-      },
-      "BG/OutGlow/particlesystem/particlesystem copy": {
-        "comps": {
-          "cc.ParticleSystem": {
-            "totalParticles": [
-              {
-                "frame": 0,
-                "value": 0
-              }
-            ]
-          }
         }
       },
       "BG/OutGlow": {
@@ -362,114 +314,7 @@
               {
                 "frame": 0.65,
                 "value": {
-                  "_name": "Jackpot-80_Glow_0009",
-                  "_objFlags": 0,
-                  "_native": "",
-                  "loaded": true,
-                  "_nativeUrl": "",
-                  "_ref": 30,
-                  "_callbackTable": {},
-                  "_rect": {
-                    "x": 978,
-                    "y": 351,
-                    "width": 22,
-                    "height": 24
-                  },
-                  "uv": [
-                    0.955078125,
-                    0.18310546875,
-                    0.9765625,
-                    0.18310546875,
-                    0.955078125,
-                    0.17138671875,
-                    0.9765625,
-                    0.17138671875
-                  ],
-                  "_original": null,
-                  "_offset": {
-                    "x": 0,
-                    "y": -21,
-                    "z": 0
-                  },
-                  "_originalSize": {
-                    "width": 22,
-                    "height": 80
-                  },
-                  "_rotated": false,
-                  "_flipX": false,
-                  "_flipY": false,
-                  "_capInsets": [
-                    0,
-                    0,
-                    0,
-                    0
-                  ],
-                  "uvSliced": [
-                    {
-                      "u": 0.955078125,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.18310546875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.955078125,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.17138671875
-                    },
-                    {
-                      "u": 0.9765625,
-                      "v": 0.17138671875
-                    }
-                  ]
+                  "__uuid__": "c6b1075e-6a94-48b2-88bf-51bab2637195"
                 }
               },
               {

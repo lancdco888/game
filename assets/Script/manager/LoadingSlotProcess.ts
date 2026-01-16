@@ -4,8 +4,11 @@ import { L_GetBingoGameInfoState, L_GetInstantInfoState } from '../Loading/Loadi
 import CommonServer from '../Network/CommonServer';
 import State, { SequencialState } from '../Slot/State';
 import L_RefreshHeroInfoState from '../State/L_RefreshHeroInfoState';
+import L_RefreshUserInfoState from '../State/L_RefreshUserInfoState';
 import UserInfo from '../User/UserInfo';
+import L_IngameUILoadState from './L_IngameUILoadState';
 import L_LoadLauncherToSlotState from './L_LoadLauncherToSlotState';
+import L_LoadLobbyToSlotState from './L_LoadLobbyToSlotState';
 import L_SlotInitState from './L_SlotInitState';
 
 /**
@@ -154,16 +157,16 @@ export default class LoadingSlotProcess extends State {
         let subIndex = 0;
 
         // 基础加载+UI+用户信息刷新
-        // rootState.insert(subIndex, new L_LoadLobbyToSlotState());
-        // rootState.insert(subIndex, new L_IngameUILoadState());
-        // rootState.insert(subIndex, new L_RefreshUserInfoState());
+        rootState.insert(subIndex, new L_LoadLobbyToSlotState());
+        rootState.insert(subIndex, new L_IngameUILoadState());
+        rootState.insert(subIndex, new L_RefreshUserInfoState());
         subIndex++;
 
         // 收件箱+Jackpot+英雄信息刷新
         // rootState.insert(subIndex, new L_GetInboxInfoState());
         // rootState.insert(subIndex, new L_RefreshJackpotState());
         // rootState.insert(subIndex, new L_RefreshHeroInfoState());
-        subIndex++;
+        //subIndex++;
 
         // Slot初始化
         rootState.insert(subIndex, new L_SlotInitState());

@@ -32,9 +32,9 @@ export default class L_SlotInitState extends State {
             // Analytics.customSlotLoadingRecord("slotInit_start");
             
             // 2. 原生环境下执行垃圾回收（优化性能）
-            // if (ccSys.isNative) {
-            //     ccSys.garbageCollect();
-            // }
+            if (cc.sys.isNative) {
+                cc.sys.garbageCollect();
+            }
             
        
             

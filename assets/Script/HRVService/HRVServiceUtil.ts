@@ -166,7 +166,7 @@ export default class HRVServiceUtil {
             if (!SDefine.Mobile_MultiTouch_OnOff) {
                 return;
             }
-            NativeUtil.setMultiTouch(enable?1:0);
+            // NativeUtil.setMultiTouch(enable?1:0);
             cc.macro.ENABLE_MULTI_TOUCH = enable;
         }
     }

@@ -660,7 +660,7 @@ export default class ServiceInfoManager {
 	static STRING_SLOT_ENTER_FLAG = ""
 	static STRING_SNEAK_PEEK_GAME_ID = ""
 	static STRING_PREV_SLOT_ID = ""
-	static STRING_LAST_LOBBY_SLOT_GAME_ID = ""
+	static STRING_LAST_LOBBY_SLOT_GAME_ID:string|number= ""
 	static STRING_LAST_LOBBY_NAME = ""
 	static STRING_SWITCH_TO_HIGH_SLOT_ID = ""
 	static STRING_MOVE_SLOT_INFO = ""

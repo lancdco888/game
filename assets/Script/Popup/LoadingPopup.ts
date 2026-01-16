@@ -92,7 +92,7 @@ export default class LoadingPopup extends DialogBase {
      * @param zoneName 区服名称
      * @param callback 回调 (错误信息, 弹窗实例)
      */
-    public static getPopup(bgType: LoadingBGType, zoneId: number, zoneName: string, callback: (err: any, popup: LoadingPopup | null) => void): void {
+    public static getPopup(bgType: LoadingBGType, zoneId: any, zoneName: string, callback: (err: any, popup: LoadingPopup | null) => void): void {
         PopupManager.Instance().showDisplayProgress(true);
         // 根据登录/大厅切换 加载不同的弹窗预制体
         const resPath = bgType === LoadingBGType.Login_To_Lobby 
@@ -127,7 +127,7 @@ export default class LoadingPopup extends DialogBase {
      * @param slotId 老虎机ID
      * @param callback 加载完成回调
      */
-    public static loadSlotInfo(slotId: string | number, callback: (node: Node | null) => void): void {
+    public static loadSlotInfo(slotId: string | number, callback: (node: cc.Node | null) => void): void {
         const resPath = `Loading/Slot/l_${slotId}`;
         cc.loader.loadRes(resPath, (err, prefab) => {
             PopupManager.Instance().showBlockingBG(false);
