@@ -473,4 +473,13 @@ export default class LoadingPopup extends DialogBase {
     onBackBtnProcess(): boolean {
         return true;
     }
+
+    
+    setOnLoadCompletaFunc(e) {
+        this.onLoadCompletaFunc = e
+    }
+    
+    setOnLoadFailFunc(e) {
+        this.onLoadFailFunc = e
+    }    
 }

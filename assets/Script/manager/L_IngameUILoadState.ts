@@ -44,6 +44,7 @@ export default class L_IngameUILoadState extends State {
                 // FireHoseSender.Instance().sendAws(
                 //     FireHoseSender.Instance().getRecord(FireHoseSender.FHLogType.Exception, errorMsg)
                 // );
+                console.error(errorMsg);
                 return;
             }
 
@@ -69,9 +70,11 @@ export default class L_IngameUILoadState extends State {
                 if (err) {
                     // 加载失败：上报异常，返回false
                     const errorMsg = new Error(`cc.loader.loadRes fail asyncLoadInGameUI: ${JSON.stringify(err)}`);
-                    FireHoseSender.Instance().sendAws(
-                        FireHoseSender.Instance().getRecord(FHLogType.Exception, errorMsg)
-                    );
+                    // FireHoseSender.Instance().sendAws(
+                    //     FireHoseSender.Instance().getRecord(FHLogType.Exception, errorMsg)
+                    // );
+                    console.error(errorMsg);
+
                     resolve(false);
                     return;
                 }
@@ -103,9 +106,10 @@ export default class L_IngameUILoadState extends State {
                 if (err) {
                     // 加载失败：上报异常，返回false
                     const errorMsg = new Error(`cc.loader.loadRes fail prefabPath: [key:${prefabPath}] ${JSON.stringify(err)}`);
-                    FireHoseSender.Instance().sendAws(
-                        FireHoseSender.Instance().getRecord(FHLogType.Exception, errorMsg)
-                    );
+                    // FireHoseSender.Instance().sendAws(
+                    //     FireHoseSender.Instance().getRecord(FHLogType.Exception, errorMsg)
+                    // );
+                    console.error(errorMsg);
                     resolve(false);
                     return;
                 }

@@ -7,7 +7,7 @@ const { ccclass, property } = cc._decorator;
 /**
  * 滑动条滚动条组件（关联ScrollView，支持左右/上下按钮控制，自动隐藏滚动条）
  */
-@ccclass('UISliderScrollBar')
+@ccclass()
 export default class UISliderScrollBar extends cc.Component {
     // 按钮启用的间隔阈值
     private readonly BUTTON_ENABLE_INTERVAL: number = 10;

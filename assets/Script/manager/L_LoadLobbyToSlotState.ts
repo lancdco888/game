@@ -71,34 +71,34 @@ export default class L_LoadLobbyToSlotState extends State {
             concurrentState.insert(this.getMoveBannerAndShowInfoState(popup));
         }
 
-        // 插入等待加载完成的状态
-        concurrentState.insert(this.getWaitUntilLoad(popup));
+        // // 插入等待加载完成的状态
+        // concurrentState.insert(this.getWaitUntilLoad(popup));
 
-        // 非直播服务且Slots为竖屏时，切换屏幕方向（仅移动端）
-        if (!TSUtility.isLiveService() && SDefine.getSlotSceneInfo(this._info!.slotID).isPortrait === 1) {
-            concurrentState.addOnStartCallback(() => {
-                if (Utility.isMobileGame()) {
-                    const frameSize = cc.view.getFrameSize();
-                    // 切换视图尺寸和方向
-                    cc.view.setFrameSize(frameSize.height, frameSize.width);
-                    cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
+        // // 非直播服务且Slots为竖屏时，切换屏幕方向（仅移动端）
+        // if (!TSUtility.isLiveService() && SDefine.getSlotSceneInfo(this._info!.slotID).isPortrait === 1) {
+        //     concurrentState.addOnStartCallback(() => {
+        //         if (Utility.isMobileGame()) {
+        //             const frameSize = cc.view.getFrameSize();
+        //             // 切换视图尺寸和方向
+        //             cc.view.setFrameSize(frameSize.height, frameSize.width);
+        //             cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
 
-                    // 原生层切换屏幕方向（iOS/Android区分）
-                    if (cc.sys.os === "ios") {
-                        jsb.reflection.callStaticMethod("RootViewController", "setOrientation:", "2");
-                        jsb.reflection.callStaticMethod("AppController", "setOrientation:", "2");
-                    } else {
-                        jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "setOrientation", "(I)V", 2);
-                    }
-                }
-            });
-        }
+        //             // 原生层切换屏幕方向（iOS/Android区分）
+        //             if (cc.sys.os === "ios") {
+        //                 jsb.reflection.callStaticMethod("RootViewController", "setOrientation:", "2");
+        //                 jsb.reflection.callStaticMethod("AppController", "setOrientation:", "2");
+        //             } else {
+        //                 jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "setOrientation", "(I)V", 2);
+        //             }
+        //         }
+        //     });
+        // }
 
-        // 并行状态结束回调：记录埋点+标记当前状态完成
-        concurrentState.addOnEndCallback(() => {
-            //Analytics.default.customSlotLoadingRecord("load_slotscene_complete");
-            this.setDone();
-        });
+        // // 并行状态结束回调：记录埋点+标记当前状态完成
+        // concurrentState.addOnEndCallback(() => {
+        //     //Analytics.default.customSlotLoadingRecord("load_slotscene_complete");
+        //     this.setDone();
+        // });
 
         // 启动并行状态
         concurrentState.onStart();
@@ -153,7 +153,7 @@ export default class L_LoadLobbyToSlotState extends State {
      * @returns 加载信息状态实例
      */
     private getLoadInfo(): State {
-        const loadInfoState = new State();
+        const loadInfoState = new State("getLoadInfo");
         
         loadInfoState.addOnStartCallback(() => {
             LoadingPopup.loadSlotInfo(this._info!.slotID, (node: cc.Node) => {
@@ -170,7 +170,7 @@ export default class L_LoadLobbyToSlotState extends State {
      * @returns 加载Banner状态实例
      */
     private getLoadBannerImg(): State {
-        const loadBannerState = new State();
+        const loadBannerState = new State("getLoadBannerImg");
         
         loadBannerState.addOnStartCallback(() => {
             LoadingPopup.loadSlotBannerImg(this._info!.slotID, () => {

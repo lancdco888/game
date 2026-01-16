@@ -116,7 +116,7 @@ export default class LoadingSlotProcess extends State {
         // 子状态1：加载Slot+游戏UI+埋点
         const loadSlotSubState = new SequencialState();
         loadSlotSubState.insert(subIndex, new L_LoadLauncherToSlotState());
-        //loadSlotSubState.insert(subIndex, new L_IngameUILoadState());
+        loadSlotSubState.insert(subIndex, new L_IngameUILoadState());
         subIndex++;
         // loadSlotSubState.insert(subIndex, new L_LoadSceneCompleteState("load_slot_complete"));
         rootState.insert(seqIndex, loadSlotSubState);

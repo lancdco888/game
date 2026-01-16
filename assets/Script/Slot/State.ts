@@ -183,7 +183,7 @@ export class ConcurrentState extends State {
 
 /** 顺序状态子类 - 继承State，原逻辑完全复刻，包含orders数组/索引curIdx */
 export class SequencialState extends State {
-    public subStates: State[] = [];
+    public subStates: ConcurrentState[] = [];
     public orders: number[] = [];
     public curIdx: number = 0;
     public name: string = "SequencialState";
@@ -218,24 +218,25 @@ export class SequencialState extends State {
     }
 
     insert(order: number, state: State): void {
-        for (let i = 0; i < this.orders.length; ++i) {
-            if (order == this.orders[i]) {
-                this.subStates.push(state);
-                return;
-            }
-            if (order < this.orders[i]) {
-                const concurrentState = new ConcurrentState();
-                concurrentState.insert(state);
-                this.subStates.splice(i, 0, concurrentState);
-                this.orders.splice(i, 0, order);
-                return void concurrentState.addOnEndCallback(this.processCheckSubStatesAreFinished.bind(this));
+        for (var n = 0; n < this.orders.length; ++n) {
+            if (order == this.orders[n])
+                return void this.subStates[n].insert(state);
+            if (order < this.orders[n]) {
+                var concurrentState = new ConcurrentState;
+                return concurrentState.insert(state),
+                this.subStates.splice(n, 0, concurrentState),
+                this.orders.splice(n, 0, order),
+                void concurrentState.addOnEndCallback(this.processCheckSubStatesAreFinished.bind(this))
             }
         }
-        const concurrentState = new ConcurrentState();
-        concurrentState.insert(state);
-        this.subStates.push(concurrentState);
-        this.orders.push(order);
-        concurrentState.addOnEndCallback(this.processCheckSubStatesAreFinished.bind(this));
+
+        var concurrentState = new ConcurrentState;
+        concurrentState.insert(state),
+        this.subStates.push(concurrentState),
+        this.orders.push(order),
+        concurrentState.addOnEndCallback(this.processCheckSubStatesAreFinished.bind(this))
+
+
     }
 
     processCheckSubStatesAreFinished(): void {

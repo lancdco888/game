@@ -70,9 +70,10 @@ export default class L_LoadLobbyToLobbyState extends State {
         } catch (error) {
             // ✅ 全局异常捕获：加载失败时上报异常日志到AWS FireHose，不阻断游戏流程
             const errInfo = error as Error;
-            FireHoseSender.Instance().sendAws(
-                FireHoseSender.Instance().getRecord(FHLogType.Exception, errInfo)
-            );
+            // FireHoseSender.Instance().sendAws(
+            //     FireHoseSender.Instance().getRecord(FHLogType.Exception, errInfo)
+            // );
+            console.error(errInfo)
         }
     }
 }

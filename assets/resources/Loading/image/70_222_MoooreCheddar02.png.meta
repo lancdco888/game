@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "33cac74e-e8b3-43b9-b781-a149ba5adacf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 116,
+  "height": 119,
+  "platformSettings": {},
+  "subMetas": {
+    "70_222_MoooreCheddar02": {
+      "ver": "1.0.6",
+      "uuid": "9ea8a122-3424-4a4d-af4e-3bd56b0d7b7e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "33cac74e-e8b3-43b9-b781-a149ba5adacf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 2,
+      "trimY": 3,
+      "width": 111,
+      "height": 112,
+      "rawWidth": 116,
+      "rawHeight": 119,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
