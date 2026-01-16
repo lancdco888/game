@@ -108,10 +108,10 @@ export default class MoooreCheddarManager extends SlotManager {
         HRVSlotService.createInstance()
         HRVSlotService.instance().init(SlotManager.Instance);
         this.scheduleOnce(async ()=>{
-            await this.asyncLoadInGameUI()
-            await HRVSlotService.instance().onInitSlotGameProcess()
-            await HRVSlotService.instance().onInit()
-            this.asyncSceneLoadEffect()
+            // await this.asyncLoadInGameUI()
+            // await HRVSlotService.instance().onInitSlotGameProcess()
+            // await HRVSlotService.instance().onInit()
+            // this.asyncSceneLoadEffect()
         },1)
    
 

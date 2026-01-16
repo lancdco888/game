@@ -71,8 +71,8 @@ export default class L_LoadLobbyToSlotState extends State {
             concurrentState.insert(this.getMoveBannerAndShowInfoState(popup));
         }
 
-        // // 插入等待加载完成的状态
-        // concurrentState.insert(this.getWaitUntilLoad(popup));
+        // 插入等待加载完成的状态
+        concurrentState.insert(this.getWaitUntilLoad(popup));
 
         // // 非直播服务且Slots为竖屏时，切换屏幕方向（仅移动端）
         // if (!TSUtility.isLiveService() && SDefine.getSlotSceneInfo(this._info!.slotID).isPortrait === 1) {
@@ -94,11 +94,11 @@ export default class L_LoadLobbyToSlotState extends State {
         //     });
         // }
 
-        // // 并行状态结束回调：记录埋点+标记当前状态完成
-        // concurrentState.addOnEndCallback(() => {
-        //     //Analytics.default.customSlotLoadingRecord("load_slotscene_complete");
-        //     this.setDone();
-        // });
+        // 并行状态结束回调：记录埋点+标记当前状态完成
+        concurrentState.addOnEndCallback(() => {
+            //Analytics.default.customSlotLoadingRecord("load_slotscene_complete");
+            this.setDone();
+        });
 
         // 启动并行状态
         concurrentState.onStart();

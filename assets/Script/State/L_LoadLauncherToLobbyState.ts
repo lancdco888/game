@@ -9,6 +9,7 @@ import TSUtility from "../global_utility/TSUtility";
 import Analytics from "../Network/Analytics";
 // import LoginProcess from "../../Login/LoginProcess";
 import FireHoseSender, { FHLogType } from "../FireHoseSender";
+import LoadingPopup from "../Popup/LoadingPopup";
 
 export default class L_LoadLauncherToLobbyState extends State {
     /**

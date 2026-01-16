@@ -3,6 +3,7 @@
 import { L_GetBingoGameInfoState, L_GetInstantInfoState } from '../Loading/LoadingLobbyProcess';
 import CommonServer from '../Network/CommonServer';
 import State, { SequencialState } from '../Slot/State';
+import L_LoadSceneCompleteState from '../State/L_LoadSceneCompleteState';
 import L_RefreshHeroInfoState from '../State/L_RefreshHeroInfoState';
 import L_RefreshUserInfoState from '../State/L_RefreshUserInfoState';
 import UserInfo from '../User/UserInfo';
@@ -132,13 +133,13 @@ export default class LoadingSlotProcess extends State {
         infoSubState.insert(subIndex, new L_GetInboxInfoState());
         subIndex++;
         //infoSubState.insert(subIndex, new L_LoadSceneCompleteState("getInfos_complete"));
-        subIndex++;
+        // subIndex++;
         // infoSubState.insert(subIndex, new L_AcceptPromotionState());
         // infoSubState.insert(subIndex, new L_SetOfferPopupInfo());
         // infoSubState.insert(subIndex, new L_CheckFBSquadStatus());
         infoSubState.insert(subIndex, new L_GetInstantInfoState());
         subIndex++;
-        // infoSubState.insert(subIndex, new L_LoadSceneCompleteState("setInfos_complete"));
+        infoSubState.insert(subIndex, new L_LoadSceneCompleteState("setInfos_complete"));
         rootState.insert(seqIndex, infoSubState);
 
         // 子状态3：Slot初始化

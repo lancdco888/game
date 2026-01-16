@@ -281,14 +281,14 @@ export default class HRVSlotService extends cc.Component {
             PopupManager.Instance().setBaseBackBtnCallback(SlotManager.baseBackBtnProcess);
 
             // // 加载弹窗进度更新
-            // const loadingPopup = LoadingPopup.getCurrentOpenPopup();
-            // loadingPopup.setPostProgress(0, "Authenticating ...");
+            const loadingPopup = LoadingPopup.getCurrentOpenPopup();
+            loadingPopup.setPostProgress(0, "Authenticating ...");
             this._spinChangeResult = new ChangeResult();
             this.setZoneInfo();
 
             // 初始化老虎机游戏核心
             console.log("initSlotGameProcess start");
-            // loadingPopup.setPostProgress(.25, "Setting up Slot .");
+            loadingPopup.setPostProgress(.25, "Setting up Slot .");
             const initSlotRes = await SlotManager.Instance.initSlotGameProcess();
             console.log("initSlotGameProcess end");
             if (!initSlotRes) {
@@ -439,7 +439,7 @@ export default class HRVSlotService extends cc.Component {
             await AsyncHelper.delayWithComponent(.2, this);
             console.log("asyncSceneLoadPrepare end");
 
-            // loadingPopup.setPostProgress(1, "Complete Slot Loading", true);
+            loadingPopup.setPostProgress(1, "Complete Slot Loading", true);
             // Analytics.customSlotLoadingRecord("load_slotgame_complete");
             SlotManager.Instance.registerIgnoreSymbols();
             SlotManager.Instance.initCameraSetting();
@@ -720,13 +720,13 @@ export default class HRVSlotService extends cc.Component {
      * 设置游戏内UI实例
      */
     setInGameUI(): void {
-        const ingameUINode = SlotManager.Instance.ingameUI.node;
+        const ingameUINode = LoadingSlotProcess.Instance().ingameUI.node;
         if (!SlotManager.Instance.inGameUILayer) {
             ingameUINode.parent = this.node;
         } else {
             ingameUINode.parent = SlotManager.Instance.inGameUILayer;
         }
-        this._inGameUI = SlotManager.Instance.ingameUI;
+        this._inGameUI = LoadingSlotProcess.Instance().ingameUI;
     }
 
     /**

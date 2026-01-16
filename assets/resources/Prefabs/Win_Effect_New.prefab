@@ -34,9 +34,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 1388
+      }
+    ],
     "_prefab": {
-      "__id__": 1388
+      "__id__": 1389
     },
     "_opacity": 255,
     "_color": {
@@ -51441,6 +51445,48 @@
     },
     "fileId": "4a4MmcWtdOcJs7lSRc0Jfm",
     "sync": false
+  },
+  {
+    "__type__": "2c0ffjC7exJR5c5O+y81fuv",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "bgAni": null,
+    "textOverAni": null,
+    "buttonAni": null,
+    "instant_buttonAni": null,
+    "textAniSuperWin": null,
+    "textAniBigWin": null,
+    "textAniHugeWin": null,
+    "textAniMegaWin": null,
+    "textAniEpicWin": null,
+    "winCoinsAnimation": null,
+    "commonFXAnimation": null,
+    "winExplodeCoin": null,
+    "fxCoinBorder": null,
+    "btnCollect": null,
+    "btnSkip": null,
+    "instant_btnSkip": null,
+    "toggleShare": null,
+    "instant_collect_Btn": null,
+    "instant_close_Btn": null,
+    "labelWinMoney": null,
+    "backgroundMoneySmall": [],
+    "backgroundMoneyBig": [],
+    "dimmObject": null,
+    "txtAdd": null,
+    "winCoin": null,
+    "winCoinAdd": null,
+    "fxUnder": null,
+    "nodeParticles": [],
+    "winCoinCollectFx": null,
+    "blockingBG": [],
+    "nodeBlock": null,
+    "powerGemWinEffect": null,
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",
