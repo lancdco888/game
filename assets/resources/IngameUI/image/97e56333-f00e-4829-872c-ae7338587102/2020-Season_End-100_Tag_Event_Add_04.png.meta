@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "fe5820c4-6c2d-40d4-b340-bd47ab16213a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 68,
+  "height": 42,
+  "platformSettings": {},
+  "subMetas": {
+    "2020-Season_End-100_Tag_Event_Add_04": {
+      "ver": "1.0.6",
+      "uuid": "cf244e5e-abff-45d0-a086-15a897d58ced",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "fe5820c4-6c2d-40d4-b340-bd47ab16213a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -25.5,
+      "offsetY": 2.5,
+      "trimX": 0,
+      "trimY": 5,
+      "width": 17,
+      "height": 27,
+      "rawWidth": 68,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c805d524-d631-4f10-aa7d-3d75bbb454d1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 66,
+  "height": 60,
+  "platformSettings": {},
+  "subMetas": {
+    "100_PM_Laurel-wreath_2nd": {
+      "ver": "1.0.6",
+      "uuid": "6e845dd9-1294-4fa2-85e0-76c17545c35f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c805d524-d631-4f10-aa7d-3d75bbb454d1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 64,
+      "height": 57,
+      "rawWidth": 66,
+      "rawHeight": 60,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

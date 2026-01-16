@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5d22606f-ce41-435f-ad59-de7b6d9a6067",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 10,
+  "height": 10,
+  "platformSettings": {},
+  "subMetas": {
+    "Promotion_new-TimeDeal_02-80_Light": {
+      "ver": "1.0.6",
+      "uuid": "0a3a04d5-aa0c-45fd-9154-f46daad2b59b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5d22606f-ce41-435f-ad59-de7b6d9a6067",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 8,
+      "height": 8,
+      "rawWidth": 10,
+      "rawHeight": 10,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

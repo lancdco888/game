@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "154131eb-fd72-4233-ba41-b9d78c2a3bdd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 28,
+  "height": 26,
+  "platformSettings": {},
+  "subMetas": {
+    "2020-Collection-100_StarAlbum_Time_Bg": {
+      "ver": "1.0.6",
+      "uuid": "cc50702e-d3e0-4e09-a5bb-aee982d7fe0c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "154131eb-fd72-4233-ba41-b9d78c2a3bdd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 28,
+      "height": 25,
+      "rawWidth": 28,
+      "rawHeight": 26,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

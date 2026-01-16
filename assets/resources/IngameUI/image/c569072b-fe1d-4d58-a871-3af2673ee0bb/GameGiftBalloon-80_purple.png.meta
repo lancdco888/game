@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7a001eb8-8088-4b7d-8734-4af16663a71e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 48,
+  "height": 96,
+  "platformSettings": {},
+  "subMetas": {
+    "GameGiftBalloon-80_purple": {
+      "ver": "1.0.6",
+      "uuid": "18eec96b-d85c-41d8-9942-378a5d7cbf40",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7a001eb8-8088-4b7d-8734-4af16663a71e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 48,
+      "height": 96,
+      "rawWidth": 48,
+      "rawHeight": 96,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

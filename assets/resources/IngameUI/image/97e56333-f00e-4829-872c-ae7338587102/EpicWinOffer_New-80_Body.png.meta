@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "60148675-f6a5-4484-9d35-ad68f9487423",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 59,
+  "height": 59,
+  "platformSettings": {},
+  "subMetas": {
+    "EpicWinOffer_New-80_Body": {
+      "ver": "1.0.6",
+      "uuid": "a2d4b3cf-1cad-43ee-a7e6-a4682518d5b6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "60148675-f6a5-4484-9d35-ad68f9487423",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 58,
+      "height": 58,
+      "rawWidth": 59,
+      "rawHeight": 59,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

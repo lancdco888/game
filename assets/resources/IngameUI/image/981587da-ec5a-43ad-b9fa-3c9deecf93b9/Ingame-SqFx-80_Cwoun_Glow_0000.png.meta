@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ae96c5f1-e4b4-4142-baa7-d71cc48c6d65",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 35,
+  "height": 26,
+  "platformSettings": {},
+  "subMetas": {
+    "Ingame-SqFx-80_Cwoun_Glow_0000": {
+      "ver": "1.0.6",
+      "uuid": "1ce6a0bc-6b22-4706-a826-62bd2ad3a6d8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ae96c5f1-e4b4-4142-baa7-d71cc48c6d65",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -15,
+      "offsetY": -6,
+      "trimX": 1,
+      "trimY": 17,
+      "width": 3,
+      "height": 4,
+      "rawWidth": 35,
+      "rawHeight": 26,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

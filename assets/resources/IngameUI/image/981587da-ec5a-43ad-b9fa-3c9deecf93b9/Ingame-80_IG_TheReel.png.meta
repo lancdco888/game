@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "394d166e-d25b-4583-aac0-d6fa39f7ae1d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 14,
+  "platformSettings": {},
+  "subMetas": {
+    "Ingame-80_IG_TheReel": {
+      "ver": "1.0.6",
+      "uuid": "f31056d1-44a0-480b-9a32-b59ae22067f9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "394d166e-d25b-4583-aac0-d6fa39f7ae1d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 50,
+      "height": 13,
+      "rawWidth": 50,
+      "rawHeight": 14,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

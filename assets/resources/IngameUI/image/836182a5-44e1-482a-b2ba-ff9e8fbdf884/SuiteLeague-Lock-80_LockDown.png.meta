@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "15fdddfe-504b-4466-a53a-033a067f092a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 29,
+  "height": 24,
+  "platformSettings": {},
+  "subMetas": {
+    "SuiteLeague-Lock-80_LockDown": {
+      "ver": "1.0.6",
+      "uuid": "aaf82a4b-2618-4376-8243-8431b511cf8d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "15fdddfe-504b-4466-a53a-033a067f092a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 28,
+      "height": 24,
+      "rawWidth": 29,
+      "rawHeight": 24,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

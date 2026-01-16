@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8661b37c-36af-4be4-afff-0e197c3322d2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 54,
+  "height": 45,
+  "platformSettings": {},
+  "subMetas": {
+    "RewardCenter-80_box_BG": {
+      "ver": "1.0.6",
+      "uuid": "2ac7605b-6a1f-4165-b951-8994b6e2127f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8661b37c-36af-4be4-afff-0e197c3322d2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 54,
+      "height": 44,
+      "rawWidth": 54,
+      "rawHeight": 45,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

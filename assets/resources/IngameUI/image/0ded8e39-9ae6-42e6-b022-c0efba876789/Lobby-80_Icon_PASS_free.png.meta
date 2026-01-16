@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "465a4e72-a4f0-4b20-8f57-6d6658b8111b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 27,
+  "height": 30,
+  "platformSettings": {},
+  "subMetas": {
+    "Lobby-80_Icon_PASS_free": {
+      "ver": "1.0.6",
+      "uuid": "5ba001bd-3d5b-4b06-8d90-84b18aabeb6f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "465a4e72-a4f0-4b20-8f57-6d6658b8111b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 26,
+      "height": 29,
+      "rawWidth": 27,
+      "rawHeight": 30,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

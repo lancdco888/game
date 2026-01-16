@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cdd56b4f-9335-451f-9ecb-6304528db97c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 21,
+  "height": 27,
+  "platformSettings": {},
+  "subMetas": {
+    "Ingame-80_FT_7": {
+      "ver": "1.0.6",
+      "uuid": "5a3e730d-a08e-4c18-bc50-f2adc1ab9e37",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cdd56b4f-9335-451f-9ecb-6304528db97c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 20,
+      "height": 25,
+      "rawWidth": 21,
+      "rawHeight": 27,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f19b11bf-a7e0-436a-bd92-a4010123b8f3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 78,
+  "height": 104,
+  "platformSettings": {},
+  "subMetas": {
+    "TripleThrillJackpot-100_Tooltip_Bg": {
+      "ver": "1.0.6",
+      "uuid": "eec5bc49-12d6-4ef3-9bf1-c3e8468848df",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f19b11bf-a7e0-436a-bd92-a4010123b8f3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 78,
+      "height": 104,
+      "rawWidth": 78,
+      "rawHeight": 104,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

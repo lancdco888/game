@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "88c53863-c941-4600-b578-779dc9d1593a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 138,
+  "height": 59,
+  "platformSettings": {},
+  "subMetas": {
+    "Effect-80_My_Iist_OutGlow": {
+      "ver": "1.0.6",
+      "uuid": "01fe9b32-c8c6-4813-a9e2-4883b3082fa6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "88c53863-c941-4600-b578-779dc9d1593a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 136,
+      "height": 57,
+      "rawWidth": 138,
+      "rawHeight": 59,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
