@@ -4,7 +4,7 @@ const { ccclass } = cc._decorator;
 import TSUtility from "./TSUtility";
 import { Utility } from "./Utility";
 
-@ccclass('NativeUtil')
+@ccclass()
 export default class NativeUtil {
     // ✅ 修复根因3：补全所有成员变量声明 + 初始化赋值，严格符合TS规范
     private static nativePrevLog: Function = null;

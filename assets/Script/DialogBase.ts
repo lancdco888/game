@@ -223,12 +223,12 @@ export default class DialogBase extends cc.Component {
      * 编辑器内打印错误，真机上报到AWS日志服务
      */
     public static exceptionLogOnResLoad(msg: string): void {
-        if (!window['Utility'].isCocosEditorPlay()) {
-            const err = new Error(msg);
-            FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FireHoseSender['FHLogType'].Exception, err));
-        } else {
+        // if (!window['Utility'].isCocosEditorPlay()) {
+        //     const err = new Error(msg);
+        //     FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FireHoseSender['FHLogType'].Exception, err));
+        // } else {
             cc.error(msg);
-        }
+        // }
     }
 
     // ===================== 【屏幕适配回调】实现ViewResizeManager的适配接口，原逻辑完全保留 =====================

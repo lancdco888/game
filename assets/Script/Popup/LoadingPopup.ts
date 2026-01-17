@@ -36,7 +36,7 @@ export default class LoadingPopup extends DialogBase {
     @property(cc.Label)
     public infoLabel: cc.Label = null!;
 
-    @property()
+    @property(LoadingProgressBar)
     public progressBar: LoadingProgressBar = null!;
 
     @property(cc.Sprite)
@@ -64,7 +64,7 @@ export default class LoadingPopup extends DialogBase {
     /** 后加载进度占比 */
     private _postProgress: number = 0;
     /** 总进度占比 */
-    private _totalProgress: number = 0;
+    private _totalProgress: number = 1;
     /** 要加载的场景名称 */
     private _sceneName: string = "";
     /** 是否开启淡入动画 */

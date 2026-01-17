@@ -237,7 +237,7 @@ export default class Analytics extends cc.Component {
             param[Analytics.FBEventName.EVENT_PARAM_CONTENT] = content;
             param[Analytics.FBEventName.EVENT_PARAM_CONTENT_ID] = contentId;
             param[Analytics.FBEventName.EVENT_PARAM_CURRENCY] = currency;
-            NativeUtil.fbLogEventSumValue(Analytics.FBEventName.EVENT_NAME_VIEWED_CONTENT, value, param);
+            // NativeUtil.fbLogEventSumValue(Analytics.FBEventName.EVENT_NAME_VIEWED_CONTENT, value, param);
         } else {
             cc.log("fb_AppEvents_logViewedContentEvent not supported platform " + cc.sys.os);
         }
@@ -250,7 +250,7 @@ export default class Analytics extends cc.Component {
             FB.AppEvents.logEvent(FB.AppEvents.EventNames.ACHIEVED_LEVEL, null, param);
         } else if (Utility.isMobileGame()) {
             param[Analytics.FBEventName.EVENT_PARAM_LEVEL] = level;
-            NativeUtil.fbLogEvent(Analytics.FBEventName.EVENT_NAME_ACHIEVED_LEVEL, param);
+            // NativeUtil.fbLogEvent(Analytics.FBEventName.EVENT_NAME_ACHIEVED_LEVEL, param);
         } else if (Utility.isFacebookInstant()) {
             param.ACHIEVED_LEVEL = level;
             FBInstant.logEvent("ACHIEVED_LEVEL", null, param);
@@ -270,7 +270,7 @@ export default class Analytics extends cc.Component {
             FB.AppEvents.logEvent(Analytics.FBEventName.EVENT_NAME_CUSTOM_ACHIEVED_LEVEL, null, param);
         } else if (Utility.isMobileGame()) {
             param[Analytics.FBEventName.EVENT_PARAM_LEVEL] = level;
-            NativeUtil.fbLogEvent(Analytics.FBEventName.EVENT_NAME_CUSTOM_ACHIEVED_LEVEL, param);
+            // NativeUtil.fbLogEvent(Analytics.FBEventName.EVENT_NAME_CUSTOM_ACHIEVED_LEVEL, param);
         } else {
             cc.log("fb_AppEvents_logCustomAchievedLevelEvent not supported platform " + cc.sys.os);
         }
@@ -279,7 +279,7 @@ export default class Analytics extends cc.Component {
 	public static fb_AppEvent_logShareError(error: string): void {
 		const param: { [key: string]: any } = {};
 		param.error = error;
-		NativeUtil.fbLogEvent("app_share_error_msg", param);
+		// NativeUtil.fbLogEvent("app_share_error_msg", param);
 	}
 
     // ✅ 核心保留：原代码中注释掉的FB事件上报代码 完整保留，无任何删除
@@ -842,49 +842,49 @@ export default class Analytics extends cc.Component {
 
     public static af_appFirstLaunch(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_FIRST_LAUNCH, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_FIRST_LAUNCH, {});
         }
     }
 
     public static af_appOpen(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_LAUNCH, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_LAUNCH, {});
         }
     }
 
     public static af_versionCehck(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_CHECK_VERSION_COMPLETE, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_CHECK_VERSION_COMPLETE, {});
         }
     }
 
     public static af_patchStart(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_PATCH_START, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_PATCH_START, {});
         }
     }
 
     public static af_patchComplete(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_PATCH_COMPLETE, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_PATCH_COMPLETE, {});
         }
     }
 
     public static af_loginView(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_LOGIN_VIEW, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_LOGIN_VIEW, {});
         }
     }
 
     public static af_fbAuthComeplte(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_FB_AUTH_COMPLETE, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_FB_AUTH_COMPLETE, {});
         }
     }
 
     public static af_loadingComplete(): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(Analytics.EventName.APP_LOADING_COMPLETE, {});
+            // NativeUtil.afLogEvent(Analytics.EventName.APP_LOADING_COMPLETE, {});
         }
     }
 
@@ -895,7 +895,7 @@ export default class Analytics extends cc.Component {
             param[Analytics.AFEventName.PARAM_CURRENCY] = "USD";
             param[Analytics.AFEventName.PARAM_QUANTITY] = quantity;
             param[Analytics.AFEventName.PARAM_CONTENT_ID] = contentId;
-            NativeUtil.afLogEvent(Analytics.AFEventName.NAME_INITIATED_CHECKOUT, param);
+            // NativeUtil.afLogEvent(Analytics.AFEventName.NAME_INITIATED_CHECKOUT, param);
         }
     }
 
@@ -906,27 +906,27 @@ export default class Analytics extends cc.Component {
             param[Analytics.AFEventName.PARAM_CURRENCY] = "USD";
             param[Analytics.AFEventName.PARAM_QUANTITY] = quantity;
             param[Analytics.AFEventName.PARAM_CONTENT_ID] = contentId;
-            NativeUtil.afLogEvent(Analytics.AFEventName.NAME_PURCHASE, param);
+            // NativeUtil.afLogEvent(Analytics.AFEventName.NAME_PURCHASE, param);
         }
     }
 
     public static af_achievedLevel(level: number): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
             const param = { af_level: level };
-            NativeUtil.afLogEvent(Analytics.AFEventName.NAME_USER_LEVEL, param);
+            // NativeUtil.afLogEvent(Analytics.AFEventName.NAME_USER_LEVEL, param);
         }
     }
 
 	public static af_rollDice(count: number): void {
 		if (Utility.isMobileGame() && 4 == count) {
 			const param = { attri_count: count };
-			NativeUtil.afLogEvent(Analytics.AFEventName.NAME_ROLL_DICE, param);
+			// NativeUtil.afLogEvent(Analytics.AFEventName.NAME_ROLL_DICE, param);
 		}
 	}
 
     public static af_logEvent(eventName: string, param: { [key: string]: any } = {}): void {
         if (Utility.isMobileGame() && Analytics.isUseableAfEventLogging()) {
-            NativeUtil.afLogEvent(eventName, param);
+            // NativeUtil.afLogEvent(eventName, param);
         }
     }
 
@@ -934,17 +934,17 @@ export default class Analytics extends cc.Component {
     // ✅ 原代码 Firebase/Liftoff 相关方法 完整复刻 - 移动端专属统计，逻辑一字不改
     // =====================================================================================
     public static firebase_logEvent(eventName: string, param: { [key: string]: any } = {}): void {
-        if (Utility.isMobileGame()) {
-            const finalParam = null != param ? param : {};
-            if (SDefine.Mobile_Use_FireBase) {
-                NativeUtil.fireBaseLogEvent(eventName, finalParam);
-            }
-        }
+        // if (Utility.isMobileGame()) {
+        //     const finalParam = null != param ? param : {};
+        //     if (SDefine.Mobile_Use_FireBase) {
+        //         // NativeUtil.fireBaseLogEvent(eventName, finalParam);
+        //     }
+        // }
     }
 
     public static liftoffRecordEvent(eventName: string): void {
         if (Utility.isMobileGame() && cc.sys.os == cc.sys.OS_IOS && SDefine.Mobile_Use_iOS_Liftoff) {
-            NativeUtil.liftoffRecordEvent_IOS(eventName);
+            // NativeUtil.liftoffRecordEvent_IOS(eventName);
         }
     }
 

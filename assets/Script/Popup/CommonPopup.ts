@@ -144,7 +144,7 @@ export default class CommonPopup extends DialogBase {
      * @param errCode 错误码 (SDefine.ERR_XXX)
      * @param callback 弹窗关闭回调
      */
-    public static authErrorPopup(errCode: number, callback: (res: number) => void): void {
+    public static authErrorPopup(errCode: number, callback?: (res: number) => void): void {
         const config = {
             okBtnStr: "SUPPORT",
             cancelBtnStr: "CLOSE",

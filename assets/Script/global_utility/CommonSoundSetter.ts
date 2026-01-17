@@ -10,12 +10,12 @@ import TSUtility from "./TSUtility";
 @ccclass
 export class SoundInfo {
     /** 音效唯一标识ID (如：btn_etc / pop_etc) */
-    @property({ type: cc.String, tooltip: "音效唯一标识ID" })
+    @property({ tooltip: "音效唯一标识ID" })
     public soundId: string = "";
 
     /** 该ID对应的独立音频剪辑文件 */
     @property({ type: cc.AudioClip, tooltip: "绑定的音频剪辑资源" })
-    public soundResource: cc.AudioClip | null = null;
+    public soundResource: cc.AudioClip = null;
 }
 
 /**
