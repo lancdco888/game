@@ -41,6 +41,7 @@ import ConfigManager from "./manager/ConfigManager";
 import ServiceSlotDataManager from "./manager/ServiceSlotDataManager";
 import HRVSlotService from "./HRVService/HRVSlotService";
 import SlotManager from "./manager/SlotManager";
+import LoadingPopup from "./Popup/LoadingPopup";
 //import LobbyUIStartPopupManager from "./StartPopup/LobbyUIStartPopupManager";
 //import LobbyUIStartPopup_ADFreeOffer from "./StartPopup/Popup/LobbyUIStartPopup_ADFreeOffer";
 
@@ -147,7 +148,7 @@ export default class LobbyScene extends cc.Component {
         MessageRoutingManager.instance().addListenerTarget(MessageRoutingManager.MSG.RESET_START_POPUP, this.resetOpenLobbyStartPopup, this);
 
 
-        this.initialize()
+        // this.initialize()
     }
 
     // ===== 生命周期回调 - ON_DESTROY 大厅销毁逻辑，原代码完整复刻，内存释放核心 =====
@@ -171,8 +172,8 @@ export default class LobbyScene extends cc.Component {
     public initialize(): Promise<void> {
         return new Promise(async (resolve) => {
             try {
-                // const loadingPopup = LoadingPopup.getCurrentOpenPopup();
-                // loadingPopup.setPostProgress(0, "Authenticating ...");
+                const loadingPopup = LoadingPopup.getCurrentOpenPopup();
+                loadingPopup.setPostProgress(0, "Authenticating ...");
                 
                 // 初始化埋点+用户信息重置
                 //Analytics.lobbyInitStartInit();
@@ -200,8 +201,8 @@ export default class LobbyScene extends cc.Component {
 
                 // 进度条更新 20%
                 //Analytics.customLoadingRecord("lob_setUi_complete_" + (ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT - 1).toString());
-                //loadingPopup.setPostProgress(0.2, "Verifying game ...");
-                //this.refreshBGM();
+                loadingPopup.setPostProgress(0.2, "Verifying game ...");
+                // this.refreshBGM();
 
                 // 移动端新手引导标记
                 // if (Utility.isMobileGame() && !ServerStorageManager.getAsBoolean(StorageKeyType.MOBILE_GUIDE)) {
@@ -214,7 +215,7 @@ export default class LobbyScene extends cc.Component {
                 // }
 
                 // 进度条更新 60%
-                //loadingPopup.setPostProgress(0.6, "Entering lobby ...");
+                loadingPopup.setPostProgress(0.6, "Entering lobby ...");
                 // const slotZoneInfo = userInstance.slotZoneInfo[Math.min(this._numZoneID, 1)];
                 
                 // // 分区信息校验 + 大奖信息刷新
@@ -247,7 +248,7 @@ export default class LobbyScene extends cc.Component {
                 // }
 
                 // 进度条更新 80% - 各类管理器初始化
-                //loadingPopup.setPostProgress(0.8, "Initialize manager ...");
+                loadingPopup.setPostProgress(0.8, "Initialize manager ...");
                 
                 PowerGemManager.instance.initialize();
                 TimeBonusManager.instance.initialize();
@@ -289,14 +290,14 @@ export default class LobbyScene extends cc.Component {
                 // }
 
                 // 进度条更新 90% - UI初始化
-                //loadingPopup.setPostProgress(0.9, "Initialize UI ...");
-                //const uiType = this._strZoneName == SDefine.SUITE_ZONENAME ? LobbySceneUIType.SUITE : LobbySceneUIType.LOBBY;
-                //await this.UI.initialize(uiType);
+                loadingPopup.setPostProgress(0.9, "Initialize UI ...");
+                const uiType = this._strZoneName == SDefine.SUITE_ZONENAME ? LobbySceneUIType.SUITE : LobbySceneUIType.LOBBY;
+                await this.UI.initialize(uiType);
 
                 // 进度条100%完成 + 入场动画播放
-                //Analytics.lobbyInitAfterCompleteDelay();
-                //loadingPopup.setPostProgress(1, "Completed", true);
-                //await this.UI.playEnterAction();
+                Analytics.lobbyInitAfterCompleteDelay();
+                loadingPopup.setPostProgress(1, "Completed", true);
+                await this.UI.playEnterAction();
 
                 // // 首次进入校验未处理的内购订单
                 // const enterLobbyCnt = ServiceInfoManager.NUMBER_LOOBY_ENTER_COUNT;

@@ -58,58 +58,58 @@ export default class ErrorCatcher {
         } 
         // WEB端（浏览器）错误捕获逻辑
         else {
-            // WEB端全局错误监听（window.onerror）
-            window.onerror = function(message: string, source: string, lineno: number, colno: number, error: Error) {
-                const errorData: Record<string, any> = {};
-                let stack = "";
+            // // WEB端全局错误监听（window.onerror）
+            // window.onerror = function(message: string, source: string, lineno: number, colno: number, error: Error) {
+            //     const errorData: Record<string, any> = {};
+            //     let stack = "";
 
-                // 组装错误基础信息
-                if (message) errorData.msg = message;
-                if (source) errorData.url = source;
-                if (!lineno) lineno = -1; // 行号默认值
-                if (!colno) colno = -1;   // 列号默认值
-                if (error && error.stack) stack = error.stack.toString(); // 错误堆栈
-                if (stack){
-                    errorData.stack = stack
-                }
+            //     // 组装错误基础信息
+            //     if (message) errorData.msg = message;
+            //     if (source) errorData.url = source;
+            //     if (!lineno) lineno = -1; // 行号默认值
+            //     if (!colno) colno = -1;   // 列号默认值
+            //     if (error && error.stack) stack = error.stack.toString(); // 错误堆栈
+            //     if (stack){
+            //         errorData.stack = stack
+            //     }
 
-                // // 上报错误到FireHose
-                // FireHoseSender.Instance().sendAws(
-                //     FireHoseSender.Instance().getRecordByInfo(
-                //         FHLogType.Exception,
-                //         errorData,
-                //         stack,
-                //         lineno,
-                //         colno
-                //     )
-                // );
-                console.error(JSON.stringify(errorData))
-            };
+            //     // // 上报错误到FireHose
+            //     // FireHoseSender.Instance().sendAws(
+            //     //     FireHoseSender.Instance().getRecordByInfo(
+            //     //         FHLogType.Exception,
+            //     //         errorData,
+            //     //         stack,
+            //     //         lineno,
+            //     //         colno
+            //     //     )
+            //     // );
+            //     console.error(JSON.stringify(errorData))
+            // };
 
-            // WEB端未处理的Promise拒绝监听
-            window.addEventListener("unhandledrejection", function(event: PromiseRejectionEvent) {
-                const errorData: Record<string, any> = {};
-                let stack = "";
+            // // WEB端未处理的Promise拒绝监听
+            // window.addEventListener("unhandledrejection", function(event: PromiseRejectionEvent) {
+            //     const errorData: Record<string, any> = {};
+            //     let stack = "";
 
-                // 组装Promise拒绝错误信息
-                if (event && event.reason) {
-                    if (event.reason.stack) stack = event.reason.stack; // 错误堆栈
-                    if (event.reason.message) errorData.msg = event.reason.message; // 错误消息
-                }
-                errorData.url = ""; // WEB端Promise拒绝默认无URL
+            //     // 组装Promise拒绝错误信息
+            //     if (event && event.reason) {
+            //         if (event.reason.stack) stack = event.reason.stack; // 错误堆栈
+            //         if (event.reason.message) errorData.msg = event.reason.message; // 错误消息
+            //     }
+            //     errorData.url = ""; // WEB端Promise拒绝默认无URL
 
-                // // 上报未处理的Promise拒绝到FireHose
-                // FireHoseSender.Instance().sendAws(
-                //     FireHoseSender.Instance().getRecordByInfo(
-                //         FHLogType.Exception,
-                //         errorData,
-                //         stack,
-                //         -1, // 行号默认值
-                //         -1  // 列号默认值
-                //     )
-                // );
-                console.error(event)
-            });
+            //     // // 上报未处理的Promise拒绝到FireHose
+            //     // FireHoseSender.Instance().sendAws(
+            //     //     FireHoseSender.Instance().getRecordByInfo(
+            //     //         FHLogType.Exception,
+            //     //         errorData,
+            //     //         stack,
+            //     //         -1, // 行号默认值
+            //     //         -1  // 列号默认值
+            //     //     )
+            //     // );
+            //     console.error(event)
+            // });
         }
     }
 }

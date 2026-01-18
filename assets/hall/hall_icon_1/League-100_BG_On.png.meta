@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1f78b396-41f3-4e0b-bfcd-519fedc9ea83",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 258,
+  "height": 350,
+  "platformSettings": {},
+  "subMetas": {
+    "League-100_BG_On": {
+      "ver": "1.0.6",
+      "uuid": "41530d2e-caf4-4f52-b345-816b4414a4d2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1f78b396-41f3-4e0b-bfcd-519fedc9ea83",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 256,
+      "height": 348,
+      "rawWidth": 258,
+      "rawHeight": 350,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 128,
+      "borderRight": 128,
+      "subMetas": {}
+    }
+  }
+}

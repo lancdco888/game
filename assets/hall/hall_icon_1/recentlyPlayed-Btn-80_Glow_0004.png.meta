@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "af7c07dd-b8fa-4631-8c36-2d1cfa9bbbe6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 138,
+  "height": 62,
+  "platformSettings": {},
+  "subMetas": {
+    "recentlyPlayed-Btn-80_Glow_0004": {
+      "ver": "1.0.6",
+      "uuid": "0cc527c4-43b4-45f5-b0cb-a402f5738e2f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "af7c07dd-b8fa-4631-8c36-2d1cfa9bbbe6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -14.5,
+      "offsetY": -6.5,
+      "trimX": 5,
+      "trimY": 14,
+      "width": 99,
+      "height": 47,
+      "rawWidth": 138,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

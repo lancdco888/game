@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c6098e9e-7cdf-4d47-a26e-b189f0e3daae",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 2048,
+  "height": 2048,
+  "platformSettings": {},
+  "subMetas": {
+    "223_TwilightDragon_Bellyglass": {
+      "ver": "1.0.6",
+      "uuid": "b19f751d-fb76-45ed-b79e-5f5d66a39a52",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c6098e9e-7cdf-4d47-a26e-b189f0e3daae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 2042,
+      "height": 2043,
+      "rawWidth": 2048,
+      "rawHeight": 2048,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

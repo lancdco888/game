@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4f4d1815-ac1c-42cc-915d-d8642d9180dd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 237,
+  "height": 61,
+  "platformSettings": {},
+  "subMetas": {
+    "League-80_Title": {
+      "ver": "1.0.6",
+      "uuid": "8ffddd10-6f43-4158-9be4-19700d9b51a9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4f4d1815-ac1c-42cc-915d-d8642d9180dd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 236,
+      "height": 59,
+      "rawWidth": 237,
+      "rawHeight": 61,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

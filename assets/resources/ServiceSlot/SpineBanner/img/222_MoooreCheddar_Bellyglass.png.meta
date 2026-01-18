@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e8acd1e3-1c1a-4bc9-ba10-93920d817785",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "222_MoooreCheddar_Bellyglass": {
+      "ver": "1.0.6",
+      "uuid": "4252af0a-35e1-4ffe-a7bc-46ea778217bf",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e8acd1e3-1c1a-4bc9-ba10-93920d817785",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3.5,
+      "offsetY": 0.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1013,
+      "height": 1019,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

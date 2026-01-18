@@ -1,0 +1,93 @@
+{
+  "_name": "NewSlot_Lit_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.25,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.5,
+              "value": 255,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.75,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.25,
+              "value": 255,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.5,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.75,
+              "value": 255,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Banner-80_NewSlots_On": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

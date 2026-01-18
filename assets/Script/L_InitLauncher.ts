@@ -48,7 +48,7 @@ export default class L_InitLauncher extends State {
 
             // 3. 初始化服务端Slot数据管理器
             const slotDataInitResult = await ServiceSlotDataManager.instance.initialize();
-            if (slotDataInitResult) {
+            if (!slotDataInitResult) {
                 // 数据初始化失败：显示网络错误弹窗并终止流程
                 CommonPopup.loginErrorPopup("Network Error.");
                 return;

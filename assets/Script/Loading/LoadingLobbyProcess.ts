@@ -247,24 +247,24 @@ export default class LoadingLobbyProcess {
 
         // 子序列2: 拉取各类基础信息+埋点
         o = 0;
-        const subState2 = new SequencialState();
-        // subState2.insert(o, new L_GetFriendInfoState());
-        // subState2.insert(o, new L_GetJackpotInfo());
-        // subState2.insert(o, new L_GetFBTournamentInfoState());
-        // subState2.insert(o, new L_RefreshHeroInfoState());
-        // subState2.insert(o, new L_GetBingoGameInfoState());
-        // subState2.insert(o++, new L_GetInboxInfoState());
-        // o++;
-        // subState2.insert(o, new L_CheckCenturionCliqueInfoState());
-        // subState2.insert(o, new L_LoadingRecordAnalyticsState("getInfos_complete"));
-        // o++;
-        // subState2.insert(o, new L_AcceptPromotionState());
-        // subState2.insert(o, new L_SetOfferPopupInfo());
-        // subState2.insert(o, new L_CheckFBSquadStatus());
-        // subState2.insert(o, new L_GetInstantInfoState());
-        // o++;
-        // subState2.insert(o, new L_LoadingRecordAnalyticsState("setInfos_complete"));
-        rootState.insert(n, subState2);
+        // const subState2 = new SequencialState();
+        // // subState2.insert(o, new L_GetFriendInfoState());
+        // // subState2.insert(o, new L_GetJackpotInfo());
+        // // subState2.insert(o, new L_GetFBTournamentInfoState());
+        // // subState2.insert(o, new L_RefreshHeroInfoState());
+        // // subState2.insert(o, new L_GetBingoGameInfoState());
+        // // subState2.insert(o++, new L_GetInboxInfoState());
+        // // o++;
+        // // subState2.insert(o, new L_CheckCenturionCliqueInfoState());
+        // // subState2.insert(o, new L_LoadingRecordAnalyticsState("getInfos_complete"));
+        // // o++;
+        // // subState2.insert(o, new L_AcceptPromotionState());
+        // // subState2.insert(o, new L_SetOfferPopupInfo());
+        // // subState2.insert(o, new L_CheckFBSquadStatus());
+        // // subState2.insert(o, new L_GetInstantInfoState());
+        // // o++;
+        // // subState2.insert(o, new L_LoadingRecordAnalyticsState("setInfos_complete"));
+        // rootState.insert(n, subState2);
 
         // 最终: 大厅核心初始化
         n++;

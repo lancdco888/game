@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "266e5003-b250-4a3e-82b3-52b268c50179",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 62,
+  "height": 16,
+  "platformSettings": {},
+  "subMetas": {
+    "League-Suite-80_Fshadow02": {
+      "ver": "1.0.6",
+      "uuid": "f5e82e66-4494-4c5d-b7c1-b21de1927d98",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "266e5003-b250-4a3e-82b3-52b268c50179",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 61,
+      "height": 16,
+      "rawWidth": 62,
+      "rawHeight": 16,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

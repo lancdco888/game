@@ -11,6 +11,8 @@ import MessageRoutingManager from "../message/MessageRoutingManager";
 // import ADBannerManager from "../../ADBanner/ADBannerManager";
 import LobbySlotBannerItem from "../LobbySlotBannerItem";
 import { Utility } from "../global_utility/Utility";
+import ADBannerDataManager, { ADBannerType } from "../manager/ADBannerDataManager";
+import ADBannerManager from "../manager/ADBannerManager";
 
 /**
  * 老虎机横幅子项 - 大厅服务广告轮播专属版 (核心业务横幅)
@@ -27,7 +29,7 @@ export default class LobbySlotBannerItem_SERVICE_BANNER extends LobbySlotBannerI
 
     // ===================== 私有成员变量 (原代码全部保留，补全精准TS类型注解，初始值完全一致) =====================
     private _numLastChangeTime: number = 0;
-    // private _eType: ADBannerDataManager.ADBannerType = ADBannerDataManager.ADBannerType.LOBBY_FIRST;
+    private _eType: ADBannerType = ADBannerType.LOBBY_FIRST;
     private _arrIndicator: Array<cc.Node> = [];
     private _arrBanner: Array<any> = [];
 
@@ -107,13 +109,13 @@ export default class LobbySlotBannerItem_SERVICE_BANNER extends LobbySlotBannerI
     public refreshUI(): void {
         let bannerDataArr: Array<any> = [];
         // 根据广告类型获取对应的数据数组 - 三种业务类型完整匹配
-        // if (this._eType == ADBannerDataManager.ADBannerType.LOBBY_FIRST) {
-        //     bannerDataArr = ADBannerManager.instance.getADBannerInfoTypeArray_LobbyFirst();
-        // } else if (this._eType == ADBannerDataManager.ADBannerType.LOBBY_SECOND) {
-        //     bannerDataArr = ADBannerManager.instance.getADBannerInfoTypeArray_LobbySecond();
-        // } else if (this._eType == ADBannerDataManager.ADBannerType.LOBBY_SUITE) {
-        //     bannerDataArr = ADBannerManager.instance.getADBannerInfoTypeArray_Default();
-        // }
+        if (this._eType == ADBannerType.LOBBY_FIRST) {
+            bannerDataArr = ADBannerManager.instance.getADBannerInfoTypeArray_LobbyFirst();
+        } else if (this._eType == ADBannerType.LOBBY_SECOND) {
+            bannerDataArr = ADBannerManager.instance.getADBannerInfoTypeArray_LobbySecond();
+        } else if (this._eType == ADBannerType.LOBBY_SUITE) {
+            bannerDataArr = ADBannerManager.instance.getADBannerInfoTypeArray_Default();
+        }
 
         // 数据对比优化：数据无变化则不刷新，避免重复创建节点
         if (!this.isSamePageData(this._arrBanner, bannerDataArr)) {

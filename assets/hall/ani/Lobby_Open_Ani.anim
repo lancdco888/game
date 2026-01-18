@@ -1,0 +1,329 @@
+{
+  "_name": "Lobby_Open_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "WidgetCenter/Middle": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                1280,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetBottom/UnderBar": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -100,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                56,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetLeft/Side/Side-100_Shadow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 127
+            }
+          ]
+        }
+      },
+      "WidgetTop/Jackpot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.016666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                -2,
+                55,
+                0
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": [
+                -2,
+                -64,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetCenter/Middle/LobbyUI_SlotScrollView/ScrollBar": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "WidgetTopLeft/LobbyUI_Profile": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                129,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                129,
+                -33,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetTopLeft/Layout/LobbyUI_PiggyBank": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                30,
+                70,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                30,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetTopLeft/Layout/LobbyUI_Centurion": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                100,
+                70,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                100,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetTopRight/LobbyUI_Bankroll": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                -250,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                -250,
+                -25,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetTopRight/LobbyUI_Menu": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "WidgetLeft/LobbyUI_SideMenu": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                -60,
+                45,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                53,
+                45,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetTop/LobbyUI_Jackpot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.016666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": [
+                0,
+                -5,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetTop/LobbyUI_Jackpot/Btn_Jackpot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.016666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": [
+                0,
+                -65,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetLeft/LobbyUI_News": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.03333333333333333,
+              "value": [
+                -60,
+                239,
+                0
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": [
+                53,
+                239,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "WidgetLeft/LobbyUI_Search": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.13333333333333333,
+              "value": [
+                -60,
+                -150,
+                0
+              ]
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": [
+                53,
+                -150,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

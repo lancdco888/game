@@ -78,13 +78,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 1599
-      },
-      {
         "__id__": 1600
       },
       {
         "__id__": 1601
+      },
+      {
+        "__id__": 1602
       }
     ],
     "_prefab": null,
@@ -248,7 +248,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 1598
+        "__id__": 1599
       }
     ],
     "_prefab": null,
@@ -339,6 +339,9 @@
       },
       {
         "__id__": 1597
+      },
+      {
+        "__id__": 1598
       }
     ],
     "_prefab": null,
@@ -81628,6 +81631,25 @@
     "_id": "baaEcRyCZGEL8Svs953po/"
   },
   {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 6
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "b1c7eec3-6018-45bb-adaf-a92e1448380a"
+    },
+    "_clips": [
+      {
+        "__uuid__": "b1c7eec3-6018-45bb-adaf-a92e1448380a"
+      }
+    ],
+    "playOnLoad": false,
+    "_id": "1aEdE4L3pER5ydHG5NG3rW"
+  },
+  {
     "__type__": "c3a47pWJ3hEPavUqv7N4oI1",
     "_name": "",
     "_objFlags": 0,
@@ -81695,7 +81717,7 @@
     },
     "_enabled": true,
     "lobbySceneUI": {
-      "__id__": 1598
+      "__id__": 1599
     },
     "jsonAry": [
       {

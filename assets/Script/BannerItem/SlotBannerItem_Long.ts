@@ -60,11 +60,11 @@ export default class SlotBannerItem_Long extends SlotBannerItem {
     public lblSupersizeItTime: cc.Label = null!;
 
     // ===================== 私有成员变量【原代码完整保留，补全精准TS类型注解】 =====================
-    private _numPrevMegaJackpotMoney: number = 0;
-    private _numPrevMajorJackpotMoney: number = 0;
-    private _numPrevMinorJackpotMoney: number = 0;
-    private _numSupersizeItPassTime: number = 0;
-    private _strCurSlotBannerURL: string = "";
+    public _numPrevMegaJackpotMoney: number = 0;
+    public _numPrevMajorJackpotMoney: number = 0;
+    public _numPrevMinorJackpotMoney: number = 0;
+    public _numSupersizeItPassTime: number = 0;
+    public _strCurSlotBannerURL: string = "";
 
     // ===================== 核心业务方法 - 设置空横幅【异步方法，原逻辑完整保留】 =====================
     public async setEmptyBanner(): Promise<void> {

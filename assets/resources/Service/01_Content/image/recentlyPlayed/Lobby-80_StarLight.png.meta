@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "08df301b-14e2-41e0-8bf9-4f76b10916f2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 30,
+  "height": 30,
+  "platformSettings": {},
+  "subMetas": {
+    "Lobby-80_StarLight": {
+      "ver": "1.0.6",
+      "uuid": "a79e5aa6-d117-4465-820e-e6396bd9cf61",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "08df301b-14e2-41e0-8bf9-4f76b10916f2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 26,
+      "height": 26,
+      "rawWidth": 30,
+      "rawHeight": 30,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

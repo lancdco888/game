@@ -1,0 +1,331 @@
+{
+  "_name": "Popup_Recently_Played_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "paths": {
+      "BB": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 180
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Pivot/Book/Button": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                116,
+                0,
+                0
+              ],
+              "curve": [
+                0.55,
+                0.08,
+                0.8004028021015762,
+                0.4949737302977233
+              ]
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": [
+                173,
+                0,
+                0
+              ],
+              "curve": [
+                0.4295971978984239,
+                0.15880910683012273,
+                0.7588091068301226,
+                0.567215411558669
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": [
+                569,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                960,
+                0,
+                0
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.75,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Book/Mask/Page_Open/Button": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.75,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Book": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                -8,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                -8,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Book/Mask/Page_Open": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "curve": "cubicInOut",
+              "value": [
+                -727.622,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                116,
+                0,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 0.90909,
+                "y": 0.90909,
+                "z": 0.90909
+              }
+            },
+            {
+              "frame": 0.85,
+              "value": {
+                "x": 0.95,
+                "y": 0.90909,
+                "z": 0.90909
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 0.90909,
+                "y": 0.90909,
+                "z": 0.90909
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Book/Book_Cover": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                6,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 1.05,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Book/Button/Normal/Btn_Cover": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 0.7,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": {
+                "x": 1.2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Book/Mask/Page_Open/Button/Normal/Btn_Cover": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 0.7,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": {
+                "x": 1.2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

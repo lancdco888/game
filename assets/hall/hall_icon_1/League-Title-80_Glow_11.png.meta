@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8655304d-ff2a-425d-8062-80ec8691a5a8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 237,
+  "height": 61,
+  "platformSettings": {},
+  "subMetas": {
+    "League-Title-80_Glow_11": {
+      "ver": "1.0.6",
+      "uuid": "8ea5e816-0df7-4380-9bfe-abdb23e6a2d1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8655304d-ff2a-425d-8062-80ec8691a5a8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 96.5,
+      "offsetY": -1,
+      "trimX": 196,
+      "trimY": 12,
+      "width": 38,
+      "height": 39,
+      "rawWidth": 237,
+      "rawHeight": 61,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

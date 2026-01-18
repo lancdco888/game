@@ -1,0 +1,2019 @@
+{
+  "_name": "Suite_Move_Down_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.05,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "paths": {
+      "A": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                500,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.55,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "B": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                -510,
+                0
+              ]
+            },
+            {
+              "frame": 0.55,
+              "value": [
+                0,
+                -500,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront3/League-Suite-80_Fmoney05": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -4,
+                4,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicIn",
+              "value": [
+                -4,
+                6,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicIn",
+              "value": [
+                -4,
+                6,
+                0
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                -4,
+                4,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinFront3/League-Suite-80_Fmoney04": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -2,
+                13,
+                0
+              ]
+            },
+            {
+              "frame": 0.23333333333333334,
+              "curve": "cubicIn",
+              "value": [
+                -2,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.35,
+              "curve": "cubicIn",
+              "value": [
+                -2,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicInOut",
+              "value": [
+                -2,
+                13,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinFront3/League-Suite-80_Fmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -1,
+                21,
+                0
+              ]
+            },
+            {
+              "frame": 0.2,
+              "curve": "cubicIn",
+              "value": [
+                -1,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "curve": "cubicIn",
+              "value": [
+                -1,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.65,
+              "curve": "cubicInOut",
+              "value": [
+                -1,
+                21,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": -4,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.65,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront3/League-Suite-80_Fmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -5,
+                29,
+                0
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "curve": "cubicIn",
+              "value": [
+                -5,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 0.45,
+              "value": [
+                -5,
+                60,
+                0
+              ],
+              "curve": [
+                0.4,
+                0,
+                0.5541795665634675,
+                0.3490712074303406
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                -5,
+                29,
+                0
+              ]
+            },
+            {
+              "frame": 0.8,
+              "curve": "cubicIn",
+              "value": [
+                -5,
+                33,
+                0
+              ]
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": "cubicInOut",
+              "value": [
+                -5,
+                29,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 5
+            },
+            {
+              "frame": 0.45,
+              "value": -5,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront3/League-Suite-80_Fmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                30,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicIn",
+              "value": [
+                30,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.45,
+              "curve": "cubicIn",
+              "value": [
+                30,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                30,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.8,
+              "curve": "cubicIn",
+              "value": [
+                30,
+                3,
+                0
+              ]
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": [
+                30,
+                0,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": -5
+            },
+            {
+              "frame": 0.45,
+              "value": 3
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront4/League-Suite-80_Fmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -19,
+                11,
+                0
+              ]
+            },
+            {
+              "frame": 0.35,
+              "value": [
+                -19,
+                45,
+                0
+              ]
+            },
+            {
+              "frame": 0.55,
+              "value": [
+                -19,
+                45,
+                0
+              ],
+              "curve": [
+                0.4,
+                0,
+                0.6689886480908153,
+                0.5309597523219814
+              ]
+            },
+            {
+              "frame": 0.8,
+              "curve": "cubicInOut",
+              "value": [
+                -19,
+                11,
+                0
+              ]
+            },
+            {
+              "frame": 0.8833333333333333,
+              "curve": "cubicIn",
+              "value": [
+                -19,
+                14,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                -19,
+                11,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": -20,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.8,
+              "value": 0
+            },
+            {
+              "frame": 0.8833333333333333,
+              "value": -5,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront4/League-Suite-80_Fmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -67,
+                6,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                -67,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "curve": "cubicIn",
+              "value": [
+                -67,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                -67,
+                6,
+                0
+              ]
+            },
+            {
+              "frame": 0.8166666666666667,
+              "curve": "cubicIn",
+              "value": [
+                -67,
+                10,
+                0
+              ]
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": [
+                -67,
+                6,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": 8,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": -4,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront4/League-Suite-80_Fmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                10,
+                21,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                10,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                10,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.7833333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                10,
+                21,
+                0
+              ]
+            },
+            {
+              "frame": 0.8666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                10,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                10,
+                21,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -6,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.7833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 3
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront4/League-Suite-80_Fmoney04": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                9,
+                13,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                9,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "curve": "cubicIn",
+              "value": [
+                9,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                9,
+                13,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": 3,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront4/League-Suite-80_Fmoney05": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                13,
+                5,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                13,
+                8,
+                0
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "curve": "cubicIn",
+              "value": [
+                13,
+                8,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                13,
+                5,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack4/League-Suite-80_Bmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.11666666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                2,
+                -9,
+                0
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                2,
+                10,
+                0
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                2,
+                10,
+                0
+              ]
+            },
+            {
+              "frame": 0.8,
+              "value": [
+                2,
+                -9,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack4/League-Suite-80_Bmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.06666666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.45,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                0,
+                3,
+                0
+              ]
+            },
+            {
+              "frame": 0.95,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": 7,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -3,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.95,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront4/League-Suite-80_Fshadow01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                1,
+                9,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                1,
+                13,
+                0
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": [
+                1,
+                13,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": [
+                1,
+                9,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinFront1/League-Suite-80_Fmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.016666666666666666,
+              "curve": "cubicInOut",
+              "value": [
+                29,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                29,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": [
+                29,
+                30,
+                0
+              ],
+              "curve": [
+                0.4,
+                0,
+                0.6122291021671826,
+                0.44582043343653255
+              ]
+            },
+            {
+              "frame": 0.85,
+              "curve": "cubicInOut",
+              "value": [
+                29,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.9333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                29,
+                3,
+                0
+              ]
+            },
+            {
+              "frame": 1.05,
+              "value": [
+                29,
+                0,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.016666666666666666,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": -5
+            },
+            {
+              "frame": 0.85,
+              "value": 3
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": -2
+            },
+            {
+              "frame": 1.05,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront1/League-Suite-80_Fmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                -2,
+                12,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                -2,
+                55,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicIn",
+              "value": [
+                -2,
+                55,
+                0
+              ]
+            },
+            {
+              "frame": 0.7666666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                -2,
+                12,
+                0
+              ]
+            },
+            {
+              "frame": 0.85,
+              "curve": "cubicIn",
+              "value": [
+                -2,
+                15,
+                0
+              ]
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": [
+                -2,
+                12,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 10
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": -4
+            },
+            {
+              "frame": 0.85,
+              "value": 2
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront1/League-Suite-80_Fmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.05,
+              "curve": "cubicInOut",
+              "value": [
+                -6,
+                4,
+                0
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": [
+                -6,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                -6,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                -6,
+                4,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinFront2/League-Suite-80_Fmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.016666666666666666,
+              "curve": "cubicInOut",
+              "value": [
+                -41,
+                -5,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                -41,
+                22,
+                0
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "curve": "cubicIn",
+              "value": [
+                -41,
+                22,
+                0
+              ]
+            },
+            {
+              "frame": 0.7166666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                -41,
+                -5,
+                0
+              ]
+            },
+            {
+              "frame": 0.8,
+              "curve": "cubicIn",
+              "value": [
+                -41,
+                -2,
+                0
+              ]
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": [
+                -41,
+                -5,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.016666666666666666,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 10,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": -5
+            },
+            {
+              "frame": 0.8,
+              "value": 2
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront2/League-Suite-80_Fmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.05,
+              "curve": "cubicInOut",
+              "value": [
+                -9,
+                12,
+                0
+              ]
+            },
+            {
+              "frame": 0.35,
+              "value": [
+                -9,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": [
+                -9,
+                40,
+                0
+              ],
+              "curve": [
+                0.4,
+                0,
+                0.6367389060887513,
+                0.22910216718266252
+              ]
+            },
+            {
+              "frame": 0.8,
+              "curve": "cubicInOut",
+              "value": [
+                -9,
+                12,
+                0
+              ]
+            },
+            {
+              "frame": 0.9,
+              "curve": "cubicIn",
+              "value": [
+                -9,
+                16,
+                0
+              ]
+            },
+            {
+              "frame": 1.05,
+              "value": [
+                -9,
+                12,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.05,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": -10,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.8,
+              "value": 5
+            },
+            {
+              "frame": 0.9,
+              "value": -2
+            },
+            {
+              "frame": 1.05,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinFront2/League-Suite-80_Fmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.1,
+              "curve": "cubicInOut",
+              "value": [
+                -5,
+                4,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                -5,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                -5,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.6833333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                -5,
+                4,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack1/League-Suite-80_Bmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                2,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                2,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": [
+                2,
+                60,
+                0
+              ],
+              "curve": [
+                0.4,
+                0,
+                0.6470588235294118,
+                0.42260061919504643
+              ]
+            },
+            {
+              "frame": 0.8166666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                2,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.8666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                2,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                2,
+                30,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.3,
+              "value": -8,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 4
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinBack1/League-Suite-80_Bmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.05,
+              "curve": "cubicInOut",
+              "value": [
+                1,
+                22,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                1,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicIn",
+              "value": [
+                1,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                1,
+                22,
+                0
+              ]
+            },
+            {
+              "frame": 0.7833333333333333,
+              "curve": "cubicIn",
+              "value": [
+                1,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 0.8833333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                1,
+                22,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.05,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4,
+              "value": 8,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinBack1/League-Suite-80_Bmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.1,
+              "curve": "cubicInOut",
+              "value": [
+                -4,
+                15,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -4,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                -4,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 0.7166666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                -4,
+                15,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack1/League-Suite-80_Bmoney04": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                7,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                0,
+                10,
+                0
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                10,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                7,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack2/League-Suite-80_Bmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                0,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 0.7666666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                0,
+                34,
+                0
+              ]
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": [
+                0,
+                30,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 8,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": -3
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinBack2/League-Suite-80_Bmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.05,
+              "curve": "cubicInOut",
+              "value": [
+                2,
+                24,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                2,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                2,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.6833333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                2,
+                24,
+                0
+              ]
+            },
+            {
+              "frame": 0.7333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                2,
+                27,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                2,
+                24,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.05,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -6,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinBack2/League-Suite-80_Bmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.1,
+              "curve": "cubicInOut",
+              "value": [
+                -3,
+                15,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -3,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "curve": "cubicIn",
+              "value": [
+                -3,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.6333333333333333,
+              "curve": "cubicInOut",
+              "value": [
+                -3,
+                15,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack2/League-Suite-80_Bmoney04": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.15,
+              "curve": "cubicInOut",
+              "value": [
+                -3,
+                8,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                -3,
+                15,
+                0
+              ]
+            },
+            {
+              "frame": 0.4,
+              "curve": "cubicIn",
+              "value": [
+                -3,
+                15,
+                0
+              ]
+            },
+            {
+              "frame": 0.6,
+              "curve": "cubicInOut",
+              "value": [
+                -3,
+                8,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "CoinBack3/League-Suite-80_Bmoney01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.3,
+              "value": [
+                0,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 0.7666666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 0.85,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                34,
+                0
+              ]
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": [
+                0,
+                30,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -8
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 4
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinBack3/League-Suite-80_Bmoney02": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.05,
+              "curve": "cubicInOut",
+              "value": [
+                -6,
+                22,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -6,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                -6,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.7,
+              "curve": "cubicInOut",
+              "value": [
+                -6,
+                22,
+                0
+              ]
+            },
+            {
+              "frame": 0.7666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                -6,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": [
+                -6,
+                22,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.05,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 7
+            },
+            {
+              "frame": 0.7,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "CoinBack3/League-Suite-80_Bmoney03": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.11666666666666667,
+              "curve": "cubicInOut",
+              "value": [
+                -6,
+                14,
+                0
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                -6,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "curve": "cubicIn",
+              "value": [
+                -6,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.65,
+              "curve": "cubicInOut",
+              "value": [
+                -6,
+                14,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0.8,
+                "value": 0
+              },
+              {
+                "frame": 0.8166666666666667,
+                "value": 200
+              },
+              {
+                "frame": 1.05,
+                "value": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

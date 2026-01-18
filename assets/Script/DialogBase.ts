@@ -6,6 +6,7 @@ import PopupManager from "./manager/PopupManager";
 import SoundManager from "./manager/SoundManager";
 import GameCommonSound from "./GameCommonSound";
 import FireHoseSender from "./FireHoseSender";
+import { Utility } from "./global_utility/Utility";
 
 /**
  * 弹窗状态枚举 - 与原代码 DialogState 完全一致，无任何修改
@@ -52,7 +53,7 @@ export default class DialogBase extends cc.Component {
         // 绑定关闭按钮点击事件
         if (this.closeBtn) {
             this.closeBtn.clickEvents = [];
-            this.closeBtn.clickEvents.push(window['Utility'].getComponent_EventHandler(this.node, "DialogBase", "onClickClose", ""));
+            this.closeBtn.clickEvents.push(Utility.getComponent_EventHandler(this.node, "DialogBase", "onClickClose", ""));
         }
         // 初始化遮罩背景尺寸+淡入动画
         if (this.blockingBG) {
