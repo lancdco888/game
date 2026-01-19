@@ -35,9 +35,12 @@ export default class L_SlotInitState extends State {
             if (cc.sys.isNative) {
                 cc.sys.garbageCollect();
             }
-            
-       
-            
+
+            // c.default.customSlotLoadingRecord("slotInit_start"),
+            cc.sys.isNative && cc.sys.garbageCollect()
+            HRVSlotService.createInstance()
+            HRVSlotService.instance().init(SlotManager.Instance)
+    
             // 4. 异步初始化SlotManager核心管理器
             await SlotManager.Instance.init();
             
