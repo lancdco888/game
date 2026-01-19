@@ -111,7 +111,7 @@ export default class LobbyScrollView_Lobby extends LobbyScrollView {
     // ===================== 私有辅助方法 - 处理最优横幅+联动横幅插入逻辑 抽离原JS嵌套逻辑 可读性提升 =====================
     private handleBestBannerAndLinked(lineIndex: number, spacingCount: number, bestBannerList: any[], linkedSlotInfoList: LinkedDisplayInfo[]): void {
         const targetLinkedInfo = linkedSlotInfoList.find(info => info.numIndex - 1 === lineIndex);
-        if (!TSUtility.isValid(targetLinkedInfo)) {
+        if (TSUtility.isValid(targetLinkedInfo)) {
             // 插入分隔装饰+联动横幅
             this.pushBannerData(SlotBannerType.DECO, SlotBannerDecoType.SLOT_LINE);
             this.pushBannerData(SlotBannerType.LINKED, targetLinkedInfo);

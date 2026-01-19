@@ -25,6 +25,10 @@ export default class LobbySlotBannerItem_LINKED extends LobbySlotBannerItem {
     // ===================== 私有成员变量 【与原JS实例变量完全对应，补充TS类型声明】 =====================
     private _infoLinked: any = null;
 
+    constructor(){
+        super()
+    }
+
     // ===================== 核心业务方法 【1:1完全等价还原原JS，逻辑一字不改，父类属性直接复用】 =====================
     /**
      * 刷新横幅数据 - 组件唯一核心业务方法

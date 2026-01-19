@@ -1625,9 +1625,9 @@ export default class UserInfo extends cc.Component {
                     const linked = jackpot.linked;
                     const linkedKey = jackpot.linkedKey;
 
-                    // const slotInfo = SlotJackpotManager.Instance().getSlotmachineInfo(zone, slotId);
-                    // if (linked) SlotJackpotManager.Instance().getLinkedJackpotInfo(zone, linkedKey).setTargetGame(slotId);
-                    // slotInfo.setJackpotMoney(subId, basePrize, curJackpot, maxBase, rate, minPrize, maxPrize, linked, linkedKey, subKey);
+                    const slotInfo = SlotJackpotManager.Instance().getSlotmachineInfo(zone, slotId);
+                    if (linked) SlotJackpotManager.Instance().getLinkedJackpotInfo(zone, linkedKey).setTargetGame(slotId);
+                    slotInfo.setJackpotMoney(subId, basePrize, curJackpot, maxBase, rate, minPrize, maxPrize, linked, linkedKey, subKey);
                 }
             }
         }

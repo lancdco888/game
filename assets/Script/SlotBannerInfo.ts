@@ -83,7 +83,8 @@ export default class SlotBannerInfo {
         // const userInfo = UserInfo.default.instance();
         // return userInfo.hasActiveReelQuest() === 1 
         //     && this.strSlotID === userInfo.getUserReelQuestInfo().curMissionSlot;
-            return true;
+        //     return true;
+        return false
     }
 
     // 是否为 联动大奖Slot (带联动机型标识)

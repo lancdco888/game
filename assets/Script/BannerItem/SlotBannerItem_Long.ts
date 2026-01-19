@@ -208,14 +208,15 @@ export default class SlotBannerItem_Long extends SlotBannerItem {
 
         // 异步加载长尺寸图片资源
         this._strCurSlotBannerURL = slotResData.longURL;
+        var self = this;
         await new Promise<void>((resolve) => {
             slotResData.loadLongImage((spriteFrame: cc.SpriteFrame, url: string) => {
                 // 多重有效性校验 - 内存安全核心，原代码完整保留
-                if (TSUtility.isValid(this) && TSUtility.isValid(spriteFrame) && TSUtility.isValid(this._infoBanner) && this._strCurSlotBannerURL === url && this._strCurSlotBannerURL !== "") {
-                    this.nodeLoadingBG.active = false;
-                    this.sprImage.spriteFrame = spriteFrame;
-                    if (TSUtility.isValid(this.sprHoverImage)) {
-                        this.sprHoverImage.spriteFrame = this.sprImage.spriteFrame;
+                if (TSUtility.isValid(self) && TSUtility.isValid(spriteFrame) && TSUtility.isValid(self._infoBanner) && self._strCurSlotBannerURL === url && self._strCurSlotBannerURL !== "") {
+                    self.nodeLoadingBG.active = false;
+                    self.sprImage.spriteFrame = spriteFrame;
+                    if (TSUtility.isValid(self.sprHoverImage)) {
+                        self.sprHoverImage.spriteFrame = self.sprImage.spriteFrame;
                     }
                 }
                 resolve();

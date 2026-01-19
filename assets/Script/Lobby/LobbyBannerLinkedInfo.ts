@@ -43,7 +43,7 @@ export default class LobbyBannerLinkedInfo extends cc.Component {
     public lblRightJackpot: cc.Label = null!;
 
     // ===================== 私有成员变量 - 补全精准TS类型标注 原JS逻辑完整复刻 =====================
-    private _info: LinkedDisplayInfo | null = null;          // 联动横幅核心数据
+    private _info: LinkedDisplayInfo = null;          // 联动横幅核心数据
     private _numPrevLeftJackpotMoney: number = 0;            // 左侧大奖上一帧金额(平滑过渡用)
     private _numPrevRightJackpotMoney: number = 0;           // 右侧大奖上一帧金额(平滑过渡用)
     private _numPrevCenterJackpotMoney: number = 0;          // 中间大奖上一帧金额(平滑过渡用)
@@ -66,9 +66,9 @@ export default class LobbyBannerLinkedInfo extends cc.Component {
         // 清空所有调度 防止残留 → 启动大奖金额定时刷新 → 延迟刷新节点显隐状态
         this.unscheduleAllCallbacks();
         this.schedule(this.updateJackpotMoney, SDefine.JACKPOT_DISPLAY_DEFAULT_INTERVAL);
-        this.scheduleOnce(this.updateDisplayNode, SDefine.JACKPOT_DISPLAY_DEFAULT_INTERVAL);
+        // this.scheduleOnce(this.updateDisplayNode, SDefine.JACKPOT_DISPLAY_DEFAULT_INTERVAL);
 
-        // 初始化左右横幅数据
+        // // 初始化左右横幅数据
         this.setSlotBannerInfo(info.infoLeftBanner, this._itemBanner_1);
         this.setSlotBannerInfo(info.infoRightBanner, this._itemBanner_2);
 

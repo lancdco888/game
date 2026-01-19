@@ -209,6 +209,7 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
             });
             TSUtility.isValid(o) ? o.arrInfo.push(n) : e.push({eType: t, arrInfo: [n]});
         };
+        
         for (var f = 0; f < t.slotList.length; f++) {
             var o = new SlotBannerInfo;
             o.parseObj(t.slotList[f]);
