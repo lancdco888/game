@@ -4,6 +4,7 @@
 // import CasinoZoneManager from "../CasinoZone/CasinoZoneManager";
 // import LevelBettingLockConfig from "./LevelBettingLockConfig";
 // import ProductConfig from "./ProductConfig";
+import LevelBettingLockConfig from "../Config/LevelBettingLockConfig";
 import FireHoseSender from "../FireHoseSender";
 import CasinoZoneManager from "./CasinoZoneManager";
 import LevelManager from "./LevelManager";
@@ -23,7 +24,7 @@ export default class ConfigManager {
                 // LanguageManager.Init(configList[1]);
                 //VipManager.Init(configList[2]);
                 CasinoZoneManager.Init(configList[3]);
-                // LevelBettingLockConfig.Init(configList[4]);
+                LevelBettingLockConfig.Init(configList[4]);
                 // ProductConfig.Init(configList[5]);
                 // ReelQuestConfig.Init(configList[6]);
 

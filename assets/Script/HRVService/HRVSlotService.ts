@@ -303,7 +303,7 @@ export default class HRVSlotService extends cc.Component {
                 this.showLoginErrorPopup();
                 return;
             }
-            Analytics.customSlotLoadingRecord("initSlotRes_complete");
+            // Analytics.customSlotLoadingRecord("initSlotRes_complete");
             ServiceInfoManager.instance.resetSpinOpenPopup();
             loadingPopup.setPostProgress(.3, "Setting up Slot ...");
 
@@ -1959,11 +1959,11 @@ export default class HRVSlotService extends cc.Component {
         //     }
         // }
         
-        // SlotGameRuleManager.Instance._flagLockIncreaseBetMoneyUpperGuideBetPerLine && SlotGameRuleManager.Instance._guideBetPerLine < t && (t = SlotGameRuleManager.Instance._guideBetPerLine);
-        // var s = UserInfo.instance().getPromotionInfo(WelcomeBonusPromotion.PromotionKeyName)
-        //     , c = TSUtility.isValid(s) && 0 == s.isReceived;
-        // return 0 == UserInfo.instance().getTotalCoin() && c && !UserInfo.instance().isJoinTourney() && SlotGameRuleManager.Instance.slotID ==SDefine.TUTORIAL_SLOTID && SlotManager.Instance.getZoneId() ==SDefine.HIGHROLLER_ZONEID && (t =SDefine.tutorialBetLine),
-        // t
+        SlotGameRuleManager.Instance._flagLockIncreaseBetMoneyUpperGuideBetPerLine && SlotGameRuleManager.Instance._guideBetPerLine < t && (t = SlotGameRuleManager.Instance._guideBetPerLine);
+        var s = UserInfo.instance().getPromotionInfo(WelcomeBonusPromotion.PromotionKeyName)
+            , c = TSUtility.isValid(s) && 0 == s.isReceived;
+        return 0 == UserInfo.instance().getTotalCoin() && c && !UserInfo.instance().isJoinTourney() && SlotGameRuleManager.Instance.slotID ==SDefine.TUTORIAL_SLOTID && SlotManager.Instance.getZoneId() ==SDefine.HIGHROLLER_ZONEID && (t =SDefine.tutorialBetLine),
+        t
     }
     
     onSpinProcessRenewal_STATE_CUSTOM_ACTIVE_SPINBUTTON = function() {
@@ -2157,12 +2157,12 @@ export default class HRVSlotService extends cc.Component {
     
     getMaintainBetPerlines = function() {
         var e = 0;
-        // if (-1 != MessageRoutingManager.NUMBER_ENTRY_SLOT_BETTING_INDEX ? (e = this._getMaintainBetPerlines_withBettingIndex(MessageRoutingManager.NUMBER_ENTRY_SLOT_BETTING_INDEX),
-        // MessageRoutingManager.NUMBER_ENTRY_SLOT_BETTING_INDEX = -1) : e = this._getMaintainBetPerlines_legacy(),
-        // LevelBettingLockConfig.Instance().isUseLevelBettingLock(SlotManager.Instance.getZoneId())) {
-        //     var t = LevelBettingLockConfig.Instance().getZoneInfo(SlotManager.Instance.getZoneId()).getNextLevelBetLock_LevelInfo(MessageRoutingManager.instance().getUserLevel());
-        //     return null != t ? e < t.betMoney ? e : t.betMoney : e
-        // }
+        if (-1 != ServiceInfoManager.NUMBER_ENTRY_SLOT_BETTING_INDEX ? (e = this._getMaintainBetPerlines_withBettingIndex(ServiceInfoManager.NUMBER_ENTRY_SLOT_BETTING_INDEX),
+        ServiceInfoManager.NUMBER_ENTRY_SLOT_BETTING_INDEX = -1) : e = this._getMaintainBetPerlines_legacy(),
+        LevelBettingLockConfig.Instance().isUseLevelBettingLock(SlotManager.Instance.getZoneId())) {
+            var t = LevelBettingLockConfig.Instance().getZoneInfo(SlotManager.Instance.getZoneId()).getNextLevelBetLock_LevelInfo(ServiceInfoManager.instance.getUserLevel());
+            return null != t ? e < t.betMoney ? e : t.betMoney : e
+        }
         return e
     }
     

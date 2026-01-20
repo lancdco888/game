@@ -23,7 +23,7 @@ export default class PrizeSymbol_MoooreCheddar extends cc.Component {
         displayName: '倍数标签',
         tooltip: '显示奖励倍数的Label组件'
     })
-    public multiplier_label: cc.Label | null = null;
+    public multiplier_label: cc.Label = null;
 
     /** 奖励金额标签 */
     @property({
@@ -31,7 +31,7 @@ export default class PrizeSymbol_MoooreCheddar extends cc.Component {
         displayName: '奖励金额标签',
         tooltip: '显示奖励金额的Label组件'
     })
-    public prize_label: cc.Label | null = null;
+    public prize_label: cc.Label = null;
 
     // ===================== 静态常量/属性 =====================
     /** 预设奖励金额列表 */

@@ -602,12 +602,13 @@ export default class SlotManager extends cc.Component {
                 return;
             }
 
-            if (!this.checkCanPlayGame()) {
-                SlotReelSpinStateManager.Instance.changeAutospinMode(false);
-                SlotReelSpinStateManager.Instance.setCurrentState(SlotReelSpinStateManager.STATE_STOP);
-                this.openNotEnoughMoneyShopPopup();
-                return;
-            }
+            //临时不检测是否有足够的金钱
+            // if (!this.checkCanPlayGame()) {
+            //     SlotReelSpinStateManager.Instance.changeAutospinMode(false);
+            //     SlotReelSpinStateManager.Instance.setCurrentState(SlotReelSpinStateManager.STATE_STOP);
+            //     this.openNotEnoughMoneyShopPopup();
+            //     return;
+            // }
 
             if (curSpinState === SlotReelSpinStateManager.STATE_STOP) {
                 this.bottomUI.hideLockChangeTotalBetPopup();
