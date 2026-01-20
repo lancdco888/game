@@ -287,16 +287,16 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 核心异步初始化 - 项目启动初始化 带异常捕获 与原JS逻辑完全一致 =====================
     async init(): Promise<void> {
-        try {
+        // try {
             await this.slotInterface.onInit();
             SlotGameRuleManager.Instance.addObserver(this.node);
             this.node.on("changeMoneyState", this.refreshStarAlbumGauge.bind(this));
             SlotManager.Instance.getComponent(GameComponents_Base).effectBigWinNew.init();
-        } catch (err: any) {
-            cc.error("exception ", err.toString());
-            if (err.stack) cc.error("callstack ", err.stack.toString());
-            FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, err));
-        }
+        // } catch (err: any) {
+        //     cc.error("exception ", err.toString());
+        //     if (err.stack) cc.error("callstack ", err.stack.toString());
+        //     FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, err));
+        // }
     }
 
     // ===================== 所有成员方法 - 与原JS 1:1精准复刻 方法体/参数/返回值/逻辑分支完全一致 =====================

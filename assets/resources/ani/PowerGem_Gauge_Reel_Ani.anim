@@ -1,0 +1,712 @@
+{
+  "_name": "PowerGem_Gauge_Reel_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 5.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Gauge/Mask": {
+        "props": {
+          "anchorX": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Gems": {
+        "props": {
+          "scale": [],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 5.016666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems/PowerGeem-80_icon_Gem01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": true
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": false
+            },
+            {
+              "frame": 2.2333333333333334,
+              "value": true
+            },
+            {
+              "frame": 2.3666666666666667,
+              "value": false
+            },
+            {
+              "frame": 3,
+              "value": true
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems/PowerGeem-80_icon_Gem02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": true
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": false
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.2333333333333334,
+              "value": false
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": false
+            },
+            {
+              "frame": 4.05,
+              "value": true
+            },
+            {
+              "frame": 5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems/PowerGeem-80_icon_Gem03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.75,
+              "value": true
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.25,
+              "value": true
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": false
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": true
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": false
+            },
+            {
+              "frame": 3.6333333333333333,
+              "value": true
+            },
+            {
+              "frame": 4.05,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems/PowerGeem-80_icon_Gem04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": true
+            },
+            {
+              "frame": 0.75,
+              "value": false
+            },
+            {
+              "frame": 1.1333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.25,
+              "value": false
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": false
+            },
+            {
+              "frame": 2.5166666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": false
+            },
+            {
+              "frame": 3.3666666666666667,
+              "value": true
+            },
+            {
+              "frame": 3.6333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems/PowerGeem-80_icon_Gem05": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": true
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 1.1333333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": false
+            },
+            {
+              "frame": 2.3666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5166666666666666,
+              "value": false
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": true
+            },
+            {
+              "frame": 3.3666666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems/PowerGeem-80_icon_common": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": false
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 1.5166666666666666,
+                "value": 50
+              },
+              {
+                "frame": 3.7666666666666666,
+                "value": 50
+              },
+              {
+                "frame": 5.016666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Effect-StarLight_11": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 3.75,
+              "value": 255
+            },
+            {
+              "frame": 5.016666666666667,
+              "value": 255
+            },
+            {
+              "frame": 5.033333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "UPGRADE": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Gems_Result/Level": {
+        "props": {
+          "active": [
+            {
+              "frame": 4.916666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Gems_Result": {
+        "props": {
+          "active": [
+            {
+              "frame": 4.916666666666667,
+              "value": false
+            },
+            {
+              "frame": 5,
+              "value": true
+            }
+          ],
+          "scale": [
+            {
+              "frame": 4.933333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5.1,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5.266666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Effect-explode_10": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 1.0166666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.05,
+              "value": 0
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": 0
+            },
+            {
+              "frame": 2.566666666666667,
+              "value": 255
+            },
+            {
+              "frame": 3.066666666666667,
+              "value": 255
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0166666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.05,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.066666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Effect-RadialEffect_04_White03": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 5.016666666666667,
+              "value": 255
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 5,
+              "value": -30
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0166666666666666,
+              "value": {
+                "x": 0.4,
+                "y": 0.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.7666666666666666,
+              "value": {
+                "x": 0.4,
+                "y": 0.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Effect-StarLight_10": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 5,
+              "value": 0
+            },
+            {
+              "frame": 5.016666666666667,
+              "value": 255
+            },
+            {
+              "frame": 5.083333333333333,
+              "value": 186.99999999999983
+            },
+            {
+              "frame": 5.5,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 5.016666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5.266666666666667,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Gems_Result/PowerGeem-80_StarLight": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 5.1,
+              "value": 255
+            },
+            {
+              "frame": 5.333333333333333,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 4.983333333333333,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
