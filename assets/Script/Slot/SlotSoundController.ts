@@ -48,7 +48,7 @@ export default class SlotSoundController extends cc.Component {
     public commonList: SlotSoundInfo[] = [];
 
     @property({ type: [SlotSoundInfo] })
-    public soundList: SlotSoundInfo[] = null;
+    public soundList: SlotSoundInfo[] = [];
 
     @property({ type: [SlotSoundInfo] })
     public defaultWinSoundList: SlotSoundInfo[] = [];

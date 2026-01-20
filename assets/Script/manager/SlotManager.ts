@@ -144,8 +144,8 @@ export default class SlotManager extends cc.Component {
     public bottomUIText:BottomUIText = null;
     private flagPlayingSubgame: boolean = false;
     public flagSpinRequest: boolean = false;
-    private timeStampSendSpinRequest: number = 0;
-    private timeStampRecvSpinRequest: number = 0;
+    public timeStampSendSpinRequest: number = 0;
+    public timeStampRecvSpinRequest: number = 0;
     private slotViewSetting: SlotViewSettingInfo | null = null;
     public _bottomUI: any = null;
     public bottomUiInstance: any = null;
@@ -174,7 +174,7 @@ export default class SlotManager extends cc.Component {
     private _jackpotResultPopup: any = null;
     private _linkedJackpotPopup: any = null;
     private _wheelOfVegasResultPopup: any = null;
-    private _casinoJackpotWinID: number = 0;
+    public _casinoJackpotWinID: number = 0;
     public _slotGameInfo: any = null;
     public _initFinish: boolean = false;
     public _isAvailable: boolean = true;
@@ -301,8 +301,8 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 所有成员方法 - 与原JS 1:1精准复刻 方法体/参数/返回值/逻辑分支完全一致 =====================
     setEventCheckerEnableState(): void {
-        const eventChecker = this.getComponent(EventChecker);
-        if (eventChecker) eventChecker.enabled = true;
+        // const eventChecker = this.getComponent(EventChecker);
+        // if (eventChecker) eventChecker.enabled = true;
     }
 
     initCameraSetting(): void {}
@@ -825,7 +825,7 @@ export default class SlotManager extends cc.Component {
         }
 
         this.sendSpinRequest((res: any) => {
-            if (TSUtility.isValid(self)) {
+            if (TSUtility.isValid(res)) {
                 if (self.checkSpinErrorState(res) !== 0) {
                     SlotGameResultManager.Instance.resetGameResult();
                     SlotGameResultManager.Instance.setGameResult(res);
@@ -1151,47 +1151,47 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 事件检查器 鼠标/键盘事件控制 =====================
     setActiveFlagKeyboardEvent(flag: boolean): void {
-        const checker = this.getComponent(EventChecker);
-        if (checker) checker.isCheckKeyboardEvent = flag;
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) checker.isCheckKeyboardEvent = flag;
     }
 
     setActiveFlagMouseEvent(flag: boolean): void {
-        const checker = this.getComponent(EventChecker);
-        if (checker) checker.isCheckMouseEvent = flag;
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) checker.isCheckMouseEvent = flag;
     }
 
     setMouseDragEventFlag(flag: boolean): void {
-        const checker = this.getComponent(EventChecker);
-        if (checker) checker.mouseEventEnabled = flag;
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) checker.mouseEventEnabled = flag;
     }
 
     getMouseDragEventFlag(): boolean {
         let flag = false;
-        const checker = this.getComponent(EventChecker);
-        if (checker) flag = checker.mouseEventEnabled;
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) flag = checker.mouseEventEnabled;
         return flag;
     }
 
     setKeyboardEventFlag(flag: boolean): void {
-        const checker = this.getComponent(EventChecker);
-        if (checker) checker.keyboardEventEnabled = flag;
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) checker.keyboardEventEnabled = flag;
     }
 
     getKeyboardEventFlag(): boolean {
         let flag = false;
-        const checker = this.getComponent(EventChecker);
-        if (checker) flag = checker.keyboardEventEnabled;
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) flag = checker.keyboardEventEnabled;
         return flag;
     }
 
     addEventListener(type: string, cb: Function): void {
-        const checker = this.getComponent(EventChecker);
-        if (checker) checker.addListener(type, cb);
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) checker.addListener(type, cb);
     }
 
     removeEventListener(type: string, cb: Function): void {
-        const checker = this.getComponent(EventChecker);
-        if (checker) checker.removeListener(type, cb);
+        // const checker = this.getComponent(EventChecker);
+        // if (checker) checker.removeListener(type, cb);
     }
 
     // ===================== 播放/停止滚轮旋转音效 =====================

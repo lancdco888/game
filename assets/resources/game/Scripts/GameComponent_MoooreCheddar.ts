@@ -150,7 +150,7 @@ export default class GameComponent_MoooreCheddar extends GameComponents_Base {
         }
 
         // 打开弹窗
-        this.popup_manager.onOpenPopup(popupData, callback);
+        // this.popup_manager.onOpenPopup(popupData, callback);
     }
 
     /**

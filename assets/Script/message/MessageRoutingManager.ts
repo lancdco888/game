@@ -4,6 +4,8 @@ const {ccclass, property} = cc._decorator;
 export default class MessageRoutingManager {
     // ===================== 单例核心 - 完全对齐原JS =====================
     private static _instance: MessageRoutingManager = null!;
+    static NUMBER_BET_SPIN_COUNT: any;
+    static NUMBER_SPIN_COUNT: any;
     public static instance(): MessageRoutingManager {
         if (!this._instance) {
             this._instance = new MessageRoutingManager();

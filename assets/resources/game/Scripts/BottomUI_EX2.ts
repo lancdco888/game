@@ -116,7 +116,7 @@ export default class BottomUI_EX2 extends BottomUI {
             
             // 添加点击事件（替换原Utility.getComponent_EventHandler，适配Cocos 2.4 TS）
             this.btnSpin.clickEvents.push(this.createEventHandler(slotManager.node, "SlotManager", "spinAll"));
-            //this.btnSpin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickSpinBtn", "FX"])));
+            this.btnSpin.clickEvents.push(this.createEventHandler(slotSoundCtrl.node, "SlotSoundController", "playAudioEventHandler", JSON.stringify(["ClickSpinBtn", "FX"])));
             this.btnSpin.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "hideLockChangeTotalBetPopup"));
             this.btnSpin.clickEvents.push(this.createEventHandler(this.node, "BottomUI_EX2", "setPlaySlotID"));
         }

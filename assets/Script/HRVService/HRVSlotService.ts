@@ -98,7 +98,7 @@ import UnprocessedPurchaseManager from "../User/UnprocessedPurchaseManager";
 // import UserInboxInfo, { InboxExtraInfoSlotTourneyReward } from "../User/UserInboxInfo";
 import UserInfo from "../User/UserInfo";
 import UserInven, { CardPackItemInfo } from "../User/UserInven";
-import UserPromotion, { JiggyPuzzlePromotion, NewServiceIntroduceCoinPromotion, NewUserMissionPromotion, WelcomeBonusPromotion } from "../User/UserPromotion";
+import UserPromotion, { JiggyPuzzlePromotion, NewServiceIntroduceCoinPromotion, NewUserMissionPromotion, PowerGemPromotion, WelcomeBonusPromotion } from "../User/UserPromotion";
 import SlotTourneyManager, { ServerSlotTourneyState, ServerslotTourneyProgressInfo, SlotTourneyIngameState, SlotTourneyStateType } from "../manager/SlotTourneyManager";
 import SlotManager, { SpecialType } from "../manager/SlotManager";
 import ServiceInfoManager from "../ServiceInfoManager";
@@ -127,16 +127,13 @@ import BottomUI from "../../resources/game/Scripts/BottomUI";
 import BottomUIText, { BottomTextType } from "../../resources/game/Scripts/BottomUIText";
 import GameComponents_Base from "../game/GameComponents_Base";
 import LoadingSlotProcess from "../manager/LoadingSlotProcess";
+import PowerGemManager from "../manager/PowerGemManager";
+import { Utility } from "../global_utility/Utility";
+import ThrillJackpotWheelSpinResult from "../ThrillJackpotWheelSpinResult";
+import ThrillJackpotIngameIcon from "../ThrillJackpotIngameIcon";
+import ThrillWheelJackpot from "../ThrillWheelJackpot";
+import ThrillJackpotStartPopup from "../ThrillJackpotStartPopup";
 
-// 当前模块依赖
-// import HRVSlotBigWinEffectService from "./HRVSlotBigWinEffectService";
-
-// 全局工具类声明（原代码中使用的Utility）
-declare const Utility: {
-    getUnixTimestamp(): number;
-    getUnixTimestamp_MilliSecond(): number;
-    isMobileGame(): boolean;
-};
 
 @ccclass
 export default class HRVSlotService extends cc.Component {
@@ -308,7 +305,7 @@ export default class HRVSlotService extends cc.Component {
             }
             Analytics.customSlotLoadingRecord("initSlotRes_complete");
             ServiceInfoManager.instance.resetSpinOpenPopup();
-            // loadingPopup.setPostProgress(.3, "Setting up Slot ...");
+            loadingPopup.setPostProgress(.3, "Setting up Slot ...");
 
             // 初始化游戏内UI
             this.setInGameUI();
@@ -1336,30 +1333,29 @@ export default class HRVSlotService extends cc.Component {
      * @param res 服务器返回结果
      */
     onBeforeSpinProcess(res: any): ChangeResult {
-        // if (TSUtility.isValid(res.leagueInfo)) {
-        //     SlotSuiteLeagueManager.Instance.changeLeagueInfo(res.leagueInfo);
-        //     SlotFeverModeManager.instance.setFeverModeInfo(res.leagueInfo);
-        // } else {
-        //     SlotSuiteLeagueManager.Instance.changeLeagueInfo(null);
-        // }
+        if (TSUtility.isValid(res.leagueInfo)) {
+            //SlotSuiteLeagueManager.Instance.changeLeagueInfo(res.leagueInfo);
+            SlotFeverModeManager.instance.setFeverModeInfo(res.leagueInfo);
+        } else {
+            //SlotSuiteLeagueManager.Instance.changeLeagueInfo(null);
+        }
 
-        // const casinoJackpotResult = SlotGameResultManager.Instance.getCasinoJackpotResult();
-        // if (casinoJackpotResult) {
-        //     SlotManager.Instance._casinoJackpotWinID = casinoJackpotResult.casinoJackpotWinID;
-        // }
+        const casinoJackpotResult = SlotGameResultManager.Instance.getCasinoJackpotResult();
+        if (casinoJackpotResult) {
+            SlotManager.Instance._casinoJackpotWinID = casinoJackpotResult.casinoJackpotWinID;
+        }
 
-        // const changeResult = UserInfo.instance().getServerChangeResult(res);
-        // const betWithdraw = changeResult.removeChangeCoinByPayCode(PayCode.SlotBetWithdraw);
-        // if (betWithdraw !== 0) {
-        //     this.getInGameUI().onSpinBetting(changeResult);
-        // }
-        // UserInfo.instance().setLastTotalbet(-1 * betWithdraw);
+        const changeResult = UserInfo.instance().getServerChangeResult(res);
+        const betWithdraw = changeResult.removeChangeCoinByPayCode(PayCode.SlotBetWithdraw);
+        if (betWithdraw !== 0) {
+            this.getInGameUI().onSpinBetting(changeResult);
+        }
+        UserInfo.instance().setLastTotalbet(-1 * betWithdraw);
 
-        // const levelPoint = changeResult.getTotalChangeLevelPoint();
-        // this.getInGameUI().addLevelExp(levelPoint);
+        const levelPoint = changeResult.getTotalChangeLevelPoint();
+        this.getInGameUI().addLevelExp(levelPoint);
 
-        // return changeResult;
-        return null;
+        return changeResult;
     }
 
     /**
@@ -1368,15 +1364,15 @@ export default class HRVSlotService extends cc.Component {
      * @param changeResult 变更结果
      */
     onSpinProcess(res: any, changeResult: ChangeResult): void {
-        // if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && res.slotTourneyProgressInfo) {
-        //     const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
-        //     SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
-        // }
+        if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && res.slotTourneyProgressInfo) {
+            const progressInfo = ServerslotTourneyProgressInfo.parseObj(res.slotTourneyProgressInfo);
+            SlotTourneyManager.Instance().setSlotTourneyProgressInfo(progressInfo);
+        }
 
-        // const jiggyPuzzleHist = changeResult.getPromotionHist(JiggyPuzzlePromotion.PromotionKeyName);
-        // if (jiggyPuzzleHist) {
-        //     this.getInGameUI().jiggyPuzzleUI.refreshUI(jiggyPuzzleHist);
-        // }
+        const jiggyPuzzleHist = changeResult.getPromotionHist(JiggyPuzzlePromotion.PromotionKeyName);
+        if (jiggyPuzzleHist) {
+            this.getInGameUI().jiggyPuzzleUI.refreshUI(jiggyPuzzleHist);
+        }
     }
 
     /**
@@ -1544,15 +1540,16 @@ export default class HRVSlotService extends cc.Component {
         var e = this
             , t = new State;
         return t.addOnStartCallback(function() {
-            SlotGameResultManager.Instance.isBaseGameNextSubGameKey() ? (1 == e._inGameUI.piggyBankUI.isReadyMaxMoneyPopOpen() && (e._inGameUI.piggyBankUI.resetReadyMaxMoneyPopOpen(),
-            !ServiceInfoManager.instance.isSpinOpenPopup(["RecordBreaker", "EpicWin"]) && e._inGameUI.piggyBankUI.showPiggyBankOfferPopup()),
-            ServiceInfoManager.instance.resetSpinOpenPopup(),
-            !PopupManager.Instance().isOpenPopupOpen() ? t.setDone() : e.scheduleOnce(function() {
-                PopupManager.Instance().isOpenPopupOpen() ? PopupManager.Instance().setOpenPopupAllCloseCallback(function() {
-                    MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.RESERVEDONBALLOON),
-                    t.setDone()
-                }) : t.setDone()
-            }, .1)) : t.setDone()
+            // SlotGameResultManager.Instance.isBaseGameNextSubGameKey() ? (1 == e._inGameUI.piggyBankUI.isReadyMaxMoneyPopOpen() && (e._inGameUI.piggyBankUI.resetReadyMaxMoneyPopOpen(),
+            // !ServiceInfoManager.instance.isSpinOpenPopup(["RecordBreaker", "EpicWin"]) && e._inGameUI.piggyBankUI.showPiggyBankOfferPopup()),
+            // ServiceInfoManager.instance.resetSpinOpenPopup(),
+            // !PopupManager.Instance().isOpenPopupOpen() ? t.setDone() : e.scheduleOnce(function() {
+            //     PopupManager.Instance().isOpenPopupOpen() ? PopupManager.Instance().setOpenPopupAllCloseCallback(function() {
+            //         MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.RESERVEDONBALLOON),
+            //         t.setDone()
+            //     }) : t.setDone()
+            // }, .1)) : t.setDone()
+            t.setDone()
         }),
         t
     }
@@ -1610,6 +1607,7 @@ export default class HRVSlotService extends cc.Component {
         //         }
         //     })
         // })
+        e.setDone()
     }
     
     getTourneyResultProcess = function() {
@@ -1622,56 +1620,56 @@ export default class HRVSlotService extends cc.Component {
     }
     
     getCheckThrillJackpotPopup = function() {
-        // var e = this
-        //     , t = new SequencialState;
-        // return t.addOnStartCallback(function() {
-        //     if (null != e._changeResultThrillJackpotItemInfo) {
-        //         for (var n = e._changeResultThrillJackpotItemInfo, o = null, a = 0; a < n.itemHist.length; ++a)
-        //             if ("" != n.itemHist[a].changeInfo) {
-        //                 (o = new ThrillJackpotWheelSpinResult).parse(JSON.parse(n.itemHist[a].changeInfo));
-        //                 break
-        //             }
-        //         var i = new State;
-        //         i.addOnStartCallback(function() {
-        //             var t = e.getInGameUI().thrillWheelJackpotGaugeUI.getComponent(ThrillJackpotIngameIcon);
-        //             TSUtility.isValid(t) ? (t.setInteractiveIconBtn(false),
-        //             e.getInGameUI().setStateBlockInput(true),
-        //             t.playFullAni(function() {
-        //                 i.setDone()
-        //             })) : i.setDone()
-        //         });
-        //         var l = new State;
-        //         l.addOnStartCallback(function() {
-        //             he.default.getPopup(function(e, t) {
-        //                 t.open(o.getWheelSpinCount()),
-        //                 t.setCloseCallback(function() {
-        //                     l.setDone()
-        //                 })
-        //             })
-        //         });
-        //         var r = new State;
-        //         r.addOnStartCallback(function() {
-        //             ye.default.getPopup(function(t, n) {
-        //                 n.open(o),
-        //                 n.setCloseCallback(function() {
-        //                     e.getInGameUI().thrillWheelJackpotGaugeUI.getComponent(ThrillJackpotIngameIcon).setInteractiveIconBtn(true),
-        //                     e.getInGameUI().setStateBlockInput(false),
-        //                     r.setDone()
-        //                 })
-        //             })
-        //         });
-        //         var s = new State;
-        //         s.addOnStartCallback(function() {
-        //             e.getInGameUI().thrillWheelJackpotGaugeUI.getComponent(ThrillJackpotIngameIcon).setCurrentGauge(true),
-        //             s.setDone()
-        //         }),
-        //         t.insert(0, i),
-        //         t.insert(1, l),
-        //         t.insert(2, r),
-        //         t.insert(3, s)
-        //     }
-        // }),
-        // t
+        var e = this
+            , t = new SequencialState;
+        return t.addOnStartCallback(function() {
+            if (null != e._changeResultThrillJackpotItemInfo) {
+                for (var n = e._changeResultThrillJackpotItemInfo, o = null, a = 0; a < n.itemHist.length; ++a)
+                    if ("" != n.itemHist[a].changeInfo) {
+                        (o = new ThrillJackpotWheelSpinResult).parse(JSON.parse(n.itemHist[a].changeInfo));
+                        break
+                    }
+                var i = new State;
+                i.addOnStartCallback(function() {
+                    var t = e.getInGameUI().thrillWheelJackpotGaugeUI.getComponent(ThrillJackpotIngameIcon);
+                    TSUtility.isValid(t) ? (t.setInteractiveIconBtn(false),
+                    e.getInGameUI().setStateBlockInput(true),
+                    t.playFullAni(function() {
+                        i.setDone()
+                    })) : i.setDone()
+                });
+                var l = new State;
+                l.addOnStartCallback(function() {
+                    ThrillJackpotStartPopup.getPopup(function(e, t) {
+                        t.open(o.getWheelSpinCount()),
+                        t.setCloseCallback(function() {
+                            l.setDone()
+                        })
+                    })
+                });
+                var r = new State;
+                r.addOnStartCallback(function() {
+                    ThrillWheelJackpot.getPopup(function(t, n) {
+                        n.open(o),
+                        n.setCloseCallback(function() {
+                            e.getInGameUI().thrillWheelJackpotGaugeUI.getComponent(ThrillJackpotIngameIcon).setInteractiveIconBtn(true),
+                            e.getInGameUI().setStateBlockInput(false),
+                            r.setDone()
+                        })
+                    })
+                });
+                var s = new State;
+                s.addOnStartCallback(function() {
+                    e.getInGameUI().thrillWheelJackpotGaugeUI.getComponent(ThrillJackpotIngameIcon).setCurrentGauge(true),
+                    s.setDone()
+                }),
+                t.insert(0, i),
+                t.insert(1, l),
+                t.insert(2, r),
+                t.insert(3, s)
+            }
+        }),
+        t
     }
    
     saveThrillJackpotItemInfo = function() {
@@ -1715,42 +1713,43 @@ export default class HRVSlotService extends cc.Component {
     
     getApplyGameResultProsess = function() {
         var e = this
-            , t = new State;
-    //     return t.addOnStartCallback(function() {
-    //         if (0 == SlotGameResultManager.Instance.isBaseGameNextSubGameKey()) {
-    //             for (var n = false, o = 0; o < e._spinChangeResult.itemHist.length; ++o) {
-    //                 var a = e._spinChangeResult.itemHist[o];
-    //                 if (1 == ve.CardPackItemInfo.isCardPackItem(a.itemId)) {
-    //                     var i = e._spinChangeResult.splitChangeResultByItemId(a.itemId)
-    //                         , l = e._spinChangeResult.splitChangeResultByItemId(SDefine.I_HERO_FORCE);
-    //                     i.addChangeResult(l),
-    //                     UserInfo.instance().applyChangeResult(i),
-    //                     n = true
-    //                 }
-    //             }
-    //             return 1 == n ? void (1 == PopupManager.Instance().isOpenPopupOpen() ? e.scheduleOnce(function() {
-    //                 1 == PopupManager.Instance().isOpenPopupOpen() ? PopupManager.Instance().setOpenPopupAllCloseCallback(function() {
-    //                     t.setDone()
-    //                 }) : t.setDone()
-    //             }, .1) : t.setDone()) : void t.setDone()
-    //         }
-    //         var r = PayCode.GetCasinoJackpotPay(SlotManager.Instance.getZoneId())
-    //             , s = e._spinChangeResult.removeChangeCoinByPayCode(r);
-    //         s > 0 && e.showCasinoJackpotPopup(s),
-    //         1 == z.default.instance.isRefreshPromotion() && e._spinChangeResult.splitChangeResultByPromotionInfo(Ie.PowerGemPromotion.PromotionKeyName),
-    //         e._spinChangeResult.clubPointHist.length > 0 && e._spinChangeResult.clubPointHist[0].beforeGrade != e._spinChangeResult.clubPointHist[0].afterGrade && e.showClubVaultUpgradePopup(),
-    //         UserInfo.instance().applyChangeResult(e._spinChangeResult),
-    //         MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.UPDATE_TUTORIAL),
-    //         MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.HYPER_BOUNTY_MISSION_UPDATE, false),
-    //         1 != PopupManager.Instance().isOpenPopupOpen() ? t.setDone() : e.scheduleOnce(function() {
-    //             1 == PopupManager.Instance().isOpenPopupOpen() ? PopupManager.Instance().setOpenPopupAllCloseCallback(function() {
-    //                 MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.RESERVEDONBALLOON),
-    //                 t.setDone()
-    //             }) : t.setDone()
-    //         }, .1)
-    //     }),
-    //     t
-    // }
+        var t = new State;
+         t.addOnStartCallback(function() {
+            if (!SlotGameResultManager.Instance.isBaseGameNextSubGameKey()) {
+                for (var n = false, o = 0; o < e._spinChangeResult.itemHist.length; ++o) {
+                    var a = e._spinChangeResult.itemHist[o];
+                    if (CardPackItemInfo.isCardPackItem(a.itemId)) {
+                        var i = e._spinChangeResult.splitChangeResultByItemId(a.itemId)
+                            , l = e._spinChangeResult.splitChangeResultByItemId(SDefine.I_HERO_FORCE);
+                        i.addChangeResult(l),
+                        UserInfo.instance().applyChangeResult(i),
+                        n = true
+                    }
+                }
+                return n ? void (PopupManager.Instance().isOpenPopupOpen() ? e.scheduleOnce(function() {
+                    PopupManager.Instance().isOpenPopupOpen() ? PopupManager.Instance().setOpenPopupAllCloseCallback(function() {
+                        t.setDone()
+                    }) : t.setDone()
+                }, .1) : t.setDone()) : void t.setDone()
+            }
+            var r = PayCode.GetCasinoJackpotPay(SlotManager.Instance.getZoneId())
+                , s = e._spinChangeResult.removeChangeCoinByPayCode(r);
+            s > 0 && e.showCasinoJackpotPopup(s),
+            PowerGemManager.instance.isRefreshPromotion() && e._spinChangeResult.splitChangeResultByPromotionInfo(PowerGemPromotion.PromotionKeyName),
+            e._spinChangeResult.clubPointHist.length > 0 && e._spinChangeResult.clubPointHist[0].beforeGrade != e._spinChangeResult.clubPointHist[0].afterGrade && e.showClubVaultUpgradePopup(),
+            UserInfo.instance().applyChangeResult(e._spinChangeResult),
+            MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.UPDATE_TUTORIAL),
+            MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.HYPER_BOUNTY_MISSION_UPDATE, false),
+            !PopupManager.Instance().isOpenPopupOpen() ? t.setDone() : e.scheduleOnce(function() {
+                PopupManager.Instance().isOpenPopupOpen() ? PopupManager.Instance().setOpenPopupAllCloseCallback(function() {
+                    MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.RESERVEDONBALLOON),
+                    t.setDone()
+                }) : t.setDone()
+            }, .1)
+        })
+
+        return t
+    }
     
     // showCasinoJackpotPopup = function(e) {
     //     var t = this;
@@ -1775,59 +1774,141 @@ export default class HRVSlotService extends cc.Component {
     //     PopupManager.Instance().addOpenPopup(n)
     // }
     
-    // onSendSpinRequest = function(e, t) {
-    //     return l(this, void 0, Promise, function() {
-    //         var n = this;
-    //         return r(this, function() {
-    //             return [2, new Promise(function(o) {
-    //                 return l(n, void 0, void 0, function() {
-    //                     var n, a, i, l, s, c, u, p;
-    //                     return r(this, function(r) {
-    //                         switch (r.label) {
-    //                         case 0:
-    //                             if ((a = {}).uid = UserInfo.instance().getUid(),
-    //                             a.betLine = 0,
-    //                             a.betPerLine = SlotGameRuleManager.Instance.getCurrentBetPerLine(),
-    //                             a.machineID = SlotGameResultManager.Instance.getMachineID(),
-    //                             a.subGameKey = SlotGameResultManager.Instance.getNextSubGameKey(),
-    //                             a.isAutoSpin =SlotReelSpinStateManager.Instance.getAutospinMode(),
-    //                             a.spinSessionKey = SlotGameResultManager.Instance.getSpinSessionKey(),
-    //                             1 == UserInfo.instance().isJoinTourney() && (a.tourneyID = UserInfo.instance().getTourneyId(),
-    //                             a.tourneyTier = UserInfo.instance().getTourneyTier()),
-    //                             null != t && null != t && (a.intParams = t),
-    //                             null != SlotManager.Instance.cheatComponent && "" != (i = SlotManager.Instance.cheatComponent.getCheatString()))
-    //                                 try {
-    //                                     a.cheatKey = JSON.parse(i)
-    //                                 } catch (f) {
-    //                                     "jackpot" != i && alert("cheat string is not valid json format.\n" + f)
-    //                                 }
-    //                             return MessageRoutingManager.NUMBER_SPIN_COUNT++,
-    //                             1 != (l = MessageRoutingManager.NUMBER_SPIN_COUNT) && 10 != l && 50 != l && 100 != l && 150 != l && 200 != l && 300 != l && 400 != l && 500 != l || L.default.slotSpin(SlotManager.Instance.getZoneId(), SlotGameRuleManager.Instance.slotID, l,SlotReelSpinStateManager.Instance.getAutospinMode() ? 1 : 0),
-    //                             s = SlotManager.Instance.getZoneId(),
-    //                             SlotManager.Instance.timeStampSendSpinRequest = Utility.getUnixTimestamp_MilliSecond(),
-    //                             [4, G.default.Instance().requestSlotSpin(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), s, SlotGameRuleManager.Instance.slotID, JSON.stringify(a))];
-    //                         case 1:
-    //                             return n = r.sent(),
-    //                             SlotManager.Instance.timeStampRecvSpinRequest = Utility.getUnixTimestamp_MilliSecond(),
-    //                             cc.log("spin result: " + JSON.stringify(n)),
-    //                             1 == (c = G.default.getServerChangeResult(n)).getCheckByPayCode(PayCode.SlotBetWithdraw) && (MessageRoutingManager.NUMBER_BET_SPIN_COUNT++,
-    //                             1 != (u = MessageRoutingManager.NUMBER_BET_SPIN_COUNT) && 10 != u && 50 != u && 100 != u && 150 != u && 200 != u && 300 != u && 400 != u && 500 != u || L.default.betSpin(SlotManager.Instance.getZoneId(), SlotGameRuleManager.Instance.slotID, u,SlotReelSpinStateManager.Instance.getAutospinMode() ? 1 : 0),
-    //                             UserInfo.instance().addTotalSpinCount(),
-    //                             1 == (p = UserInfo.instance().getTotalSpinCount()) && (L.default.submitApplication(),
-    //                             L.default.accBetSpin(SlotManager.Instance.getZoneId(), SlotGameRuleManager.Instance.slotID, p,SlotReelSpinStateManager.Instance.getAutospinMode() ? 1 : 0))),
-    //                             Utility.isMobileGame() && 0 == ClubVaultPopup.getAsBoolean(de.StorageKeyType.MOBILE_GUIDE) && ClubVaultPopup.save(de.StorageKeyType.MOBILE_GUIDE, true),
-    //                             SlotFeverModeManager.instance.setFeverModeInfoByItemHist(c.itemHist),
-    //                             z.default.instance.setPowerGemInfoByPromotionHist(c.promotionHist, c.levelHist),
-    //                             e && e(n),
-    //                             o(n),
-    //                             [2]
-    //                         }
-    //                     })
-    //                 })
-    //             }
-    //             )]
-    //         })
-    //     })
+    /**
+     * 老虎机Spin请求发送方法（类成员方法，需挂载到对应类中）
+     * @param callback 请求成功后的回调函数（接收返回结果）
+     * @param intParams 可选的整数参数
+     * @returns Promise<any> Spin请求返回结果
+     */
+    onSendSpinRequest = function(
+        callback?: (result: any) => void, 
+        intParams?: Record<string, any>
+    ): Promise<any> {
+        return new Promise<any>(async (resolve) => {
+            // ===== 1. 构建Spin请求参数 =====
+            const spinParams: Record<string, any> = {
+                uid: UserInfo.instance().getUid(),
+                betLine: 0,
+                betPerLine: SlotGameRuleManager.Instance.getCurrentBetPerLine(),
+                machineID: SlotGameResultManager.Instance.getMachineID(),
+                subGameKey: SlotGameResultManager.Instance.getNextSubGameKey(),
+                isAutoSpin: SlotReelSpinStateManager.Instance.getAutospinMode(),
+                spinSessionKey: SlotGameResultManager.Instance.getSpinSessionKey()
+            };
+
+            // // 锦标赛相关参数（加入锦标赛时补充）
+            // if (UserInfo.instance().isJoinTourney() === 1) {
+            //     spinParams.tourneyID = UserInfo.instance().getTourneyId();
+            //     spinParams.tourneyTier = UserInfo.instance().getTourneyTier();
+            // }
+
+            // 可选整数参数
+            if (intParams != null && intParams != undefined) {
+                spinParams.intParams = intParams;
+            }
+
+            // // 作弊字符串解析（调试用）
+            // const cheatStr = SlotManager.Instance.cheatComponent?.getCheatString() || "";
+            // if (cheatStr) {
+            //     try {
+            //         spinParams.cheatKey = JSON.parse(cheatStr);
+            //     } catch (error) {
+            //         // 非jackpot作弊字符串则提示错误
+            //         if (cheatStr !== "jackpot") {
+            //             alert(`cheat string is not valid json format.\n${error}`);
+            //         }
+            //     }
+            // }
+
+            // ===== 2. Spin次数统计与日志上报 =====
+            MessageRoutingManager.NUMBER_SPIN_COUNT++;
+            const currentSpinCount = MessageRoutingManager.NUMBER_SPIN_COUNT;
+            // 关键次数（1/10/50/100/150/200/300/400/500）触发slotSpin日志上报
+            if ([1, 10, 50, 100, 150, 200, 300, 400, 500].includes(currentSpinCount)) {
+                Analytics.slotSpin(
+                    SlotManager.Instance.getZoneId(),
+                    SlotGameRuleManager.Instance.slotID,
+                    currentSpinCount,
+                    SlotReelSpinStateManager.Instance.getAutospinMode()
+                );
+            }
+
+            // ===== 3. 发送Spin请求 =====
+            const zoneId = SlotManager.Instance.getZoneId();
+            // 记录请求发送时间戳（毫秒级）
+            SlotManager.Instance.timeStampSendSpinRequest = Utility.getUnixTimestamp_MilliSecond();
+            
+            // 异步发送Spin请求
+            const spinResult1 = await CommonServer.Instance().requestSlotSpin(
+                UserInfo.instance().getUid(),
+                UserInfo.instance().getAccessToken(),
+                zoneId,
+                SlotGameRuleManager.Instance.slotID,
+                JSON.stringify(spinParams)
+            );
+
+            var spinResult = JSON.parse('{"betCoin":120000,"casinoJackpots":[{"zoneID":0,"slotID":"","jackpotSubID":0,"jackpotSubKey":"","jackpot":193224426.62395665,"basePrize":20000000,"basePrizeType":"FixedCoin","maxBasePrize":0,"minPrize":321288768,"maxPrize":505760789,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":1,"slotID":"","jackpotSubID":0,"jackpotSubKey":"","jackpot":6253118352,"basePrize":1000000000,"basePrizeType":"FixedCoin","maxBasePrize":0,"minPrize":11977472351,"maxPrize":18332560677,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""}],"changeResult":{"assetHist":[{"beforeCoin":69046100,"changeCoin":-120000,"totalCoin":68926100,"paidCoin":0,"payCode":"HGFITC00035","pseq":1}],"levelHist":[{"addExp":3.9630861,"totExp":1003.6040971279144,"blevel":7,"alevel":7,"type":"spin","pseq":1,"seq":2}],"promotionHist":[{"promotionKey":"InGameRandomBonusPromotion","promotionInfo":{"coinRewardAd":0,"dailySpinCnt":2,"dailyReceivedCnt":0,"appearProb":0,"isAcceptable":false,"showingDate":1768304252,"lastReceivedDate":0,"isInitialized":true},"changeInfo":"","pseq":0,"seq":3},{"promotionKey":"PiggyBankPromotion","promotionInfo":{"userLevel":7,"curMoney":10312900,"maxMoney":32000000,"firstProgressiveDate":1750587079,"isInitialized":true,"ruleVersion":2},"changeInfo":"","pseq":0,"seq":4}]},"error":{"code":0,"msg":""},"machineID":"SMID-451249740898304-mooorecheddar-0","reqId":1768873566,"slotJackpots":[{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":3,"jackpotSubKey":"grand","jackpot":0,"basePrize":25000,"basePrizeType":"BetPerLine","maxBasePrize":120000000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":2,"jackpotSubKey":"major","jackpot":0,"basePrize":2500,"basePrizeType":"BetPerLine","maxBasePrize":12000000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":1,"jackpotSubKey":"minor","jackpot":0,"basePrize":250,"basePrizeType":"BetPerLine","maxBasePrize":1200000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""},{"zoneID":0,"slotID":"mooorecheddar","jackpotSubID":0,"jackpotSubKey":"mini","jackpot":0,"basePrize":125,"basePrizeType":"BetPerLine","maxBasePrize":600000000,"minPrize":0,"maxPrize":0,"increaseRate":0,"progressiveRate":0,"linked":false,"linkedKey":""}],"slotState":{"revisionNumber":0,"machineID":"SMID-451249740898304-mooorecheddar-0","nextSubGameKey":"base","spinBetIndex":1768875066200162000,"subGameState":{"base":{"subGameKey":"base","spinCnt":77,"multiplier":1,"spinMultiplier":1,"betPerLines":4800,"betLines":25,"gauges":{"freespinTrigger":0},"lastFullWindow":[[23,23,31,12,12],[14,14,21,21,21],[11,21,21,31,71],[13,22,22,31,71],[25,23,23,91,91]],"lastWindows":[[23,31,12],[14,21,21],[21,21,31],[22,22,31],[23,23,91]],"lastSymbolInfoWindow":[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,{"symbol":91,"type":"multiplier","prize":10,"prizeUnit":"BetPerLine","multiplier":1}]],"ReelStripsKey":"","PayKey":""}}},"spinResult":{"betLine":25,"windows":[[[23,31,12],[14,21,21],[21,21,31],[22,22,31],[23,23,91]]],"symbolInfoWindow":[[null,null,null],[null,null,null],[null,null,null],[null,null,null],[null,null,{"symbol":91,"type":"multiplier","prize":10,"prizeUnit":"BetPerLine","multiplier":1}]],"window":[[23,23,31,12,12],[14,14,21,21,21],[11,21,21,31,71],[13,22,22,31,71],[25,23,23,91,91]],"subGameKey":"base","CascadeWindow":null,"NotPay":false,"NotPayAll":false},"spinSessionKey":1768874978,"winningCoin":0}')
+        
+
+            // ===== 4. 处理请求返回结果 =====
+            // 记录请求接收时间戳（毫秒级）
+            SlotManager.Instance.timeStampRecvSpinRequest = Utility.getUnixTimestamp_MilliSecond();
+            // 打印Spin结果日志
+            cc.log(`spin result: ${JSON.stringify(spinResult)}`);
+
+            // 解析服务器返回结果
+            const serverResult = CommonServer.getServerChangeResult(spinResult);
+            // 校验投注扣款支付码
+            if (serverResult.getCheckByPayCode(PayCode.SlotBetWithdraw)) {
+                // 投注Spin次数统计
+                MessageRoutingManager.NUMBER_BET_SPIN_COUNT++;
+                const currentBetSpinCount = MessageRoutingManager.NUMBER_BET_SPIN_COUNT;
+                
+                // 关键次数触发betSpin日志上报
+                if ([1, 10, 50, 100, 150, 200, 300, 400, 500].includes(currentBetSpinCount)) {
+                    Analytics.betSpin(
+                        SlotManager.Instance.getZoneId(),
+                        SlotGameRuleManager.Instance.slotID,
+                        currentBetSpinCount,
+                        SlotReelSpinStateManager.Instance.getAutospinMode()
+                    );
+                }
+
+                // 累计总Spin次数
+                UserInfo.instance().addTotalSpinCount();
+                const totalSpinCount = UserInfo.instance().getTotalSpinCount();
+                
+                // 首次Spin触发特殊日志上报
+                if (totalSpinCount === 1) {
+                    // Analytics.submitApplication();
+                    // Analytics.accBetSpin(
+                    //     SlotManager.Instance.getZoneId(),
+                    //     SlotGameRuleManager.Instance.slotID,
+                    //     totalSpinCount,
+                    //     SlotReelSpinStateManager.Instance.getAutospinMode()
+                    // );
+                }
+            }
+
+            // ===== 5. 移动端引导标记设置 =====
+            if (Utility.isMobileGame() && !ServerStorageManager.getAsBoolean(StorageKeyType.MOBILE_GUIDE)) {
+                ServerStorageManager.save(StorageKeyType.MOBILE_GUIDE, true);
+            }
+
+            // ===== 6. 更新管理器状态 =====
+            // 设置狂热模式信息
+            SlotFeverModeManager.instance.setFeverModeInfoByItemHist(serverResult.itemHist);
+            // 设置宝石能量信息
+            PowerGemManager.instance.setPowerGemInfoByPromotionHist(serverResult.promotionHist, serverResult.levelHist);
+
+            // ===== 7. 回调与Promise解析 =====
+            // 执行外部回调
+            if (callback) {
+                callback(spinResult);
+            }
+            // 解析Promise
+            resolve(spinResult);
+        });
     }
     
     getSpinChangeResult = function() {

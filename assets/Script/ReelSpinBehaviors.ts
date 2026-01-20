@@ -659,7 +659,7 @@ export default class ReelSpinBehaviors {
                 maxSpeed = spinCtrl.maxSpeedInExpectEffect;
             }
 
-            spinTime = reelCom.getReelSpinTimeRenewal(reelControllers, spinRequestTime,Number(subGameKey));
+            spinTime = reelCom.getReelSpinTimeRenewal(reelControllers, spinRequestTime,subGameKey);
             const useSpeed = SlotUIRuleManager.Instance.getExpectEffectFlag(reelCom.reelindex, SlotGameResultManager.Instance.getVisibleSlotWindows()) ? maxSpeed : symbolSpeed;
             const moveCount = Math.floor(spinTime / useSpeed);
             const moveAct = cc.moveBy(spinTime, new cc.Vec2(0, -moveCount * reelCom.symbolHeight));

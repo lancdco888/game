@@ -171,39 +171,120 @@ export interface UserMasterInfo {
     getUserFBPlatformID(): string;
 }
 
-export interface UserGameInfo {
-    createData: number;
-    lastSpinData: number;
-    lastTotalBet: number;
-    lastAllinBet: number;
-    lastAllInDate: number;
-    minDateLast30spins: number;
-    lastPlayZoneID: number;
-    lastPlaySlotID: number;
-    modifieData: number;
-    totalBet: number;
-    totalSpin: number;
-    twoh_totalBet: number;
-    twoh_totalSpin: number;
-    avg_3000_bet: number;
-    prevBiggestWinCoin: number;
-    biggestWinCoin: number;
-    isShowRecordRenewal: boolean;
-    eighty_SpinCont: number;
-    goldTicketGauge: number;
-    modeBetDepth: number;
-    modeBetDepthLast500Spins: number;
-    diamondTicketGauge: number;
-    goldWheelGauge: number;
-    silverWheelGauge: number;
-    diamondWheelGauge: number;
-    favoriteList: any[];
-    recentPlaySlots: any[];
-    initUserGameInfo(data: any): boolean;
-    setLastTotalbet(val: number): void;
-    setBiggestWinCoin(val: number): void;
-    getRecordRenewalFlag(): boolean;
-    resetRecordRenewalFlag(): void;
+/**
+ * UserGameInfo 接口的实现类
+ * 处理用户游戏信息的存储和更新逻辑
+ */
+export class UserGameInfo  {
+    // 基础时间/数值属性，默认初始化为0（时间戳默认0表示未初始化）
+    createData: number = 0;
+    lastSpinData: number = 0;
+    lastTotalBet: number = 0;
+    lastAllinBet: number = 0;
+    lastAllInDate: number = 0;
+    minDateLast30spins: number = 0;
+    lastPlayZoneID: number = 0;
+    lastPlaySlotID: number = 0;
+    modifieData: number = 0; // 保留接口原拼写，建议后续修正为 modifiedData
+    totalBet: number = 0;
+    totalSpin: number = 0;
+    twoh_totalBet: number = 0;
+    twoh_totalSpin: number = 0;
+    avg_3000_bet: number = 0;
+    prevBiggestWinCoin: number = 0;
+    biggestWinCoin: number = 0;
+    isShowRecordRenewal: boolean = false;
+    eighty_SpinCont: number = 0;
+    goldTicketGauge: number = 0;
+    modeBetDepth: number = 0;
+    modeBetDepthLast500Spins: number = 0;
+    diamondTicketGauge: number = 0;
+    goldWheelGauge: number = 0;
+    silverWheelGauge: number = 0;
+    diamondWheelGauge: number = 0;
+    // 数组属性默认初始化为空数组
+    favoriteList: any[] = [];
+    recentPlaySlots: any[] = [];
+
+    /**
+     * 初始化用户游戏信息
+     * @param data 包含用户游戏信息的数据源
+     * @returns 是否初始化成功
+     */
+    initUserGameInfo(data: any): boolean {
+        // 校验数据源合法性
+        if (!data || typeof data !== 'object') {
+            return false;
+        }
+
+        // 批量赋值（仅赋值存在的字段，避免覆盖默认值）
+        Object.keys(this).forEach(key => {
+            if (data.hasOwnProperty(key)) {
+                (this as any)[key] = data[key];
+            }
+        });
+
+        // 特殊处理：确保时间戳为数字类型
+        const dateKeys = ['createData', 'lastSpinData', 'lastAllInDate', 'minDateLast30spins', 'modifieData'];
+        dateKeys.forEach(key => {
+            if (typeof (this as any)[key] !== 'number') {
+                (this as any)[key] = 0;
+            }
+        });
+
+        return true;
+    }
+
+    /**
+     * 设置最后一次总投注金额
+     * @param val 投注金额
+     */
+    setLastTotalbet(val: number): void {
+        // 校验数值合法性（非负）
+        if (typeof val !== 'number' || val < 0) {
+            console.warn('无效的投注金额：必须是非负数');
+            return;
+        }
+        this.lastTotalBet = val;
+        // 同步更新总投注（可选业务逻辑）
+        this.totalBet += val;
+    }
+
+    /**
+     * 设置最大赢币数（核心业务逻辑）
+     * @param val 新的赢币数
+     */
+    setBiggestWinCoin(val: number): void {
+        if (typeof val !== 'number' || val < 0) {
+            console.warn('无效的赢币数：必须是非负数');
+            return;
+        }
+
+        // 记录更新前的最大赢币（用于对比）
+        this.prevBiggestWinCoin = this.biggestWinCoin;
+        // 更新当前最大赢币
+        this.biggestWinCoin = val;
+
+        // 业务逻辑：如果新赢币数超过历史记录，标记显示刷新提示
+        if (val > this.prevBiggestWinCoin) {
+            this.isShowRecordRenewal = true;
+        }
+    }
+
+    /**
+     * 获取记录刷新提示的标记
+     * @returns 是否显示刷新提示
+     */
+    getRecordRenewalFlag(): boolean {
+        return this.isShowRecordRenewal;
+    }
+
+    /**
+     * 重置记录刷新提示标记
+     */
+    resetRecordRenewalFlag(): void {
+        this.isShowRecordRenewal = false;
+    }
 }
 
 export interface UserExMasterInfo {
@@ -376,7 +457,7 @@ export default class UserInfo extends cc.Component {
     private _isFromSlot: boolean = false;
     private _currentSceneMode: string = "";
     private _isOpenAfterPurchase: boolean = false;
-    private _rewardResult: RewardResult | null = null;
+    private _rewardResult: RewardResult = null;
     private _firstPurchaseState: number = 0;
     private _firstPurchasePopInfo: any | null = null;
     private _location: string = "";
@@ -428,6 +509,7 @@ export default class UserInfo extends cc.Component {
         const userInfo = node.addComponent(UserInfo);
         userInfo._userInfo = userInfoData;
         userInfo._userInfo.userPromotion = new UserPromotion()
+        userInfo._userInfo.userGameInfo = new UserGameInfo()
         userInfo._accessToken = token;
 
         if (!userData.serverTime) {
@@ -508,25 +590,25 @@ export default class UserInfo extends cc.Component {
     //     }
     // }
 
-    // onLoad(): void {
-    //     console.log("MyInfo add persistRootNode");
-    //     game.addPersistRootNode(this.node);
-    //     this._eventEmitter = new EventTarget();
-    //     this._rewardResult = new RewardResult();
-    //     this.schedule(this.pingSchedule.bind(this), 5);
-    //     this.schedule(this.jackpotInfoSchedule.bind(this), 60);
-    //     systemEvent.on(macro.KEY_DOWN, this.onKeyDown.bind(this), this.node);
-    // }
+    onLoad(): void {
+        console.log("MyInfo add persistRootNode");
+        cc.game.addPersistRootNode(this.node);
+        this._eventEmitter = new cc.EventTarget();
+        this._rewardResult = new RewardResult();
+        this.schedule(this.pingSchedule.bind(this), 5);
+        this.schedule(this.jackpotInfoSchedule.bind(this), 60);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown.bind(this), this.node)
+    }
 
-    // clearEvent(): void {
-    //     this.unscheduleAllCallbacks();
-    // }
+    clearEvent(): void {
+        this.unscheduleAllCallbacks();
+    }
 
-    // onDestroy(): void {
-    //     systemEvent.off(macro.KEY_DOWN, this.onKeyDown.bind(this), this.node);
-    //     this.unscheduleAllCallbacks();
-    //     UserInfo._instance = null;
-    // }
+    onDestroy(): void {
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown.bind(this), this.node);
+        this.unscheduleAllCallbacks();
+        UserInfo._instance = null;
+    }
 
     // // ===================== 所有业务方法（完整保留原逻辑） =====================
     // public async refreshClubInfo(): Promise<boolean> {
@@ -648,8 +730,16 @@ export default class UserInfo extends cc.Component {
     public getServerChangeResult(data: any): any {
         const res = CommonServer.getServerChangeResult(data);
         const reward = RewardResult.parse(data.changeResult, res);
-        // UserInfo.instance()!.addRewardResult(reward);
+        UserInfo.instance().addRewardResult(reward);
         return res;
+    }
+
+    public addRewardResult(e) {
+        this._rewardResult.addRewardResult(e)
+    }
+    
+    public resetRewardResult() {
+        this._rewardResult.resetRewardResult()
     }
 
     // public getExceptionAuthInfo(): ExceptionAuthInfo {
@@ -683,16 +773,16 @@ export default class UserInfo extends cc.Component {
     //     };
     // }
 
-    // public onKeyDown(e: any): void {
-    //     const keyCode = e.keyCode;
-    //     if (TSUtility.isDevService() && keyCode === macro.KEY.h) {
-    //         PopupManager.Instance().makeScreenShot(3, 1, () => {
-    //             HeroTooltipTest.getPopup((err, popup) => {
-    //                 if (!err) popup.open();
-    //             });
-    //         });
-    //     }
-    // }
+    public onKeyDown(e: any): void {
+        const keyCode = e.keyCode;
+        if (TSUtility.isDevService() && keyCode === cc.macro.KEY.h) {
+            PopupManager.Instance().makeScreenShot(3, 1, () => {
+                // HeroTooltipTest.getPopup((err, popup) => {
+                //     if (!err) popup.open();
+                // });
+            });
+        }
+    }
 
     public applyChangeResult(changeResult: any): void {
         
@@ -1365,9 +1455,9 @@ export default class UserInfo extends cc.Component {
         this._eventEmitter!.targetOff(target);
     }
 
-    // public pingSchedule(): void {
-    //     this.asyncRequestPing();
-    // }
+    public pingSchedule(): void {
+        // this.asyncRequestPing();
+    }
 
     // public async asyncRequestPing(): Promise<void> {
     //     const startTime = new Date().getTime();
@@ -1425,9 +1515,9 @@ export default class UserInfo extends cc.Component {
     //     }
     // }
 
-    // public jackpotInfoSchedule(): void {
-    //     this.asyncRefreshJackpotInfo(false);
-    // }
+    public jackpotInfoSchedule(): void {
+        this.asyncRefreshJackpotInfo(false);
+    }
 
     // public checkStarAlbumSeasonOver(): void {
     //     const season = StarAlbumManager.instance().getCurrentSeasonInfo();
@@ -1741,7 +1831,7 @@ export default class UserInfo extends cc.Component {
     }
 
     public resetCasinoJackpot(): void {
-        this.asyncRefreshJackpotInfo(true);
+        // this.asyncRefreshJackpotInfo(true);
     }
 
     // public facebookShare(shareData: any, cb?: Function): void {
