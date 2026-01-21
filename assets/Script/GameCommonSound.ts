@@ -29,7 +29,7 @@ export default class GameCommonSound extends cc.Component {
      * @param resPath 音效预制体资源路径 (可选，默认值: Sound/GameCommonSound)
      */
     public static initGameCommonSound(resPath?: string): void {
-        let loadPath = "Sound/GameCommonSound";
+        let loadPath = "Prefabs/GameCommonSound";
         // 传入自定义路径则覆盖默认路径
         if (typeof resPath === "string") {
             loadPath = resPath;

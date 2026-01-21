@@ -7,7 +7,7 @@ import TSUtility from "./TSUtility";
  * 音效映射配置实体类 - 编辑器可视化配置【音效ID】与【独立音频剪辑】的对应关系
  * 对应原代码的匿名SoundInfo类，转正命名+补全完整序列化装饰器，编辑器属性面板可见可配置
  */
-@ccclass
+@ccclass('SoundInfo')
 export class SoundInfo {
     /** 音效唯一标识ID (如：btn_etc / pop_etc) */
     @property({ tooltip: "音效唯一标识ID" })

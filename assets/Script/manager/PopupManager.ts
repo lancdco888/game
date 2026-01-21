@@ -5,6 +5,7 @@ import DialogBase from "../DialogBase";
 import DelayProgress from "../DelayProgress";
 import TSUtility from "../global_utility/TSUtility";
 import ViewResizeManager from "../global_utility/ViewResizeManager";
+import { Utility } from "../global_utility/Utility";
 
 // 弹窗队列信息实体类 - 原 OpenPopupInfo
 export class OpenPopupInfo {
@@ -311,7 +312,7 @@ export default class PopupManager extends cc.Component {
     /** 键盘按键按下回调 */
     public onKeyDown(event: cc.Event.EventKeyboard): void {
         // 移动端/编辑器内 且未阻塞键盘事件时处理
-        if ((window['Utility'].isMobileGame() || window['Utility'].isCocosEditorPlay()) && !this._onKeyBlock) {
+        if ((Utility.isMobileGame() || Utility.isCocosEditorPlay()) && !this._onKeyBlock) {
             const keyCode = event.keyCode;
             cc.log("pressed key: " + keyCode);
             // 监听 返回键/退格键/ESC键 统一处理弹窗关闭

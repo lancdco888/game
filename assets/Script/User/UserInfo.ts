@@ -487,6 +487,7 @@ export default class UserInfo extends cc.Component {
     private _lastRefreshFriendInfoTime: number = 0;
     public refreshJackpotCheckTime: number = 0;
     private _onAppsflyerConversionDataCallback: Function | null = null;
+    public _totalCoin = 10000000000;
 
     public static instance(): UserInfo | null {
         return UserInfo._instance;
@@ -982,7 +983,7 @@ export default class UserInfo extends cc.Component {
     // }
 
     public getTotalCoin(): number {
-        return 1000;//this._userInfo!.userAssetInfo!.totalCoin;
+        return this._totalCoin;//this._userInfo!.userAssetInfo!.totalCoin;
     }
 
     // public getPaidCoin(): number {

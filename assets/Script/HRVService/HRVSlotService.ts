@@ -96,7 +96,7 @@ import HeroTooltipPopup, { HT_MakingInfo } from "../Utility/HeroTooltipPopup";
 // import TutorialCoinPromotion from "../Tutorial/TutorialCoinPromotion";
 import UnprocessedPurchaseManager from "../User/UnprocessedPurchaseManager";
 // import UserInboxInfo, { InboxExtraInfoSlotTourneyReward } from "../User/UserInboxInfo";
-import UserInfo from "../User/UserInfo";
+import UserInfo, { MSG } from "../User/UserInfo";
 import UserInven, { CardPackItemInfo } from "../User/UserInven";
 import UserPromotion, { JiggyPuzzlePromotion, NewServiceIntroduceCoinPromotion, NewUserMissionPromotion, PowerGemPromotion, WelcomeBonusPromotion } from "../User/UserPromotion";
 import SlotTourneyManager, { ServerSlotTourneyState, ServerslotTourneyProgressInfo, SlotTourneyIngameState, SlotTourneyStateType } from "../manager/SlotTourneyManager";
@@ -133,6 +133,9 @@ import ThrillJackpotWheelSpinResult from "../ThrillJackpotWheelSpinResult";
 import ThrillJackpotIngameIcon from "../ThrillJackpotIngameIcon";
 import ThrillWheelJackpot from "../ThrillWheelJackpot";
 import ThrillJackpotStartPopup from "../ThrillJackpotStartPopup";
+import PowerGemSlotBottomIcon from "../../resources/game/Scripts/PowerGemSlotBottomIcon";
+import IngameSuiteLeagueFeverToolTipUI from "../IngameSuiteLeagueFeverToolTipUI";
+import HyperBountyInGameUI from "../HyperBountyInGameUI";
 
 
 @ccclass
@@ -2217,7 +2220,7 @@ export default class HRVSlotService extends cc.Component {
     }
     
     getUserMoney = function() {
-        return 0;//UserInfo.instance().getTotalCoin()
+        return UserInfo.instance().getTotalCoin()
     }
     
     getZoneName = function() {
@@ -2235,45 +2238,49 @@ export default class HRVSlotService extends cc.Component {
    
     onInitBottomUI_EX2 = function(e) {
         var t = this;
-        // if (e.fastModeTooltipRoot && this.getInGameUI().setFastModePosition(e.fastModeTooltipRoot),
-        // this.node.on("changeMoneyState", function() {
-        //     t.checkLoungeNewSlot(e)
-        // }),
-        // UserInfo.instance().addListenerTarget(MSG.RELEASE_BETTINGLOCK, function() {
-        //     t.addMaxBettingUnlockEffect(e.btnPlusBetPerLine.node)
-        // }, this),
-        // e.powerGemSlotBottomIconPos) {
-        //     var n = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/PowerGem/PowerGemSlotBottomIcon")
-        //         , o = cc.instantiate(n);
-        //     this._powerGemSlotBottomIcon = o.getComponent(PowerGemSlotBottomIcon),
-        //     o.setParent(e.powerGemSlotBottomIconPos),
-        //     o.setPosition(cc.Vec2.ZERO);
-        //     var a = e.getPowerGemBottomIcon_SlotRoot()
-        //         , i = e.getPowerGemBottomIcon_ToolTipRoot();
-        //     this._powerGemSlotBottomIcon.setPowerGemSlotRootPos(a),
-        //     this._powerGemSlotBottomIcon.setPowerGemToolTipRootPos(i)
-        // }
-        // if (e.nodeFeverIconPos) {
-        //     n = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/FeverMode/FeverModeIcon");
-        //     var l = cc.instantiate(n);
-        //     this._feverModeIcon = l.getComponent(IngameSuiteLeagueFeverToolTipUI.default),
-        //     l.setParent(e.nodeFeverIconPos),
-        //     l.setPosition(cc.Vec2.ZERO);
-        //     var r = e.getFeverModeIcon_ButtonRoot();
-        //     i = e.getFeverModeIcon_ToolTipRoot(),
-        //     this._feverModeIcon.setFeverModeButtonRootPos(r),
-        //     this._feverModeIcon.setFeverModeToolTipRootPos(i)
-        // }
-        // if (e.hyperBountySlotBottomIconPos) {
-        //     var s = null;
-        //     cc.loader.loadRes("Service/01_Content/HyperBounty/IngameHyperBounty/HyperBounty_" + e.node.name, function(n, o) {
-        //         n || (s = cc.instantiate(o),
-        //         t._hyperBountyIngameIcon = s.getComponent(HyperBountyInGameUI),
-        //         s.setParent(e.hyperBountySlotBottomIconPos),
-        //         s.setPosition(cc.Vec2.ZERO),
-        //         e.hyperBountySlotBottomIconPos.getChildByName("HB-80_Frame_Off").active = false)
-        //     })
-        // }
+        
+        e.fastModeTooltipRoot && this.getInGameUI().setFastModePosition(e.fastModeTooltipRoot),
+        this.node.on("changeMoneyState", function() {
+            t.checkLoungeNewSlot(e)
+        })
+
+        UserInfo.instance().addListenerTarget(MSG.RELEASE_BETTINGLOCK, function() {
+            t.addMaxBettingUnlockEffect(e.btnPlusBetPerLine.node)
+        }, this)
+
+        if (e.powerGemSlotBottomIconPos) {
+            var n = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/PowerGem/PowerGemSlotBottomIcon")
+                , o = cc.instantiate(n);
+            this._powerGemSlotBottomIcon = o.getComponent(PowerGemSlotBottomIcon),
+            o.setParent(e.powerGemSlotBottomIconPos),
+            o.setPosition(cc.Vec2.ZERO);
+            var a = e.getPowerGemBottomIcon_SlotRoot()
+                , i = e.getPowerGemBottomIcon_ToolTipRoot();
+            this._powerGemSlotBottomIcon.setPowerGemSlotRootPos(a),
+            this._powerGemSlotBottomIcon.setPowerGemToolTipRootPos(i)
+        }
+
+        if (e.nodeFeverIconPos) {
+            n = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/FeverMode/FeverModeIcon");
+            var l = cc.instantiate(n);
+            this._feverModeIcon = l.getComponent(IngameSuiteLeagueFeverToolTipUI),
+            l.setParent(e.nodeFeverIconPos),
+            l.setPosition(cc.Vec2.ZERO);
+            var r = e.getFeverModeIcon_ButtonRoot();
+            i = e.getFeverModeIcon_ToolTipRoot(),
+            this._feverModeIcon.setFeverModeButtonRootPos(r),
+            this._feverModeIcon.setFeverModeToolTipRootPos(i)
+        }
+        if (e.hyperBountySlotBottomIconPos) {
+            var s = null;
+            cc.loader.loadRes("Service/01_Content/HyperBounty/IngameHyperBounty/HyperBounty_" + e.node.name, function(n, o) {
+                n || (s = cc.instantiate(o),
+                t._hyperBountyIngameIcon = s.getComponent(HyperBountyInGameUI),
+                s.setParent(e.hyperBountySlotBottomIconPos),
+                s.setPosition(cc.Vec2.ZERO),
+                e.hyperBountySlotBottomIconPos.getChildByName("HB-80_Frame_Off").active = false)
+            })
+        }
     }
     
     getPowerGemSlotBottomIcon = function() {
