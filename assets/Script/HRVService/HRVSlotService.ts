@@ -136,6 +136,12 @@ import ThrillJackpotStartPopup from "../ThrillJackpotStartPopup";
 import PowerGemSlotBottomIcon from "../../resources/game/Scripts/PowerGemSlotBottomIcon";
 import IngameSuiteLeagueFeverToolTipUI from "../IngameSuiteLeagueFeverToolTipUI";
 import HyperBountyInGameUI from "../HyperBountyInGameUI";
+import GameCommonSound from "../GameCommonSound";
+import PayTablePopup from "../PayTablePopup";
+import PayTablePopup_B2B from "../PayTablePopup_B2B";
+import TutorialCoinPromotion from "../TutorialCoinPromotion";
+import BetGuidePopup, { BetGuideState } from "../BetGuidePopup";
+import Bet_LowerPopup from "../Bet_LowerPopup";
 
 
 @ccclass
@@ -650,70 +656,72 @@ export default class HRVSlotService extends cc.Component {
     //         const error = new Error(`SlotManager goToSlot fail zoneId: ${zoneId.toString()} slotId:${slotId}`);
     //         FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
     //     }
-    // }
+    }
 
     // /**
     //  * 主页按钮点击逻辑
     //  */
-    // homeBtnProcess(): void {
-    //     if (SlotManager.Instance.isAvailable() && SlotManager.Instance._initFinish) {
-    //         let zoneId = SlotManager.Instance.getZoneId();
-    //         let zoneName = SlotManager.Instance.getZoneName();
-    //         if (SlotManager.Instance.isloungeNewSlot) {
-    //             zoneId = SDefine.SUITE_ZONEID;
-    //             zoneName = SDefine.SUITE_ZONENAME;
-    //         }
+    homeBtnProcess(): void {
+        if (SlotManager.Instance.isAvailable() && SlotManager.Instance._initFinish) {
+            let zoneId = SlotManager.Instance.getZoneId();
+            let zoneName = SlotManager.Instance.getZoneName();
+            if (SlotManager.Instance.isloungeNewSlot) {
+                zoneId = SDefine.SUITE_ZONEID;
+                zoneName = SDefine.SUITE_ZONENAME;
+            }
 
-    //         const jumpFunc = () => {
-    //             CommonServer.Instance().requestAvgBetInfo(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), (res) => {
-    //                 if (!CommonServer.isServerResponseError(res) && TSUtility.isValid(res.userAvgBetInfo)) {
-    //                     if (TSUtility.isValid(res.userAvgBetInfo.totalBet)) UserInfo.instance().setTwoH_TotalBet(res.userAvgBetInfo.totalBet);
-    //                     if (TSUtility.isValid(res.userAvgBetInfo.totalSpin)) UserInfo.instance().setTwoH_TotalSpin(res.userAvgBetInfo.totalSpin);
-    //                 }
-    //             });
-    //             if (!ServerStorageManager.getAsBoolean(StorageKeyType.FIRST_VISIT_SLOT)) {
-    //                 ServerStorageManager.save(StorageKeyType.FIRST_VISIT_SLOT, true);
-    //             }
-    //             PopupManager.Instance().setOnAllPopupClose(null);
-    //             MinigameManager.instance().createMiniGameInfo();
-    //             SlotManager.Instance.goToLobby(zoneId, zoneName);
-    //             Analytics.enterCasino(zoneId, "slot_home");
-    //         };
+            const jumpFunc = () => {
+                // CommonServer.Instance().requestAvgBetInfo(UserInfo.instance().getUid(), UserInfo.instance().getAccessToken(), (res) => {
+                //     if (!CommonServer.isServerResponseError(res) && TSUtility.isValid(res.userAvgBetInfo)) {
+                //         if (TSUtility.isValid(res.userAvgBetInfo.totalBet)) UserInfo.instance().setTwoH_TotalBet(res.userAvgBetInfo.totalBet);
+                //         if (TSUtility.isValid(res.userAvgBetInfo.totalSpin)) UserInfo.instance().setTwoH_TotalSpin(res.userAvgBetInfo.totalSpin);
+                //     }
+                // });
 
-    //         // 锦标赛进行中-离开确认
-    //         if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && this._tourneyState === SlotTourneyIngameState.WaitEndBonusGame) {
-    //             SlotManager.Instance._isOpenMovePopup = true;
-    //             CommonPopup.getPopup("TypeB", (err, popup) => {
-    //                 popup.open().setOkBtn("YES", () => {
-    //                     PopupManager.Instance().resetOpenPopup();
-    //                     PopupManager.Instance().resetScreenShot();
-    //                     SlotManager.Instance._isOpenMovePopup = false;
-    //                     jumpFunc();
-    //                 }).setCancelBtn("NO", () => {
-    //                     SlotManager.Instance._isOpenMovePopup = false;
-    //                 }).setInfo("Spin in progress.\nAre you sure you want to leave?", "Moving back to the lobby will reset the feature spin progress, and the result will be discarded.");
-    //             });
-    //             return;
-    //         }
+                if (!ServerStorageManager.getAsBoolean(StorageKeyType.FIRST_VISIT_SLOT)) {
+                    ServerStorageManager.save(StorageKeyType.FIRST_VISIT_SLOT, true);
+                }
 
-    //         // 旋转中-离开确认
-    //         if (SlotManager.Instance.isSpinState()) {
-    //             SlotManager.Instance._isOpenMovePopup = true;
-    //             CommonPopup.getPopup("TypeB", (err, popup) => {
-    //                 popup.open().setOkBtn("YES", () => {
-    //                     PopupManager.Instance().resetOpenPopup();
-    //                     PopupManager.Instance().resetScreenShot();
-    //                     SlotManager.Instance._isOpenMovePopup = false;
-    //                     jumpFunc();
-    //                 }).setCancelBtn("NO", () => {
-    //                     SlotManager.Instance._isOpenMovePopup = false;
-    //                 }).setInfo("Spin in progress.\nAre you sure you want to leave?", "* The spin result will apply to your \nbalance automatically");
-    //             });
-    //             return;
-    //         }
+                PopupManager.Instance().setOnAllPopupClose(null);
+                //MinigameManager.instance().createMiniGameInfo();
+                SlotManager.Instance.goToLobby(zoneId, zoneName);
+                //Analytics.enterCasino(zoneId, "slot_home");
+            };
 
-    //         jumpFunc();
-    //     }
+            // 锦标赛进行中-离开确认
+            if (SDefine.SlotTournament_Use && UserInfo.instance().isJoinTourney() && this._tourneyState === SlotTourneyIngameState.WaitEndBonusGame) {
+                SlotManager.Instance._isOpenMovePopup = true;
+                CommonPopup.getPopup("TypeB", (err, popup) => {
+                    popup.open().setOkBtn("YES", () => {
+                        PopupManager.Instance().resetOpenPopup();
+                        PopupManager.Instance().resetScreenShot();
+                        SlotManager.Instance._isOpenMovePopup = false;
+                        jumpFunc();
+                    }).setCancelBtn("NO", () => {
+                        SlotManager.Instance._isOpenMovePopup = false;
+                    }).setInfo("Spin in progress.\nAre you sure you want to leave?", "Moving back to the lobby will reset the feature spin progress, and the result will be discarded.");
+                });
+                return;
+            }
+
+            // 旋转中-离开确认
+            if (SlotManager.Instance.isSpinState()) {
+                SlotManager.Instance._isOpenMovePopup = true;
+                CommonPopup.getPopup("TypeB", (err, popup) => {
+                    popup.open().setOkBtn("YES", () => {
+                        PopupManager.Instance().resetOpenPopup();
+                        PopupManager.Instance().resetScreenShot();
+                        SlotManager.Instance._isOpenMovePopup = false;
+                        jumpFunc();
+                    }).setCancelBtn("NO", () => {
+                        SlotManager.Instance._isOpenMovePopup = false;
+                    }).setInfo("Spin in progress.\nAre you sure you want to leave?", "* The spin result will apply to your \nbalance automatically");
+                });
+                return;
+            }
+
+            jumpFunc();
+        }
     }
 
     /**
@@ -1919,16 +1927,16 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onApplyGameResultMoney = function(e) {
-        // 1 == this._spinChangeResult.removeChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
+        1 == this._spinChangeResult.removeChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
     }
     
     onApplyGameResultMoneyBySubFromResult = function(e) {
-        // 1 == this._spinChangeResult.subChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
+        1 == this._spinChangeResult.subChangeCoinByPayCodeAndMoney(PayCode.SpinResultPay, e) && UserInfo.instance().addUserAssetMoney(e)
     }
    
     onApplyGameResultMoneyByMaxMoneyFromResult = function(e) {
         var t = this._spinChangeResult.subChangeCoinByPayCodeAndMaxMoney(PayCode.SpinResultPay, e);
-        // t > 0 && UserInfo.instance().addUserAssetMoney(t)
+        t > 0 && UserInfo.instance().addUserAssetMoney(t)
     }
     
     setSymbolSpecialInfo = function(e, t) {
@@ -1939,7 +1947,7 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onSpinUserAssetChange = function(e) {
-        // UserInfo.instance().addUserAssetMoney(-e),
+        UserInfo.instance().addUserAssetMoney(-e),
         MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.SPIN_COUNT_UPDATE),
         TimeBonusManager.instance.addSpinBoosterExp(e)
     }
@@ -1947,20 +1955,20 @@ export default class HRVSlotService extends cc.Component {
     onSetCurrentBetPerLine = function(e) {
         var t = e
             , n = SlotGameRuleManager.Instance.getBetMoney(t);
-        // if (SDefine.LevelBettingLock_Flag) {
-        //     var o = UserInfo.instance().getZoneId();
-        //     if (LevelBettingLockConfig.Instance().isUseLevelBettingLock(o)) {
-        //         var a = LevelBettingLockConfig.Instance().getZoneInfo(o).getNextLevelBetLock_LevelInfo(UserInfo.instance().getUserLevel());
-        //         if (null != a && a.betMoney <= n)
-        //             for (var i = SlotGameRuleManager.Instance.zoneBetPerLines, l = 1; l < i.length; ++l) {
-        //                 var r = SlotGameRuleManager.Instance.getBetMoney(i[l]);
-        //                 if (a.betMoney <= r) {
-        //                     t = i[l - 1];
-        //                     break
-        //                 }
-        //             }
-        //     }
-        // }
+        if (SDefine.LevelBettingLock_Flag) {
+            var o = UserInfo.instance().getZoneId();
+            if (LevelBettingLockConfig.Instance().isUseLevelBettingLock(o)) {
+                var a = LevelBettingLockConfig.Instance().getZoneInfo(o).getNextLevelBetLock_LevelInfo(UserInfo.instance().getUserLevel());
+                if (null != a && a.betMoney <= n)
+                    for (var i = SlotGameRuleManager.Instance.zoneBetPerLines, l = 1; l < i.length; ++l) {
+                        var r = SlotGameRuleManager.Instance.getBetMoney(i[l]);
+                        if (a.betMoney <= r) {
+                            t = i[l - 1];
+                            break
+                        }
+                    }
+            }
+        }
         
         SlotGameRuleManager.Instance._flagLockIncreaseBetMoneyUpperGuideBetPerLine && SlotGameRuleManager.Instance._guideBetPerLine < t && (t = SlotGameRuleManager.Instance._guideBetPerLine);
         var s = UserInfo.instance().getPromotionInfo(WelcomeBonusPromotion.PromotionKeyName)
@@ -2131,8 +2139,8 @@ export default class HRVSlotService extends cc.Component {
     }
     
     checkSpinAll = function() {
-        // var e = UserInfo.instance().getPromotionInfo(NewUserMissionPromotion.PromotionKeyName);
-        // return !(TSUtility.isValid(e) && 1 == e.isNewTarget) || 0 != ClubVaultPopup.getAsBoolean(StorageKeyType.NEW_IN_GAME_TUTORIAL)
+        var e = UserInfo.instance().getPromotionInfo(NewUserMissionPromotion.PromotionKeyName);
+        return !(TSUtility.isValid(e) && 1 == e.isNewTarget) //|| 0 != ClubVaultPopup.getAsBoolean(StorageKeyType.NEW_IN_GAME_TUTORIAL)
     }
    
     isFBShareDisableTarget = function() {
@@ -2412,39 +2420,40 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onClickPaytableBtn = function() {
-        // var e = this;
-        // "PAYTABLE_INGAME" != MessageRoutingManager.STRING_CURRENT_INTRODUCE_NAME && 1 != this.getInGameUI()._isOpenPaytablePopup && (1 != MessageRoutingManager.instance().isEnableInGameServiceIntroducePayTable() ? (this.getInGameUI()._isOpenPaytablePopup = true,
-        // TSUtility.isTestDirectSlotMode() ? LevelBettingLockConfig.getPopup(function(t, n) {
-        //     n.open(SlotGameRuleManager.Instance.getCurrentBetPerLine()),
-        //     w.default.playFxOnce("btn_etc"),
-        //     n.setCloseCallback(function() {
-        //         e.getInGameUI()._isOpenPaytablePopup = false
-        //     })
-        // }) : SlotGameRuleManager.getPopup(function(t, n) {
-        //     n.open(SlotGameRuleManager.Instance.getCurrentBetPerLine()),
-        //     w.default.playFxOnce("btn_etc"),
-        //     n.setCloseCallback(function() {
-        //         e.getInGameUI()._isOpenPaytablePopup = false
-        //     })
-        // })) : this.getInGameUI().payTable_IntoduceCoin.getComponent(ge.default).onCollect())
+        var e = this;
+        "PAYTABLE_INGAME" != ServiceInfoManager.STRING_CURRENT_INTRODUCE_NAME && 1 != this.getInGameUI()._isOpenPaytablePopup && (!ServiceInfoManager.instance.isEnableInGameServiceIntroducePayTable() ? (this.getInGameUI()._isOpenPaytablePopup = true,
+        TSUtility.isTestDirectSlotMode() ? PayTablePopup_B2B.getPopup(function(t, n) {
+            n.open(SlotGameRuleManager.Instance.getCurrentBetPerLine()),
+            GameCommonSound.playFxOnce("btn_etc"),
+            n.setCloseCallback(function() {
+                e.getInGameUI()._isOpenPaytablePopup = false
+            })
+        }) : 
+        PayTablePopup.getPopup(function(t, n) {
+            n.open(SlotGameRuleManager.Instance.getCurrentBetPerLine()),
+            GameCommonSound.playFxOnce("btn_etc"),
+            n.setCloseCallback(function() {
+                e.getInGameUI()._isOpenPaytablePopup = false
+            })
+        })) : this.getInGameUI().payTable_IntoduceCoin.getComponent(TutorialCoinPromotion).onCollect())
     }
     
     onClickAutoSpinSelect = function() {}
     
     onClickIncreaseTotalBet_BottomEX2 = function(e) {
-        // var t = SlotManager.Instance.getZoneId();
-        // if (1 == SlotGameRuleManager.Instance.isCurrentBetPerLineMaxValue()) {
-        //     if (1 == SlotManager.Instance.isJoinTourney())
-        //         return cc.log("slot tourney enter"),
-        //         false;
-        //     var n = SlotManager.Instance.getZoneId()
-        //         , o = SlotGameRuleManager.Instance.getNextIncreaseBetMoney();
-        //     return le.default.openBetGuidePopup(le.BetGuideState.MAXBET_GO, n, e.btnPlusBetPerLine.node, o),
-        //     false
-        // }
-        // return 1 !=SDefine.LevelBettingLock_Flag || 0 != this.checkLevelBettingLock(t) || (o = SlotGameRuleManager.Instance.getNextIncreaseBetMoney(),
-        // UserInfo.instance().isPassAbleCasino(SDefine.VIP_LOUNGE_ZONEID,SDefine.VIP_LOUNGE_ZONENAME) && UserInfo.instance().getTotalCoin() >= 15e6 && MessageRoutingManager.instance().getUserLevel() > 9 ? le.default.openBetGuidePopup(le.BetGuideState.LEVELLOCK_MOVE, SlotManager.Instance.getZoneId(), e.btnPlusBetPerLine.node, o) : le.default.openBetGuidePopup(le.BetGuideState.LEVELLOCK, SlotManager.Instance.getZoneId(), e.btnPlusBetPerLine.node, o),
-        // false)
+        var t = SlotManager.Instance.getZoneId();
+        if (SlotGameRuleManager.Instance.isCurrentBetPerLineMaxValue()) {
+            if (SlotManager.Instance.isJoinTourney())
+                return cc.log("slot tourney enter"),
+                false;
+            var n = SlotManager.Instance.getZoneId()
+                , o = SlotGameRuleManager.Instance.getNextIncreaseBetMoney();
+            return BetGuidePopup.openBetGuidePopup(BetGuideState.MAXBET_GO, n, e.btnPlusBetPerLine.node, o),
+            false
+        }
+        return !SDefine.LevelBettingLock_Flag || 0 != this.checkLevelBettingLock(t) || (o = SlotGameRuleManager.Instance.getNextIncreaseBetMoney(),
+        UserInfo.instance().isPassAbleCasino(SDefine.VIP_LOUNGE_ZONEID,SDefine.VIP_LOUNGE_ZONENAME) && UserInfo.instance().getTotalCoin() >= 15e6 && UserInfo.instance().getUserLevel() > 9 ? BetGuidePopup.openBetGuidePopup(BetGuideState.LEVELLOCK_MOVE, SlotManager.Instance.getZoneId(), e.btnPlusBetPerLine.node, o) : BetGuidePopup.openBetGuidePopup(BetGuideState.LEVELLOCK, SlotManager.Instance.getZoneId(), e.btnPlusBetPerLine.node, o),
+        false)
     }
     
     onAfterClickIncreaseTotalBet_BottomEX2 = function(e) {
@@ -2452,13 +2461,13 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onClickDecreaseTotalBet_BottomEX2 = function(e) {
-        // if (null != SlotGameRuleManager.Instance && SlotGameRuleManager.Instance.isCurrentBetPerLineMinValue()) {
-        //     var t = SlotManager.Instance.getZoneId()
-        //         , n = SlotManager.Instance.getZoneName();
-        //     if (t > 0)
-        //         return re.default.openBetLowerkPopup(t, n, e.btnPlusBetPerLine.node),
-        //         false
-        // }
+        if (null != SlotGameRuleManager.Instance && SlotGameRuleManager.Instance.isCurrentBetPerLineMinValue()) {
+            var t = SlotManager.Instance.getZoneId()
+                , n = SlotManager.Instance.getZoneName();
+            if (t > 0)
+                return Bet_LowerPopup.openBetLowerkPopup(t, n, e.btnPlusBetPerLine.node),
+                false
+        }
         return true
     }
     

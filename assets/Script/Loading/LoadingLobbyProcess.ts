@@ -44,20 +44,22 @@ export class L_GetBingoGameInfoState extends State {
 
     private doProcess(): void {
         const self = this;
-        CommonServer.Instance().requestBingoGameInfo(
-            UserInfo.instance().getUid(),
-            UserInfo.instance().getAccessToken(),
-            (response: any) => {
-                if (CommonServer.isServerResponseError(response)) {
-                    const error = new Error("L_GetBingoGameInfoState fail");
-                    FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
-                    self.setDone();
-                    return;
-                }
-                ServiceInfoManager.INFO_BINGO = response.bingoInfo;
-                self.setDone();
-            }
-        );
+        // CommonServer.Instance().requestBingoGameInfo(
+        //     UserInfo.instance().getUid(),
+        //     UserInfo.instance().getAccessToken(),
+        //     (response: any) => {
+        //         if (CommonServer.isServerResponseError(response)) {
+        //             const error = new Error("L_GetBingoGameInfoState fail");
+        //             FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
+        //             self.setDone();
+        //             return;
+        //         }
+        //         ServiceInfoManager.INFO_BINGO = response.bingoInfo;
+        //         self.setDone();
+        //     }
+        // );
+
+        self.setDone();
     }
 }
 
@@ -279,10 +281,10 @@ export default class LoadingLobbyProcess {
         let o = 0;
 
         state.insert(o, new L_LoadSlotToLobbyState(param1, param2));
-        state.insert(o, new L_RefreshUserInfoState());
-        state.insert(o, new L_RefreshJackpotState());
-        state.insert(o, new L_RefreshHeroInfoState());
-        state.insert(o, new L_GetBingoGameInfoState());
+        // state.insert(o, new L_RefreshUserInfoState());
+        // state.insert(o, new L_RefreshJackpotState());
+        // state.insert(o, new L_RefreshHeroInfoState());
+        // state.insert(o, new L_GetBingoGameInfoState());
         // if (SDefine.SlotTournament_Use) {
         //     state.insert(o, new L_GetSlotTourneyInfoState());
         // }

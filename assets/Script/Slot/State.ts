@@ -80,9 +80,12 @@ export class State {
 
     onStart(isSkip?: boolean): void {
         this._done = false;
-        if (null != isSkip && null != isSkip && this._flagCanSkipByBeforeStatesSkipFlag && isSkip) {
+        if(null != isSkip && null != isSkip && this._flagCanSkipByBeforeStatesSkipFlag && isSkip) {
             this._isSkip = true;
-            this._flagSkipActive && this.setDone();
+        }
+
+        if ( this._isSkip&&this._flagSkipActive){
+            this.setDone();
         } else {
             if (this._onStart) {
                 for (let i = 0; i < this._onStart.length; ++i) {
@@ -210,11 +213,17 @@ export class SequencialState extends State {
                 this._onStart[i]();
             }
         }
-        this.subStates.length <= this.curIdx
-            ? this.setDone()
-            : (null != isSkip && null != isSkip && this.flagCanSkipByBeforeStatesSkipFlag
-                ? this.subStates[this.curIdx].onStart(isSkip)
-                : this.subStates[this.curIdx].onStart());
+
+        if (this.subStates.length <= this.curIdx){
+            this.setDone()
+        }else{
+            if (null != isSkip && null != isSkip && this.flagCanSkipByBeforeStatesSkipFlag){
+                this.subStates[this.curIdx].onStart(isSkip)
+            }else{
+                this.subStates[this.curIdx].onStart();
+            }
+        }
+           
     }
 
     insert(order: number, state: State): void {
@@ -245,8 +254,10 @@ export class SequencialState extends State {
             ++this.curIdx;
             if (this.subStates.length <= this.curIdx) {
                 this.isSkip = isSkip;
-                return void this.setDone();
+                this.setDone();
+                return;
             }
+
             this.subStates[this.curIdx].onStart(isSkip);
         }
     }

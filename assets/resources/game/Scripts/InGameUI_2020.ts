@@ -310,7 +310,7 @@ export default class InGameUI_2020 extends cc.Component {
         ServiceInfoManager.NUMBER_CURRENT_GAUGE_EXP = UserInfo.instance().getUserLevelInfo().exp;
 
         // 分辨率适配
-        this.setUILayoutPostionByResolution();
+        // this.setUILayoutPostionByResolution();
 
         // // 卷轴任务UI初始化
         // if (!UserInfo.instance().isJoinTourney() && UserInfo.instance().getZoneName() !== SDefine.SUITE_ZONENAME) {
@@ -340,8 +340,8 @@ export default class InGameUI_2020 extends cc.Component {
         if (!UserInfo.instance()) return;
 
         // 检查启动时是否有等级提升道具
-        const boostItems = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.ITEM_LEVEL_UP_BOOSTER);
-        this._hasBoostItemWhenStart = boostItems.length > 0 && !boostItems[0].isExpire() && ServiceInfoManager.instance.getUserLevel() < 3;
+        // const boostItems = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.ITEM_LEVEL_UP_BOOSTER);
+        // this._hasBoostItemWhenStart = boostItems.length > 0 && !boostItems[0].isExpire() && ServiceInfoManager.instance.getUserLevel() < 3;
     }
 
     onDestroy(): void {
@@ -571,22 +571,22 @@ export default class InGameUI_2020 extends cc.Component {
         // 已领取奖励，检查等级提升道具
         if (this._isFirstLevelEffect) return;
 
-        const boostItems = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.ITEM_LEVEL_UP_BOOSTER);
-        let hasValidBoost = false;
+        // const boostItems = UserInfo.instance().getItemInventory().getItemsByItemId(SDefine.ITEM_LEVEL_UP_BOOSTER);
+        // let hasValidBoost = false;
         
-        if (boostItems.length > 0) {
-            const boostItem = boostItems[0];
-            if (!boostItem.isExpire()) {
-                hasValidBoost = true;
-                const multiplier = JSON.parse(boostItem.extraInfo).multiplier;
-                this.levelBoosterUI?.setBoosterInfo(multiplier);
-            }
-        }
+        // if (boostItems.length > 0) {
+        //     const boostItem = boostItems[0];
+        //     if (!boostItem.isExpire()) {
+        //         hasValidBoost = true;
+        //         const multiplier = JSON.parse(boostItem.extraInfo).multiplier;
+        //         this.levelBoosterUI?.setBoosterInfo(multiplier);
+        //     }
+        // }
 
-        // 更新等级UI显示
-        this.levelUI?.setOnOff(!hasValidBoost);
-        this.levelBoosterUI?.setOnOff(hasValidBoost);
-        this.refreshLevelUPPassUI(hasValidBoost);
+        // // 更新等级UI显示
+        // this.levelUI?.setOnOff(!hasValidBoost);
+        // this.levelBoosterUI?.setOnOff(hasValidBoost);
+        // this.refreshLevelUPPassUI(hasValidBoost);
     }
 
     /** 刷新等级通行证UI */

@@ -367,7 +367,7 @@ export default class Reel extends cc.Component {
                     const newSymbolNode = this.getSymbolNode(nextSymbolId, specialInfo);
                     if (TSUtility.isValid(this._getNextSpecialInfo)) {
                         const specialData = this._getNextSpecialInfo(SpecialType.FEVER);
-                        //TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
+                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
                     }
 
                     newSymbolNode.x = 0;
@@ -396,7 +396,7 @@ export default class Reel extends cc.Component {
                     const newSymbolNode = this.getSymbolNode(nextSymbolId, specialInfo);
                     TSUtility.isValid(this._getNextSpecialInfo) && (() => {
                         const specialData = this._getNextSpecialInfo();
-                        //TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
+                        TSUtility.isValid(specialData) && specialData.checkSpecialType(SpecialType.FEVER) && SlotManager.Instance.setSymbolSpecialInfo(newSymbolNode, this.symbolHeight);
                     })();
 
                     newSymbolNode.x = 0;

@@ -29,7 +29,7 @@ export default class L_RefreshJackpotState extends State {
     private async doProcess(): Promise<void> {
         try {
             // 调用用户信息模块 - 强制刷新Jackpot大奖信息
-            await UserInfo.instance().asyncRefreshJackpotInfo(true);
+            // await UserInfo.instance().asyncRefreshJackpotInfo(true);
             // 刷新成功，标记当前状态执行完成
             this.setDone();
         } catch (error) {

@@ -24,11 +24,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 34
+        "__id__": 35
+      },
+      {
+        "__id__": 36
       }
     ],
     "_prefab": {
-      "__id__": 35
+      "__id__": 37
     },
     "_opacity": 255,
     "_color": {
@@ -102,9 +105,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 33
+      }
+    ],
     "_prefab": {
-      "__id__": 33
+      "__id__": 34
     },
     "_opacity": 255,
     "_color": {
@@ -1245,6 +1252,25 @@
     "sync": false
   },
   {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "cf8abacc-5e1f-495b-a36d-ddf147a7f9dc"
+    },
+    "_clips": [
+      {
+        "__uuid__": "cf8abacc-5e1f-495b-a36d-ddf147a7f9dc"
+      }
+    ],
+    "playOnLoad": false,
+    "_id": ""
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -1333,6 +1359,49 @@
       "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
     },
     "_N$target": null,
+    "_id": ""
+  },
+  {
+    "__type__": "6dd30QOE+RIxr7meN2mdFSC",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "prefPowerGemSlot": {
+      "__uuid__": "8cb89725-23bc-4b6f-93af-57502ebf32ee"
+    },
+    "prefPowerGemToolTip": {
+      "__uuid__": "4e29bb55-97b2-43a0-b001-c412755c07df"
+    },
+    "prefPowerGemOpenToolTip": {
+      "__uuid__": "4b41eb8d-0720-4446-9bae-9ebf77d7f316"
+    },
+    "nodePowerGemSlotRoot": {
+      "__id__": 29
+    },
+    "nodePowerGemToolTipRoot": {
+      "__id__": 31
+    },
+    "nodeIcon_Dimmed": {
+      "__id__": 10
+    },
+    "nodeIcon_Bronze": {
+      "__id__": 16
+    },
+    "nodeIcon_Silver": {
+      "__id__": 19
+    },
+    "nodeIcon_Gold": {
+      "__id__": 22
+    },
+    "lblLevel": {
+      "__id__": 26
+    },
+    "lblDimLevel": {
+      "__id__": 12
+    },
     "_id": ""
   },
   {

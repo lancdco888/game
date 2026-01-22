@@ -462,7 +462,7 @@ export default class UserInfo extends cc.Component {
     private _firstPurchasePopInfo: any | null = null;
     private _location: string = "";
     private _gameId: string = "";
-    private _tourneyTier: number = -1;
+    private _tourneyTier: number = 0;
     private _tourneyID: number = 0;
     private _prevLocation: string = "";
     private _prevGameId: string = "";
@@ -659,9 +659,9 @@ export default class UserInfo extends cc.Component {
     //     this._tourneyTier = SlotTourneyManager.SlotTourneyTierType.INVALID;
     // }
 
-    // public getTourneyTier(): number {
-    //     return this._tourneyTier;
-    // }
+    public getTourneyTier(): number {
+        return this._tourneyTier;
+    }
 
     // public getTourneyId(): number {
     //     return this._tourneyID;
@@ -986,6 +986,10 @@ export default class UserInfo extends cc.Component {
         return this._totalCoin;//this._userInfo!.userAssetInfo!.totalCoin;
     }
 
+    public getUserLevel():number{
+        return 0;
+    }
+
     // public getPaidCoin(): number {
     //     return this._userInfo!.userAssetInfo!.paidCoin;
     // }
@@ -1197,17 +1201,17 @@ export default class UserInfo extends cc.Component {
     //     this._userInfo!.userMission!.updateUserMission(data);
     // }
 
-    // public addUserAssetMoney(val: number): void {
-    //     if (val > 0) ServiceInfoManager.instance().setIsIngAllInOffer(false);
-    //     const oldCoin = this._userInfo!.userAssetInfo!.totalCoin;
-    //     this._userInfo!.userAssetInfo!.totalCoin += val;
-    //     if (this._userInfo!.userAssetInfo!.totalCoin < 0) {
-    //         console.error(`addUserAssetMoney fail...${val.toString()} - ${oldCoin.toString()}`);
-    //         this._userInfo!.userAssetInfo!.totalCoin = 0;
-    //     }
-    //     this._userInfo!.userAssetInfo!.biggestTotalCoin = Math.max(this._userInfo!.userAssetInfo!.totalCoin, this._userInfo!.userAssetInfo!.biggestTotalCoin);
-    //     this._eventEmitter!.emit(MSG.UPDATE_ASSET, oldCoin);
-    // }
+    public addUserAssetMoney(val: number): void {
+        if (val > 0) ServiceInfoManager.instance.setIsIngAllInOffer(false);
+        const oldCoin = this._userInfo!.userAssetInfo!.totalCoin;
+        this._userInfo!.userAssetInfo!.totalCoin += val;
+        if (this._userInfo!.userAssetInfo!.totalCoin < 0) {
+            console.error(`addUserAssetMoney fail...${val.toString()} - ${oldCoin.toString()}`);
+            this._userInfo!.userAssetInfo!.totalCoin = 0;
+        }
+        this._userInfo!.userAssetInfo!.biggestTotalCoin = Math.max(this._userInfo!.userAssetInfo!.totalCoin, this._userInfo!.userAssetInfo!.biggestTotalCoin);
+        this._eventEmitter!.emit(MSG.UPDATE_ASSET, oldCoin);
+    }
 
     // public addUserAssetPaindMoney(val: number): void {
     //     const oldPaid = this._userInfo!.userAssetInfo!.paidCoin;

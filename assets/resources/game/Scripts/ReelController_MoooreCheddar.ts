@@ -298,7 +298,9 @@ export default class ReelController_MoooreCheddar extends ReelController_Base {
             resultSymbolInfoList,
             resultSpecialSymbolInfoList
         );
-        reelMoveState.addFrontOnStartCallback(() => {});
+        reelMoveState.addFrontOnStartCallback(() => {
+            console.log("addFrontOnStartCallback")
+        });
         reelMoveState.addOnEndCallback(() => {
             this.check_function && this.check_function(targetStopWindows);
         });

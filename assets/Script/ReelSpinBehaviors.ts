@@ -109,7 +109,7 @@ export default class ReelSpinBehaviors {
 
     // ===================== 普通模式 - 滚轮移动到目标符号列表(核心方法) =====================
     public getReelMoveStateWithLastSymbolListNew(reelCom: Reel, symbolList: any[], subGameKey: string, easingInfo: EasingInfo, symbolInfoList: any[] = null, specialInfoList: any[] = null): State {
-        const state = new State();
+        const state = new State("symbolnew");
         let action = null;
         let symbolIdx = 0;
         let infoIdx = 0;
@@ -799,7 +799,7 @@ export default class ReelSpinBehaviors {
                     reelCom.node.addChild(reelCom.symbolArray[i]);
                     reelCom.symbolArray[i].x = 0;
                     reelCom.symbolArray[i].y = (reelCom.visibleRow + 1) * reelCom.symbolHeight / 2;
-blankIdxList.push(i);
+                    blankIdxList.push(i);
                 }
             }
 

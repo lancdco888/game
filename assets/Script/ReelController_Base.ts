@@ -725,6 +725,7 @@ export default class ReelController_Base extends cc.Component {
     // ===================== 状态封装 - 滚轮移动至目标符号(含结束事件) =====================
     public getReelMoveStateWithLastSymbolList(reelCom: Reel, symbolList: any[], subGameKey: string, easingInfo: EasingInfo, symbolInfoList: any[] = null, specialInfoList: any[] = null): SequencialState {
         const seqState = new SequencialState();
+        seqState.name = "LastSymbolList"
         let idx = 0;
         seqState.insert(idx++, ReelSpinBehaviors.Instance.getReelMoveStateWithLastSymbolListNew(reelCom, symbolList, subGameKey, easingInfo, symbolInfoList, specialInfoList));
         seqState.insert(idx++, this.getSpinEndEventState());

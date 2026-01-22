@@ -181,7 +181,7 @@ export default class SlotManager extends cc.Component {
     private _isCheckTutorialItem: boolean = false;
     private _slotBaseBetPerSpinCnt: number = 0;
     public _scaleAdjuster: any = null;
-    private _isOpenMovePopup: boolean = false;
+    public _isOpenMovePopup: boolean = false;
     private _isloungeNewSlot: boolean = false;
     private _machineFrame: any = null;
     private _messageRoutingManager: any = null;
@@ -763,7 +763,7 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 处理跳过旋转的逻辑 =====================
     processSkipReel(): void {
-        // SlotSoundController.Instance().stopAudio("ReelExpect", "FX");
+        SlotSoundController.Instance().stopAudio("ReelExpect", "FX");
         this.reelMachine.hideAllExpectEffects();
     }
 
@@ -1152,56 +1152,56 @@ export default class SlotManager extends cc.Component {
 
     // ===================== 事件检查器 鼠标/键盘事件控制 =====================
     setActiveFlagKeyboardEvent(flag: boolean): void {
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) checker.isCheckKeyboardEvent = flag;
+        const checker = this.getComponent(EventChecker);
+        if (checker) checker.isCheckKeyboardEvent = flag;
     }
 
     setActiveFlagMouseEvent(flag: boolean): void {
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) checker.isCheckMouseEvent = flag;
+        const checker = this.getComponent(EventChecker);
+        if (checker) checker.isCheckMouseEvent = flag;
     }
 
     setMouseDragEventFlag(flag: boolean): void {
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) checker.mouseEventEnabled = flag;
+        const checker = this.getComponent(EventChecker);
+        if (checker) checker.mouseEventEnabled = flag;
     }
 
     getMouseDragEventFlag(): boolean {
         let flag = false;
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) flag = checker.mouseEventEnabled;
+        const checker = this.getComponent(EventChecker);
+        if (checker) flag = checker.mouseEventEnabled;
         return flag;
     }
 
     setKeyboardEventFlag(flag: boolean): void {
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) checker.keyboardEventEnabled = flag;
+        const checker = this.getComponent(EventChecker);
+        if (checker) checker.keyboardEventEnabled = flag;
     }
 
     getKeyboardEventFlag(): boolean {
         let flag = false;
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) flag = checker.keyboardEventEnabled;
+        const checker = this.getComponent(EventChecker);
+        if (checker) flag = checker.keyboardEventEnabled;
         return flag;
     }
 
     addEventListener(type: string, cb: Function): void {
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) checker.addListener(type, cb);
+        const checker = this.getComponent(EventChecker);
+        if (checker) checker.addListener(type, cb);
     }
 
     removeEventListener(type: string, cb: Function): void {
-        // const checker = this.getComponent(EventChecker);
-        // if (checker) checker.removeListener(type, cb);
+        const checker = this.getComponent(EventChecker);
+        if (checker) checker.removeListener(type, cb);
     }
 
     // ===================== 播放/停止滚轮旋转音效 =====================
     playReelSpinSound(): void {
-        // SlotSoundController.Instance().playAudio("ReelSpin", "FXLoop");
+        SlotSoundController.Instance().playAudio("ReelSpin", "FXLoop");
     }
 
     stopReelSpinSound(): void {
-        // SlotSoundController.Instance().stopAudio("ReelSpin", "FXLoop");
+        SlotSoundController.Instance().stopAudio("ReelSpin", "FXLoop");
     }
 
     showScatterRetriggerEffect(): number { return 0; }
@@ -1680,7 +1680,7 @@ export default class SlotManager extends cc.Component {
         return false;
     }
 
-    setSymbolSpecialInfo(type: number, list: cc.Vec2[]): void { this.slotInterface.setSymbolSpecialInfo(type, list); }
+    setSymbolSpecialInfo(type: any, list: any): void { this.slotInterface.setSymbolSpecialInfo(type, list); }
 
     // ===================== 提示框相关 =====================
     addSlotTooltip(key: string, cb: Function): void {

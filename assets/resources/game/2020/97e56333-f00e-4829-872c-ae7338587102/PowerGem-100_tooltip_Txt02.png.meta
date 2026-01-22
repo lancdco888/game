@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "195a9dfd-474d-47fd-9c57-8b3cce010703",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 314,
+  "height": 26,
+  "platformSettings": {},
+  "subMetas": {
+    "PowerGem-100_tooltip_Txt02": {
+      "ver": "1.0.6",
+      "uuid": "883d3c7f-d46a-40f6-bc46-a3303e33e1cc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "195a9dfd-474d-47fd-9c57-8b3cce010703",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 311,
+      "height": 23,
+      "rawWidth": 314,
+      "rawHeight": 26,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

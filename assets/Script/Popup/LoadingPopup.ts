@@ -100,19 +100,20 @@ export default class LoadingPopup extends DialogBase {
             : "Service/00_Loading/LoadingScene/LoadingPopup_Slot";
         
             cc.loader.loadRes(resPath, (err, prefab) => {
-            PopupManager.Instance().showDisplayProgress(false);
-            if (TSUtility.isValid(err)) {
-                const error = new Error(`cc.loader.loadRes fail ${resPath}: ${JSON.stringify(err)}`);
-                FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
-                callback(err, null);
-                return;
+                PopupManager.Instance().showDisplayProgress(false);
+                if (TSUtility.isValid(err)) {
+                    const error = new Error(`cc.loader.loadRes fail ${resPath}: ${JSON.stringify(err)}`);
+                    FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, error));
+                    callback(err, null);
+                    return;
+                }
+                const node = cc.instantiate(prefab);
+                const popupComp = node.getComponent(LoadingPopup);
+                node.active = false;
+                popupComp!._loadingBGType = bgType;
+                callback(null, popupComp!);
             }
-            const node = cc.instantiate(prefab);
-            const popupComp = node.getComponent(LoadingPopup);
-            node.active = false;
-            popupComp!._loadingBGType = bgType;
-            callback(null, popupComp!);
-        });
+        );
     }
 
     /**
@@ -215,6 +216,7 @@ export default class LoadingPopup extends DialogBase {
         if (LoadingPopup.s_pop === null) {
             this._open(null, false, null);
             this.reset();
+
             // 调试标记：是否隐藏弹窗
             this.node.active = SDefine.Use_LoadingPopup_Debug_Flag ? false : true;
             LoadingPopup.setLoadingPopup(this);
@@ -395,6 +397,7 @@ export default class LoadingPopup extends DialogBase {
                 this.nodeBG.active = true;
                 this.setPreProgress(1, "Loading ...", true);
             }
+
         });
     }
 

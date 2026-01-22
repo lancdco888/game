@@ -27,7 +27,7 @@ export default class L_RefreshHeroInfoState extends State {
     private async doProcess(): Promise<void> {
         try {
             // 调用用户信息单例 异步刷新英雄数据
-            await UserInfo.instance().asyncRefreshHeroInfo();
+            // await UserInfo.instance().asyncRefreshHeroInfo();
             // 数据刷新成功，标记当前状态执行完成
             this.setDone();
         } catch (error) {

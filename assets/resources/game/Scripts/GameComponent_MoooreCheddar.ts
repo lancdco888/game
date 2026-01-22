@@ -124,7 +124,7 @@ export default class GameComponent_MoooreCheddar extends GameComponents_Base {
         this.node.off("openPickBonus");
         this.node.off("sendPickBonus");
         this.node.off("setExplaneNode");
-        super.onDestroy();
+        // super.onDestroy();
     }
 
     // ================= 弹窗控制逻辑 =================

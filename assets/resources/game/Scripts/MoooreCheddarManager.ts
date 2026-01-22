@@ -108,16 +108,51 @@ export default class MoooreCheddarManager extends SlotManager {
         // HRVSlotService.createInstance()
         // HRVSlotService.instance().init(SlotManager.Instance);
         // this.scheduleOnce(async ()=>{
-        //     // await this.asyncLoadInGameUI()
-        //     // await HRVSlotService.instance().onInitSlotGameProcess()
-        //     // await HRVSlotService.instance().onInit()
-        //     // this.asyncSceneLoadEffect()
+        //     await this.asyncLoadInGameUI()
+        //     await HRVSlotService.instance().onInitSlotGameProcess()
+        //     await HRVSlotService.instance().onInit()
+        //     this.asyncSceneLoadEffect()
         // },1)
    
 
     }
 
+    asyncLoadInGameUI(){
+        return new Promise<boolean>((resolve) => {
+            // 1. 加载IngameUI预制体（指定类型为Prefab，提升类型安全）
+            cc.loader.loadRes(
+                "game/2020/game/InGameUI_2020",
+                cc.Prefab,
+                (err: Error, prefab: cc.Prefab) => {
+                    // 2. 加载失败处理：记录异常并发送到FireHose
+                    if (err) {
+                        const errorObj = new Error(
+                            `cc.loader.loadRes fail asyncLoadInGameUI: ${JSON.stringify(err)}`
+                        );
+                        cc.error(errorObj.message); // Cocos TS 标准日志输出
+                        
+                        // // 发送异常日志到AWS FireHose
+                        // FireHoseSender.Instance().sendAws(
+                        //     FireHoseSender.Instance().getRecord(
+                        //         FireHoseSender.FHLogType.Exception,
+                        //         errorObj
+                        //     )
+                        // );
+                        resolve(false);
+                        return;
+                    }
 
+                    // 3. 加载成功处理：实例化预制体并获取组件
+                    const uiNode = cc.instantiate(prefab);
+                    const ingameUI = uiNode.getComponent(InGameUI_2020);
+                    
+                    // 4. 将UI组件赋值给全局管理器单例
+                    SlotManager.Instance.ingameUI = ingameUI;
+                    resolve(true);
+                }
+            );
+        });
+    }
 
     /**
      * 组件销毁清理
@@ -152,11 +187,11 @@ export default class MoooreCheddarManager extends SlotManager {
      */
     playMainBgm(): void {
         const nextSubGameKey = SlotGameResultManager.Instance.getNextSubGameKey();
-        // if (nextSubGameKey.includes("bonus")) {
-        //     SlotSoundController.Instance().playAudio("bonus", "BGM");
-        // } else {
-        //     SlotSoundController.Instance().playAudio(nextSubGameKey, "BGM");
-        // }
+        if (nextSubGameKey.includes("bonus")) {
+            SlotSoundController.Instance().playAudio("bonus", "BGM");
+        } else {
+            SlotSoundController.Instance().playAudio(nextSubGameKey, "BGM");
+        }
     }
 
     /**
