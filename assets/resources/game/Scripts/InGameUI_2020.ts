@@ -310,7 +310,7 @@ export default class InGameUI_2020 extends cc.Component {
         ServiceInfoManager.NUMBER_CURRENT_GAUGE_EXP = UserInfo.instance().getUserLevelInfo().exp;
 
         // 分辨率适配
-        // this.setUILayoutPostionByResolution();
+        this.setUILayoutPostionByResolution();
 
         // // 卷轴任务UI初始化
         // if (!UserInfo.instance().isJoinTourney() && UserInfo.instance().getZoneName() !== SDefine.SUITE_ZONENAME) {
