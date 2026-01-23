@@ -64,7 +64,7 @@ export default class SubGameStateManager_MoooreCheddar extends SubGameStateManag
         this.pre_pot += value;
     }
 
-    setManager(slotManager: SlotManager, node: cc.Node, aniTime: number): void {
+    setManager(slotManager: SlotManager, node: any, aniTime: number): void {
         this.game_manager = slotManager;
         this.game_animation_time = aniTime;
         this.utility_component = new UtilityStateComponent(this.game_manager, node);

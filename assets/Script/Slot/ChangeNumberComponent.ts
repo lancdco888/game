@@ -1,7 +1,7 @@
 const { ccclass, property } = cc._decorator;
 import CurrencyFormatHelper from "../global_utility/CurrencyFormatHelper";
-// ✅ 保留原代码全局挂载的Utility对象调用，项目中已全局声明无需导入
-declare const Utility: any;
+import { Utility } from "../global_utility/Utility";
+
 
 @ccclass
 export default class ChangeNumberComponent extends cc.Component {

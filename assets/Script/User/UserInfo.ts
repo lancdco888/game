@@ -488,6 +488,7 @@ export default class UserInfo extends cc.Component {
     public refreshJackpotCheckTime: number = 0;
     private _onAppsflyerConversionDataCallback: Function | null = null;
     public _totalCoin = 10000000000;
+    public _vipLevel = 0;
 
     public static instance(): UserInfo | null {
         return UserInfo._instance;
@@ -987,7 +988,7 @@ export default class UserInfo extends cc.Component {
     }
 
     public getUserLevel():number{
-        return 0;
+        return this._vipLevel;
     }
 
     // public getPaidCoin(): number {

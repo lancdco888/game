@@ -77,7 +77,7 @@ export default class MoooreCheddarManager extends SlotManager {
         // 初始化游戏组件和子游戏状态
         this.game_components = this.node.getComponent(GameComponent_MoooreCheddar);
         this.subgame_state = new SubGameStateManager_MoooreCheddar();
-        this.subgame_state.setManager(this, this.game_components.node, this.getAnimationTime());
+        this.subgame_state.setManager(this, this.game_components, this.getAnimationTime());
 
         // 绑定收集特效动画结束事件
         const collectAni = this.collect_effect.getComponentInChildren(cc.Animation);

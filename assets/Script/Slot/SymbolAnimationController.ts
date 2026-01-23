@@ -80,7 +80,7 @@ export default class SymbolAnimationController extends cc.Component {
 
         // 获取符号世界坐标并转换为动画层本地坐标
         const globalPos = targetReelMachine.reels[col].getComponent(Reel)!.getGlobalPosition(row);
-        aniNode.position = TSUtility.vec2ToVec3(this.animationLayer.convertToNodeSpace(globalPos));
+        aniNode.position = TSUtility.vec2ToVec3(this.animationLayer.convertToNodeSpaceAR(globalPos));
 
         // 播放动画 - 优先SymbolAni组件 其次原生Animation组件
         const symbolAniCom = aniNode.getComponent(SymbolAni)!;
