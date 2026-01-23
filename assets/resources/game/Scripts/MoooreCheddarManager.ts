@@ -542,7 +542,7 @@ export default class MoooreCheddarManager extends SlotManager {
         const lastWindows = SlotGameResultManager.Instance.getLastHistoryWindows();
         const resultSymbols = SlotGameResultManager.Instance.getResultSymbolInfoArray();
         const processReel = (reelIdx: number) => {
-            const reelComp = SlotManager.reelMachine.reels[reelIdx].getComponent(Reel);
+            const reelComp = SlotManager.Instance.reelMachine.reels[reelIdx].getComponent(Reel);
             const window = lastWindows.GetWindow(reelIdx);
 
             const processSymbol = (symbolIdx: number) => {

@@ -691,4 +691,14 @@ export default class TSUtility {
         if (!TSUtility.isValid(texture)) return null;
         return new cc.SpriteFrame(texture);
     }
+
+    public static  preprocessJson(jsonStr: string): string {
+        if (typeof jsonStr !== "string") return "";
+        return jsonStr
+            .trim() // 去除首尾空格
+            .replace(/[\u0000-\u001F]/g, "") // 移除不可见控制字符
+            .replace(/,\s*}/g, "}") // 移除对象末尾多余逗号（如 {"a":1,} → {"a":1}）
+            .replace(/,\s*]/g, "]"); // 移除数组末尾多余逗号（如 [1,2,] → [1,2]）
+    }
+    
 }

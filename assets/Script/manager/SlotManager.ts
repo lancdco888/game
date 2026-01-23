@@ -213,7 +213,6 @@ export default class SlotManager extends cc.Component {
     public _special_ignore_symbolId: any;
     public _listSlotTooltip: any;
     public _symbol_width: number;
-    static reelMachine: any;
     static SlotManager: any;
     ingameUI: any;
 

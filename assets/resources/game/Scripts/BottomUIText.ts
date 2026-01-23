@@ -31,43 +31,43 @@ export enum BottomTextType {
 export default class BottomUIText extends cc.Component {
     // ================= 可序列化属性（编辑器面板配置） =================
     @property(cc.Node)
-    public rootTextInfo: cc.Node | null = null; // 底部文本根节点（用于缩放适配）
+    public rootTextInfo: cc.Node = null; // 底部文本根节点（用于缩放适配）
 
     @property(cc.Label)
-    public totalBetMoney: cc.Label | null = null; // 总投注金额标签
+    public totalBetMoney: cc.Label = null; // 总投注金额标签
 
     @property(cc.Node)
-    public totalBetCaption: cc.Node | null = null; // 总投注标题节点
+    public totalBetCaption: cc.Node = null; // 总投注标题节点
 
     @property(cc.Node)
-    public averagebetNode: cc.Node | null = null; // 平均投注节点
+    public averagebetNode: cc.Node = null; // 平均投注节点
 
     @property(cc.Label)
-    public totalMoney: cc.Label | null = null; // 总金币标签
+    public totalMoney: cc.Label = null; // 总金币标签
 
     @property(cc.Label)
-    public winMoney: cc.Label | null = null; // 胜利金额标签
+    public winMoney: cc.Label = null; // 胜利金额标签
 
     @property(cc.Label)
-    public winText: cc.Label | null = null; // 胜利文本标签（如WELCOME/GOOD LUCK）
+    public winText: cc.Label = null; // 胜利文本标签（如WELCOME/GOOD LUCK）
 
     @property(cc.Label)
-    public linePays: cc.Label | null = null; // 线路奖金标签
+    public linePays: cc.Label = null; // 线路奖金标签
 
     @property(cc.Node)
-    public winCaption: cc.Node | null = null; // 胜利标题节点
+    public winCaption: cc.Node = null; // 胜利标题节点
 
     @property(cc.Node)
-    public winEffect: cc.Node | null = null; // 胜利特效节点
+    public winEffect: cc.Node = null; // 胜利特效节点
 
     @property(cc.Label)
-    public bottomTextInfo: cc.Label | null = null; // 底部信息文本标签
+    public bottomTextInfo: cc.Label = null; // 底部信息文本标签
 
     @property()
     public useEllipsisTotalBet: boolean = false; // 是否使用省略格式显示总投注
 
     @property(cc.Sprite)
-    public winImg: cc.Sprite | null = null; // 胜利图标
+    public winImg: cc.Sprite = null; // 胜利图标
 
     @property()
     public winMoneyUseCenter: boolean = false; // 胜利金额是否居中显示
@@ -76,13 +76,13 @@ export default class BottomUIText extends cc.Component {
     public coinTargetBigWinEffectInFreespin: cc.Node | null = null; // 免费旋转大胜利金币特效目标
 
     @property(cc.Node)
-    public winDisplayAni_1: cc.Node | null = null; // 胜利显示动画1
+    public winDisplayAni_1: cc.Node = null; // 胜利显示动画1
 
     @property(cc.Node)
-    public winDisplayAni_2: cc.Node | null = null; // 胜利显示动画2
+    public winDisplayAni_2: cc.Node = null; // 胜利显示动画2
 
     @property(cc.Animation)
-    public coinEffectOfWinCoinArea: cc.Animation | null = null; // 胜利区域金币特效动画
+    public coinEffectOfWinCoinArea: cc.Animation = null; // 胜利区域金币特效动画
 
     @property
     public isControlWinMoneyLabelPosition: boolean = true; // 是否控制胜利金额标签位置
