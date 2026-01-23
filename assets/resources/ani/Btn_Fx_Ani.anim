@@ -1,0 +1,80 @@
+{
+  "_name": "Btn_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "gradationLight_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 1,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 3,
+              "value": 1
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -120
+            },
+            {
+              "frame": 0.5,
+              "value": -120,
+              "curve": [
+                0.2982771535580524,
+                -0.011704119850187267,
+                0.6970411985018726,
+                1
+              ]
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 120
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,34 @@
+{
+  "_name": "BonusGame_Start_Title_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Mask/Gra": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -360,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 360
+            },
+            {
+              "frame": 5,
+              "value": 360
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
