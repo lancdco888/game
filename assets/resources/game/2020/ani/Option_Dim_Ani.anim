@@ -1,73 +1,71 @@
 {
-  "__type__": "cc.AnimationClip",
-  "_name": "Common_Win_Popup_Ani_Open_Btn",
+  "_name": "Option_Dim_Ani",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 2,
+  "_duration": 0.3333333333333333,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "Btn": {
+      "Glow": {
         "props": {
           "opacity": [
             {
               "frame": 0,
-              "value": 255
+              "value": 1
             }
           ],
-          "y": [
-            {
-              "frame": 2,
-              "value": -20
-            }
-          ]
-        }
-      },
-      "Btn/Btn_Skip": {
-        "props": {
           "active": [
             {
               "frame": 0,
-              "value": true
+              "value": false
             }
           ]
         }
       },
-      "Btn/Btn_Collect": {
+      "Add": {
         "props": {
           "active": [
             {
               "frame": 0,
               "value": false
-            },
-            {
-              "frame": 2,
-              "value": true
             }
           ]
         }
       },
-      "Btn/Btn_Share": {
+      "Base": {
         "props": {
-          "opacity": [
+          "color": [
             {
               "frame": 0,
-              "value": 0
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4284900966
+              }
             }
           ]
         }
       }
     },
     "props": {
-      "opacity": [
+      "scale": [
         {
           "frame": 0,
-          "value": 255
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
         }
       ]
     }
   },
-  "events": []
+  "events": [],
+  "__type__": "cc.AnimationClip"
 }

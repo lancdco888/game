@@ -452,7 +452,6 @@ export default class SubGameStateManager_MoooreCheddar extends SubGameStateManag
                 let isFirstPlay = false;
                 const highSymbolData = [self.PrePot, self.PreJackpotType, self.PreJackpotValue, self.PreJackpotCount];
 
-                var self = this;
                 const lineEffectCb = cc.callFunc(() => {
                     if (SlotManager.Instance.paylineRenderer) SlotManager.Instance.paylineRenderer.clearAll();
                     SymbolAnimationController.Instance.stopAllAnimationSymbol();

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "178f3432-293c-49b3-81b9-119b3863de1e",
+  "uuid": "067f7eaf-85f5-4e47-868e-130adc68caa1",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -8,15 +8,15 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
-  "width": 562,
-  "height": 114,
+  "width": 52,
+  "height": 84,
   "platformSettings": {},
   "subMetas": {
-    "UI-50_BG_WinCoin": {
+    "Btn-100_Popup_Green_Pressed": {
       "ver": "1.0.6",
-      "uuid": "e42a49fd-7599-47f8-abe4-ec85188476ef",
+      "uuid": "b08d21b9-ba95-41a0-b25f-27a74c5d5b74",
       "importer": "sprite-frame",
-      "rawTextureUuid": "178f3432-293c-49b3-81b9-119b3863de1e",
+      "rawTextureUuid": "067f7eaf-85f5-4e47-868e-130adc68caa1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -24,14 +24,14 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 562,
-      "height": 114,
-      "rawWidth": 562,
-      "rawHeight": 114,
-      "borderTop": 57,
-      "borderBottom": 57,
-      "borderLeft": 281,
-      "borderRight": 281,
+      "width": 52,
+      "height": 84,
+      "rawWidth": 52,
+      "rawHeight": 84,
+      "borderTop": 42,
+      "borderBottom": 42,
+      "borderLeft": 26,
+      "borderRight": 26,
       "subMetas": {}
     }
   }

@@ -329,9 +329,10 @@ export default class SlotGameResultManager extends cc.Component {
         let winCoin = this.getTotalWinMoney();
         if (cc.isValid(customWin)) winCoin = customWin;
 
-        // if (winCoin >= 30 * totalBet) return SlotGameResultManager.WINSTATE_ULTRA;
-        // if (winCoin >= 20 * totalBet) return SlotGameResultManager.WINSTATE_MEGA;
-        // if (winCoin >= 10 * totalBet) return SlotGameResultManager.WINSTATE_BIG;
+        if (winCoin >= 30 * totalBet) return SlotGameResultManager.WINSTATE_ULTRA;
+        if (winCoin >= 20 * totalBet) return SlotGameResultManager.WINSTATE_MEGA;
+        if (winCoin >= 10 * totalBet) return SlotGameResultManager.WINSTATE_BIG;
+
         return SlotGameResultManager.WINSTATE_NORMAL;
     }
 
@@ -339,9 +340,10 @@ export default class SlotGameResultManager extends cc.Component {
         let winCoin = this.getTotalWinMoney();
         if (cc.isValid(customWin)) winCoin = customWin;
 
-        // if (winCoin >= 30 * totalBet) return SlotGameResultManager.WINSTATE_ULTRA;
-        // if (winCoin >= 20 * totalBet) return SlotGameResultManager.WINSTATE_MEGA;
-        // if (winCoin >= 10 * totalBet) return SlotGameResultManager.WINSTATE_BIG;
+        if (winCoin >= 30 * totalBet) return SlotGameResultManager.WINSTATE_ULTRA;
+        if (winCoin >= 20 * totalBet) return SlotGameResultManager.WINSTATE_MEGA;
+        if (winCoin >= 10 * totalBet) return SlotGameResultManager.WINSTATE_BIG;
+        
         return SlotGameResultManager.WINSTATE_NORMAL;
     }
 

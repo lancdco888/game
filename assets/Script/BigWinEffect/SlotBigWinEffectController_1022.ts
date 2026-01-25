@@ -84,9 +84,9 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     @property(cc.Node)
     private nodeBlock: cc.Node = null!;
 
-    // ===================== 【编辑器绑定-自定义业务组件】 =====================
-    @property(PowerGemWinEffect)
-    private powerGemWinEffect: PowerGemWinEffect = null!;
+    // // ===================== 【编辑器绑定-自定义业务组件】 =====================
+    // @property(PowerGemWinEffect)
+    // private powerGemWinEffect: PowerGemWinEffect = null!;
 
     // ===================== 【私有业务状态属性】 =====================
     private _earnMoney: number = 0;
@@ -100,8 +100,8 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     private _lastWatchedBotPopupTime: number = 0;
     private _exceptStopSymbolList: number[] = [];
     private _isEnableShareasync: boolean = true;
-	private _isPlayExplodeCoin: boolean = true;
-	private _isStartEndProcess: boolean = false;
+    private _isPlayExplodeCoin: boolean = true;
+    private _isStartEndProcess: boolean = false;
 
     // ===================== 【生命周期函数】 =====================
     onLoad(): void {
@@ -160,11 +160,11 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.instant_collect_Btn.interactable = false;
         this.instant_close_Btn.interactable = false;
         this.btnCollect.interactable = false;
-        this.powerGemWinEffect.node.active = false;
+        // this.powerGemWinEffect.node.active = false;
     }
 
     private stopSymbolAni(): void {
-        this._exceptStopSymbolList.length === 0 
+        this._exceptStopSymbolList.length === 0
             ? SymbolAnimationController.Instance.stopAllAnimationSymbol()
             : SymbolAnimationController.Instance.stopAllAnimationSymbolExceptList(this._exceptStopSymbolList);
     }
@@ -251,17 +251,17 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this._isOverBigWin = false;
 
         if (earnMoney < 5 * totalBet) { this.handleSmallWin(callback); return 0; }
-        else if (earnMoney >=5*totalBet && earnMoney <10*totalBet) { duration=3; winLv=1; }
-        else if (earnMoney >=10*totalBet && earnMoney <20*totalBet) { duration=earnMoney<13*totalBet?4:earnMoney<16*totalBet?5:6; this._isOverBigWin=true; winLv=2; }
-        else if (earnMoney >=20*totalBet && earnMoney <30*totalBet) { duration=earnMoney<22*totalBet?7.2:earnMoney<24*totalBet?8.4:earnMoney<27*totalBet?9.6:10.8; this._isOverBigWin=true; winLv=3; }
-        else if (earnMoney >=30*totalBet && earnMoney <50*totalBet) { duration=earnMoney<40*totalBet?12:13.4; this._isOverBigWin=true; winLv=4; }
-        else { this._isOverBigWin=true; this._isEpicWin=true; duration=14.6; winLv=5; }
+        else if (earnMoney >= 5 * totalBet && earnMoney < 10 * totalBet) { duration = 3; winLv = 1; }
+        else if (earnMoney >= 10 * totalBet && earnMoney < 20 * totalBet) { duration = earnMoney < 13 * totalBet ? 4 : earnMoney < 16 * totalBet ? 5 : 6; this._isOverBigWin = true; winLv = 2; }
+        else if (earnMoney >= 20 * totalBet && earnMoney < 30 * totalBet) { duration = earnMoney < 22 * totalBet ? 7.2 : earnMoney < 24 * totalBet ? 8.4 : earnMoney < 27 * totalBet ? 9.6 : 10.8; this._isOverBigWin = true; winLv = 3; }
+        else if (earnMoney >= 30 * totalBet && earnMoney < 50 * totalBet) { duration = earnMoney < 40 * totalBet ? 12 : 13.4; this._isOverBigWin = true; winLv = 4; }
+        else { this._isOverBigWin = true; this._isEpicWin = true; duration = 14.6; winLv = 5; }
 
         const isShareAble = this.checkShareAble(winLv);
-        const isHighWin = [2,3,4,5].includes(winLv);
+        const isHighWin = [2, 3, 4, 5].includes(winLv);
         SlotManager.Instance.bigWinEffectInterface.onPlayEffect_BigWinEffect(this, isHighWin, duration);
         this.switchMoneyBg(earnMoney);
-        
+
         SlotManager.Instance.setMouseDragEventFlag(false);
         this.fnCallback = callback;
         this.dimmObject.active = true;
@@ -273,10 +273,10 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.labelWinMoney.node.scale = 1;
         this.labelWinMoney.playChangeNumber(startNum, earnMoney, null, duration);
 
-        if (SlotManager.Instance.bigWinEffectInterface.isPlayPowerGemWinEffect(this, winLv, totalBet)) {
-            this.winCoinsAnimation.node.setPosition(0,20);
-            this.powerGemWinEffect.playPowerGemWinEffect_Step1(duration, earnMoney/totalBet);
-        }
+        // if (SlotManager.Instance.bigWinEffectInterface.isPlayPowerGemWinEffect(this, winLv, totalBet)) {
+        //     this.winCoinsAnimation.node.setPosition(0, 20);
+        //     // this.powerGemWinEffect.playPowerGemWinEffect_Step1(duration, earnMoney / totalBet);
+        // }
 
         SoundManager.Instance().setMainVolumeTemporarily(0.1);
         return duration;
@@ -297,22 +297,29 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this._totalBet = totalBet;
         this.winCoin.opacity = 0;
 
-        let duration =0, winLv=0;
+        let duration = 0, winLv = 0;
         this._isEpicWin = false;
         this._isOverBigWin = false;
 
-        if (earnMoney <5*totalBet) { this.handleSmallWin(callback); return 0; }
-        else if (earnMoney >=5*totalBet && earnMoney <10*totalBet) { duration=3; winLv=1; }
-        else if (earnMoney >=10*totalBet && earnMoney <20*totalBet) { duration=earnMoney<13*totalBet?4:earnMoney<16*totalBet?5:6; this._isOverBigWin=true; winLv=2; }
-        else if (earnMoney >=20*totalBet && earnMoney <30*totalBet) { duration=earnMoney<22*totalBet?7.2:earnMoney<24*totalBet?8.4:earnMoney<27*totalBet?9.6:10.8; this._isOverBigWin=true; winLv=3; }
-        else if (earnMoney >=30*totalBet && earnMoney <50*totalBet) { duration=earnMoney<40*totalBet?12:13.4; this._isOverBigWin=true; winLv=4; }
-        else { this._isOverBigWin=true; this._isEpicWin=true; duration=14.6; winLv=5; }
+        if (earnMoney < 5 * totalBet) { 
+            this.handleSmallWin(callback); return 0; 
+        }else if (earnMoney >= 5 * totalBet && earnMoney < 10 * totalBet) {
+            duration = 3; winLv = 1; 
+        }else if (earnMoney >= 10 * totalBet && earnMoney < 20 * totalBet) { 
+            duration = earnMoney < 13 * totalBet ? 4 : earnMoney < 16 * totalBet ? 5 : 6; this._isOverBigWin = true; winLv = 2; 
+        }else if (earnMoney >= 20 * totalBet && earnMoney < 30 * totalBet) { 
+            duration = earnMoney < 22 * totalBet ? 7.2 : earnMoney < 24 * totalBet ? 8.4 : earnMoney < 27 * totalBet ? 9.6 : 10.8; this._isOverBigWin = true; winLv = 3; 
+        }else if (earnMoney >= 30 * totalBet && earnMoney < 50 * totalBet) { 
+            duration = earnMoney < 40 * totalBet ? 12 : 13.4; this._isOverBigWin = true; winLv = 4; 
+        }else { 
+            this._isOverBigWin = true; this._isEpicWin = true; duration = 14.6; winLv = 5; 
+        }
 
         const isShareAble = this.checkShareAble(winLv);
-        const isHighWin = [2,3,4,5].includes(winLv);
+        const isHighWin = [2, 3, 4, 5].includes(winLv);
         SlotManager.Instance.bigWinEffectInterface.onPlayEffect_BigWinEffect(this, isHighWin, duration);
         this.switchMoneyBg(earnMoney);
-        
+
         SlotManager.Instance.setMouseDragEventFlag(false);
         this.fnCallback = callback;
         this.dimmObject.active = true;
@@ -326,8 +333,8 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.labelWinMoney.playChangeNumber(startNumber, earnMoney, null, duration);
 
         if (SlotManager.Instance.bigWinEffectInterface.isPlayPowerGemWinEffect(this, winLv, totalBet)) {
-            this.winCoinsAnimation.node.setPosition(0,20);
-            this.powerGemWinEffect.playPowerGemWinEffect_Step1(duration, earnMoney/totalBet);
+            this.winCoinsAnimation.node.setPosition(0, 20);
+            // this.powerGemWinEffect.playPowerGemWinEffect_Step1(duration, earnMoney / totalBet);
         }
 
         SoundManager.Instance().setMainVolumeTemporarily(0.1);
@@ -349,21 +356,21 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this._totalBet = totalBet;
         this.winCoin.opacity = 0;
 
-        let winLv =0;
+        let winLv = 0;
         this._isEpicWin = false;
         this._isOverBigWin = false;
 
-        if (earnMoney <5*totalBet) { this.handleSmallWin(callback); return; }
-        else if (earnMoney >=10*totalBet && earnMoney <20*totalBet) { this._isOverBigWin=true; winLv=2; }
-        else if (earnMoney >=20*totalBet && earnMoney <30*totalBet) { this._isOverBigWin=true; winLv=3; }
-        else if (earnMoney >=30*totalBet && earnMoney <50*totalBet) { this._isOverBigWin=true; winLv=4; }
-        else { this._isOverBigWin=true; this._isEpicWin=true; winLv=5; }
+        if (earnMoney < 5 * totalBet) { this.handleSmallWin(callback); return; }
+        else if (earnMoney >= 10 * totalBet && earnMoney < 20 * totalBet) { this._isOverBigWin = true; winLv = 2; }
+        else if (earnMoney >= 20 * totalBet && earnMoney < 30 * totalBet) { this._isOverBigWin = true; winLv = 3; }
+        else if (earnMoney >= 30 * totalBet && earnMoney < 50 * totalBet) { this._isOverBigWin = true; winLv = 4; }
+        else { this._isOverBigWin = true; this._isEpicWin = true; winLv = 5; }
 
         const isShareAble = this.checkShareAble(winLv);
-        const isHighWin = [2,3,4,5].includes(winLv);
+        const isHighWin = [2, 3, 4, 5].includes(winLv);
         SlotManager.Instance.bigWinEffectInterface.onPlayEffect_BigWinEffect(this, isHighWin, 0);
         this.switchMoneyBg(earnMoney);
-        
+
         SlotManager.Instance.setMouseDragEventFlag(false);
         this.fnCallback = callback;
         this.dimmObject.active = true;
@@ -371,32 +378,45 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.node.runAction(cc.callFunc(() => {
             SlotSoundController.Instance().playAudio("MegaWin", "FXLoop");
             SlotSoundController.Instance().stopAudio("IncrementCoin", "FXLoop");
-            
-            const {aniNode, bgAniName} = this.getWinAniConfig(winLv);
+
+            const { aniNode, bgAniName } = this.getWinAniConfig(winLv);
             this.txtAdd.opacity = 0;
             this.winCoin.scale = 0.9;
             this.winCoinAdd.opacity = 0;
             this.fxUnder.opacity = 0;
 
-            this.bgAni.stop();this.bgAni.play(bgAniName);this.bgAni.node.active = true;
-            aniNode.stop();aniNode.play("Common_Win_Popup_Ani_Open_Txt");aniNode.node.active = true;
-            this.textOverAni.stop();this.textOverAni.play("Common_Win_Popup_Ani_Open_Fx_Txt_Over");this.textOverAni.node.active = true;
+            this.bgAni.stop(); 
+            this.bgAni.play(bgAniName); 
+            this.bgAni.node.active = true;
+            aniNode.stop(); 
+            aniNode.play("Common_Win_Popup_Ani_Open_Txt"); 
+            aniNode.node.active = true;
+            this.textOverAni.stop(); 
+            this.textOverAni.play("Common_Win_Popup_Ani_Open_Fx_Txt_Over"); 
+            this.textOverAni.node.active = true;
 
             if (isShareAble) {
-                this.instant_buttonAni.stop();this.instant_buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
-                this.instant_buttonAni.node.active = true;this.buttonAni.node.active = false;
+                this.instant_buttonAni.stop(); 
+                this.instant_buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
+                this.instant_buttonAni.node.active = true; 
+                this.buttonAni.node.active = false;
             } else {
-                this.buttonAni.stop();this.buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
-                this.buttonAni.node.active = true;this.instant_buttonAni.node.active = false;
+                this.buttonAni.stop(); 
+                this.buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
+                this.buttonAni.node.active = true; 
+                this.instant_buttonAni.node.active = false;
             }
 
             this.btnSkip.interactable = true;
             this.instant_btnSkip.interactable = true;
             this.winCoinsAnimation.node.active = false;
-            this.winCoinsAnimation.stop();this.winCoinsAnimation.play("Common_Win_Popup_WinCoins_Open");
-            this.winCoinsAnimation.node.active = true;this.winCoinsAnimation.node.setPosition(0,0);
-            
-            this.commonFXAnimation.stop();this.commonFXAnimation.node.active = false;
+            this.winCoinsAnimation.stop(); 
+            this.winCoinsAnimation.play("Common_Win_Popup_WinCoins_Open");
+            this.winCoinsAnimation.node.active = true; 
+            this.winCoinsAnimation.node.setPosition(0, 0);
+
+            this.commonFXAnimation.stop(); 
+            this.commonFXAnimation.node.active = false;
             this.commonFXAnimation.play("Common_Win_Popup_Ani_Open");
         }));
 
@@ -405,8 +425,8 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.labelWinMoney.setNumber(earnMoney);
 
         if (SlotManager.Instance.bigWinEffectInterface.isPlayPowerGemWinEffect(this, winLv, totalBet)) {
-            this.winCoinsAnimation.node.setPosition(0,20);
-            this.powerGemWinEffect.playPowerGemWinEffect_Step1(0, earnMoney/totalBet, true);
+            this.winCoinsAnimation.node.setPosition(0, 20);
+            // this.powerGemWinEffect.playPowerGemWinEffect_Step1(0, earnMoney / totalBet, true);
         }
 
         SoundManager.Instance().setMainVolumeTemporarily(0.1);
@@ -418,9 +438,9 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     }
 
     // ===================== 【核心动画逻辑】 =====================
-    private getWinAniConfig(winLv: number): {aniNode: cc.Animation, bgAniName: string} {
+    private getWinAniConfig(winLv: number): { aniNode: cc.Animation, bgAniName: string } {
         let aniNode: cc.Animation, bgAniName: string;
-        switch(winLv) {
+        switch (winLv) {
             case 1: aniNode = this.textAniSuperWin; bgAniName = "Common_Win_Popup_Ani_Open_Bg_Fx_Super"; break;
             case 2: aniNode = this.textAniBigWin; bgAniName = "Common_Win_Popup_Ani_Open_Bg_Fx_Big"; break;
             case 3: aniNode = this.textAniHugeWin; bgAniName = "Common_Win_Popup_Ani_Open_Bg_Fx_Huge"; break;
@@ -428,15 +448,16 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
             case 5: aniNode = this.textAniEpicWin; bgAniName = "Common_Win_Popup_Ani_Open_Bg_Fx_Epic"; break;
             default: aniNode = this.textAniSuperWin; bgAniName = "Common_Win_Popup_Ani_Open_Bg_Fx_Super"; break;
         }
-        return {aniNode, bgAniName};
+
+        return { aniNode, bgAniName };
     }
 
     private playMainAni(winLv: number, duration: number): void {
         this.node.runAction(cc.callFunc(() => {
             SlotSoundController.Instance().playAudio("MegaWin", "FXLoop");
             SlotSoundController.Instance().stopAudio("IncrementCoin", "FXLoop");
-            
-            const {aniNode, bgAniName} = this.getWinAniConfig(winLv);
+
+            const { aniNode, bgAniName } = this.getWinAniConfig(winLv);
             // 文本淡入淡出动画
             this.txtAdd.opacity = 150;
             this.txtAdd.runAction(cc.sequence(cc.delayTime(0.5), cc.fadeTo(0.2, 0)));
@@ -463,26 +484,39 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
             ));
 
             // 核心动画播放
-            this.bgAni.stop();this.bgAni.play(bgAniName);this.bgAni.node.active = true;
-            aniNode.stop();aniNode.play("Common_Win_Popup_Ani_Open_Txt");aniNode.node.active = true;
-            this.textOverAni.stop();this.textOverAni.play("Common_Win_Popup_Ani_Open_Fx_Txt_Over");this.textOverAni.node.active = true;
+            this.bgAni.stop(); 
+            this.bgAni.play(bgAniName); 
+            this.bgAni.node.active = true;
+            aniNode.stop(); 
+            aniNode.play("Common_Win_Popup_Ani_Open_Txt"); 
+            aniNode.node.active = true;
+            this.textOverAni.stop(); 
+            this.textOverAni.play("Common_Win_Popup_Ani_Open_Fx_Txt_Over"); 
+            this.textOverAni.node.active = true;
 
-            const isShareAble = this.checkShareAble(winLv);
-            if (isShareAble) {
-                this.instant_buttonAni.stop();this.instant_buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
-                this.instant_buttonAni.node.active = true;this.buttonAni.node.active = false;
-            } else {
-                this.buttonAni.stop();this.buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
-                this.buttonAni.node.active = true;this.instant_buttonAni.node.active = false;
-            }
+            // const isShareAble = this.checkShareAble(winLv);
+            // if (isShareAble) {
+            //     this.instant_buttonAni.stop(); 
+            //     this.instant_buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
+            //     this.instant_buttonAni.node.active = true; 
+            //     this.buttonAni.node.active = false;
+            // } else {
+            //     this.buttonAni.stop(); 
+            //     this.buttonAni.play("Common_Win_Popup_Ani_Open_Btn");
+            //     this.buttonAni.node.active = true; 
+            //     this.instant_buttonAni.node.active = false;
+            // }
 
             this.btnSkip.interactable = true;
             this.instant_btnSkip.interactable = true;
             this.winCoinsAnimation.node.active = false;
-            this.winCoinsAnimation.stop();this.winCoinsAnimation.play("Common_Win_Popup_WinCoins_Open");
-            this.winCoinsAnimation.node.active = true;this.winCoinsAnimation.node.setPosition(0,0);
-            
-            this.commonFXAnimation.stop();this.commonFXAnimation.node.active = false;
+            this.winCoinsAnimation.stop(); 
+            this.winCoinsAnimation.play("Common_Win_Popup_WinCoins_Open");
+            this.winCoinsAnimation.node.active = true; 
+            this.winCoinsAnimation.node.setPosition(0, 0);
+
+            this.commonFXAnimation.stop(); 
+            this.commonFXAnimation.node.active = false;
             this.commonFXAnimation.play("Common_Win_Popup_Ani_Open");
         }));
     }
@@ -498,10 +532,10 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
 
     public playTextExplodeEffect(): void {
         const winLv = this.getWinLevel();
-        const {aniNode} = this.getWinAniConfig(winLv);
-        
+        const { aniNode } = this.getWinAniConfig(winLv);
+
         // 分享按钮显隐控制
-        this.toggleShare.node.active = winLv !==5 && !SlotManager.Instance.isFBShareDisableTarget();
+        this.toggleShare.node.active = winLv !== 5 && !SlotManager.Instance.isFBShareDisableTarget();
 
         // 文本动画
         this.txtAdd.runAction(cc.sequence(
@@ -510,20 +544,24 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         ));
 
         // 核心爆炸动画
-        this.bgAni.stop();this.bgAni.play("Common_Win_Popup_Ani_Burst_Bg_Fx");
-        aniNode.stop();aniNode.play("Common_Win_Popup_Ani_Burst_Txt");
-        this.textOverAni.stop();this.textOverAni.play("Common_Win_Popup_Ani_Burst_Fx_Txt_Over");
+        this.bgAni.stop(); 
+        this.bgAni.play("Common_Win_Popup_Ani_Burst_Bg_Fx");
 
-        const isShareAble = this.checkShareAble(winLv);
-        if (isShareAble) {
-            this.instant_buttonAni.stop();this.instant_buttonAni.play("Common_Win_Popup_Ani_Burst_Btn");
-        } else {
-            this.buttonAni.stop();this.buttonAni.play("Common_Win_Popup_Ani_Burst_Btn");
-        }
+        aniNode.stop(); 
+        aniNode.play("Common_Win_Popup_Ani_Burst_Txt");
+        this.textOverAni.stop(); 
+        this.textOverAni.play("Common_Win_Popup_Ani_Burst_Fx_Txt_Over");
+
+        // const isShareAble = this.checkShareAble(winLv);
+        // if (isShareAble) {
+        //     this.instant_buttonAni.stop(); this.instant_buttonAni.play("Common_Win_Popup_Ani_Burst_Btn");
+        // } else {
+        //     this.buttonAni.stop(); this.buttonAni.play("Common_Win_Popup_Ani_Burst_Btn");
+        // }
 
         // 金币动画
         this.winCoinsAnimation.node.active = true;
-        this.winCoinsAnimation.node.setPosition(0,0);
+        this.winCoinsAnimation.node.setPosition(0, 0);
         this.winCoinsAnimation.stop();
         this.scheduleOnce(() => {
             this.winCoinsAnimation.play("Common_Win_Popup_WinCoins_Burst");
@@ -532,29 +570,30 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
 
         SlotManager.Instance.bigWinEffectInterface.onPlayTextExplodeEffect(this);
         this.commonFXAnimation.node.active = false;
-        this.commonFXAnimation.stop();this.commonFXAnimation.play("Common_Win_Popup_Ani_Burst");
+        this.commonFXAnimation.stop(); 
+        this.commonFXAnimation.play("Common_Win_Popup_Ani_Burst");
         this.commonFXAnimation.node.active = true;
 
         SlotSoundController.Instance().playAudio("BigWinTextAppear", "FX");
-        
-        // 宝石特效
-        if (this.powerGemWinEffect.node.active) {
-            this.scheduleOnce(() => this.powerGemWinEffect.playPowerGemWinEffect_Step2(), 0.5);
-        }
+
+        // // 宝石特效
+        // if (this.powerGemWinEffect.node.active) {
+        //     this.scheduleOnce(() => this.powerGemWinEffect.playPowerGemWinEffect_Step2(), 0.5);
+        // }
     }
 
     private getWinLevel(): number {
         const rate = this._earnMoney / this._totalBet;
-        if (rate >=5 && rate <10) return 1;
-        if (rate >=10 && rate <20) return 2;
-        if (rate >=20 && rate <30) return 3;
-        if (rate >=30 && rate <50) return 4;
+        if (rate >= 5 && rate < 10) return 1;
+        if (rate >= 10 && rate < 20) return 2;
+        if (rate >= 20 && rate < 30) return 3;
+        if (rate >= 30 && rate < 50) return 4;
         return 5;
     }
 
     public checkShareAble(winLv: number): boolean {
-        return SlotManager.Instance.bigWinEffectInterface.checkShareAble_BigWinEffect(this, winLv) !==0 
-            && [2,3,4].includes(winLv) 
+        return SlotManager.Instance.bigWinEffectInterface.checkShareAble_BigWinEffect(this, winLv) !== 0
+            && [2, 3, 4].includes(winLv)
             && this._isEnableShareasync;
     }
 
@@ -563,7 +602,7 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => this.playCollectAction(), 15);
         SlotManager.Instance.bigWinEffectInterface.onActiveBtnListener(this);
-        
+
         this.btnCollect.interactable = true;
         this.instant_collect_Btn.interactable = true;
         this.instant_close_Btn.interactable = true;
@@ -583,11 +622,11 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.instant_collect_Btn.interactable = false;
         this.instant_close_Btn.interactable = false;
 
-        // 宝石特效判断
-        if (this.powerGemWinEffect.node.active && !this.powerGemWinEffect.isStep2Complete && !this.powerGemWinEffect.isUpgradeAction && this.powerGemWinEffect.numTargetProgress >=1) {
-            this.powerGemWinEffect.setStep2Complete();
-            await AsyncHelper.delayWithComponent(1, this);
-        }
+        // // 宝石特效判断
+        // if (this.powerGemWinEffect.node.active && !this.powerGemWinEffect.isStep2Complete && !this.powerGemWinEffect.isUpgradeAction && this.powerGemWinEffect.numTargetProgress >= 1) {
+        //     this.powerGemWinEffect.setStep2Complete();
+        //     await AsyncHelper.delayWithComponent(1, this);
+        // }
 
         const winLv = this.getWinLevel();
         SlotManager.Instance.bigWinEffectInterface.onClickCollect_BigWinEffect(this, winLv, isShare, () => {
@@ -600,11 +639,11 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         this.btnSkip.node.active = false;
         this.instant_btnSkip.interactable = false;
         this.instant_btnSkip.node.active = false;
-        
+
         this.node.stopAllActions();
         this.labelWinMoney.stopChangeNumber();
         this.labelWinMoney.setCurrentNumber(this._earnMoney);
-        
+
         if (this.skipFunc) this.skipFunc();
 
         const act = cc.sequence(
@@ -614,9 +653,9 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         );
         this.node.runAction(act);
 
-        if (this.powerGemWinEffect.node.active) {
-            this.powerGemWinEffect.setStep1Complete();
-        }
+        // if (this.powerGemWinEffect.node.active) {
+        //     this.powerGemWinEffect.setStep1Complete();
+        // }
     }
 
     // ===================== 【奖励领取/金币爆炸逻辑】 =====================
@@ -629,7 +668,7 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
         SlotSoundController.Instance().stopAudio("MegaWin", "FXLoop");
 
         // 宝石奖励优先处理
-        if (SlotManager.Instance.bigWinEffectInterface.isPowerGemRewarded(this) ===1) {
+        if (SlotManager.Instance.bigWinEffectInterface.isPowerGemRewarded(this) === 1) {
             this.hideAllObject();
             this.winExplodeCoin.node.active = false;
             SlotManager.Instance.applyGameResultMoneyBySubFromResult(this._earnMoney);
@@ -667,7 +706,7 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
                     this.winExplodeCoin.stop();
                     this.winExplodeCoin.play();
                     SlotSoundController.Instance().playAudio("BigWin_CoinBurst", "FX");
-                    
+
                     this.scheduleOnce(() => SlotSoundController.Instance().playAudio("BigWin_CoinBurstMove", "FX"), 1.1);
                     this.scheduleOnce(() => this.winCoinCollectFx.active = true, 1.35);
                     this.scheduleOnce(() => this.winCoinCollectFx.active = false, 2.3);
@@ -682,7 +721,7 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     }
 
     public async playPowerGem(): Promise<void> {
-        if (SlotManager.Instance.bigWinEffectInterface.isPowerGemRewarded(this) ===0) return;
+        if (SlotManager.Instance.bigWinEffectInterface.isPowerGemRewarded(this) === 0) return;
         await SlotManager.Instance.bigWinEffectInterface.onPlayPowerGem(this);
     }
 
@@ -694,7 +733,7 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     // ===================== 【其他工具方法】 =====================
     public stopChildrenAni(e: cc.Node): void {
         const stack: cc.Node[] = [e];
-        while (stack.length >0) {
+        while (stack.length > 0) {
             const node = stack.pop()!;
             for (const child of node.children) stack.push(child);
             const ani = node.getComponent(cc.Animation);
@@ -740,17 +779,17 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     public onRefreshView(): void {
         const canvas = cc.director.getScene().getComponentInChildren(cc.Canvas);
         const size = canvas.node.getContentSize();
-        const center = new cc.Vec2(Math.floor(size.width /2), Math.floor(size.height /2));
+        const center = new cc.Vec2(Math.floor(size.width / 2), Math.floor(size.height / 2));
         const singleWidth = size.width / this.blockingBG.length;
 
         this.blockingBG.forEach(node => {
             const pos = node.parent.convertToNodeSpaceAR(center);
             node.setPosition(node.x, pos.y);
-            node.setContentSize(singleWidth +20, size.height +20);
+            node.setContentSize(singleWidth + 20, size.height + 20);
         });
 
         const blockPos = this.nodeBlock.parent.convertToNodeSpaceAR(center);
         this.nodeBlock.setPosition(this.nodeBlock.x, blockPos.y);
-        this.nodeBlock.setContentSize(size.width +20, size.height +20);
+        this.nodeBlock.setContentSize(size.width + 20, size.height + 20);
     }
 }

@@ -1,0 +1,278 @@
+{
+  "_name": "Option_Result_Dim_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.016666666666666666,
+          "value": 255
+        }
+      ]
+    },
+    "paths": {
+      "SunLay": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": []
+        }
+      },
+      "Explode_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [],
+          "scale": []
+        }
+      },
+      "Glow_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "SunLay/SunLay": {
+        "props": {
+          "angle": [],
+          "scale": []
+        }
+      },
+      "Explode_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [],
+          "scale": []
+        }
+      },
+      "Light/Light_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Light/Light_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Txt": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -20
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Plus_6Fs": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/label": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Grand": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Major": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Mini": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Minor": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Jackpot/Multi": {
+        "props": {
+          "color": [
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/CheddarBonus": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      },
+      "Txt/1More_Pick": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284900966
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

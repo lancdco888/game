@@ -269,7 +269,7 @@ export default class MoooreCheddarManager extends SlotManager {
             this.subgame_state.setCheddaCheese();
         } else {
             // 非bonusGame逻辑
-            // SlotSoundController.Instance().playAudio("Intro", "FX");
+            SlotSoundController.Instance().playAudio("Intro", "FX");
             await AsyncHelper.delay(3.5);
 
             // 处理滚轮停止后逻辑

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.7",
-  "uuid": "178f3432-293c-49b3-81b9-119b3863de1e",
+  "uuid": "2e1b03c2-7e87-4b04-a6d6-840923cdb3fc",
   "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -8,15 +8,15 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
-  "width": 562,
-  "height": 114,
+  "width": 52,
+  "height": 84,
   "platformSettings": {},
   "subMetas": {
-    "UI-50_BG_WinCoin": {
+    "Btn-100_Sky_Pressed": {
       "ver": "1.0.6",
-      "uuid": "e42a49fd-7599-47f8-abe4-ec85188476ef",
+      "uuid": "a62c3d4a-c5a4-4c8f-a8f8-ed41e0c187f0",
       "importer": "sprite-frame",
-      "rawTextureUuid": "178f3432-293c-49b3-81b9-119b3863de1e",
+      "rawTextureUuid": "2e1b03c2-7e87-4b04-a6d6-840923cdb3fc",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -24,14 +24,14 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 562,
-      "height": 114,
-      "rawWidth": 562,
-      "rawHeight": 114,
-      "borderTop": 57,
-      "borderBottom": 57,
-      "borderLeft": 281,
-      "borderRight": 281,
+      "width": 52,
+      "height": 84,
+      "rawWidth": 52,
+      "rawHeight": 84,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
       "subMetas": {}
     }
   }
