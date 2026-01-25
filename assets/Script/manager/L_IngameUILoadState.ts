@@ -1,4 +1,4 @@
-import InGameUI_2020 from "../../resources/game/Scripts/InGameUI_2020";
+import InGameUI_2020 from "../SubGame/InGameUI_2020";
 import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import State from "../Slot/State";
 import LoadingSlotProcess from "./LoadingSlotProcess";

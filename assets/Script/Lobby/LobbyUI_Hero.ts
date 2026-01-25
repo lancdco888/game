@@ -1,4 +1,4 @@
-import AnimationButton from "../../resources/game/Scripts/AnimationButton";
+import AnimationButton from "../SubGame/AnimationButton";
 import GameCommonSound from "../GameCommonSound";
 import HeroMainPopup, { TypeHeroSubPopup } from "../Hero/HeroMainPopup";
 import LobbyUIBase, { LobbyUIType } from "../LobbyUIBase";

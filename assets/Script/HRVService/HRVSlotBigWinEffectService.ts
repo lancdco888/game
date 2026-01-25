@@ -1,6 +1,6 @@
-import { CommonRewardActionType, CommonRewardButtonType, CommonRewardSubTitleType, CommonRewardTitleType } from "../../resources/game/Scripts/CommonRewardEnum";
-import CommonRewardPopup from "../../resources/game/Scripts/CommonRewardPopup";
-import PowerGemSlotPopup, { PowerGemSlotOpenType } from "../../resources/game/Scripts/PowerGemSlotPopup";
+import { CommonRewardActionType, CommonRewardButtonType, CommonRewardSubTitleType, CommonRewardTitleType } from "../SubGame/CommonRewardEnum";
+import CommonRewardPopup from "../SubGame/CommonRewardPopup";
+import PowerGemSlotPopup, { PowerGemSlotOpenType } from "../SubGame/PowerGemSlotPopup";
 import CommonServer from "../Network/CommonServer";
 import ServiceInfoManager from "../ServiceInfoManager";
 import SlotReelSpinStateManager from "../Slot/SlotReelSpinStateManager";
@@ -818,16 +818,16 @@ export default class HRVSlotBigWinEffectService extends cc.Component {
                         return;
                     }
 
-                    // 打开PowerGem升级弹窗
-                    const actionInfo = PowerGemManager.instance.getActionPowerGemInfo();
-                    if (TSUtility.isValid(actionInfo)) {
-                        popup.open(PowerGemSlotOpenType.SLOT_UPGRADE, actionInfo.getSlotIndex());
-                        popup.setCloseCallback(() => {
-                            resolve();
-                        });
-                    } else {
-                        resolve();
-                    }
+                    // // 打开PowerGem升级弹窗
+                    // const actionInfo = PowerGemManager.instance.getActionPowerGemInfo();
+                    // if (TSUtility.isValid(actionInfo)) {
+                    //     popup.open(PowerGemSlotOpenType.SLOT_UPGRADE, actionInfo.getSlotIndex());
+                    //     popup.setCloseCallback(() => {
+                    //         resolve();
+                    //     });
+                    // } else {
+                    //     resolve();
+                    // }
                 });
             });
         }

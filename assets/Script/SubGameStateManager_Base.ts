@@ -8,7 +8,7 @@ import Symbol from './Slot/Symbol';
 import TSUtility from './global_utility/TSUtility';
 import LangLocaleManager from './manager/LangLocaleManager';
 import CurrencyFormatHelper from './global_utility/CurrencyFormatHelper';
-import { BottomTextType } from '../resources/game/Scripts/BottomUIText';
+import { BottomTextType } from './SubGame/BottomUIText';
 import SlotGameRuleManager from './manager/SlotGameRuleManager';
 import SlotGameResultManager, { Cell } from './manager/SlotGameResultManager';
 import GameComponents_Base from './game/GameComponents_Base';

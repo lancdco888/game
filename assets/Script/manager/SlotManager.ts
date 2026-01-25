@@ -23,9 +23,9 @@ import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import AsyncHelper from "../global_utility/AsyncHelper";
 import CameraControl from "../Slot/CameraControl";
 import ViewResizeManager from "../global_utility/ViewResizeManager";
-import BottomUI_EX2 from "../../resources/game/Scripts/BottomUI_EX2";
-import BottomUI from "../../resources/game/Scripts/BottomUI";
-import BottomUIText from "../../resources/game/Scripts/BottomUIText";
+import BottomUI_EX2 from "../SubGame/BottomUI_EX2";
+import BottomUI from "../SubGame/BottomUI";
+import BottomUIText from "../SubGame/BottomUIText";
 import SDefine from "../global_utility/SDefine";
 
 // ===================== 核心枚举定义 - 100%保留原值+键名，无任何修改 ✅ =====================
