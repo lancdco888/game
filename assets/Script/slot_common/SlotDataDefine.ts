@@ -78,7 +78,7 @@ export class SlotJackpotInfo {
         return this._mapReserveMoney[e] ? this._mapReserveMoney[e].getJackpotByCoinSize(t, n) : (cc.warn("not found jackpot type ", e, " ", this._id), 0);
     }
 
-    public getJackpotMoneyByCoinSizeUsingJackpotKey(e: string, t: number, n: number): number {
+    public getJackpotMoneyByCoinSizeUsingJackpotKey(e: any, t: number, n: number): number {
         var o: SlotJackpotMoney | null = null;
         for (var a in this._mapReserveMoney) {
             if (o = this._mapReserveMoney[a], 0 == e.localeCompare(o.jackpotKey, void 0, { sensitivity: "base" })) break;

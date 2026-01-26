@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "166e19c8-5e85-4413-89c4-a4979eece6c3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 187,
+  "height": 187,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_jewely_glow2": {
+      "ver": "1.0.6",
+      "uuid": "0c7745fb-8ed0-48f9-91b5-c12930fe47fc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "166e19c8-5e85-4413-89c4-a4979eece6c3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 185,
+      "height": 185,
+      "rawWidth": 187,
+      "rawHeight": 187,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

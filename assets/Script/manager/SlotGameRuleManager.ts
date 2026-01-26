@@ -359,7 +359,7 @@ export class Window {
         }
     }
 
-    public getSymbol(e: number): number | void {
+    public getSymbol(e: number): number {
         if (!(e < 0 || this._symbols.length <= e)) {
             return this._symbols[e];
         }

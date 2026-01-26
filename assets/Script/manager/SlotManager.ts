@@ -93,7 +93,7 @@ export class SpecialSymbolInfo {
 @ccclass()
 export default class SlotManager extends cc.Component {
     // ===================== 【单例模式】全局唯一实例 - 原逻辑完全保留 ✅ =====================
-    public static Instance: SlotManager = null;
+    public static Instance: any = null;
 
     // ===================== 【序列化配置属性】编辑器拖拽赋值，类型完全匹配，原逻辑不变 ✅ =====================
     @property(ReelMachine_Base)
@@ -168,7 +168,7 @@ export default class SlotManager extends cc.Component {
     public _freespinMultiplier: number = 0;
     private _zoneId: number = 0;
     private _zoneName: string = "";
-    private _reelSpinTexts: any[] = [];
+    public _reelSpinTexts: any[] = [];
     private _freespinResultPopup: any = null;
     private _bonusGameResultPopup: any = null;
     private _jackpotResultPopup: any = null;

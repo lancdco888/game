@@ -100,7 +100,7 @@ export default class SlotBigWinEffectController_1022 extends cc.Component {
     private _lastWatchedBotPopupTime: number = 0;
     private _exceptStopSymbolList: number[] = [];
     private _isEnableShareasync: boolean = true;
-    private _isPlayExplodeCoin: boolean = true;
+    public _isPlayExplodeCoin: boolean = true;
     private _isStartEndProcess: boolean = false;
 
     // ===================== 【生命周期函数】 =====================
