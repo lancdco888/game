@@ -1,0 +1,173 @@
+{
+  "_name": "PU_Lock&Roll_main_title",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": "cubicInOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 4,
+          "curve": "cubicInOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "Fx-80_flare_light3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -310,
+                21,
+                0
+              ],
+              "curve": [
+                0.3176604554865425,
+                0.21304347826086956,
+                0.54,
+                0.95
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                330,
+                21,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 3,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 3,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "mask/Fx-50_Gradation_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -340,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                420,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 3,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

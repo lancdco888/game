@@ -1,0 +1,639 @@
+{
+  "_name": "PU_Lock&Roll",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.3333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": "cubicInOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "Pivot/DOUBLE_UP/Pivot/Title/BPU-80_BPU_double_title_over": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0.3333333333333333,
+                "value": 0.5,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.75,
+                "value": 0
+              }
+            ],
+            "fillRange": [
+              {
+                "frame": 0.3333333333333333,
+                "value": 0.5
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": 0.5,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 1.1666666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Pivot/COLLECT_ALL/Pivot/Title/BPU-80_BPU_collect_title_over": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.25,
+              "value": 255
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0.5,
+                "value": 0.5,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.9166666666666666,
+                "value": 0
+              }
+            ],
+            "fillRange": [
+              {
+                "frame": 0.5,
+                "value": 0.5
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": 0.5,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 1.3333333333333333,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Pivot/PRIZE_BOOST/Pivot/Title/BPU-80_BPU_prize_title_over": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0.16666666666666666,
+                "value": 0.5,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": 0
+              }
+            ],
+            "fillRange": [
+              {
+                "frame": 0.16666666666666666,
+                "value": 0.5
+              },
+              {
+                "frame": 0.5,
+                "value": 0.5,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "dim": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Pivot/PRIZE_BOOST/Pivot/Title": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/DOUBLE_UP/Pivot/Title": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/COLLECT_ALL/Pivot/Title": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            }
+          ]
+        }
+      },
+      "bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Pivot/PRIZE_BOOST/Pivot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                200,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                8,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -3,
+                0
+              ]
+            },
+            {
+              "frame": 0.7166666666666667,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicIn",
+              "value": {
+                "x": 0.99,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicIn",
+              "value": {
+                "x": 0.99,
+                "y": 1.01,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.38333333333333336,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.01,
+                "y": 0.99,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/DOUBLE_UP/Pivot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                200,
+                0
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                8,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -3,
+                0
+              ]
+            },
+            {
+              "frame": 0.8833333333333333,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 0.99,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 0.99,
+                "y": 1.01,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.55,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.01,
+                "y": 0.99,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/COLLECT_ALL/Pivot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                200,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                8,
+                0
+              ]
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -3,
+                0
+              ]
+            },
+            {
+              "frame": 1.05,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicIn",
+              "value": {
+                "x": 0.99,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicIn",
+              "value": {
+                "x": 0.99,
+                "y": 1.01,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.01,
+                "y": 0.99,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Button": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": true
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.1666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.8,
+                "y": 0.8,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1.03,
+                "y": 1.03,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

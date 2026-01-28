@@ -1,0 +1,399 @@
+{
+  "_name": "TopUI_Level_5_hit",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "center_jewel/B_hit": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Glow_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "center_jewel/B_importent": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "center_jewel/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "back_pannel": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": [
+                0.46,
+                0.05,
+                0.887365702479339,
+                0.681404958677686
+              ],
+              "value": {
+                "x": 1.06,
+                "y": 1.06,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "front_snout": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": [
+                0.46,
+                0.05,
+                0.887365702479339,
+                0.681404958677686
+              ],
+              "value": {
+                "x": 1.06,
+                "y": 1.06,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "txt": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": [
+                0.46,
+                0.05,
+                0.887365702479339,
+                0.681404958677686
+              ],
+              "value": {
+                "x": 1.06,
+                "y": 1.06,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "center_jewel/Fx-80_jewely_glow2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "center_jewel": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": [
+                0.46,
+                0.05,
+                0.887365702479339,
+                0.681404958677686
+              ],
+              "value": {
+                "x": 1.06,
+                "y": 1.06,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

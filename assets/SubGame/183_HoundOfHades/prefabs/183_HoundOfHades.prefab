@@ -283,7 +283,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "52f604a8-bc54-4da4-b07e-970338e00aca"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -337,8 +337,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 149.73,
-      "height": 44
+      "width": 210.39,
+      "height": 55.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -382,7 +382,11 @@
       "__id__": 6
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "FEATURES",
@@ -441,8 +445,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 909.82,
-      "height": 84
+      "width": 1016.81,
+      "height": 94.92
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -486,7 +490,11 @@
       "__id__": 9
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "Combinations of       ,       and       trigger various different bonus modes.\nThere are 243 ways to win in Base Game.",
@@ -598,7 +606,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -705,7 +713,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "1d44f0db-2e93-473f-846f-6c87520829e0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -812,7 +820,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "c1a2756c-a491-4f3b-afba-a3b87c701745"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -866,8 +874,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 322.45,
-      "height": 44
+      "width": 449.22,
+      "height": 55.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -911,7 +919,11 @@
       "__id__": 21
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "HADES' GATE RESPINS",
@@ -970,8 +982,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 909.82,
-      "height": 252
+      "width": 1016.81,
+      "height": 262.92
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1015,7 +1027,11 @@
       "__id__": 24
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "One or more       ,       ,       may trigger Hades' Gate Respins.\nCombinations of       ,       and       trigger various different bonus modes.\n       may trigger Double Up Bonus.\n       may trigger Prize Boost Bonus.\n       may trigger Collect All Bonus.\nAt Hades' Gate Respins trigger, 5       are randomly placed on the reels.",
@@ -1127,7 +1143,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "62fd85e3-9fc7-4e03-8e2d-66d606ece97f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1234,7 +1250,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1341,7 +1357,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "1d44f0db-2e93-473f-846f-6c87520829e0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1448,7 +1464,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "c1a2756c-a491-4f3b-afba-a3b87c701745"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1555,7 +1571,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "c1a2756c-a491-4f3b-afba-a3b87c701745"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1662,7 +1678,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1769,7 +1785,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "1d44f0db-2e93-473f-846f-6c87520829e0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1876,7 +1892,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "1d44f0db-2e93-473f-846f-6c87520829e0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1983,7 +1999,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "c1a2756c-a491-4f3b-afba-a3b87c701745"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2090,7 +2106,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2238,8 +2254,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 269.09,
-      "height": 30
+      "width": 384.53,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2302,8 +2318,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1014.27,
-      "height": 132
+      "width": 1141.95,
+      "height": 143.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2347,7 +2363,11 @@
       "__id__": 60
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "3 respins are awarded. If one or more additional       or       appears on the reels, \nthe spin count resets back to 3.\n      multiplies all prizes on       and stones on the screen by 2.",
@@ -2459,7 +2479,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "62fd85e3-9fc7-4e03-8e2d-66d606ece97f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2566,7 +2586,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "62fd85e3-9fc7-4e03-8e2d-66d606ece97f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2673,7 +2693,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2780,7 +2800,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2815,7 +2835,11 @@
       "__id__": 59
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "DOUBLE UP BONUS",
@@ -2890,8 +2914,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 298.18,
-      "height": 30
+      "width": 422.29,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2954,8 +2978,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1014.27,
-      "height": 176
+      "width": 1141.95,
+      "height": 187.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2999,7 +3023,11 @@
       "__id__": 78
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "3 respins are awarded. If one or more additional       or       appears on the reels, \nthe spin count resets back to 3.\nWhen       appears on the reels, it will spin one more times to reveal a prize.\nEvery time        spins, its prize will be boosted.",
@@ -3111,7 +3139,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "62fd85e3-9fc7-4e03-8e2d-66d606ece97f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3218,7 +3246,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3325,7 +3353,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3432,7 +3460,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3467,7 +3495,11 @@
       "__id__": 77
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "PRIZE BOOST BONUS",
@@ -3617,8 +3649,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 302.73,
-      "height": 30
+      "width": 420.14,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3681,8 +3713,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1014.27,
-      "height": 396
+      "width": 1141.95,
+      "height": 407.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3726,7 +3758,11 @@
       "__id__": 98
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "3 respins are awarded. If one or more additional       or       appears on the reels, \nthe spin count resets back to 3.\n       collects all prizes on       and stones on the screen.\n\nHades' Gate Respins end when the spin count reaches 0.\nAll prizes on the screen are awarded at the end of Hades' Gate Respins.\n\n\n",
@@ -3838,7 +3874,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "62fd85e3-9fc7-4e03-8e2d-66d606ece97f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -3945,7 +3981,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "62fd85e3-9fc7-4e03-8e2d-66d606ece97f"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4052,7 +4088,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4159,7 +4195,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4194,7 +4230,11 @@
       "__id__": 97
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "COLLECT ALL BONUS",
@@ -4353,8 +4393,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 649.77,
-      "height": 30
+      "width": 731.95,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4470,7 +4510,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "1d44f0db-2e93-473f-846f-6c87520829e0"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4577,7 +4617,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "fb85616b-4575-49cb-bf5d-45be2b7e96fb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4684,7 +4724,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "c1a2756c-a491-4f3b-afba-a3b87c701745"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4791,7 +4831,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "0b199b77-e4b8-4f02-b4d0-409423d24471"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -4826,7 +4866,11 @@
       "__id__": 117
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "substitutes for all symbols except         ,         and         .",
@@ -4889,8 +4933,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 71.27,
-      "height": 136
+      "width": 81.83,
+      "height": 144.84
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5006,7 +5050,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "e8ed41bb-d304-4813-8ce5-cb31577ccb87"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -5041,7 +5085,11 @@
       "__id__": 132
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "5 - 50\n4 - 35\n3 - 30\n2 - 10",
@@ -5107,8 +5155,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 71.27,
-      "height": 102
+      "width": 81.83,
+      "height": 110.84
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5224,7 +5272,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "f1ed7b3d-9050-445c-9396-247cfee4eecc"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -5331,7 +5379,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "b57c3211-4798-4606-83a0-942a54be7ebf"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -5366,7 +5414,11 @@
       "__id__": 138
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "5 - 20\n4 - 17\n3 - 14",
@@ -5432,8 +5484,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 71.27,
-      "height": 102
+      "width": 81.83,
+      "height": 110.84
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5549,7 +5601,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "81a35810-b007-4293-b02f-876ab632c0cb"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -5656,7 +5708,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "023d5128-550b-4e7a-b3e5-82248dbfb38c"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -5691,7 +5743,11 @@
       "__id__": 147
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "5 - 14\n4 - 12\n3 - 10",
@@ -5769,8 +5825,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 55.27,
-      "height": 102
+      "width": 64.03,
+      "height": 110.84
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5886,7 +5942,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "574af7b6-65cb-4cff-9ed7-7c45d0d82fe2"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -5993,7 +6049,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "55fbdf41-06e1-4ec6-a95b-fbb432c6a23a"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -6100,7 +6156,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "04217112-ac07-4b68-ab1e-27e2462b5ce3"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -6207,7 +6263,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "0f51b29f-6438-4a16-8f3e-82c091932cc1"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -6314,7 +6370,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "9e441c70-70c3-4d48-9a5e-5fd3a2a66fac"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -6421,7 +6477,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+      "__uuid__": "6cfd4900-4bb6-4157-93e8-c5e8ac1a9d42"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -6456,7 +6512,11 @@
       "__id__": 156
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "5 - 7\n4 - 6\n3 - 5",
@@ -6594,8 +6654,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 258,
-      "height": 44
+      "width": 350.5,
+      "height": 55.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6658,8 +6718,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1029.55,
-      "height": 360
+      "width": 1189.84,
+      "height": 369.36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6703,7 +6763,11 @@
       "__id__": 180
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "All symbols EXCEPT BONUS symbol pay left to right on each winning combination, \nwhen appearing on adjacent reels, starting with the leftmost reel.\n\nAll wins will be multiplied by 1/100 of total bet. \nOnly highest win combination per way is paid.\n\nEvery spin is played with a maximum number of paylines.\n\nPaytable presents wins for a bet equal to 1 coin and one winning payline. \nBet 10 will give you 10x the payout from the pay table.",
@@ -6743,7 +6807,11 @@
       "__id__": 179
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "PAY LINE RULES",
@@ -6884,8 +6952,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 151,
-      "height": 36
+      "width": 212.74,
+      "height": 45.36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6948,8 +7016,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 655,
-      "height": 36
+      "width": 787.77,
+      "height": 45.36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6993,7 +7061,11 @@
       "__id__": 188
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "WILD substitutes all symbols EXCEPT BONUS symbol.",
@@ -7033,7 +7105,11 @@
       "__id__": 187
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "SYMBOLS",
@@ -7096,8 +7172,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 69,
-      "height": 36
+      "width": 97.8,
+      "height": 45.36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7160,8 +7236,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 767.27,
-      "height": 72
+      "width": 883.5,
+      "height": 81.36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7205,7 +7281,11 @@
       "__id__": 194
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "Press 'SPIN' to start spinning. Hold 'SPIN' to trigger auto spin. \nDuring auto spin, press 'STOP AUTO SPIN' to disengage.",
@@ -7245,7 +7325,11 @@
       "__id__": 193
     },
     "_enabled": true,
-    "_materials": [],
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_string": "TIPS",

@@ -15,7 +15,7 @@ const { ccclass, property } = cc._decorator;
 export default class ReelMachine_HoundOfHades extends ReelMachine_Base {
     // ====== Cocos 编辑器绑定属性 ======
     @property([ReelController_Base])
-    public lockNRollReels: ReelController_Base[] = null;  // LockNRoll滚轮控制器数组
+    public lockNRollReels: ReelController_Base[] = [];  // LockNRoll滚轮控制器数组
 
     @property(cc.Node)
     public lockNRoll_BG: cc.Node = null;                     // LockNRoll模式背景节点

@@ -1,0 +1,209 @@
+{
+  "_name": "PU_Lock&Roll_box",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Wolf_dim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Wolf": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_prize_box_glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 180
+            },
+            {
+              "frame": 2,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_prize_box_glow2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_double_box_glow2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_double_box_glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 180
+            },
+            {
+              "frame": 2,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_collect_box_glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_collect_box_glow2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 180
+            },
+            {
+              "frame": 2,
+              "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Box/BPU-80_BPU_box_sha_X2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Title": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "title_dim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Box/box": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

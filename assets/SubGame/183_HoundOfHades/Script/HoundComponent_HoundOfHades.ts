@@ -13,25 +13,25 @@ const { ccclass, property } =cc._decorator;
 export default class HoundComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 编辑器绑定属性 ======
     @property([cc.Node])
-    public level_Nodes: cc.Node[] = null;      // 等级显示节点数组
+    public level_Nodes: cc.Node[] = [];      // 等级显示节点数组
 
     @property([cc.Animation])
-    public level_Anis: cc.Animation[] = null;   // 等级动画组件数组
+    public level_Anis: cc.Animation[] = [];   // 等级动画组件数组
 
     @property([cc.Node])
-    public levelUp_Nodes: cc.Node[] = null;    // 升级特效节点数组
+    public levelUp_Nodes: cc.Node[] = [];    // 升级特效节点数组
 
     @property(cc.Node)
     public complete_Node: cc.Node = null;      // 满级节点
 
     @property([cc.Node])
-    public disable_Nodes: cc.Node[] = null;    // 禁用状态节点数组
+    public disable_Nodes: cc.Node[] = [];    // 禁用状态节点数组
 
     @property(cc.Animation)
     public complete_Ani: cc.Animation = null;  // 满级动画组件
 
     @property([cc.Node])
-    public idle_Spines: cc.Node[] = null;      // 闲置Spine动画节点数组
+    public idle_Spines: cc.Node[] = [];      // 闲置Spine动画节点数组
 
     /**
      * 初始化猎犬状态

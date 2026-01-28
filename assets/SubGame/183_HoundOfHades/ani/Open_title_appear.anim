@@ -1,0 +1,470 @@
+{
+  "_name": "Open_title_appear",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "par_dust": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 400,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.9333333333333333,
+                "value": 300
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 300
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 300
+              },
+              {
+                "frame": 0.5,
+                "value": 600
+              },
+              {
+                "frame": 0.8,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "par_fire": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 1.5,
+                "value": 0
+              },
+              {
+                "frame": 1.5333333333333334,
+                "value": 100
+              }
+            ],
+            "tangentialAccelVar": [
+              {
+                "frame": 1.5,
+                "value": -50
+              },
+              {
+                "frame": 1.95,
+                "value": -200
+              }
+            ],
+            "tangentialAccel": [
+              {
+                "frame": 1.6166666666666667,
+                "value": 200
+              },
+              {
+                "frame": 1.95,
+                "value": 60
+              }
+            ]
+          }
+        }
+      },
+      "Title_idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Title_stay": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 1.6666666666666667,
+                "value": 0
+              },
+              {
+                "frame": 1.6833333333333333,
+                "value": 600
+              },
+              {
+                "frame": 2.1666666666666665,
+                "value": 600
+              },
+              {
+                "frame": 2.4166666666666665,
+                "value": 0
+              }
+            ],
+            "startRadius": [
+              {
+                "frame": 1.6833333333333333,
+                "value": 60
+              },
+              {
+                "frame": 2,
+                "value": 150
+              },
+              {
+                "frame": 2.3333333333333335,
+                "value": 350
+              }
+            ],
+            "endRadius": [
+              {
+                "frame": 1.6833333333333333,
+                "value": 200
+              },
+              {
+                "frame": 2.25,
+                "value": 400
+              }
+            ]
+          }
+        }
+      },
+      "C_appear": {
+        "props": {
+          "color": [
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "_val": 4278190080
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "fire_cont1": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.5333333333333334,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.5333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.7,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.5333333333333334,
+              "curve": [
+                0.0393388429752066,
+                0.6972210743801652,
+                0.5715044584601999,
+                1.3194323618964767
+              ],
+              "value": {
+                "x": -0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": {
+                "x": -1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Title_appear": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1,
+              "curve": [
+                0.04013350286077553,
+                0.9121765734265733,
+                0.6048331214240305,
+                1.1986649713922441
+              ],
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Slot_BG/BG-80_title_bg_topX2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4283321934
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Slot_BG/BG-80_title_bg_topX2 copy": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4283321934
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "fire_cont2": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.5833333333333333,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.5833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.5833333333333333,
+              "curve": [
+                0.03288223140495867,
+                0.6016632231404958,
+                0.5723200304480209,
+                1.2666920400173989
+              ],
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "fire_cont3": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.65,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.65,
+              "value": 0
+            },
+            {
+              "frame": 1.8666666666666667,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.65,
+              "curve": [
+                0.03288223140495867,
+                0.6016632231404958,
+                0.5723200304480209,
+                1.2666920400173989
+              ],
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.2,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx-80_Light_5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.65,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.7,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

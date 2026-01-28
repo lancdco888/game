@@ -1,0 +1,212 @@
+{
+  "_name": "TopUI_Level_4_levelup",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "front_effect/par_eye_right": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 1.4166666666666667,
+                "value": 100
+              },
+              {
+                "frame": 1.5833333333333333,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "front_effect/par_eye_left": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 1.4166666666666667,
+                "value": 100
+              },
+              {
+                "frame": 1.5833333333333333,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "front_effect": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.1333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "center_jewel/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.1333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "center_jewel_front/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": false
+            }
+          ]
+        }
+      },
+      "center_jewel_front/B_light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "front_snout/J_Wolf": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.1333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "center_jewel/B_light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "back_head/J_Wolf": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.1333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "center_jewel_front": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "center_jewel": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": "constant"
+            }
+          ]
+        }
+      },
+      "front_snout": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.8833333333333333,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": 0,
+              "curve": "constant"
+            }
+          ]
+        }
+      },
+      "back_head": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.8833333333333333,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 3,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
