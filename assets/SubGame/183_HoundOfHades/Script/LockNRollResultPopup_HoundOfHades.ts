@@ -22,15 +22,15 @@ export default class LockNRollResultPopup_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 弹窗打开动画组件 */
     @property(cc.Animation)
-    public openAni: cc.Animation | null = null;
+    public openAni: cc.Animation = null;
 
     /** 遮罩背景节点（阻止底层交互） */
     @property(cc.Node)
-    public blockingBG: cc.Node | null = null;
+    public blockingBG: cc.Node = null;
 
     /** 装饰节点（适配视图大小） */
     @property(cc.Node)
-    public deco_Node: cc.Node | null = null;
+    public deco_Node: cc.Node = null;
 
     /** 奖金显示标签数组（数字滚动） */
     @property([cc.Label])
@@ -38,31 +38,31 @@ export default class LockNRollResultPopup_HoundOfHades extends cc.Component {
 
     /** 领取按钮 */
     @property(cc.Button)
-    public collectButton: cc.Button | null = null;
+    public collectButton: cc.Button = null;
 
     /** 分享开关 */
     @property(cc.Toggle)
-    public shareToggle: cc.Toggle | null = null;
+    public shareToggle: cc.Toggle = null;
 
     /** 分享区域根节点 */
     @property(cc.Node)
-    public shareRoot: cc.Node | null = null;
+    public shareRoot: cc.Node = null;
 
     /** 单注倍数标签 */
     @property(cc.Label)
-    public lineBetLabel: cc.Label | null = null;
+    public lineBetLabel: cc.Label = null;
 
     /** 长背景（大额奖金显示） */
     @property(cc.Node)
-    public logBG: cc.Node | null = null;
+    public logBG: cc.Node = null;
 
     /** 短背景（小额奖金显示） */
     @property(cc.Node)
-    public shortBG: cc.Node | null = null;
+    public shortBG: cc.Node = null;
 
     /** 弹窗根节点 */
     @property(cc.Node)
-    public root: cc.Node | null = null;
+    public root: cc.Node = null;
 
     /** 初始化时需要缩放的节点数组 */
     @property([cc.Node])
@@ -74,18 +74,18 @@ export default class LockNRollResultPopup_HoundOfHades extends cc.Component {
 
     /** 赢钱金币爆炸动画组件 */
     @property(cc.Animation)
-    public winExplodeCoin: cc.Animation | null = null;
+    public winExplodeCoin: cc.Animation = null;
 
     /** 赢钱金币收集特效节点 */
     @property(cc.Node)
-    public winCoinCollectFx: cc.Node | null = null;
+    public winCoinCollectFx: cc.Node = null;
 
     // ====== 私有状态属性 ======
     /** 获奖金币金额 */
     private _winningCoin: number = 0;
 
     /** 弹窗关闭后的回调函数 */
-    private _fnCallback: (() => void) | null = null;
+    private _fnCallback: (() => void) = null;
 
     /** 是否自动关闭弹窗（自动旋转时） */
     private _isAutoClose: boolean = false;

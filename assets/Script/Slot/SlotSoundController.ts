@@ -13,6 +13,10 @@ export class SlotSoundInfo {
 
     @property({ type: Number })
     public volume: number = -1;
+
+    constructor(){
+        
+    }
 }
 
 /** 中奖符号音效信息实体类 - 原JS内联构造函数 SymbolWinSoundInfo 转换 */

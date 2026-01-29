@@ -59,7 +59,8 @@ export default class LobbyMoveManager extends cc.Component {
             return;
         }
 
-        this._info ={slotID:"mooorecheddar"};
+        this._info = data;
+        //{slotID:"mooorecheddar"};
         this.setZoneInfo();
         PopupManager.Instance().showDisplayProgress(true);
 

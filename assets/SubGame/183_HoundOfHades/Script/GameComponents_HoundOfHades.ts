@@ -31,28 +31,28 @@ export default class GameComponents_HoundOfHades extends GameComponents_Base {
     public jackpotUI: JackpotMoneyDisplay = null;
 
     @property(JackpotDisplayFxComponent_HoundOfHades)
-    public jackpotDisplayFX: JackpotDisplayFxComponent_HoundOfHades | null = null;
+    public jackpotDisplayFX: JackpotDisplayFxComponent_HoundOfHades = null;
 
     @property(JackpotResultPopup_HoundOfHades)
-    public jackpotResultPopup: JackpotResultPopup_HoundOfHades | null = null;
+    public jackpotResultPopup: JackpotResultPopup_HoundOfHades = null;
 
     @property(LockNRollResultPopup_HoundOfHades)
-    public lockNRollResultPopup: LockNRollResultPopup_HoundOfHades | null = null;
+    public lockNRollResultPopup: LockNRollResultPopup_HoundOfHades = null;
 
     @property(LockNRollStartPopup_HoundOfHades)
-    public lockNRollStartPopup: LockNRollStartPopup_HoundOfHades | null = null;
+    public lockNRollStartPopup: LockNRollStartPopup_HoundOfHades = null;
 
     @property(LockNRollIntroPopup_HoundOfHades)
-    public lockNRollIntroPopup: LockNRollIntroPopup_HoundOfHades | null = null;
+    public lockNRollIntroPopup: LockNRollIntroPopup_HoundOfHades = null;
 
     @property(MovePotComponent_HoundOfHades)
-    public movePot: MovePotComponent_HoundOfHades | null = null;
+    public movePot: MovePotComponent_HoundOfHades = null;
 
     @property(LockComponent_HoundOfHades)
-    public lockComponent: LockComponent_HoundOfHades | null = null;
+    public lockComponent: LockComponent_HoundOfHades = null;
 
     @property(RemainCountComponent_HoundOfHades)
-    public remainCount: RemainCountComponent_HoundOfHades | null = null;
+    public remainCount: RemainCountComponent_HoundOfHades = null;
 
     // ====== 私有成员变量 ======
     // 猎犬组件（从节点获取的实际组件实例）
