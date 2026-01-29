@@ -1,0 +1,252 @@
+{
+  "_name": "J_feature2_move",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Object/calculate_dim/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/calculate/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/win/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/feature_bonus/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/feature2/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/feature1/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ],
+            "startSize": [
+              {
+                "frame": 0,
+                "value": 50
+              }
+            ],
+            "startRadius": [
+              {
+                "frame": 0,
+                "value": 30,
+                "curve": "cubicOut"
+              }
+            ],
+            "endRadius": [
+              {
+                "frame": 0,
+                "value": 100,
+                "curve": "cubicIn"
+              }
+            ]
+          }
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/calculate_dim/B_light": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/calculate/B_light": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/win/B_light": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/feature1/B_light": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Object/feature_prize/B": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object/feature_prize/B_light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Object": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Info": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.3333333333333333,
+          "curve": "cubicIn",
+          "value": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

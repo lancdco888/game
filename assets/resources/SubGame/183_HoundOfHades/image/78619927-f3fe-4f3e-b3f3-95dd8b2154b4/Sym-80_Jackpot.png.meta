@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6942479c-d95f-4552-aa0a-e32c61de18ba",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 133,
+  "platformSettings": {},
+  "subMetas": {
+    "Sym-80_Jackpot": {
+      "ver": "1.0.6",
+      "uuid": "7dda984c-9b78-4537-81c0-0ba13e90e048",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6942479c-d95f-4552-aa0a-e32c61de18ba",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 127,
+      "height": 132,
+      "rawWidth": 128,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
