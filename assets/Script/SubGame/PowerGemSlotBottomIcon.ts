@@ -7,7 +7,7 @@ import SlotManager from "../manager/SlotManager";
 import SlotReelSpinStateManager from "../Slot/SlotReelSpinStateManager";
 import GameCommonSound from "../GameCommonSound";
 import ServerStorageManager, { StorageKeyType } from "../manager/ServerStorageManager";
-import UserInfo from "../User/UserInfo";
+import UserInfo, { MSG } from "../User/UserInfo";
 import PowerGemManager, { PowerGemLevelGradeType } from "../manager/PowerGemManager";
 import PowerGemSlotBottomToolTip from "./PowerGemSlotBottomToolTip";
 import PowerGemSlotBottomUI from "./PowerGemSlotBottomUI";
@@ -71,17 +71,17 @@ export default class PowerGemSlotBottomIcon extends cc.Component {
     // ===================== 生命周期方法 【1:1还原原JS逻辑，移除this.模块引用】 =====================
     onLoad(): void {
         this.node.active = false;
-        // // 监听用户等级升级、VIP积分变化事件
-        // UserInfo.instance().addListenerTarget(
-        //     UserInfo.MSG.UPDATE_LEVEL_UP,
-        //     this.updatePowerGemEvent,
-        //     this
-        // );
-        // UserInfo.instance().addListenerTarget(
-        //     UserInfo.MSG.UPDATE_VIP_POINT,
-        //     this.updatePowerGemUI,
-        //     this
-        // );
+        // 监听用户等级升级、VIP积分变化事件
+        UserInfo.instance().addListenerTarget(
+            MSG.UPDATE_LEVEL_UP,
+            this.updatePowerGemEvent,
+            this
+        );
+        UserInfo.instance().addListenerTarget(
+            MSG.UPDATE_VIP_POINT,
+            this.updatePowerGemUI,
+            this
+        );
     }
 
     /**
@@ -585,6 +585,3 @@ export default class PowerGemSlotBottomIcon extends cc.Component {
         this.nodePowerGemToolTipRoot.setPosition(localPos);
     }
 }
-
-// ===================== Cocos Creator 2.4.13 兼容配置 =====================
-module.exports = PowerGemSlotBottomIcon;

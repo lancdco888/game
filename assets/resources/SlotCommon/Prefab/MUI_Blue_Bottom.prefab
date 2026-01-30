@@ -69,20 +69,20 @@
         "__id__": 175
       },
       {
-        "__id__": 181
+        "__id__": 182
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 189
+        "__id__": 190
       },
       {
-        "__id__": 190
+        "__id__": 191
       }
     ],
     "_prefab": {
-      "__id__": 191
+      "__id__": 192
     },
     "_opacity": 255,
     "_color": {
@@ -7058,9 +7058,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 180
+      }
+    ],
     "_prefab": {
-      "__id__": 180
+      "__id__": 181
     },
     "_opacity": 255,
     "_color": {
@@ -7252,6 +7256,27 @@
     "sync": false
   },
   {
+    "__type__": "6dd30QOE+RIxr7meN2mdFSC",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 175
+    },
+    "_enabled": true,
+    "prefPowerGemSlot": null,
+    "prefPowerGemToolTip": null,
+    "prefPowerGemOpenToolTip": null,
+    "nodePowerGemSlotRoot": null,
+    "nodePowerGemToolTipRoot": null,
+    "nodeIcon_Dimmed": null,
+    "nodeIcon_Bronze": null,
+    "nodeIcon_Silver": null,
+    "nodeIcon_Gold": null,
+    "lblLevel": null,
+    "lblDimLevel": null,
+    "_id": ""
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -7271,16 +7296,16 @@
     },
     "_children": [
       {
-        "__id__": 182
+        "__id__": 183
       },
       {
-        "__id__": 185
+        "__id__": 186
       }
     ],
     "_active": false,
     "_components": [],
     "_prefab": {
-      "__id__": 188
+      "__id__": 189
     },
     "_opacity": 255,
     "_color": {
@@ -7334,17 +7359,17 @@
     "_name": "HB-80_N_Frame_Back",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 181
+      "__id__": 182
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 183
+        "__id__": 184
       }
     ],
     "_prefab": {
-      "__id__": 184
+      "__id__": 185
     },
     "_opacity": 255,
     "_color": {
@@ -7398,7 +7423,7 @@
     "_name": "cc.Node",
     "_objFlags": 0,
     "node": {
-      "__id__": 182
+      "__id__": 183
     },
     "_enabled": true,
     "_materials": [
@@ -7441,17 +7466,17 @@
     "_name": "HB-80_Frame_Off",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 181
+      "__id__": 182
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 186
+        "__id__": 187
       }
     ],
     "_prefab": {
-      "__id__": 187
+      "__id__": 188
     },
     "_opacity": 255,
     "_color": {
@@ -7505,7 +7530,7 @@
     "_name": "cc.Node",
     "_objFlags": 0,
     "node": {
-      "__id__": 185
+      "__id__": 186
     },
     "_enabled": true,
     "_materials": [
@@ -7563,34 +7588,76 @@
     },
     "_enabled": true,
     "rootOfFreeSpinUI_2": null,
-    "rootOfFreespinUI": null,
+    "rootOfFreespinUI": {
+      "__id__": 75
+    },
     "freeSpinLayoutNode": null,
-    "labelTotalFreespinCount": null,
-    "labelPastFreespinCount": null,
+    "labelTotalFreespinCount": {
+      "__id__": 81
+    },
+    "labelPastFreespinCount": {
+      "__id__": 84
+    },
     "labelRemainFreespinCount": null,
     "labelMultiplierCount": null,
-    "btnSpin": null,
+    "btnSpin": {
+      "__id__": 61
+    },
     "btnSpinInAutospin": null,
     "btnSpinInFreespin": null,
-    "btnStopInAutospin": null,
-    "btnPlusBetPerLine": null,
-    "btnMinusBetPerLine": null,
+    "btnStopInAutospin": {
+      "__id__": 73
+    },
+    "btnPlusBetPerLine": {
+      "__id__": 43
+    },
+    "btnMinusBetPerLine": {
+      "__id__": 37
+    },
     "btnBetSelect": null,
     "btnBuyCoins": null,
-    "btnMaxBet": null,
-    "btnStop": null,
-    "btnStopAutospin": null,
+    "btnMaxBet": {
+      "__id__": 55
+    },
+    "btnStop": {
+      "__id__": 67
+    },
+    "btnStopAutospin": {
+      "__id__": 73
+    },
     "btnAutoSpinSelect": null,
     "autoSpinCntLabel": null,
-    "fastModeBtns": [],
-    "fastModeTooltipRoot": null,
-    "paytableBtn": null,
-    "holdEffectOfSpinBtn": null,
+    "fastModeBtns": [
+      {
+        "__id__": 97
+      },
+      {
+        "__id__": 103
+      },
+      {
+        "__id__": 109
+      }
+    ],
+    "fastModeTooltipRoot": {
+      "__id__": 111
+    },
+    "paytableBtn": {
+      "__id__": 49
+    },
+    "holdEffectOfSpinBtn": {
+      "__id__": 130
+    },
     "nodeTotalBetUI": null,
     "nodeNewSlotTooltip": null,
-    "nodeFeverIconPos": null,
-    "powerGemSlotBottomIconPos": null,
-    "hyperBountySlotBottomIconPos": null,
+    "nodeFeverIconPos": {
+      "__id__": 169
+    },
+    "powerGemSlotBottomIconPos": {
+      "__id__": 175
+    },
+    "hyperBountySlotBottomIconPos": {
+      "__id__": 182
+    },
     "_id": ""
   },
   {
@@ -7630,7 +7697,9 @@
     },
     "winDisplayAni_1": null,
     "winDisplayAni_2": null,
-    "coinEffectOfWinCoinArea": null,
+    "coinEffectOfWinCoinArea": {
+      "__id__": 167
+    },
     "isControlWinMoneyLabelPosition": true,
     "_id": ""
   },

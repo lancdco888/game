@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bee30083-5bd1-4186-817f-8d3aa5fcb7ec",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 34,
+  "height": 46,
+  "platformSettings": {},
+  "subMetas": {
+    "SuiteLeague-FeverMode-100_Tooltip_Lock_1": {
+      "ver": "1.0.6",
+      "uuid": "9e0b7f07-085d-4272-9ffe-bd93929318fb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bee30083-5bd1-4186-817f-8d3aa5fcb7ec",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 34,
+      "height": 46,
+      "rawWidth": 34,
+      "rawHeight": 46,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

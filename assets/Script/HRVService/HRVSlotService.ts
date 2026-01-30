@@ -342,9 +342,13 @@ export default class HRVSlotService extends cc.Component {
             await AsyncHelper.delayWithComponent(0, this);
             // 加载老虎机框架
             if (SlotManager.Instance.machineFrameLayer) {
-                var machineFramePrefab = SlotManager.Instance.machineFrameLayer.getChildByName("MUI_Yellow_Frame");
-                SlotManager.Instance.setMachineFrame = machineFramePrefab.getComponent(MachineFrame);
+                // var machineFramePrefab = SlotManager.Instance.machineFrameLayer.getChildByName("MUI_Yellow_Frame");
+                // SlotManager.Instance.setMachineFrame = machineFramePrefab.getComponent(MachineFrame);
                 // SlotManager.Instance.machineFrame.setShowBG(SlotManager.Instance.flagShowFrameBG, SlotManager.Instance.frameBGNode);
+                var mainFrame = cc.instantiate(SlotPrefabManager.Instance().getPrefab("machineFrame"))
+                SlotManager.Instance.machineFrameLayer.addChild(mainFrame),
+                SlotManager.Instance.setMachineFrame = mainFrame.getComponent(MachineFrame),
+                SlotManager.Instance.machineFrame.setShowBG(SlotManager.Instance.flagShowFrameBG, SlotManager.Instance.frameBGNode)
             }
 
             // 加载背景
@@ -357,35 +361,38 @@ export default class HRVSlotService extends cc.Component {
                     bgSide.setPosition(cc.Vec2.ZERO);
                 }
 
-                var bg = SlotManager.Instance.backgroundLayer.getChildByName("Background");
+                var bg = SlotManager.Instance.backgroundLayer.getChildByName("Background")
+                if(bg==null){
+                    bg = cc.instantiate(SlotPrefabManager.Instance().getPrefab("Background"))
+                    SlotManager.Instance.backgroundLayer.addChild(bg)
+                }
+                
                 SlotManager.Instance.background_scale_component = bg.getComponent(SlotmachineBackground);
                 console.log("asyncLoadBg start");
                 await SlotManager.Instance.background_scale_component.asyncLoadBg();
-               
+                
                 bg.setPosition(cc.Vec2.ZERO);
-                console.log("asyncLoadBg end");
+                console.log("asyncLoadBg end"); 
             }
 
-            // // 初始化底部UI
-            // if (SlotManager.Instance.bottomUiInstance) {
-            //     const bottomUI = SlotManager.Instance.bottomUiInstance.getComponent(BottomUI);
-            //     bottomUI.initBottomUI_EX(this);
-            //     bottomUI.initUI();
-            //     SlotManager.Instance._bottomUI = bottomUI;
-            // } else {
-
-           var node = SlotManager.Instance.bottomUiLayer.getChildByName("MUI_Yellow_Bottom")
-            // const bottomUIPrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("bottomUI"));
-            // SlotManager.Instance.bottomUiLayer.addChild(bottomUIPrefab);
-            const bottomUI = node.getComponent(BottomUI);
-            bottomUI.initBottomUI_EX(this);
-            bottomUI.initUI();
-            SlotManager.Instance._bottomUI = bottomUI;
-            if (!SlotManager.Instance.bottomUIText) {
-                SlotManager.Instance.bottomUIText = node.getComponent(BottomUIText);
+            // 初始化底部UI
+            if (SlotManager.Instance.bottomUiInstance) {
+                const bottomUI = SlotManager.Instance.bottomUiInstance.getComponent(BottomUI);
+                bottomUI.initBottomUI_EX(this);
+                bottomUI.initUI();
+                SlotManager.Instance._bottomUI = bottomUI;
+            } else {
+                const bottomUIPrefab = cc.instantiate(SlotPrefabManager.Instance().getPrefab("bottomUI"));
+                SlotManager.Instance.bottomUiLayer.addChild(bottomUIPrefab);
+                const bottomUI = bottomUIPrefab.getComponent(BottomUI);
+                bottomUI.initBottomUI_EX(this);
+                bottomUI.initUI();
+                SlotManager.Instance._bottomUI = bottomUI;
+                if (!SlotManager.Instance.bottomUIText) {
+                    SlotManager.Instance.bottomUIText = bottomUIPrefab.getComponent(BottomUIText);
+                }
+                SlotManager.Instance.bottomUIText.setBottomUIAutoScaleByResoultion();
             }
-            SlotManager.Instance.bottomUIText.setBottomUIAutoScaleByResoultion();
-            // }
 
             // 内容选择器初始化
             this.setContentSelector();
@@ -2274,11 +2281,11 @@ export default class HRVSlotService extends cc.Component {
         }, this)
 
         if (e.powerGemSlotBottomIconPos) {
-            var n = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/PowerGem/PowerGemSlotBottomIcon")
-                , o = cc.instantiate(n);
-            this._powerGemSlotBottomIcon = o.getComponent(PowerGemSlotBottomIcon),
-            o.setParent(e.powerGemSlotBottomIconPos),
-            o.setPosition(cc.Vec2.ZERO);
+            var prefab = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/PowerGem/PowerGemSlotBottomIcon")
+            var node = cc.instantiate(prefab);
+            this._powerGemSlotBottomIcon = node.getComponent(PowerGemSlotBottomIcon),
+            node.setParent(e.powerGemSlotBottomIconPos),
+            node.setPosition(cc.Vec2.ZERO);
             var a = e.getPowerGemBottomIcon_SlotRoot()
                 , i = e.getPowerGemBottomIcon_ToolTipRoot();
             this._powerGemSlotBottomIcon.setPowerGemSlotRootPos(a),
@@ -2286,8 +2293,8 @@ export default class HRVSlotService extends cc.Component {
         }
 
         if (e.nodeFeverIconPos) {
-            n = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/FeverMode/FeverModeIcon");
-            var l = cc.instantiate(n);
+            prefab = LoadingSlotProcess.Instance().getPrefab("Service/01_Content/FeverMode/FeverModeIcon");
+            var l = cc.instantiate(prefab);
             this._feverModeIcon = l.getComponent(IngameSuiteLeagueFeverToolTipUI),
             l.setParent(e.nodeFeverIconPos),
             l.setPosition(cc.Vec2.ZERO);
@@ -2296,16 +2303,18 @@ export default class HRVSlotService extends cc.Component {
             this._feverModeIcon.setFeverModeButtonRootPos(r),
             this._feverModeIcon.setFeverModeToolTipRootPos(i)
         }
-        if (e.hyperBountySlotBottomIconPos) {
-            var s = null;
-            cc.loader.loadRes("Service/01_Content/HyperBounty/IngameHyperBounty/HyperBounty_" + e.node.name, function(n, o) {
-                n || (s = cc.instantiate(o),
-                t._hyperBountyIngameIcon = s.getComponent(HyperBountyInGameUI),
-                s.setParent(e.hyperBountySlotBottomIconPos),
-                s.setPosition(cc.Vec2.ZERO),
-                e.hyperBountySlotBottomIconPos.getChildByName("HB-80_Frame_Off").active = false)
-            })
-        }
+
+
+        // if (e.hyperBountySlotBottomIconPos) {
+        //     var s = null;
+        //     cc.loader.loadRes("Service/01_Content/HyperBounty/IngameHyperBounty/HyperBounty_" + e.node.name, function(n, o) {
+        //         n || (s = cc.instantiate(o),
+        //         t._hyperBountyIngameIcon = s.getComponent(HyperBountyInGameUI),
+        //         s.setParent(e.hyperBountySlotBottomIconPos),
+        //         s.setPosition(cc.Vec2.ZERO),
+        //         e.hyperBountySlotBottomIconPos.getChildByName("HB-80_Frame_Off").active = false)
+        //     })
+        // }
     }
     
     getPowerGemSlotBottomIcon = function() {
