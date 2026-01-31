@@ -32,7 +32,7 @@ export const EventBus = new cc.EventTarget();
  * 朱雀财富游戏管理类
  * 继承自SlotManager，负责游戏场景初始化、模式切换、旋转逻辑等核心功能
  */
-@ccclass("ZhuquefortuneManager")
+@ccclass()
 export default class ZhuquefortuneManager extends SlotManager {
     // 静态常量（与原JS保持一致）
     public static readonly SUBGAMEID_SLOT: string = "zhuquefortune";
@@ -58,6 +58,7 @@ export default class ZhuquefortuneManager extends SlotManager {
         return SlotManager.Instance as ZhuquefortuneManager;
     }
 
+    
     /**
      * 节点加载时执行（重写父类方法）
      */

@@ -3,6 +3,7 @@ import State from "../../../../Script/Slot/State";
 import TSUtility from "../../../../Script/global_utility/TSUtility";
 import SlotGameResultManager from "../../../../Script/manager/SlotGameResultManager";
 import JackpotModeCoin_Zhuquefortune from "./JackpotModeCoin_Zhuquefortune";
+import JackpotModeUI_Zhuquefortune from "./JackpotModeUI_Zhuquefortune";
 import MoveJackpotModeCoin_Zhuquefortune from "./MoveJackpotModeCoin_Zhuquefortune";
 import ZhuquefortuneManager from "./ZhuquefortuneManager";
 
@@ -25,7 +26,7 @@ export enum JackpotCoinState {
  * 朱雀运势 Jackpot 模式核心组件
  * 负责 Jackpot 模式的显隐、硬币状态管理、游戏序列生成、硬币交互与特效播放
  */
-@ccclass("JackpotModeComponent_Zhuquefortune")
+@ccclass()
 export default class JackpotModeComponent_Zhuquefortune extends cc.Component {
     // 12 个 Jackpot 硬币对象数组
     @property([JackpotModeCoin_Zhuquefortune])

@@ -20,13 +20,13 @@
         "__id__": 3745
       },
       {
-        "__id__": 3754
+        "__id__": 3785
       },
       {
-        "__id__": 3755
+        "__id__": 3786
       },
       {
-        "__id__": 3756
+        "__id__": 3787
       }
     ],
     "_active": true,
@@ -192479,13 +192479,13 @@
         "__id__": 3750
       },
       {
-        "__id__": 3751
+        "__id__": 3780
       },
       {
-        "__id__": 3752
+        "__id__": 3782
       },
       {
-        "__id__": 3753
+        "__id__": 3784
       }
     ],
     "_active": true,
@@ -192779,7 +192779,11 @@
     },
     "_children": [],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 3751
+      }
+    ],
     "_prefab": null,
     "_opacity": 255,
     "_color": {
@@ -192829,6 +192833,304 @@
     "_id": "16uiTLHtBMmJfYrTynABk4"
   },
   {
+    "__type__": "c88c66kyNlEp77SJrNWmplm",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 3750
+    },
+    "_enabled": true,
+    "useCommonSound": true,
+    "useLinkedJackpotSound": false,
+    "useDynamicReelsSound": false,
+    "symbolWinSoundList": [],
+    "commonList": [],
+    "soundList": [
+      {
+        "__id__": 3752
+      },
+      {
+        "__id__": 3753
+      },
+      {
+        "__id__": 3754
+      },
+      {
+        "__id__": 3755
+      },
+      {
+        "__id__": 3756
+      },
+      {
+        "__id__": 3757
+      },
+      {
+        "__id__": 3758
+      },
+      {
+        "__id__": 3759
+      },
+      {
+        "__id__": 3760
+      },
+      {
+        "__id__": 3761
+      },
+      {
+        "__id__": 3762
+      },
+      {
+        "__id__": 3763
+      },
+      {
+        "__id__": 3764
+      },
+      {
+        "__id__": 3765
+      },
+      {
+        "__id__": 3766
+      },
+      {
+        "__id__": 3767
+      },
+      {
+        "__id__": 3768
+      },
+      {
+        "__id__": 3769
+      },
+      {
+        "__id__": 3770
+      },
+      {
+        "__id__": 3771
+      },
+      {
+        "__id__": 3772
+      },
+      {
+        "__id__": 3773
+      },
+      {
+        "__id__": 3774
+      },
+      {
+        "__id__": 3775
+      },
+      {
+        "__id__": 3776
+      },
+      {
+        "__id__": 3777
+      },
+      {
+        "__id__": 3778
+      },
+      {
+        "__id__": 3779
+      }
+    ],
+    "defaultWinSoundList": [],
+    "_id": "2eXblhRqtONZHnZ5weKD36"
+  },
+  {
+    "soundId": "BaseBGM",
+    "soundResource": {
+      "__uuid__": "c65b4fa3-3157-4c7b-a5bb-a15730a9da24"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "LockNRollBGM",
+    "soundResource": {
+      "__uuid__": "c0b78e66-4bc7-441a-9da0-08a1643ace6c"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "Intro",
+    "soundResource": {
+      "__uuid__": "83d76610-7b13-4b67-b4cd-9d7cd08b7bb8"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotModeBGM",
+    "soundResource": {
+      "__uuid__": "42a4d672-4eef-470c-a182-d9eac7e360e4"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotAppear",
+    "soundResource": {
+      "__uuid__": "5461ff41-f736-4a4d-a4f7-a2ad704565a2"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotTrigger",
+    "soundResource": {
+      "__uuid__": "7881262f-c71d-4bbc-b897-65d5dcf30166"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotModeSelect",
+    "soundResource": {
+      "__uuid__": "862cb33f-75e4-42ed-82b4-0d875f5adcc1"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "SpecialAppear",
+    "soundResource": {
+      "__uuid__": "cb842f8b-7993-49b1-92fc-9bdc7cb2ec94"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "SpecailStart",
+    "soundResource": {
+      "__uuid__": "382c79c1-590d-487a-9cbd-8c842e162fc2"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "BigWinExpect",
+    "soundResource": {
+      "__uuid__": "773c5561-99a8-4715-a94d-4341d9cf47d0"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "RandomTriggerExpect",
+    "soundResource": {
+      "__uuid__": "91e07482-ae5d-4ea8-9950-4f21842833f5"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "RandomTrigger",
+    "soundResource": {
+      "__uuid__": "00e32f7c-acde-40e6-9ea8-0835d759b2f8"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "Pot_Upgrade",
+    "soundResource": {
+      "__uuid__": "3662eb14-8f37-49f9-9543-77fe4d98ac1c"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "Pot_Last_Upgrade",
+    "soundResource": {
+      "__uuid__": "90dcbdd0-0ab4-4db7-a299-5d4cad8ae5b5"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "MovePot",
+    "soundResource": {
+      "__uuid__": "8f9bb21c-85b7-44a4-b3c7-babebabd65fc"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "Pot_Trigger",
+    "soundResource": {
+      "__uuid__": "e2961f4a-5e53-4b2d-b531-1fd73395d30a"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "SuperJackpotTrigger",
+    "soundResource": {
+      "__uuid__": "7d00538b-6137-48a4-a557-dda78af9a348"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "SuperJackpotModeUI",
+    "soundResource": {
+      "__uuid__": "8cb106ed-346b-4259-97b8-b44062a802e5"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotModeWin",
+    "soundResource": {
+      "__uuid__": "f6a3ac1a-b407-46de-b04c-0d740c61f536"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "PopupOpen",
+    "soundResource": {
+      "__uuid__": "3b70ae4f-900a-469d-a1b8-dea15306b5d1"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "PopupClose",
+    "soundResource": {
+      "__uuid__": "dddcd669-b0bb-4caa-83fd-b36606351540"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotReulstPopup",
+    "soundResource": {
+      "__uuid__": "8e9fc6b1-803c-43e3-982b-919e6ab076e2"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotCollect",
+    "soundResource": {
+      "__uuid__": "8cd1de9b-92c1-48ba-8e0d-e2810b1f3ac7"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "LockNRollResultPopup",
+    "soundResource": {
+      "__uuid__": "923666bd-3fe6-495c-a084-26faa0f2ba6d"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "SpecialChange",
+    "soundResource": {
+      "__uuid__": "43435acc-0a25-4603-9553-7f60d0927cf9"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "ZhuqueCry",
+    "soundResource": {
+      "__uuid__": "22138117-a1bb-4b56-92c6-d3fd9f3a6781"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "FailedExpect",
+    "soundResource": {
+      "__uuid__": "f0a6f3ee-d363-4f76-8181-293b643979ff"
+    },
+    "volume": -1
+  },
+  {
+    "soundId": "JackpotModeStart",
+    "soundResource": {
+      "__uuid__": "89c152b7-abe2-4f9e-8e3e-9848762098de"
+    },
+    "volume": -1
+  },
+  {
     "__type__": "cc.Node",
     "_name": "SlotPrefabManager",
     "_objFlags": 0,
@@ -192837,7 +193139,11 @@
     },
     "_children": [],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 3781
+      }
+    ],
     "_prefab": null,
     "_opacity": 255,
     "_color": {
@@ -192887,6 +193193,17 @@
     "_id": "39qOSxvfJIirSUHqNCyQfV"
   },
   {
+    "__type__": "aaac6glwvtOwYI1/h9fok+W",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 3780
+    },
+    "_enabled": true,
+    "prefabs": [],
+    "_id": "4dGYGOVFBIR6419PuGLAbz"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "SymbolPoolManager",
     "_objFlags": 0,
@@ -192895,7 +193212,11 @@
     },
     "_children": [],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 3783
+      }
+    ],
     "_prefab": null,
     "_opacity": 255,
     "_color": {
@@ -192943,6 +193264,20 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "_id": "0flRrsVwZILp8cSnTrl3Yk"
+  },
+  {
+    "__type__": "14e68uYeVROQJr04WxC7UdW",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 3782
+    },
+    "_enabled": true,
+    "initialsize": 10,
+    "symbolinfo": [],
+    "symbolaniinfo": [],
+    "layerInitSymbolAni": null,
+    "_id": "4aGOO1HvVJkq7K3SfcsnJ/"
   },
   {
     "__type__": "cc.Node",

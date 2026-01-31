@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5a657c26-5eb0-4ea3-8f73-48449af26c02",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 60,
+  "height": 80,
+  "platformSettings": {},
+  "subMetas": {
+    "Board-Btn-70_Btn_Paytable02": {
+      "ver": "1.0.6",
+      "uuid": "10744df2-e86c-4302-9796-d27a336c4ce5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5a657c26-5eb0-4ea3-8f73-48449af26c02",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": 0.5,
+      "trimX": 7,
+      "trimY": 5,
+      "width": 49,
+      "height": 69,
+      "rawWidth": 60,
+      "rawHeight": 80,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
