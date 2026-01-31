@@ -1,0 +1,63 @@
+{
+  "_name": "Piggybank_Levelup_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Pivot": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.30272921108742,
+                0,
+                0.6972707889125799,
+                1.0053304904051172
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -5,
+              "curve": [
+                0.3000639658848614,
+                -0.005330490405117239,
+                0.6972707889125799,
+                1.0053304904051172
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/2020-100_PiggyBank_Fatter_Txt_Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 200
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 200
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,188 @@
+{
+  "_name": "Piggly_Ingame_Play_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Piggly/Top-80_Piggly_cover/Top-80_Piggly_cover_Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 80
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Piggly/Top-80_Piggly_Coin": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -10,
+                36
+              ],
+              "curve": [
+                0.4512820512820513,
+                0.22948717948717945,
+                0.6076923076923076,
+                0.4076923076923077
+              ],
+              "motionPath": [
+                [
+                  -1.4,
+                  20.6,
+                  -3.3,
+                  29.6,
+                  0.7,
+                  10.7
+                ]
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -2,
+                -2
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.35,
+              "value": [
+                -2,
+                18,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.2833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Piggly": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.3,
+              "value": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": -2
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 1
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,653 @@
+{
+  "_name": "Common_Win_Popup_Ani_Open_Bg_Fx_Epic",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "bg_fx/Coin_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.016666666666666666,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ]
+        }
+      },
+      "bg_fx/Particle": {
+        "props": {
+          "active": [
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ]
+        }
+      },
+      "bg_fx/Glow_Round": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Fx_Particle_Bottom": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Fx_Bottom_Glow_Round": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 60
+            }
+          ]
+        }
+      },
+      "Fx_Bottom_Glow_Round_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 50
+            }
+          ]
+        }
+      },
+      "Fx_Bottom_Glow_Round_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 150
+            },
+            {
+              "frame": 2,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "Fx_Glow_Round": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Fx_Glow_Round_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Fx_Top/explode_1": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.13333333333333333,
+              "value": 1,
+              "curve": [
+                0.06,
+                0.12,
+                0.58,
+                0.88
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 3
+            },
+            {
+              "frame": 2,
+              "value": 3
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.13333333333333333,
+              "value": 1,
+              "curve": [
+                0.06,
+                0.12,
+                0.59,
+                0.88
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 3
+            },
+            {
+              "frame": 2,
+              "value": 3
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.13333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 100
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Fx_Bottom_Glow_Round_4": {
+        "props": {
+          "active": [
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Fx_Bottom_Glow_Round_5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 1,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Fx_Under_2/particle_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 1,
+                "value": 100
+              },
+              {
+                "frame": 2,
+                "value": 100
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Under_2/particle_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 1,
+                "value": 100
+              },
+              {
+                "frame": 2,
+                "value": 100
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Under_2/particle_3": {
+        "props": {
+          "active": [
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 1,
+                "value": 160
+              },
+              {
+                "frame": 2,
+                "value": 160
+              }
+            ]
+          }
+        }
+      },
+      "particle_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 80
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Fx_Under_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Fx_Top_2/Back_Light_Pivot/Back_Light_White_1": {
+        "props": {}
+      },
+      "Fx_Top_2/Back_Light_Pivot/Back_Light_White_2": {
+        "props": {}
+      },
+      "Fx_Top_2/Back_Light_Pivot": {
+        "props": {}
+      },
+      "Fx_Top_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 80
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            }
+          ]
+        }
+      },
+      "bg_fx/Coin_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -380
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 30
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 300
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -380
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 15
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 350
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -480,
+                -450,
+                0
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 30
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 850
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                480,
+                -450,
+                0
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 30
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 850
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_5": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -200,
+                -400,
+                0
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 10
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 600
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_6": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                200,
+                -400,
+                0
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 10
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 600
+              }
+            ]
+          }
+        }
+      },
+      "Fx_Coin_Bottom/Coin_Particle_7": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -450
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "NodeParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 15
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 350
+              }
+            ]
+          }
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

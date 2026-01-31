@@ -1,0 +1,196 @@
+{
+  "_name": "Hero_Icon_ingame_Idle_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": 0
+        }
+      ]
+    },
+    "paths": {
+      "Btn": {
+        "comps": {},
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.29855450236966824,
+                0,
+                0.6984834123222748,
+                1
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0,
+              "curve": [
+                0.3015165876777251,
+                0.002962085308056861,
+                0.6984834123222748,
+                1
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 3,
+              "curve": [
+                0.29855450236966824,
+                0,
+                0.7014454976303317,
+                0.9970379146919431
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": -2,
+              "curve": [
+                0.29855450236966824,
+                0,
+                0.6984834123222748,
+                1
+              ]
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1,
+              "curve": [
+                0.2955924170616114,
+                0.002962085308056861,
+                0.6984834123222748,
+                1.002962085308057
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Btn/hero_Leaf/ingame_lobby-80_hero_icon_Leaf copy": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 50
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            },
+            {
+              "frame": 2.2666666666666666,
+              "value": 50
+            },
+            {
+              "frame": 3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Btn/FX/StarLight01": {
+        "props": {
+          "angle": [],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Btn/FX/StarLight02": {
+        "props": {
+          "angle": [],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Btn/FX/StarLight03": {
+        "props": {
+          "angle": [],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Btn/FX/StarLight04": {
+        "props": {
+          "angle": [],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Btn/hero_bg": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.96,
+                "y": 0.96,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

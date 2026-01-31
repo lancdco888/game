@@ -15,7 +15,9 @@ export class SlotSoundInfo {
     public volume: number = -1;
 
     constructor(){
-        
+        this.soundId = "";
+        this.soundResource = null;
+        this.volume = -1
     }
 }
 

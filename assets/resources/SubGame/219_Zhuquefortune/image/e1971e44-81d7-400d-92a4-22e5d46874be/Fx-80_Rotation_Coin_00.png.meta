@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "287bb75d-e765-4f6a-b190-2970a83116aa",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 54,
+  "height": 54,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_Rotation_Coin_00": {
+      "ver": "1.0.6",
+      "uuid": "33cabeee-59c3-431f-8ec0-de5c0fce915b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "287bb75d-e765-4f6a-b190-2970a83116aa",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 54,
+      "height": 54,
+      "rawWidth": 54,
+      "rawHeight": 54,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

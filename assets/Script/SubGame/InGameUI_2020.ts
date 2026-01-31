@@ -40,25 +40,25 @@ export default class InGameUI_2020 extends cc.Component {
 
     // ===================== Cocos 属性绑定（对应原 de 装饰器） =====================
     @property(cc.Button)
-    homeBtn: cc.Button | null = null;
+    homeBtn: cc.Button = null;
 
     @property(cc.Node)
-    blockingBG: cc.Node | null = null;
+    blockingBG: cc.Node = null;
 
     @property(cc.Node)
-    bigwinCoinTarget: cc.Node | null = null;
+    bigwinCoinTarget: cc.Node = null;
 
     @property(LevelInfoUI_2020)
-    levelUI: LevelInfoUI_2020 | null = null;
+    levelUI: LevelInfoUI_2020 = null;
 
     @property(LevelInfoUI_2020)
-    levelBoosterUI: LevelInfoUI_2020 | null = null;
+    levelBoosterUI: LevelInfoUI_2020 = null;
 
     // @property(LevelUpPassProfileUIController)
     // levelUpPassUI: LevelUpPassProfileUIController | null = null;
 
     @property(cc.Button)
-    menuBtn: cc.Button | null = null;
+    menuBtn: cc.Button = null;
 
     // @property(FBPictureSetter)
     // myPicSetter: FBPictureSetter | null = null;
@@ -67,7 +67,7 @@ export default class InGameUI_2020 extends cc.Component {
     // starAlbumUI: InGameStarAlbumUI | null = null;
 
     @property(InGameHeroUI)
-    heroUI: InGameHeroUI | null = null;
+    heroUI: InGameHeroUI = null;
 
     // @property(InGameTourneyUI)
     // tourneyUI: InGameTourneyUI | null = null;
@@ -76,31 +76,31 @@ export default class InGameUI_2020 extends cc.Component {
     // reelQuestUI: InGameReelQuestUI | null = null;
 
     // @property(IngameSuiteLeagueUI)
-    // suiteLeagueUI: IngameSuiteLeagueUI | null = null;
+    // suiteLeagueUI: IngameSuiteLeagueUI = null;
 
     @property(cc.Node)
-    tourneyLayoutIcon: cc.Node | null = null;
+    tourneyLayoutIcon: cc.Node = null;
 
     @property(cc.Node)
-    topLeftNode: cc.Node | null = null;
+    topLeftNode: cc.Node = null;
 
     @property(cc.Node)
-    topRightNode: cc.Node | null = null;
+    topRightNode: cc.Node = null;
 
     @property(cc.Node)
-    leftNode: cc.Node | null = null;
+    leftNode: cc.Node = null;
 
     @property(cc.Node)
-    rightNode: cc.Node | null = null;
+    rightNode: cc.Node = null;
 
     @property(cc.Node)
-    bottomRightNode: cc.Node | null = null;
+    bottomRightNode: cc.Node = null;
 
     @property(cc.Node)
-    bankRollNode: cc.Node | null = null;
+    bankRollNode: cc.Node = null;
 
     @property(cc.Node)
-    nodeProfile: cc.Node | null = null;
+    nodeProfile: cc.Node = null;
 
     // @property(GiftBalloon)
     // giftBalloon: GiftBalloon | null = null;

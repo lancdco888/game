@@ -1,0 +1,1836 @@
+{
+  "_name": "Jackpot_Open_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 6,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Dim": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 180
+            },
+            {
+              "frame": 6,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Txt_1": {
+        "props": {
+          "y": [
+            {
+              "frame": 1.5,
+              "value": -110,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": -90
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.5,
+              "value": 1
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Button": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.8333333333333333,
+              "value": -221,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": -201
+            }
+          ]
+        }
+      },
+      "Glow_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 100
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 100
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Particle_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Particle_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 1000
+              },
+              {
+                "frame": 1.1666666666666667,
+                "value": 1000
+              },
+              {
+                "frame": 1.1833333333333333,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Bg_Fx": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Share": {
+        "comps": {},
+        "props": {
+          "y": [
+            {
+              "frame": 2,
+              "value": -320,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": -300
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 2,
+              "value": 1
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Light_Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 1,
+              "value": 150
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Glow_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 100
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 80
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1166666666666667,
+              "value": -15,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": -10,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": -18,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": -15
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1166666666666667,
+              "value": -105,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.2,
+              "value": -100,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.3,
+              "value": -105
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1333333333333333,
+              "value": -15,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": -5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": -20,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": -12,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.7333333333333334,
+              "value": -15
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1333333333333333,
+              "value": -100,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": -90,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": -100
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/5": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1166666666666667,
+              "value": -19,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3166666666666667,
+              "value": -25,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": -15,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": -21,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": -19
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1166666666666667,
+              "value": 204,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 212,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.45,
+              "value": 204
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/6": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.3333333333333333,
+              "value": -15,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": -18,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": -15
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/7": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2166666666666666,
+              "value": 0,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": 10,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": -4,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.75,
+              "value": 2,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.85,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.2166666666666666,
+              "value": 269,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.4,
+              "value": 289,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 269
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/8": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1333333333333333,
+              "value": -28,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.2,
+              "value": -22,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": -31,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": -27,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4333333333333333,
+              "value": -28
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/9": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": -30,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.25,
+              "value": -15,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": -40
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": -25
+            },
+            {
+              "frame": 1.5,
+              "value": -30,
+              "curve": "sineOut"
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 185,
+              "curve": [
+                0.20366459627329198,
+                -0.0026501035196688782,
+                0.296024844720497,
+                0.994824016563147
+              ]
+            },
+            {
+              "frame": 1.3,
+              "value": 205,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": 185
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/10": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1833333333333333,
+              "value": -14,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": -5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.35,
+              "value": -16,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4333333333333333,
+              "value": -14
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1833333333333333,
+              "value": 234,
+              "curve": [
+                0.46,
+                0.05,
+                0.20097308488612844,
+                0.9060041407867494
+              ]
+            },
+            {
+              "frame": 1.3166666666666667,
+              "value": 254,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4333333333333333,
+              "value": 234
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/11": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.25,
+              "value": 32,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": 22,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": 35,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.8166666666666667,
+              "value": 31,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": 32
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.25,
+              "value": 220,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 230,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.5666666666666667,
+              "value": 220
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/12": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.25,
+              "value": -44,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": -35,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": -48,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": -42,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": -44
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.25,
+              "value": 120,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": 140,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.5,
+              "value": 120
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/13": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.25,
+              "value": 38
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 32
+            },
+            {
+              "frame": 1.5666666666666667,
+              "value": 40
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": 38
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.25,
+              "value": 153,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 163,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 153
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/14": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2833333333333334,
+              "value": 18
+            },
+            {
+              "frame": 1.5,
+              "value": 10
+            },
+            {
+              "frame": 1.6,
+              "value": 22
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": 18
+            }
+          ],
+          "position": [
+            {
+              "frame": 1.2833333333333334,
+              "curve": "sineOut",
+              "value": [
+                -37,
+                241,
+                0
+              ]
+            },
+            {
+              "frame": 1.3833333333333333,
+              "curve": "sineIn",
+              "value": [
+                -37,
+                245,
+                0
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                -37,
+                241,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/15": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2,
+              "value": 32
+            },
+            {
+              "frame": 1.45,
+              "value": 22,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.55,
+              "value": 35,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": 32
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.2,
+              "value": 216,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 236,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.45,
+              "value": 216
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/17": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.25,
+              "value": -20,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/18": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2833333333333334,
+              "value": -6,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": 1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": -8,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.55,
+              "value": -6
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1666666666666667,
+              "value": -56,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": -106
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/19": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.25,
+              "value": 9,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.5,
+              "value": 16,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": 5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.7,
+              "value": 9
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.25,
+              "value": 174,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": 184,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.5,
+              "value": 174
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/20": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 50,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 60,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 45,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.45,
+              "value": 50
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/21": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2166666666666666,
+              "value": 45,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3,
+              "value": 55,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4,
+              "value": 40,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": 45
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/22": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 45,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.25,
+              "value": 55,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.35,
+              "value": 40,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 45
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/23": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2166666666666666,
+              "value": -21,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3166666666666667,
+              "value": -31,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": -16,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": -21
+            }
+          ]
+        }
+      },
+      "Bg_Coin": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/3": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2,
+              "value": 29,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.45,
+              "value": 19,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 38,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": 25,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": 29
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.2,
+              "value": -97,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": -77,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5,
+              "value": -97
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/4": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1166666666666667,
+              "value": 1,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 10,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.45,
+              "value": -8,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": 2,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6,
+              "value": 1
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1166666666666667,
+              "value": -109,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": -100,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": -109
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/16": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": -8,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.4,
+              "value": -18,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": -5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6,
+              "value": -8
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.1666666666666667,
+              "value": -104,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": -94,
+              "curve": "sineIn"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": -104
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/24": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 30,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.25,
+              "value": 35,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.35,
+              "value": 25,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 30
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/25": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 45,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 1.25,
+              "value": 55,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.35,
+              "value": 40,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 45
+            }
+          ]
+        }
+      },
+      "Gra": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/Drop_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 1.25,
+              "value": [
+                -405,
+                -25
+              ],
+              "motionPath": [
+                [
+                  -427.9,
+                  -72.3,
+                  -414.3,
+                  -51.1,
+                  -439.8,
+                  -90.9
+                ]
+              ]
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": [
+                -456.1,
+                -104.8
+              ],
+              "motionPath": [
+                [
+                  -495,
+                  -121.5,
+                  -474.2,
+                  -115.1,
+                  -521.2,
+                  -129.6
+                ]
+              ]
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": [
+                -551.5,
+                -134.1
+              ],
+              "motionPath": []
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.25,
+              "value": 255
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 1.25,
+              "value": 40
+            },
+            {
+              "frame": 1.35,
+              "value": 40
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 20
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/Drop_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 1.25,
+              "value": [
+                414,
+                1.9
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": [
+                483.7,
+                -100.4
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": [
+                608.8,
+                -130.3
+              ],
+              "motionPath": []
+            }
+          ],
+          "angle": [
+            {
+              "frame": 1.25,
+              "value": -40
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": -40
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": -30
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": -50
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.25,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Bg_Pivot/Coin/Drop_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 1.2166666666666666,
+              "value": [
+                -235,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": [
+                -251.244,
+                -111.675,
+                0
+              ]
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": [
+                -332.936,
+                -260.116,
+                0
+              ]
+            }
+          ],
+          "angle": [
+            {
+              "frame": 1.2166666666666666,
+              "value": -8
+            },
+            {
+              "frame": 1.3,
+              "value": -8
+            },
+            {
+              "frame": 1.4333333333333333,
+              "value": 15
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": 10
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.2166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.4333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Share/toggle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.75,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bg_Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.604927536231884,
+                0.0008281573498964967,
+                0.30190476190476195,
+                0.9991718426501035
+              ],
+              "value": {
+                "x": 0.3,
+                "y": 0.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": [
+                0.8067908902691512,
+                0.09140786749482399,
+                0.54,
+                0.95
+              ],
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "CoinBox": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "curve": "sineOut",
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": -1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1.15,
+                "y": 1.15,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.85,
+                "y": 0.85,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.3,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.07,
+                "y": 1.07,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": -1
+              }
+            }
+          ]
+        }
+      },
+      "Title_Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.3333333333333333,
+              "curve": "sineOut",
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": -1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 1.15,
+                "y": 1.15,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.25,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.85,
+                "y": 0.85,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.3833333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.07,
+                "y": 1.07,
+                "z": -1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": -1
+              }
+            }
+          ]
+        }
+      },
+      "Explode_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.0833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.0833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.0833333333333333,
+              "curve": "quartOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": {
+                "x": 4,
+                "y": 4,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Explode_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 1.1666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.25,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.1666666666666667,
+              "curve": "quartOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": {
+                "x": 4,
+                "y": 4,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bg_Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": [
+                0.8067908902691512,
+                0.09140786749482399,
+                0.54,
+                0.95
+              ],
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

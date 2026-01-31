@@ -1,0 +1,2021 @@
+{
+  "_name": "Title_Icon_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 3,
+          "value": 255
+        }
+      ]
+    },
+    "paths": {
+      "IG_Box/IG_Box_Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.75,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.05,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "IG_QUEST": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "IG_TheReel": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                14,
+                13,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                14,
+                14,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": [
+                14,
+                14,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": [
+                14,
+                13,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "IG_QUEST/IG_Glow_0000": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.25,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0000",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1309,
+                    "y": 326,
+                    "width": 8,
+                    "height": 18
+                  },
+                  "uv": [
+                    0.63916015625,
+                    0.16796875,
+                    0.64306640625,
+                    0.16796875,
+                    0.63916015625,
+                    0.1591796875,
+                    0.64306640625,
+                    0.1591796875
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": false,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/resources/native/98/981587da-ec5a-43ad-b9fa-3c9deecf93b9.d7f12.webp",
+                    "_ref": 79,
+                    "_callbackTable": {},
+                    "_id": "Tex.779",
+                    "width": 2048,
+                    "height": 2048,
+                    "_hashDirty": true,
+                    "_hash": 0,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": 0,
+                          "ib": 0,
+                          "drawcalls": 50,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 55840,
+                              "_numVertices": 2792,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 147,
+                              "_glID": {},
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 11496,
+                            "_numIndices": 5748,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 430.99322509765625,
+                              "1": 0.041600000113248825,
+                              "2": 2223,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -759.7708740234375,
+                              "14": -1315.961669921875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 759.7708740234375,
+                              "14": 1315.961669921875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.001316186273470521,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.001316186273470521,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.3577720522880554,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 759.7708740234375,
+                              "2": 1315.961669921875,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0.1,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1571,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 2048,
+                      "_height": 2048,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 171,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": -32,
+                    "y": 6,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.16796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.1591796875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.1591796875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0001",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 653,
+                    "y": 1105,
+                    "width": 20,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.31884765625,
+                    0.55517578125,
+                    0.32861328125,
+                    0.55517578125,
+                    0.31884765625,
+                    0.53955078125,
+                    0.32861328125,
+                    0.53955078125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -26,
+                    "y": 1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.55517578125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.31884765625,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.53955078125
+                    },
+                    {
+                      "u": 0.32861328125,
+                      "v": 0.53955078125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0002",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2013,
+                    "y": 279,
+                    "width": 28,
+                    "height": 34
+                  },
+                  "uv": [
+                    0.98291015625,
+                    0.15283203125,
+                    0.99658203125,
+                    0.15283203125,
+                    0.98291015625,
+                    0.13623046875,
+                    0.99658203125,
+                    0.13623046875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -22,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.15283203125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.13623046875
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.13623046875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0003",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 449,
+                    "y": 334,
+                    "width": 36,
+                    "height": 34
+                  },
+                  "uv": [
+                    0.21923828125,
+                    0.1796875,
+                    0.23681640625,
+                    0.1796875,
+                    0.21923828125,
+                    0.1630859375,
+                    0.23681640625,
+                    0.1630859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -17,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1796875
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.21923828125,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1630859375
+                    },
+                    {
+                      "u": 0.23681640625,
+                      "v": 0.1630859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0004",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 360,
+                    "y": 594,
+                    "width": 38,
+                    "height": 34
+                  },
+                  "uv": [
+                    0.17578125,
+                    0.306640625,
+                    0.1943359375,
+                    0.306640625,
+                    0.17578125,
+                    0.2900390625,
+                    0.1943359375,
+                    0.2900390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -7,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.17578125,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.306640625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.2900390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.2900390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0005",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1520,
+                    "y": 1326,
+                    "width": 36,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.7421875,
+                    0.6591796875,
+                    0.759765625,
+                    0.6591796875,
+                    0.7421875,
+                    0.6474609375,
+                    0.759765625,
+                    0.6474609375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 4,
+                    "y": -5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6591796875
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.7421875,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6474609375
+                    },
+                    {
+                      "u": 0.759765625,
+                      "v": 0.6474609375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0006",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 360,
+                    "y": 635,
+                    "width": 38,
+                    "height": 26
+                  },
+                  "uv": [
+                    0.17578125,
+                    0.32275390625,
+                    0.1943359375,
+                    0.32275390625,
+                    0.17578125,
+                    0.31005859375,
+                    0.1943359375,
+                    0.31005859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 14,
+                    "y": -4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.17578125,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.32275390625
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.17578125,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.31005859375
+                    },
+                    {
+                      "u": 0.1943359375,
+                      "v": 0.31005859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0007",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2013,
+                    "y": 137,
+                    "width": 30,
+                    "height": 26
+                  },
+                  "uv": [
+                    0.98291015625,
+                    0.07958984375,
+                    0.99755859375,
+                    0.07958984375,
+                    0.98291015625,
+                    0.06689453125,
+                    0.99755859375,
+                    0.06689453125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 21,
+                    "y": -4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.07958984375
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.98291015625,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.06689453125
+                    },
+                    {
+                      "u": 0.99755859375,
+                      "v": 0.06689453125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0008",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 921,
+                    "y": 1189,
+                    "width": 20,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.44970703125,
+                    0.59228515625,
+                    0.45947265625,
+                    0.59228515625,
+                    0.44970703125,
+                    0.58056640625,
+                    0.45947265625,
+                    0.58056640625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 26,
+                    "y": -4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.59228515625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.44970703125,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.58056640625
+                    },
+                    {
+                      "u": 0.45947265625,
+                      "v": 0.58056640625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "_name": "Ingame-SqFx-80_IG_Glow_0009",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1309,
+                    "y": 299,
+                    "width": 8,
+                    "height": 20
+                  },
+                  "uv": [
+                    0.63916015625,
+                    0.15576171875,
+                    0.64306640625,
+                    0.15576171875,
+                    0.63916015625,
+                    0.14599609375,
+                    0.64306640625,
+                    0.14599609375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 32,
+                    "y": -4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 72,
+                    "height": 34
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.15576171875
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.63916015625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.14599609375
+                    },
+                    {
+                      "u": 0.64306640625,
+                      "v": 0.14599609375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      "IG_Box": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "IG_QUEST/StarLight": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -60
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

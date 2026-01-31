@@ -1,0 +1,663 @@
+{
+  "_name": "Pot_Trigger_Expect_Fx_1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.75,
+              "value": -3
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": -3
+            },
+            {
+              "frame": 1,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.25,
+              "value": -3
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": -1
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -48,
+              "curve": [
+                0.1859710743801653,
+                0.5977479338842975,
+                0.56,
+                1
+              ]
+            }
+          ]
+        }
+      },
+      "Particle_Plus": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Glow_Plus": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Coin_Burst": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 17
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.75,
+              "value": -3
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": -3
+            },
+            {
+              "frame": 1,
+              "value": 3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.25,
+              "value": -3
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": -1
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.5,
+              "value": -48,
+              "curve": [
+                0.1859710743801653,
+                0.5977479338842975,
+                0.56,
+                1
+              ]
+            }
+          ]
+        }
+      },
+      "Coin_Front/3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 10
+            }
+          ]
+        }
+      },
+      "Coin_Front/4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx/1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.25,
+              "value": 100
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx/Bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.25,
+              "value": 100
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx/2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx/3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx/4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Upgrade_Fx/Glow_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.25,
+              "value": 100
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Particle_Upgrade": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": []
+          }
+        }
+      },
+      "Upgrade_Glow_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [],
+          "scale": []
+        }
+      },
+      "Coin_Burst/1_1": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/1_2": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/1_3": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/1_4": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/1_5": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/2_1": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/2_2": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/2_3": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/2_4": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Coin_Burst/2_5": {
+        "props": {
+          "opacity": [],
+          "angle": [],
+          "position": []
+        }
+      },
+      "Particle_Trigger": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": []
+          }
+        }
+      },
+      "Trigger_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_4/Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_4/Plus": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_1/Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_1/Plus": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_2/Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_3/Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_2/Plus": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_3/Plus": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Coin/Coin_4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

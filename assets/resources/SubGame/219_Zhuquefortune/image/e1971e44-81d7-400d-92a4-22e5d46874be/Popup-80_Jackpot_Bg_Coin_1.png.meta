@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "340b0a37-ff06-4a2c-aa02-06c200dc828d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 86,
+  "height": 48,
+  "platformSettings": {},
+  "subMetas": {
+    "Popup-80_Jackpot_Bg_Coin_1": {
+      "ver": "1.0.6",
+      "uuid": "251fc956-ecfb-4b69-b088-ae87eb056d99",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "340b0a37-ff06-4a2c-aa02-06c200dc828d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 85,
+      "height": 47,
+      "rawWidth": 86,
+      "rawHeight": 48,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

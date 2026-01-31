@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e20a3172-91a2-447c-9d2f-b934e932ecff",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 70,
+  "height": 67,
+  "platformSettings": {},
+  "subMetas": {
+    "JackpotMode-80_Coin_Glow": {
+      "ver": "1.0.6",
+      "uuid": "b929e529-d051-43cb-9a87-ad5616678af8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e20a3172-91a2-447c-9d2f-b934e932ecff",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 70,
+      "height": 67,
+      "rawWidth": 70,
+      "rawHeight": 67,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

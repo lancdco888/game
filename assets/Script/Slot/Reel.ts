@@ -270,7 +270,7 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 获取滚轮滚动时间(重载) - 原逻辑完全复刻，含所有变量/判断 =====
-    getReelSpinTimeRenewal(nodeList: cc.Node[], elapsedTime: number, winLineIdx: string): number {
+    getReelSpinTimeRenewal(nodeList: any[], elapsedTime: number, winLineIdx: string): number {
         let totalTime, moveSpeed, spinCnt, spinTime = 0;
         var control = SlotUIRuleManager.Instance.getSpinControlInfo(winLineIdx)
         const spinInfo = control.infoList[this.reelindex];
@@ -304,7 +304,7 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 获取预滚动时间 - 原双层null校验保留，核心特征！ =====
-    getPreSpinTime(winLineIdx: string): number {
+    getPreSpinTime(winLineIdx: string|number): number {
         let preTime = 0, preSpinCnt = 0;
         if (null != winLineIdx && null != winLineIdx) {
             const spinInfo = SlotUIRuleManager.Instance.getSpinControlInfo(winLineIdx);

@@ -1,0 +1,2197 @@
+{
+  "_name": "SuiteLeague_List_title",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "SuiteLeague-80_Title_2/SuiteLeague-80_Title_2_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 100
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "SuiteLeague-80_eff_": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 100
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "SuiteLeague-80_Title_1/SuiteLeague-80_title1_add_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 127
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 230
+            },
+            {
+              "frame": 0.45,
+              "value": 150
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_01",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 805,
+                    "y": 474,
+                    "width": 20,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.7861328125,
+                    0.4921875,
+                    0.8056640625,
+                    0.4921875,
+                    0.7861328125,
+                    0.462890625,
+                    0.8056640625,
+                    0.462890625
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": false,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/resources/native/83/836182a5-44e1-482a-b2ba-ff9e8fbdf884.55c7d.webp",
+                    "_ref": 75,
+                    "_callbackTable": {},
+                    "_id": "Tex.734",
+                    "width": 1024,
+                    "height": 1024,
+                    "_hashDirty": true,
+                    "_hash": 0,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": 0,
+                          "ib": 0,
+                          "drawcalls": 50,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 55840,
+                              "_numVertices": 2792,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 147,
+                              "_glID": {},
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 11496,
+                            "_numIndices": 5748,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 430.99322509765625,
+                              "1": 0.041600000113248825,
+                              "2": 2223,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -759.7708740234375,
+                              "14": -1315.961669921875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 759.7708740234375,
+                              "14": 1315.961669921875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.001316186273470521,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.001316186273470521,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.3577720522880554,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 759.7708740234375,
+                              "2": 1315.961669921875,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0.1,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1571,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 1024,
+                      "_height": 1024,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 167,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": -58,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.4921875
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.7861328125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.8056640625,
+                      "v": 0.462890625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.08333333333333333,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_02",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 687,
+                    "y": 456,
+                    "width": 26,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.6708984375,
+                    0.4765625,
+                    0.6962890625,
+                    0.4765625,
+                    0.6708984375,
+                    0.4453125,
+                    0.6962890625,
+                    0.4453125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -55,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4765625
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6708984375,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4453125
+                    },
+                    {
+                      "u": 0.6962890625,
+                      "v": 0.4453125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.11666666666666667,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_03",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 723,
+                    "y": 449,
+                    "width": 40,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.7060546875,
+                    0.4697265625,
+                    0.7451171875,
+                    0.4697265625,
+                    0.7060546875,
+                    0.4384765625,
+                    0.7451171875,
+                    0.4384765625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -48,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4697265625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7060546875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4384765625
+                    },
+                    {
+                      "u": 0.7451171875,
+                      "v": 0.4384765625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_04",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 960,
+                    "y": 421,
+                    "width": 60,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.9375,
+                    0.4423828125,
+                    0.99609375,
+                    0.4423828125,
+                    0.9375,
+                    0.4111328125,
+                    0.99609375,
+                    0.4111328125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -38,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.9375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.9375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4111328125
+                    },
+                    {
+                      "u": 0.99609375,
+                      "v": 0.4111328125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.18333333333333332,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_05",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 307,
+                    "y": 928,
+                    "width": 88,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.2998046875,
+                    0.9375,
+                    0.3857421875,
+                    0.9375,
+                    0.2998046875,
+                    0.90625,
+                    0.3857421875,
+                    0.90625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -22,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.9375
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.2998046875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.90625
+                    },
+                    {
+                      "u": 0.3857421875,
+                      "v": 0.90625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.21666666666666667,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_06",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 823,
+                    "y": 279,
+                    "width": 98,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.8037109375,
+                    0.3017578125,
+                    0.8994140625,
+                    0.3017578125,
+                    0.8037109375,
+                    0.2724609375,
+                    0.8994140625,
+                    0.2724609375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 2,
+                    "y": 1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.3017578125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.8994140625,
+                      "v": 0.2724609375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_07",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 823,
+                    "y": 317,
+                    "width": 96,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.8037109375,
+                    0.3388671875,
+                    0.8974609375,
+                    0.3388671875,
+                    0.8037109375,
+                    0.3095703125,
+                    0.8974609375,
+                    0.3095703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 18,
+                    "y": 1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8037109375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3095703125
+                    },
+                    {
+                      "u": 0.8974609375,
+                      "v": 0.3095703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.2833333333333333,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_08",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 771,
+                    "y": 434,
+                    "width": 74,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.7529296875,
+                    0.455078125,
+                    0.8251953125,
+                    0.455078125,
+                    0.7529296875,
+                    0.423828125,
+                    0.8251953125,
+                    0.423828125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 31,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.455078125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.7529296875,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.423828125
+                    },
+                    {
+                      "u": 0.8251953125,
+                      "v": 0.423828125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.31666666666666665,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_09",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 963,
+                    "y": 381,
+                    "width": 56,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.9404296875,
+                    0.4033203125,
+                    0.9951171875,
+                    0.4033203125,
+                    0.9404296875,
+                    0.3720703125,
+                    0.9951171875,
+                    0.3720703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 40,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.4033203125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9404296875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.3720703125
+                    },
+                    {
+                      "u": 0.9951171875,
+                      "v": 0.3720703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_10",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 971,
+                    "y": 315,
+                    "width": 44,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.9482421875,
+                    0.3388671875,
+                    0.9912109375,
+                    0.3388671875,
+                    0.9482421875,
+                    0.3076171875,
+                    0.9912109375,
+                    0.3076171875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 46,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3388671875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9482421875,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.9912109375,
+                      "v": 0.3076171875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.38333333333333336,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_11",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 923,
+                    "y": 373,
+                    "width": 32,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.9013671875,
+                    0.3935546875,
+                    0.9326171875,
+                    0.3935546875,
+                    0.9013671875,
+                    0.3642578125,
+                    0.9326171875,
+                    0.3642578125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 52,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3935546875
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9013671875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3642578125
+                    },
+                    {
+                      "u": 0.9326171875,
+                      "v": 0.3642578125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_12",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 665,
+                    "y": 279,
+                    "width": 26,
+                    "height": 28
+                  },
+                  "uv": [
+                    0.6494140625,
+                    0.2998046875,
+                    0.6748046875,
+                    0.2998046875,
+                    0.6494140625,
+                    0.2724609375,
+                    0.6748046875,
+                    0.2724609375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 55,
+                    "y": -2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2998046875
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6494140625,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2724609375
+                    },
+                    {
+                      "u": 0.6748046875,
+                      "v": 0.2724609375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "_name": "SuiteLeague-80_title1_add_13",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 344,
+                    "y": 994,
+                    "width": 22,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.3359375,
+                    0.994140625,
+                    0.357421875,
+                    0.994140625,
+                    0.3359375,
+                    0.970703125,
+                    0.357421875,
+                    0.970703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 57,
+                    "y": -4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 32
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.3359375,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.994140625
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.3359375,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.970703125
+                    },
+                    {
+                      "u": 0.357421875,
+                      "v": 0.970703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

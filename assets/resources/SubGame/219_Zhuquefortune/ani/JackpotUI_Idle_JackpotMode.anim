@@ -1,0 +1,97 @@
+{
+  "_name": "JackpotUI_Idle_JackpotMode",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "0": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -358
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -358
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -112
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 364
+            }
+          ]
+        }
+      },
+      "0/Change_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Change_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

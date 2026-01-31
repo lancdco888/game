@@ -198,8 +198,8 @@ export default class HRVSlotService extends cc.Component {
     } = {} as any;
     
     private _hrvSlotBigWinEffectService: HRVSlotBigWinEffectService  = null;
-    // private _feverModeIcon: IngameSuiteLeagueFeverToolTipUI  = null;
-    // private _hyperBountyIngameIcon: HyperBountyInGameUI = null;
+    private _feverModeIcon: IngameSuiteLeagueFeverToolTipUI  = null;
+    private _hyperBountyIngameIcon: HyperBountyInGameUI = null;
     private _isRunTourneySchedule: boolean = false;
     private _doTourneyEndProcess: boolean = false;
     private _isProcessingTourneyShowGameResult: boolean = false;
@@ -485,11 +485,11 @@ export default class HRVSlotService extends cc.Component {
             this.scheduleOnce(async () => {
                 // this.getInGameUI().suiteLeagueUI.playStartAni();
                 if (SlotManager.Instance._bottomUI) {
-                    // if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME && SlotFeverModeManager.instance.isOpenFeverMode()) {
-                    //     this._feverModeIcon && this._feverModeIcon.playStartAni();
-                    // } else {
-                    //     this._feverModeIcon && this._feverModeIcon.activeTooltipUI(false);
-                    // }
+                    if (UserInfo.instance()._zoneName === SDefine.SUITE_ZONENAME && SlotFeverModeManager.instance.isOpenFeverMode()) {
+                        this._feverModeIcon && this._feverModeIcon.playStartAni();
+                    } else {
+                        this._feverModeIcon && this._feverModeIcon.activeTooltipUI(false);
+                    }
                     this.getPowerGemSlotBottomIcon() && this.getPowerGemSlotBottomIcon().openPowerGemInfo();
                 }
                 SlotGameRuleManager.Instance.addObserver(this.node);
@@ -2227,7 +2227,7 @@ export default class HRVSlotService extends cc.Component {
         // if ((SlotReelSpinStateManager.Instance.getFreespinMode() && e.currentShowingPopupType == ResultPopupType.FreespinResult || !SlotReelSpinStateManager.Instance.getFreespinMode() && e.currentShowingPopupType != ResultPopupType.LinkedJackpotResult) && ServicePopupManager.instance().reserveNewRecordPopup(e.currentShowingMoney),
         // !SlotReelSpinStateManager.Instance.getFreespinMode() && e.currentShowingPopupType == ResultPopupType.LinkedJackpotResult) {
         //     var t = SlotGameResultManager.Instance.getSubGameState("freeSpin");
-        //     //(null != t && t.spinCnt == t.totalCnt || null == t) && ServicePopupManager.instance().reserveNewRecordPopup(e.currentShowingMoney)
+        //     // (null != t && t.spinCnt == t.totalCnt || null == t) && ServicePopupManager.instance().reserveNewRecordPopup(e.currentShowingMoney)
         // }
     }
     
@@ -2322,49 +2322,49 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onDestroyBottomUI_EX2 = function() {
-        // UserInfo.instance().removeListenerTargetAll(this)
+        UserInfo.instance().removeListenerTargetAll(this)
     }
     
     addMaxBettingUnlockEffect = function(e, t) {
         var n = this;
         void 0 === t && (t = null);
-        // var o = SlotGameRuleManager.Instance.getNextIncreaseBetMoney();
-        // if (LevelBettingLockConfig.Instance().isReleaseBettingLock(MessageRoutingManager.instance().getUserLevel(), o, SlotManager.Instance.getZoneId())) {
-        //     var a = new OpenPopupInfo;
-        //     a.type = "BettingLockRelease",
-        //     a.openCallback = function() {
-        //         var t = "Popup/Prefab/Slot/Unlock_bet_btn_Effect";
-        //         cc.loader.loadRes(t, function(o, a) {
-        //             if (o) {
-        //                 var i = new Error("cc.loader.loadRes fail %s: %s".format(t, JSON.stringify(o)));
-        //                 FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, i))
-        //             } else {
-        //                 var l = cc.instantiate(a);
-        //                 e.addChild(l),
-        //                 0 == e.anchorX ? l.setPosition(e.getContentSize().width / 2, -e.getContentSize().height / 2) : l.setPosition(0, 0),
-        //                 n.scheduleOnce(function() {
-        //                     l.removeFromParent(),
-        //                     l.destroy(),
-        //                     PopupManager.Instance().checkNextOpenPopup()
-        //                 }, 3)
-        //             }
-        //         })
-        //     }
-        //     ,
-        //     PopupManager.Instance().addOpenPopup(a)
-        // }
+        var o = SlotGameRuleManager.Instance.getNextIncreaseBetMoney();
+        if (LevelBettingLockConfig.Instance().isReleaseBettingLock(UserInfo.instance().getUserLevel(), o, SlotManager.Instance.getZoneId())) {
+            var a = new OpenPopupInfo;
+            a.type = "BettingLockRelease",
+            a.openCallback = function() {
+                var t = "Popup/Prefab/Slot/Unlock_bet_btn_Effect";
+                cc.loader.loadRes(t, function(o, a) {
+                    if (o) {
+                        var i = new Error("cc.loader.loadRes fail %s: %s".format(t, JSON.stringify(o)));
+                        FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, i))
+                    } else {
+                        var l = cc.instantiate(a);
+                        e.addChild(l),
+                        0 == e.anchorX ? l.setPosition(e.getContentSize().width / 2, -e.getContentSize().height / 2) : l.setPosition(0, 0),
+                        n.scheduleOnce(function() {
+                            l.removeFromParent(),
+                            l.destroy(),
+                            PopupManager.Instance().checkNextOpenPopup()
+                        }, 3)
+                    }
+                })
+            }
+            ,
+            PopupManager.Instance().addOpenPopup(a)
+        }
     }
     
     checkLoungeNewSlot = function(e) {
-        // if (0 != SlotManager.Instance.IsLoungeNewSlot()) {
-        //     var t = SlotGameRuleManager.Instance.getCurrentBetMoney();
-        //     0 == this._activeNewSlotTooltipInit && (this._activeNewSlotTooltip = t < 27e5,
-        //     this._activeNewSlotTooltipInit = true),
-        //     0 != SlotManager.Instance._initFinish &&SlotReelSpinStateManager.Instance.getCurrentState() == SlotReelSpinStateManager.defaulState_STOP && (t >= 27e5 && (this._activeNewSlotTooltip = false,
-        //     null != this._tooltip && this._tooltip.close()),
-        //     t < 27e5 && 0 == this._activeNewSlotTooltip && (this.asyncTooltipNewSlot(e),
-        //     this._activeNewSlotTooltip = true))
-        // }
+        if (0 != SlotManager.Instance.IsLoungeNewSlot()) {
+            var t = SlotGameRuleManager.Instance.getCurrentBetMoney();
+            0 == this._activeNewSlotTooltipInit && (this._activeNewSlotTooltip = t < 27e5,
+            this._activeNewSlotTooltipInit = true),
+            0 != SlotManager.Instance._initFinish &&SlotReelSpinStateManager.Instance.getCurrentState() == SlotReelSpinStateManager.STATE_STOP && (t >= 27e5 && (this._activeNewSlotTooltip = false,
+            null != this._tooltip && this._tooltip.close()),
+            t < 27e5 && 0 == this._activeNewSlotTooltip && (this.asyncTooltipNewSlot(e),
+            this._activeNewSlotTooltip = true))
+        }
     }
     
     asyncTooltipNewSlot = function(e) {
@@ -2432,13 +2432,13 @@ export default class HRVSlotService extends cc.Component {
     }
     
     onSetButtonActiveState_EX2 = function() {
-        // var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
-        // null != e && null != e && this.getInGameUI().setIntroduceCoin()
+        var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
+        null != e && null != e && this.getInGameUI().setIntroduceCoin()
     }
     
     onSetChangeMaxBetBtnInteractable_EX2 = function() {
-        // var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
-        // null != e && null != e && this.getInGameUI().setIntroduceCoin()
+        var e = UserInfo.instance().getPromotionInfo(NewServiceIntroduceCoinPromotion.PromotionKeyName);
+        null != e && null != e && this.getInGameUI().setIntroduceCoin()
     }
     
     onClickFastModeBtn = function(e) {

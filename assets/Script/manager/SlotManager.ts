@@ -312,7 +312,7 @@ export default class SlotManager extends cc.Component {
         this.playMainBgm();
     }
 
-    async sendBonusGameRequest(): Promise<void> { return; }
+    async sendBonusGameRequest(callback: (result: any) => void, params: any[] = []) { return; }
 
     initBottomUIButtonEnableStateOnEnterRoom(): void {
         if (SlotGameResultManager.Instance.getNextSubGameKey() !== "base") {

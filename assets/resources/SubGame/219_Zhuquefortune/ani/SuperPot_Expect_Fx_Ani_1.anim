@@ -1,0 +1,411 @@
+{
+  "_name": "SuperPot_Expect_Fx_Ani_1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Expect_Fx_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Expect_Fx_1/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 3,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Trigger_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Bg/Deco/Idle_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Bg/Deco/Idle_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Bg/Deco/Trigger": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Expect_Fx_2": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Expect_Fx_2/Glow": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 3,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/label": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Expect_Fx_2/Light_1": {
+        "comps": {},
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": [
+                -140,
+                52,
+                0
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                140,
+                52,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Expect_Fx_2/Light_2": {
+        "comps": {},
+        "props": {
+          "position": [
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": [
+                130,
+                -58,
+                0
+              ]
+            },
+            {
+              "frame": 3,
+              "value": [
+                -130,
+                -58,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.5,
+              "value": 1
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 150,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 3,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.5,
+              "curve": [
+                0.7964389233954451,
+                0.09658385093167698,
+                0.6952795031055902,
+                0.8982401656314699
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "curve": "sineIn",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Expect_Fx_2/Light_3": {
+        "comps": {},
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "curve": "sineInOut",
+              "value": [
+                -128,
+                43,
+                0
+              ]
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": [
+                -128,
+                -54,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Expect_Fx_2/Light_4": {
+        "comps": {},
+        "props": {
+          "position": [
+            {
+              "frame": 1.3333333333333333,
+              "curve": "sineInOut",
+              "value": [
+                128,
+                43,
+                0
+              ]
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": [
+                128,
+                -54,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.3333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

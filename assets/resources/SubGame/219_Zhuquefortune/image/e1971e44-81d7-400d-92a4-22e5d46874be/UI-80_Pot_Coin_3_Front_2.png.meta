@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "793d0705-7816-44e7-b4a7-1c6f954ff174",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 19,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-80_Pot_Coin_3_Front_2": {
+      "ver": "1.0.6",
+      "uuid": "b71135f8-a827-4371-98f9-6cc4fb4a2a2d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "793d0705-7816-44e7-b4a7-1c6f954ff174",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 50,
+      "height": 19,
+      "rawWidth": 50,
+      "rawHeight": 19,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -44,7 +44,7 @@ export default class CommonRewardNodes extends cc.Component {
         displayName: 'PowerGem插槽图标',
         tooltip: 'PowerGem等级显示的插槽底部图标'
     })
-    public nodePowerGemSlotBottomIcon: cc.Node | null = null;
+    public nodePowerGemSlotBottomIcon: cc.Node = null;
 
     // ===================== 私有属性（UI实例缓存） =====================
     /** 游戏内英雄收集战力组件 */
