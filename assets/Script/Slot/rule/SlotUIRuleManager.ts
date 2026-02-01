@@ -597,7 +597,7 @@ export default class SlotUIRuleManager extends cc.Component {
     }
 
     // ===== 特效播放判断 - 原逻辑完全复刻 =====
-    canPlayingAppearSymbomEffect(symbolId: number, windowResult: any, reelIdx: number, excludeReelList: number[]): boolean {
+    canPlayingAppearSymbomEffect(symbolId: number, windowResult: any, reelIdx: number, excludeReelList: number[]|null = null): boolean {
         let canPlay = false;
         for (let i = 0; i < this._uiExpectEffectRuleList.length; ++i) {
             const rule = this._uiExpectEffectRuleList[i];
