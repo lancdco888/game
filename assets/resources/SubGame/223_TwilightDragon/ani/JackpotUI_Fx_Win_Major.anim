@@ -1,0 +1,155 @@
+{
+  "_name": "JackpotUI_Fx_Win_Major",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.3333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Gradation_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.75,
+              "value": 255,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 0,
+              "curve": "cubicInOut"
+            }
+          ]
+        }
+      },
+      "Square_Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 150
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.75,
+              "value": 255,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "Par_StarLight1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -178,
+                21
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 1,
+              "value": [
+                189,
+                21
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": [
+                189,
+                -19
+              ]
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": [
+                -165,
+                -19
+              ]
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": [
+                -178,
+                21
+              ]
+            }
+          ]
+        }
+      },
+      "Par_StarLight2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                189,
+                -19
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 1,
+              "value": [
+                -165,
+                -19
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": [
+                -178,
+                21
+              ]
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": [
+                189,
+                21
+              ]
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": [
+                189,
+                -19
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

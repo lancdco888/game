@@ -1,0 +1,1591 @@
+{
+  "_name": "BonusUI_Upgrade1_Mega",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.9166666666666665,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "BG/Line_Add/Line5": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 1,
+                "value": 0
+              },
+              {
+                "frame": 1.25,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line5/Line1": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 1,
+                "value": 0
+              },
+              {
+                "frame": 1.25,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line5/Line2": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 1,
+                "value": 0
+              },
+              {
+                "frame": 1.25,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line5/RoundLight_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 1,
+              "value": 60
+            },
+            {
+              "frame": 1.25,
+              "value": -60
+            }
+          ]
+        }
+      },
+      "BG/Line_Add/Line1": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.25,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line1/Line1": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.25,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line1/Line2": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.25,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line1/RoundLight_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 60
+            },
+            {
+              "frame": 0.25,
+              "value": -60
+            }
+          ]
+        }
+      },
+      "BG/Line_Add/Line2": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.25,
+                "value": 0
+              },
+              {
+                "frame": 0.5,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line2/Line1": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.25,
+                "value": 0
+              },
+              {
+                "frame": 0.5,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line2/Line2": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.25,
+                "value": 0
+              },
+              {
+                "frame": 0.5,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line2/RoundLight_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.25,
+              "value": -17
+            },
+            {
+              "frame": 0.5,
+              "value": 17
+            }
+          ]
+        }
+      },
+      "BG/Line_Add/Line3": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.5,
+                "value": 0
+              },
+              {
+                "frame": 0.75,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line3/Line1": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.5,
+                "value": 0
+              },
+              {
+                "frame": 0.75,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line3/Line2": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.5,
+                "value": 0
+              },
+              {
+                "frame": 0.75,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line3/RoundLight_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.5,
+              "value": -60
+            },
+            {
+              "frame": 0.75,
+              "value": 60
+            }
+          ]
+        }
+      },
+      "BG/Line_Add/Line4": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.75,
+                "value": 0
+              },
+              {
+                "frame": 1,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line4/Line1": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.75,
+                "value": 0
+              },
+              {
+                "frame": 1,
+                "value": 1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line4/Line2": {
+        "comps": {
+          "cc.Sprite": {
+            "fillRange": [
+              {
+                "frame": 0.75,
+                "value": 0
+              },
+              {
+                "frame": 1,
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      "BG/Line_Add/Line4/RoundLight_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.75,
+              "value": -17
+            },
+            {
+              "frame": 1,
+              "value": 17
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.05,
+              "value": 0
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.4,
+              "value": 0
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_6": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.7166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.8,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_7": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.9333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.0166666666666666,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_9": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.25,
+              "value": 0
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_1/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_UI/9/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/8/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/7/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/6/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/5/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/4/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/3/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/2/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_UI/1/On": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BG/Line_Add": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_9/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_7/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_6/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_5/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_4/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_3/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_2/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_1/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_3/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.3,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_4/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.15,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_5/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_6/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.8,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_7/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.0166666666666666,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_8/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.05,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.1333333333333333,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.8,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_9/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.25,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_2/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 0,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.8,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_9/explode_1": {
+        "props": {
+          "opacity": [],
+          "scale": []
+        }
+      },
+      "Bonus_Light/Fx_8/explode_1": {
+        "props": {
+          "opacity": [],
+          "scale": []
+        }
+      },
+      "Bonus_Light/Fx_8": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.05,
+              "value": 0
+            },
+            {
+              "frame": 1.1333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_8/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Glow": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Gradation_1": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Gradation_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Par_StarLight": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": []
+          }
+        }
+      },
+      "Top_UI/Fx_MegaWin": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_9/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_8/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_7/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_6/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_5/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_4/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_3/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_2/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/Fx_1/explode_2": {
+        "props": {
+          "opacity": []
+        }
+      },
+      "Bonus_Light/BG_OutGlow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ],
+          "scale": []
+        }
+      },
+      "Bonus_Light/BG_OutGlow/Par_StarLight": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 1.5833333333333333,
+                "value": 0
+              },
+              {
+                "frame": 2.0833333333333335,
+                "value": 100
+              }
+            ],
+            "speed": []
+          }
+        }
+      },
+      "Bonus_Light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "BG/Mega": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Top_UI/Mega": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Top_UI/2X": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Top_UI/3X": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Gradation_10/RoundLight_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.5833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Gradation_10/RoundLight_02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.5833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "BG/Normal": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Lightning": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Dimd": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.5,
+              "value": 180,
+              "curve": "linear"
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_7/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_6/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_5/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_4/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_3/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_2/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Fx_1/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Top_UI/3X/Multi": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Top_UI": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "quadOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "quartOut",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.4166666666666665,
+              "curve": "circIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.6666666666666665,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.98,
+                "y": 0.98,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.9166666666666665,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Top_UI/Mega/Mega": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.4166666666666665,
+              "curve": "circIn",
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.6666666666666665,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "quadOut",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "BG_Add": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": 0
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 150,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.75,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "quartOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.75,
+              "value": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Top_UI/2X/Multi": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/BG_OutGlow/L": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4291878375
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/BG_OutGlow/R": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4291878375
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Glow2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 1.5833333333333333,
+              "value": {
+                "_val": 4281874488
+              }
+            }
+          ]
+        }
+      },
+      "Bonus_Light/Gradation_10": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 1.5833333333333333,
+              "value": -212,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 210
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.5833333333333333,
+              "curve": "linear",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "linear",
+              "value": {
+                "x": 2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

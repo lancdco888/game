@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2a34c7f7-d718-4d88-b4c4-90d6218d3ad7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 124,
+  "height": 37,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-60_RoundLight_01": {
+      "ver": "1.0.6",
+      "uuid": "eeb690fd-4506-41a0-88ae-7439b441b558",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2a34c7f7-d718-4d88-b4c4-90d6218d3ad7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 124,
+      "height": 37,
+      "rawWidth": 124,
+      "rawHeight": 37,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "_name": "Fs_Start_BG_Idle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 12,
+  "sample": 60,
+  "speed": 0.4,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Light/Light_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 90
+            },
+            {
+              "frame": 12,
+              "value": -270
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 150
+            },
+            {
+              "frame": 4,
+              "value": 255
+            },
+            {
+              "frame": 6,
+              "value": 200
+            },
+            {
+              "frame": 8,
+              "value": 150
+            },
+            {
+              "frame": 12,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Light/Light_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 12,
+              "value": 360
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 150
+            },
+            {
+              "frame": 4,
+              "value": 255
+            },
+            {
+              "frame": 8,
+              "value": 100
+            },
+            {
+              "frame": 12,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 50
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 50
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 50
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            },
+            {
+              "frame": 3,
+              "value": 50
+            },
+            {
+              "frame": 3.5,
+              "value": 255
+            },
+            {
+              "frame": 4,
+              "value": 50
+            },
+            {
+              "frame": 4.5,
+              "value": 255
+            },
+            {
+              "frame": 5,
+              "value": 50
+            },
+            {
+              "frame": 5.5,
+              "value": 255
+            },
+            {
+              "frame": 6,
+              "value": 50
+            },
+            {
+              "frame": 6.5,
+              "value": 255
+            },
+            {
+              "frame": 7,
+              "value": 50
+            },
+            {
+              "frame": 7.5,
+              "value": 255
+            },
+            {
+              "frame": 8,
+              "value": 50
+            },
+            {
+              "frame": 8.5,
+              "value": 255
+            },
+            {
+              "frame": 9,
+              "value": 50
+            },
+            {
+              "frame": 9.5,
+              "value": 255
+            },
+            {
+              "frame": 10,
+              "value": 50
+            },
+            {
+              "frame": 10.5,
+              "value": 255
+            },
+            {
+              "frame": 11,
+              "value": 50
+            },
+            {
+              "frame": 11.5,
+              "value": 255
+            },
+            {
+              "frame": 12,
+              "value": 50
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

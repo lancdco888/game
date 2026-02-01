@@ -1,0 +1,317 @@
+{
+  "_name": "Multi_Move_3X",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.6666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Multi/Fx_Light/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.25,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Multi/3X": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Multi/2X": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Multi": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.6666666666666666,
+              "curve": "quartOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": [
+                311,
+                -146,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "quartOut",
+              "value": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": "circIn",
+              "value": {
+                "x": 2.5,
+                "y": 2.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Multi/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4285867089
+              }
+            }
+          ]
+        }
+      },
+      "Fx_Fame_Light/Mask/Square_Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294913468
+              }
+            }
+          ]
+        }
+      },
+      "Fx_Fame_Light/Mask/explode_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.1666666666666667,
+              "curve": "quartOut",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294913468
+              }
+            }
+          ]
+        }
+      },
+      "Fx_Fame_Light/Square_Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0,
+              "curve": "linear"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294913468
+              }
+            }
+          ]
+        }
+      },
+      "Fx_Fame_Light/Mask/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.1833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4278253055
+              }
+            }
+          ]
+        }
+      },
+      "Multi/Fx_Light/Glow": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294913468
+              }
+            }
+          ]
+        }
+      },
+      "Multi/Fx_Light/Light/Light_1": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294930419
+              }
+            }
+          ]
+        }
+      },
+      "Multi/Fx_Light/Light/Light_2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294930419
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,76 @@
+{
+  "_name": "Popup_SceneChange",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Dimd": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.016666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 180
+            },
+            {
+              "frame": 2,
+              "value": 180
+            },
+            {
+              "frame": 3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Par_Smoke": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.016666666666666666,
+                "value": 0
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": 5
+              },
+              {
+                "frame": 2.0166666666666666,
+                "value": 5
+              },
+              {
+                "frame": 2.683333333333333,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Dragon": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

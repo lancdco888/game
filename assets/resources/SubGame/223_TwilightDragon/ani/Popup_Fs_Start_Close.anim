@@ -1,0 +1,518 @@
+{
+  "_name": "Popup_Fs_Start_Close",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Dimd": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/BG": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255,
+              "curve": "cubicInOut"
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1.5,
+              "value": -80
+            }
+          ]
+        }
+      },
+      "Pivot/BG/Par_Dot": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 20
+              },
+              {
+                "frame": 1.6666666666666667,
+                "value": 20
+              },
+              {
+                "frame": 2,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Pivot/Title": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/BG/Glow": {
+        "props": {
+          "y": [
+            {
+              "frame": 0.5,
+              "value": 140,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.5,
+              "value": 90
+            }
+          ]
+        }
+      },
+      "Pivot/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/BG/Glow1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Pivot/BG/Glow2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 1.25,
+              "value": -10
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/Fx_Lighting": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/BG/Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 200
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.30375,
+                0.18333333333333335,
+                0.4045833333333334,
+                0.8979166666666666
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "quartOut",
+              "value": {
+                "x": 0.8,
+                "y": 0.8,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Pearl": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 100,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "constant"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Title/DragonBall": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Button": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Title/Respin": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Pearl/explode_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 150,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.46,
+                0.05,
+                0.11083333333333342,
+                0.8979166666666666
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Pearl/explode_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 150,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "curve": [
+                0.46,
+                0.05,
+                0.11083333333333342,
+                0.8979166666666666
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Pearl/explode_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.0833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.25,
+              "value": 200,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.75,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.0833333333333333,
+              "curve": [
+                0.46,
+                0.05,
+                0.11083333333333342,
+                0.8979166666666666
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.75,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Pearl/explode_4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 200,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.3333333333333333,
+              "curve": [
+                0.46,
+                0.05,
+                0.11083333333333342,
+                0.8979166666666666
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/explode_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.09750000000000002,
+                0.09624999999999995,
+                0.019583333333333286,
+                0.95625
+              ],
+              "value": {
+                "x": 0.3,
+                "y": 0.3,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "43511100-d5df-4588-84f5-ff7f6ad84e0b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 48,
+  "height": 48,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_Coin_A_05": {
+      "ver": "1.0.6",
+      "uuid": "86319cd1-c0a7-4184-aa18-ce7f9f6f8089",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "43511100-d5df-4588-84f5-ff7f6ad84e0b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 10,
+      "width": 48,
+      "height": 28,
+      "rawWidth": 48,
+      "rawHeight": 48,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

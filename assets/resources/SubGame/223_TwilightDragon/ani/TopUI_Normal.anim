@@ -1,0 +1,101 @@
+{
+  "_name": "TopUI_Normal",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Pivot/Mask/Nomal": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Intro": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Pivot/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Smoke_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 438
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Smoke_02": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 438
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Smoke_03": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 438
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Par_StarLight": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 10
+              }
+            ]
+          }
+        }
+      },
+      "Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

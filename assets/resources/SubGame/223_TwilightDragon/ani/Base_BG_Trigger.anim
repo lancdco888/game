@@ -1,0 +1,103 @@
+{
+  "_name": "Base_BG_Trigger",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Base_Dragon_L": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 110,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 2,
+              "value": -51
+            }
+          ],
+          "position": [
+            {
+              "frame": 1,
+              "curve": "cubicInOut",
+              "value": [
+                -375,
+                52,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                -305,
+                78,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Base_Dragon_R": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 90,
+              "curve": "cubicInOut"
+            },
+            {
+              "frame": 2,
+              "value": -576
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.8333333333333334,
+              "curve": "cubicIn",
+              "value": [
+                418,
+                -48,
+                0
+              ]
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": [
+                300,
+                -45,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 1.6666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,222 @@
+{
+  "_name": "TopUI_Intro",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 6,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Pivot/Mask/Nomal": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 6,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Par_StarLight": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 1.5,
+                "value": 0
+              },
+              {
+                "frame": 1.5166666666666666,
+                "value": 10
+              }
+            ]
+          }
+        },
+        "props": {}
+      },
+      "Pivot/Mask/Smoke_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -238,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2,
+              "value": -322
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Smoke_02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 150
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 193,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2,
+              "value": 438
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Smoke_03": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 111,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2,
+              "value": 393
+            }
+          ]
+        }
+      },
+      "Pivot/Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.9833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 255
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/Mask/Intro": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 6,
+              "value": false
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "circIn",
+              "value": [
+                30,
+                -350,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                0,
+                -262,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "circIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "circIn",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

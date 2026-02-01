@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7ac839d8-63ba-4a6e-89b4-605662f6f4d7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 211,
+  "height": 38,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-80_Title_Twilight_Mask": {
+      "ver": "1.0.6",
+      "uuid": "e77f8457-c179-4cf4-8c73-158950c887c5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7ac839d8-63ba-4a6e-89b4-605662f6f4d7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 210,
+      "height": 37,
+      "rawWidth": 211,
+      "rawHeight": 38,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

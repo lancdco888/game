@@ -1,0 +1,81 @@
+{
+  "_name": "Fx_Plus_Spin1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.ParticleSystem": {
+        "emissionRate": [
+          {
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": 200
+          },
+          {
+            "frame": 0.25,
+            "value": 200
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": 0
+          }
+        ]
+      }
+    },
+    "paths": {
+      "Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "StarLight_20": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

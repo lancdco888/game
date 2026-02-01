@@ -1,0 +1,719 @@
+{
+  "_name": "Win_DisplayParticle_3_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "circleLight_02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 150
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 100
+            },
+            {
+              "frame": 2,
+              "value": 150
+            },
+            {
+              "frame": 2.25,
+              "value": 0
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 218
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 222
+            },
+            {
+              "frame": 1.2,
+              "value": 190
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 185,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 2,
+              "value": -190
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": -222
+            },
+            {
+              "frame": 2.5,
+              "value": -250
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 36
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 36
+            },
+            {
+              "frame": 2,
+              "value": 36
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 2.5,
+              "value": -34
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 10
+            },
+            {
+              "frame": 2,
+              "value": 0.1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 5
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 5
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 0.1
+            }
+          ]
+        }
+      },
+      "circleLight_03": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 150
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 100
+            },
+            {
+              "frame": 2,
+              "value": 150
+            },
+            {
+              "frame": 2.25,
+              "value": 0
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 218
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 222
+            },
+            {
+              "frame": 1.2,
+              "value": 251
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 249,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": -249
+            },
+            {
+              "frame": 2,
+              "value": -250
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": -251
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": -222
+            },
+            {
+              "frame": 2.5,
+              "value": -194
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": -34
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": -38
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": -38
+            },
+            {
+              "frame": 2,
+              "value": -38
+            },
+            {
+              "frame": 2.033333333333333,
+              "value": -34
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 2.5,
+              "value": 31
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 10
+            },
+            {
+              "frame": 2,
+              "value": 0.1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 5
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 5
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 0.1
+            }
+          ]
+        }
+      },
+      "Mask/Win_DisplayParticle_01": {
+        "comps": {
+          "cc.ParticleSystem": {}
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": false
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -183
+            },
+            {
+              "frame": 0.5,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Mask/Win_DisplayParticle_03": {
+        "comps": {
+          "cc.ParticleSystem": {}
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": true
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            }
+          ],
+          "x": [
+            {
+              "frame": 0.6666666666666666,
+              "value": -183
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Mask/Win_DisplayParticle_02": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ],
+          "x": [
+            {
+              "frame": 0.3333333333333333,
+              "value": -183
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "Mask/Win_DisplayParticle_01/Win_DisplayParticle_Left/Win_DisplayParticle1": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 300
+              },
+              {
+                "frame": 0.48333333333333334,
+                "value": 500
+              },
+              {
+                "frame": 0.5,
+                "value": 0
+              }
+            ]
+          }
+        },
+        "props": {}
+      },
+      "Mask/Win_DisplayParticle_02/Win_DisplayParticle_Left/Win_DisplayParticle1": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.8166666666666667,
+                "value": 500
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": 0
+              }
+            ]
+          }
+        },
+        "props": {}
+      },
+      "Mask/Win_DisplayParticle_03/Win_DisplayParticle_Left/Win_DisplayParticle1": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 1.15,
+                "value": 500
+              },
+              {
+                "frame": 1.1666666666666667,
+                "value": 0
+              }
+            ]
+          }
+        },
+        "props": {}
+      },
+      "Mask/LineLight": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -250
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": -200,
+              "curve": [
+                0.09875968992248059,
+                0.2847286821705426,
+                0.7027390180878553,
+                0.9031007751937985
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 200
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.5
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 0.8
+            }
+          ]
+        }
+      },
+      "Mask/LineLight2": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0.3333333333333333,
+              "value": -170
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -200,
+              "curve": [
+                0.10198966408268731,
+                0.291188630490956,
+                0.6962790697674418,
+                0.9031007751937985
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 200
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.5
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 0.8
+            }
+          ]
+        }
+      },
+      "Mask/LineLight3": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0.6666666666666666,
+              "value": -170
+            },
+            {
+              "frame": 0.7,
+              "value": -200,
+              "curve": [
+                0.08906976744186043,
+                0.291188630490956,
+                0.6962790697674418,
+                0.8998708010335917
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 200
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.7,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 0.5
+            },
+            {
+              "frame": 0.7,
+              "value": 0.8
+            }
+          ]
+        }
+      },
+      "circleLight_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Mask/circleLight_04": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Frame_Fx": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 100
+            },
+            {
+              "frame": 1.25,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
