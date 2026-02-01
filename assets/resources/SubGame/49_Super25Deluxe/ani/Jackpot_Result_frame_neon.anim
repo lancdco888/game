@@ -1,0 +1,33 @@
+{
+  "_name": "Jackpot_Result_frame_neon",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Img_neon": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

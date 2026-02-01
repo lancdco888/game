@@ -1,0 +1,409 @@
+{
+  "_name": "J_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.6666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Light": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": true
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.05,
+              "value": false
+            },
+            {
+              "frame": 1.25,
+              "value": true
+            },
+            {
+              "frame": 1.4666666666666666,
+              "value": false
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "J_Bg_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 150
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.1,
+              "value": 0
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": 150
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Vegas/J_Txt3_add": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": true
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.1,
+              "value": true
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "HighRoller/J_Txt2_add": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.1,
+              "value": 0
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Jackpot/J_Txt_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 50
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": true
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.85,
+              "value": true
+            },
+            {
+              "frame": 1.0666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Jackpot/J_Txt_Eff": {
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0.3,
+                "value": -0.1
+              },
+              {
+                "frame": 1.2,
+                "value": 0.97
+              }
+            ]
+          }
+        }
+      },
+      "Jackpot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 1.15,
+                "y": 1.15,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.85,
+              "value": {
+                "x": 1.15,
+                "y": 1.15,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.0666666666666667,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": {
+                "x": 1.15,
+                "y": 1.15,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.6,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      },
+      "Vegas/J_Txt3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": {
+                "_val": 4291151301
+              }
+            },
+            {
+              "frame": 0.55,
+              "value": {
+                "_val": 4291151301
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "_val": 4291151301
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": {
+                "_val": 4291151301
+              }
+            },
+            {
+              "frame": 1.1,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": {
+                "_val": 4291151301
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": {
+                "_val": 4291151301
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

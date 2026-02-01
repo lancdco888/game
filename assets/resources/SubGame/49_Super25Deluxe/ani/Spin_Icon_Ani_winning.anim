@@ -1,0 +1,219 @@
+{
+  "_name": "Spin_Icon_Ani_winning",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 1.5,
+          "value": 255
+        }
+      ]
+    },
+    "paths": {
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 100
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 100
+              },
+              {
+                "frame": 0.35,
+                "value": 300,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": 100
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ],
+            "startRadius": [
+              {
+                "frame": 0,
+                "value": 40
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": 40,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 0
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": 0,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 1,
+                "value": 45
+              }
+            ],
+            "endRadius": [
+              {
+                "frame": 0,
+                "value": 10
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": 10,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 0,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": 40,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Spin": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Icon_Glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Icon_Glow02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

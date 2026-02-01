@@ -1,0 +1,256 @@
+{
+  "_name": "SuiteLeague_List_start",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Icon_cont": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "List_cont": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                210,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "curve": "cubicIn",
+              "value": [
+                -6,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicOut",
+              "value": [
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "curve": "sineInOut",
+              "value": [
+                -2,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "List_cont/Pivot/deco/SuiteLeague-80_Title_Deco_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 5,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.45,
+              "value": -3,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -14,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -14,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicOut",
+              "value": [
+                -2,
+                -14,
+                0
+              ]
+            },
+            {
+              "frame": 0.45,
+              "curve": "sineInOut",
+              "value": [
+                1,
+                -14,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                0,
+                -14,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "List_cont/Pivot/deco/SuiteLeague-80_eff_": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 0
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 255
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Icon_cont/Bg/SuiteLeague-80_Title_Deco_1/SuiteLeague-80_eff_": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "List_cont/Pivot/Bg/bg1_add": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.15,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.15,
+              "value": 255,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.15,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": {
+                "x": 1.12,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

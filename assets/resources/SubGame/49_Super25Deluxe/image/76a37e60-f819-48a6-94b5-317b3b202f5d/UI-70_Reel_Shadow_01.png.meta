@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ea45f4a7-9591-4c13-aac7-bf152c34ea54",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 64,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-70_Reel_Shadow_01": {
+      "ver": "1.0.6",
+      "uuid": "fd0f2205-c5fc-45ad-b808-81f8640acbf0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ea45f4a7-9591-4c13-aac7-bf152c34ea54",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 50,
+      "height": 64,
+      "rawWidth": 50,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

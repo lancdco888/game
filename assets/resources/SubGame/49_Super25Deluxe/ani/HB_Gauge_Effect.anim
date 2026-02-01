@@ -1,0 +1,203 @@
+{
+  "_name": "HB_Gauge_Effect",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "normal/HB-80_N_Gauge/Mask/Gauge_FX": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3,
+              "value": 254
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "normal/HB-80_N_Gauge/Mask/Gauge_FX/particlesystem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 200
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": 200
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "hover/HB-80_O_Gauge/Mask/Gauge_FX": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3,
+              "value": 254
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "hover/HB-80_O_Gauge/Mask/Gauge_FX/particlesystem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 200
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "pressed/HB-80_D_Gauge/Mask/Gauge_FX": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3,
+              "value": 254
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pressed/HB-80_D_Gauge/Mask/Gauge_FX/particlesystem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 200
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "disabled/HB-80_N_Gauge/Mask/Gauge_FX": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3,
+              "value": 254
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "disabled/HB-80_N_Gauge/Mask/Gauge_FX/particlesystem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 200
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

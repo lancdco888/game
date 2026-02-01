@@ -1,0 +1,287 @@
+{
+  "_name": "SuiteLeague_List_box_down",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "MY/box/box_glow": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mask/line": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mask/Fx/arrow_up": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -16,
+              "curve": "cubicOut"
+            }
+          ],
+          "height": [
+            {
+              "frame": 0,
+              "value": 50,
+              "curve": "cubicOut"
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "mask/List": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -230,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.5,
+              "value": 56,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 47,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 51,
+              "curve": "linear"
+            },
+            {
+              "frame": 1,
+              "value": 50
+            }
+          ]
+        }
+      },
+      "mask/List2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 50,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.5,
+              "value": 336,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 327
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 331
+            },
+            {
+              "frame": 1,
+              "value": 330
+            }
+          ]
+        }
+      },
+      "mask/speed_line_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "mask/speed_line_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "mask/speed_line_2/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": 50
+              },
+              {
+                "frame": 0.5,
+                "value": 50
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "mask/2020-100_blockingBG": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 150
+            },
+            {
+              "frame": 0.5,
+              "value": 150
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "MY/box": {
+        "props": {
+          "position": [],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 1.38,
+                "y": 1.38,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "mask/Fx/arrow_down": {
+        "props": {
+          "active": [],
+          "opacity": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 284,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 250,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.75,
+              "value": 161
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.21666666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 0.816,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 1,
+                "y": 0.95,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

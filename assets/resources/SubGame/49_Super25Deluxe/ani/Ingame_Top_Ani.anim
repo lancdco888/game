@@ -1,0 +1,2737 @@
+{
+  "_name": "Ingame_Top_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4.333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            100,
+            0
+          ]
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "frame": 4,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "frame": 4.333333333333333,
+          "value": [
+            0,
+            100,
+            0
+          ]
+        }
+      ]
+    },
+    "paths": {
+      "Max/100_TopBG": {
+        "props": {
+          "scale": []
+        }
+      },
+      "Max/80_coin_Side": {
+        "props": {
+          "angle": [],
+          "position": []
+        }
+      },
+      "Max/80_Title_N/80_Title_Add_0001": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.5333333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0000",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 999,
+                    "y": 117,
+                    "width": 12,
+                    "height": 28
+                  },
+                  "uv": [
+                    0.9755859375,
+                    0.07080078125,
+                    0.9873046875,
+                    0.07080078125,
+                    0.9755859375,
+                    0.05712890625,
+                    0.9873046875,
+                    0.05712890625
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": false,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/resources/native/84/84afa0c5-2b98-4a16-8526-2aa5c31167d3.d864f.webp",
+                    "_ref": 45,
+                    "_callbackTable": {},
+                    "_id": "Tex.260",
+                    "width": 1024,
+                    "height": 2048,
+                    "_hashDirty": true,
+                    "_hash": 0,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": 0,
+                          "ib": 0,
+                          "drawcalls": 13,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 56080,
+                              "_numVertices": 2804,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 100,
+                              "_glID": {},
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 11532,
+                            "_numIndices": 5766,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 325.2849426269531,
+                              "1": 0.04179999977350235,
+                              "2": 628,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -687.5576171875,
+                              "14": -1190.8846435546875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 687.5576171875,
+                              "14": 1190.8846435546875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0014544236473739147,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0014544236473739147,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.41885972023010254,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 687.5576171875,
+                              "2": 1190.8846435546875,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0.6,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1736,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 1024,
+                      "_height": 2048,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 72,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": -88,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.07080078125
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9755859375,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.05712890625
+                    },
+                    {
+                      "u": 0.9873046875,
+                      "v": 0.05712890625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_name": "80_Title_Add_0001",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 743,
+                    "y": 709,
+                    "width": 24,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.7255859375,
+                    0.36083984375,
+                    0.7490234375,
+                    0.36083984375,
+                    0.7255859375,
+                    0.34619140625,
+                    0.7490234375,
+                    0.34619140625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -83,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.36083984375
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7255859375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.34619140625
+                    },
+                    {
+                      "u": 0.7490234375,
+                      "v": 0.34619140625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6333333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0002",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 461,
+                    "y": 386,
+                    "width": 40,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.4501953125,
+                    0.203125,
+                    0.4892578125,
+                    0.203125,
+                    0.4501953125,
+                    0.1884765625,
+                    0.4892578125,
+                    0.1884765625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -74,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.203125
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.1884765625
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.1884765625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6833333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0003",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 439,
+                    "y": 630,
+                    "width": 54,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.4287109375,
+                    0.322265625,
+                    0.4814453125,
+                    0.322265625,
+                    0.4287109375,
+                    0.3076171875,
+                    0.4814453125,
+                    0.3076171875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -66,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.322265625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3076171875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3076171875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7333333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0004",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 439,
+                    "y": 663,
+                    "width": 54,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.4287109375,
+                    0.33837890625,
+                    0.4814453125,
+                    0.33837890625,
+                    0.4287109375,
+                    0.32373046875,
+                    0.4814453125,
+                    0.32373046875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -52,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33837890625
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.32373046875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.32373046875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7833333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0005",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 439,
+                    "y": 696,
+                    "width": 54,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.4287109375,
+                    0.3544921875,
+                    0.4814453125,
+                    0.3544921875,
+                    0.4287109375,
+                    0.33984375,
+                    0.4814453125,
+                    0.33984375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -37,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.3544921875
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33984375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.33984375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": {
+                  "_name": "80_Title_Add_0006",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 103,
+                    "y": 968,
+                    "width": 52,
+                    "height": 30
+                  },
+                  "uv": [
+                    0.1005859375,
+                    0.4873046875,
+                    0.1513671875,
+                    0.4873046875,
+                    0.1005859375,
+                    0.47265625,
+                    0.1513671875,
+                    0.47265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -21,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.4873046875
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8833333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0007",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 432,
+                    "y": 889,
+                    "width": 54,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.421875,
+                    0.44580078125,
+                    0.474609375,
+                    0.44580078125,
+                    0.421875,
+                    0.43408203125,
+                    0.474609375,
+                    0.43408203125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -8,
+                    "y": 2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.421875,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.44580078125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.43408203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.43408203125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9333333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0008",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 439,
+                    "y": 729,
+                    "width": 54,
+                    "height": 26
+                  },
+                  "uv": [
+                    0.4287109375,
+                    0.36865234375,
+                    0.4814453125,
+                    0.36865234375,
+                    0.4287109375,
+                    0.35595703125,
+                    0.4814453125,
+                    0.35595703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 8,
+                    "y": 2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.36865234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.35595703125
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.35595703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9833333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0009",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 439,
+                    "y": 595,
+                    "width": 54,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.4287109375,
+                    0.30615234375,
+                    0.4814453125,
+                    0.30615234375,
+                    0.4287109375,
+                    0.29052734375,
+                    0.4814453125,
+                    0.29052734375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 22,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.30615234375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4287109375,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.29052734375
+                    },
+                    {
+                      "u": 0.4814453125,
+                      "v": 0.29052734375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 1.0333333333333334,
+                "value": {
+                  "_name": "80_Title_Add_0010",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 103,
+                    "y": 933,
+                    "width": 52,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.1005859375,
+                    0.47119140625,
+                    0.1513671875,
+                    0.47119140625,
+                    0.1005859375,
+                    0.45556640625,
+                    0.1513671875,
+                    0.45556640625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 38,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.47119140625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.45556640625
+                    },
+                    {
+                      "u": 0.1513671875,
+                      "v": 0.45556640625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 1.0833333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0011",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 432,
+                    "y": 854,
+                    "width": 56,
+                    "height": 32
+                  },
+                  "uv": [
+                    0.421875,
+                    0.4326171875,
+                    0.4765625,
+                    0.4326171875,
+                    0.421875,
+                    0.4169921875,
+                    0.4765625,
+                    0.4169921875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 51,
+                    "y": 5,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.421875,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4326171875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4169921875
+                    },
+                    {
+                      "u": 0.4765625,
+                      "v": 0.4169921875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 1.1333333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0012",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 103,
+                    "y": 906,
+                    "width": 54,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.1005859375,
+                    0.4541015625,
+                    0.1533203125,
+                    0.4541015625,
+                    0.1005859375,
+                    0.4423828125,
+                    0.1533203125,
+                    0.4423828125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 65,
+                    "y": 2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4541015625
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1005859375,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4423828125
+                    },
+                    {
+                      "u": 0.1533203125,
+                      "v": 0.4423828125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 1.1833333333333333,
+                "value": {
+                  "_name": "80_Title_Add_0013",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 461,
+                    "y": 419,
+                    "width": 40,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.4501953125,
+                    0.21630859375,
+                    0.4892578125,
+                    0.21630859375,
+                    0.4501953125,
+                    0.20458984375,
+                    0.4892578125,
+                    0.20458984375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 74,
+                    "y": 2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.21630859375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4501953125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.20458984375
+                    },
+                    {
+                      "u": 0.4892578125,
+                      "v": 0.20458984375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 1.2333333333333334,
+                "value": {
+                  "_name": "80_Title_Add_0014",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 161,
+                    "y": 789,
+                    "width": 26,
+                    "height": 24
+                  },
+                  "uv": [
+                    0.1572265625,
+                    0.39697265625,
+                    0.1826171875,
+                    0.39697265625,
+                    0.1572265625,
+                    0.38525390625,
+                    0.1826171875,
+                    0.38525390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 81,
+                    "y": 2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 208,
+                    "height": 58
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1572265625,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.38525390625
+                    },
+                    {
+                      "u": 0.1826171875,
+                      "v": 0.38525390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Min/80_Title_N/80_Title_Add_0001": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 0.6333333333333333
+              },
+              {
+                "frame": 0.6833333333333333
+              },
+              {
+                "frame": 0.7333333333333333
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8833333333333333
+              },
+              {
+                "frame": 0.9333333333333333
+              },
+              {
+                "frame": 0.9833333333333333
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1333333333333333
+              },
+              {
+                "frame": 1.1833333333333333
+              },
+              {
+                "frame": 1.2333333333333334
+              }
+            ]
+          }
+        }
+      },
+      "Max/80_Title_N": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.2833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Max/80_RedFrame": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": -5
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Max/80_Sub_JW": {
+        "props": {
+          "scale": [
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Min/80_Title_N": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.2833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Min/80_Sub_JW": {
+        "props": {
+          "scale": [
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Min/80_RedFrame": {
+        "props": {
+          "angle": [
+            {
+              "frame": 1.2666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": -5
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

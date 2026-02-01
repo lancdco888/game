@@ -1,0 +1,94 @@
+{
+  "_name": "Common_Win_Popup_Ani_Burst_Btn",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.1666666666666665,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Btn": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -20
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": -20
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Btn/Btn_Skip": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Btn/Btn_Collect": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.9,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Btn/Btn_Share": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "active": []
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

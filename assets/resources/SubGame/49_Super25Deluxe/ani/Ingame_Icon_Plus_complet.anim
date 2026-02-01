@@ -1,0 +1,61 @@
+{
+  "_name": "Ingame_Icon_Plus_complet",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "particle_Burst": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.016666666666666666,
+                "value": 1000
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 1000
+              },
+              {
+                "frame": 0.35,
+                "value": 0
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "circleLight_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 120
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

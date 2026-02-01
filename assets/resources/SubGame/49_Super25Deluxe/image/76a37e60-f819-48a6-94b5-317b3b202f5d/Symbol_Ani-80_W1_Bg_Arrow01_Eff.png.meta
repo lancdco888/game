@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "20773c04-ebd1-4a4f-aa71-ac3fa6af425f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 192,
+  "height": 144,
+  "platformSettings": {},
+  "subMetas": {
+    "Symbol_Ani-80_W1_Bg_Arrow01_Eff": {
+      "ver": "1.0.6",
+      "uuid": "94d8e3d6-1ad8-427a-b63c-857f7a1dceec",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "20773c04-ebd1-4a4f-aa71-ac3fa6af425f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -25.5,
+      "trimX": 33,
+      "trimY": 62,
+      "width": 124,
+      "height": 71,
+      "rawWidth": 192,
+      "rawHeight": 144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

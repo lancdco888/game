@@ -1,0 +1,141 @@
+{
+  "_name": "Game_Gift_Balloon_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Balloon_Pivot/Puple_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": -3
+            },
+            {
+              "frame": 3,
+              "value": 3
+            },
+            {
+              "frame": 4,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Balloon_Pivot/Blue_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 2
+            },
+            {
+              "frame": 3,
+              "value": -2
+            },
+            {
+              "frame": 4,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Balloon_Pivot/Green_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": -2
+            },
+            {
+              "frame": 3,
+              "value": 2
+            },
+            {
+              "frame": 4,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Balloon_Pivot/Gift_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.09982843137254901,
+                0.29769607843137247,
+                0.6902941176470587,
+                0.9050245098039216
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 3,
+              "curve": [
+                0.2943872549019608,
+                -2.220446049250313e-16,
+                0.6933578431372548,
+                1.0030637254901962
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": -3,
+              "curve": [
+                0.30357843137254903,
+                -0.009191176470588314,
+                0.6964215686274509,
+                1
+              ]
+            },
+            {
+              "frame": 2.5,
+              "value": 3,
+              "curve": [
+                0.30051470588235296,
+                -2.220446049250313e-16,
+                0.6933578431372548,
+                1
+              ]
+            },
+            {
+              "frame": 3.5,
+              "value": -3,
+              "curve": [
+                0.2974509803921569,
+                0.08884803921568607,
+                0.8986274509803921,
+                0.6844362745098039
+              ]
+            },
+            {
+              "frame": 4,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

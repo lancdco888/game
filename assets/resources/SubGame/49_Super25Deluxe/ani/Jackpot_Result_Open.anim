@@ -1,0 +1,248 @@
+{
+  "_name": "Jackpot_Result_Open",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.83,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": 0
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": 255
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1.5
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": 1.5
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": 0.8
+        },
+        {
+          "frame": 0.4,
+          "value": 1
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1.5
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": 1.5
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": 0.8
+        },
+        {
+          "frame": 0.4,
+          "value": 1
+        }
+      ]
+    },
+    "paths": {
+      "Title": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": 255
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 2.5
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 2.5
+            },
+            {
+              "frame": 0.45,
+              "value": 0.8
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 2.5
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 2.5
+            },
+            {
+              "frame": 0.45,
+              "value": 0.8
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "btn_collect/fx/mask/gradationLight_01": {
+        "props": {}
+      },
+      "Title/mask/gradationLight_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -275
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -275,
+              "curve": [
+                0.24,
+                0.49,
+                0.55,
+                0.74
+              ]
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 275
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Title/Title_W": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 200
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 2.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 2.5
+            }
+          ]
+        }
+      },
+      "bg_fx/particle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.4,
+                "value": 0
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 800
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

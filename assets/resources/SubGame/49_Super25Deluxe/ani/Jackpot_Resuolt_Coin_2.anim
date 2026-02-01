@@ -1,0 +1,4561 @@
+{
+  "_name": "Jackpot_Resuolt_Coin_2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.2,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Coin_1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -461.2696702246651
+            },
+            {
+              "frame": 0.25,
+              "value": -761
+            },
+            {
+              "frame": 0.5,
+              "value": 0,
+              "curve": [
+                0.44,
+                0.15,
+                0.81,
+                0.55
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -461.2696702246651
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -121.2862619081845
+            },
+            {
+              "frame": 0.25,
+              "value": -193
+            },
+            {
+              "frame": 0.5,
+              "value": 0,
+              "curve": [
+                0.46,
+                0.18,
+                0.76,
+                0.53
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -121.2862619081845
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.85
+            },
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.85
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.85
+            },
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.85
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 101.11111111111113
+            },
+            {
+              "frame": 0.25,
+              "value": 130
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 101.11111111111113
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "_name": "Rotation_Coin_09",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 92,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 224,
+                    "y": 2,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.4375,
+                    0.13671875,
+                    0.5703125,
+                    0.13671875,
+                    0.4375,
+                    0.00390625,
+                    0.5703125,
+                    0.00390625
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": true,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/resources/native/75/75cdde26-fbf6-4bb3-82e8-c014facae7e1.897fd.webp",
+                    "_ref": 11,
+                    "_callbackTable": {},
+                    "_id": "Tex.299",
+                    "width": 512,
+                    "height": 512,
+                    "_hashDirty": false,
+                    "_hash": 111622000,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": 0,
+                          "ib": 0,
+                          "drawcalls": 13,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 56080,
+                              "_numVertices": 2804,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 100,
+                              "_glID": {},
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 11532,
+                            "_numIndices": 5766,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 327.28448486328125,
+                              "1": 0.04149999842047691,
+                              "2": 668,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -687.5576171875,
+                              "14": -1190.8846435546875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 687.5576171875,
+                              "14": 1190.8846435546875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0014544236473739147,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0014544236473739147,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.41885972023010254,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 687.5576171875,
+                              "2": 1190.8846435546875,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0.6,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1736,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 512,
+                      "_height": 512,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 98,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.4375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.5703125,
+                      "v": 0.00390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": {
+                  "_name": "Rotation_Coin_10",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 67,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 298,
+                    "y": 2,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.58203125,
+                    0.13671875,
+                    0.71484375,
+                    0.13671875,
+                    0.58203125,
+                    0.00390625,
+                    0.71484375,
+                    0.00390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.58203125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.58203125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.71484375,
+                      "v": 0.00390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.08333333333333333,
+                "value": {
+                  "_name": "Rotation_Coin_11",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 58,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 372,
+                    "y": 2,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.7265625,
+                    0.13671875,
+                    0.859375,
+                    0.13671875,
+                    0.7265625,
+                    0.00390625,
+                    0.859375,
+                    0.00390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7265625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.7265625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.859375,
+                      "v": 0.00390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.11666666666666667,
+                "value": {
+                  "_name": "Rotation_Coin_02",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 81,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 76,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.00390625,
+                    0.28125,
+                    0.13671875,
+                    0.28125,
+                    0.00390625,
+                    0.1484375,
+                    0.13671875,
+                    0.1484375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.00390625,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.28125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.1484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.1484375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "_name": "Rotation_Coin_03",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 65,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 150,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.00390625,
+                    0.42578125,
+                    0.13671875,
+                    0.42578125,
+                    0.00390625,
+                    0.29296875,
+                    0.13671875,
+                    0.29296875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.00390625,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.42578125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.29296875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.29296875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "_name": "Rotation_Coin_04",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 97,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 224,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.00390625,
+                    0.5703125,
+                    0.13671875,
+                    0.5703125,
+                    0.00390625,
+                    0.4375,
+                    0.13671875,
+                    0.4375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.00390625,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.5703125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.4375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5
+              },
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_name": "Rotation_Coin_05",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 88,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 298,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.00390625,
+                    0.71484375,
+                    0.13671875,
+                    0.71484375,
+                    0.00390625,
+                    0.58203125,
+                    0.13671875,
+                    0.58203125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.00390625,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.71484375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.58203125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6166666666666667,
+                "value": {
+                  "_name": "Rotation_Coin_06",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 95,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 372,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.00390625,
+                    0.859375,
+                    0.13671875,
+                    0.859375,
+                    0.00390625,
+                    0.7265625,
+                    0.13671875,
+                    0.7265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.00390625,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.859375
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.7265625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.7265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "_name": "Rotation_Coin_07",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 72,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 76,
+                    "y": 2,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.1484375,
+                    0.13671875,
+                    0.28125,
+                    0.13671875,
+                    0.1484375,
+                    0.00390625,
+                    0.28125,
+                    0.00390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.1484375,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.28125,
+                      "v": 0.00390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "_name": "Rotation_Coin_08",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 75,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 150,
+                    "y": 2,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.29296875,
+                    0.13671875,
+                    0.42578125,
+                    0.13671875,
+                    0.29296875,
+                    0.00390625,
+                    0.42578125,
+                    0.00390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.29296875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.29296875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.42578125,
+                      "v": 0.00390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667,
+                "value": {
+                  "_name": "Rotation_Coin_01",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 101,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 2,
+                    "width": 68,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.00390625,
+                    0.13671875,
+                    0.13671875,
+                    0.13671875,
+                    0.00390625,
+                    0.00390625,
+                    0.13671875,
+                    0.00390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 68,
+                    "height": 68
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.00390625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.13671875
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.00390625,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.00390625
+                    },
+                    {
+                      "u": 0.13671875,
+                      "v": 0.00390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.1,
+              "value": false
+            },
+            {
+              "frame": 0.55,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -548.9686832485742
+            },
+            {
+              "frame": 0.1,
+              "value": -666
+            },
+            {
+              "frame": 0.55,
+              "value": 0,
+              "curve": [
+                0.4,
+                0.19,
+                0.75,
+                0.59
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -548.9686832485742
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 521.311413312451
+            },
+            {
+              "frame": 0.1,
+              "value": 649
+            },
+            {
+              "frame": 0.55,
+              "value": 0,
+              "curve": [
+                0.41,
+                0.17,
+                0.78,
+                0.53
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 521.311413312451
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.1125
+            },
+            {
+              "frame": 0.1,
+              "value": 1.2
+            },
+            {
+              "frame": 0.55,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1.1125
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.1125
+            },
+            {
+              "frame": 0.1,
+              "value": 1.2
+            },
+            {
+              "frame": 0.55,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1.1125
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -300
+            },
+            {
+              "frame": 0.1,
+              "value": -360
+            },
+            {
+              "frame": 0.55,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": -300
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.06666666666666667
+              },
+              {
+                "frame": 0.55
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 0.6166666666666667
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.55,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.55,
+              "value": 0,
+              "curve": [
+                0.43,
+                0.11,
+                0.84,
+                0.59
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 838
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.55,
+              "value": 0,
+              "curve": [
+                0.5,
+                0.12,
+                0.83,
+                0.58
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 192
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.55,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.55,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.55,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 400
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.55
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 0.6166666666666667
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 478.85941603448475
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 640
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0,
+              "curve": [
+                0.44,
+                0.11,
+                0.78,
+                0.54
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 478.85941603448475
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -410.17150932523083
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": -550
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0,
+              "curve": [
+                0.39,
+                0.12,
+                0.76,
+                0.48
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -410.17150932523083
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.364864864864865
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 1.5
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0.5
+            },
+            {
+              "frame": 1.2,
+              "value": 1.364864864864865
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.364864864864865
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 1.5
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0.5
+            },
+            {
+              "frame": 1.2,
+              "value": 1.364864864864865
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -109.71428571428572
+            },
+            {
+              "frame": 0.05,
+              "value": -120
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_5": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0,
+              "curve": [
+                0.5,
+                0.14,
+                0.77,
+                0.52
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 429
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0,
+              "curve": [
+                0.46,
+                0.11,
+                0.82,
+                0.5
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 664
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 120
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.45
+              },
+              {
+                "frame": 0.5
+              },
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 0.6166666666666667
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_6": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0,
+              "curve": [
+                0.56,
+                0.15,
+                0.83,
+                0.55
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -770
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0,
+              "curve": [
+                0.51,
+                0.13,
+                0.83,
+                0.56
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 394
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": -500
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4166666666666667
+              },
+              {
+                "frame": 0.45
+              },
+              {
+                "frame": 0.5
+              },
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 0.6166666666666667
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_7": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": false
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -227.68538921068472
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -436
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0,
+              "curve": [
+                0.57,
+                0.19,
+                0.81,
+                0.52
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -227.68538921068472
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -339.32780260652316
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -633
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0,
+              "curve": [
+                0.52,
+                0.14,
+                0.81,
+                0.54
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -339.3278026
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1.2
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1.2
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -75.00000000000001
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -100
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": -75.00000000000001
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 0.6333333333333333
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_8": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": false
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 442.4497047673088
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 887
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0,
+              "curve": [
+                0.58,
+                0.17,
+                0.81,
+                0.51
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 442.4497047673084
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -103.42730696748202
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -127
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": -80,
+              "curve": [
+                0.58,
+                0.13,
+                0.8,
+                0.52
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -103.427306967482
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.1210526315789475
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 1.5
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1.1210526315789473
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.1210526315789475
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 1.5
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1.1210526315789473
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -170.85714285714292
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -230
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": -170.8571428571428
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.7666666666666667
+              },
+              {
+                "frame": 0.8
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_9": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -28.288985291685048
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -133
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0,
+              "curve": [
+                0.48,
+                0.05,
+                0.85,
+                0.52
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -28.288985291685048
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -198.9615895697027
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -939
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0,
+              "curve": [
+                0.54,
+                0.12,
+                0.83,
+                0.46
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -198.9615895697027
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.8866666666666667
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 1.5
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.8866666666666667
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.8866666666666667
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 1.5
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.8866666666666667
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 134.14634146341464
+            },
+            {
+              "frame": 0.3,
+              "value": 250
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 134.14634146341464
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_10": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -186.5026662039772
+            },
+            {
+              "frame": 0.5,
+              "value": -853
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0,
+              "curve": [
+                0.52,
+                0.1,
+                0.81,
+                0.49
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -186.5026662039772
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 1.458150891477581
+            },
+            {
+              "frame": 0.5,
+              "value": 7
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0,
+              "curve": [
+                0.58,
+                0.13,
+                0.83,
+                0.49
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 1.4581508914775783
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.5
+            },
+            {
+              "frame": 0.5,
+              "value": 0.8
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.5
+            },
+            {
+              "frame": 0.5,
+              "value": 0.8
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 58.28571428571429
+            },
+            {
+              "frame": 0.5,
+              "value": 120
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 58.28571428571427
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4166666666666667
+              },
+              {
+                "frame": 0.45
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_11": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -52.514284070152314
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -384
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 0,
+              "curve": [
+                0.61,
+                0.15,
+                0.8,
+                0.51
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -52.514284070152314
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 102.4318310352244
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 803
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 0,
+              "curve": [
+                0.52,
+                0.09,
+                0.78,
+                0.46
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 102.4318310352244
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.7333333333333335
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 1.2
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.7333333333333335
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.7333333333333335
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 1.2
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.7333333333333335
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 100
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 250
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 100
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.9833333333333333
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_12": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 44.388045747723126
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 481
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 0,
+              "curve": [
+                0.52,
+                0.13,
+                0.77,
+                0.49
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 44.388045747723126
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 48.36981209982692
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 656
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 0,
+              "curve": [
+                0.61,
+                0.12,
+                0.81,
+                0.49
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 48.36981209982692
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.6846153846153846
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 1.2
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.6846153846153842
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.6846153846153846
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 1.2
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.6846153846153842
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -123.33333333333333
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": -220
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": -90
+            },
+            {
+              "frame": 1.2,
+              "value": -123.33333333333329
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4166666666666667
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_13": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 26.710496429642983
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 858
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0,
+              "curve": [
+                0.6,
+                0.12,
+                0.83,
+                0.5
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 26.710496429642983
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -9.578107297769344
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -431
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0,
+              "curve": [
+                0.46,
+                0.04,
+                0.85,
+                0.5
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -9.578107297769344
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.5179487179487181
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 1.7
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.5179487179487181
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.5179487179487181
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 1.7
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.5179487179487181
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -36.410256410256416
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": -80
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": -30
+            },
+            {
+              "frame": 1.2,
+              "value": -36.410256410256416
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4166666666666667
+              },
+              {
+                "frame": 0.45
+              },
+              {
+                "frame": 0.5
+              },
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_14": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -25.162395450594452
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": -832
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0,
+              "curve": [
+                0.45,
+                0.09,
+                0.85,
+                0.44
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -25.162395450594452
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -13.004230330846502
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": -523
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0,
+              "curve": [
+                0.5,
+                0.08,
+                0.85,
+                0.43
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": -13.004230330846502
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.4071429
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 1.2
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.407142857142857
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.4071428571428572
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 1.2
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 0.4071428571428572
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -11.90476190476191
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": -360
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": -11.90476190476191
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4166666666666667
+              },
+              {
+                "frame": 0.45
+              },
+              {
+                "frame": 0.5
+              },
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 0.5833333333333334
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      },
+      "Coin_15": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.75,
+              "value": true
+            },
+            {
+              "frame": 1.2,
+              "value": true
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 275.7965895189272
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 737
+            },
+            {
+              "frame": 0.75,
+              "value": 0,
+              "curve": [
+                0.37,
+                0.23,
+                0.73,
+                0.56
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 275.7965895189272
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 195.59332861897332
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 539
+            },
+            {
+              "frame": 0.75,
+              "value": 0,
+              "curve": [
+                0.38,
+                0.25,
+                0.67,
+                0.54
+              ]
+            },
+            {
+              "frame": 1.2,
+              "value": 195.59332861897332
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 1.2
+            },
+            {
+              "frame": 0.75,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 1.2
+            },
+            {
+              "frame": 0.75,
+              "value": 0.3
+            },
+            {
+              "frame": 1.2,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 130
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 200
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            },
+            {
+              "frame": 1.2,
+              "value": 130
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.11666666666666667
+              },
+              {
+                "frame": 0.16666666666666666
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.25
+              },
+              {
+                "frame": 0.2833333333333333
+              },
+              {
+                "frame": 0.3333333333333333
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.75
+              },
+              {
+                "frame": 0.7833333333333333
+              },
+              {
+                "frame": 0.8333333333333334
+              },
+              {
+                "frame": 0.8666666666666667
+              },
+              {
+                "frame": 0.9166666666666666
+              },
+              {
+                "frame": 0.95
+              },
+              {
+                "frame": 1
+              },
+              {
+                "frame": 1.0333333333333334
+              },
+              {
+                "frame": 1.0833333333333333
+              },
+              {
+                "frame": 1.1166666666666667
+              },
+              {
+                "frame": 1.1666666666666667
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,231 @@
+{
+  "_name": "Level_Up_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "SizeNode/100_level_BG/Glow/100_LV_Glow": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.2,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "SizeNode/100_level_BG/Glow/100_Info_Glow": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.7,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.8666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "SizeNode": {
+        "comps": {},
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.21314727596741342,
+                1.0130276221995926,
+                0.5899446283095723,
+                1.379884801425662
+              ],
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 4,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 4.166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 4.5,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "SizeNode/100_level_BG/Title/Title_LV/80_Title_LV": {
+        "comps": {},
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "SizeNode/100_level_BG/Title/Title_LV/Font_Level": {
+        "comps": {},
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.0765478615071283,
+                0.5769755600814663,
+                0.5023523421588594,
+                0.9987270875763747
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": {
+                "x": 1.15,
+                "y": 1.15,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "SizeNode/100_level_BG/Title/Title_LV": {
+        "comps": {},
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

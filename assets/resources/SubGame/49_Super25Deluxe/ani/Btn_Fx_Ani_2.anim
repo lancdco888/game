@@ -1,0 +1,55 @@
+{
+  "_name": "Btn_Fx_Ani_2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Mask/gradationLight_02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -90
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -90
+            },
+            {
+              "frame": 1.5,
+              "value": 80
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

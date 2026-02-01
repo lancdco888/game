@@ -1,0 +1,123 @@
+{
+  "_name": "Jackpot_Result_Btn_Idle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 5.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Btn_Light01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 100
+            },
+            {
+              "frame": 1.5,
+              "value": 100
+            },
+            {
+              "frame": 2.5,
+              "value": 150
+            },
+            {
+              "frame": 3.5,
+              "value": 100
+            },
+            {
+              "frame": 4.5,
+              "value": 150
+            },
+            {
+              "frame": 5.5,
+              "value": 100
+            }
+          ]
+        }
+      },
+      "mask": {
+        "props": {}
+      },
+      "Btn_Light02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 100
+            },
+            {
+              "frame": 1.5,
+              "value": 100
+            },
+            {
+              "frame": 2.5,
+              "value": 150
+            },
+            {
+              "frame": 3.5,
+              "value": 100
+            },
+            {
+              "frame": 4.5,
+              "value": 150
+            },
+            {
+              "frame": 5.5,
+              "value": 100
+            }
+          ]
+        }
+      },
+      "mask/gradationLight_01": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -200,
+                0
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                -200,
+                0
+              ]
+            },
+            {
+              "frame": 3.5,
+              "value": [
+                150,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            },
+            {
+              "frame": 2.5,
+              "value": 80
+            },
+            {
+              "frame": 3.5,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

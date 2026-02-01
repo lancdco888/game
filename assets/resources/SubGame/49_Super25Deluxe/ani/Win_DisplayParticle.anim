@@ -1,0 +1,506 @@
+{
+  "_name": "Win_DisplayParticle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.ParticleSystem": {}
+    },
+    "props": {
+      "position": []
+    },
+    "paths": {
+      "Win_DisplayParticle_Left": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -120,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -20,
+                0
+              ]
+            },
+            {
+              "frame": 0.35,
+              "value": [
+                -170,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -125,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Win_DisplayParticle_Right": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                120,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                20,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.35,
+              "value": [
+                170,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                125,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Win_DisplayParticle_Left2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -170,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -20,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Win_DisplayParticle_Right2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                170,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                20,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Win_DisplayParticle_Left/Win_DisplayParticle1": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852187135
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 60415
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986404863
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852126720
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 0
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986344448
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Left/Win_DisplayParticle2": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852187135
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 60415
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986404863
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852126720
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 0
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986344448
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Right/Win_DisplayParticle3": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852187135
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 60415
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986404863
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852126720
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 0
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986344448
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Right/Win_DisplayParticle4": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852187135
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 60415
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986404863
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 2852126720
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_val": 0
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 2986344448
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Left2/Win_DisplayParticle1": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 60415
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Left2/Win_DisplayParticle2": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 60415
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Right2/Win_DisplayParticle3": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 60415
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Win_DisplayParticle_Right2/Win_DisplayParticle4": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278250495
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 60415
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 4278190080
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_val": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

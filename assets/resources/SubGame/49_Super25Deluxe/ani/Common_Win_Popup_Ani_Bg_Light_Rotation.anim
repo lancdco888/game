@@ -1,0 +1,52 @@
+{
+  "_name": "Common_Win_Popup_Ani_Bg_Light_Rotation",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 14,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Back_Light_White_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -300
+            },
+            {
+              "frame": 7,
+              "value": -100
+            },
+            {
+              "frame": 14,
+              "value": 100
+            }
+          ]
+        }
+      },
+      "Back_Light_White_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 40
+            },
+            {
+              "frame": 7,
+              "value": -100
+            },
+            {
+              "frame": 14,
+              "value": -200
+            }
+          ]
+        }
+      }
+    },
+    "props": {}
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

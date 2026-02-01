@@ -1,0 +1,223 @@
+{
+  "_name": "J_Appear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.16666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+          }
+        },
+        {
+          "frame": 0.08333333333333333,
+          "value": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 0
+          }
+        },
+        {
+          "frame": 0.16666666666666666,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+          }
+        }
+      ]
+    },
+    "paths": {
+      "Light": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 200
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 200
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "J_Bg_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "HighRoller/J_Txt2_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Vegas/J_Txt3_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Jackpot/J_Txt_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Light_Front": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.05,
+              "value": 120
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 120
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Jackpot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

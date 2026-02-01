@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ecae8b31-1cad-4f76-874c-ed00e212e015",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 11,
+  "height": 53,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-70_Jackpot_Bg2": {
+      "ver": "1.0.6",
+      "uuid": "3af79ef7-0a96-47b2-98b8-d32e66a5b435",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ecae8b31-1cad-4f76-874c-ed00e212e015",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 11,
+      "height": 53,
+      "rawWidth": 11,
+      "rawHeight": 53,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
