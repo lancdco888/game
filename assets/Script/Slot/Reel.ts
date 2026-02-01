@@ -293,7 +293,7 @@ export default class Reel extends cc.Component {
     }
 
     // ===== 获取滚轮停止时间 - 原双层null校验保留，核心特征！ =====
-    getReelStopTime(winLineIdx: number): number {
+    getReelStopTime(winLineIdx: number|string): number {
         let stopTime;
         if (null != winLineIdx && null != winLineIdx) {
             const spinInfo = SlotUIRuleManager.Instance.getSpinControlInfo(winLineIdx).infoList[this.reelindex];

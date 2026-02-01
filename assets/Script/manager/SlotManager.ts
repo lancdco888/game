@@ -162,7 +162,7 @@ export default class SlotManager extends cc.Component {
     private _jackpotTextEffect: any = null;
 	private _linkedJackpotTextEffect: any = null;
     private _cheatComponent: any = null;
-    private spinEndTime: number = 0;
+    public spinEndTime: number = 0;
     public _freespinTotalCount: number = 0;
     public _freespinPastCount: number = 0;
     public _freespinMultiplier: number = 0;
