@@ -13,16 +13,6 @@ import { CommonRewardActionType } from './CommonRewardEnum';
 import CommonRewardNodes from './CommonRewardNodes';
 
 
-// 实际项目中请替换为真实导入路径
-// import FireHoseSender from '../../../global_utility/Network/FireHoseSender';
-// import SoundManager from '../../../slot_common/Script/SlotCommon/SoundManager';
-// import UserInfo from '../../User/UserInfo';
-// import CommonSoundSetter from '../../../global_utility/CommonSoundSetter';
-// import HeroManager from '../../Utility/HeroManager';
-// import TSUtility from '../../../global_utility/TSUtility';
-// import CommonRewardAction from './Action/CommonRewardAction';
-// import * as CommonRewardEnum from './CommonRewardEnum';
-// import CommonRewardNodes from './CommonRewardNodes';
 
 // ===================== 奖励资源管理组件 =====================
 /**
@@ -33,7 +23,7 @@ import CommonRewardNodes from './CommonRewardNodes';
 export default class CommonRewardResources extends cc.Component {
     /** 奖励节点根节点（实例化的奖励预制体添加到该节点下） */
     @property({
-        type: Node,
+        type: cc.Node,
         displayName: '奖励根节点',
         tooltip: '所有奖励预制体实例化后添加到该节点'
     })
@@ -41,7 +31,7 @@ export default class CommonRewardResources extends cc.Component {
 
     /** 移动根节点（奖励节点移动动画的根节点） */
     @property({
-        type: Node,
+        type: cc.Node,
         displayName: '移动根节点',
         tooltip: '奖励节点移动动画的父节点'
     })
@@ -311,7 +301,7 @@ export default class CommonRewardResources extends cc.Component {
      * 获取奖励节点池实例
      * @returns 节点池实例
      */
-    public getNodePool(): CommonRewardNodes | null {
+    public getNodePool(): CommonRewardNodes {
         return this.commonRewardNodes;
     }
 
@@ -319,7 +309,7 @@ export default class CommonRewardResources extends cc.Component {
      * 获取移动根节点
      * @returns 移动根节点
      */
-    public getMoveRoot(): cc.Node | null {
+    public getMoveRoot(): cc.Node {
         return this.nodeMoveRoot;
     }
 }

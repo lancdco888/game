@@ -35,10 +35,10 @@ export default class EnterCasinoOfferPopup extends DialogBase {
     @property({ type: cc.Label })
     public price_Label: cc.Label = null;
 
-    @property({ type: Node })
+    @property({ type: cc.Node })
     public nodeUnlockHigherBets: cc.Node = null;
 
-    @property({ type: Node })
+    @property({ type: cc.Node })
     public nodeAccessToEarly: cc.Node = null;
 
     // ===================== 私有成员变量 - 完整TS类型注解，初始值与原JS完全一致 =====================

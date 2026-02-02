@@ -89,12 +89,12 @@ export default class SoundManager extends cc.Component {
             this._fxOnceSources.push(audioSource);
         }
 
-        // // 加载本地配置：设置静音+音量
-        // this.setMainBGMMute(!sysInfo.mainBgmOnOff);
-        // if (sysInfo.mainBgmOnOff) this.setMainVolume(sysInfo.mainBgmVolume);
+        // 加载本地配置：设置静音+音量
+        this.setMainBGMMute(!sysInfo.mainBgmOnOff);
+        if (sysInfo.mainBgmOnOff) this.setMainVolume(sysInfo.mainBgmVolume);
         
-        // this.setFxMute(!sysInfo.effectSoundOnOff);
-        // if (sysInfo.effectSoundOnOff) this.setFxVolume(sysInfo.effectSoundVolume);
+        this.setFxMute(!sysInfo.effectSoundOnOff);
+        if (sysInfo.effectSoundOnOff) this.setFxVolume(sysInfo.effectSoundVolume);
     }
 
     // ===================== 【背景音乐(BGM) 音量/静音 控制】原逻辑完全保留 =====================

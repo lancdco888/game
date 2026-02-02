@@ -1,9 +1,4 @@
-// import { _decorator, ccclass, JsonAsset, error } from 'cc';
-// import LevelManager from "../User/LevelManager";
-// import VipManager from "../VIP/VipManager";
-// import CasinoZoneManager from "../CasinoZone/CasinoZoneManager";
-// import LevelBettingLockConfig from "./LevelBettingLockConfig";
-// import ProductConfig from "./ProductConfig";
+import LanguageManager from "../Config/LanguageManager";
 import LevelBettingLockConfig from "../Config/LevelBettingLockConfig";
 import FireHoseSender from "../FireHoseSender";
 import CasinoZoneManager from "./CasinoZoneManager";
@@ -21,7 +16,7 @@ export default class ConfigManager {
 
                 // 所有配置加载成功，初始化各配置管理器（和原代码初始化顺序一致）
                 LevelManager.Init(configList[0]);
-                // LanguageManager.Init(configList[1]);
+                LanguageManager.Init(configList[1]);
                 //VipManager.Init(configList[2]);
                 CasinoZoneManager.Init(configList[3]);
                 LevelBettingLockConfig.Init(configList[4]);

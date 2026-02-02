@@ -356,7 +356,7 @@ export default class CommonServer {
     // ===================== 静态工具方法 - 全局统一错误处理/数据解析 核心中的核心 =====================
     public static isServerResponseError(res: any, retryCnt: number = 0): boolean {
         if (!TSUtility.isValid(res)) return true;
-        if (!res || res.errorCode) {
+        if (!res || res.errorStatusCode) {
             if (res.errorStatusCode !== undefined) {
                 const err = new Error("Network error %s".format(JSON.stringify(res)));
                 FireHoseSender.Instance().sendAws(FireHoseSender.Instance().getRecord(FHLogType.Exception, err), true);
@@ -370,7 +370,7 @@ export default class CommonServer {
                         let btnTxt = "RELOAD";
                         if (Utility.isFacebookInstant()) btnTxt = "CLOSE";
                         CommonPopup.getCommonPopup((_, popup) => {
-                            popup.open().setInfo("OOPS...", "Disconnected\nPlease check on your internet connection. %s".format(res.errorCode.toString()))
+                            popup.open().setInfo("OOPS...", "Disconnected\nPlease check on your internet connection. %s".format(res.errorStatusCode.toString()))
                                 .setOkBtn(btnTxt, () => { HRVServiceUtil.restartGame(); });
                             if (Utility.isMobileGame()) {
                                 popup.setCloseBtn(true, () => { TSUtility.endGame(); });
@@ -411,24 +411,31 @@ export default class CommonServer {
                     return true;
                 }
 
-                // 版本过低错误
-                if (res.errorCode == SDefine.ERR_MINVERSION) {
-                    UserInfo.setAuthFail();
-                    // if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
-                    // let btnTxt = "RELOAD";
-                    // let tipMsg = "A new version is available.\nPlease restart the app to continue playing the slot game.";
-                    // if (Utility.isFacebookInstant()) {
-                    //     btnTxt = "CLOSE";
-                    //     tipMsg = "A new version is available.\nPlease close the game.";
-                    // }
-                    // CommonPopup.getCommonPopup((_, popup) => {
-                    //     popup.open().setInfo("NOTICE", tipMsg, false).setOkBtn(btnTxt, () => { HRVServiceUtil.restartGame(); });
-                    //     if (Utility.isMobileGame()) {
-                    //         popup.setCloseBtn(true, () => { TSUtility.endGame(); });
-                    //     }
-                    // });
-                    return true;
-                }
+                CommonPopup.getCommonPopup((_, popup) => {
+                    popup.open().setInfo("NOTICE", "错误", false).setOkBtn("OK", () => { HRVServiceUtil.restartGame(); });
+                    if (Utility.isMobileGame()) {
+                        popup.setCloseBtn(true, () => { TSUtility.endGame(); });
+                    }
+                });
+
+                // // 版本过低错误
+                // if (res.errorCode == SDefine.ERR_MINVERSION) {
+                //     UserInfo.setAuthFail();
+                //     // if (UserInfo.instance() != null) UserInfo.instance()!.clearEvent();
+                //     // let btnTxt = "RELOAD";
+                //     // let tipMsg = "A new version is available.\nPlease restart the app to continue playing the slot game.";
+                //     // if (Utility.isFacebookInstant()) {
+                //     //     btnTxt = "CLOSE";
+                //     //     tipMsg = "A new version is available.\nPlease close the game.";
+                //     // }
+                //     // CommonPopup.getCommonPopup((_, popup) => {
+                //     //     popup.open().setInfo("NOTICE", tipMsg, false).setOkBtn(btnTxt, () => { HRVServiceUtil.restartGame(); });
+                //     //     if (Utility.isMobileGame()) {
+                //     //         popup.setCloseBtn(true, () => { TSUtility.endGame(); });
+                //     //     }
+                //     // });
+                //     return true;
+                // }
             }
             return true;
         }

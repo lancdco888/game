@@ -1,8 +1,6 @@
 {
   "excludeScenes": [
-    "2d2f792f-a40c-49bb-a189-ed176a246e49",
-    "a1c9b230-9cfd-49c5-bac4-0f6b46a0472a",
-    "986b083a-5320-4efa-947b-b732caf88c75"
+    "26fa63fb-2ed1-4f70-a7b8-374f9109e8f2"
   ],
   "orientation": {
     "landscapeLeft": true,
@@ -26,7 +24,7 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": "org.cocos2d.demo",
+    "packageName": "org.cocos2d.slots",
     "REMOTE_SERVER_ROOT": ""
   },
   "ios": {

@@ -40,7 +40,7 @@ export default class CommonRewardNodes extends cc.Component {
 
     /** PowerGem插槽底部图标节点 */
     @property({
-        type: Node,
+        type: cc.Node,
         displayName: 'PowerGem插槽图标',
         tooltip: 'PowerGem等级显示的插槽底部图标'
     })
@@ -311,7 +311,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 优惠券图标节点
      */
-    public activeBankrollCouponUI(isActive: boolean): cc.Node | null {
+    public activeBankrollCouponUI(isActive: boolean): cc.Node {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (TSUtility.isValid(this._lobbyCoupon)) {
@@ -339,7 +339,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 个人资料UI节点
      */
-    public activeProfileUI(isActive: boolean): cc.Node | null {
+    public activeProfileUI(isActive: boolean): cc.Node {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (!TSUtility.isValid(this._lobbyProfile)) {
@@ -381,7 +381,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param value Booster数值
      * @returns 等级Booster UI节点
      */
-    public activeLevelBoosterUI(isActive: boolean, value: number): cc.Node | null {
+    public activeLevelBoosterUI(isActive: boolean, value: number): cc.Node {
         // 大厅场景
         if (this.isLobbyScene()) {
             if (TSUtility.isValid(this._lobbyLevelBooster)) {
@@ -407,7 +407,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns 英雄UI节点
      */
-    public activeHeroUI(isActive: boolean): cc.Node | null {
+    public activeHeroUI(isActive: boolean): cc.Node {
         // 先隐藏游戏内英雄图标
         if (TSUtility.isValid(this.nodeInGameHeroIcon)) {
             this.nodeInGameHeroIcon.node.active = false;
@@ -503,7 +503,7 @@ export default class CommonRewardNodes extends cc.Component {
      * @param isActive 是否激活
      * @returns PowerGem图标节点
      */
-    public activePowerGemSlotBottomIcon(isActive: boolean): cc.Node | null {
+    public activePowerGemSlotBottomIcon(isActive: boolean): cc.Node {
         // 先隐藏图标
         if (TSUtility.isValid(this.nodePowerGemSlotBottomIcon)) {
             this.nodePowerGemSlotBottomIcon.active = false;

@@ -1,6 +1,8 @@
 import AssetBundleManager from "./AssetBundle/AssetBundleManager";
+import { LanguageType } from "./Config/LanguageManager";
 import ErrorCatcher from "./ErrorCatcher";
 import FireHoseSender, { FHLogType } from "./FireHoseSender";
+import HRVFirehoseSetting from "./HRVService/HRVFirehoseSetting";
 import HRVServiceUtil from "./HRVService/HRVServiceUtil";
 import IntroPopup from "./IntroPopup";
 import LoginProcess from "./LoginProcess";
@@ -74,7 +76,7 @@ export default class LauncherScene extends cc.Component {
         // 初始化核心服务
         HRVServiceUtil.init();
         this.setAppConfig();
-        //HRVFirehoseSetting.Init();
+        HRVFirehoseSetting.Init();
         ErrorCatcher.Init();
         SDefine.preInit();
         // Analytics.luncherOnLoadStart();
@@ -225,9 +227,9 @@ export default class LauncherScene extends cc.Component {
             // }
 
             // 设置默认语言
-            // const defaultLang = LanguageType.EN;
-            // ServerStorageManager.save(StorageKeyType.CURRENT_LANGUAGE, defaultLang, false);
-            // LocalStorageManager.setLanguage(defaultLang);
+            const defaultLang = LanguageType.EN;
+            ServerStorageManager.save(StorageKeyType.CURRENT_LANGUAGE, defaultLang, false);
+            LocalStorageManager.setLanguage(defaultLang);
             MessageRoutingManager.instance().emitMessage(MessageRoutingManager.MSG.SET_LANGUAGE);
 
             // 播放启动音效

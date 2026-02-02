@@ -8,36 +8,6 @@ import CommonRewardResources from "./CommonRewardResources";
 
 const { ccclass, property } = cc._decorator;
 
-// ===================== 顶部导入所有外部模块 =====================
-// import FireHoseSender from "../../../global_utility/Network/FireHoseSender";
-// import MessageRoutingManager from "../../Utility/MessageRoutingManager";
-// import TSUtility from "../../../global_utility/TSUtility";
-// import DialogBase, { DialogState } from "../../../slot_common/Script/Popup/DialogBase";
-// import PopupManager from "../../../slot_common/Script/Popup/PopupManager";
-// import * as CommonRewardEnum from "./CommonRewardEnum";
-// import * as CommonRewardPopupInfo from "./CommonRewardPopupInfo";
-// import CommonRewardResources from "./CommonRewardResources";
-
-// // 导入所有奖励信息子类
-// import CommonRewardInfo_DailyBlast from "./Info/CommonRewardInfo_DailyBlast";
-// import CommonRewardInfo_DailyBlitz from "./Info/CommonRewardInfo_DailyBlitz";
-// import CommonRewardInfo_DailyStamp from "./Info/CommonRewardInfo_DailyStamp";
-// import CommonRewardInfo_Inbox from "./Info/CommonRewardInfo_Inbox";
-// import CommonRewardInfo_LevelUpPass from "./Info/CommonRewardInfo_LevelUpPass";
-// import CommonRewardInfo_Normal from "./Info/CommonRewardInfo_Normal";
-// import CommonRewardInfo_PowerGem from "./Info/CommonRewardInfo_PowerGem";
-// import CommonRewardInfo_ReelQuest from "./Info/CommonRewardInfo_ReelQuest";
-// import CommonRewardInfo_RewardCenterTimeBonus from "./Info/CommonRewardInfo_RewardCenterTimeBonus";
-// import CommonRewardInfo_ShareReward from "./Info/CommonRewardInfo_ShareReward";
-// import CommonRewardInfo_SlotCardPackReward from "./Info/CommonRewardInfo_SlotCardPackReward";
-// import CommonRewardInfo_StarAlbumShop from "./Info/CommonRewardInfo_StarAlbumShop";
-// import CommonRewardInfo_SuiteLeagueShop from "./Info/CommonRewardInfo_SuiteLeagueShop";
-// import CommonRewardInfo_SingleResult from "./Info/CommonRewardInfo_SingleResult";
-// import CommonRewardInfo_WelcomeBack from "./Info/CommonRewardInfo_WelcomeBack";
-// import CommonRewardInfo_Spin2Win from "./Info/CommonRewardInfo_Spin2Win";
-// import CommonRewardInfo_HyperBounty from "./Info/CommonRewardInfo_HyperBounty";
-// import CommonRewardInfo_ClubReward from "./Info/CommonRewardInfo_ClubReward";
-
 // 类型别名（简化代码）
 type RewardAction = any; // 奖励动作类型（根据项目实际类型替换）
 type RewardInfo = any;   // 奖励信息基类（根据项目实际类型替换）

@@ -25,9 +25,13 @@
       }
     ],
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 48
+      }
+    ],
     "_prefab": {
-      "__id__": 48
+      "__id__": 49
     },
     "_opacity": 255,
     "_color": {
@@ -1915,6 +1919,54 @@
     },
     "fileId": "e0xfknKqVLoqj/v7XPw9rl",
     "sync": false
+  },
+  {
+    "__type__": "93d03Ivl6hO8ZJkRfGQ5gI4",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "closeBtn": {
+      "__id__": 45
+    },
+    "blockingBG": {
+      "__id__": 2
+    },
+    "rootNode": {
+      "__id__": 6
+    },
+    "infoLabel": null,
+    "infoLabel2": {
+      "__id__": 16
+    },
+    "titleLabel": {
+      "__id__": 12
+    },
+    "okLabel": {
+      "__id__": 36
+    },
+    "cancelLabel": {
+      "__id__": 29
+    },
+    "okBtn": {
+      "__id__": 32
+    },
+    "cancelBtn": {
+      "__id__": 25
+    },
+    "remainTimeLabel": null,
+    "okSoloBtn": {
+      "__id__": 39
+    },
+    "okSoleLabel": {
+      "__id__": 36
+    },
+    "nodeImage": {
+      "__id__": 42
+    },
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",

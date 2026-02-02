@@ -10,6 +10,14 @@ export class LanguageInfo {
     public stringInfo: { [lang: string]: string } = {}; // EN/JP/CN 对应文本
 }
 
+
+export enum  LanguageType {
+    EN = 0,
+    JP = 1,
+    CN = 2,
+    UNDEFINED = -1
+}
+
 /**
  * 全局多语言管理核心类 (LanguageManager)
  * Cocos Creator 2.4.13 TypeScript 完整版

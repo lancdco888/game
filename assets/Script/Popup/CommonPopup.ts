@@ -9,6 +9,7 @@ import UserInfo from "../User/UserInfo";
 import SDefine from "../global_utility/SDefine";
 import LanguageManager from "../Config/LanguageManager";
 import HRVServiceUtil from "../HRVService/HRVServiceUtil";
+import { Utility } from "../global_utility/Utility";
 
 /**
  * 通用弹窗核心组件 (CommonPopup)
@@ -239,7 +240,7 @@ export default class CommonPopup extends DialogBase {
      */
     public static loginErrorPopup(errMsg: string): void {
         let btnText = "RETRY";
-        if (Utility.isFacebookInstant() === 1) btnText = "CLOSE";
+        if (Utility.isFacebookInstant()) btnText = "CLOSE";
 
         this.getCommonPopup((err, popup) => {
             if (err) {
@@ -555,16 +556,4 @@ export default class CommonPopup extends DialogBase {
             if (this.remainTimeOverCallback) this.remainTimeOverCallback();
         }
     }
-}
-
-// ===================== 全局声明 - 解决TS语法报错 无需修改 =====================
-declare const Utility: {
-    isFacebookInstant: () => number;
-    isMobileGame: () => number;
-    getUnixTimestamp: () => number;
-    getComponent_EventHandler: (node: cc.Node, compName: string, funcName: string, customEventData: string) => cc.Component.EventHandler;
-};
-
-declare interface String {
-    format(...args: any[]): string;
 }

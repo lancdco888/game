@@ -25,8 +25,8 @@ export default class FireHoseSender {
     }
 
     public sendAws(e: any, t?: any, n?: any): void {
-        //void 0 !== n && n != FHLogType.Exception || cc.error("Exception ", e),
-        //null != this._fireHoseInterface ? this._fireHoseInterface.sendAws(e, t, n) : cc.error("FireHoseSender is not initialized")
+        // void 0 !== n && n != FHLogType.Exception || cc.error("Exception ", e),
+        // null != this._fireHoseInterface ? this._fireHoseInterface.sendAws(e, t, n) : cc.error("FireHoseSender is not initialized")
     }
 
     public sendAwsForTTL(e: any): void {
