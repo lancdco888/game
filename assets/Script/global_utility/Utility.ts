@@ -46,6 +46,8 @@ const Utility = {
     resourceVersion: "",
     webAccessDate: 0,
     unusePatch: false,
+    isAuth:false,
+    AccessToken:"",
 
     /** 向量减法 Vec2.sub(e) 并返回 */
     pSub(t: cc.Vec2, e: cc.Vec2): cc.Vec2 {
@@ -257,6 +259,11 @@ const Utility = {
                 !isCallbacked && (isCallbacked = true, callback && callback(defaultErr, true));
             };
 
+            if (Utility.isAuth){
+                headers["Authorization"] ="Bearer "+Utility.AccessToken; 
+            }
+            
+
             xhr.onreadystatechange = () => {
                 if (xhr && !xhr.isAborted) {
                     if (xhr.readyState === 4) {
@@ -336,7 +343,7 @@ const Utility = {
                     cc.log("header info ", JSON.stringify(headers));
                     Object.keys(headers).forEach(key => xhr.setRequestHeader(key, headers[key]));
                 }
-                withCredentials && (xhr.withCredentials = withCredentials);
+                // withCredentials && (xhr.withCredentials = withCredentials);
                 xhr.send();
             }
         } catch (e) {

@@ -33,18 +33,18 @@ export default class L_InitLauncher extends State {
     /**
      * 初始化核心处理逻辑
      */
-    public async doProcess(): Promise<void> {
+    public async doProcess() {
         try {
             // 1. 初始化埋点（启动器初始化开始）
             //Analytics.default.initLauncherStart();
 
             // 2. 加载所有配置文件
-            await ConfigManager.asyncLoadAllConfig();
-            // if (configLoadResult) {
-            //     // 配置加载失败：显示网络错误弹窗并终止流程
-            //     CommonPopup.loginErrorPopup("Network Error.");
-            //     return;
-            // }
+            var configLoadResult = await ConfigManager.asyncLoadAllConfig();
+            if (!configLoadResult) {
+                // 配置加载失败：显示网络错误弹窗并终止流程
+                CommonPopup.loginErrorPopup("Network Error.");
+                return;
+            }
 
             // 3. 初始化服务端Slot数据管理器
             const slotDataInitResult = await ServiceSlotDataManager.instance.initialize();
@@ -77,26 +77,15 @@ export default class L_InitLauncher extends State {
                     }
                 }
             }
-
-            // // 6. Facebook Instant Game特有初始化
-            // if (Utility.isFacebookInstant()) {
-            //     // 检查支付可用性
-            //     FBInstantUtil.checkPaymentUseable();
-            //     // 设置iOS商店标识
-            //     SDefine.setFBInstant_IOS_Shop_Flag();
-            // }
-
-            // 7. 初始化完成埋点
-            //Analytics.default.initLauncherComplete();
             
             // 8. 标记状态完成
             this.setDone();
 
         } catch (error) {
             // 全局异常捕获：上报到FireHose并标记状态完成
-            // FireHoseSender.Instance().sendAws(
-            //     FireHoseSender.Instance().getRecord(FHLogType.Exception, error)
-            // );
+            FireHoseSender.Instance().sendAws(
+                FireHoseSender.Instance().getRecord(FHLogType.Exception, error)
+            );
 
             this.setDone();
         }

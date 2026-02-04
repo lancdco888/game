@@ -488,7 +488,7 @@ export default class L_MobileAuthV2State extends State {
             }
 
             // 5. 初始化用户信息实例
-            const userInfoInit = UserInfo.setInstance(userInfoRes, accessToken, extraInfo);
+            const userInfoInit = UserInfo.setInstance(userInfoRes, accessToken);
             if (!userInfoInit) {
                 const accountStatus = ServiceInfoManager.NUMBER_ACCOUNT_STATUS;
                 // 账号状态98：删除账号确认弹窗

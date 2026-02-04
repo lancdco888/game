@@ -1,4 +1,3 @@
-import TSUtility from "./TSUtility";
 import { Utility } from "./Utility";
 
 export default class SDefine{

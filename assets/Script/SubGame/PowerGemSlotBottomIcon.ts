@@ -143,34 +143,34 @@ export default class PowerGemSlotBottomIcon extends cc.Component {
      * @returns 是否创建成功
      */
     createPowerGemToolTip(): boolean {
-        // 校验PowerGem可用性（移除this.）
-        if (!PowerGemManager.instance.isAvailablePowerGem(true)) return false;
-        // 已创建则直接返回成功
-        if (this._uiPowerGemToolTip) return true;
+        // // 校验PowerGem可用性（移除this.）
+        // if (!PowerGemManager.instance.isAvailablePowerGem(true)) return false;
+        // // 已创建则直接返回成功
+        // if (this._uiPowerGemToolTip) return true;
 
-        // 获取游戏UI根节点（移除this.）
-        const gameUINode = SlotManager.Instance._inGameUI.node;
-        if (!TSUtility.isValid(gameUINode)) return false;
+        // // 获取游戏UI根节点（移除this.）
+        // const gameUINode = SlotManager.Instance._inGameUI.node;
+        // if (!TSUtility.isValid(gameUINode)) return false;
 
-        // 实例化预制体
-        const tooltipPrefab = cc.instantiate(this.prefPowerGemToolTip);
-        if (!TSUtility.isValid(tooltipPrefab)) return false;
+        // // 实例化预制体
+        // const tooltipPrefab = cc.instantiate(this.prefPowerGemToolTip);
+        // if (!TSUtility.isValid(tooltipPrefab)) return false;
 
-        // 设置预制体状态并添加到父节点
-        tooltipPrefab.active = true;
-        gameUINode.addChild(tooltipPrefab);
+        // // 设置预制体状态并添加到父节点
+        // tooltipPrefab.active = true;
+        // gameUINode.addChild(tooltipPrefab);
 
-        // 计算并设置坐标（世界坐标转本地坐标）
-        const worldPos = this.nodePowerGemToolTipRoot.convertToWorldSpaceAR(cc.v2(0, 0));
-        const localPos = gameUINode.convertToNodeSpaceAR(worldPos);
-        tooltipPrefab.setPosition(localPos);
+        // // 计算并设置坐标（世界坐标转本地坐标）
+        // const worldPos = this.nodePowerGemToolTipRoot.convertToWorldSpaceAR(cc.v2(0, 0));
+        // const localPos = gameUINode.convertToNodeSpaceAR(worldPos);
+        // tooltipPrefab.setPosition(localPos);
 
-        // 获取组件实例并设置回调（移除this.）
-        this._uiPowerGemToolTip = tooltipPrefab.getComponent(PowerGemSlotBottomToolTip);
-        this._uiPowerGemToolTip.node.active = false;
-        this._uiPowerGemToolTip.setCloseCallback(() => {
-            this._btnIcon.interactable = true;
-        });
+        // // 获取组件实例并设置回调（移除this.）
+        // this._uiPowerGemToolTip = tooltipPrefab.getComponent(PowerGemSlotBottomToolTip);
+        // this._uiPowerGemToolTip.node.active = false;
+        // this._uiPowerGemToolTip.setCloseCallback(() => {
+        //     this._btnIcon.interactable = true;
+        // });
 
         return true;
     }

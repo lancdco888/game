@@ -60,7 +60,8 @@ export default class LauncherScene extends cc.Component {
         {
             facebookAppID: "689653411415651",
             serviceMode: "DEV",
-            serverIp: "https://app-dev.highrollervegas.net/"
+            // serverIp: "https://app-dev.highrollervegas.net/"
+            serverIp:"http://192.168.2.167:8080/api/"
         },
         {
             facebookAppID: "249221922271985",
@@ -160,17 +161,17 @@ export default class LauncherScene extends cc.Component {
      * 初始化流程（调试模式显示调试弹窗，否则直接启动补丁流程）
      */
     private init(): void {
-        if ((LocalStorageManager.isDebugMode()) || 
-            (Utility.isMobileGame() )) {
-            // LauncherDebugPopup.getPopup((isCancel: boolean, popup: any) => {
-            //     popup.open();
-            //     popup.setCloseCallback(() => {
-            //         this.startPatchProcessSync();
-            //     });
-            // });
-        } else {
+        // if ((LocalStorageManager.isDebugMode()) || 
+        //     (Utility.isMobileGame() )) {
+        //     LauncherDebugPopup.getPopup((isCancel: boolean, popup: any) => {
+        //         popup.open();
+        //         popup.setCloseCallback(() => {
+        //             this.startPatchProcessSync();
+        //         });
+        //     });
+        // } else {
             this.startPatchProcessSync();
-        }
+        // }
     }
 
     /**
@@ -312,9 +313,9 @@ export default class LauncherScene extends cc.Component {
             }
         } catch (error) {
             // 捕获异常并上报
-            // FireHoseSender.Instance().sendAws(
-            //     FireHoseSender.Instance().getRecord(FHLogType.Exception, error)
-            // );
+            FireHoseSender.Instance().sendAws(
+                FireHoseSender.Instance().getRecord(FHLogType.Exception, error)
+            );
             console.error(error)
         }
     }
@@ -457,7 +458,6 @@ export default class LauncherScene extends cc.Component {
                     TSUtility.setAppConfigEntrancePath(window["__appConfig__"].entrancePath);
                 }
             } 
-            // Cocos编辑器运行时配置
             else if (Utility.isCocosEditorPlay()) {
                 const editorConfig = LauncherScene.EditorAppSetting[this.editorServiceMode];
                 this.commonServerUrl = editorConfig.serverIp;

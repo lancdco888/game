@@ -27,30 +27,23 @@ export default class L_SlotInitState extends State {
      * 核心初始化流程（异步执行）
      */
     private async doProcess(): Promise<void> {
-        // try {
-            // 1. 记录老虎机初始化开始的埋点
-            // Analytics.customSlotLoadingRecord("slotInit_start");
-            
-            // 2. 原生环境下执行垃圾回收（优化性能）
+        try {
             if (cc.sys.isNative) {
                 cc.sys.garbageCollect();
             }
 
-            // c.default.customSlotLoadingRecord("slotInit_start"),
+            
             cc.sys.isNative && cc.sys.garbageCollect()
             HRVSlotService.createInstance()
             HRVSlotService.instance().init(SlotManager.Instance)
-    
-            // 4. 异步初始化SlotManager核心管理器
+
             await SlotManager.Instance.init();
             
-            // 5. 标记状态完成
             this.setDone();
-        // } catch (error) {
-        //     // 捕获初始化异常，打印日志并标记状态完成（避免流程阻塞）
-        //     const err = error as Error;
-        //     cc.log(`L_SlotInitState doProcess error: ${err.message}`, err.stack);
-        //     this.setDone();
-        // }
+        } catch (error) {
+            const err = error as Error;
+            cc.log(`L_SlotInitState doProcess error: ${err.message}`, err.stack);
+            this.setDone();
+        }
     }
 }

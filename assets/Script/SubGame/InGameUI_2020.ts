@@ -307,7 +307,7 @@ export default class InGameUI_2020 extends cc.Component {
         }
 
         // 初始化经验值
-        ServiceInfoManager.NUMBER_CURRENT_GAUGE_EXP = UserInfo.instance().getUserLevelInfo().exp;
+        ServiceInfoManager.NUMBER_CURRENT_GAUGE_EXP = UserInfo.instance().getUserVipExp();
 
         // 分辨率适配
         this.setUILayoutPostionByResolution();
@@ -452,7 +452,7 @@ export default class InGameUI_2020 extends cc.Component {
 
     /** 设置左侧UI显示状态（根据解锁等级） */
     setLeftUI(): void {
-        const userLevel = UserInfo.instance().getUserLevelInfo().level;
+        // const userLevel = UserInfo.instance().getUserLevelInfo().level;
         
         // // 星册解锁等级
         // const starAlbumUnlockLevel = UnlockContentsManager.instance.getUnlockConditionLevel(UnlockContentsType.STAR_ALBUM);
@@ -806,8 +806,8 @@ export default class InGameUI_2020 extends cc.Component {
 
     /** 添加等级经验 */
     addLevelExp(exp: number): void {
-        const curLevel = LevelManager.Instance().getLevelFromExp(UserInfo.instance().getUserLevelInfo().exp);
-        const newExp = UserInfo.instance().getUserLevelInfo().exp + exp;
+        const curLevel = LevelManager.Instance().getLevelFromExp(UserInfo.instance().getUserVipExp());
+        const newExp = UserInfo.instance().getUserVipExp() + exp;
         const newLevel = LevelManager.Instance().getLevelFromExp(newExp);
 
         // 标记等级变化

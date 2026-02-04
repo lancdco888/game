@@ -477,12 +477,15 @@ export default class TSUtility {
 
     public static getServiceType(): string {
         if (Utility.isFacebookWeb()) {
-            return TSUtility.isTestAudIDMode() ? "aos" : "canvas";
+            return "h5";
         } else if (Utility.isFacebookInstant()) {
             return "fbinstant";
         } else if (cc.sys.os === cc.sys.OS_IOS) {
             return "ios";
-        } else {
+        } else if(cc.sys.os === cc.sys.OS_ANDROID){
+            return "android";
+        }
+        else {
             return "aos";
         }
     }

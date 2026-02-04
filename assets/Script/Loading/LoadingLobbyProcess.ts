@@ -33,6 +33,7 @@ import L_RefreshHeroInfoState from "../State/L_RefreshHeroInfoState";
 import { Utility } from "../global_utility/Utility";
 import CommonServer from "../Network/CommonServer";
 import FBInstantUtil from "../Network/FBInstantUtil";
+import L_GetJackpotInfo from "../manager/L_GetJackpotInfo";
 
 // ===================== 状态类1: 获取宾果游戏信息 回调式网络请求 原JS逻辑1:1复刻 =====================
 @ccclass()
@@ -249,9 +250,9 @@ export default class LoadingLobbyProcess {
 
         // 子序列2: 拉取各类基础信息+埋点
         o = 0;
-        // const subState2 = new SequencialState();
+        const subState2 = new SequencialState();
         // // subState2.insert(o, new L_GetFriendInfoState());
-        // // subState2.insert(o, new L_GetJackpotInfo());
+        subState2.insert(o, new L_GetJackpotInfo());
         // // subState2.insert(o, new L_GetFBTournamentInfoState());
         // // subState2.insert(o, new L_RefreshHeroInfoState());
         // // subState2.insert(o, new L_GetBingoGameInfoState());
@@ -266,7 +267,7 @@ export default class LoadingLobbyProcess {
         // // subState2.insert(o, new L_GetInstantInfoState());
         // // o++;
         // // subState2.insert(o, new L_LoadingRecordAnalyticsState("setInfos_complete"));
-        // rootState.insert(n, subState2);
+        rootState.insert(n, subState2);
 
         // 最终: 大厅核心初始化
         n++;

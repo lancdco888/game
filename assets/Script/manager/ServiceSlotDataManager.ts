@@ -1,8 +1,9 @@
 import FireHoseSender, { FHLogType } from "../FireHoseSender";
 import SlotBannerInfo from "../SlotBannerInfo";
-import UserInfo from "../User/UserInfo";
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
+
+import UserInfo from "../User/UserInfo";
 
 const {ccclass, property} = cc._decorator;
 
@@ -188,12 +189,18 @@ export default class ServiceSlotDataManager extends cc.Component {
     }
 
     public static JACKPOT_GRAND = [
-        SDefine.SUBGAMEID_SLOT_DIAMONDSTRIKE, SDefine.SUBGAMEID_SLOT_AMERICAN9EAGLES,
-        SDefine.SUBGAMEID_SLOT_BIRDJACKPOT, SDefine.SUBGAMEID_SLOT_BIRDJACKPOT_DY,
-        SDefine.SUBGAMEID_SLOT_BELLSTRIKEFRENZY, SDefine.SUBGAMEID_SLOT_FATTURKEYWILDS,
-        SDefine.SUBGAMEID_SLOT_FORTUNETREE, SDefine.SUBGAMEID_SLOT_FIREBLASTCLASSIC,
-        SDefine.SUBGAMEID_SLOT_FOURTHOFJULYWILDRESPIN, SDefine.SUBGAMEID_SLOT_BLAZINGBULLWILD,
-        SDefine.SUBGAMEID_SLOT_DIAMONDBEAMJACKPOT, SDefine.SUBGAMEID_SLOT_EMERALDGREEN, "zhuquefortune"
+        SDefine.SUBGAMEID_SLOT_DIAMONDSTRIKE, 
+        SDefine.SUBGAMEID_SLOT_AMERICAN9EAGLES,
+        SDefine.SUBGAMEID_SLOT_BIRDJACKPOT, 
+        SDefine.SUBGAMEID_SLOT_BIRDJACKPOT_DY,
+        SDefine.SUBGAMEID_SLOT_BELLSTRIKEFRENZY, 
+        SDefine.SUBGAMEID_SLOT_FATTURKEYWILDS,
+        SDefine.SUBGAMEID_SLOT_FORTUNETREE, 
+        SDefine.SUBGAMEID_SLOT_FIREBLASTCLASSIC,
+        SDefine.SUBGAMEID_SLOT_FOURTHOFJULYWILDRESPIN, 
+        SDefine.SUBGAMEID_SLOT_BLAZINGBULLWILD,
+        SDefine.SUBGAMEID_SLOT_DIAMONDBEAMJACKPOT, 
+        SDefine.SUBGAMEID_SLOT_EMERALDGREEN, "zhuquefortune"
     ];
     public static JACKPOT_COUNT_2: any[] = [];
     public static JACKPOT_COUNT_1: any[] = [];

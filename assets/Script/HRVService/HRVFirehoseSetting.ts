@@ -294,7 +294,7 @@ export default class HRVFirehoseSetting {
                 }
             },
             0,
-            { "Content-Type": "text/plain" }
+            { "Content-Type": "application/json" }
         );
     }
 

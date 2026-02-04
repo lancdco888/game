@@ -60,13 +60,13 @@ export default class L_AuthState extends State {
             //Analytics.authStateStart();
             LoginProcess.Instance().onProgress("Authenticating ...", 0.2);
 
-            // // 2. 获取授权提交信息（区分不同登录平台）
-            // const authPostInfo = await LoginProcess.Instance().getAuthPostInfo() as any;
-            // const initialUid = authPostInfo.uid;
-            // authPostInfo.isRenewal = true; // 标记为续期授权
+            // 2. 获取授权提交信息（区分不同登录平台）
+            const authResult = await LoginProcess.Instance().getAuthPostInfo() as any;
+            const initialUid = authResult.uid;
+            authResult.isRenewal = true; // 标记为续期授权
 
             // 3. 发送授权请求到服务器
-            const authResult: any = JSON.parse('{"uid":0,"udid":"","fbid":"123456789","fbAccessToken":"saafdddxddddssx","waccessDate":1768651317880,"clientVersion":"2.4.11.0","serviceType":"canvas","market":"facebook","entrancePath":"?hrv_source=refresh"}');//await CommonServer.Instance().requestAuth(initialUid, JSON.stringify(authPostInfo));
+            // const authResult: any = JSON.parse('{"uid":0,"udid":"","fbid":"123456789","fbAccessToken":"saafdddxddddssx","waccessDate":1768651317880,"clientVersion":"2.4.11.0","serviceType":"canvas","market":"facebook","entrancePath":"?hrv_source=refresh"}');//await CommonServer.Instance().requestAuth(initialUid, JSON.stringify(authPostInfo));
             cc.log("Auth Result: ", JSON.stringify(authResult));
 
             // // 4. 校验授权响应错误
@@ -99,11 +99,11 @@ export default class L_AuthState extends State {
             //     throw new Error(`Auth fail code:${statusCode.toString()} msg:${errorMsg}`);
             // }
 
-            // 5. 新用户统计及授权信息配置
-            if (1 === authResult.isNewUser) {
-                Analytics.newUserRegistraion(); // 新用户注册统计
-                Analytics.completeRegistration(); // 完成注册统计
-            }
+            // // 5. 新用户统计及授权信息配置
+            // if (1 === authResult.isNewUser) {
+            //     Analytics.newUserRegistraion(); // 新用户注册统计
+            //     Analytics.completeRegistration(); // 完成注册统计
+            // }
 
             // 保存授权信息到CommonServer
             //CommonServer.Instance().setAuthInfo(authResult.uid, authResult.accessToken.token);
@@ -112,29 +112,14 @@ export default class L_AuthState extends State {
             // 标记游客合并状态
             ServiceInfoManager.BOOL_GUEST_MERGE = authResult.isGuestMerge;
 
-            const extraInfo = authResult.extraInfo;
-            const userId = authResult.uid;
-            // const accessToken = authResult.accessToken.token;
-            const accessToken = "";
-            // 处理AB测试Key（空值兼容）
-            const abTestKeys = TSUtility.isValid(authResult.abTestKey) ? authResult.abTestKey : [];
-            
-            // AB测试分段处理（兼容空值）
-            if (TSUtility.isValid(authResult.abSegment)) {
-                authResult.abSegment;
-            }
+            const userId = authResult.resp.uid;
+            const accessToken = authResult.token;
+        
 
-            // 检查Epic Win Offer目标用户标记
-            for (let i = 0; i < abTestKeys.length; i++) {
-                if (abTestKeys[i] === SDefine.EPICWIN_OFFERKEY) {
-                    ServiceInfoManager.BOOL_EPIC_WIN_OFFER_TARGET = true;
-                }
-            }
-
-            // 6. 获取用户详细信息，更新进度
-            LoginProcess.Instance().onProgress("Authenticating ...", 0.3);
-            const userInfoResult: any = await CommonServer.Instance().getUserInfo(userId);
-            cc.log("UserInfo Result: ", JSON.stringify(userInfoResult));
+            // // 6. 获取用户详细信息，更新进度
+            // LoginProcess.Instance().onProgress("Authenticating ...", 0.3);
+            // const userInfoResult: any = await CommonServer.Instance().getUserInfo(userId);
+            // cc.log("UserInfo Result: ", JSON.stringify(userInfoResult));
 
             // // 7. 校验用户信息响应错误
             // if (CommonServer.isServerResponseError(userInfoResult)) {
@@ -147,20 +132,9 @@ export default class L_AuthState extends State {
             // }
 
             // 8. 初始化用户信息实例
-            const accountStatus = ServiceInfoManager.NUMBER_ACCOUNT_STATUS;
-            if (UserInfo.setInstance(userInfoResult, accessToken, extraInfo)) {
-                // 账号状态98：删除账号确认弹窗
-                if (98 === accountStatus) {
-                    // DeleteAccount_Cancle_Popoup.getPopup((isCancel: boolean, popup: any) => {
-                    //     if (isCancel) {
-                    //         TSUtility.endGame();
-                    //         return false;
-                    //     }
-                    //     popup.open();
-                    // });
-                } 
-                // 其他异常账号状态：显示支持弹窗
-                else if (0 !== accountStatus) {
+            // const accountStatus = ServiceInfoManager.NUMBER_ACCOUNT_STATUS;
+            if (!UserInfo.setInstance(authResult.resp, accessToken)) {
+                // if (0 !== accountStatus) {
                     CommonPopup.getCommonPopup((isCancel: Error, popup: any) => {
                         popup.open()
                             .setInfo("WARNING", "Faulty authentication information.\nIf the error persists, please tap the 'SUPPORT' button.")
@@ -168,11 +142,11 @@ export default class L_AuthState extends State {
                                 //UserInfo.instance().goCustomerSupport();
                             });
                     });
-                } 
-                // 基础授权失败：显示错误弹窗
-                else {
-                    CommonPopup.loginErrorPopup(`${userId} ${accessToken}`);
-                }
+                // } 
+                // // 基础授权失败：显示错误弹窗
+                // else {
+                //     CommonPopup.loginErrorPopup(`${userId} ${accessToken}`);
+                // }
                 return;
             }
 

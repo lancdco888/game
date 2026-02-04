@@ -1,0 +1,6103 @@
+{
+    "level": [
+        {
+            "id": 1,
+            "exp": 0,
+            "rewardCoinMultiplier": 0,
+            "rewardBingoBallMultiplier": 0,
+            "rewardVipPointMultiplier": 0
+        },
+        {
+            "id": 2,
+            "exp": 16,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 3,
+            "exp": 40,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 4,
+            "exp": 88,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 5,
+            "exp": 180,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 6,
+            "exp": 305,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 7,
+            "exp": 681,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 8,
+            "exp": 1093,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 9,
+            "exp": 1632,
+            "rewardCoinMultiplier": 1,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 10,
+            "exp": 2310,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 11,
+            "exp": 3138,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 12,
+            "exp": 4127,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 13,
+            "exp": 5287,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 14,
+            "exp": 6629,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 15,
+            "exp": 8163,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 16,
+            "exp": 9897,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 17,
+            "exp": 11842,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 18,
+            "exp": 14005,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 19,
+            "exp": 16396,
+            "rewardCoinMultiplier": 2,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 20,
+            "exp": 19024,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 21,
+            "exp": 21895,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 22,
+            "exp": 25018,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 23,
+            "exp": 28402,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 24,
+            "exp": 32054,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 25,
+            "exp": 35981,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 26,
+            "exp": 40191,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 27,
+            "exp": 44692,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 28,
+            "exp": 49490,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 29,
+            "exp": 54592,
+            "rewardCoinMultiplier": 3,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 30,
+            "exp": 60006,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 31,
+            "exp": 65738,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 32,
+            "exp": 71796,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 33,
+            "exp": 78185,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 34,
+            "exp": 84913,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 35,
+            "exp": 91986,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 36,
+            "exp": 99410,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 37,
+            "exp": 107191,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 38,
+            "exp": 115337,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 39,
+            "exp": 123853,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 40,
+            "exp": 132746,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 41,
+            "exp": 142021,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 42,
+            "exp": 151684,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 43,
+            "exp": 161741,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 44,
+            "exp": 172199,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 45,
+            "exp": 183063,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 46,
+            "exp": 194339,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 47,
+            "exp": 206033,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 48,
+            "exp": 218149,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 49,
+            "exp": 230695,
+            "rewardCoinMultiplier": 4,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 50,
+            "exp": 243675,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 51,
+            "exp": 257095,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 52,
+            "exp": 270960,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 53,
+            "exp": 285276,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 54,
+            "exp": 300049,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 55,
+            "exp": 315283,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 56,
+            "exp": 330984,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 57,
+            "exp": 347157,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 58,
+            "exp": 363808,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 59,
+            "exp": 380941,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 60,
+            "exp": 398562,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 61,
+            "exp": 416676,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 62,
+            "exp": 435288,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 63,
+            "exp": 454403,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 64,
+            "exp": 474025,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 65,
+            "exp": 494161,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 66,
+            "exp": 514815,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 67,
+            "exp": 535992,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 68,
+            "exp": 557696,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 69,
+            "exp": 579933,
+            "rewardCoinMultiplier": 5,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 70,
+            "exp": 602707,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 71,
+            "exp": 626024,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 72,
+            "exp": 649887,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 73,
+            "exp": 674303,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 74,
+            "exp": 699275,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 75,
+            "exp": 724807,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 76,
+            "exp": 750906,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 77,
+            "exp": 777575,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 78,
+            "exp": 804820,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 79,
+            "exp": 832644,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 80,
+            "exp": 861052,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 81,
+            "exp": 890048,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 82,
+            "exp": 919639,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 83,
+            "exp": 949826,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 84,
+            "exp": 980617,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 85,
+            "exp": 1012013,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 86,
+            "exp": 1044021,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 87,
+            "exp": 1076645,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 88,
+            "exp": 1109888,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 89,
+            "exp": 1143756,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 90,
+            "exp": 1178252,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 91,
+            "exp": 1213381,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 92,
+            "exp": 1249148,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 93,
+            "exp": 1285556,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 94,
+            "exp": 1322609,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 95,
+            "exp": 1360313,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 96,
+            "exp": 1398671,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 97,
+            "exp": 1437688,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 98,
+            "exp": 1477367,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 99,
+            "exp": 1517713,
+            "rewardCoinMultiplier": 7,
+            "rewardBingoBallMultiplier": 1,
+            "rewardVipPointMultiplier": 1
+        },
+        {
+            "id": 100,
+            "exp": 1558730,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 101,
+            "exp": 1600423,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 102,
+            "exp": 1642794,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 103,
+            "exp": 1685849,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 104,
+            "exp": 1729592,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 105,
+            "exp": 1774026,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 106,
+            "exp": 1819156,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 107,
+            "exp": 1864985,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 108,
+            "exp": 1911518,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 109,
+            "exp": 1958759,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 110,
+            "exp": 2006712,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 111,
+            "exp": 2055380,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 112,
+            "exp": 2104768,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 113,
+            "exp": 2154879,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 114,
+            "exp": 2205718,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 115,
+            "exp": 2257289,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 116,
+            "exp": 2309595,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 117,
+            "exp": 2362640,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 118,
+            "exp": 2416429,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 119,
+            "exp": 2470964,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 120,
+            "exp": 2526251,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 121,
+            "exp": 2582292,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 122,
+            "exp": 2639092,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 123,
+            "exp": 2696654,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 124,
+            "exp": 2754982,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 125,
+            "exp": 2814080,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 126,
+            "exp": 2873953,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 127,
+            "exp": 2934602,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 128,
+            "exp": 2996033,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 129,
+            "exp": 3058249,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 130,
+            "exp": 3121254,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 131,
+            "exp": 3185052,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 132,
+            "exp": 3249645,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 133,
+            "exp": 3315039,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 134,
+            "exp": 3381236,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 135,
+            "exp": 3448240,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 136,
+            "exp": 3516055,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 137,
+            "exp": 3584685,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 138,
+            "exp": 3654133,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 139,
+            "exp": 3724403,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 140,
+            "exp": 3795499,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 141,
+            "exp": 3867423,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 142,
+            "exp": 3940180,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 143,
+            "exp": 4013774,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 144,
+            "exp": 4088207,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 145,
+            "exp": 4163484,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 146,
+            "exp": 4239608,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 147,
+            "exp": 4316582,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 148,
+            "exp": 4394411,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 149,
+            "exp": 4473097,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 150,
+            "exp": 4552644,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 151,
+            "exp": 4633056,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 152,
+            "exp": 4714336,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 153,
+            "exp": 4796487,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 154,
+            "exp": 4879514,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 155,
+            "exp": 4963419,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 156,
+            "exp": 5048206,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 157,
+            "exp": 5133879,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 158,
+            "exp": 5220441,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 159,
+            "exp": 5307895,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 160,
+            "exp": 5396245,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 161,
+            "exp": 5485494,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 162,
+            "exp": 5575646,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 163,
+            "exp": 5666704,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 164,
+            "exp": 5758671,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 165,
+            "exp": 5851551,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 166,
+            "exp": 5945347,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 167,
+            "exp": 6040063,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 168,
+            "exp": 6135702,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 169,
+            "exp": 6232267,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 170,
+            "exp": 6329762,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 171,
+            "exp": 6428189,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 172,
+            "exp": 6527553,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 173,
+            "exp": 6627857,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 174,
+            "exp": 6729103,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 175,
+            "exp": 6831296,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 176,
+            "exp": 6934438,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 177,
+            "exp": 7038533,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 178,
+            "exp": 7143584,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 179,
+            "exp": 7249595,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 180,
+            "exp": 7356568,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 181,
+            "exp": 7464507,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 182,
+            "exp": 7573415,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 183,
+            "exp": 7683295,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 184,
+            "exp": 7794151,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 185,
+            "exp": 7905986,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 186,
+            "exp": 8018803,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 187,
+            "exp": 8132606,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 188,
+            "exp": 8247397,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 189,
+            "exp": 8363179,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 190,
+            "exp": 8479957,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 191,
+            "exp": 8597732,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 192,
+            "exp": 8716509,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 193,
+            "exp": 8836290,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 194,
+            "exp": 8957079,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 195,
+            "exp": 9078879,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 196,
+            "exp": 9201693,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 197,
+            "exp": 9325523,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 198,
+            "exp": 9450374,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 199,
+            "exp": 9576249,
+            "rewardCoinMultiplier": 10,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 200,
+            "exp": 9703149,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 201,
+            "exp": 9831080,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 202,
+            "exp": 9960043,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 203,
+            "exp": 10090042,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 204,
+            "exp": 10221080,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 205,
+            "exp": 10353160,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 206,
+            "exp": 10486285,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 207,
+            "exp": 10620458,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 208,
+            "exp": 10755683,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 209,
+            "exp": 10891962,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 210,
+            "exp": 11029299,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 211,
+            "exp": 11167696,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 212,
+            "exp": 11307156,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 213,
+            "exp": 11447683,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 214,
+            "exp": 11589280,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 215,
+            "exp": 11731950,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 216,
+            "exp": 11875695,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 217,
+            "exp": 12020519,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 218,
+            "exp": 12166425,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 219,
+            "exp": 12313415,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 220,
+            "exp": 12461494,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 221,
+            "exp": 12610663,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 222,
+            "exp": 12760926,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 223,
+            "exp": 12912286,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 224,
+            "exp": 13064746,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 225,
+            "exp": 13218308,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 226,
+            "exp": 13372976,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 227,
+            "exp": 13528753,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 228,
+            "exp": 13685642,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 229,
+            "exp": 13843645,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 230,
+            "exp": 14002766,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 231,
+            "exp": 14163007,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 232,
+            "exp": 14324372,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 233,
+            "exp": 14486864,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 234,
+            "exp": 14650484,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 235,
+            "exp": 14815238,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 236,
+            "exp": 14981126,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 237,
+            "exp": 15148152,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 238,
+            "exp": 15316320,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 239,
+            "exp": 15485632,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 240,
+            "exp": 15656090,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 241,
+            "exp": 15827698,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 242,
+            "exp": 16000459,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 243,
+            "exp": 16174376,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 244,
+            "exp": 16349451,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 245,
+            "exp": 16525687,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 246,
+            "exp": 16703088,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 247,
+            "exp": 16881656,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 248,
+            "exp": 17061394,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 249,
+            "exp": 17242304,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 250,
+            "exp": 17424390,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 251,
+            "exp": 17607655,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 252,
+            "exp": 17792101,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 253,
+            "exp": 17977732,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 254,
+            "exp": 18164549,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 255,
+            "exp": 18352557,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 256,
+            "exp": 18541757,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 257,
+            "exp": 18732153,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 258,
+            "exp": 18923747,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 259,
+            "exp": 19116542,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 260,
+            "exp": 19310542,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 261,
+            "exp": 19505748,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 262,
+            "exp": 19702164,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 263,
+            "exp": 19899792,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 264,
+            "exp": 20098636,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 265,
+            "exp": 20298697,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 266,
+            "exp": 20499980,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 267,
+            "exp": 20702486,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 268,
+            "exp": 20906218,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 269,
+            "exp": 21111180,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 270,
+            "exp": 21317373,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 271,
+            "exp": 21524801,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 272,
+            "exp": 21733467,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 273,
+            "exp": 21943373,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 274,
+            "exp": 22154521,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 275,
+            "exp": 22366916,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 276,
+            "exp": 22580559,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 277,
+            "exp": 22795453,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 278,
+            "exp": 23011601,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 279,
+            "exp": 23229006,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 280,
+            "exp": 23447670,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 281,
+            "exp": 23667596,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 282,
+            "exp": 23888787,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 283,
+            "exp": 24111246,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 284,
+            "exp": 24334975,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 285,
+            "exp": 24559977,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 286,
+            "exp": 24786255,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 287,
+            "exp": 25013811,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 288,
+            "exp": 25242648,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 289,
+            "exp": 25472769,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 290,
+            "exp": 25704176,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 291,
+            "exp": 25936873,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 292,
+            "exp": 26170861,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 293,
+            "exp": 26406144,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 294,
+            "exp": 26642725,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 295,
+            "exp": 26880605,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 296,
+            "exp": 27119788,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 297,
+            "exp": 27360275,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 298,
+            "exp": 27602071,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 299,
+            "exp": 27845178,
+            "rewardCoinMultiplier": 15,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 300,
+            "exp": 28089597,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 301,
+            "exp": 28335333,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 302,
+            "exp": 28582386,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 303,
+            "exp": 28830761,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 304,
+            "exp": 29080460,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 305,
+            "exp": 29331485,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 306,
+            "exp": 29583840,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 307,
+            "exp": 29837526,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 308,
+            "exp": 30092546,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 309,
+            "exp": 30348903,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 310,
+            "exp": 30606600,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 311,
+            "exp": 30865639,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 312,
+            "exp": 31126023,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 313,
+            "exp": 31387754,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 314,
+            "exp": 31650835,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 315,
+            "exp": 31915268,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 316,
+            "exp": 32181057,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 317,
+            "exp": 32448204,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 318,
+            "exp": 32716711,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 319,
+            "exp": 32986581,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 320,
+            "exp": 33257817,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 321,
+            "exp": 33530420,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 322,
+            "exp": 33804395,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 323,
+            "exp": 34079743,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 324,
+            "exp": 34356466,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 325,
+            "exp": 34634569,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 326,
+            "exp": 34914052,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 327,
+            "exp": 35194918,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 328,
+            "exp": 35477171,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 329,
+            "exp": 35760813,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 330,
+            "exp": 36045846,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 331,
+            "exp": 36332272,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 332,
+            "exp": 36620095,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 333,
+            "exp": 36909317,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 334,
+            "exp": 37199940,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 335,
+            "exp": 37491967,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 336,
+            "exp": 37785401,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 337,
+            "exp": 38080244,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 338,
+            "exp": 38376498,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 339,
+            "exp": 38674167,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 340,
+            "exp": 38973252,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 341,
+            "exp": 39273756,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 342,
+            "exp": 39575682,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 343,
+            "exp": 39879032,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 344,
+            "exp": 40183809,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 345,
+            "exp": 40490015,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 346,
+            "exp": 40797652,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 347,
+            "exp": 41106724,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 348,
+            "exp": 41417233,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 349,
+            "exp": 41729181,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 350,
+            "exp": 42042570,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 351,
+            "exp": 42357404,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 352,
+            "exp": 42673684,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 353,
+            "exp": 42991414,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 354,
+            "exp": 43310595,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 355,
+            "exp": 43631230,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 356,
+            "exp": 43953322,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 357,
+            "exp": 44276873,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 358,
+            "exp": 44601885,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 359,
+            "exp": 44928362,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 360,
+            "exp": 45256305,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 361,
+            "exp": 45585717,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 362,
+            "exp": 45916600,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 363,
+            "exp": 46248958,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 364,
+            "exp": 46582791,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 365,
+            "exp": 46918103,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 366,
+            "exp": 47254897,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 367,
+            "exp": 47593174,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 368,
+            "exp": 47932938,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 369,
+            "exp": 48274189,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 370,
+            "exp": 48616932,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 371,
+            "exp": 48961169,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 372,
+            "exp": 49306901,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 373,
+            "exp": 49654131,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 374,
+            "exp": 50002863,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 375,
+            "exp": 50353097,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 376,
+            "exp": 50704837,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 377,
+            "exp": 51058085,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 378,
+            "exp": 51412843,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 379,
+            "exp": 51769114,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 380,
+            "exp": 52126901,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 381,
+            "exp": 52486205,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 382,
+            "exp": 52847029,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 383,
+            "exp": 53209375,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 384,
+            "exp": 53573247,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 385,
+            "exp": 53938645,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 386,
+            "exp": 54305574,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 387,
+            "exp": 54674034,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 388,
+            "exp": 55044029,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 389,
+            "exp": 55415561,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 390,
+            "exp": 55788632,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 391,
+            "exp": 56163244,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 392,
+            "exp": 56539401,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 393,
+            "exp": 56917104,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 394,
+            "exp": 57296355,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 395,
+            "exp": 57677158,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 396,
+            "exp": 58059515,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 397,
+            "exp": 58443427,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 398,
+            "exp": 58828897,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 399,
+            "exp": 59215928,
+            "rewardCoinMultiplier": 20,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 400,
+            "exp": 59604522,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 401,
+            "exp": 59994682,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 402,
+            "exp": 60386409,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 403,
+            "exp": 60779706,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 404,
+            "exp": 61174575,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 405,
+            "exp": 61571019,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 406,
+            "exp": 61969041,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 407,
+            "exp": 62368641,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 408,
+            "exp": 62769824,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 409,
+            "exp": 63172591,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 410,
+            "exp": 63576944,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 411,
+            "exp": 63982886,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 412,
+            "exp": 64390419,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 413,
+            "exp": 64799546,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 414,
+            "exp": 65210268,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 415,
+            "exp": 65622589,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 416,
+            "exp": 66036510,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 417,
+            "exp": 66452033,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 418,
+            "exp": 66869162,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 419,
+            "exp": 67287899,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 420,
+            "exp": 67708245,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 421,
+            "exp": 68130203,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 422,
+            "exp": 68553776,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 423,
+            "exp": 68978965,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 424,
+            "exp": 69405773,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 425,
+            "exp": 69834203,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 426,
+            "exp": 70264256,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 427,
+            "exp": 70695935,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 428,
+            "exp": 71129242,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 429,
+            "exp": 71564180,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 430,
+            "exp": 72000750,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 431,
+            "exp": 72438956,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 432,
+            "exp": 72878799,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 433,
+            "exp": 73320282,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 434,
+            "exp": 73763407,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 435,
+            "exp": 74208176,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 436,
+            "exp": 74654591,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 437,
+            "exp": 75102655,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 438,
+            "exp": 75552371,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 439,
+            "exp": 76003739,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 440,
+            "exp": 76456764,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 441,
+            "exp": 76911446,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 442,
+            "exp": 77367788,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 443,
+            "exp": 77825793,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 444,
+            "exp": 78285463,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 445,
+            "exp": 78746799,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 446,
+            "exp": 79209805,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 447,
+            "exp": 79674483,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 448,
+            "exp": 80140834,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 449,
+            "exp": 80608861,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 450,
+            "exp": 81078566,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 451,
+            "exp": 81549952,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 452,
+            "exp": 82023021,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 453,
+            "exp": 82497774,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 454,
+            "exp": 82974215,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 455,
+            "exp": 83452346,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 456,
+            "exp": 83932168,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 457,
+            "exp": 84413684,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 458,
+            "exp": 84896897,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 459,
+            "exp": 85381807,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 460,
+            "exp": 85868419,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 461,
+            "exp": 86356733,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 462,
+            "exp": 86846753,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 463,
+            "exp": 87338480,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 464,
+            "exp": 87831917,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 465,
+            "exp": 88327065,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 466,
+            "exp": 88823928,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 467,
+            "exp": 89322506,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 468,
+            "exp": 89822804,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 469,
+            "exp": 90324822,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 470,
+            "exp": 90828563,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 471,
+            "exp": 91334029,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 472,
+            "exp": 91841222,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 473,
+            "exp": 92350145,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 474,
+            "exp": 92860800,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 475,
+            "exp": 93373189,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 476,
+            "exp": 93887313,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 477,
+            "exp": 94403177,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 478,
+            "exp": 94920781,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 479,
+            "exp": 95440127,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 480,
+            "exp": 95961219,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 481,
+            "exp": 96484057,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 482,
+            "exp": 97008646,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 483,
+            "exp": 97534985,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 484,
+            "exp": 98063079,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 485,
+            "exp": 98592928,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 486,
+            "exp": 99124535,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 487,
+            "exp": 99657903,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 488,
+            "exp": 100193033,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 489,
+            "exp": 100729928,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 490,
+            "exp": 101268589,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 491,
+            "exp": 101809020,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 492,
+            "exp": 102351222,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 493,
+            "exp": 102895197,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 494,
+            "exp": 103440948,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 495,
+            "exp": 103988476,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 496,
+            "exp": 104537784,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 497,
+            "exp": 105088875,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 498,
+            "exp": 105641749,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 499,
+            "exp": 106196410,
+            "rewardCoinMultiplier": 25,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 500,
+            "exp": 106752859,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 501,
+            "exp": 107311099,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 502,
+            "exp": 107871132,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 503,
+            "exp": 108432959,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 504,
+            "exp": 108996584,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 505,
+            "exp": 109562008,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 506,
+            "exp": 110129234,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 507,
+            "exp": 110698263,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 508,
+            "exp": 111269098,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 509,
+            "exp": 111841741,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 510,
+            "exp": 112416193,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 511,
+            "exp": 112992458,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 512,
+            "exp": 113570538,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 513,
+            "exp": 114150433,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 514,
+            "exp": 114732147,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 515,
+            "exp": 115315682,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 516,
+            "exp": 115901040,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 517,
+            "exp": 116488223,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 518,
+            "exp": 117077232,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 519,
+            "exp": 117668071,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 520,
+            "exp": 118260742,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 521,
+            "exp": 118855246,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 522,
+            "exp": 119451585,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 523,
+            "exp": 120049762,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 524,
+            "exp": 120649779,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 525,
+            "exp": 121251638,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 526,
+            "exp": 121855341,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 527,
+            "exp": 122460890,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 528,
+            "exp": 123068288,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 529,
+            "exp": 123677536,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 530,
+            "exp": 124288636,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 531,
+            "exp": 124901591,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 532,
+            "exp": 125516403,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 533,
+            "exp": 126133074,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 534,
+            "exp": 126751605,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 535,
+            "exp": 127372000,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 536,
+            "exp": 127994259,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 537,
+            "exp": 128618386,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 538,
+            "exp": 129244383,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 539,
+            "exp": 129872251,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 540,
+            "exp": 130501992,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 541,
+            "exp": 131133609,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 542,
+            "exp": 131767103,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 543,
+            "exp": 132402478,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 544,
+            "exp": 133039734,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 545,
+            "exp": 133678875,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 546,
+            "exp": 134319901,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 547,
+            "exp": 134962815,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 548,
+            "exp": 135607620,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 549,
+            "exp": 136254317,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 550,
+            "exp": 136902909,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 551,
+            "exp": 137553397,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 552,
+            "exp": 138205783,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 553,
+            "exp": 138860070,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 554,
+            "exp": 139516260,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 555,
+            "exp": 140174355,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 556,
+            "exp": 140834356,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 557,
+            "exp": 141496266,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 558,
+            "exp": 142160087,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 559,
+            "exp": 142825822,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 560,
+            "exp": 143493471,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 561,
+            "exp": 144163037,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 562,
+            "exp": 144834523,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 563,
+            "exp": 145507930,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 564,
+            "exp": 146183260,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 565,
+            "exp": 146860516,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 566,
+            "exp": 147539699,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 567,
+            "exp": 148220812,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 568,
+            "exp": 148903856,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 569,
+            "exp": 149588834,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 570,
+            "exp": 150275747,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 571,
+            "exp": 150964598,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 572,
+            "exp": 151655389,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 573,
+            "exp": 152348122,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 574,
+            "exp": 153042798,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 575,
+            "exp": 153739421,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 576,
+            "exp": 154437991,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 577,
+            "exp": 155138511,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 578,
+            "exp": 155840984,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 579,
+            "exp": 156545410,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 580,
+            "exp": 157251792,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 581,
+            "exp": 157960132,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 582,
+            "exp": 158670433,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 583,
+            "exp": 159382696,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 584,
+            "exp": 160096923,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 585,
+            "exp": 160813116,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 586,
+            "exp": 161531277,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 587,
+            "exp": 162251408,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 588,
+            "exp": 162973512,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 589,
+            "exp": 163697590,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 590,
+            "exp": 164423645,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 591,
+            "exp": 165151678,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 592,
+            "exp": 165881691,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 593,
+            "exp": 166613687,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 594,
+            "exp": 167347667,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 595,
+            "exp": 168083633,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 596,
+            "exp": 168821588,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 597,
+            "exp": 169561533,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 598,
+            "exp": 170303471,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 599,
+            "exp": 171047403,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 600,
+            "exp": 171793332,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 601,
+            "exp": 172541259,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 602,
+            "exp": 173291186,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 603,
+            "exp": 174043116,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 604,
+            "exp": 174797051,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 605,
+            "exp": 175552992,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 606,
+            "exp": 176310941,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 607,
+            "exp": 177070901,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 608,
+            "exp": 177832874,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 609,
+            "exp": 178596861,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 610,
+            "exp": 179362864,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 611,
+            "exp": 180130886,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 612,
+            "exp": 180900928,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 613,
+            "exp": 181672993,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 614,
+            "exp": 182447082,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 615,
+            "exp": 183223197,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 616,
+            "exp": 184001341,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 617,
+            "exp": 184781515,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 618,
+            "exp": 185563722,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 619,
+            "exp": 186347963,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 620,
+            "exp": 187134240,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 621,
+            "exp": 187922556,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 622,
+            "exp": 188712912,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 623,
+            "exp": 189505310,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 624,
+            "exp": 190299753,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 625,
+            "exp": 191096241,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 626,
+            "exp": 191894778,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 627,
+            "exp": 192695365,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 628,
+            "exp": 193498004,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 629,
+            "exp": 194302697,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 630,
+            "exp": 195109447,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 631,
+            "exp": 195918254,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 632,
+            "exp": 196729121,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 633,
+            "exp": 197542051,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 634,
+            "exp": 198357044,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 635,
+            "exp": 199174103,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 636,
+            "exp": 199993230,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 637,
+            "exp": 200814427,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 638,
+            "exp": 201637695,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 639,
+            "exp": 202463037,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 640,
+            "exp": 203290455,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 641,
+            "exp": 204119951,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 642,
+            "exp": 204951526,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 643,
+            "exp": 205785183,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 644,
+            "exp": 206620923,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 645,
+            "exp": 207458748,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 646,
+            "exp": 208298661,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 647,
+            "exp": 209140664,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 648,
+            "exp": 209984757,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 649,
+            "exp": 210830944,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 650,
+            "exp": 211679226,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 651,
+            "exp": 212529605,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 652,
+            "exp": 213382083,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 653,
+            "exp": 214236662,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 654,
+            "exp": 215093345,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 655,
+            "exp": 215952131,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 656,
+            "exp": 216813025,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 657,
+            "exp": 217676028,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 658,
+            "exp": 218541141,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 659,
+            "exp": 219408367,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 660,
+            "exp": 220277707,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 661,
+            "exp": 221149164,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 662,
+            "exp": 222022739,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 663,
+            "exp": 222898434,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 664,
+            "exp": 223776252,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 665,
+            "exp": 224656194,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 666,
+            "exp": 225538262,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 667,
+            "exp": 226422458,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 668,
+            "exp": 227308784,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 669,
+            "exp": 228197242,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 670,
+            "exp": 229087834,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 671,
+            "exp": 229980561,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 672,
+            "exp": 230875426,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 673,
+            "exp": 231772431,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 674,
+            "exp": 232671577,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 675,
+            "exp": 233572866,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 676,
+            "exp": 234476301,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 677,
+            "exp": 235381883,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 678,
+            "exp": 236289614,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 679,
+            "exp": 237199496,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 680,
+            "exp": 238111531,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 681,
+            "exp": 239025721,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 682,
+            "exp": 239942067,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 683,
+            "exp": 240860573,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 684,
+            "exp": 241781238,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 685,
+            "exp": 242704067,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 686,
+            "exp": 243629059,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 687,
+            "exp": 244556218,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 688,
+            "exp": 245485545,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 689,
+            "exp": 246417042,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 690,
+            "exp": 247350711,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 691,
+            "exp": 248286554,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 692,
+            "exp": 249224572,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 693,
+            "exp": 250164769,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 694,
+            "exp": 251107144,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 695,
+            "exp": 252051702,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 696,
+            "exp": 252998442,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 697,
+            "exp": 253947368,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 698,
+            "exp": 254898481,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        },
+        {
+            "id": 699,
+            "exp": 255851782,
+            "rewardCoinMultiplier": 30,
+            "rewardBingoBallMultiplier": 2,
+            "rewardVipPointMultiplier": 2
+        }
+    ],
+    "bettingExp": [
+        {
+            "minBet": 10000,
+            "maxBet": 6000000000,
+            "minExp": 0.54,
+            "maxExp": 800,
+            "maxGap": 77459.60237439901,
+            "addValue": 0.010320992820694206
+        }
+    ],
+    "Sheet2": [
+        {
+            "1642794": 1685849
+        },
+        {
+            "1642794": 1729592
+        },
+        {
+            "1642794": 1774026
+        },
+        {
+            "1642794": 1819156
+        },
+        {
+            "1642794": 1864985
+        },
+        {
+            "1642794": 1911518
+        },
+        {
+            "1642794": 1958759
+        },
+        {
+            "1642794": 2006712
+        },
+        {
+            "1642794": 2055380
+        },
+        {
+            "1642794": 2104768
+        },
+        {
+            "1642794": 2154879
+        },
+        {
+            "1642794": 2205718
+        },
+        {
+            "1642794": 2257289
+        },
+        {
+            "1642794": 2309595
+        },
+        {
+            "1642794": 2362640
+        },
+        {
+            "1642794": 2416429
+        },
+        {
+            "1642794": 2470964
+        },
+        {
+            "1642794": 2526251
+        },
+        {
+            "1642794": 2582292
+        },
+        {
+            "1642794": 2639092
+        },
+        {
+            "1642794": 2696654
+        },
+        {
+            "1642794": 2754982
+        },
+        {
+            "1642794": 2814080
+        },
+        {
+            "1642794": 2873953
+        },
+        {
+            "1642794": 2934602
+        },
+        {
+            "1642794": 2996033
+        },
+        {
+            "1642794": 3058249
+        },
+        {
+            "1642794": 3121254
+        },
+        {
+            "1642794": 3185052
+        },
+        {
+            "1642794": 3249645
+        },
+        {
+            "1642794": 3315039
+        },
+        {
+            "1642794": 3381236
+        },
+        {
+            "1642794": 3448240
+        },
+        {
+            "1642794": 3516055
+        },
+        {
+            "1642794": 3584685
+        },
+        {
+            "1642794": 3654133
+        },
+        {
+            "1642794": 3724403
+        },
+        {
+            "1642794": 3795499
+        },
+        {
+            "1642794": 3867423
+        },
+        {
+            "1642794": 3940180
+        },
+        {
+            "1642794": 4013774
+        },
+        {
+            "1642794": 4088207
+        },
+        {
+            "1642794": 4163484
+        },
+        {
+            "1642794": 4239608
+        },
+        {
+            "1642794": 4316582
+        },
+        {
+            "1642794": 4394411
+        },
+        {
+            "1642794": 4473097
+        },
+        {
+            "1642794": 4552644
+        },
+        {
+            "1642794": 4633056
+        },
+        {
+            "1642794": 4714336
+        },
+        {
+            "1642794": 4796487
+        },
+        {
+            "1642794": 4879514
+        },
+        {
+            "1642794": 4963419
+        },
+        {
+            "1642794": 5048206
+        },
+        {
+            "1642794": 5133879
+        },
+        {
+            "1642794": 5220441
+        },
+        {
+            "1642794": 5307895
+        },
+        {
+            "1642794": 5396245
+        },
+        {
+            "1642794": 5485494
+        },
+        {
+            "1642794": 5575646
+        },
+        {
+            "1642794": 5666704
+        },
+        {
+            "1642794": 5758671
+        },
+        {
+            "1642794": 5851551
+        },
+        {
+            "1642794": 5945347
+        },
+        {
+            "1642794": 6040063
+        },
+        {
+            "1642794": 6135702
+        },
+        {
+            "1642794": 6232267
+        },
+        {
+            "1642794": 6329762
+        },
+        {
+            "1642794": 6428189
+        },
+        {
+            "1642794": 6527553
+        },
+        {
+            "1642794": 6627857
+        },
+        {
+            "1642794": 6729103
+        },
+        {
+            "1642794": 6831296
+        },
+        {
+            "1642794": 6934438
+        },
+        {
+            "1642794": 7038533
+        },
+        {
+            "1642794": 7143584
+        },
+        {
+            "1642794": 7249595
+        },
+        {
+            "1642794": 7356568
+        },
+        {
+            "1642794": 7464507
+        },
+        {
+            "1642794": 7573415
+        },
+        {
+            "1642794": 7683295
+        },
+        {
+            "1642794": 7794151
+        },
+        {
+            "1642794": 7905986
+        },
+        {
+            "1642794": 8018803
+        },
+        {
+            "1642794": 8132606
+        },
+        {
+            "1642794": 8247397
+        },
+        {
+            "1642794": 8363179
+        },
+        {
+            "1642794": 8479957
+        },
+        {
+            "1642794": 8597732
+        },
+        {
+            "1642794": 8716509
+        },
+        {
+            "1642794": 8836290
+        },
+        {
+            "1642794": 8957079
+        },
+        {
+            "1642794": 9078879
+        },
+        {
+            "1642794": 9201693
+        },
+        {
+            "1642794": 9325523
+        },
+        {
+            "1642794": 9450374
+        },
+        {
+            "1642794": 9576249
+        },
+        {
+            "1642794": 9703149
+        },
+        {
+            "1642794": 9831080
+        },
+        {
+            "1642794": 9960043
+        },
+        {
+            "1642794": 10090042
+        },
+        {
+            "1642794": 10221080
+        },
+        {
+            "1642794": 10353160
+        },
+        {
+            "1642794": 10486285
+        },
+        {
+            "1642794": 10620458
+        },
+        {
+            "1642794": 10755683
+        },
+        {
+            "1642794": 10891962
+        },
+        {
+            "1642794": 11029299
+        },
+        {
+            "1642794": 11167696
+        },
+        {
+            "1642794": 11307156
+        },
+        {
+            "1642794": 11447683
+        },
+        {
+            "1642794": 11589280
+        },
+        {
+            "1642794": 11731950
+        },
+        {
+            "1642794": 11875695
+        },
+        {
+            "1642794": 12020519
+        },
+        {
+            "1642794": 12166425
+        },
+        {
+            "1642794": 12313415
+        },
+        {
+            "1642794": 12461494
+        },
+        {
+            "1642794": 12610663
+        },
+        {
+            "1642794": 12760926
+        },
+        {
+            "1642794": 12912286
+        },
+        {
+            "1642794": 13064746
+        },
+        {
+            "1642794": 13218308
+        },
+        {
+            "1642794": 13372976
+        },
+        {
+            "1642794": 13528753
+        },
+        {
+            "1642794": 13685642
+        },
+        {
+            "1642794": 13843645
+        },
+        {
+            "1642794": 14002766
+        },
+        {
+            "1642794": 14163007
+        },
+        {
+            "1642794": 14324372
+        },
+        {
+            "1642794": 14486864
+        },
+        {
+            "1642794": 14650484
+        },
+        {
+            "1642794": 14815238
+        },
+        {
+            "1642794": 14981126
+        },
+        {
+            "1642794": 15148152
+        },
+        {
+            "1642794": 15316320
+        },
+        {
+            "1642794": 15485632
+        },
+        {
+            "1642794": 15656090
+        },
+        {
+            "1642794": 15827698
+        },
+        {
+            "1642794": 16000459
+        },
+        {
+            "1642794": 16174376
+        },
+        {
+            "1642794": 16349451
+        },
+        {
+            "1642794": 16525687
+        },
+        {
+            "1642794": 16703088
+        },
+        {
+            "1642794": 16881656
+        },
+        {
+            "1642794": 17061394
+        },
+        {
+            "1642794": 17242304
+        },
+        {
+            "1642794": 17424390
+        },
+        {
+            "1642794": 17607655
+        },
+        {
+            "1642794": 17792101
+        },
+        {
+            "1642794": 17977732
+        },
+        {
+            "1642794": 18164549
+        },
+        {
+            "1642794": 18352557
+        },
+        {
+            "1642794": 18541757
+        },
+        {
+            "1642794": 18732153
+        },
+        {
+            "1642794": 18923747
+        },
+        {
+            "1642794": 19116542
+        },
+        {
+            "1642794": 19310542
+        },
+        {
+            "1642794": 19505748
+        },
+        {
+            "1642794": 19702164
+        },
+        {
+            "1642794": 19899792
+        },
+        {
+            "1642794": 20098636
+        },
+        {
+            "1642794": 20298697
+        },
+        {
+            "1642794": 20499980
+        },
+        {
+            "1642794": 20702486
+        },
+        {
+            "1642794": 20906218
+        },
+        {
+            "1642794": 21111180
+        },
+        {
+            "1642794": 21317373
+        },
+        {
+            "1642794": 21524801
+        },
+        {
+            "1642794": 21733467
+        },
+        {
+            "1642794": 21943373
+        },
+        {
+            "1642794": 22154521
+        },
+        {
+            "1642794": 22366916
+        },
+        {
+            "1642794": 22580559
+        },
+        {
+            "1642794": 22795453
+        },
+        {
+            "1642794": 23011601
+        },
+        {
+            "1642794": 23229006
+        },
+        {
+            "1642794": 23447670
+        },
+        {
+            "1642794": 23667596
+        },
+        {
+            "1642794": 23888787
+        },
+        {
+            "1642794": 24111246
+        },
+        {
+            "1642794": 24334975
+        },
+        {
+            "1642794": 24559977
+        },
+        {
+            "1642794": 24786255
+        },
+        {
+            "1642794": 25013811
+        },
+        {
+            "1642794": 25242648
+        },
+        {
+            "1642794": 25472769
+        },
+        {
+            "1642794": 25704176
+        },
+        {
+            "1642794": 25936873
+        },
+        {
+            "1642794": 26170861
+        },
+        {
+            "1642794": 26406144
+        },
+        {
+            "1642794": 26642725
+        },
+        {
+            "1642794": 26880605
+        },
+        {
+            "1642794": 27119788
+        },
+        {
+            "1642794": 27360275
+        },
+        {
+            "1642794": 27602071
+        },
+        {
+            "1642794": 27845178
+        },
+        {
+            "1642794": 28089597
+        },
+        {
+            "1642794": 28335333
+        },
+        {
+            "1642794": 28582386
+        },
+        {
+            "1642794": 28830761
+        },
+        {
+            "1642794": 29080460
+        },
+        {
+            "1642794": 29331485
+        },
+        {
+            "1642794": 29583840
+        },
+        {
+            "1642794": 29837526
+        },
+        {
+            "1642794": 30092546
+        },
+        {
+            "1642794": 30348903
+        },
+        {
+            "1642794": 30606600
+        },
+        {
+            "1642794": 30865639
+        },
+        {
+            "1642794": 31126023
+        },
+        {
+            "1642794": 31387754
+        },
+        {
+            "1642794": 31650835
+        },
+        {
+            "1642794": 31915268
+        },
+        {
+            "1642794": 32181057
+        },
+        {
+            "1642794": 32448204
+        },
+        {
+            "1642794": 32716711
+        },
+        {
+            "1642794": 32986581
+        },
+        {
+            "1642794": 33257817
+        },
+        {
+            "1642794": 33530420
+        },
+        {
+            "1642794": 33804395
+        },
+        {
+            "1642794": 34079743
+        },
+        {
+            "1642794": 34356466
+        },
+        {
+            "1642794": 34634569
+        },
+        {
+            "1642794": 34914052
+        },
+        {
+            "1642794": 35194918
+        },
+        {
+            "1642794": 35477171
+        },
+        {
+            "1642794": 35760813
+        },
+        {
+            "1642794": 36045846
+        },
+        {
+            "1642794": 36332272
+        },
+        {
+            "1642794": 36620095
+        },
+        {
+            "1642794": 36909317
+        },
+        {
+            "1642794": 37199940
+        },
+        {
+            "1642794": 37491967
+        },
+        {
+            "1642794": 37785401
+        },
+        {
+            "1642794": 38080244
+        },
+        {
+            "1642794": 38376498
+        },
+        {
+            "1642794": 38674167
+        },
+        {
+            "1642794": 38973252
+        },
+        {
+            "1642794": 39273756
+        },
+        {
+            "1642794": 39575682
+        },
+        {
+            "1642794": 39879032
+        },
+        {
+            "1642794": 40183809
+        },
+        {
+            "1642794": 40490015
+        },
+        {
+            "1642794": 40797652
+        },
+        {
+            "1642794": 41106724
+        },
+        {
+            "1642794": 41417233
+        },
+        {
+            "1642794": 41729181
+        },
+        {
+            "1642794": 42042570
+        },
+        {
+            "1642794": 42357404
+        },
+        {
+            "1642794": 42673684
+        },
+        {
+            "1642794": 42991414
+        },
+        {
+            "1642794": 43310595
+        },
+        {
+            "1642794": 43631230
+        },
+        {
+            "1642794": 43953322
+        },
+        {
+            "1642794": 44276873
+        },
+        {
+            "1642794": 44601885
+        },
+        {
+            "1642794": 44928362
+        },
+        {
+            "1642794": 45256305
+        },
+        {
+            "1642794": 45585717
+        },
+        {
+            "1642794": 45916600
+        },
+        {
+            "1642794": 46248958
+        },
+        {
+            "1642794": 46582791
+        },
+        {
+            "1642794": 46918103
+        },
+        {
+            "1642794": 47254897
+        },
+        {
+            "1642794": 47593174
+        },
+        {
+            "1642794": 47932938
+        },
+        {
+            "1642794": 48274189
+        },
+        {
+            "1642794": 48616932
+        },
+        {
+            "1642794": 48961169
+        },
+        {
+            "1642794": 49306901
+        },
+        {
+            "1642794": 49654131
+        },
+        {
+            "1642794": 50002863
+        },
+        {
+            "1642794": 50353097
+        },
+        {
+            "1642794": 50704837
+        },
+        {
+            "1642794": 51058085
+        },
+        {
+            "1642794": 51412843
+        },
+        {
+            "1642794": 51769114
+        },
+        {
+            "1642794": 52126901
+        },
+        {
+            "1642794": 52486205
+        },
+        {
+            "1642794": 52847029
+        },
+        {
+            "1642794": 53209375
+        },
+        {
+            "1642794": 53573247
+        },
+        {
+            "1642794": 53938645
+        },
+        {
+            "1642794": 54305574
+        },
+        {
+            "1642794": 54674034
+        },
+        {
+            "1642794": 55044029
+        },
+        {
+            "1642794": 55415561
+        },
+        {
+            "1642794": 55788632
+        },
+        {
+            "1642794": 56163244
+        },
+        {
+            "1642794": 56539401
+        },
+        {
+            "1642794": 56917104
+        },
+        {
+            "1642794": 57296355
+        },
+        {
+            "1642794": 57677158
+        },
+        {
+            "1642794": 58059515
+        },
+        {
+            "1642794": 58443427
+        },
+        {
+            "1642794": 58828897
+        },
+        {
+            "1642794": 59215928
+        },
+        {
+            "1642794": 59604522
+        },
+        {
+            "1642794": 59994682
+        },
+        {
+            "1642794": 60386409
+        },
+        {
+            "1642794": 60779706
+        },
+        {
+            "1642794": 61174575
+        },
+        {
+            "1642794": 61571019
+        },
+        {
+            "1642794": 61969041
+        },
+        {
+            "1642794": 62368641
+        },
+        {
+            "1642794": 62769824
+        },
+        {
+            "1642794": 63172591
+        },
+        {
+            "1642794": 63576944
+        },
+        {
+            "1642794": 63982886
+        },
+        {
+            "1642794": 64390419
+        },
+        {
+            "1642794": 64799546
+        },
+        {
+            "1642794": 65210268
+        },
+        {
+            "1642794": 65622589
+        },
+        {
+            "1642794": 66036510
+        },
+        {
+            "1642794": 66452033
+        },
+        {
+            "1642794": 66869162
+        },
+        {
+            "1642794": 67287899
+        },
+        {
+            "1642794": 67708245
+        },
+        {
+            "1642794": 68130203
+        },
+        {
+            "1642794": 68553776
+        },
+        {
+            "1642794": 68978965
+        },
+        {
+            "1642794": 69405773
+        },
+        {
+            "1642794": 69834203
+        },
+        {
+            "1642794": 70264256
+        },
+        {
+            "1642794": 70695935
+        },
+        {
+            "1642794": 71129242
+        },
+        {
+            "1642794": 71564180
+        },
+        {
+            "1642794": 72000750
+        },
+        {
+            "1642794": 72438956
+        },
+        {
+            "1642794": 72878799
+        },
+        {
+            "1642794": 73320282
+        },
+        {
+            "1642794": 73763407
+        },
+        {
+            "1642794": 74208176
+        },
+        {
+            "1642794": 74654591
+        },
+        {
+            "1642794": 75102655
+        },
+        {
+            "1642794": 75552371
+        },
+        {
+            "1642794": 76003739
+        },
+        {
+            "1642794": 76456764
+        },
+        {
+            "1642794": 76911446
+        },
+        {
+            "1642794": 77367788
+        },
+        {
+            "1642794": 77825793
+        },
+        {
+            "1642794": 78285463
+        },
+        {
+            "1642794": 78746799
+        },
+        {
+            "1642794": 79209805
+        },
+        {
+            "1642794": 79674483
+        },
+        {
+            "1642794": 80140834
+        },
+        {
+            "1642794": 80608861
+        },
+        {
+            "1642794": 81078566
+        },
+        {
+            "1642794": 81549952
+        },
+        {
+            "1642794": 82023021
+        },
+        {
+            "1642794": 82497774
+        },
+        {
+            "1642794": 82974215
+        },
+        {
+            "1642794": 83452346
+        },
+        {
+            "1642794": 83932168
+        },
+        {
+            "1642794": 84413684
+        },
+        {
+            "1642794": 84896897
+        },
+        {
+            "1642794": 85381807
+        },
+        {
+            "1642794": 85868419
+        },
+        {
+            "1642794": 86356733
+        },
+        {
+            "1642794": 86846753
+        },
+        {
+            "1642794": 87338480
+        },
+        {
+            "1642794": 87831917
+        },
+        {
+            "1642794": 88327065
+        },
+        {
+            "1642794": 88823928
+        },
+        {
+            "1642794": 89322506
+        },
+        {
+            "1642794": 89822804
+        },
+        {
+            "1642794": 90324822
+        },
+        {
+            "1642794": 90828563
+        },
+        {
+            "1642794": 91334029
+        },
+        {
+            "1642794": 91841222
+        },
+        {
+            "1642794": 92350145
+        },
+        {
+            "1642794": 92860800
+        },
+        {
+            "1642794": 93373189
+        },
+        {
+            "1642794": 93887313
+        },
+        {
+            "1642794": 94403177
+        },
+        {
+            "1642794": 94920781
+        },
+        {
+            "1642794": 95440127
+        },
+        {
+            "1642794": 95961219
+        },
+        {
+            "1642794": 96484057
+        },
+        {
+            "1642794": 97008646
+        },
+        {
+            "1642794": 97534985
+        },
+        {
+            "1642794": 98063079
+        },
+        {
+            "1642794": 98592928
+        },
+        {
+            "1642794": 99124535
+        },
+        {
+            "1642794": 99657903
+        },
+        {
+            "1642794": 100193033
+        },
+        {
+            "1642794": 100729928
+        },
+        {
+            "1642794": 101268589
+        },
+        {
+            "1642794": 101809020
+        },
+        {
+            "1642794": 102351222
+        },
+        {
+            "1642794": 102895197
+        },
+        {
+            "1642794": 103440948
+        },
+        {
+            "1642794": 103988476
+        },
+        {
+            "1642794": 104537784
+        },
+        {
+            "1642794": 105088875
+        },
+        {
+            "1642794": 105641749
+        },
+        {
+            "1642794": 106196410
+        },
+        {
+            "1642794": 106752859
+        }
+    ]
+}

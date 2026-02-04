@@ -9,6 +9,7 @@ import SlotManager from "./SlotManager";
 export default class SlotGameRuleManager extends cc.Component {
     @property()
     public slotID: string = "";
+    
     @property()
     public slotName: string = "";
 

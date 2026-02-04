@@ -349,7 +349,7 @@ export default class CommonServer {
     public getUrlRequestSpin(zone: number, slot: string): string {
         let url = "";
         url += this.commonServerBaseURL;
-        url += "slots/" + zone + "/" + slot + "/spin";
+        url += "slots/GetSlotResult/" + zone + "/" + slot;
         return url;
     }
 
@@ -502,13 +502,13 @@ export default class CommonServer {
 
     private __InnerGsHttpCall(req: ReqParamModel, completeFunc: Function, timeout: number): void {
         const self = this;
-        if (!UserInfo.isAuthFail()) {
-            const header = { "Content-Type": "text/plain" };
+        // if (!UserInfo.isAuthFail()) {
+            const header = { "Content-Type": "application/json" };
             req.url += "?" + this.getReqIdParam();
-            if (this.isAuthorizationUser()) {
-                req.url += "&" + this.getUidParam(this._userId);
-                req.url += "&" + this.getAuthParam(this._userId, this._accessToken) + "&" + this.getGameLocationParam();
-            }
+            // if (this.isAuthorizationUser()) {
+            //     req.url += "&" + this.getUidParam(this._userId);
+            //     req.url += "&" + this.getAuthParam(this._userId, this._accessToken) + "&" + this.getGameLocationParam();
+            // }
             if (req.useQueue) {
                 this.gsUseQueueHttpCall(req.url, req.postData, completeFunc, timeout, header);
             } else {
@@ -516,13 +516,13 @@ export default class CommonServer {
                     if (completeFunc != null) self.gsCallCompleteFunc(req.url, res, isErr?1:0, completeFunc);
                 }, timeout, header, 0);
             }
-        } else {
-            completeFunc({
-                errorCode: 5030,
-                errorMsg: "not authorizaed",
-                errorStatusCode: 0
-            }, null);
-        }
+        // } else {
+        //     completeFunc({
+        //         errorCode: 5030,
+        //         errorMsg: "not authorizaed",
+        //         errorStatusCode: 0
+        //     }, null);
+        // }
     }
 
     private gsUseQueueHttpCall(url: string, postData: any, completeFunc: Function, timeout: number, header: any): void {
@@ -577,7 +577,7 @@ export default class CommonServer {
             const appVersion = Utility.getApplicationVersion();
             const platformID = TSUtility.getPlatformID();
             const req = new ReqParamModel();
-            req.url = platformID !== "" ? baseUrl + "version/" + serviceType + "/" + appVersion + "/" + platformID : baseUrl + "version/" + serviceType + "/" + appVersion;
+            req.url = baseUrl + "config/version/" + serviceType + "/" + appVersion;
             this.gsHttpCall(req, (res) => { resolve(res); }, 0);
         });
     }
@@ -587,6 +587,16 @@ export default class CommonServer {
             cc.log("requestAuth postData: ", postData);
             const req = new ReqParamModel();
             req.url = this.commonServerBaseURL + "auth/v3/" + type;
+            req.postData = postData;
+            this.gsHttpCall(req, (res) => { resolve(res); }, 0);
+        });
+    }
+
+    public async guestLogin(postData: any): Promise<any> {
+        return new Promise((resolve) => {
+            cc.log("requestAuth postData: ", postData);
+            const req = new ReqParamModel();
+            req.url = this.commonServerBaseURL + "auth/guestLogin";
             req.postData = postData;
             this.gsHttpCall(req, (res) => { resolve(res); }, 0);
         });
@@ -642,16 +652,16 @@ export default class CommonServer {
         });
     }
 
-    public async getSlotGameInfo(uid: number, token: string, zone: number, slot: number|string, postData: any): Promise<any> {
+    public async getSlotGameInfo(zone: number, slot: number|string, postData: any): Promise<any> {
         return new Promise((resolve) => {
             const req = new ReqParamModel();
-            req.url = this.commonServerBaseURL + "slots/" + zone + "/" + slot + "/info";
-            req.postData = postData;
+            req.url = this.commonServerBaseURL + "user/GetSlotInfo/" +slot;
+            // req.postData = postData;
             this.gsHttpCall(req, (res) => { resolve(res); }, 0);
         });
     }
 
-    public async requestSlotSpin(uid: number, token: string, zone: number, slot: string, postData: any): Promise<any> {
+    public async requestSlotSpin(zone: number, slot: string, postData: any): Promise<any> {
         return new Promise((resolve) => {
             const timeoutSecond = TSUtility.isLiveService() ? CommonServer.defaultTimeoutSecond : 500;
             const timeout = timeoutSecond * 1000;
@@ -663,7 +673,7 @@ export default class CommonServer {
 
             const req = new ReqParamModel();
             req.url = this.getUrlRequestSpin(zone, slot);
-            req.postData = postData;
+            // req.postData = postData;
             this.gsHttpCall(req, (res) => {
                 this.persistentNodeComp!.unschedule(timeoutLog);
                 resolve(res);
@@ -674,8 +684,8 @@ export default class CommonServer {
     public async requestZoneInfo(): Promise<any> {
         return new Promise((resolve) => {
             const req = new ReqParamModel();
-            req.url = this.commonServerBaseURL + "v2/zones/combined/info";
-            req.postData = JSON.stringify({ type: ServiceInfoManager.BOOL_OVER_SLOT_COUNT ? 0 : 1 });
+            req.url = this.commonServerBaseURL + "user/GetZoneConfig";
+            // req.postData = JSON.stringify({ type: ServiceInfoManager.BOOL_OVER_SLOT_COUNT ? 0 : 1 });
             req.useQueue = false;
             this.gsHttpCall(req, (res) => { resolve(res); }, 0);
         });
@@ -1837,7 +1847,7 @@ export default class CommonServer {
         const jsonStr = JSON.stringify(postData);
         Utility.httpCall(reqUrl, jsonStr, (res, isErr) => {
             if (isErr) cc.log("Get Failed" + res);
-        }, 0, { "Content-Type": "text/plain" });
+        }, 0, { "Content-Type": "application/json" });
     }
 
     public requestMultiBalance(zone: number, slot: number, completeFunc: Function): void {

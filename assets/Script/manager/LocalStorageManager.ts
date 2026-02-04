@@ -1,6 +1,6 @@
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
-import { Utility } from "../global_utility/Utility";
+import { Utility, UuidUtils } from "../global_utility/Utility";
 
 /**
  * 设备信息本地存储类
@@ -1078,6 +1078,20 @@ export default class LocalStorageManager {
             "getUserUID"
         );
         return obj === null ? null : obj;
+    }
+
+    public static getMachineUuid():string{
+        var value = cc.sys.localStorage.getItem("MachineUuid");
+        if (value === null){
+            value = UuidUtils.generateUuidv4()
+            cc.sys.localStorage.setItem("MachineUuid", value);
+        }
+
+        return value;
+    }
+
+    public static setMachineUuid(machine:string){
+        cc.sys.localStorage.setItem("MachineUuid", machine);
     }
 
     public static setAccessToken(value: string): void {

@@ -7,7 +7,7 @@ import L_LoadNextSceneState from "./L_LoadNextSceneState";
 import L_LoadSlotBGState from "./L_LoadSlotBGState";
 import L_MobileAuthV2State from "./L_MobileAuthV2State";
 import L_SetNextSceneInfoState from "./L_SetNextSceneInfoState";
-import { AuthFacebookMergeInfo } from "./Network/CommonServer";
+import CommonServer, { AuthFacebookMergeInfo } from "./Network/CommonServer";
 import FBInstantUtil from "./Network/FBInstantUtil";
 import CommonPopup from "./Popup/CommonPopup";
 import AllMightyCouponManager from "./ServiceInfo/AllMightyCouponManager";
@@ -20,7 +20,7 @@ import EntrancePathManager from "./global_utility/EntrancePathManager";
 import NativeUtil from "./global_utility/NativeUtil";
 import SDefine from "./global_utility/SDefine";
 import TSUtility from "./global_utility/TSUtility";
-import { Utility } from "./global_utility/Utility";
+import { Utility, UuidUtils } from "./global_utility/Utility";
 import LocalStorageManager from "./manager/LocalStorageManager";
 import { SlotTourneyTierType } from "./manager/SlotTourneyManager";
 
@@ -219,13 +219,31 @@ export default class LoginProcess {
      * @returns 授权信息对象
      */
     public async getAuthPostInfo(): Promise<Record<string, any> | void> {
-        if (Utility.isFacebookWeb()) {
-            return this.getAuthPost_FacebookInfo();
-        } else if (Utility.isFacebookInstant()) {
-            return this.getAuthPost_FBInstantInfo();
-        } else {
-            cc.error("not found valid authPost Info");
-        }
+        // if (Utility.isFacebookWeb()) {
+        //     return this.getAuthPost_FacebookInfo();
+        // } else if (Utility.isFacebookInstant()) {
+        //     return this.getAuthPost_FBInstantInfo();
+        // } else {
+        //     cc.error("not found valid authPost Info");
+        // }
+
+
+        const uuid = LocalStorageManager.getMachineUuid()
+        const clientSessionKey = UuidUtils.compressUuid(uuid, true);
+
+        var data = {
+            appid: 0,
+            clienttype: 0,
+            devicename: "web",
+            udid: uuid,
+            password:clientSessionKey,
+          }
+
+        return CommonServer.Instance().guestLogin(JSON.stringify(data));
+    }
+
+    public async guestLogin(): Promise<Record<string, any> | void> {
+
     }
 
     /**
