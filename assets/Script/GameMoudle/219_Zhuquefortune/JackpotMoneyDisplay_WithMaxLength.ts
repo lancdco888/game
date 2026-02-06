@@ -1,16 +1,12 @@
 import AsyncHelper from "../../global_utility/AsyncHelper";
 import CurrencyFormatHelper from "../../global_utility/CurrencyFormatHelper";
 import SDefine from "../../global_utility/SDefine";
+import { Utility } from "../../global_utility/Utility";
 import SlotGameRuleManager from "../../manager/SlotGameRuleManager";
 import SlotManager from "../../manager/SlotManager";
 
 // 符合 Cocos 2.4.x 原生写法：解构装饰器
 const { ccclass, property } = cc._decorator;
-
-// 声明全局 Utility 类型（兼容原代码中的 Utility.getDisplayJackpotMoney 调用）
-declare const Utility: {
-    getDisplayJackpotMoney(prevMoney: number, currentMoney: number): number;
-};
 
 /**
  * Jackpot 奖金展示组件（带最大长度限制）

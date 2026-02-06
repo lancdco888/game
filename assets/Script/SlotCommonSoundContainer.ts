@@ -7,7 +7,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass()
 export class SlotCommonSoundInfo {
     // 音效ID
-    @property({ type: cc.String, displayName: '音效ID' })
+    @property({ displayName: '音效ID' })
     soundId: string = "";
 
     // 音效资源

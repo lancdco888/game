@@ -326,10 +326,15 @@ export default class ReelController_Zhuquefortune extends ReelController_Base {
         const spinState = new State();
         let moveAction: cc.Action = null;
 
+        let reelStripCom = reelStrip.getReel(reelComp.reelindex)
+
         // 1. 旋转开始回调
         spinState.addOnStartCallback(() => {
             reelComp.setReelSpinDirection(Reel.SPINDIRECTION_DOWN);
-            reelStrip.checkBlankSymbolAndControlNextSymbolIndex(reelComp);
+
+           
+
+            reelStripCom.checkBlankSymbolAndControlNextSymbolIndex(reelComp);
 
             // 获取旋转控制配置
             const spinControlInfo = SlotUIRuleManager.Instance.getSpinControlInfo(subGameKey)?.infoList[reelComp.reelindex];
@@ -348,8 +353,8 @@ export default class ReelController_Zhuquefortune extends ReelController_Base {
             // 执行滚轮移动动作
             const moveByAction = cc.moveBy(spinTime, new cc.Vec2(0, -moveDistance));
             reelComp.setNextSymbolIdCallback(() => {
-                const nextSymbolId = reelStrip.getNextSymbolId();
-                reelStrip.increaseNextSymbolIndex();
+                const nextSymbolId = reelStripCom.getNextSymbolId();
+                reelStripCom.increaseNextSymbolIndex();
                 return nextSymbolId;
             });
 

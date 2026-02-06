@@ -6,54 +6,47 @@ import SymbolAni from "../../Slot/SymbolAni";
 import ReelMachine_Zhuquefortune from "./ReelMachine_Zhuquefortune";
 import SlotManager from "../../manager/SlotManager";
 import RemainCountComponent_Zhuquefortune from "./RemainCountComponent_Zhuquefortune";
-import SlotGameResultManager from "../../manager/SlotGameResultManager";
+import SlotGameResultManager, { Cell } from "../../manager/SlotGameResultManager";
 import TSUtility from "../../global_utility/TSUtility";
 import SlotSoundController from "../../Slot/SlotSoundController";
 import UIComponent_Zhuquefortune from "./UIComponent_Zhuquefortune";
-import BottomUIText, { BottomTextType } from "../../SubGame/BottomUIText";
+import { BottomTextType } from "../../SubGame/BottomUIText";
 import SlotGameRuleManager from "../../manager/SlotGameRuleManager";
 import LockNRollUpgradeFX_Zhuquefortune from "./LockNRollUpgradeFX_Zhuquefortune";
-import CaculateComponent_Zhuquefortune from "./CaculateComponent_Zhuquefortune";
 import Reel from "../../Slot/Reel";
 import LockMovePotComponent_Zhuquefortune from "./LockMovePotComponent_Zhuquefortune";
 import SpecialSymbolComponent_Zhuquefortune from "./SpecialSymbolComponent_Zhuquefortune";
+import CalcMoveComponent_Zhuquefortune from "./CalcMoveComponent_Zhuquefortune";
 
 const { ccclass, property } = cc._decorator;
 
-// 定义 Cell 类型（对应 SlotGameResultManager.Cell）
-interface Cell {
-    col: number;
-    row: number;
-}
 
-/**
- * 朱雀运势 Lock 核心组件
- * 负责锁符号管理、奖金计算、Jackpot 收集、特效播放、节点层级重置等核心业务
- */
-@ccclass("LockComponent_Zhuquefortune")
+@ccclass()
 export default class LockComponent_Zhuquefortune extends cc.Component {
     // 锁符号根节点（所有锁符号都添加到该节点下）
     @property(cc.Node)
-    public lock_Node: cc.Node | null = null;
+    public lock_Node: cc.Node = null;
 
     // 收集特效节点
     @property(cc.Node)
-    public collectFX_Node: cc.Node | null = null;
+    public collectFX_Node: cc.Node = null;
 
     // 升级特效组件（保留原代码拼写 upgreade → upgrade，避免影响业务调用）
     @property(LockNRollUpgradeFX_Zhuquefortune)
-    public upgreadeFX: LockNRollUpgradeFX_Zhuquefortune | null = null;
+    public upgreadeFX: LockNRollUpgradeFX_Zhuquefortune = null;
 
     // Jackpot 收集移动组件
     @property(LockMovePotComponent_Zhuquefortune)
-    public collectMove_Node: LockMovePotComponent_Zhuquefortune | null = null;
+    public collectMove_Node: LockMovePotComponent_Zhuquefortune = null;
 
     // 奖金计算移动组件
-    @property(CaculateComponent_Zhuquefortune)
-    public caculateMove_Node: CaculateComponent_Zhuquefortune | null = null;
+    @property(CalcMoveComponent_Zhuquefortune)
+    public caculateMove_Node: CalcMoveComponent_Zhuquefortune = null;
+
+  
 
     // 私有变量：5x3 锁符号节点二维数组（对应 5 列 3 行卷轴）
-    private _lockNodes: (cc.Node | null)[][] = [
+    private _lockNodes: (cc.Node)[][] = [
         [null, null, null],
         [null, null, null],
         [null, null, null],
@@ -62,7 +55,7 @@ export default class LockComponent_Zhuquefortune extends cc.Component {
     ];
 
     // 私有变量：5x3 结果信息二维数组（存储对应位置的奖金/符号信息）
-    private _resultInfos: (any | null)[][] = [
+    private _resultInfos: (any)[][] = [
         [null, null, null],
         [null, null, null],
         [null, null, null],
@@ -337,7 +330,7 @@ export default class LockComponent_Zhuquefortune extends cc.Component {
                     // 更新底部总获胜奖金文本
                     SlotManager.Instance.bottomUIText.setWinMoney(this._winMoney, "TOTAL WIN");
                     // 清除所有计算动画
-                    this.caculateMove_Node.clearAllAnis();
+                    // this.caculateMove_Node.clearAllAnis();
                     // 执行完成回调
                     if (TSUtility.isValid(onComplete)) {
                         onComplete!();
@@ -443,17 +436,17 @@ export default class LockComponent_Zhuquefortune extends cc.Component {
         if (!reelMachine || !reelMachine.lockNRoll_Reels[reelIndex]) return;
 
         const reelNode = reelMachine.lockNRoll_Reels[reelIndex].node;
-        this.caculateMove_Node.moveJackpotCalculate(reelNode, resultInfo, () => {
-            if (!winningResult) return;
+        // this.caculateMove_Node.moveJackpotCalculate(reelNode, resultInfo, () => {
+        //     if (!winningResult) return;
 
-            // 9. 更新总获胜奖金并播放数字变化动画
-            const currentWinMoney = this._winMoney;
-            this._winMoney += winningResult.winningCoin;
+        //     // 9. 更新总获胜奖金并播放数字变化动画
+        //     const currentWinMoney = this._winMoney;
+        //     this._winMoney += winningResult.winningCoin;
 
-            const bottomUIText = SlotManager.Instance.bottomUIText;
-            bottomUIText.setBottomTextInfo(BottomTextType.CustomData, "TOTAL WIN");
-            bottomUIText.playChangeWinMoney(currentWinMoney, this._winMoney, () => {}, false, 0.5);
-        });
+        //     const bottomUIText = SlotManager.Instance.bottomUIText;
+        //     bottomUIText.setBottomTextInfo(BottomTextType.CustomData, "TOTAL WIN");
+        //     bottomUIText.playChangeWinMoney(currentWinMoney, this._winMoney, () => {}, false, 0.5);
+        // });
 
         // 10. 延迟重置层级并执行回调
         this.scheduleOnce(() => {
@@ -472,7 +465,7 @@ export default class LockComponent_Zhuquefortune extends cc.Component {
         const zhuquefortuneManager = ZhuquefortuneManager.getInstance();
         if (!this.lock_Node || !this.collectFX_Node || !this.collectMove_Node || !zhuquefortuneManager) return;
 
-        let targetCell: Cell | null = null;
+        let targetCell: Cell = null;
         const toCollectCells: Cell[] = [];
 
         // 1. 查找目标格子（10 类型符号）和待收集格子（9 类型符号）
@@ -483,9 +476,9 @@ export default class LockComponent_Zhuquefortune extends cc.Component {
                 const symbolType = Math.floor(symbolValue / 10);
 
                 if (symbolType === 10) {
-                    targetCell = { col, row };
+                    targetCell = new Cell(col, row);
                 } else if (symbolType === 9) {
-                    toCollectCells.push({ col, row });
+                    toCollectCells.push(new Cell(col, row));
                 }
             }
         }

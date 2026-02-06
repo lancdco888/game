@@ -51,7 +51,7 @@ class MultiComponent {
  * 1. 管理多个MultiComponent单元，支持批量添加/移除节点
  * 2. 根据索引激活指定单元的组件，停用其他单元的组件
  */
-@ccclass('MultiComponentActivator')
+@ccclass()
 export default class MultiComponentActivator extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 多组件激活单元数组 */
@@ -63,7 +63,7 @@ export default class MultiComponentActivator extends cc.Component {
     public multis: MultiComponent[] = [];
 
     /** 要激活/禁用的组件名称 */
-    @property(String)
+    @property()
     public compName: string = "";
 
     // ====== 私有状态属性 ======

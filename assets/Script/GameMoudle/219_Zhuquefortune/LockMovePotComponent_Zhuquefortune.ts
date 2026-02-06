@@ -11,7 +11,7 @@ const { ccclass, property } = cc._decorator;
  * Lock N Roll 模式专属 Jackpot 移动收集组件
  * 负责 Lock 模式下 Jackpot 从起始坐标到目标坐标的移动动画、预制体管理、音效同步与状态清理
  */
-@ccclass("LockMovePotComponent_Zhuquefortune")
+@ccclass()
 export default class LockMovePotComponent_Zhuquefortune extends cc.Component {
     // ===== 序列化属性（编辑器绑定）=====
     // 承载移动预制体的父节点（所有实例化的 Jackpot 移动预制体都添加到该节点下）
@@ -28,6 +28,10 @@ export default class LockMovePotComponent_Zhuquefortune extends cc.Component {
 
     // 单个 Jackpot 符号的高度（用于坐标计算）
     private _height: number = 138;
+
+    constructor(){
+        super()
+    }
 
     /**
      * 执行 Lock 模式下 Jackpot 收集移动动画

@@ -26,7 +26,7 @@ export const ServiceMode = cc.Enum({
 export default class SlotContentSelector_Editor extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 内容索引（内部存储值） */
-    @property({ type: Number, displayName: "Content Index" })
+    @property({ displayName: "Content Index" })
     private _contentIndex: number = 0;
 
     /** 内容索引（对外访问的属性，关联ServiceMode枚举） */

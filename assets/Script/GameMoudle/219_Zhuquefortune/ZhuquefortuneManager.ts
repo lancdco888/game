@@ -108,7 +108,7 @@ export default class ZhuquefortuneManager extends SlotManager {
 
         // 注册游戏规则观察者、初始化奖池
         SlotGameRuleManager.Instance.addObserver(this.node);
-        const potComponent = this.game_components?.potComponent?.getComponent(PotComponent_Zhuquefortune);
+        const potComponent = this.game_components.potComponent.getComponent(PotComponent_Zhuquefortune);
         potComponent.initPot();
         potComponent.updateSuperPot();
         potComponent.setSuperPot(true);
