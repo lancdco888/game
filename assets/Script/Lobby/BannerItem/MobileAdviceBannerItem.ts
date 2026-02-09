@@ -9,7 +9,7 @@ const { ccclass } = cc._decorator;
  * 移动端安装建议横幅组件
  * 继承自通用横幅基类，处理安装建议横幅的点击事件（播放音效+打开安装建议弹窗）
  */
-@ccclass('MobileAdviceBannerItem')
+@ccclass()
 export default class MobileAdviceBannerItem extends CommonBannerItem {
     /**
      * 按钮点击事件处理

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1e6f13bf-7c4f-47d4-b0be-356f07964088",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 86,
+  "height": 91,
+  "platformSettings": {},
+  "subMetas": {
+    "80_UI_Paytable_Nomal": {
+      "ver": "1.0.6",
+      "uuid": "7bb6efb8-308d-40fd-a063-9d14d7191a7c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1e6f13bf-7c4f-47d4-b0be-356f07964088",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 2,
+      "trimX": 3,
+      "trimY": 4,
+      "width": 81,
+      "height": 79,
+      "rawWidth": 86,
+      "rawHeight": 91,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

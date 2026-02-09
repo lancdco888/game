@@ -1,0 +1,104 @@
+{
+  "_name": "Fx_Move_J_B_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.ParticleSystem": {
+        "emissionRate": [
+          {
+            "frame": 0,
+            "value": 0
+          },
+          {
+            "frame": 0.016666666666666666,
+            "value": 200
+          },
+          {
+            "frame": 0.5833333333333334,
+            "value": 200
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": 0
+          }
+        ]
+      }
+    },
+    "paths": {
+      "J1/Trail": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": true
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": false
+            }
+          ]
+        }
+      },
+      "J1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.65,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.016666666666666666,
+              "curve": "quartOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0.8
+              }
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 0.8
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 0.8
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

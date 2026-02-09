@@ -10,7 +10,7 @@ const { ccclass } = cc._decorator;
  * Super25Deluxe slot game manager, extends base SlotManager
  * Implements game-specific logic for Super25Deluxe slot
  */
-@ccclass('Super25DeluxeManager')
+@ccclass()
 export default class Super25DeluxeManager extends SlotManager {
 
     /**

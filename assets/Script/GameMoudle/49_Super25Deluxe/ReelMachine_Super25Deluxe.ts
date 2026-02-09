@@ -9,7 +9,7 @@ const { ccclass } = cc._decorator;
  * 继承自公共基础转轮机器类，用于实现该游戏的转轮逻辑
  * 目前无额外扩展逻辑，直接复用基础类功能
  */
-@ccclass('ReelMachine_Super25Deluxe') // 指定类名便于编辑器识别
+@ccclass() // 指定类名便于编辑器识别
 export default class ReelMachine_Super25Deluxe extends ReelMachine_Base {
     // 构造函数自动继承父类，无额外初始化逻辑时可省略显式定义
     constructor(){

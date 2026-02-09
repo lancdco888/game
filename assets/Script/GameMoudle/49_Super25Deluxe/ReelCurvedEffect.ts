@@ -186,10 +186,10 @@ export default class ReelCurvedEffect extends ReelShaderEffect {
      */
     setProgram(node: cc.Node) {
         const sprites = node.getComponentsInChildren(cc.Sprite);
-        sprites.forEach(sprite => sprite.setMaterial(0, this.mat));
+        // sprites.forEach(sprite => sprite.setMaterial(0, this.mat));
         
-        const skeletons = node.getComponentsInChildren(sp.Skeleton);
-        skeletons.forEach(skeleton => skeleton.setMaterial(0, this.spineMat));
+        // const skeletons = node.getComponentsInChildren(sp.Skeleton);
+        // skeletons.forEach(skeleton => skeleton.setMaterial(0, this.spineMat));
     }
 
     /**

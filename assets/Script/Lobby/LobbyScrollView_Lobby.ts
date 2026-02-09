@@ -1,6 +1,5 @@
 const { ccclass } = cc._decorator;
 
-// ===================== 导入所有依赖模块 - 路径与原JS完全一致 精准无偏差 =====================
 import SDefine from "../global_utility/SDefine";
 import TSUtility from "../global_utility/TSUtility";
 import ServiceSlotDataManager from "../manager/ServiceSlotDataManager";
@@ -13,7 +12,7 @@ import LobbyScrollView from "../LobbyScrollView";
 import { LobbySceneUIType } from "../SceneInfo";
 import { ADBannerType } from "../manager/ADBannerDataManager";
 
-// ✅ 核心修复: 自定义Component组件 空@ccclass() 无类名 → 彻底根治类名指定报错
+
 @ccclass()
 export default class LobbyScrollView_Lobby extends LobbyScrollView {
     // ===================== 业务常量配置 - 原JS数值完整复刻 只读不可修改 符合TS最佳实践 =====================

@@ -19,6 +19,7 @@ import SoundManager from "../../manager/SoundManager";
 import GameComponents_TwilightDragon from "./GameComponents_TwilightDragon";
 import JackpotSymbol_TwilightDragon from "./JackpotSymbol_TwilightDragon";
 import ReelMachine_TwilightDragon from "./ReelMachine_TwilightDragon";
+import Symbol from "../../Slot/Symbol";
 
 const { ccclass: ccClassDecorator } = cc._decorator;
 
@@ -26,7 +27,7 @@ const { ccclass: ccClassDecorator } = cc._decorator;
  * 暮光龙（Twilight Dragon）子游戏状态管理器
  * 严格还原原 JS 逻辑，继承自 SubGameStateManager_Base，不额外拓展方法
  */
-@ccClassDecorator("SubGameStateManager_TwilightDragon")
+@ccClassDecorator()
 export default class SubGameStateManager_TwilightDragon extends SubGameStateManager_Base {
     // ======================================
     // 静态单例属性与方法（严格还原原 JS 单例模式）
@@ -1095,7 +1096,9 @@ export default class SubGameStateManager_TwilightDragon extends SubGameStateMana
                 const r = t[a];
                 const n = SlotManager.Instance.reelMachine.reels[r.col].getComponent(Reel);
                 n.showSymbolInRow(r.row);
-                n.getSymbol(r.row).getComponent(Symbol).setDimmActive(false);
+                var symNode = n.getSymbol(r.row)
+                var sym = symNode.getComponent(Symbol);
+                sym.setDimmActive(false);
             }
         }
     }

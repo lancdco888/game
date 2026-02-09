@@ -565,4 +565,8 @@ export default class LobbyScene extends cc.Component {
             resolve();
         });
     }
+
+    onClickTest(){
+        console.log("onClickTest")
+    }
 }

@@ -23,7 +23,7 @@ const { ccclass } = cc._decorator;
  * 子游戏状态管理基类
  * 负责奖金展示、符号动画、支付线渲染、音效控制等核心逻辑
  */
-@ccclass('SubGameStateManager_Base')
+@ccclass()
 export default class SubGameStateManager_Base {
     // ===================== 成员变量 =====================
     /** 符号名称列表 */

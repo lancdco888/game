@@ -35,7 +35,7 @@ export enum LobbyUIType {
 
 @ccclass()
 export default class LobbyUIBase extends cc.Component {
-    get eType(): LobbyUIType {
+    public get eType(): LobbyUIType {
         return LobbyUIType.NONE;
     }
 

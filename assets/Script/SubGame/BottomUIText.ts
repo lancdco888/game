@@ -633,8 +633,8 @@ export default class BottomUIText extends cc.Component {
 
         // 应用缩放和位置调整
         if (scale !== -1 || posY !== -1) {
-            const finalScale = cc.lerp(1, scale, clampedRatio);
-            const finalPosY = cc.lerp(0, posY, clampedRatio);
+            const finalScale = cc.misc.lerp(1, scale, clampedRatio);
+            const finalPosY = cc.misc.lerp(0, posY, clampedRatio);
             this.rootTextInfo.setScale(finalScale);
             this.rootTextInfo.y = this.defaultRootPosY + finalPosY;
         }

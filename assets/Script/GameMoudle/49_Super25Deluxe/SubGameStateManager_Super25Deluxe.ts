@@ -25,7 +25,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass()
 export default class SubGameStateManager_Super25Deluxe extends SubGameStateManager_Base {
     // ====================== 单例相关属性 ======================
-    private static _instance: SubGameStateManager_Super25Deluxe | null = null;
+    private static _instance: SubGameStateManager_Super25Deluxe = null;
     // ====================== 类内部属性 ======================
     private _isShowJackpotPopup: boolean = false;
     public actionSingleLine: cc.Action = null; // 单条支付线动画动作
@@ -239,7 +239,7 @@ export default class SubGameStateManager_Super25Deluxe extends SubGameStateManag
         state.addOnStartCallback(function() {
             const effectDuration = SlotManager.Instance.timeOfSymbolEffect * SlotManager.Instance.loopCountOfSymbolEffect;
             if (self.showTotalSymbolEffectDefault()) {
-                this.scheduleOnce(function() {
+                SlotManager.Instance.scheduleOnce(function() {
                     state.setDone();
                 }, effectDuration);
             } else {
@@ -352,7 +352,7 @@ export default class SubGameStateManager_Super25Deluxe extends SubGameStateManag
             if (SlotGameResultManager.Instance.getSpinResult().jackpotResults.length > 0) {
                 delayTime = 0.5;
             }
-            this.scheduleOnce(function() {
+            SlotManager.Instance.scheduleOnce(function() {
                 state.setDone();
             }, delayTime);
         });
@@ -408,11 +408,11 @@ export default class SubGameStateManager_Super25Deluxe extends SubGameStateManag
                 }
 
                 // 调度 Jackpot 动画和弹窗
-                this.scheduleOnce(function() {
+                SlotManager.Instance.scheduleOnce(function() {
                     SlotManager.Instance.getComponent(GameComponents_Super25Deluxe).jackpotUI.playJackpotAni();
                 }, 1.67);
 
-                this.scheduleOnce(function() {
+                SlotManager.Instance.scheduleOnce(function() {
                     SlotManager.Instance.bottomUIText.setWinMoney(totalJackpot);
                     SlotManager.Instance.showGameResultPopup(ResultPopupType.JackpotResultCommon, totalJackpot, 0, function() {
                         state.setDone();
@@ -558,13 +558,13 @@ export default class SubGameStateManager_Super25Deluxe extends SubGameStateManag
 
             if (self.showTotalSymbolEffectOnPaylines()) {
                 // 停止符号动画和暗化效果
-                this.scheduleOnce(function() {
+                SlotManager.Instance.scheduleOnce(function() {
                     SymbolAnimationController.Instance.stopAllAnimationSymbol();
                     SlotManager.Instance.reelMachine.setSymbolsDimmActive(false);
                 }, effectDuration);
 
                 // 完成状态
-                this.scheduleOnce(function() {
+                SlotManager.Instance.scheduleOnce(function() {
                     state.setDone();
                 }, effectDuration + 0.5);
             } else {

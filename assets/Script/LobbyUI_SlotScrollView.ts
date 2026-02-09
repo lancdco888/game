@@ -1,4 +1,5 @@
 import AutoScalingAdjuster from "./AutoScalingAdjuster";
+import LobbyScrollMasking from "./Lobby/LobbyScrollMasking";
 import LobbyScrollView from "./LobbyScrollView";
 import LobbySlotBannerInfo, { SlotBannerType } from "./LobbySlotBannerInfo";
 import LobbySlotObjectPool from "./LobbySlotObjectPool";
@@ -28,10 +29,13 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     scrollBar:UISliderScrollBar = null
 
 
+    @property(LobbyScrollMasking)
+    scrollMasking:LobbyScrollMasking = null
+
+
     MOVE_TARGET_DEFAULT_Y = 500
     MOVE_OVER_Y = 15
     SCALE_ADJUSTER_SCROLL_NAME = "ScrollView"
-    scrollMasking = null
     _sceneType:LobbySceneUIType = LobbySceneUIType.NONE
     _arrLobbyScrollView = []
     _scaleAdjuster = null
@@ -39,7 +43,6 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     _numCurrentScrollScale = 1
     _numPrevNodeY = 0
     public _objectPool: LobbySlotObjectPool = null;
-    // lobbyUIType: LobbySceneUIType;
 
     constructor(){
         super()
@@ -80,7 +83,6 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
 
     initialize = async function() {
         this._sceneType = LobbySceneUIType.NONE;
-        // this.scrollMasking.updateScrollView(this.getCurrentScrollView());
         this.setAutoScaleByResolution();
         var e = 1;
         if (TSUtility.isValid(this._scaleAdjuster)) {
@@ -98,7 +100,7 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
         for (; n >= 0; n--) {
             var o = this._arrLobbyScrollView[n];
             if (TSUtility.isValid(o)) {
-                o.node.active = !1;
+                o.node.active = false;
                 o.node.setPosition(cc.Vec2.ZERO);
                 await o.initialize(t);
             }
@@ -126,54 +128,68 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
     }
     
     async changeScrollViewType(e) {
+        console.log("changeScrollViewType:"+e+"-----------",this._sceneType)
         if (this._sceneType == LobbySceneUIType.NONE) {
             var i = this._arrLobbyScrollView.find(function(t) {
                 return t.typeScene === e;
             });
             i.node.setPosition(cc.Vec2.ZERO);
-            i.node.active = !0;
+            i.node.active = true;
             this.scrollBar.setScrollView(i.scrollView);
             this.scrollBar.setOnLeftButtonCallback(i.onMovePrevPage.bind(i));
             this.scrollBar.setOnRightButtonCallback(i.onMoveNextPage.bind(i));
         } else {
             var t = this._arrLobbyScrollView.find(function(e) {
                 return e.typeScene === this._sceneType;
-            }.bind(this)),
-            n = this._arrLobbyScrollView.find(function(t) {
+            }.bind(this))
+
+            var n = this._arrLobbyScrollView.find(function(t) {
                 return t.typeScene === e;
-            }),
-            o = t.typeScene < n.typeScene;
+            })
+
+            var o = t.typeScene < n.typeScene;
+
+            console.log("o:"+o)
+
+
             this.nodeMoveA.stopAllActions();
             this.nodeMoveB.stopAllActions();
             t.scrollView.stopAutoScroll();
             n.scrollView.stopAutoScroll();
             t.node.parent = o ? this.nodeMoveA : this.nodeMoveB;
             t.node.setPosition(cc.Vec2.ZERO);
-            t.node.active = !0;
+            t.node.active = true;
             n.node.parent = o ? this.nodeMoveB : this.nodeMoveA;
             n.node.setPosition(cc.Vec2.ZERO);
-            n.node.active = !0;
+            n.node.active = true;
             n.MoveToFirst(0);
             n.onRefresh();
+
             var a = this.MOVE_TARGET_DEFAULT_Y * this._numCurrentScrollScale;
             this.nodeMoveA.opacity = o ? 255 : 0;
             this.nodeMoveB.opacity = o ? 0 : 255;
             this.nodeMoveA.setPosition(o ? cc.Vec2.ZERO : cc.v2(0, a));
             this.nodeMoveB.setPosition(o ? cc.v2(0, -a) : cc.Vec2.ZERO);
-            o ? (this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, a + this.MOVE_OVER_Y)), cc.sequence(cc.delayTime(.15), cc.fadeOut(.15))), cc.moveTo(.05, cc.v2(0, a)))),
-            this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(.05, cc.Vec2.ZERO)))) : (this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, -this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(.05, cc.Vec2.ZERO))),
-            this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, -(a + this.MOVE_OVER_Y))), cc.sequence(cc.delayTime(.15), cc.fadeOut(.15))), cc.moveTo(.05, cc.v2(0, -a)))));
+
+            o ? (
+                this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, a + this.MOVE_OVER_Y)), cc.sequence(cc.delayTime(.15), cc.fadeOut(.15))), cc.moveTo(.05, cc.v2(0, a)))),
+            this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(.05, cc.Vec2.ZERO)))
+            ) : (
+                this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, -this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(.05, cc.Vec2.ZERO))),
+                this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, -(a + this.MOVE_OVER_Y))), cc.sequence(cc.delayTime(.15), cc.fadeOut(.15))), cc.moveTo(.05, cc.v2(0, -a))))
+            );
             await AsyncHelper.delayWithComponent(.35, this);
             n.playOpenAction(o);
-            t.node.active = !1;
+            t.node.active = false;
             t.node.parent = this._nodeScrollViewRoot;
             n.node.parent = this._nodeScrollViewRoot;
             this.scrollBar.setScrollView(n.scrollView);
             this.scrollBar.setOnLeftButtonCallback(n.onMovePrevPage.bind(n));
             this.scrollBar.setOnRightButtonCallback(n.onMoveNextPage.bind(n));
         }
+
         this._sceneType = this.lobbyUIType;
-        // this.scrollMasking.updateScrollView(this.getCurrentScrollView());
+        this.scrollMasking.updateScrollView(this.getCurrentScrollView());
     }
     
     preloadSlotBanner =  async function() {

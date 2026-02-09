@@ -11,7 +11,7 @@ const { ccclass, property } = cc._decorator;
  * 会员等级提升（普通版）横幅组件
  * 继承自通用横幅基类，负责显示提升剩余时间、Boosted等级图标，点击打开提升弹窗
  */
-@ccclass('MembersBoostUpNormalBannerItem')
+@ccclass()
 export default class MembersBoostUpNormalBannerItem extends CommonBannerItem {
     // ===== 序列化组件属性 =====
     /** 剩余时间显示标签 */
