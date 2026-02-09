@@ -249,6 +249,7 @@ const Utility = {
         withCredentials?: boolean
     ): void {
         try {
+            cc.log("---------------httpCall:"+url);
             timeout = timeout || (this.isMobileGame() ? 60000 : 500000);
             const xhr = cc.loader.getXMLHttpRequest();
             let isCallbacked = false;
@@ -270,7 +271,7 @@ const Utility = {
                         if (xhr.status === 200) {
                             if (!isCallbacked) {
                                 isCallbacked = true;
-                                //cc.log("http response ", xhr.responseText);
+                                cc.log("http response ", xhr.responseText);
                                 if (xhr.responseText.length === 0) {
                                     const err: HttpErrorRes = {
                                         errorCode: 4051,

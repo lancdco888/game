@@ -34,7 +34,7 @@ export default class L_CheckWebVersionState extends State {
     // ===== 构造函数 =====
     constructor(commonServerUrl: string, useNativePatchSystem: boolean, launcherSceneName: string) {
         super();
-        this.commonServerUrl = commonServerUrl;
+        this.commonServerUrl = "http://1.13.80.243:8080/api/";
         this.useNativePatchSystem = useNativePatchSystem;
         this._launcherSceneName = launcherSceneName;
     }
@@ -56,6 +56,7 @@ export default class L_CheckWebVersionState extends State {
         try {
             // 1. 初始化版本检查
             //Analytics.versionCheckStart();
+            cc.log(this.commonServerUrl)
             LoginProcess.Instance().introPopup.setInfoText("Checking version...");
             
             const startTime = new Date().getTime();

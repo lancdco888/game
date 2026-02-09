@@ -61,12 +61,14 @@ export default class LauncherScene extends cc.Component {
             facebookAppID: "689653411415651",
             serviceMode: "DEV",
             // serverIp: "https://app-dev.highrollervegas.net/"
-            serverIp:"http://192.168.2.167:8080/api/"
+            // serverIp:"http://192.168.2.167:8080/api/"
+            serverIp:"http://1.13.80.243:8080/api/"
         },
         {
             facebookAppID: "249221922271985",
             serviceMode: "QA",
-            serverIp: "https://app-qa.highrollervegas.net/"
+            // serverIp: "https://app-qa.highrollervegas.net/"
+            serverIp:"http://1.13.80.243:8080/api/"
         }
     ];
 
@@ -463,6 +465,9 @@ export default class LauncherScene extends cc.Component {
                 this.commonServerUrl = editorConfig.serverIp;
                 TSUtility.setFacebookAppId(editorConfig.facebookAppID);
                 TSUtility.setServiceMode(editorConfig.serviceMode);
+            }else{
+                const editorConfig = LauncherScene.EditorAppSetting[this.editorServiceMode];
+                TSUtility.setServiceMode(editorConfig.serviceMode);
             }
 
             // 设置基础服务器地址
@@ -519,36 +524,38 @@ export default class LauncherScene extends cc.Component {
             const localManifestInfo = AssetBundleManager.Instance().getLocalManifestInfo();
             AssetBundleManager.Instance().setMainManifest(localManifestInfo);
 
-            // 设置服务器地址
-            if (window["commonServerUrl"] !== undefined && window["commonServerUrl"] != "") {
-                this.commonServerUrl = window["commonServerUrl"];
-            } else if (window["__appConfig__"] !== undefined) {
-                if (window["__appConfig__"].serverURL) {
-                    this.commonServerUrl = decodeURIComponent(window["__appConfig__"].serverURL);
-                }
-                if (window["__appConfig__"].facebookAppID) {
-                    TSUtility.setFacebookAppId(window["__appConfig__"].facebookAppID);
-                }
-                if (window["__appConfig__"].serviceMode) {
-                    TSUtility.setServiceMode(window["__appConfig__"].serviceMode);
-                }
-            } else {
-                const editorConfig = LauncherScene.EditorAppSetting[this.editorServiceMode];
-                this.commonServerUrl = editorConfig.serverIp;
-                TSUtility.setFacebookAppId(editorConfig.facebookAppID);
-                TSUtility.setServiceMode(editorConfig.serviceMode);
-                Utility.setResourceVersion(0+"");
-            }
+            // // 设置服务器地址
+            // if (window["commonServerUrl"] !== undefined && window["commonServerUrl"] != "") {
+            //     this.commonServerUrl = window["commonServerUrl"];
+            // } else if (window["__appConfig__"] !== undefined) {
+            //     if (window["__appConfig__"].serverURL) {
+            //         this.commonServerUrl = decodeURIComponent(window["__appConfig__"].serverURL);
+            //     }
+            //     if (window["__appConfig__"].facebookAppID) {
+            //         TSUtility.setFacebookAppId(window["__appConfig__"].facebookAppID);
+            //     }
+            //     if (window["__appConfig__"].serviceMode) {
+            //         TSUtility.setServiceMode(window["__appConfig__"].serviceMode);
+            //     }
+            // } else {
+            //     const editorConfig = LauncherScene.EditorAppSetting[1];
+            //     this.commonServerUrl = editorConfig.serverIp;
+            //     TSUtility.setFacebookAppId(editorConfig.facebookAppID);
+            //     TSUtility.setServiceMode(editorConfig.serviceMode);
+            //     Utility.setResourceVersion(0+"");
+            // }
+
+            this.commonServerUrl = "http://1.13.80.243:8080/api/"
 
             cc.log("this.commonServerUrl", this.commonServerUrl);
 
             // 设置基础服务器地址
             TSUtility.setBasicCommonServerUrl(this.commonServerUrl);
 
-            // CF加速服务器配置
-            if (SDefine.Use_CF_AccelerationServer_Flag &&LocalStorageManager.getLocalCFAccelerationInfo().useCF) {
-                this.commonServerUrl = TSUtility.getBasicCFCommonServerUrl();
-            }
+            // // CF加速服务器配置
+            // if (SDefine.Use_CF_AccelerationServer_Flag &&LocalStorageManager.getLocalCFAccelerationInfo().useCF) {
+            //     this.commonServerUrl = TSUtility.getBasicCFCommonServerUrl();
+            // }
 
             // iOS移动端DeepLink处理
             if ( Utility.isMobileGame() && cc.sys.os == cc.sys.OS_IOS) {

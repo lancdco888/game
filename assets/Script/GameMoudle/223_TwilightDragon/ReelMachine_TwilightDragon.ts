@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）卷轴机器组件
  * 严格还原原 JS 逻辑，继承自 ReelMachine_Base，不额外拓展方法
  */
-@ccclass("ReelMachine_TwilightDragon")
+@ccclass()
 export default class ReelMachine_TwilightDragon extends ReelMachine_Base {
     // ======================================
     // 严格还原原 JS 的 getFreeSpinReelStateRenewal 方法

@@ -40514,7 +40514,9 @@
     },
     "_enabled": true,
     "alignMode": 2,
-    "_target": null,
+    "_target": {
+      "__id__": 800
+    },
     "_alignFlags": 40,
     "_left": 106.5,
     "_right": 0,
@@ -42425,12 +42427,14 @@
     },
     "_enabled": true,
     "alignMode": 0,
-    "_target": null,
+    "_target": {
+      "__id__": 2
+    },
     "_alignFlags": 45,
-    "_left": -640,
-    "_right": -640,
-    "_top": -360,
-    "_bottom": -360,
+    "_left": 0,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
     "_isAbsLeft": true,
@@ -48730,7 +48734,9 @@
     },
     "_enabled": true,
     "alignMode": 2,
-    "_target": null,
+    "_target": {
+      "__id__": 2
+    },
     "_alignFlags": 33,
     "_left": 0,
     "_right": 0,
@@ -60492,7 +60498,9 @@
     },
     "_enabled": true,
     "alignMode": 2,
-    "_target": null,
+    "_target": {
+      "__id__": 2
+    },
     "_alignFlags": 9,
     "_left": 0,
     "_right": 0,
@@ -65714,7 +65722,9 @@
     },
     "_enabled": true,
     "alignMode": 2,
-    "_target": null,
+    "_target": {
+      "__id__": 2
+    },
     "_alignFlags": 8,
     "_left": 0,
     "_right": 0,
