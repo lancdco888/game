@@ -449,7 +449,7 @@ export default class ReelController_Base extends cc.Component {
     }
 
     // ===================== 业务方法 - 添加旋转结束的缓动回调函数 =====================
-    public addEasingFuncListOnStopEasing(easingInfo: EasingInfo): void {
+    public addEasingFuncListOnStopEasing(easingInfo: EasingInfo|any): void {
         for (let i = 0; i < this.easingFuncListOnSpinEnd.length; ++i) {
             easingInfo.onEasingStartFuncList.push(this.easingFuncListOnSpinEnd[i]);
         }

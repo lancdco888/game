@@ -139,7 +139,7 @@ export default class SlotManager extends cc.Component {
     public fixedBottomUI: cc.Node = null;
 
     // ===================== 【私有成员变量】海量属性 - 补全精准TS类型注解，默认值完全保留 ✅ =====================
-    private curState: State = null;
+    public curState: State = null;
     public isSkipCurrentSpin: boolean = false;
     public bottomUIText:BottomUIText = null;
     private flagPlayingSubgame: boolean = false;
