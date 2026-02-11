@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
  * Jackpot 奖金展示组件（带最大长度限制）
  * 负责 Jackpot 奖金的定时滚动更新、金额格式化、省略位数计算、播放状态控制
  */
-@ccclass("JackpotMoneyDisplay_WithMaxLength")
+@ccclass()
 export default class JackpotMoneyDisplay_WithMaxLength extends cc.Component {
     // 各级 Jackpot 奖金标签
     @property(cc.Label)

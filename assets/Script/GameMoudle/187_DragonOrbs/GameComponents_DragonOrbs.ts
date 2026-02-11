@@ -23,7 +23,7 @@ import WheelLeftUI_DragonOrbs from './WheelLeftUI_DragonOrbs';
  * 龙珠游戏核心UI/功能组件
  * 管理免费旋转选择弹窗、Jackpot预期特效、龙形UI动画、滚轮锁定判断、倍数组件等核心逻辑
  */
-@ccclass('GameComponents_DragonOrbs')
+@ccclass()
 export default class GameComponents_DragonOrbs extends GameComponents_Base {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 顶部UI组件 */

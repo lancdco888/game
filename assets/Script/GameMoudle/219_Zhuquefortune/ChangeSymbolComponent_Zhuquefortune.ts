@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * 符号切换与奖金展示组件
  * 负责根据符号ID切换对应符号节点，计算并展示奖金金额，区分普通奖金与高额奖金标签显示
  */
-@ccclass("ChangeSymbolComponent_Zhuquefortune")
+@ccclass()
 export default class ChangeSymbolComponent_Zhuquefortune extends cc.Component {
     // 普通符号节点数组（对应不同符号ID，索引与符号ID映射）
     @property([cc.Node])

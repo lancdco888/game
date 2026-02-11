@@ -1,0 +1,2027 @@
+{
+  "_name": "Normal_Win_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "particle": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 1000
+              },
+              {
+                "frame": 0.08333333333333333,
+                "value": 1000
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": 0
+              }
+            ]
+          }
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1,
+              "value": false
+            }
+          ]
+        }
+      },
+      "circleLight_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 0.5,
+              "value": 150
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Rotation_Coin_01": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 97,
+              "curve": [
+                0.28,
+                0.07,
+                0.95,
+                0.79
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 171,
+              "curve": [
+                0.06,
+                0.12,
+                0.68,
+                0.93
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": 303
+            },
+            {
+              "frame": 1,
+              "value": 303
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 2,
+              "curve": [
+                0,
+                0.23,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 105,
+              "curve": [
+                0.4,
+                0,
+                0.99,
+                0.62
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": -288
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.2,
+              "value": 0.32
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 0.48
+            },
+            {
+              "frame": 0.75,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.2,
+              "value": 0.32
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 0.48
+            },
+            {
+              "frame": 0.75,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -30
+            },
+            {
+              "frame": 0.75,
+              "value": -70
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_02": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.3,
+                0.05,
+                0.97,
+                0.79
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 26.1,
+              "curve": [
+                0.06,
+                0.12,
+                0.69,
+                0.94
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 110.6
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 36.9,
+              "curve": [
+                0.01,
+                0.29,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 187.5,
+              "curve": [
+                0.4,
+                0,
+                0.98,
+                0.65
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -270.3
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.25,
+              "value": 0.32
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0.48
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.25,
+              "value": 0.32
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0.48
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -30
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_03": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -112.1,
+              "curve": [
+                0.36,
+                0.13,
+                0.91,
+                0.69
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": -149,
+              "curve": [
+                0.07,
+                0.18,
+                0.69,
+                0.89
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -302.6
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": -3.1,
+              "curve": [
+                0.01,
+                0.29,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": 132.1,
+              "curve": [
+                0.4,
+                0,
+                1,
+                0.67
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -287.3
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.32
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.48
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.32
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.48
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 50
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_04": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -62.8,
+              "curve": [
+                0.27,
+                0.07,
+                0.87,
+                0.78
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": -75.1,
+              "curve": [
+                0.1,
+                0.25,
+                0.72,
+                0.9
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -155
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 13.2,
+              "curve": [
+                0.01,
+                0.31,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 162.2,
+              "curve": [
+                0.4,
+                0,
+                0.99,
+                0.66
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -306
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 0.32
+            },
+            {
+              "frame": 0.4,
+              "value": 0.48
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 0.32
+            },
+            {
+              "frame": 0.4,
+              "value": 0.48
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 30
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.85,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_05": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 27.3,
+              "curve": [
+                0.32,
+                0.1,
+                0.94,
+                0.77
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": 71.5,
+              "curve": [
+                0.06,
+                0.12,
+                0.63,
+                0.87
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": 150.7
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 13,
+              "curve": [
+                0.02,
+                0.32,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": 157.4,
+              "curve": [
+                0.4,
+                0,
+                1,
+                0.59
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": -265
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.32
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.48
+            },
+            {
+              "frame": 0.75,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.32
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.48
+            },
+            {
+              "frame": 0.75,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 30
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_06": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.08333333333333333,
+              "value": -3.4
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": -30.8
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -107.7
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0,
+              "curve": [
+                0.02,
+                0.25,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 144.9,
+              "curve": [
+                0.4,
+                0,
+                0.99,
+                0.61
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -243.8
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0.3
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 0.32
+            },
+            {
+              "frame": 0.45,
+              "value": 0.48
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0.3
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 0.32
+            },
+            {
+              "frame": 0.45,
+              "value": 0.6
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.08333333333333333,
+              "value": -50
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": -80
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.08333333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.13333333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.18333333333333332,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.23333333333333334,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2833333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.38333333333333336,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.48333333333333334,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5333333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6333333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6833333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7333333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7833333333333333,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_07": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.05,
+              "value": 106.5
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 164.3
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 281
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.05,
+              "value": 13.2,
+              "curve": [
+                0.01,
+                0.28,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 183.9,
+              "curve": [
+                0.4,
+                0,
+                1,
+                0.57
+              ]
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": -260.1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.05,
+              "value": 0
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.05,
+              "value": 0.3
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 0.32
+            },
+            {
+              "frame": 0.45,
+              "value": 0.48
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.05,
+              "value": 0.3
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 0.32
+            },
+            {
+              "frame": 0.45,
+              "value": 0.48
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0.5
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.05,
+              "value": 30
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.15,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.25,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.35,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.85,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.9,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_08": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -64
+            },
+            {
+              "frame": 0.4,
+              "value": -126
+            },
+            {
+              "frame": 0.85,
+              "value": -223
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": -16,
+              "curve": [
+                0,
+                0.23,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": 167,
+              "curve": [
+                0.4,
+                0,
+                0.99,
+                0.65
+              ]
+            },
+            {
+              "frame": 0.85,
+              "value": -305
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.85,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.3
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 0.32
+            },
+            {
+              "frame": 0.5,
+              "value": 0.48
+            },
+            {
+              "frame": 0.85,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.3
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 0.32
+            },
+            {
+              "frame": 0.5,
+              "value": 0.48
+            },
+            {
+              "frame": 0.85,
+              "value": 0.5
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.21666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.26666666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.31666666666666665,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.36666666666666664,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Rotation_Coin_09": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 6
+            }
+          ],
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0,
+              "curve": [
+                0.01,
+                0.28,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 214,
+              "curve": [
+                0.4,
+                0,
+                1,
+                0.64
+              ]
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": -290
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.3
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.32
+            },
+            {
+              "frame": 0.55,
+              "value": 0.48
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0.3
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.32
+            },
+            {
+              "frame": 0.55,
+              "value": 0.48
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0.5
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.21666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.26666666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.31666666666666665,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.36666666666666664,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.5666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.7666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8166666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.8666666666666667,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              },
+              {
+                "frame": 0.9166666666666666,
+                "value": {
+                  "__uuid__": "8cdb44ac-a3f6-449f-b354-7cd48cf84061"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

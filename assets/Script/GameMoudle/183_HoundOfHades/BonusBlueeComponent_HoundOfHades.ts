@@ -44,7 +44,7 @@ export class PrizeItem {
  * 2. 计算蓝色符号动画播放次数
  * 3. 分步执行蓝色符号动画、音效播放、奖金UI更新
  */
-@ccclass('BonusBlueeComponent_HoundOfHades')
+@ccclass()
 export default class BonusBlueeComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 符号骨骼动画组件 */

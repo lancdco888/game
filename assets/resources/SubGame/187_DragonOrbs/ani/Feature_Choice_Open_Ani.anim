@@ -1,0 +1,443 @@
+{
+  "_name": "Feature_Choice_Open_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4.016666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "0": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.5,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 255
+            }
+          ],
+          "position": [
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": [
+                -304,
+                19,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                -304,
+                49,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 255
+            }
+          ],
+          "position": [
+            {
+              "frame": 1.8333333333333333,
+              "curve": "sineInOut",
+              "value": [
+                296,
+                19,
+                0
+              ]
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": [
+                296,
+                49,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.6666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255
+            }
+          ],
+          "position": [
+            {
+              "frame": 1.6666666666666667,
+              "curve": "sineInOut",
+              "value": [
+                -21,
+                -204,
+                0
+              ]
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": [
+                -21,
+                -174,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Dim": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 100
+              }
+            ]
+          }
+        }
+      },
+      "Dragon": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Dragon/Enter": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": true
+            },
+            {
+              "frame": 4.016666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Dragon/Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 4,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Title_Result": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Title_Choice": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 2,
+              "value": 1
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 2,
+              "value": 285,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2.5,
+              "value": 265
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Bg_Fx": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "0/Pivot/Before": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        },
+        "comps": {}
+      },
+      "1/Pivot/Before": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "2/Pivot/Before": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "2/Pivot/After": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "1/Pivot/After": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "0/Pivot/After": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "0/Pivot/Choice_Win_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "2/Pivot/Choice_Win_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "1/Pivot/Choice_Win_Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Bg_Fx_Result": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Result_Aura": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "0/Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.54,
+                "y": 0.54,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "1/Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.54,
+                "y": 0.54,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "2/Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.54,
+                "y": 0.54,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

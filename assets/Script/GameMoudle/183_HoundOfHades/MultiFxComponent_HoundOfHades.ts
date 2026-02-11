@@ -6,7 +6,7 @@ const { ccclass, property } = cc._decorator;
  * 1. 生成红色符号移动特效并播放位置移动动画
  * 2. 清理所有已生成的特效节点
  */
-@ccclass('MultiFxComponent_HoundOfHades')
+@ccclass()
 export default class MultiFxComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 移动特效预制体 */

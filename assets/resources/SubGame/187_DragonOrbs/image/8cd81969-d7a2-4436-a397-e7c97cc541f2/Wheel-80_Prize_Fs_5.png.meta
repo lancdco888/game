@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ca9f3deb-cd35-4d72-93f8-5af6ce250c7e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 43,
+  "height": 61,
+  "platformSettings": {},
+  "subMetas": {
+    "Wheel-80_Prize_Fs_5": {
+      "ver": "1.0.6",
+      "uuid": "52099a42-4cc9-4040-8218-b85fe83e6bca",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ca9f3deb-cd35-4d72-93f8-5af6ce250c7e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 43,
+      "height": 61,
+      "rawWidth": 43,
+      "rawHeight": 61,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

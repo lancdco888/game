@@ -127,9 +127,9 @@ export default class LobbySceneUI extends cc.Component {
         await this.initialize(oldType);
 
         // 滚动视图归位
-        const scrollView = this.getScrollView();
+        const scrollView = this.getScrollView() as any;
         if (TSUtility.isValid(scrollView)) {
-            // scrollView.moveFirstPosition();
+            scrollView.moveFirstPosition();
         }
 
         PopupManager.Instance().showDisplayProgress(false);

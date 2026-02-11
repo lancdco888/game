@@ -6,7 +6,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）移动对象层管理类
  * 继承自 cc.Component，管控普通道具、免费旋转奖励、Orb 球体的实例化、动画与移除
  */
-@ccclass("MovingObjectLayer_TwilightDragon")
+@ccclass()
 export default class MovingObjectLayer_TwilightDragon extends cc.Component {
     // ======================================
     // Cocos 编辑器可绑定属性（对应原 JS 中的 c 装饰器）

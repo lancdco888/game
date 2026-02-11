@@ -1,0 +1,183 @@
+{
+  "_name": "Plus_Spin_Test_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -372,
+                -144,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": [
+                525,
+                -285,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                525,
+                -285,
+                0
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": false
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -186,
+                -144,
+                0
+              ]
+            },
+            {
+              "frame": 0.75,
+              "value": [
+                525,
+                -285,
+                0
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": false
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -144,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                525,
+                -285,
+                0
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": false
+            }
+          ]
+        }
+      },
+      "4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                186,
+                -144,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                525,
+                -285,
+                0
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": false
+            }
+          ]
+        }
+      },
+      "5": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                372,
+                -144,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                525,
+                -285,
+                0
+              ]
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

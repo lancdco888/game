@@ -13,8 +13,7 @@ const { ccclass, property } = cc._decorator;
 export default class Reel_HoundOfHades extends Reel {
     // ====== Cocos 属性面板配置 ======
     /** 是否为重新旋转状态（Respin） */
-    @property({ 
-        type: Boolean,
+    @property({
         displayName: "Is Respin",
         tooltip: "是否处于重新旋转状态，控制符号的dimm效果"
     })

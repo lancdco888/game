@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6382e7d5-737d-41ef-9505-18b2a744dc0e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 334,
+  "height": 64,
+  "platformSettings": {},
+  "subMetas": {
+    "Popup-80_Congrats_Add_04": {
+      "ver": "1.0.6",
+      "uuid": "6d54ba0b-e2ed-4e05-9d42-5b033ee7849f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6382e7d5-737d-41ef-9505-18b2a744dc0e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -135.5,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 63,
+      "height": 58,
+      "rawWidth": 334,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

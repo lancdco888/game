@@ -1,0 +1,124 @@
+{
+  "_name": "J1_Ball_Move_Ani_Retrigger",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Ball/Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.2,
+              "value": 1
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 255
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Ball/Fx": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.2,
+              "value": 1
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Ball": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.2,
+              "value": true
+            },
+            {
+              "frame": 0.7,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.2,
+              "value": 1
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.2,
+              "curve": "quartOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.45,
+              "curve": [
+                0.409468085106383,
+                0.1031914893617022,
+                0.29797872340425535,
+                0.899468085106383
+              ],
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

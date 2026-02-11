@@ -15,7 +15,7 @@ import Reel from '../../Slot/Reel';
 /**
  * LuckyBunnyDrop 锁Wild组件
  */
-@ccclass('LockWildComponent_LuckyBunnyDrop')
+@ccclass()
 export default class LockWildComponent_LuckyBunnyDrop extends cc.Component {
     // 锁Wild的节点数组（对应5列3行共15个位置）
     @property([cc.Node])

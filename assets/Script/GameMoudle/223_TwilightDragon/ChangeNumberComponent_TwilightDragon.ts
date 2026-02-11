@@ -6,7 +6,7 @@ const { ccclass } = cc._decorator;
  * 暮光龙（Twilight Dragon）专属数字滚动组件
  * 继承自通用 ChangeNumberComponent，目前保留空实现，预留后续专属扩展入口
  */
-@ccclass("ChangeNumberComponent_TwilightDragon")
+@ccclass()
 export default class ChangeNumberComponent_TwilightDragon extends ChangeNumberComponent {
     // ======================================
     // Cocos 生命周期函数：节点加载完成时执行

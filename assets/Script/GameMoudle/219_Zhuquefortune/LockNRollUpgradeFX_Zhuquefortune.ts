@@ -7,7 +7,7 @@ const { ccclass, property } = cc._decorator;
  * Lock N Roll 升级特效组件
  * 负责根据下一个子游戏类型，切换并播放对应的升级特效动画
  */
-@ccclass("LockNRollUpgradeFX_Zhuquefortune")
+@ccclass()
 export default class LockNRollUpgradeFX_Zhuquefortune extends cc.Component {
     // 特效节点数组（对应不同子游戏类型：0=minor、1=major、2=mega/grand）
     @property([cc.Node])

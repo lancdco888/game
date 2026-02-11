@@ -7,7 +7,7 @@ const { ccclass, property } = cc._decorator;
  * JackpotUI组件 - Super25Deluxe版本
  * 负责Jackpot图标的动画播放逻辑
  */
-@ccclass('JackpotUIComponent_Super25Deluxe')
+@ccclass()
 export default class JackpotUIComponent_Super25Deluxe extends cc.Component {
     /** Jackpot动画组件（需在属性面板赋值） */
     @property(cc.Animation)

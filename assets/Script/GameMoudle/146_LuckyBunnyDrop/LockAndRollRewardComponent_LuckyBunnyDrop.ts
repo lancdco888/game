@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * LuckyBunnyDrop LockAndRoll奖励组件
  * 负责LockAndRoll模式下奖励计数、倍数的展示、动画播放、数值累加等逻辑
  */
-@ccclass('LockAndRollRewardComponent_LuckyBunnyDrop')
+@ccclass()
 export default class LockAndRollRewardComponent_LuckyBunnyDrop extends cc.Component {
     // 核心动画组件（倍数变化等主动画）
     @property(cc.Animation)
@@ -17,7 +17,7 @@ export default class LockAndRollRewardComponent_LuckyBunnyDrop extends cc.Compon
 
     // 倍数显示标签
     @property(cc.Label)
-    public multi_Label: cc.Label | null = null;
+    public multi_Label: cc.Label = null;
 
     // 计数动画组件
     @property(cc.Animation)
@@ -37,15 +37,15 @@ export default class LockAndRollRewardComponent_LuckyBunnyDrop extends cc.Compon
 
     // 计数根节点（控制计数整体显示/隐藏）
     @property(cc.Node)
-    public count_Node: cc.Node | null = null;
+    public count_Node: cc.Node = null;
 
     // 当前剩余次数显示标签
     @property(cc.Label)
-    public current_Label: cc.Label | null = null;
+    public current_Label: cc.Label = null;
 
     // 总次数显示标签
     @property(cc.Label)
-    public total_Label: cc.Label | null = null;
+    public total_Label: cc.Label = null;
 
     // 私有变量：当前倍数
     private _currentMulti: number = 0;

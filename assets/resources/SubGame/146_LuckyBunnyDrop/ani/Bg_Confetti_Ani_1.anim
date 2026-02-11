@@ -1,0 +1,1967 @@
+{
+  "_name": "Bg_Confetti_Ani_1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.5,
+  "sample": 60,
+  "speed": 0.8,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.4833333333333334,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 700
+            },
+            {
+              "frame": 2.4833333333333334,
+              "value": 150
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 2.183333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.4833333333333334,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.1,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 164.765100671141
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 164.765100671141
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 57.444444444444485
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.2666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 57.444444444444485
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.15,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 175.83892617449658
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 175.83892617449658
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 99.77777777777797
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 99.77777777777797
+            }
+          ]
+        }
+      },
+      "4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": false
+            },
+            {
+              "frame": 0.2,
+              "value": false
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 187.1621621621622
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 150
+            },
+            {
+              "frame": 0.2,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 187.1621621621622
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 142.11111111111103
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 1
+            },
+            {
+              "frame": 0.2,
+              "value": 255
+            },
+            {
+              "frame": 2.3666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 142.11111111111103
+            }
+          ]
+        }
+      },
+      "5": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 198.31081081081078
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 0.25,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 198.31081081081078
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 184.44444444444431
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 184.44444444444431
+            }
+          ]
+        }
+      },
+      "6": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.35,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 220.13422818791946
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 150
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 220.13422818791946
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "7": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": false
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": false
+            },
+            {
+              "frame": 0.4,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 231.20805369127515
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 150
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 231.20805369127515
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 1
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "8": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 257.0469798657718
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 0.5,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 257.0469798657718
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "9": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.65,
+              "value": false
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": false
+            },
+            {
+              "frame": 0.6833333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 293.9597315436241
+            },
+            {
+              "frame": 0.65,
+              "value": 150
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 293.9597315436241
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.65,
+              "value": 1
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "10": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.75,
+              "value": false
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 312.4161073825503
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 0.75,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 312.4161073825503
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.7333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "11": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": false
+            },
+            {
+              "frame": 0.85,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 330.8724832214765
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 150
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 330.8724832214765
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "12": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.85,
+              "value": false
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": false
+            },
+            {
+              "frame": 0.8833333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 338.255033557047
+            },
+            {
+              "frame": 0.85,
+              "value": 150
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 338.255033557047
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.85,
+              "value": 1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "13": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.95,
+              "value": false
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 356.71140939597313
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 0.95,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 356.71140939597313
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.95,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "14": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.0666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.1,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 386.2416107382551
+            },
+            {
+              "frame": 1.0666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 386.2416107382551
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 1.0666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "15": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.15,
+              "value": false
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.1833333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 404.6979865771812
+            },
+            {
+              "frame": 1.15,
+              "value": 150
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 404.6979865771812
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1.15,
+              "value": 1
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "16": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.1833333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.2,
+              "value": false
+            },
+            {
+              "frame": 1.2166666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 412.08053691275165
+            },
+            {
+              "frame": 1.1833333333333333,
+              "value": 150
+            },
+            {
+              "frame": 1.2,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 412.08053691275165
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.1833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.2,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "17": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.25,
+              "value": false
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 423.15436241610735
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.25,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 423.15436241610735
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": 1
+            },
+            {
+              "frame": 1.25,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "18": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.3166666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.35,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 441.6107382550336
+            },
+            {
+              "frame": 1.3166666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 441.6107382550336
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 1.3166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "19": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 478.5234899328859
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.5,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 478.5234899328859
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "20": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.55,
+              "value": false
+            },
+            {
+              "frame": 1.5666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 492.38410596026495
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.55,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 492.38410596026495
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.2166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.5333333333333334,
+              "value": 1
+            },
+            {
+              "frame": 1.55,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "21": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.65,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 510.59602649006627
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 510.59602649006627
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.3,
+              "value": 255
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "22": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.7333333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.75,
+              "value": false
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 536.0927152317881
+            },
+            {
+              "frame": 1.7333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.75,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 536.0927152317881
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.4,
+              "value": 255
+            },
+            {
+              "frame": 1.7333333333333334,
+              "value": 1
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "23": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": false
+            },
+            {
+              "frame": 1.8,
+              "value": false
+            },
+            {
+              "frame": 1.8166666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 547.0198675496689
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.8,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 547.0198675496689
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.45,
+              "value": 255
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": 1
+            },
+            {
+              "frame": 1.8,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "24": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9,
+              "value": false
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 572.5165562913908
+            },
+            {
+              "frame": 1.9,
+              "value": 150
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 572.5165562913908
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.9,
+              "value": 1
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "25": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": false
+            },
+            {
+              "frame": 1.95,
+              "value": false
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 579.8013245033112
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": 150
+            },
+            {
+              "frame": 1.95,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 579.8013245033112
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.6166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.95,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "26": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": false
+            },
+            {
+              "frame": 2.0166666666666666,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 590.7284768211921
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": 150
+            },
+            {
+              "frame": 2,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 590.7284768211921
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.9833333333333334,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "27": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": false
+            },
+            {
+              "frame": 2.1,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 608.9403973509934
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": 150
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 608.9403973509934
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "28": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.216666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.2333333333333334,
+              "value": false
+            },
+            {
+              "frame": 2.25,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 641.7218543046358
+            },
+            {
+              "frame": 2.216666666666667,
+              "value": 150
+            },
+            {
+              "frame": 2.2333333333333334,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 641.7218543046358
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.8833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.216666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.2333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "29": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.2666666666666666,
+              "value": false
+            },
+            {
+              "frame": 2.283333333333333,
+              "value": false
+            },
+            {
+              "frame": 2.3,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 652.6490066225165
+            },
+            {
+              "frame": 2.2666666666666666,
+              "value": 150
+            },
+            {
+              "frame": 2.283333333333333,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 652.6490066225165
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.9333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.2666666666666666,
+              "value": 1
+            },
+            {
+              "frame": 2.283333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "30": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.3,
+              "value": false
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 659.9337748344371
+            },
+            {
+              "frame": 2.3,
+              "value": 150
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": 700
+            },
+            {
+              "frame": 2.5,
+              "value": 659.9337748344371
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 2.3,
+              "value": 1
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

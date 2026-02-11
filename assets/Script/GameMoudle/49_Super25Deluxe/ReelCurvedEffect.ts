@@ -10,7 +10,7 @@ const { ccclass, property } = cc._decorator;
  * Reel curved effect component (extends shader effect base class)
  * Handles camera movement and screen resize to apply dynamic curved effect on reels
  */
-@ccclass('ReelCurvedEffect')
+@ccclass()
 export default class ReelCurvedEffect extends ReelShaderEffect {
     @property()
     curvedVertical: number = 0; // Vertical curve intensity

@@ -1,0 +1,175 @@
+{
+  "_name": "Wheel_Win_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "particlesystem_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "linear",
+              "value": [
+                22,
+                -108,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                78,
+                -390,
+                0
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 300
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 300
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "particlesystem_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "linear",
+              "value": [
+                -22,
+                -108,
+                0
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                -78,
+                -390,
+                0
+              ]
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 300
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 300
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Glow_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 150
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.6,
+              "value": 150
+            }
+          ]
+        }
+      },
+      "Explode_Mask/Explode_1": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 0.6,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.10651731160896132,
+                0.29745417515274974,
+                0.7025458248472503,
+                0.995315682281059
+              ],
+              "value": {
+                "x": 0.3,
+                "y": 0.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

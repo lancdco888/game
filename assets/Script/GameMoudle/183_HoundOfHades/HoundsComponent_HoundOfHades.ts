@@ -11,7 +11,7 @@ const { ccclass, property } = cc._decorator;
  * 哈迪斯之犬 - 猎犬组件管理器
  * 管理蓝/红/绿三只猎犬的初始化、状态更新、动画触发等逻辑
  */
-@ccclass('HoundsComponent_HoundOfHades')
+@ccclass()
 export default class HoundsComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 编辑器绑定属性 ======
     @property(cc.Node)

@@ -33,7 +33,7 @@ const SOUND_NAME_JACKPOT_FS_APPEAR = "JackpotFreeSpinAppear";
  * 暮光龙滚轮控制器
  * 继承自ReelController_Base，负责滚轮旋转、停止、符号处理、动画/音效播放核心逻辑
  */
-@ccclass("ReelController_TwilightDragon")
+@ccclass()
 export default class ReelController_TwilightDragon extends ReelController_Base {
     /**
      * 组件加载时初始化（填充虚拟符号列表、注册滚轮停止回调）

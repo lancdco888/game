@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
  * 龙珠游戏移动球组件
  * 管理龙珠预制体创建、移动动画序列、符号动画控制、回调触发等核心逻辑
  */
-@ccclass('MovingOrbComponents_DragonOrbs')
+@ccclass()
 export default class MovingOrbComponents_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 龙珠预制体数组（红/蓝/绿三种龙珠） */

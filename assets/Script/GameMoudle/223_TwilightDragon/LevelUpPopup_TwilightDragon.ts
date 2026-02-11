@@ -8,7 +8,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙等级提升弹窗组件
  * 负责显示等级提升动画、奖励/倍率节点切换、旋转次数移动动画
  */
-@ccclass("LevelUpPopup_TwilightDragon")
+@ccclass()
 export default class LevelUpPopup_TwilightDragon extends cc.Component {
     // 弹窗核心节点与动画（对应原始JS，供编辑器序列化）
     @property(cc.Node)

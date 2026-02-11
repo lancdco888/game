@@ -10,7 +10,7 @@ const { ccclass, property } = cc._decorator;
  * 朱雀运势 Jackpot 模式 UI 核心组件
  * 负责 Jackpot 模式的 UI 初始化、动画播放、Pot 管理、中奖结果展示
  */
-@ccclass("JackpotModeUI_Zhuquefortune")
+@ccclass()
 export default class JackpotModeUI_Zhuquefortune extends cc.Component {
     // UI 核心动画组件（绑定 Jackpot UI 相关动画剪辑）
     @property(cc.Animation)
@@ -22,19 +22,19 @@ export default class JackpotModeUI_Zhuquefortune extends cc.Component {
 
     // 各级 Jackpot Pot UI（mini/ minor/ major/ grand/ double grand）
     @property(JackpotModePotUI_Zhuquefortune)
-    public miniPotUI: JackpotModePotUI_Zhuquefortune | null = null;
+    public miniPotUI: JackpotModePotUI_Zhuquefortune = null;
 
     @property(JackpotModePotUI_Zhuquefortune)
-    public minorPotUI: JackpotModePotUI_Zhuquefortune | null = null;
+    public minorPotUI: JackpotModePotUI_Zhuquefortune = null;
 
     @property(JackpotModePotUI_Zhuquefortune)
-    public majorPotUI: JackpotModePotUI_Zhuquefortune | null = null;
+    public majorPotUI: JackpotModePotUI_Zhuquefortune = null;
 
     @property(JackpotModePotUI_Zhuquefortune)
-    public grandPotUI: JackpotModePotUI_Zhuquefortune | null = null;
+    public grandPotUI: JackpotModePotUI_Zhuquefortune = null;
 
     @property(JackpotModePotUI_Zhuquefortune)
-    public doubleGrandPotUI: JackpotModePotUI_Zhuquefortune | null = null;
+    public doubleGrandPotUI: JackpotModePotUI_Zhuquefortune = null;
 
     /**
      * 初始化 UI（重置所有 Pot UI 状态，开启所有 Jackpot 金额播放状态）

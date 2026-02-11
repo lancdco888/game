@@ -5,7 +5,7 @@ const { ccclass, property } = cc._decorator;
  * 朱雀运势 Jackpot 模式单个 Pot UI 组件
  * 负责单个 Jackpot Pot 的节点管理、状态切换、期望展示与中奖特效播放
  */
-@ccclass("JackpotModePotUI_Zhuquefortune")
+@ccclass()
 export default class JackpotModePotUI_Zhuquefortune extends cc.Component {
     // Pot 状态节点数组（对应不同激活层级，索引 0/1/2 分别对应不同状态）
     @property([cc.Node])

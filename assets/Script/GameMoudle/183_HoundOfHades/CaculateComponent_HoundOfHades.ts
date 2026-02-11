@@ -13,16 +13,16 @@ const { ccclass, property } = cc._decorator;
  * 3. 更新奖金中心信息（金额、倍数、Jackpot标题）
  * 4. 设置奖金UI的暗淡状态动画与文本
  */
-@ccclass('CaculateComponent_HoundOfHades')
+@ccclass()
 export default class CaculateComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 主动画组件（locknroll_calculate系列动画） */
     @property(cc.Animation)
-    public mainAni: cc.Animation | null = null;
+    public mainAni: cc.Animation = null;
 
     /** 符号骨骼动画组件 */
     @property(sp.Skeleton)
-    public symbol_Ani: sp.Skeleton | null = null;
+    public symbol_Ani: sp.Skeleton = null;
 
     /** Jackpot标题节点数组（注：原代码拼写错误jakcpot → jackpot，保留变量名兼容原有逻辑） */
     @property([cc.Node])
@@ -30,11 +30,11 @@ export default class CaculateComponent_HoundOfHades extends cc.Component {
 
     /** 倍数展示节点（X2/X3等） */
     @property(cc.Node)
-    public multiPlier_Node: cc.Node | null = null;
+    public multiPlier_Node: cc.Node = null;
 
     /** 奖金展示根节点 */
     @property(cc.Node)
-    public prize_Node: cc.Node | null = null;
+    public prize_Node: cc.Node = null;
 
     /** 奖金标签数组（不同档位/样式的奖金文本） */
     @property([cc.Label])

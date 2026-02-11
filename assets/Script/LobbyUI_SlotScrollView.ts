@@ -171,14 +171,15 @@ export default class LobbyUI_SlotScrollView extends LobbyUIBase {
             this.nodeMoveA.setPosition(o ? cc.Vec2.ZERO : cc.v2(0, a));
             this.nodeMoveB.setPosition(o ? cc.v2(0, -a) : cc.Vec2.ZERO);
 
-            o ? (
-                this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, a + this.MOVE_OVER_Y)), cc.sequence(cc.delayTime(.15), cc.fadeOut(.15))), cc.moveTo(.05, cc.v2(0, a)))),
-            this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(.05, cc.Vec2.ZERO)))
-            ) : (
-                this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, -this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(.05, cc.Vec2.ZERO))),
-                this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(.3, cc.v2(0, -(a + this.MOVE_OVER_Y))), cc.sequence(cc.delayTime(.15), cc.fadeOut(.15))), cc.moveTo(.05, cc.v2(0, -a))))
-            );
-            await AsyncHelper.delayWithComponent(.35, this);
+            if(o) {
+                this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(0.3, cc.v2(0, a + this.MOVE_OVER_Y)), cc.sequence(cc.delayTime(0.15), cc.fadeOut(0.15))), cc.moveTo(0.05, cc.v2(0, a)))),
+                this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(0.3, cc.v2(0, this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(0.05, cc.Vec2.ZERO)))
+            }else{
+                this.nodeMoveA.runAction(cc.sequence(cc.spawn(cc.moveTo(0.3, cc.v2(0, -this.MOVE_OVER_Y)), cc.fadeIn(.15)), cc.moveTo(0.05, cc.Vec2.ZERO))),
+                this.nodeMoveB.runAction(cc.sequence(cc.spawn(cc.moveTo(0.3, cc.v2(0, -(a + this.MOVE_OVER_Y))), cc.sequence(cc.delayTime(0.15), cc.fadeOut(0.15))), cc.moveTo(0.05, cc.v2(0, -a))))
+            };
+
+            await AsyncHelper.delayWithComponent(0.35, this);
             n.playOpenAction(o);
             t.node.active = false;
             t.node.parent = this._nodeScrollViewRoot;

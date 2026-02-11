@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f0bbb501-db13-4caa-b594-e474fd186307",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 186,
+  "height": 186,
+  "platformSettings": {},
+  "subMetas": {
+    "Wheel-80_Btn": {
+      "ver": "1.0.6",
+      "uuid": "7b2f2d66-2742-406e-a7d5-642fac3e91d2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f0bbb501-db13-4caa-b594-e474fd186307",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 186,
+      "height": 186,
+      "rawWidth": 186,
+      "rawHeight": 186,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

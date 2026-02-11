@@ -13,7 +13,7 @@ const { ccclass, property } = cc._decorator;
  * 龙珠游戏Jackpot结果弹窗组件
  * 管理Jackpot结果弹窗显隐、奖励显示、标题切换、分享控制、收集按钮交互、自动关闭等核心逻辑
  */
-@ccclass('JackpotResultPopup_DragonOrbs')
+@ccclass()
 export default class JackpotResultPopup_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 遮罩背景节点（阻止底层交互） */

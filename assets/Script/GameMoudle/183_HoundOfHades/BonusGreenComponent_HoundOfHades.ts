@@ -9,20 +9,20 @@ const { ccclass, property } = cc._decorator;
  * 1. 初始化绿色符号状态（播放feature1动画、重置奖金）
  * 2. 累加奖金金额（播放feature2动画、更新奖金UI、调度stay动画）
  */
-@ccclass('BonusGreenComponent_HoundOfHades')
+@ccclass()
 export default class BonusGreenComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 符号骨骼动画组件 */
     @property(sp.Skeleton)
-    public symbol_Ani: sp.Skeleton | null = null;
+    public symbol_Ani: sp.Skeleton = null;
 
     /** 信息面板动画组件（B3_feature2动画） */
     @property(cc.Animation)
-    public info_Animation: cc.Animation | null = null;
+    public info_Animation: cc.Animation = null;
 
     /** 信息面板根节点（用于重置缩放） */
     @property(cc.Node)
-    public info_Node: cc.Node | null = null;
+    public info_Node: cc.Node = null;
 
     // ====== 私有常量（动画名称，原代码硬编码值） ======
     /** feature1动画名称（初始化绿色符号） */

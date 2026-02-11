@@ -1,0 +1,179 @@
+{
+  "_name": "Left_UI_Wheel_Trigger_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 8,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "particlesystem_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3,
+              "value": false
+            },
+            {
+              "frame": 8,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 100
+              },
+              {
+                "frame": 2.3333333333333335,
+                "value": 100
+              },
+              {
+                "frame": 2.5,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Pivot/Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 1080
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "curve": [
+                0.46,
+                0.05,
+                0.19697674418604658,
+                0.9063953488372093
+              ],
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

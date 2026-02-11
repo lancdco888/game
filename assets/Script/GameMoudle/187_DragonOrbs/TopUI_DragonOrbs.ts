@@ -12,23 +12,28 @@ export default class TopUI_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS完全一致） =====================
     /** 开场龙骨动画组件 */
     @property(sp.Skeleton)
-    public intro: sp.Skeleton | null = null;
+    public intro: sp.Skeleton = null;
 
     /** 闲置循环龙骨动画组件 */
     @property(sp.Skeleton)
-    public idle: sp.Skeleton | null = null;
+    public idle: sp.Skeleton = null;
 
     /** 开场动画节点（承载Animation组件） */
     @property(cc.Node)
-    public IntroAni: cc.Node | null = null;
+    public IntroAni: cc.Node = null;
 
     /** 粒子系统组件 */
     @property(cc.ParticleSystem)
-    public particle: cc.ParticleSystem | null = null;
+    public particle: cc.ParticleSystem = null;
 
     /** 标题节点（包含子龙骨动画） */
     @property(cc.Node)
-    public title: cc.Node | null = null;
+    public title: cc.Node = null;
+
+
+    constructor(){
+        super()
+    }
 
     // ===================== 核心业务方法（与原JS逻辑1:1保留） =====================
     /**

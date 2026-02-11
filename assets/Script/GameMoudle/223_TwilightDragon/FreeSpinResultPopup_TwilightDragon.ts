@@ -14,7 +14,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）免费旋转结果弹窗
  * 严格还原原 JS 逻辑，不额外拓展方法
  */
-@ccclass("FreeSpinResultPopup_TwilightDragon")
+@ccclass()
 export default class FreeSpinResultPopup_TwilightDragon extends cc.Component {
     // ======================================
     // 编辑器绑定属性（严格对应原 JS 的 g 装饰器）

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7ce6ea41-e466-4d2e-88ec-27e49e9c0ed5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 38,
+  "height": 27,
+  "platformSettings": {},
+  "subMetas": {
+    "Wheel-80_Deco": {
+      "ver": "1.0.6",
+      "uuid": "efad0591-0c22-4a0c-a22d-3dded0351bf8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7ce6ea41-e466-4d2e-88ec-27e49e9c0ed5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 38,
+      "height": 27,
+      "rawWidth": 38,
+      "rawHeight": 27,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

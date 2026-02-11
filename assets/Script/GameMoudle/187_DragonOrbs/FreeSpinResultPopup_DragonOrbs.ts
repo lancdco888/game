@@ -17,48 +17,48 @@ const { ccclass, property } = cc._decorator;
  * 龙珠游戏免费旋转结果弹窗组件
  * 管理弹窗显隐、奖励显示、分享控制、收集按钮交互、金币特效播放、游戏结果结算等核心逻辑
  */
-@ccclass('FreeSpinResultPopup_DragonOrbs')
+@ccclass()
 export default class FreeSpinResultPopup_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 遮罩背景节点（阻止底层交互） */
     @property(cc.Node)
-    public blockingBG: cc.Node | null = null;
+    public blockingBG: cc.Node = null;
 
     /** 收集按钮 */
     @property(cc.Button)
-    public collectButton: cc.Button | null = null;
+    public collectButton: cc.Button = null;
 
     /** 分享切换开关 */
     @property(cc.Toggle)
-    public shareToggle: cc.Toggle | null = null;
+    public shareToggle: cc.Toggle = null;
 
     /** 分享区域根节点 */
     @property(cc.Node)
-    public shareRoot: cc.Node | null = null;
+    public shareRoot: cc.Node = null;
 
     /** 短文本奖励显示根节点（金额<10亿） */
     @property(cc.Node)
-    public shortRoot: cc.Node | null = null;
+    public shortRoot: cc.Node = null;
 
     /** 长文本奖励显示根节点（金额≥10亿） */
     @property(cc.Node)
-    public longRoot: cc.Node | null = null;
+    public longRoot: cc.Node = null;
 
     /** 短文本奖励标签 */
     @property(cc.Label)
-    public rewardLabel_Short: cc.Label | null = null;
+    public rewardLabel_Short: cc.Label = null;
 
     /** 长文本奖励标签 */
     @property(cc.Label)
-    public rewardLabel_Long: cc.Label | null = null;
+    public rewardLabel_Long: cc.Label = null;
 
     /** 旋转次数标签 */
     @property(cc.Label)
-    public spinCnt: cc.Label | null = null;
+    public spinCnt: cc.Label = null;
 
     /** 每线投注倍数标签 */
     @property(cc.Label)
-    public lineBetLabel: cc.Label | null = null;
+    public lineBetLabel: cc.Label = null;
 
     /** 需要初始化透明度的节点列表 */
     @property([cc.Node])
@@ -66,22 +66,22 @@ export default class FreeSpinResultPopup_DragonOrbs extends cc.Component {
 
     /** 弹窗根节点 */
     @property(cc.Node)
-    public root: cc.Node | null = null;
+    public root: cc.Node = null;
 
     /** 金币爆炸动画组件 */
     @property(cc.Animation)
-    public winExplodeCoin: cc.Animation | null = null;
+    public winExplodeCoin: cc.Animation = null;
 
     /** 金币收集特效节点 */
     @property(cc.Node)
-    public winCoinCollectFx: cc.Node | null = null;
+    public winCoinCollectFx: cc.Node = null;
 
     // ===================== 私有状态（与原JS一致） =====================
     /** 奖励金币金额 */
     private _goldAmount: number = 0;
 
     /** 弹窗关闭回调函数 */
-    private _fnCallback: (() => void) | null = null;
+    private _fnCallback: (() => void) = null;
 
     /** 是否自动关闭 */
     private _isAutoClose: boolean = false;

@@ -8,7 +8,7 @@ const { ccclass, property } = cc._decorator;
  * 龙珠游戏功能信息组件
  * 管理功能信息初始化/重置、移动球符号创建、Jackpot计数更新、倍数更新、特效播放/停止等核心逻辑
  */
-@ccclass('FeatureComponents_DragonOrbs')
+@ccclass()
 export default class FeatureComponents_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 功能信息组件数组（对应红/蓝/绿三种龙珠） */

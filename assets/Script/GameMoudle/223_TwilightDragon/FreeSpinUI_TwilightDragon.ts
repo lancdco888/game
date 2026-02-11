@@ -25,7 +25,7 @@ interface FreeSpinSubGameState {
  * 暮光龙免费旋转UI组件
  * 负责管理免费旋转的等级、倍率、特效及相关弹窗控制
  */
-@ccclass("FreeSpinUI_TwilightDragon")
+@ccclass()
 export default class FreeSpinUI_TwilightDragon extends cc.Component {
     // 核心动画与节点属性（对应原始JS，供编辑器序列化）
     @property(cc.Animation)

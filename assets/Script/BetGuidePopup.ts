@@ -26,7 +26,7 @@ export enum BetGuideState {
  * 投注引导（BetGuide）弹窗组件
  * 负责投注引导弹窗的动态加载、位置计算、动画播放、按钮交互、大厅跳转等核心逻辑
  */
-@ccclass('BetGuidePopup')
+@ccclass()
 export default class BetGuidePopup extends cc.Component {
     // === 编辑器序列化属性 ===
     @property({ type: cc.Button, displayName: '跳转按钮' })

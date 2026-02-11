@@ -21,7 +21,7 @@ interface PrizeInfo {
  * 哈迪斯之犬 - 奖励组件
  * 负责奖励UI的初始化、奖金展示、倍数计算、Jackpot标题显示、数字变化动画控制
  */
-@ccclass('PrizeComponent_HoundOfHades')
+@ccclass()
 export default class PrizeComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** Jackpot标题节点数组（mini/minor/major/mega） */
@@ -30,11 +30,11 @@ export default class PrizeComponent_HoundOfHades extends cc.Component {
 
     /** 倍数显示节点（X2/X4等） */
     @property(cc.Node)
-    public multiPlier_Node: cc.Node | null = null;
+    public multiPlier_Node: cc.Node = null;
 
     /** 奖金显示根节点 */
     @property(cc.Node)
-    public prize_Node: cc.Node | null = null;
+    public prize_Node: cc.Node = null;
 
     /** 奖金标签数组（不同样式/大小的标签） */
     @property([cc.Label])
@@ -42,7 +42,7 @@ export default class PrizeComponent_HoundOfHades extends cc.Component {
 
     /** 奖励信息动画节点 */
     @property(cc.Node)
-    public info_Ani: cc.Node | null = null;
+    public info_Ani: cc.Node = null;
 
     // ====== 私有成员变量 ======
     /** 当前倍数（默认1） */

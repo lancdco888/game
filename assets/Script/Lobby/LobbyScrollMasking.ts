@@ -3,7 +3,6 @@ const { ccclass, property } = cc._decorator;
 // ===================== 导入依赖模块 - 路径与原JS完全一致 =====================
 import TSUtility from "../global_utility/TSUtility";
 
-// ✅ 核心修复: 自定义Component组件 空@ccclass() 无类名 → 彻底根治类名指定报错
 @ccclass()
 export default class LobbyScrollMasking extends cc.Component {
     // ===================== 序列化配置属性 - 与原JS完全一致 =====================
@@ -23,7 +22,7 @@ export default class LobbyScrollMasking extends cc.Component {
     private isWasScrolling: boolean = false;      // 上一帧的滚动状态(防抖用)
     private _scr: any = null;                     // 外部传入的滚动容器对象 (含scrollView属性)
 
-    // ===================== 核心初始化方法 - 绑定滚动视图 重置所有状态 =====================
+    
     public updateScrollView(scrollContainer: any): void {
         this._scr = scrollContainer;
         // 停止遮罩节点所有动画 防止残留
@@ -41,7 +40,7 @@ export default class LobbyScrollMasking extends cc.Component {
         this.lastPosition = this._scr.scrollView.getScrollOffset();
     }
 
-    // ===================== 帧更新 - 核心滚动状态检测 带性能优化的间隔检测 =====================
+    
     update(dt: number): void {
         // 滚动容器无效则直接返回
         if (!TSUtility.isValid(this._scr)) return;
@@ -62,7 +61,7 @@ export default class LobbyScrollMasking extends cc.Component {
         }
     }
 
-    // ===================== 遮罩节点淡入动画 - 与原JS动画参数完全一致 =====================
+    
     private fadeInNode(): void {
         this.nodeShadow.stopAllActions();
         // 节点未激活则初始化显示状态
@@ -74,7 +73,7 @@ export default class LobbyScrollMasking extends cc.Component {
         this.nodeShadow.runAction(cc.fadeIn(0.3));
     }
 
-    // ===================== 遮罩节点淡出动画 - 与原JS动画序列+回调完全一致 =====================
+    
     private fadeOutNode(): void {
         this.nodeShadow.stopAllActions();
         // 0.3秒淡出 → 动画完成后隐藏节点 (原JS核心回调逻辑完整复刻)

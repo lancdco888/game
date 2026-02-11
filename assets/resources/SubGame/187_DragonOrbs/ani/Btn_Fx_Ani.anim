@@ -1,0 +1,152 @@
+{
+  "_name": "Btn_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Fx/Add": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.75,
+              "value": 150
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 1
+            },
+            {
+              "frame": 2.25,
+              "value": 255
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 1
+            },
+            {
+              "frame": 4,
+              "value": 150
+            },
+            {
+              "frame": 5,
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.75,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1.5,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1.75,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 2,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 2.25,
+          "curve": [
+            0.46,
+            0.05,
+            0.2955443548387097,
+            0.8970766129032257
+          ],
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 2.6666666666666665,
+          "curve": [
+            0.7977016129032258,
+            0.10040322580645178,
+            0.54,
+            0.95
+          ],
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 4,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 5,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

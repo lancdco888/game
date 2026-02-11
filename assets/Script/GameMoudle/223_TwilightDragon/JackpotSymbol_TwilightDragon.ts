@@ -14,7 +14,7 @@ interface SymbolInfo {
 /**
  * 暮光龙插槽头奖符号组件
  */
-@ccclass("JackpotSymbol_TwilightDragon")
+@ccclass()
 export default class JackpotSymbol_TwilightDragon extends cc.Component {
     // 对应原始JS中的属性，用@property标注供编辑器序列化
     @property(cc.Node)

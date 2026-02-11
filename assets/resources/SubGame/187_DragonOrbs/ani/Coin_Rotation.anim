@@ -1,0 +1,115 @@
+{
+  "_name": "Coin_Rotation",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Coin_Rotation": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": -360
+            }
+          ]
+        }
+      },
+      "Particle": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 3968924157
+                }
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "_val": 3968924157
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_val": 9501181
+                }
+              }
+            ],
+            "endColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 564327679
+                }
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "_val": 564327679
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_val": 10679551
+                }
+              }
+            ],
+            "startColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 3640655872
+                }
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "_val": 3640655872
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_val": 0
+                }
+              }
+            ],
+            "endColorVar": [
+              {
+                "frame": 0,
+                "value": {
+                  "_val": 218103808
+                }
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "_val": 218103808
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_val": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

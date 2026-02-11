@@ -1,0 +1,311 @@
+{
+  "_name": "Left_UI_Idle_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Pivot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -110,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                -110,
+                35,
+                0
+              ],
+              "curve": [
+                0.40763747454175153,
+                0.19348268839103888,
+                0.5,
+                0.5
+              ]
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": [
+                146,
+                35,
+                0
+              ]
+            },
+            {
+              "frame": 2.533333333333333,
+              "value": [
+                149,
+                32,
+                0
+              ]
+            },
+            {
+              "frame": 2.8833333333333333,
+              "value": [
+                149,
+                -30,
+                0
+              ]
+            },
+            {
+              "frame": 3,
+              "value": [
+                146,
+                -31,
+                0
+              ]
+            },
+            {
+              "frame": 4.5,
+              "value": [
+                -110,
+                -31,
+                0
+              ]
+            },
+            {
+              "frame": 5,
+              "value": [
+                -110,
+                -31,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": 150
+            },
+            {
+              "frame": 3,
+              "value": 150
+            },
+            {
+              "frame": 4.5,
+              "value": 1
+            }
+          ],
+          "angle": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": 0
+            },
+            {
+              "frame": 2.533333333333333,
+              "value": -90
+            },
+            {
+              "frame": 2.8833333333333333,
+              "value": -90
+            },
+            {
+              "frame": 3,
+              "value": -180
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 0.3,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.75,
+              "value": {
+                "x": 2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": {
+                "x": 0.2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3,
+              "value": {
+                "x": 0.2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.75,
+              "value": {
+                "x": 2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 4.5,
+              "value": {
+                "x": 0.3,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot_3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.5,
+              "value": -100,
+              "curve": "quadInOut"
+            },
+            {
+              "frame": 3.5,
+              "value": 120
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 255
+            },
+            {
+              "frame": 3.5,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot_2": {
+        "props": {
+          "x": [
+            {
+              "frame": 2,
+              "value": 120,
+              "curve": "quadInOut"
+            },
+            {
+              "frame": 5,
+              "value": -100
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 2,
+              "value": 1
+            },
+            {
+              "frame": 3.5,
+              "value": 255
+            },
+            {
+              "frame": 5,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 2,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

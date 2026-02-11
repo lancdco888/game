@@ -1,0 +1,2067 @@
+{
+  "_name": "Jackpot_Expect_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 4.516666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.6666666666666665,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.9166666666666665,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.9166666666666667,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.75,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.25,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.25,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.8333333333333335,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "4": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.9166666666666665,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "5": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.4166666666666667,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.4166666666666665,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.25,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "6": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.25,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.25,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.05,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.3,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "7": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5833333333333335,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.1,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.35,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "8": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.4166666666666667,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.4166666666666665,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.6666666666666665,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.15,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.4,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "9": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.75,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.75,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "10": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5833333333333335,
+              "curve": "quadIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.8333333333333335,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "1/1": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.65,
+              "value": false
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": true
+            },
+            {
+              "frame": 4.516666666666667,
+              "value": false
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.8333333333333334,
+              "curve": "constant",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "constant",
+              "value": [
+                -192.108,
+                -69.346,
+                0
+              ]
+            },
+            {
+              "frame": 2.6666666666666665,
+              "curve": "constant",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "2/2": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": true
+            },
+            {
+              "frame": 1.75,
+              "value": false
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.7333333333333334,
+              "value": false
+            },
+            {
+              "frame": 2.75,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.9166666666666666,
+              "curve": "constant",
+              "value": [
+                199,
+                148,
+                0
+              ]
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": [
+                0,
+                128,
+                0
+              ]
+            },
+            {
+              "frame": 1.9333333333333333,
+              "curve": "constant",
+              "value": [
+                195,
+                45.88,
+                0
+              ]
+            },
+            {
+              "frame": 2.75,
+              "value": [
+                -195,
+                20,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "3/3": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1,
+              "value": true
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": true
+            },
+            {
+              "frame": 2.816666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 1,
+              "curve": "constant",
+              "value": [
+                -198,
+                -74,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "curve": "constant",
+              "value": [
+                -198,
+                -140,
+                0
+              ]
+            },
+            {
+              "frame": 2.8333333333333335,
+              "curve": "constant",
+              "value": [
+                -198,
+                -74,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "4/4": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.9,
+              "value": false
+            },
+            {
+              "frame": 2.9166666666666665,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 1.0833333333333333,
+              "curve": "constant",
+              "value": [
+                20,
+                -140,
+                0
+              ]
+            },
+            {
+              "frame": 2.0833333333333335,
+              "curve": "constant",
+              "value": [
+                0,
+                70,
+                0
+              ]
+            },
+            {
+              "frame": 2.9166666666666665,
+              "curve": "constant",
+              "value": [
+                20,
+                -88,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "5/5": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": false
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": true
+            },
+            {
+              "frame": 2.9833333333333334,
+              "value": false
+            },
+            {
+              "frame": 3,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 1.1666666666666667,
+              "curve": "constant",
+              "value": [
+                0,
+                140,
+                0
+              ]
+            },
+            {
+              "frame": 2.1666666666666665,
+              "curve": "constant",
+              "value": [
+                198,
+                97,
+                0
+              ]
+            },
+            {
+              "frame": 3,
+              "value": [
+                199,
+                140,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "6/6": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.25,
+              "value": true
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": false
+            },
+            {
+              "frame": 2.25,
+              "value": true
+            },
+            {
+              "frame": 3.033333333333333,
+              "value": false
+            },
+            {
+              "frame": 3.05,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "constant",
+              "value": [
+                198,
+                -96,
+                0
+              ]
+            },
+            {
+              "frame": 2.25,
+              "curve": "constant",
+              "value": [
+                -191.863,
+                -16.931,
+                0
+              ]
+            },
+            {
+              "frame": 3.05,
+              "value": [
+                -40,
+                -130,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "7/7": {
+        "comps": {},
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": false
+            },
+            {
+              "frame": 3.1,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "constant",
+              "value": [
+                -198,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "constant",
+              "value": [
+                200,
+                -85,
+                0
+              ]
+            },
+            {
+              "frame": 3.1,
+              "value": [
+                -40,
+                148,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "8/8": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": true
+            },
+            {
+              "frame": 2.25,
+              "value": false
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": true
+            },
+            {
+              "frame": 3.1333333333333333,
+              "value": false
+            },
+            {
+              "frame": 3.15,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "constant",
+              "value": [
+                -198,
+                -110,
+                0
+              ]
+            },
+            {
+              "frame": 2.4166666666666665,
+              "curve": "constant",
+              "value": [
+                -30,
+                140,
+                0
+              ]
+            },
+            {
+              "frame": 3.15,
+              "value": [
+                -198,
+                -148,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "9/9": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.5,
+              "value": true
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": false
+            },
+            {
+              "frame": 2.5,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "constant",
+              "value": [
+                195,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 2.5,
+              "curve": "constant",
+              "value": [
+                60,
+                -120,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "10/10": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": false
+            },
+            {
+              "frame": 2.5833333333333335,
+              "value": true
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "constant",
+              "value": [
+                -150,
+                80,
+                0
+              ]
+            },
+            {
+              "frame": 2.4166666666666665,
+              "curve": "constant",
+              "value": [
+                198,
+                92,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Aura": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Glow": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 3.85,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 100
+            },
+            {
+              "frame": 3.1,
+              "value": 100
+            },
+            {
+              "frame": 3.2666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 3.433333333333333,
+              "value": 100
+            },
+            {
+              "frame": 3.85,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Explode_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": false
+            },
+            {
+              "frame": 2.5833333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.9166666666666665,
+              "value": false
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": true
+            },
+            {
+              "frame": 3.4166666666666665,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.1333333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.6333333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.1333333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": 1
+            },
+            {
+              "frame": 2.5833333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.6333333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.9166666666666665,
+              "value": 1
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": 1
+            },
+            {
+              "frame": 3.1333333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 3.4166666666666665,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.4166666666666665,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5833333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.9166666666666665,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.0833333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.4166666666666665,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Explode_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": false
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": true
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.3833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.8833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 1
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.3833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 1
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.8833333333333333,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.8333333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": {
+                "x": 2.3,
+                "y": 2.3,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Light_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.5666666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.566666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.5833333333333335,
+              "value": true
+            },
+            {
+              "frame": 3.066666666666667,
+              "value": false
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": true
+            },
+            {
+              "frame": 3.566666666666667,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.25,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.5666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.75,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.0833333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.25,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.566666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.5833333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.75,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 3.066666666666667,
+              "value": 1
+            },
+            {
+              "frame": 3.0833333333333335,
+              "value": 1
+            },
+            {
+              "frame": 3.25,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 3.566666666666667,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5666666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.566666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.5833333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.066666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.0833333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.566666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Light_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.8166666666666667,
+              "value": false
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": true
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": true
+            },
+            {
+              "frame": 2.816666666666667,
+              "value": false
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": true
+            },
+            {
+              "frame": 3.316666666666667,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1.5,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.8166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.3333333333333335,
+              "value": 1
+            },
+            {
+              "frame": 2.5,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 2.816666666666667,
+              "value": 1
+            },
+            {
+              "frame": 2.8333333333333335,
+              "value": 1
+            },
+            {
+              "frame": 3,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 3.316666666666667,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8166666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.316666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.3333333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.816666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.8333333333333335,
+              "curve": "quadOut",
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.316666666666667,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

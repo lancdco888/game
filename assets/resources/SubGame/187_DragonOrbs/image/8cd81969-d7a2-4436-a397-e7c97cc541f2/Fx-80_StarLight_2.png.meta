@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "2f059551-a22e-4880-a628-71acc9a1ecf7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 61,
+  "height": 61,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_StarLight_2": {
+      "ver": "1.0.6",
+      "uuid": "b75d0351-6ef6-488c-bc2f-d9a22feb27ac",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "2f059551-a22e-4880-a628-71acc9a1ecf7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 1.5,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 55,
+      "height": 54,
+      "rawWidth": 61,
+      "rawHeight": 61,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

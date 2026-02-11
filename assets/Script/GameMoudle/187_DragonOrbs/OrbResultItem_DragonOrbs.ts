@@ -10,7 +10,7 @@ const { ccclass, property } = cc._decorator;
  * 龙珠游戏结果项组件
  * 管理单个龙珠结果项的显示、旋转计数文本更新、结果项关闭等核心逻辑
  */
-@ccclass('OrbResultItem_DragonOrbs')
+@ccclass()
 export default class OrbResultItem_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 旋转计数文本标签列表（多位置显示同一计数） */
@@ -19,7 +19,7 @@ export default class OrbResultItem_DragonOrbs extends cc.Component {
 
     /** 闲置状态根节点（控制显隐/透明度/缩放） */
     @property(cc.Node)
-    public idlePivot: cc.Node | null = null;
+    public idlePivot: cc.Node = null;
 
     /** 状态标识（freeSpin_red/blue/green） */
     @property

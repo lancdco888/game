@@ -7,7 +7,7 @@ const { ccclass, property } = cc._decorator;
  * 朱雀运势 Jackpot 模式硬币移动组件
  * 负责处理硬币移动动画、预制体实例化与清理，实现选中硬币到目标节点的移动效果
  */
-@ccclass("MoveJackpotModeCoin_Zhuquefortune")
+@ccclass()
 export default class MoveJackpotModeCoin_Zhuquefortune extends cc.Component {
     // 第1组目标节点数组（对应 Jackpot 类型 3）- 直接使用 cc.Node
     @property([cc.Node])

@@ -1,0 +1,264 @@
+{
+  "_name": "Idle_Fx_Ani_Long",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 8,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -310,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 3,
+              "value": 310
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 1.5,
+              "value": 255,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 3,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.83,
+                0,
+                0.4959493670886076,
+                0.9936708860759493
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": [
+                0.500886075949367,
+                0,
+                0.17,
+                1
+              ],
+              "value": {
+                "x": 10,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 310,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 3.6666666666666665,
+              "value": -310
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 1,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 255,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 3.6666666666666665,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.6666666666666666,
+              "curve": [
+                0.83,
+                0,
+                0.5054430379746836,
+                1
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.1666666666666665,
+              "curve": [
+                0.49455696202531635,
+                0.0031645569620253333,
+                0.17,
+                1
+              ],
+              "value": {
+                "x": 10,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 3.6666666666666665,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "x": [
+            {
+              "frame": 3,
+              "value": 310,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 7,
+              "value": -310
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 3,
+              "value": 1,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 5,
+              "value": 255,
+              "curve": "quartInOut"
+            },
+            {
+              "frame": 7,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 3,
+              "curve": [
+                0.83,
+                0,
+                0.49911392405063293,
+                0.9968354430379747
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 5,
+              "curve": [
+                0.500886075949367,
+                0,
+                0.17,
+                1
+              ],
+              "value": {
+                "x": 10,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 7,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 1
+            },
+            {
+              "frame": 3,
+              "value": 255
+            },
+            {
+              "frame": 4,
+              "value": 1
+            },
+            {
+              "frame": 5,
+              "value": 255
+            },
+            {
+              "frame": 6,
+              "value": 1
+            },
+            {
+              "frame": 7,
+              "value": 255
+            },
+            {
+              "frame": 8,
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

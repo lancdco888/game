@@ -29,28 +29,28 @@ export enum SymbolTypeId {
  * 3. 播放符号移动缓动动画并播放音效
  * 4. 清理所有已生成的移动特效节点
  */
-@ccclass('MoveGreen_HoundOfHades')
+@ccclass()
 export default class MoveGreen_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 移动特效挂载的父节点 */
     @property(cc.Node)
-    public move_Node: cc.Node | null = null;
+    public move_Node: cc.Node = null;
 
     /** Jackpot符号预制体 */
     @property(cc.Prefab)
-    public jackpot_Prefab: cc.Prefab | null = null;
+    public jackpot_Prefab: cc.Prefab = null;
 
     /** 蓝色符号预制体 */
     @property(cc.Prefab)
-    public blue_Prefab: cc.Prefab | null = null;
+    public blue_Prefab: cc.Prefab = null;
 
     /** 红色符号预制体 */
     @property(cc.Prefab)
-    public red_Prefab: cc.Prefab | null = null;
+    public red_Prefab: cc.Prefab = null;
 
     /** 绿色符号预制体 */
     @property(cc.Prefab)
-    public green_Prefab: cc.Prefab | null = null;
+    public green_Prefab: cc.Prefab = null;
 
     // ====== 私有常量（位置计算基准值，原代码硬编码） ======
     /** 符号宽度（位置计算） */

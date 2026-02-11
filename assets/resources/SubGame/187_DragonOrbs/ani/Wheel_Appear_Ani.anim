@@ -1,0 +1,102 @@
+{
+  "_name": "Wheel_Appear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.0166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Dim": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 200
+            },
+            {
+              "frame": 2,
+              "value": 200
+            },
+            {
+              "frame": 2.0166666666666666,
+              "value": 200
+            }
+          ]
+        }
+      },
+      "Wheel_Pivot/Pivot": {
+        "comps": {},
+        "props": {
+          "y": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 600,
+              "curve": "sineOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -20,
+              "curve": [
+                0.6102036659877801,
+                0.19511201629327912,
+                0.54,
+                0.95
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Wheel_Pivot/Pivot/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 100
+              }
+            ]
+          }
+        },
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

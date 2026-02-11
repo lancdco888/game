@@ -1,0 +1,69 @@
+{
+  "_name": "J1_Disappear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Txt": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.75,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.3333333333333333,
+              "curve": "quartOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "sineIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1.75,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

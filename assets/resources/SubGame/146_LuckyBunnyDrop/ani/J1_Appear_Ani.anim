@@ -1,0 +1,114 @@
+{
+  "_name": "J1_Appear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "J1_Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": true
+            }
+          ]
+        }
+      },
+      "J1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Txt": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.03333333333333333,
+              "curve": [
+                0.19945409429280406,
+                0.0034739454094291355,
+                0.19260545905707205,
+                0.9996277915632754
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "curve": "quadInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.23333333333333334,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.3,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

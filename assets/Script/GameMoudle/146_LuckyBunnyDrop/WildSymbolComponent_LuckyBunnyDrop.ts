@@ -2,7 +2,7 @@
 
 const { ccclass, property } = cc._decorator;
 
-@ccclass('WildSymbolComponent_LuckyBunnyDrop')
+@ccclass()
 export default class WildSymbolComponent_LuckyBunnyDrop extends cc.Component {
     // 组件属性定义（与原JS完全一致）
     @property([cc.Node])

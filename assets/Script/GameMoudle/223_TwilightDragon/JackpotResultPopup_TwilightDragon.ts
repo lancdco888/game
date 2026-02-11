@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）Jackpot 中奖结果弹窗
  * 继承自 cc.Component，管控中奖展示、数字滚动、分享、音效与自动关闭逻辑
  */
-@ccclass("JackpotResultPopup_TwilightDragon")
+@ccclass()
 export default class JackpotResultPopup_TwilightDragon extends cc.Component {
     // ======================================
     // Cocos 编辑器可绑定属性（对应原 JS 中的 S 装饰器）

@@ -28,7 +28,7 @@ const DELAY_TIME_END_PROCESS_2 = 1.2; // 结束流程第二步延迟
  * 负责头奖奖励展示、数字滚动、分享功能、金币爆炸特效及结果回调
  */
 
-@ccclass("MegaJackpotResultPopup_TwilightDragon")
+@ccclass()
 export default class MegaJackpotResultPopup_TwilightDragon extends cc.Component {
     // ===== 序列化属性（对应Cocos编辑器挂载，与原始代码一致）=====
     @property(cc.Node)

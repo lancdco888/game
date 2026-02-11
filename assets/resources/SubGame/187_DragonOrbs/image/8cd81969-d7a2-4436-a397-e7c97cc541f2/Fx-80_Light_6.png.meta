@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "27b7ef0f-e1c7-4cf6-a83a-4fa12437687b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 205,
+  "height": 205,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_Light_6": {
+      "ver": "1.0.6",
+      "uuid": "7ae06e90-06f0-48be-9696-486b68b61c43",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "27b7ef0f-e1c7-4cf6-a83a-4fa12437687b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1.5,
+      "trimX": 9,
+      "trimY": 9,
+      "width": 186,
+      "height": 184,
+      "rawWidth": 205,
+      "rawHeight": 205,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

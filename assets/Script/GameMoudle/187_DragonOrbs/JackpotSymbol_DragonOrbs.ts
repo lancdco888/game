@@ -20,16 +20,16 @@ interface PrizeData {
  * 龙珠游戏Jackpot符号组件
  * 管理Jackpot符号的奖金显示、倍数应用、奖金累加、虚拟符号奖金随机生成等核心逻辑
  */
-@ccclass('JackpotSymbol_DragonOrbs')
+@ccclass()
 export default class JackpotSymbol_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 奖金数值文本标签 */
     @property(cc.Label)
-    public prizeLabel: cc.Label | null = null;
+    public prizeLabel: cc.Label = null;
 
     /** 奖金显示根节点（控制显隐） */
     @property(cc.Node)
-    public prizeRoot: cc.Node | null = null;
+    public prizeRoot: cc.Node = null;
 
     // ===================== 私有状态（与原JS一致） =====================
     /** 当前奖金数值 */

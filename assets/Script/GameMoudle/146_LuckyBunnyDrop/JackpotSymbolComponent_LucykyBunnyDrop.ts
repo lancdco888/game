@@ -8,7 +8,7 @@ const { ccclass, property } = cc._decorator;
  * LuckyBunnyDrop Jackpot符号组件
  * 负责Jackpot符号的显示、奖励金额计算、类型控制等逻辑
  */
-@ccclass('JackpotSymbolComponent_LucykyBunnyDrop')
+@ccclass()
 export default class JackpotSymbolComponent_LucykyBunnyDrop extends cc.Component {
     // Jackpot类型节点数组（对应mini/minor/major/mega等）
     @property([cc.Node])
@@ -16,15 +16,15 @@ export default class JackpotSymbolComponent_LucykyBunnyDrop extends cc.Component
 
     // 倍数显示节点
     @property(cc.Node)
-    public multi_Node: cc.Node | null = null;
+    public multi_Node: cc.Node = null;
 
     // 旋转特效节点
     @property(cc.Node)
-    public spin_Node: cc.Node | null = null;
+    public spin_Node: cc.Node = null;
 
     // 奖励金额显示标签
     @property(cc.Label)
-    public prize: cc.Label | null = null;
+    public prize: cc.Label = null;
 
     // 私有变量：Jackpot类型（1-5对应mini/major等，0为倍数，-1为未初始化）
     public _jackpotType: number = -1;

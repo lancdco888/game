@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * 特殊符号（Jackpot）信息展示组件
  * 负责特殊符号的 Jackpot 节点切换、奖金金额格式化显示、专属字体切换、延迟闲置节点激活等视觉反馈
  */
-@ccclass("SpecialSymbolComponent_Zhuquefortune")
+@ccclass()
 export default class SpecialSymbolComponent_Zhuquefortune extends cc.Component {
     // ===== 序列化属性（编辑器绑定）=====
     // 普通奖金标签（展示低于3倍总投注的 Jackpot 奖金）

@@ -5,7 +5,7 @@ import ZhuquefortuneManager, { EventBus } from "./ZhuquefortuneManager";
 
 const { ccclass, property } = cc._decorator;
 
-@ccclass('MovePotComponent_Zhuquefortune')
+@ccclass()
 export default class MovePotComponent_Zhuquefortune extends cc.Component {
     // 移动节点容器（对应原JS的move_Node）
     @property({ type: cc.Node })

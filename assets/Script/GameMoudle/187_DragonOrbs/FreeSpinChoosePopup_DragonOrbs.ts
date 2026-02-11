@@ -11,7 +11,7 @@ const { ccclass, property } = cc._decorator;
  * 龙珠游戏免费旋转选择弹窗组件
  * 管理弹窗显隐、龙珠选择交互、动画/音效控制、事件绑定/移除、回调触发等核心逻辑
  */
-@ccclass('FreeSpinChoosePopup_DragonOrbs')
+@ccclass()
 export default class FreeSpinChoosePopup_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 遮罩背景节点（阻止底层交互） */
@@ -32,14 +32,14 @@ export default class FreeSpinChoosePopup_DragonOrbs extends cc.Component {
 
     /** 根动画组件（控制弹窗整体动画） */
     @property(cc.Animation)
-    public rootAnimation: cc.Animation | null = null;
+    public rootAnimation: cc.Animation = null;
 
     // ===================== 私有状态（与原JS一致） =====================
     /** 选择完成后的回调函数 */
     private _selectCallback: (() => void) | null = null;
 
     /** 当前选中的龙珠节点 */
-    private _currentTarget: cc.Node | null = null;
+    private _currentTarget: cc.Node = null;
 
     /** 当前命中的免费旋转类型索引（0=红/1=蓝/2=绿） */
     private _currentHitFreeSpinIndex: number = -1;

@@ -1,0 +1,121 @@
+{
+  "_name": "Left_UI_Dragon_Expect_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 12,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 8,
+              "value": true
+            },
+            {
+              "frame": 12,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Expect": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 8,
+              "value": false
+            }
+          ]
+        }
+      },
+      "particlesystem_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 4.666666666666667,
+              "value": false
+            }
+          ]
+        },
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 200
+              },
+              {
+                "frame": 3.1666666666666665,
+                "value": 200
+              },
+              {
+                "frame": 3.3333333333333335,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Dim": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 150
+            },
+            {
+              "frame": 3.3333333333333335,
+              "value": 150
+            },
+            {
+              "frame": 4,
+              "value": 1
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Wheel_Trigger": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

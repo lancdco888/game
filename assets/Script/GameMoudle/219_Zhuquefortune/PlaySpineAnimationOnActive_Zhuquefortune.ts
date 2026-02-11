@@ -3,11 +3,11 @@ const { ccclass, property } = cc._decorator;
 @ccclass()
 export default class PlaySpineAnimationOnActive_Zhuquefortune extends cc.Component {
     // 动画名称属性，对应原JS的animationName
-    @property({ type: String })
+    @property
     animationName: string = "";
 
     // 是否循环属性，对应原JS的bLoop
-    @property({ type: Boolean })
+    @property
     bLoop: boolean = false;
 
     onLoad(): void {

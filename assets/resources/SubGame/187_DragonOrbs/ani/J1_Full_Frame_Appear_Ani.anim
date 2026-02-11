@@ -1,0 +1,413 @@
+{
+  "_name": "J1_Full_Frame_Appear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Pivot/Add": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 100
+            },
+            {
+              "frame": 0.7,
+              "value": 255
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Pivot/Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.5833333333333334,
+              "value": 1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.7,
+              "value": 255,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 100
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255,
+              "curve": [
+                0.46,
+                0.05,
+                0.20755319148936174,
+                0.9047872340425531
+              ]
+            },
+            {
+              "frame": 1.4166666666666667,
+              "value": 100
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 255,
+              "curve": [
+                0.46,
+                0.05,
+                0.20755319148936174,
+                0.9047872340425531
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Fx": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": 1
+            }
+          ],
+          "active": [
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.6166666666666667,
+              "curve": "quartOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "curve": [
+                0.4041489361702128,
+                0.19627659574468093,
+                0.19691489361702133,
+                0.9978723404255319
+              ],
+              "value": {
+                "x": 0.6,
+                "y": 0.6,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": [
+                0.707340425531915,
+                0.09787234042553195,
+                0.7979787234042554,
+                0.8968085106382978
+              ],
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.65,
+              "value": 1
+            },
+            {
+              "frame": 0.7,
+              "value": 255,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": 1
+            }
+          ],
+          "active": [
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.65,
+              "value": true
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.65,
+              "curve": "quadOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.2333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 1
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255,
+              "curve": "quartOut"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 1
+            }
+          ],
+          "active": [
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.6166666666666667,
+              "curve": "quadOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": {
+                "x": 1.6,
+                "y": 1.6,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Prize": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2,
+              "curve": "sineOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

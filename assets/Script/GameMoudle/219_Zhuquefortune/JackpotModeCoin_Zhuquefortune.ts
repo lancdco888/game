@@ -7,7 +7,7 @@ const { ccclass, property } = cc._decorator;
  * 朱雀运势 Jackpot 模式硬币组件
  * 负责单个硬币的状态切换、动画播放、鼠标交互事件处理
  */
-@ccclass("JackpotModeCoin_Zhuquefortune")
+@ccclass()
 export default class JackpotModeCoin_Zhuquefortune extends cc.Component {
     // 硬币核心动画组件（绑定所有硬币相关动画剪辑）
     @property(cc.Animation)

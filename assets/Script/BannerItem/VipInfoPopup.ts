@@ -6,7 +6,7 @@ const { ccclass, property } = cc._decorator;
  * VIP信息弹窗组件
  * 继承自DialogBase，负责VIP信息弹窗的加载、显示、Tab切换、数据同步与动画管理
  */
-@ccclass('VipInfoPopup')
+@ccclass()
 export default class VipInfoPopup extends DialogBase {
     // // ===== 序列化组件属性 =====
     // /** 我的VIP信息标签页 */

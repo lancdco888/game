@@ -1,0 +1,53 @@
+{
+  "_name": "Feature_Choice_Contents_Win_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": [
+            0.06,
+            0.12,
+            0.5135106382978722,
+            0.898936170212766
+          ],
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.3333333333333333,
+          "curve": [
+            0.39606382978723403,
+            0.0957446808510638,
+            0.39914893617021274,
+            0.898936170212766
+          ],
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

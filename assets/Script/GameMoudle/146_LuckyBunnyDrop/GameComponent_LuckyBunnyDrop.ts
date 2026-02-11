@@ -9,48 +9,48 @@ import LockWildComponent_LuckyBunnyDrop from "./LockWildComponent_LuckyBunnyDrop
 import TopUIComponent_LuckyBunnyDrop from "./TopUIComponent_LuckyBunnyDrop";
 
 
-const { ccclass: ccclassDecorator, property: propertyDecorator } = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
-@ccclassDecorator('GameComponent_LuckyBunnyDrop')
+@ccclass()
 export default class GameComponent_LuckyBunnyDrop extends cc.Component {
     // 组件属性定义（与原JS保持完全一致）
-    @propertyDecorator(TopUIComponent_LuckyBunnyDrop)
+    @property(TopUIComponent_LuckyBunnyDrop)
     public topUI: TopUIComponent_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(LockWildComponent_LuckyBunnyDrop)
+    @property(LockWildComponent_LuckyBunnyDrop)
     public lockWild: LockWildComponent_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(FreeSpinStartPopup_LuckyBunnyDrop)
+    @property(FreeSpinStartPopup_LuckyBunnyDrop)
     public freeSpinStartPopup: FreeSpinStartPopup_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(FreeSpinRetriggerPopup_LuckyBunnyDrop)
+    @property(FreeSpinRetriggerPopup_LuckyBunnyDrop)
     public freeSpinRetriggerPopup: FreeSpinRetriggerPopup_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(FreeSpinResultPopup_LuckyBunnyDrop)
+    @property(FreeSpinResultPopup_LuckyBunnyDrop)
     public freeSpinResultPopup: FreeSpinResultPopup_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(LockAndRollStartPopup_LuckyBunnyDrop)
+    @property(LockAndRollStartPopup_LuckyBunnyDrop)
     public lockAndRollStartPopup: LockAndRollStartPopup_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(cc.Node)
+    @property(cc.Node)
     public normal_Reels: cc.Node | null = null;
 
-    @propertyDecorator(cc.Node)
+    @property(cc.Node)
     public lockAndRoll_Reels: cc.Node | null = null;
 
-    @propertyDecorator([cc.Node])
+    @property([cc.Node])
     public lockAndRoll_UI_Nodes: cc.Node[] = [];
 
-    @propertyDecorator(LockAndRollRewardComponent_LuckyBunnyDrop)
+    @property(LockAndRollRewardComponent_LuckyBunnyDrop)
     public lockAndRollRewardnUI: LockAndRollRewardComponent_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(LockAndRollComponent_LuckyBunnyDrop)
+    @property(LockAndRollComponent_LuckyBunnyDrop)
     public lockAndRoll: LockAndRollComponent_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(JackpotResultPopup_LuckyBunnyDrop)
+    @property(JackpotResultPopup_LuckyBunnyDrop)
     public jackpotResultPopup: JackpotResultPopup_LuckyBunnyDrop | null = null;
 
-    @propertyDecorator(cc.Animation)
+    @property(cc.Animation)
     public multiUI_Animation: cc.Animation | null = null;
 
     /**

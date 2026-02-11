@@ -17,7 +17,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）游戏组件管理类
  * 继承自通用基础组件 GameComponents_Base，统一管理所有游戏界面组件、动画、弹窗
  */
-@ccclass("GameComponents_TwilightDragon")
+@ccclass()
 export default class GameComponents_TwilightDragon extends GameComponents_Base {
     // ======================================
     // Cocos 编辑器可绑定属性（对应原 JS 中的 g 装饰器）

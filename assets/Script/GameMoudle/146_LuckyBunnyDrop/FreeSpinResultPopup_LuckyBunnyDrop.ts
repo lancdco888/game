@@ -11,35 +11,35 @@ const { ccclass, property } = cc._decorator;
  * LuckyBunnyDrop 免费旋转/LockAndRoll结果弹窗组件
  * 负责双模式（FreeSpin/LockAndRoll）结果展示、金额格式化、FB分享、动画/音效控制、自动关闭等逻辑
  */
-@ccclass('FreeSpinResultPopup_LuckyBunnyDrop')
+@ccclass()
 export default class FreeSpinResultPopup_LuckyBunnyDrop extends cc.Component {
     // 遮罩背景节点（阻止底层交互，适配画布大小）
     @property(cc.Node)
-    public blockingBG: cc.Node | null = null;
+    public blockingBG: cc.Node = null;
 
     // 装饰节点（适配画布大小）
     @property(cc.Node)
-    public decoNode: cc.Node | null = null;
+    public decoNode: cc.Node = null;
 
     // 奖励金额显示标签
     @property(cc.Label)
-    public rewardLabel: cc.Label | null = null;
+    public rewardLabel: cc.Label = null;
 
     // 收集按钮
     @property(cc.Button)
-    public collectButton: cc.Button | null = null;
+    public collectButton: cc.Button = null;
 
     // 分享开关
     @property(cc.Toggle)
-    public shareToggle: cc.Toggle | null = null;
+    public shareToggle: cc.Toggle = null;
 
     // 线注倍数显示标签
     @property(cc.Label)
-    public lineBetLabel: cc.Label | null = null;
+    public lineBetLabel: cc.Label = null;
 
     // 免费旋转次数显示标签
     @property(cc.Label)
-    public freespinCountLabel: cc.Label | null = null;
+    public freespinCountLabel: cc.Label = null;
 
     // 弹窗启动动画组件
     @property(cc.Animation)
@@ -55,16 +55,16 @@ export default class FreeSpinResultPopup_LuckyBunnyDrop extends cc.Component {
 
     // FreeSpin模式节点（显示/隐藏）
     @property(cc.Node)
-    public freeSpin_Node: cc.Node | null = null;
+    public freeSpin_Node: cc.Node = null;
 
     // LockAndRoll模式节点（显示/隐藏）
     @property(cc.Node)
-    public lockAndRoll_Node: cc.Node | null = null;
+    public lockAndRoll_Node: cc.Node = null;
 
     // 私有变量：奖励金额
     private _goldAmount: number = 0;
     // 私有变量：弹窗关闭后的回调函数
-    private _fnCallback: Function | null = null;
+    private _fnCallback: Function = null;
     // 私有变量：是否自动关闭
     private _isAutoClose: boolean = false;
     // 私有变量：是否为FreeSpin模式（false=LockAndRoll模式）

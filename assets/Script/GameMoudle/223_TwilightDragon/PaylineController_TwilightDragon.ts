@@ -4,7 +4,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙支付线控制器
  * 负责管理支付线节点的显示与隐藏
  */
-@ccclass("PaylineController_TwilightDragon")
+@ccclass()
 export default class PaylineController_TwilightDragon extends cc.Component {
     // 支付线节点数组（供编辑器序列化配置，对应原始JS的lineNodes）
     @property([cc.Node])

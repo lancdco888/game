@@ -10,7 +10,7 @@ const { ccclass, property } = cc._decorator;
  * 1. 初始化红色符号状态（播放feature1动画）
  * 2. 设置红色符号奖金信息（播放feature2动画、更新奖金UI、调度idle动画）
  */
-@ccclass('BonusRedComponent_HoundOfHades')
+@ccclass()
 export default class BonusRedComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 符号骨骼动画组件 */

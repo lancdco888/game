@@ -32,7 +32,7 @@ const { ccclass, property } = cc._decorator;
  * 4. 奖金统计与UI更新
  * 5. 节点Z轴层级重置
  */
-@ccclass('LockComponent_HoundOfHades')
+@ccclass()
 export default class LockComponent_HoundOfHades extends cc.Component {
     // ====== Cocos 属性面板配置 ======
     /** 锁符号根节点（所有锁符号的父节点） */

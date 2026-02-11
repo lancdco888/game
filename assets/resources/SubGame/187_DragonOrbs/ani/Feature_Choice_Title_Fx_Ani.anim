@@ -1,0 +1,368 @@
+{
+  "_name": "Feature_Choice_Title_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": true
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": false
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": -50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": true
+            },
+            {
+              "frame": 1.3,
+              "value": false
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.3,
+              "value": -50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": true
+            },
+            {
+              "frame": 1.5,
+              "value": false
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": -50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "4": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.1,
+              "value": true
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": false
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.1,
+              "value": 0
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": -50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "5": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": true
+            },
+            {
+              "frame": 2.15,
+              "value": false
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 2.15,
+              "value": -50
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.4833333333333334,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.65,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.15,
+              "value": {
+                "x": 0.1,
+                "y": 0.1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Mask/Gra": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -455
+            },
+            {
+              "frame": 0.5,
+              "value": -455,
+              "curve": "quadOut"
+            },
+            {
+              "frame": 2.5,
+              "value": 455
+            },
+            {
+              "frame": 3,
+              "value": 455
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

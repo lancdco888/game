@@ -16,43 +16,43 @@ export default class FeatureInfo_DragonOrbs extends cc.Component {
     // ===================== 序列化属性（与原JS一致） =====================
     /** 龙珠计数文本标签 */
     @property(cc.Label)
-    public orbCnt: cc.Label | null = null;
+    public orbCnt: cc.Label = null;
 
     /** 倍数文本标签（如 2x/3x） */
     @property(cc.Label)
-    public multiplier: cc.Label | null = null;
+    public multiplier: cc.Label = null;
 
     /** 基础特效节点 */
     @property(cc.Node)
-    public baseFx: cc.Node | null = null;
+    public baseFx: cc.Node = null;
 
     /** 龙珠动画组件 */
     @property(cc.Animation)
-    public orbAnimation: cc.Animation | null = null;
+    public orbAnimation: cc.Animation = null;
 
     /** 基础模式下计数增加特效节点 */
     @property(cc.Node)
-    public spinCntReceive_base: cc.Node | null = null;
+    public spinCntReceive_base: cc.Node = null;
 
     /** 免费旋转模式下计数增加特效节点 */
     @property(cc.Node)
-    public spinCntReceive_freeSpin: cc.Node | null = null;
+    public spinCntReceive_freeSpin: cc.Node = null;
 
     /** 倍数增加特效节点 */
     @property(cc.Node)
-    public multiplierReceive: cc.Node | null = null;
+    public multiplierReceive: cc.Node = null;
 
     /** 倍数动画根节点 */
     @property(cc.Animation)
-    public multiplierPivot: cc.Animation | null = null;
+    public multiplierPivot: cc.Animation = null;
 
     /** 免费旋转数字动画根节点 */
     @property(cc.Animation)
-    public FSNumPivot: cc.Animation | null = null;
+    public FSNumPivot: cc.Animation = null;
 
     /** 置灰遮罩节点 */
     @property(cc.Node)
-    public dim: cc.Node | null = null;
+    public dim: cc.Node = null;
 
     /** 计量表标识（对应Gauge数据） */
     @property

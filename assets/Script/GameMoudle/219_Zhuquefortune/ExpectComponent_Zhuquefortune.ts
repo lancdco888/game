@@ -8,7 +8,7 @@ const { ccclass, property } = cc._decorator;
  * 期望展示组件（朱雀特效）
  * 负责控制期望节点显隐、龙骨动画播放与混合、对应音效播放，实现期望/落空的视觉反馈
  */
-@ccclass("ExpectComponent_Zhuquefortune")
+@ccclass()
 export default class ExpectComponent_Zhuquefortune extends cc.Component {
     // 常规期望节点数组（大赢期望展示）
     @property([cc.Node])

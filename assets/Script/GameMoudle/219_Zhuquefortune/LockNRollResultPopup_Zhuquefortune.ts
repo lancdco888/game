@@ -12,43 +12,43 @@ const { ccclass, property } = cc._decorator;
  * 朱雀运势 Lock&Roll 结果弹窗组件
  * 负责展示奖金结果、处理领取交互、播放金币爆炸特效、支持Facebook分享
  */
-@ccclass("LockNRollResultPopup_Zhuquefortune")
+@ccclass()
 export default class LockNRollResultPopup_Zhuquefortune extends cc.Component {
     // 弹窗根节点
     @property(cc.Node)
-    public root: cc.Node | null = null;
+    public root: cc.Node = null;
 
     // 遮罩背景（阻止底层交互）
     @property(cc.Node)
-    public blockingBG: cc.Node | null = null;
+    public blockingBG: cc.Node = null;
 
     // 装饰节点（适配画布大小）
     @property(cc.Node)
-    public deco_Node: cc.Node | null = null;
+    public deco_Node: cc.Node = null;
 
     // 弹窗启动动画组件
     @property(cc.Animation)
-    public startAni: cc.Animation | null = null;
+    public startAni: cc.Animation = null;
 
     // 奖金金额标签（显示最终获胜金币）
     @property(cc.Label)
-    public resultMoney: cc.Label | null = null;
+    public resultMoney: cc.Label = null;
 
     // 线注倍数标签（显示 Xxx 倍数）
     @property(cc.Label)
-    public lineBetLabel: cc.Label | null = null;
+    public lineBetLabel: cc.Label = null;
 
     // 领取按钮
     @property(cc.Button)
-    public collectButton: cc.Button | null = null;
+    public collectButton: cc.Button = null;
 
     // 分享切换开关（是否勾选分享）
     @property(cc.Toggle)
-    public toggleShare: cc.Toggle | null = null;
+    public toggleShare: cc.Toggle = null;
 
     // 分享组件根节点
     @property(cc.Node)
-    public rootShareComponent: cc.Node | null = null;
+    public rootShareComponent: cc.Node = null;
 
     // 初始化时需要隐藏的节点数组
     @property([cc.Node])
@@ -60,26 +60,26 @@ export default class LockNRollResultPopup_Zhuquefortune extends cc.Component {
 
     // 金币爆炸动画组件
     @property(cc.Animation)
-    public winExplodeCoin: cc.Animation | null = null;
+    public winExplodeCoin: cc.Animation = null;
 
     // 金币收集特效节点
     @property(cc.Node)
-    public winCoinCollectFx: cc.Node | null = null;
+    public winCoinCollectFx: cc.Node = null;
 
     // 大额奖金背景（≥10亿）
     @property(cc.Node)
-    public long_BG: cc.Node | null = null;
+    public long_BG: cc.Node = null;
 
     // 小额奖金背景（<10亿）
     @property(cc.Node)
-    public short_BG: cc.Node | null = null;
+    public short_BG: cc.Node = null;
 
     // 顶层遮罩节点（防止领取后重复交互）
     @property(cc.Node)
-    public topBlockNode: cc.Node | null = null;
+    public topBlockNode: cc.Node = null;
 
     // 私有变量：回调函数（弹窗结束后执行）
-    private _callback: (() => void) | null = null;
+    private _callback: (() => void) = null;
 
     // 私有变量：获胜金币金额
     private _winningCoin: number = 0;

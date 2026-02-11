@@ -4,7 +4,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）顶部 UI 管理类
  * 继承自 cc.Component，管控顶部 UI 动画、粒子特效、龙骨动画的状态切换
  */
-@ccclass("TopUI_TwilightDragon")
+@ccclass()
 export default class TopUI_TwilightDragon extends cc.Component {
     // ======================================
     // Cocos 编辑器可绑定属性（对应原 JS 中的 s 装饰器）

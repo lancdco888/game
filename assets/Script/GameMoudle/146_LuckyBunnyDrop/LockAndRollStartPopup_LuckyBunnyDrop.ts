@@ -9,15 +9,15 @@ const { ccclass, property } = cc._decorator;
  * LuckyBunnyDrop LockAndRoll启动弹窗组件
  * 负责LockAndRoll模式启动时的弹窗展示、动画播放、音效控制、音量调整、按钮交互等逻辑
  */
-@ccclass('LockAndRollStartPopup_LuckyBunnyDrop')
+@ccclass()
 export default class LockAndRollStartPopup_LuckyBunnyDrop extends cc.Component {
     // 遮罩背景节点（阻止底层交互，适配画布大小）
     @property(cc.Node)
-    public blockingBG: cc.Node | null = null;
+    public blockingBG: cc.Node = null;
 
     // 装饰节点（适配画布大小）
     @property(cc.Node)
-    public decoNode: cc.Node | null = null;
+    public decoNode: cc.Node = null;
 
     // 弹窗动画组件（注意：原JS拼写为popupAniamtion，保持一致避免动画名匹配错误）
     @property(cc.Animation)
@@ -33,14 +33,14 @@ export default class LockAndRollStartPopup_LuckyBunnyDrop extends cc.Component {
 
     // 旋转次数显示标签
     @property(cc.Label)
-    public spinCount: cc.Label | null = null;
+    public spinCount: cc.Label = null;
 
     // 开始按钮（控制交互状态）
     @property(cc.Button)
-    public start_Button: cc.Button | null = null;
+    public start_Button: cc.Button = null;
 
     // 私有变量：弹窗关闭后的回调函数
-    private _callBack: Function | null = null;
+    private _callBack: Function = null;
 
     /**
      * 组件加载时执行（Cocos生命周期）

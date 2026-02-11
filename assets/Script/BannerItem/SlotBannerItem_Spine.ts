@@ -9,7 +9,7 @@ import SlotBannerItem_Long from './SlotBannerItem_Long';
  * 老虎机横幅Spine组件
  * 继承自SlotBannerItem_Long，负责Spine类型横幅的资源加载、节点管理
  */
-@ccclass('SlotBannerItem_Spine')
+@ccclass()
 export default class SlotBannerItem_Spine extends SlotBannerItem_Long {
     // ===== 组件属性（序列化） =====
     /** Spine根节点（挂载所有Spine实例） */

@@ -8,7 +8,7 @@ const { ccclass, property } = cc._decorator;
  * LuckyBunnyDrop 免费旋转重触发弹窗组件
  * 负责展示免费旋转重触发的次数、播放动画和音效、控制音量等逻辑
  */
-@ccclass('FreeSpinRetriggerPopup_LuckyBunnyDrop')
+@ccclass()
 export default class FreeSpinRetriggerPopup_LuckyBunnyDrop extends cc.Component {
     // 遮罩背景节点（阻止底层交互，适配画布大小）
     @property(cc.Node)

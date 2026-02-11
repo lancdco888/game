@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
  * 暮光龙（Twilight Dragon）免费旋转开始弹窗
  * 继承自 cc.Component，管控弹窗打开/关闭、动画、按钮交互、音效逻辑
  */
-@ccclass("FreeSpinStartPopup_TwilightDragon")
+@ccclass()
 export default class FreeSpinStartPopup_TwilightDragon extends cc.Component {
     // ======================================
     // Cocos 编辑器可绑定属性（对应原 JS 中的 f 装饰器）
