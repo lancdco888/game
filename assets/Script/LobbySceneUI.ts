@@ -78,7 +78,7 @@ export default class LobbySceneUI extends cc.Component {
         msgMgr.addListenerTarget(MessageRoutingManager.MSG.OPEN_MESSAGE_BOX, this.openMessageBox, this);
         msgMgr.addListenerTarget(MessageRoutingManager.MSG.OPEN_SLOT_ERROR_MESSAGE_BOX, this.openSlotErrorMessageBox, this);
 
-        this.initialize(LobbySceneUIType.LOBBY)
+        // this.initialize(LobbySceneUIType.LOBBY)
     }
 
     // ===================== 生命周期回调 - ONDESTROY 1:1复刻原逻辑 =====================
