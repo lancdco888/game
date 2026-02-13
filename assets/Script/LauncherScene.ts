@@ -61,14 +61,15 @@ export default class LauncherScene extends cc.Component {
             facebookAppID: "689653411415651",
             serviceMode: "DEV",
             // serverIp: "https://app-dev.highrollervegas.net/"
-            // serverIp:"http://192.168.2.167:8080/api/"
-            serverIp:"http://1.13.80.243:8080/api/"
+            serverIp:"http://192.168.2.167:8080/api/"
+            // serverIp:"http://1.13.80.243:8080/api/"
         },
         {
             facebookAppID: "249221922271985",
             serviceMode: "QA",
             // serverIp: "https://app-qa.highrollervegas.net/"
-            serverIp:"http://1.13.80.243:8080/api/"
+            serverIp:"http://192.168.2.167:8080/api/"
+            // serverIp:"http://1.13.80.243:8080/api/"
         }
     ];
 
@@ -545,7 +546,8 @@ export default class LauncherScene extends cc.Component {
             //     Utility.setResourceVersion(0+"");
             // }
 
-            this.commonServerUrl = "http://1.13.80.243:8080/api/"
+            // this.commonServerUrl = "http://1.13.80.243:8080/api/"
+            this.commonServerUrl = "http://192.168.2.167:8080/api/"
 
             cc.log("this.commonServerUrl", this.commonServerUrl);
 
