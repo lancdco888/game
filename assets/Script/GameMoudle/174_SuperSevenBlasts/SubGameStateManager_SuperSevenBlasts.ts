@@ -67,7 +67,7 @@ export default class SubGameStateManager_SuperSevenBlasts extends SubGameStateMa
         // 旋转后状态序列（带启动回调）
         const postSpinState = new SequencialState();
         postSpinState.addOnStartCallback(() => {
-            if (SlotManager.Instance.flagSpinRequest === 1) {
+            if (SlotManager.Instance.flagSpinRequest) {
                 postSpinState.insert(step++, this.setNextEffectState());
                 const visibleWindows = SlotGameResultManager.Instance.getVisibleSlotWindows();
                 postSpinState.insert(step++, this.getExpectFrameState());

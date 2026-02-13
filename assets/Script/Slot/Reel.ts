@@ -356,7 +356,8 @@ export default class Reel extends cc.Component {
     update(): void {
         if (this._getNextSymbolId && 0 != this.symbolArray.length) {
             if (this.directionSpinReel == Reel.SPINDIRECTION_DOWN) {
-                for (let e = this.symbolArray[this.symbolArray.length - 1]; this.getPositionY(e.y) < -this.symbolHeight * (this.visibleRow + this.bufferRow / 2);) {
+                let e = this.symbolArray[this.symbolArray.length - 1];
+                for (; this.getPositionY(e.y) < -this.symbolHeight * (this.visibleRow + this.bufferRow / 2);) {
                     const lastSymbol = this.getLastSymbol();
                     const nextSymbolId = this._getNextSymbolId();
                     let specialInfo = null;

@@ -1889,37 +1889,37 @@ export default class HRVSlotService extends cc.Component {
 
             // 解析服务器返回结果
             const serverResult = CommonServer.getServerChangeResult(spinResult);
-            // 校验投注扣款支付码
-            if (serverResult.getCheckByPayCode(PayCode.SlotBetWithdraw)) {
-                // 投注Spin次数统计
-                MessageRoutingManager.NUMBER_BET_SPIN_COUNT++;
-                const currentBetSpinCount = MessageRoutingManager.NUMBER_BET_SPIN_COUNT;
+            // // 校验投注扣款支付码
+            // if (serverResult.getCheckByPayCode(PayCode.SlotBetWithdraw)) {
+            //     // 投注Spin次数统计
+            //     MessageRoutingManager.NUMBER_BET_SPIN_COUNT++;
+            //     const currentBetSpinCount = MessageRoutingManager.NUMBER_BET_SPIN_COUNT;
                 
-                // 关键次数触发betSpin日志上报
-                if ([1, 10, 50, 100, 150, 200, 300, 400, 500].includes(currentBetSpinCount)) {
-                    Analytics.betSpin(
-                        SlotManager.Instance.getZoneId(),
-                        SlotGameRuleManager.Instance.slotID,
-                        currentBetSpinCount,
-                        SlotReelSpinStateManager.Instance.getAutospinMode()
-                    );
-                }
+            //     // // 关键次数触发betSpin日志上报
+            //     // if ([1, 10, 50, 100, 150, 200, 300, 400, 500].includes(currentBetSpinCount)) {
+            //     //     Analytics.betSpin(
+            //     //         SlotManager.Instance.getZoneId(),
+            //     //         SlotGameRuleManager.Instance.slotID,
+            //     //         currentBetSpinCount,
+            //     //         SlotReelSpinStateManager.Instance.getAutospinMode()
+            //     //     );
+            //     // }
 
-                // 累计总Spin次数
-                UserInfo.instance().addTotalSpinCount();
-                const totalSpinCount = UserInfo.instance().getTotalSpinCount();
+            //     // 累计总Spin次数
+            //     UserInfo.instance().addTotalSpinCount();
+            //     const totalSpinCount = UserInfo.instance().getTotalSpinCount();
                 
-                // 首次Spin触发特殊日志上报
-                if (totalSpinCount === 1) {
-                    // Analytics.submitApplication();
-                    // Analytics.accBetSpin(
-                    //     SlotManager.Instance.getZoneId(),
-                    //     SlotGameRuleManager.Instance.slotID,
-                    //     totalSpinCount,
-                    //     SlotReelSpinStateManager.Instance.getAutospinMode()
-                    // );
-                }
-            }
+            //     // 首次Spin触发特殊日志上报
+            //     if (totalSpinCount === 1) {
+            //         // Analytics.submitApplication();
+            //         // Analytics.accBetSpin(
+            //         //     SlotManager.Instance.getZoneId(),
+            //         //     SlotGameRuleManager.Instance.slotID,
+            //         //     totalSpinCount,
+            //         //     SlotReelSpinStateManager.Instance.getAutospinMode()
+            //         // );
+            //     }
+            // }
 
             // ===== 5. 移动端引导标记设置 =====
             if (Utility.isMobileGame() && !ServerStorageManager.getAsBoolean(StorageKeyType.MOBILE_GUIDE)) {
