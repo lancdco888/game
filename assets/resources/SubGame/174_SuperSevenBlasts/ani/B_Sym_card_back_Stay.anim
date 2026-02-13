@@ -1,0 +1,99 @@
+{
+  "_name": "B_Sym_card_back_Stay",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "FX-80_Glow_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": []
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ],
+            "startRadius": [],
+            "endRadius": [
+              {
+                "frame": 0,
+                "value": 70
+              }
+            ]
+          }
+        }
+      },
+      "FX-100_EX_Reel": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "80_bonus_card_back": {
+        "props": {
+          "skewY": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "position": [],
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

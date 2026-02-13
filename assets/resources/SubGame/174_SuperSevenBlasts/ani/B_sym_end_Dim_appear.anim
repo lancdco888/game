@@ -1,0 +1,156 @@
+{
+  "_name": "B_sym_end_Dim_appear",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": [
+            0.06,
+            0.12,
+            0.5614814814814815,
+            1.1164021164021163
+          ],
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.16666666666666666,
+          "curve": "cubicIn",
+          "value": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.2833333333333333,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 0,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": 100
+              }
+            ],
+            "speedVar": [
+              {
+                "frame": 0,
+                "value": 0,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 0.06666666666666667,
+                "value": 10
+              }
+            ]
+          }
+        }
+      },
+      "80_bonus_glow1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255
+            }
+          ],
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "80_bonus_end": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284111450
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

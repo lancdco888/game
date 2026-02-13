@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7618002d-253e-4511-ada6-692ee5693288",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 184,
+  "height": 184,
+  "platformSettings": {},
+  "subMetas": {
+    "fx-80_cross_light_01": {
+      "ver": "1.0.6",
+      "uuid": "8c4cf216-5367-477e-af33-b6339ddfe1bf",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7618002d-253e-4511-ada6-692ee5693288",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 184,
+      "height": 184,
+      "rawWidth": 184,
+      "rawHeight": 184,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "_name": "Main_Frame_Blue_light_stay",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1.5,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "80_RFb_framelight1": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight2": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight3": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight4": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight5": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight6": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight7": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight8": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight9": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight10": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight11": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight12": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_RFb_framelight13": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,1242 @@
+{
+  "_name": "Pop_JP_openNclose",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.0833333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 1.8333333333333333,
+          "value": 255
+        },
+        {
+          "frame": 2.0833333333333335,
+          "value": 0
+        }
+      ]
+    },
+    "paths": {
+      "fx-100_BB": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 180
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": 180
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Info/position_cont": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.08333333333333333,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.6666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": [
+                0,
+                70,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Button/position_cont": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.7166666666666666,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": [
+                0,
+                70,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.8,
+              "value": 255
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Share/position_cont": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                40,
+                0
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.7666666666666666,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 2.0166666666666666,
+              "value": [
+                0,
+                70,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.85,
+              "value": 255
+            },
+            {
+              "frame": 2.0166666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Left": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.45,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.6166666666666667,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.7666666666666667,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                5,
+                0
+              ]
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 1.75,
+              "value": [
+                0,
+                -80,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Right": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.7,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.85,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                5,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.3833333333333333,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.6333333333333333,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 1.8,
+              "value": [
+                0,
+                -80,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Front": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.6166666666666667,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                20,
+                0
+              ]
+            },
+            {
+              "frame": 0.7833333333333333,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                -10,
+                0
+              ]
+            },
+            {
+              "frame": 0.9333333333333333,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                5,
+                0
+              ]
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.4666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.7166666666666666,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                30,
+                0
+              ]
+            },
+            {
+              "frame": 1.8833333333333333,
+              "value": [
+                0,
+                -100,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 180
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": 180
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Left/PU-80_JP_seven_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": 255
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Right/PU-80_JP_seven_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.85,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Front/PU-80_JP_seven_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Front/fx-80_cross_light_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.1833333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/Right/fx-80_cross_light_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.43333333333333335,
+              "value": 0
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.95,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Pannel/fx-80_cross_light_01_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.6,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Pannel/fx-80_cross_light_01_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Pannel/fx-80_cross_light_01_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.48333333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.6833333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont/Object/PU-80_JP_title_shadowX4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.7666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Size_cont/Title/Pivot/fx-80_cross_light_01 copy": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2,
+              "value": 255
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.65,
+              "value": 0
+            },
+            {
+              "frame": 0.85,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Size_cont": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.0833333333333335,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Size_cont/Pannel": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                25,
+                0
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                0,
+                65,
+                0
+              ]
+            },
+            {
+              "frame": 1.4166666666666667,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                65,
+                0
+              ]
+            },
+            {
+              "frame": 1.6666666666666667,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                75,
+                0
+              ]
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": [
+                0,
+                -15,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.4166666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Size_cont/Object": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                180,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "curve": "sineInOut",
+              "value": [
+                0,
+                240,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                0,
+                230,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 1.5,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.75,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Size_cont/Score_Board": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.5,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.03,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.98,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.01,
+                "y": 1.01,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.75,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.9166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Size_cont/Title": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.08333333333333333,
+              "curve": "linear",
+              "value": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "frame": 0.21666666666666667,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                142,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                149,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                112,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                127,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                0,
+                122,
+                0
+              ]
+            },
+            {
+              "frame": 1.5,
+              "curve": "cubicOut",
+              "value": [
+                0,
+                122,
+                0
+              ]
+            },
+            {
+              "frame": 1.75,
+              "curve": "cubicIn",
+              "value": [
+                0,
+                142,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                0,
+                62,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.08333333333333333,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2833333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 1.12,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.05,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.75,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Bg/Light_line": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Size_cont/Num": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.6666666666666666,
+              "curve": [
+                0.4386996904024768,
+                0.16769865841073273,
+                0.6805985552115583,
+                0.6909184726522188
+              ],
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.8,
+                "y": 0.8,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.6666666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "cubicIn",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

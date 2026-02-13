@@ -1,7 +1,7 @@
 
 // 导入暮光龙专属组件/弹窗
+import JackpotMoneyDisplay from "../../JackpotMoneyDisplay";
 import GameComponents_Base from "../../game/GameComponents_Base";
-import JackpotMoneyDisplay from "../183_HoundOfHades/JackpotMoneyDisplay";
 import FreeSpinResultPopup_TwilightDragon from "./FreeSpinResultPopup_TwilightDragon";
 import FreeSpinStartPopup_TwilightDragon from "./FreeSpinStartPopup_TwilightDragon";
 import FreeSpinSymbolAniLayer_TwilightDragon from "./FreeSpinSymbolAniLayer_TwilightDragon";

@@ -1,0 +1,1217 @@
+{
+  "_name": "Bonus_close",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.9166666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "BG/Bg_cont/80_bonus_bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ],
+          "width": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 942,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 100,
+              "curve": "sineInOut"
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back": {
+        "props": {
+          "active": []
+        }
+      },
+      "Par_cont": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicIn",
+              "value": [
+                461,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "curve": "linear",
+              "value": [
+                -461,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Par_cont/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0.16666666666666666,
+                "value": 0
+              },
+              {
+                "frame": 0.18333333333333332,
+                "value": 800
+              },
+              {
+                "frame": 0.75,
+                "value": 800
+              },
+              {
+                "frame": 0.9166666666666666,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Seven": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 20
+              }
+            ]
+          }
+        }
+      },
+      "B_Sym_card_back/1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.45,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.35,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/6": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.36666666666666664,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/7": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.15,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/8": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.1,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.26666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/9": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/17": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.35,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/10": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.35,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/18": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/11": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/19": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/12": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/20": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.36666666666666664,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/13": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.2,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.36666666666666664,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/21": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.15,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/14": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.15,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/22": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.1,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.26666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/15": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.1,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.26666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/23": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.21666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/16": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.21666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/24": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

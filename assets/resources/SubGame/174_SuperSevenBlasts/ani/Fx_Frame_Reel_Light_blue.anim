@@ -1,0 +1,525 @@
+{
+  "_name": "Fx_Frame_Reel_Light_blue",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Light_reel_center_top/80_Reel_light_in2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_center_top/80_Reel_light_in3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_center_top/80_Reel_light_in4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_center_bottom/80_Reel_light_in1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_center_bottom/80_Reel_light_in2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_center_bottom/80_Reel_light_in3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_center_bottom/80_Reel_light_in4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Light_reel_side_line1/80_Reel_light_leftup": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 128
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 128
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Light_reel_side_line1/80_Reel_light_leftdown": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 128
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 128
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Light_reel_side_line1/80_Reel_light_rightup": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 85.33333333333331
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 128
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 128
+            },
+            {
+              "frame": 1,
+              "value": 85.33333333333331
+            }
+          ]
+        }
+      },
+      "Light_reel_side_line1/80_Reel_light_rightdown": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 85.33333333333331
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 128
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 128
+            },
+            {
+              "frame": 1,
+              "value": 85.33333333333331
+            }
+          ]
+        }
+      },
+      "fx-100_Gradient_Bust_B": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 2,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.75,
+              "value": 2,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 1
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 140
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": -173
+            }
+          ]
+        }
+      },
+      "Light_reel_bottom/Light_reel_bottom": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "fx-100_Gradient_Bust_B/particlesystem_fx-80_par_light_02": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 200
+              },
+              {
+                "frame": 0.75,
+                "value": 200
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Side_Line": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                174,
+                0
+              ]
+            },
+            {
+              "frame": 0.48333333333333334,
+              "curve": "constant",
+              "value": [
+                0,
+                -170,
+                0
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                0,
+                174,
+                0
+              ]
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": [
+                0,
+                -170,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Side_Line/fx-50_Gradation_1_L": {
+        "props": {
+          "width": [
+            {
+              "frame": 0,
+              "value": 20
+            },
+            {
+              "frame": 0.25,
+              "value": 200
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 10
+            },
+            {
+              "frame": 0.5,
+              "value": 20
+            },
+            {
+              "frame": 0.75,
+              "value": 200
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 10
+            }
+          ]
+        }
+      },
+      "Side_Line/fx-50_Gradation_1_R": {
+        "props": {
+          "width": [
+            {
+              "frame": 0,
+              "value": 20
+            },
+            {
+              "frame": 0.25,
+              "value": 200
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 10
+            },
+            {
+              "frame": 0.5,
+              "value": 20
+            },
+            {
+              "frame": 0.75,
+              "value": 200
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 10
+            }
+          ]
+        }
+      },
+      "Light_reel_center_top/80_Reel_light_in1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "linear"
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 128
+            }
+          ]
+        }
+      },
+      "Spot_Light1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "fx-100_BB": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 75
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 120
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 30
+            },
+            {
+              "frame": 1,
+              "value": 60
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4290334855
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "_val": 4291911723
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "_val": 4290334855
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

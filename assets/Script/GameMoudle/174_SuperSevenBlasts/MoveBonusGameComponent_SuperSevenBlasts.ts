@@ -9,7 +9,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass('MoveBonusGameComponent_SuperSevenBlasts')
 export default class MoveBonusGameComponent_SuperSevenBlasts extends cc.Component {
     // 挂载移动节点的父节点（对应原JS的moveNode）
-    @property({ type: Node, displayName: "移动节点容器" })
+    @property({ type: cc.Node, displayName: "移动节点容器" })
     public moveNode: cc.Node = null!;
 
     // 移动的预制体（对应原JS的movePrefab）

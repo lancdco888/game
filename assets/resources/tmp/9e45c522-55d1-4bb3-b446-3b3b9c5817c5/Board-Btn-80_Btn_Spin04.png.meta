@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b22aa28c-6a62-4b44-9750-600fc0efddba",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 203,
+  "height": 85,
+  "platformSettings": {},
+  "subMetas": {
+    "Board-Btn-80_Btn_Spin04": {
+      "ver": "1.0.6",
+      "uuid": "10465fe7-5549-44db-a7a9-b7ad6832bd7d",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b22aa28c-6a62-4b44-9750-600fc0efddba",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 1,
+      "trimX": 6,
+      "trimY": 4,
+      "width": 187,
+      "height": 75,
+      "rawWidth": 203,
+      "rawHeight": 85,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

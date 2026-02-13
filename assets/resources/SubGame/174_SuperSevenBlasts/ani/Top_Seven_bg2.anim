@@ -1,0 +1,147 @@
+{
+  "_name": "Top_Seven_bg2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "80_top7_u_eff_5x5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 100
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 100
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 5
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 4,
+                "y": 4,
+                "z": 5
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 5
+              }
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_4x5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 4,
+                "y": 4,
+                "z": 5
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 5,
+                "y": 5,
+                "z": 5
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 4,
+                "y": 4,
+                "z": 5
+              }
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 2
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 2,
+                "y": 2.5,
+                "z": 2
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 2
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

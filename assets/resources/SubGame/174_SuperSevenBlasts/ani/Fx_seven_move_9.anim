@@ -1,0 +1,126 @@
+{
+  "_name": "Fx_seven_move_9",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0.8333333333333334,
+                "value": 300
+              },
+              {
+                "frame": 0.85,
+                "value": 600
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Jackpot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Jackpot2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Jackpot3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "curve": "cubicOut",
+          "value": [
+            180,
+            118,
+            0
+          ]
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": [
+            -372,
+            291,
+            0
+          ]
+        }
+      ],
+      "active": [
+        {
+          "frame": 0,
+          "value": true
+        },
+        {
+          "frame": 1,
+          "value": true
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,283 @@
+{
+  "_name": "B_sym_7_red_Dim_end_sym",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": [
+            0.06,
+            0.12,
+            0.5609629803186504,
+            1.2094072164948453
+          ],
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.16666666666666666,
+          "curve": "cubicIn",
+          "value": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.31666666666666665,
+          "value": {
+            "x": 0.95,
+            "y": 0.95,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "x": 0.95,
+            "y": 0.95,
+            "z": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "size_cont/before_num": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "size_cont/after_num": {
+        "props": {
+          "active": [
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.2833333333333333,
+                "value": 0
+              },
+              {
+                "frame": 0.3,
+                "value": 300
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": 300
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "size_cont": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 0.95,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.02,
+                "y": 1.02,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "80_bonus_glow1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "80_bonus_glow2": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "size_cont/Num": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": true
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4283453520
+              }
+            }
+          ]
+        }
+      },
+      "80_bonus_seven_red": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4284111450
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

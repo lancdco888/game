@@ -1,0 +1,128 @@
+{
+  "_name": "B_sym_end_fin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": [
+            0.06,
+            0.12,
+            0.5732035667681599,
+            1.287149304045237
+          ],
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.2833333333333333,
+          "curve": "cubicIn",
+          "value": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.5333333333333333,
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      ]
+    },
+    "paths": {
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0,
+                "value": 0,
+                "curve": "cubicOut"
+              }
+            ],
+            "speedVar": [
+              {
+                "frame": 0,
+                "value": 0,
+                "curve": "cubicOut"
+              }
+            ]
+          }
+        }
+      },
+      "80_bonus_glow1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1.05,
+                "y": 1.05,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,339 @@
+{
+  "_name": "Fx_Top_score_Select_count",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "box_add/80_top_J_eff_glow_line_top_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "box_add/80_top_J_eff_glow_box": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 50
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "box_add/80_top_J_eff_glow_line_bottom_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0.5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "box_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "box/80_top_J_eff_glow_box": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "box/80_top_J_eff_glow_line_top": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "box/80_top_J_eff_glow_line_bottom": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "box_add/80_top_J_eff_line_white": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicIn",
+              "value": [
+                -306,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -36,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 3,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 2
+            }
+          ]
+        }
+      },
+      "box_add/particlesystem_fx-80_par_light_01": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 0
+              },
+              {
+                "frame": 0.35,
+                "value": 500
+              },
+              {
+                "frame": 0.5,
+                "value": 100
+              }
+            ]
+          }
+        }
+      },
+      "80_top_J_eff_round": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "80_top_J_eff_round/80_top_J_eff_round_white": {
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0,
+                "value": 1
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 1
+              }
+            ],
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0.1
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 0.1
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": 1
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ]
+          }
+        },
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "constant",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": -1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

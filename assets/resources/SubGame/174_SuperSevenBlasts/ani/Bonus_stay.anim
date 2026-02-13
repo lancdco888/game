@@ -1,0 +1,568 @@
+{
+  "_name": "Bonus_stay",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "BG/Bg_cont/80_bonus_bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "width": [
+            {
+              "frame": 0,
+              "value": 942,
+              "curve": "cubicIn"
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back": {
+        "props": {
+          "active": []
+        }
+      },
+      "Par_cont": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicIn",
+              "value": [
+                461,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Par_cont/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "Seven": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "B_Sym_card_back/1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/6": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/7": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/8": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/9": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/17": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/10": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/18": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/11": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/19": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/12": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/20": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/13": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/21": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/14": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/22": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/15": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/23": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/16": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "B_Sym_card_back/24": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

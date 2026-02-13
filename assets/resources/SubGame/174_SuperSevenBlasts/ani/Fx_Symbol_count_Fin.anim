@@ -1,0 +1,217 @@
+{
+  "_name": "Fx_Symbol_count_Fin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 500
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 500
+              },
+              {
+                "frame": 0.5,
+                "value": 0
+              }
+            ],
+            "startRadius": [
+              {
+                "frame": 0,
+                "value": 30
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": 70
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 0
+              }
+            ],
+            "endRadius": [
+              {
+                "frame": 0,
+                "value": 50
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": 30
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "FX-80_Glow_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.032599164926931115,
+                0.49578288100208756,
+                0.58,
+                1
+              ],
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "FX-80_explode_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "constant"
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.005876288659793817,
+                0.41252577319587624,
+                0.19211340206185556,
+                0.7951030927835052
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "FX-80_ellipse_light_02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "linear",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "num1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "num2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "fx-80_Light_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "linear",
+              "value": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

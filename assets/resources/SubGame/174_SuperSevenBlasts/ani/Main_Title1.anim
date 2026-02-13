@@ -1,0 +1,684 @@
+{
+  "_name": "Main_Title1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "paths": {
+      "Title-80_txt_Super/Title-80_txt_Super copy": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_right": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -15
+            },
+            {
+              "frame": 1.35,
+              "value": -15,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": 0,
+              "curve": "sineInOut"
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                30,
+                0.5,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                33,
+                10.5,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                50,
+                -2.5,
+                0
+              ]
+            },
+            {
+              "frame": 1.35,
+              "curve": "sineInOut",
+              "value": [
+                50,
+                -2.5,
+                0
+              ]
+            },
+            {
+              "frame": 1.6833333333333333,
+              "curve": "cubicOut",
+              "value": [
+                30,
+                0.5,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_left": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 15
+            },
+            {
+              "frame": 1.35,
+              "value": 15,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.6833333333333333,
+              "value": 0,
+              "curve": "sineInOut"
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": [
+                -29.5,
+                0.5,
+                0
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                -36.5,
+                8.5,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                -49.5,
+                -3.5,
+                0
+              ]
+            },
+            {
+              "frame": 1.35,
+              "curve": "sineInOut",
+              "value": [
+                -49.5,
+                -3.5,
+                0
+              ]
+            },
+            {
+              "frame": 1.6833333333333333,
+              "curve": "sineInOut",
+              "value": [
+                -29.5,
+                0.5,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Txt_Blast/Title-80_txt_Blast/mask/FX-100_Gradient_Bust_B": {
+        "props": {
+          "position": [
+            {
+              "frame": 1,
+              "value": [
+                -130,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": [
+                110,
+                0,
+                0
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 1,
+              "value": 1
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 2
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Txt_Blast/Title-80_txt_Blast/Title-80_txt_Blast_add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 150
+            },
+            {
+              "frame": 2.1666666666666665,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "fx-80_cross_light_01 copy": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 0
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 3,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_center/fx-80_cross_light_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 150
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 150
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            },
+            {
+              "frame": 2.6666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 3,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_right/mask/FX-100_Gradient_Bust_B": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5,
+              "curve": "sineInOut",
+              "value": [
+                -74.108,
+                59.278,
+                0
+              ]
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": [
+                60,
+                -40,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_center/mask/FX-100_Gradient_Bust_B": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                -90,
+                60,
+                0
+              ]
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": [
+                71,
+                -46,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_left/mask/FX-100_Gradient_Bust_B": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.16666666666666666,
+              "curve": "cubicOut",
+              "value": [
+                -80,
+                50,
+                0
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                68,
+                -35,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt_Seven/Title-80_seven_center": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": [
+                -2,
+                10,
+                0
+              ]
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": [
+                -2,
+                13,
+                0
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                -2,
+                14,
+                0
+              ]
+            },
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": [
+                -2,
+                14,
+                0
+              ]
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "cubicOut",
+              "value": [
+                -2,
+                10,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.8333333333333333,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Title-80_txt_Super": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -3,
+                75.5,
+                0
+              ]
+            },
+            {
+              "frame": 0.3,
+              "curve": "cubicOut",
+              "value": [
+                -3,
+                75.5,
+                0
+              ]
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": [
+                -3,
+                87.5,
+                0
+              ]
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "sineInOut",
+              "value": [
+                -3,
+                87.5,
+                0
+              ]
+            },
+            {
+              "frame": 1.9166666666666667,
+              "curve": "cubicOut",
+              "value": [
+                -3,
+                75.5,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.3,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.5833333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.9166666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt_Blast": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.5833333333333334,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.7166666666666666,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2.05,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

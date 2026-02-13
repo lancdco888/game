@@ -1,0 +1,275 @@
+{
+  "_name": "Top_Seven_bg3",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "3/80_top7_u_eff_5x5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "3/80_top7_u_eff_4x5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 100
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 100
+            }
+          ]
+        }
+      },
+      "3/80_top7_u_eff_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 125
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "3/80_top7_u_eff_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 168.33333333333331
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 125
+            },
+            {
+              "frame": 1,
+              "value": 168.33333333333331
+            }
+          ]
+        }
+      },
+      "3/80_top7_u_eff_2 copy": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 168.33333333333337
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 125
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 168.33333333333337
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_5x5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_4x5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 100
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 100
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 125
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_2 copy": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 168.33333333333337
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 125
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 168.33333333333337
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 168.33333333333331
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 125
+            },
+            {
+              "frame": 1,
+              "value": 168.33333333333331
+            }
+          ]
+        }
+      },
+      "3/80_top7_u_eff_1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 2
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.8,
+                "y": 2.2,
+                "z": 2
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 2
+              }
+            }
+          ]
+        }
+      },
+      "80_top7_u_eff_1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 2
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicOut",
+              "value": {
+                "x": 2,
+                "y": 2.2,
+                "z": 2
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 2,
+                "y": 2,
+                "z": 2
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

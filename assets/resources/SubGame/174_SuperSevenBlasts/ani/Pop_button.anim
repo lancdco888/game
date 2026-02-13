@@ -1,0 +1,144 @@
+{
+  "_name": "Pop_button",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "FX-50_Gradation_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.95,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Mask/fx-100_Gradient_Bust_B": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": [
+                -251,
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 2,
+              "value": [
+                278.48699999999997,
+                0,
+                0
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1.75,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 2,
+              "value": {
+                "x": 2,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 2,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

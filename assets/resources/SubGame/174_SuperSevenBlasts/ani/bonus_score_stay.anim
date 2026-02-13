@@ -1,0 +1,124 @@
+{
+  "_name": "bonus_score_stay",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "80_bonus_score_txt/80_bonus_score_txt_over": {
+        "comps": {
+          "cc.Sprite": {
+            "fillStart": [
+              {
+                "frame": 0,
+                "value": -0.1,
+                "curve": "sineInOut"
+              },
+              {
+                "frame": 1,
+                "value": 1
+              },
+              {
+                "frame": 3,
+                "value": 1
+              }
+            ],
+            "fillRange": [
+              {
+                "frame": 0,
+                "value": 0.1,
+                "curve": "cubicIn"
+              },
+              {
+                "frame": 0.5,
+                "value": 0.4,
+                "curve": "cubicOut"
+              },
+              {
+                "frame": 1,
+                "value": 0.1
+              },
+              {
+                "frame": 3,
+                "value": 0.1
+              }
+            ]
+          }
+        },
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "80_bonus_score_bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "width": [
+            {
+              "frame": 0,
+              "value": 358
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                214,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "80_bonus_score_txt": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

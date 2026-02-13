@@ -1,6 +1,7 @@
 const { ccclass, property } = cc._decorator;
 
 
+import JackpotMoneyDisplay from '../../JackpotMoneyDisplay';
 import CameraControl from '../../Slot/CameraControl';
 import SlotSoundController from '../../Slot/SlotSoundController';
 import State from '../../Slot/State';
@@ -8,7 +9,6 @@ import GameComponents_Base from '../../game/GameComponents_Base';
 import TSUtility from '../../global_utility/TSUtility';
 import SlotGameResultManager from '../../manager/SlotGameResultManager';
 import SlotManager from '../../manager/SlotManager';
-import JackpotMoneyDisplay from '../183_HoundOfHades/JackpotMoneyDisplay';
 import FeatureComponents_DragonOrbs from './FeatureComponents_DragonOrbs';
 import FreeSpinChoosePopup_DragonOrbs from './FreeSpinChoosePopup_DragonOrbs';
 import FreeSpinResultPopup_DragonOrbs from './FreeSpinResultPopup_DragonOrbs';

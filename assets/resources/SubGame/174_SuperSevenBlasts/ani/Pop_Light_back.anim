@@ -1,0 +1,719 @@
+{
+  "_name": "Pop_Light_back",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 5,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 5
+            }
+          ]
+        }
+      },
+      "2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 4.665063509461096
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 4.665063509461096
+            }
+          ]
+        }
+      },
+      "3": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0.33493649053890273
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 0.33493649053890273
+            }
+          ]
+        }
+      },
+      "4": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 2.5000000000000004
+            },
+            {
+              "frame": 0.5,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.5,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 2.5000000000000004
+            }
+          ]
+        }
+      },
+      "5": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 0,
+              "curve": "sineInOut"
+            }
+          ]
+        }
+      },
+      "6": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0.3349364905389035
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 5
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 0.3349364905389035
+            }
+          ]
+        }
+      },
+      "7": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 3.749999999999999
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 5
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 3.749999999999999
+            }
+          ]
+        }
+      },
+      "8": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 5
+            },
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 5
+            }
+          ]
+        }
+      },
+      "9": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 4.26776695296637
+            },
+            {
+              "frame": 0.25,
+              "value": 5
+            },
+            {
+              "frame": 1.25,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 4.26776695296637
+            }
+          ]
+        }
+      },
+      "10": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 4.665063509461097
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 5
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 4.665063509461097
+            }
+          ]
+        }
+      },
+      "11": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 2.4999999999999996
+            },
+            {
+              "frame": 0.5,
+              "value": 5
+            },
+            {
+              "frame": 1.5,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 2.4999999999999996
+            }
+          ]
+        }
+      },
+      "12": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 4
+            },
+            {
+              "frame": 0.75,
+              "value": 0,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 1.75,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 4
+            }
+          ]
+        }
+      },
+      "1/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "2/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "3/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "4/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "5/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "6/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "7/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "8/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "9/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "10/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "11/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      },
+      "12/fx-80_light_line": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1.1,
+              "curve": "sineInOut"
+            },
+            {
+              "frame": 2,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 180
+            },
+            {
+              "frame": 1,
+              "value": 255
+            },
+            {
+              "frame": 2,
+              "value": 180
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 1,
+          "value": 150
+        },
+        {
+          "frame": 2,
+          "value": 255
+        }
+      ],
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 1,
+          "value": {
+            "x": 1.05,
+            "y": 1.05,
+            "z": 1
+          }
+        },
+        {
+          "frame": 2,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
