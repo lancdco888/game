@@ -34,8 +34,8 @@ export default class L_CheckWebVersionState extends State {
     // ===== 构造函数 =====
     constructor(commonServerUrl: string, useNativePatchSystem: boolean, launcherSceneName: string) {
         super();
-        // this.commonServerUrl = "http://1.13.80.243:8080/api/";
-        this.commonServerUrl = "http://192.168.2.167:8080/api/"
+        this.commonServerUrl = "http://1.13.80.243:8080/api/";
+        // this.commonServerUrl = "http://192.168.2.167:8080/api/"
 
         this.useNativePatchSystem = useNativePatchSystem;
         this._launcherSceneName = launcherSceneName;

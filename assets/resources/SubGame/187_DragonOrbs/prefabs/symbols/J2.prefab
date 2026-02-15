@@ -307,7 +307,9 @@
     },
     "_enabled": true,
     "symbolId": 94,
-    "symbolImg": null,
+    "symbolImg": {
+      "__id__": 7
+    },
     "zOrder": 2,
     "dimm": null,
     "listNodeExceptChangeColor": [],
