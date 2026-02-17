@@ -44,9 +44,9 @@ export default class Reel extends cc.Component {
 
     // ===== 回调函数变量 - 原JS隐式声明，补全TS类型，变量名完全保留 =====
     public customGetSymbolNode: Function = null;
-    private _getNextSymbolId: Function = null;
-    private _getNextSymbolInfo: Function = null;
-    private _getNextSpecialInfo: Function = null;
+    public _getNextSymbolId: Function = null;
+    public _getNextSymbolInfo: Function = null;
+    public _getNextSpecialInfo: Function = null;
 
     // ===== 静态常量 - 原JS类上挂载的常量，100%保留名称+值，核心滚动方向标识 =====
     public static readonly SPINDIRECTION_DOWN: number = 0;

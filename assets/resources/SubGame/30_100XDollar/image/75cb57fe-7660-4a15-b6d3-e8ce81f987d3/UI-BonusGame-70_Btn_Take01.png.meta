@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "448fd61d-3748-4396-a027-c6fd5ba55160",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 262,
+  "height": 88,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-BonusGame-70_Btn_Take01": {
+      "ver": "1.0.6",
+      "uuid": "44747ee4-6cdc-485d-a7ca-7288aff20015",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "448fd61d-3748-4396-a027-c6fd5ba55160",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 262,
+      "height": 88,
+      "rawWidth": 262,
+      "rawHeight": 88,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

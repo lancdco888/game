@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c8cdb576-be40-4de3-b897-f670167a8d1f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 143,
+  "height": 215,
+  "platformSettings": {},
+  "subMetas": {
+    "Popup-FreeSpins-50_BG01": {
+      "ver": "1.0.6",
+      "uuid": "55b0179f-4b75-4136-bd0d-042c20930c96",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c8cdb576-be40-4de3-b897-f670167a8d1f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 143,
+      "height": 215,
+      "rawWidth": 143,
+      "rawHeight": 215,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

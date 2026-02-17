@@ -1,0 +1,75 @@
+{
+  "_name": "Reel_Frame_Win_Bonus_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "70_Reel01": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.1,
+              "value": false
+            },
+            {
+              "frame": 0.2,
+              "value": false
+            }
+          ]
+        }
+      },
+      "70_Reel02": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.1,
+              "value": true
+            }
+          ]
+        }
+      },
+      "70_Reel03": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.1,
+              "value": false
+            }
+          ]
+        }
+      },
+      "70_Reel04": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.1,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

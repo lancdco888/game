@@ -1,0 +1,543 @@
+{
+  "_name": "Retry_Fx",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Btn_2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Btn_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ]
+        }
+      },
+      "60_Dollar03/50_Dollar03_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar02/50_Dollar02_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar01/50_Dollar01_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar06/50_Dollar06_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar05/50_Dollar05_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar04/50_Dollar04_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar07/50_Dollar07_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar09/50_Dollar09_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar08/50_Dollar08_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.25,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar10/50_Dollar10_1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": true
+            },
+            {
+              "frame": 0.5,
+              "value": false
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "60_Dollar10/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar08/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar09/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar07/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.25,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar04/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar05/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar06/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar01/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar02/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      },
+      "60_Dollar03/Black": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": false
+            },
+            {
+              "frame": 0.5,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 160
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

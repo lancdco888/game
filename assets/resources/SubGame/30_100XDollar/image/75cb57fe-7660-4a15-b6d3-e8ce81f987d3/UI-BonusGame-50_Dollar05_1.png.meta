@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "852c4d71-3e51-423a-82bc-9d98cc7a44e6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 62,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-BonusGame-50_Dollar05_1": {
+      "ver": "1.0.6",
+      "uuid": "2a628d52-5eed-472d-92d2-2822380b54b4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "852c4d71-3e51-423a-82bc-9d98cc7a44e6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 128,
+      "height": 62,
+      "rawWidth": 128,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

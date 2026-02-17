@@ -1,0 +1,156 @@
+{
+  "_name": "Symbol_J_Appear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Frame_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Frame_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Mask_1/Pivot/Eye": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": true
+            },
+            {
+              "frame": 0.15,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Mask_1/Pivot": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1,
+              "curve": [
+                0.1,
+                0.31,
+                0.7,
+                0.91
+              ]
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 0.85,
+              "curve": [
+                0.31,
+                0,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 0.2,
+              "value": 1.02,
+              "curve": [
+                0.31,
+                0,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1,
+              "curve": [
+                0.1,
+                0.31,
+                0.7,
+                0.9
+              ]
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 1.15,
+              "curve": [
+                0.31,
+                0,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 0.2,
+              "value": 0.98,
+              "curve": [
+                0.3,
+                -0.01,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Mask_1": {
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 138,
+              "curve": "constant"
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 150
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "4299d964-9b7b-43ad-953b-9f6198a5b120",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 50,
+  "height": 26,
+  "platformSettings": {},
+  "subMetas": {
+    "Tooltip-70_Tooltip_BG02": {
+      "ver": "1.0.6",
+      "uuid": "b11c1dbe-ae0b-4bed-ad6c-78bf23a65bb1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "4299d964-9b7b-43ad-953b-9f6198a5b120",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 50,
+      "height": 26,
+      "rawWidth": 50,
+      "rawHeight": 26,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

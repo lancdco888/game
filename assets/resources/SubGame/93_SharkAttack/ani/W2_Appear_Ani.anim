@@ -1,0 +1,115 @@
+{
+  "_name": "W2_Appear_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.16666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Fx-80_Glow_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 100
+            },
+            {
+              "frame": 0.15,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Txt_2": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.05,
+              "value": {
+                "x": 2.2,
+                "y": 2.2,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": {
+                "x": 0.8,
+                "y": 0.8,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      },
+      "Txt_1": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

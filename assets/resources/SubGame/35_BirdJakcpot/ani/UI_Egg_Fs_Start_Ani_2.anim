@@ -1,0 +1,170 @@
+{
+  "_name": "UI_Egg_Fs_Start_Ani_2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Pivot/Egg/Egg_1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -279,
+                210
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 10
+            }
+          ]
+        }
+      },
+      "Pivot/Egg/Egg_2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -322,
+                235
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": -10
+            }
+          ]
+        }
+      },
+      "Pivot/Egg/Egg_3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -237,
+                235
+              ]
+            },
+            {
+              "frame": 0.7,
+              "value": [
+                -237,
+                235
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 10
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.5
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            },
+            {
+              "frame": 0.6833333333333333,
+              "value": 0
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/RadialEffect_Fx": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Pivot/RadialEffect_Fx/1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -50
+            }
+          ]
+        }
+      },
+      "Pivot/RadialEffect_Fx/2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 50
+            }
+          ]
+        }
+      }
+    },
+    "props": {}
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

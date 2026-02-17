@@ -1,0 +1,108 @@
+{
+  "_name": "Rainbow_Prize_Receive_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "paths": {
+      "Fx_Glow_1": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.95,
+              "value": 255
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 150
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Light_Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 1
+            },
+            {
+              "frame": 0.95,
+              "value": 255
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": 100
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Light_Pivot/Fx-80_Fx_Light_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": 40
+            }
+          ]
+        }
+      },
+      "Light_Pivot/Fx-80_Fx_Light_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2,
+              "value": -40
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 2,
+          "value": 255
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,29 @@
+{
+  "_name": "Reel_Frame_Spin_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Mask": {
+        "props": {
+          "anchorY": [
+            {
+              "frame": 0,
+              "value": -0.4
+            },
+            {
+              "frame": 0.5,
+              "value": 1.4
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

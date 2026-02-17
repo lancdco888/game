@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "dbf2b43a-5aba-41c8-9578-6a5dd3d1643f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 95,
+  "height": 78,
+  "platformSettings": {},
+  "subMetas": {
+    "70_93_SharkAttack01": {
+      "ver": "1.0.6",
+      "uuid": "3e9a0ef1-874c-4607-b63d-78efe444469c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "dbf2b43a-5aba-41c8-9578-6a5dd3d1643f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 95,
+      "height": 78,
+      "rawWidth": 95,
+      "rawHeight": 78,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

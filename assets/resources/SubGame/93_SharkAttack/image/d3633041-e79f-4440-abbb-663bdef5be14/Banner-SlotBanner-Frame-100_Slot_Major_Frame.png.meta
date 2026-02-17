@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "efc5a239-b3bf-4b2c-ab3c-018926d19ed4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 60,
+  "height": 60,
+  "platformSettings": {},
+  "subMetas": {
+    "Banner-SlotBanner-Frame-100_Slot_Major_Frame": {
+      "ver": "1.0.6",
+      "uuid": "cd7743b0-75c3-4bc6-bef5-143603711d51",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "efc5a239-b3bf-4b2c-ab3c-018926d19ed4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 59,
+      "height": 59,
+      "rawWidth": 60,
+      "rawHeight": 60,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -126,7 +126,7 @@ export default class SlotUIRuleManager extends cc.Component {
     private _comKey: { [key: string]: StateComponent } = {};
     private _uiStateList: { [key: string]: any } = {};
     public _symbolDimmInfo: any = null; // 供Symbol组件访问，保留public
-    private _uiExpectEffectRuleList: any[] = [];
+    public _uiExpectEffectRuleList: any[] = [];
     private _defaultReelSpinControlInfoListJsonObject: any = null;
     private _uiReelSpinControlInfoList: SpinControlInfo[] = [];
     private _TestReelSpinControlInfoListJsonObject: any = null;

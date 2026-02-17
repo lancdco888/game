@@ -1,0 +1,276 @@
+{
+  "_name": "Reel_3_Expand",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Pivot/Reel_Expand/1": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/2": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/3": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Mask": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Reel_Line_1": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 620
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 748
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Reel_Line_2": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 620
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 748
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Reel_Line_3": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 620
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 748
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/UI-80_Reel_Frame_2_2": {
+        "comps": {},
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 608
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 748
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/UI-80_Reel_Frame_2_1": {
+        "comps": {},
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 408
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 549
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Mask/1": {
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Mask/2": {
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Mask/3": {
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 606
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 746
+            }
+          ]
+        }
+      },
+      "Pivot/Popup-100_SquarePiece copy": {
+        "props": {
+          "height": [
+            {
+              "frame": 0,
+              "value": 530
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 760
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -30,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                1,
+                -66,
+                0
+              ]
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 0.88,
+                "y": 0.88,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 0.72,
+                "y": 0.72,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "x": 0.72,
+                "y": 0.72,
+                "z": 0
+              }
+            }
+          ]
+        }
+      },
+      "Pivot/Reel_Expand/Water": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 4,
+                "y": 4.7,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 4.1,
+                "y": 5.6,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

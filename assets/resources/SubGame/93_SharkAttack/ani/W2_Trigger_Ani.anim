@@ -1,0 +1,3652 @@
+{
+  "_name": "W2_Trigger_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Fx-80_Glow_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 150
+            },
+            {
+              "frame": 0.85,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Txt": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.30372093023255814,
+                -0.00322997416020665,
+                0.6995090439276486,
+                0.9935400516795866
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.25,
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "curve": [
+                0.30049095607235143,
+                0,
+                0.6995090439276486,
+                1.0032299741602067
+              ],
+              "value": {
+                "x": 1.6,
+                "y": 1.6,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.75,
+              "curve": [
+                0.294031007751938,
+                0.003229974160206761,
+                0.7059689922480621,
+                0.9967700258397932
+              ],
+              "value": {
+                "x": 1.4,
+                "y": 1.4,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.85,
+              "curve": [
+                0.29726098191214473,
+                0,
+                0.6930490956072352,
+                1.0032299741602067
+              ],
+              "value": {
+                "x": 0.8,
+                "y": 0.8,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.9333333333333333,
+              "curve": [
+                0.30372093023255814,
+                0,
+                0.7027390180878553,
+                0.9935400516795866
+              ],
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Txt": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_00",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 10,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 378,
+                    "y": 1286,
+                    "width": 82,
+                    "height": 58
+                  },
+                  "uv": [
+                    0.1845703125,
+                    0.65625,
+                    0.224609375,
+                    0.65625,
+                    0.1845703125,
+                    0.6279296875,
+                    0.224609375,
+                    0.6279296875
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": false,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/main/native/b9/b9025c34-ea88-4c89-9e6d-a361b9011eb7.b439a.webp",
+                    "_ref": 250,
+                    "_callbackTable": {},
+                    "_id": "Tex.828",
+                    "width": 2048,
+                    "height": 2048,
+                    "_hashDirty": true,
+                    "_hash": 0,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": null,
+                          "ib": null,
+                          "drawcalls": 4,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 217980,
+                              "_numVertices": 10899,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 583,
+                              "_glID": null,
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 33954,
+                            "_numIndices": 16977,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 232.91127014160156,
+                              "1": 0.04170000180602074,
+                              "2": 5489,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -638.6303100585938,
+                              "14": -1106.14013671875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 638.6303100585938,
+                              "14": 1106.14013671875,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0015658511547371745,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0015658511547371745,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.46024903655052185,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 638.6303100585938,
+                              "2": 1106.14013671875,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "toggle": {
+                            "dirty": false,
+                            "value": 0.4,
+                            "isArray": false
+                          },
+                          "toggleHorizontal": {
+                            "dirty": false,
+                            "value": 0.75,
+                            "isArray": false
+                          },
+                          "center": {
+                            "dirty": false,
+                            "value": 0.01,
+                            "isArray": false
+                          },
+                          "centerX": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1869,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 2048,
+                      "_height": 2048,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 640,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.65625
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.224609375,
+                      "v": 0.6279296875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_02",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 972,
+                    "y": 1132,
+                    "width": 82,
+                    "height": 60
+                  },
+                  "uv": [
+                    0.474609375,
+                    0.58203125,
+                    0.5146484375,
+                    0.58203125,
+                    0.474609375,
+                    0.552734375,
+                    0.5146484375,
+                    0.552734375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -1,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.474609375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.58203125
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.474609375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.5146484375,
+                      "v": 0.552734375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.08333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_04",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1564,
+                    "y": 1049,
+                    "width": 78,
+                    "height": 62
+                  },
+                  "uv": [
+                    0.763671875,
+                    0.54248046875,
+                    0.8017578125,
+                    0.54248046875,
+                    0.763671875,
+                    0.51220703125,
+                    0.8017578125,
+                    0.51220703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -2,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.763671875,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.54248046875
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.763671875,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.51220703125
+                    },
+                    {
+                      "u": 0.8017578125,
+                      "v": 0.51220703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.13333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_06",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1351,
+                    "y": 114,
+                    "width": 72,
+                    "height": 62
+                  },
+                  "uv": [
+                    0.65966796875,
+                    0.0859375,
+                    0.69482421875,
+                    0.0859375,
+                    0.65966796875,
+                    0.0556640625,
+                    0.69482421875,
+                    0.0556640625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -3,
+                    "y": -2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0859375
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.65966796875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0556640625
+                    },
+                    {
+                      "u": 0.69482421875,
+                      "v": 0.0556640625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_08",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 930,
+                    "y": 1250,
+                    "width": 64,
+                    "height": 64
+                  },
+                  "uv": [
+                    0.4541015625,
+                    0.6416015625,
+                    0.4853515625,
+                    0.6416015625,
+                    0.4541015625,
+                    0.6103515625,
+                    0.4853515625,
+                    0.6103515625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": -4,
+                    "y": -2,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6416015625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4541015625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6103515625
+                    },
+                    {
+                      "u": 0.4853515625,
+                      "v": 0.6103515625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.26666666666666666
+              },
+              {
+                "frame": 0.31666666666666665
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_28",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 864,
+                    "y": 1146,
+                    "width": 82,
+                    "height": 60
+                  },
+                  "uv": [
+                    0.421875,
+                    0.5888671875,
+                    0.4619140625,
+                    0.5888671875,
+                    0.421875,
+                    0.5595703125,
+                    0.4619140625,
+                    0.5595703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.421875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.421875,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5595703125
+                    },
+                    {
+                      "u": 0.4619140625,
+                      "v": 0.5595703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.48333333333333334,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_26",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1462,
+                    "y": 1069,
+                    "width": 78,
+                    "height": 62
+                  },
+                  "uv": [
+                    0.7138671875,
+                    0.55224609375,
+                    0.751953125,
+                    0.55224609375,
+                    0.7138671875,
+                    0.52197265625,
+                    0.751953125,
+                    0.52197265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 2,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.7138671875,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.52197265625
+                    },
+                    {
+                      "u": 0.751953125,
+                      "v": 0.52197265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_24",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 4,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1348,
+                    "y": 246,
+                    "width": 70,
+                    "height": 64
+                  },
+                  "uv": [
+                    0.658203125,
+                    0.1513671875,
+                    0.6923828125,
+                    0.1513671875,
+                    0.658203125,
+                    0.1201171875,
+                    0.6923828125,
+                    0.1201171875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 3,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.658203125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1201171875
+                    },
+                    {
+                      "u": 0.6923828125,
+                      "v": 0.1201171875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "_name": "Symbol-Ani-80_W2_Txt_22",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 240,
+                    "y": 882,
+                    "width": 60,
+                    "height": 66
+                  },
+                  "uv": [
+                    0.1171875,
+                    0.462890625,
+                    0.146484375,
+                    0.462890625,
+                    0.1171875,
+                    0.4306640625,
+                    0.146484375,
+                    0.4306640625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 3,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 136,
+                    "height": 112
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1171875,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.1171875,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.4306640625
+                    },
+                    {
+                      "u": 0.146484375,
+                      "v": 0.4306640625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7166666666666667
+              },
+              {
+                "frame": 0.7666666666666667
+              },
+              {
+                "frame": 0.8
+              }
+            ]
+          }
+        }
+      },
+      "Txt/Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 1
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0
+              },
+              {
+                "frame": 0.03333333333333333
+              },
+              {
+                "frame": 0.08333333333333333
+              },
+              {
+                "frame": 0.13333333333333333
+              },
+              {
+                "frame": 0.2
+              },
+              {
+                "frame": 0.26666666666666666
+              },
+              {
+                "frame": 0.31666666666666665
+              },
+              {
+                "frame": 0.36666666666666664
+              },
+              {
+                "frame": 0.4
+              },
+              {
+                "frame": 0.43333333333333335
+              },
+              {
+                "frame": 0.48333333333333334
+              },
+              {
+                "frame": 0.5333333333333333
+              },
+              {
+                "frame": 0.6
+              },
+              {
+                "frame": 0.6666666666666666
+              },
+              {
+                "frame": 0.7166666666666667
+              },
+              {
+                "frame": 0.7666666666666667
+              },
+              {
+                "frame": 0.8
+              }
+            ]
+          }
+        }
+      },
+      "Bg": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_00",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 15,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1578,
+                    "y": 929,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.7705078125,
+                    0.48095703125,
+                    0.80322265625,
+                    0.48095703125,
+                    0.7705078125,
+                    0.45361328125,
+                    0.80322265625,
+                    0.45361328125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48095703125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.45361328125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.06666666666666667,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_02",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1578,
+                    "y": 989,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.7705078125,
+                    0.51025390625,
+                    0.80322265625,
+                    0.51025390625,
+                    0.7705078125,
+                    0.48291015625,
+                    0.80322265625,
+                    0.48291015625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.51025390625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.7705078125,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48291015625
+                    },
+                    {
+                      "u": 0.80322265625,
+                      "v": 0.48291015625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.13333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_04",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 750,
+                    "y": 1239,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.3662109375,
+                    0.63232421875,
+                    0.39892578125,
+                    0.63232421875,
+                    0.3662109375,
+                    0.60498046875,
+                    0.39892578125,
+                    0.60498046875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.63232421875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.3662109375,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.60498046875
+                    },
+                    {
+                      "u": 0.39892578125,
+                      "v": 0.60498046875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_06",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 654,
+                    "y": 1247,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.3193359375,
+                    0.63623046875,
+                    0.35205078125,
+                    0.63623046875,
+                    0.3193359375,
+                    0.60888671875,
+                    0.35205078125,
+                    0.60888671875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.63623046875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.3193359375,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.60888671875
+                    },
+                    {
+                      "u": 0.35205078125,
+                      "v": 0.60888671875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.26666666666666666,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_08",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 558,
+                    "y": 1297,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.2724609375,
+                    0.66064453125,
+                    0.30517578125,
+                    0.66064453125,
+                    0.2724609375,
+                    0.63330078125,
+                    0.30517578125,
+                    0.63330078125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.66064453125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.2724609375,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.63330078125
+                    },
+                    {
+                      "u": 0.30517578125,
+                      "v": 0.63330078125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_10",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 464,
+                    "y": 1323,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.2265625,
+                    0.67333984375,
+                    0.25927734375,
+                    0.67333984375,
+                    0.2265625,
+                    0.64599609375,
+                    0.25927734375,
+                    0.64599609375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.2265625,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.67333984375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.2265625,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.64599609375
+                    },
+                    {
+                      "u": 0.25927734375,
+                      "v": 0.64599609375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_12",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 378,
+                    "y": 1348,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.1845703125,
+                    0.685546875,
+                    0.21728515625,
+                    0.685546875,
+                    0.1845703125,
+                    0.658203125,
+                    0.21728515625,
+                    0.658203125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.685546875
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.1845703125,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.658203125
+                    },
+                    {
+                      "u": 0.21728515625,
+                      "v": 0.658203125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_14",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 284,
+                    "y": 1356,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.138671875,
+                    0.689453125,
+                    0.17138671875,
+                    0.689453125,
+                    0.138671875,
+                    0.662109375,
+                    0.17138671875,
+                    0.662109375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.689453125
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.662109375
+                    },
+                    {
+                      "u": 0.17138671875,
+                      "v": 0.662109375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_16",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 190,
+                    "y": 1394,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.0927734375,
+                    0.7080078125,
+                    0.12548828125,
+                    0.7080078125,
+                    0.0927734375,
+                    0.6806640625,
+                    0.12548828125,
+                    0.6806640625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.7080078125
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.0927734375,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.6806640625
+                    },
+                    {
+                      "u": 0.12548828125,
+                      "v": 0.6806640625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_18",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 90,
+                    "y": 1428,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.0439453125,
+                    0.724609375,
+                    0.07666015625,
+                    0.724609375,
+                    0.0439453125,
+                    0.697265625,
+                    0.07666015625,
+                    0.697265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.724609375
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.0439453125,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.697265625
+                    },
+                    {
+                      "u": 0.07666015625,
+                      "v": 0.697265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_20",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 1439,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.0009765625,
+                    0.72998046875,
+                    0.03369140625,
+                    0.72998046875,
+                    0.0009765625,
+                    0.70263671875,
+                    0.03369140625,
+                    0.70263671875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.72998046875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.70263671875
+                    },
+                    {
+                      "u": 0.03369140625,
+                      "v": 0.70263671875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_22",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1238,
+                    "y": 1140,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.6044921875,
+                    0.583984375,
+                    0.63720703125,
+                    0.583984375,
+                    0.6044921875,
+                    0.556640625,
+                    0.63720703125,
+                    0.556640625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.583984375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.556640625
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.556640625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_24",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1238,
+                    "y": 1200,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.6044921875,
+                    0.61328125,
+                    0.63720703125,
+                    0.61328125,
+                    0.6044921875,
+                    0.5859375,
+                    0.63720703125,
+                    0.5859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.61328125
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.6044921875,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.5859375
+                    },
+                    {
+                      "u": 0.63720703125,
+                      "v": 0.5859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8666666666666667,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_26",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1140,
+                    "y": 1206,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.556640625,
+                    0.6162109375,
+                    0.58935546875,
+                    0.6162109375,
+                    0.556640625,
+                    0.5888671875,
+                    0.58935546875,
+                    0.5888671875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.556640625,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.6162109375
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.556640625,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.5888671875
+                    },
+                    {
+                      "u": 0.58935546875,
+                      "v": 0.5888671875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9333333333333333,
+                "value": {
+                  "_name": "Symbol-Ani-80_W1_Bg_1_28",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1032,
+                    "y": 1230,
+                    "width": 67,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.50390625,
+                    0.6279296875,
+                    0.53662109375,
+                    0.6279296875,
+                    0.50390625,
+                    0.6005859375,
+                    0.53662109375,
+                    0.6005859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 67,
+                    "height": 56
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6279296875
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.50390625,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6005859375
+                    },
+                    {
+                      "u": 0.53662109375,
+                      "v": 0.6005859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

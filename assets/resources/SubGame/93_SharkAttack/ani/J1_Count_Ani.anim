@@ -1,0 +1,61 @@
+{
+  "_name": "J1_Count_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 1
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.09552971576227387,
+                0.291188630490956,
+                0.6962790697674418,
+                0.8998708010335917
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

@@ -1,0 +1,624 @@
+{
+  "_name": "Enter_Idle_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Bird1_Pivot": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.02,
+              "curve": [
+                0.1,
+                0.29,
+                0.71,
+                1
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 0.98,
+              "curve": [
+                0.3,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 1.02,
+              "curve": [
+                0.1,
+                0.29,
+                0.7,
+                0.99
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": 0.98,
+              "curve": [
+                0.3,
+                0,
+                0.91,
+                0.7
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 1.02
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.98,
+              "curve": [
+                0.1,
+                0.3,
+                0.71,
+                1
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 1.02,
+              "curve": [
+                0.3,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 0.98,
+              "curve": [
+                0.1,
+                0.3,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": 1.02,
+              "curve": [
+                0.3,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 0.98
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 506
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.1,
+                0.3,
+                0.69,
+                1
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 5,
+              "curve": [
+                0.31,
+                0,
+                0.9,
+                0.71
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": [
+                0.1,
+                0.3,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": -5,
+              "curve": [
+                0.31,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bird2_Pivot": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.02,
+              "curve": [
+                0.1,
+                0.3,
+                0.7,
+                0.99
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 0.98,
+              "curve": [
+                0.3,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 1.02,
+              "curve": [
+                0.1,
+                0.32,
+                0.69,
+                1
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": 0.98,
+              "curve": [
+                0.31,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 1.02
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.98,
+              "curve": [
+                0.1,
+                0.29,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": 1.02,
+              "curve": [
+                0.3,
+                0,
+                0.91,
+                0.7
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 0.98,
+              "curve": [
+                0.1,
+                0.29,
+                0.71,
+                1
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": 1.02,
+              "curve": [
+                0.29,
+                0,
+                0.9,
+                0.7
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 0.98
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 506
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.11,
+                0.3,
+                0.71,
+                1
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": -5,
+              "curve": [
+                0.3,
+                0,
+                0.9,
+                0.71
+              ]
+            },
+            {
+              "frame": 1,
+              "value": 0,
+              "curve": [
+                0.1,
+                0.3,
+                0.7,
+                1
+              ]
+            },
+            {
+              "frame": 1.5,
+              "value": 5,
+              "curve": [
+                0.3,
+                0,
+                0.91,
+                0.7
+              ]
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bird3_Pivot": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 411
+            }
+          ]
+        }
+      },
+      "Title_Pivot": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "Title_Pivot/80_Title_Add": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 100
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bird2_Pivot/J1_Eye": {
+        "comps": {
+          "cc.Sprite": {}
+        },
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.6,
+              "value": 0
+            },
+            {
+              "frame": 1.25,
+              "value": 0
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bird1_Pivot/J2_Eye": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bird1_Pivot/J2_Leaf_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -17.5,
+              "curve": [
+                0.1,
+                0.31,
+                0.71,
+                1
+              ]
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": -15,
+              "curve": [
+                0.3,
+                -0.01,
+                0.71,
+                1
+              ]
+            },
+            {
+              "frame": 1.5833333333333333,
+              "value": -20,
+              "curve": [
+                0.3,
+                0,
+                0.9,
+                0.69
+              ]
+            },
+            {
+              "frame": 2,
+              "value": -17.5
+            }
+          ]
+        }
+      },
+      "Bird1_Pivot/J2_Hair_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0.3333333333333339
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 5
+            },
+            {
+              "frame": 1.6666666666666667,
+              "value": -2
+            },
+            {
+              "frame": 2,
+              "value": 0.3333333333333339
+            }
+          ]
+        }
+      },
+      "Bird2_Pivot/J1_Leaf_Pivot": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -5
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": -10
+            },
+            {
+              "frame": 2,
+              "value": -5
+            }
+          ]
+        }
+      },
+      "Bird1_Pivot/J2_Mouth_1_Pivot": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 1
+            },
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 1
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": -3
+            },
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": -3
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Bird1_Pivot/J2_Mouth_2_Pivot": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -2
+            },
+            {
+              "frame": 0.5,
+              "value": -3
+            },
+            {
+              "frame": 1,
+              "value": -2
+            },
+            {
+              "frame": 1.5,
+              "value": -3
+            },
+            {
+              "frame": 2,
+              "value": -2
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": 5
+            },
+            {
+              "frame": 1,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 5
+            },
+            {
+              "frame": 2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

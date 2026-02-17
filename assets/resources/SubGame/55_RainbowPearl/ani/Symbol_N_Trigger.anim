@@ -1,0 +1,76 @@
+{
+  "_name": "Symbol_N_Trigger",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Pivot/Add": {
+        "comps": {},
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.3063636363636363,
+                -0.0035511363636364646,
+                0.6900852272727273,
+                0.9964488636363636
+              ],
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": [
+                0.3063636363636363,
+                0.0035511363636363535,
+                0.7042897727272727,
+                1
+              ],
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 0
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

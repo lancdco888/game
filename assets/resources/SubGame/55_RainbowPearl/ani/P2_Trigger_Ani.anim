@@ -1,0 +1,3968 @@
+{
+  "_name": "P2_Trigger_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_00",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 3,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1919,
+                    "y": 682,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.93701171875,
+                    0.3828125,
+                    0.99658203125,
+                    0.3828125,
+                    0.93701171875,
+                    0.3330078125,
+                    0.99658203125,
+                    0.3330078125
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": false,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/main/native/43/4345035f-e5a6-4bf0-ae30-85dcdf84a418.666b8.webp",
+                    "_ref": 192,
+                    "_callbackTable": {},
+                    "_id": "Tex.328",
+                    "width": 2048,
+                    "height": 2048,
+                    "_hashDirty": true,
+                    "_hash": 0,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": 0,
+                          "ib": 0,
+                          "drawcalls": 4,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 56320,
+                              "_numVertices": 2816,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 27,
+                              "_glID": null,
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 11568,
+                            "_numIndices": 5784,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 37.83250427246094,
+                              "1": 0.04170000180602074,
+                              "2": 906,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -709.209716796875,
+                              "14": -1228.3873291015625,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 709.209716796875,
+                              "14": 1228.3873291015625,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.001410020049661398,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.001410020049661398,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.4005434513092041,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 709.209716796875,
+                              "2": 1228.3873291015625,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1683,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 2048,
+                      "_height": 2048,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 157,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3828125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.93701171875,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3330078125
+                    },
+                    {
+                      "u": 0.99658203125,
+                      "v": 0.3330078125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_01",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1855,
+                    "y": 1022,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.90576171875,
+                    0.548828125,
+                    0.96533203125,
+                    0.548828125,
+                    0.90576171875,
+                    0.4990234375,
+                    0.96533203125,
+                    0.4990234375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.548828125
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.90576171875,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.4990234375
+                    },
+                    {
+                      "u": 0.96533203125,
+                      "v": 0.4990234375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.06666666666666667,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_02",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 721,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.0009765625,
+                    0.40185546875,
+                    0.060546875,
+                    0.40185546875,
+                    0.0009765625,
+                    0.35205078125,
+                    0.060546875,
+                    0.35205078125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.35205078125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_03",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 128,
+                    "y": 721,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.0625,
+                    0.40185546875,
+                    0.1220703125,
+                    0.40185546875,
+                    0.0625,
+                    0.35205078125,
+                    0.1220703125,
+                    0.35205078125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.35205078125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.35205078125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.13333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_04",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 381,
+                    "y": 680,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.18603515625,
+                    0.3818359375,
+                    0.24560546875,
+                    0.3818359375,
+                    0.18603515625,
+                    0.33203125,
+                    0.24560546875,
+                    0.33203125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.18603515625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24560546875,
+                      "v": 0.33203125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.16666666666666666,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_05",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 254,
+                    "y": 737,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.1240234375,
+                    0.40966796875,
+                    0.18359375,
+                    0.40966796875,
+                    0.1240234375,
+                    0.35986328125,
+                    0.18359375,
+                    0.35986328125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.35986328125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.2,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_06",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 507,
+                    "y": 680,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.24755859375,
+                    0.3818359375,
+                    0.30712890625,
+                    0.3818359375,
+                    0.24755859375,
+                    0.33203125,
+                    0.30712890625,
+                    0.33203125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.3818359375
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.24755859375,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.33203125
+                    },
+                    {
+                      "u": 0.30712890625,
+                      "v": 0.33203125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.23333333333333334,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_07",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 2,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 633,
+                    "y": 737,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.30908203125,
+                    0.40966796875,
+                    0.36865234375,
+                    0.40966796875,
+                    0.30908203125,
+                    0.35986328125,
+                    0.36865234375,
+                    0.35986328125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.40966796875
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.30908203125,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.35986328125
+                    },
+                    {
+                      "u": 0.36865234375,
+                      "v": 0.35986328125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.26666666666666666
+              },
+              {
+                "frame": 0.3,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_09",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 759,
+                    "y": 738,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.37060546875,
+                    0.41015625,
+                    0.43017578125,
+                    0.41015625,
+                    0.37060546875,
+                    0.3603515625,
+                    0.43017578125,
+                    0.3603515625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.41015625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.37060546875,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.3603515625
+                    },
+                    {
+                      "u": 0.43017578125,
+                      "v": 0.3603515625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_10",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 885,
+                    "y": 794,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.43212890625,
+                    0.4375,
+                    0.49169921875,
+                    0.4375,
+                    0.43212890625,
+                    0.3876953125,
+                    0.49169921875,
+                    0.3876953125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.4375
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.43212890625,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.3876953125
+                    },
+                    {
+                      "u": 0.49169921875,
+                      "v": 0.3876953125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.36666666666666664,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_11",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1011,
+                    "y": 820,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.49365234375,
+                    0.4501953125,
+                    0.55322265625,
+                    0.4501953125,
+                    0.49365234375,
+                    0.400390625,
+                    0.55322265625,
+                    0.400390625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.4501953125
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.49365234375,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.400390625
+                    },
+                    {
+                      "u": 0.55322265625,
+                      "v": 0.400390625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_12",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1137,
+                    "y": 846,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.55517578125,
+                    0.462890625,
+                    0.61474609375,
+                    0.462890625,
+                    0.55517578125,
+                    0.4130859375,
+                    0.61474609375,
+                    0.4130859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.462890625
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.55517578125,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.4130859375
+                    },
+                    {
+                      "u": 0.61474609375,
+                      "v": 0.4130859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_13",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1263,
+                    "y": 945,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.61669921875,
+                    0.51123046875,
+                    0.67626953125,
+                    0.51123046875,
+                    0.61669921875,
+                    0.46142578125,
+                    0.67626953125,
+                    0.46142578125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.51123046875
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.61669921875,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.67626953125,
+                      "v": 0.46142578125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_14",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1389,
+                    "y": 968,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.67822265625,
+                    0.5224609375,
+                    0.73779296875,
+                    0.5224609375,
+                    0.67822265625,
+                    0.47265625,
+                    0.73779296875,
+                    0.47265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.5224609375
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.67822265625,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.47265625
+                    },
+                    {
+                      "u": 0.73779296875,
+                      "v": 0.47265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_15",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1515,
+                    "y": 1026,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.73974609375,
+                    0.55078125,
+                    0.79931640625,
+                    0.55078125,
+                    0.73974609375,
+                    0.5009765625,
+                    0.79931640625,
+                    0.5009765625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.55078125
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.73974609375,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.5009765625
+                    },
+                    {
+                      "u": 0.79931640625,
+                      "v": 0.5009765625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_16",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1641,
+                    "y": 1029,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.80126953125,
+                    0.55224609375,
+                    0.86083984375,
+                    0.55224609375,
+                    0.80126953125,
+                    0.50244140625,
+                    0.86083984375,
+                    0.50244140625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.55224609375
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.80126953125,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.86083984375,
+                      "v": 0.50244140625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5666666666666667,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_17",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 2,
+                    "y": 827,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.0009765625,
+                    0.45361328125,
+                    0.060546875,
+                    0.45361328125,
+                    0.0009765625,
+                    0.40380859375,
+                    0.060546875,
+                    0.40380859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.0009765625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.060546875,
+                      "v": 0.40380859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_18",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 128,
+                    "y": 827,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.0625,
+                    0.45361328125,
+                    0.1220703125,
+                    0.45361328125,
+                    0.0625,
+                    0.40380859375,
+                    0.1220703125,
+                    0.40380859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.45361328125
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.0625,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40380859375
+                    },
+                    {
+                      "u": 0.1220703125,
+                      "v": 0.40380859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_19",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 380,
+                    "y": 786,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.185546875,
+                    0.43359375,
+                    0.2451171875,
+                    0.43359375,
+                    0.185546875,
+                    0.3837890625,
+                    0.2451171875,
+                    0.3837890625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.185546875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.185546875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2451171875,
+                      "v": 0.3837890625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_20",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 254,
+                    "y": 843,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.1240234375,
+                    0.46142578125,
+                    0.18359375,
+                    0.46142578125,
+                    0.1240234375,
+                    0.41162109375,
+                    0.18359375,
+                    0.41162109375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.1240234375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.18359375,
+                      "v": 0.41162109375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_21",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 506,
+                    "y": 786,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.2470703125,
+                    0.43359375,
+                    0.306640625,
+                    0.43359375,
+                    0.2470703125,
+                    0.3837890625,
+                    0.306640625,
+                    0.3837890625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.43359375
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.2470703125,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.3837890625
+                    },
+                    {
+                      "u": 0.306640625,
+                      "v": 0.3837890625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_22",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 632,
+                    "y": 843,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.30859375,
+                    0.46142578125,
+                    0.3681640625,
+                    0.46142578125,
+                    0.30859375,
+                    0.41162109375,
+                    0.3681640625,
+                    0.41162109375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.30859375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.46142578125
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.41162109375
+                    },
+                    {
+                      "u": 0.3681640625,
+                      "v": 0.41162109375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7666666666666667,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_23",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 758,
+                    "y": 844,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.3701171875,
+                    0.4619140625,
+                    0.4296875,
+                    0.4619140625,
+                    0.3701171875,
+                    0.412109375,
+                    0.4296875,
+                    0.412109375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.4619140625
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.3701171875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.412109375
+                    },
+                    {
+                      "u": 0.4296875,
+                      "v": 0.412109375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_24",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 884,
+                    "y": 900,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.431640625,
+                    0.4892578125,
+                    0.4912109375,
+                    0.4892578125,
+                    0.431640625,
+                    0.439453125,
+                    0.4912109375,
+                    0.439453125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.431640625,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.4892578125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.431640625,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.439453125
+                    },
+                    {
+                      "u": 0.4912109375,
+                      "v": 0.439453125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_25",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1010,
+                    "y": 926,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.4931640625,
+                    0.501953125,
+                    0.552734375,
+                    0.501953125,
+                    0.4931640625,
+                    0.4521484375,
+                    0.552734375,
+                    0.4521484375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.501953125
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.4931640625,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.4521484375
+                    },
+                    {
+                      "u": 0.552734375,
+                      "v": 0.4521484375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.8666666666666667,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_26",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1136,
+                    "y": 952,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.5546875,
+                    0.5146484375,
+                    0.6142578125,
+                    0.5146484375,
+                    0.5546875,
+                    0.46484375,
+                    0.6142578125,
+                    0.46484375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.5546875,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.5146484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.5546875,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.46484375
+                    },
+                    {
+                      "u": 0.6142578125,
+                      "v": 0.46484375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_27",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1262,
+                    "y": 1051,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.6162109375,
+                    0.56298828125,
+                    0.67578125,
+                    0.56298828125,
+                    0.6162109375,
+                    0.51318359375,
+                    0.67578125,
+                    0.51318359375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.56298828125
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.6162109375,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.51318359375
+                    },
+                    {
+                      "u": 0.67578125,
+                      "v": 0.51318359375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9333333333333333,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_28",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1388,
+                    "y": 1074,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.677734375,
+                    0.57421875,
+                    0.7373046875,
+                    0.57421875,
+                    0.677734375,
+                    0.5244140625,
+                    0.7373046875,
+                    0.5244140625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.677734375,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.57421875
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.677734375,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.5244140625
+                    },
+                    {
+                      "u": 0.7373046875,
+                      "v": 0.5244140625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.9666666666666667,
+                "value": {
+                  "_name": "Symbol-Symbol_Ani-80_P2_29",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 1,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1514,
+                    "y": 1132,
+                    "width": 122,
+                    "height": 102
+                  },
+                  "uv": [
+                    0.7392578125,
+                    0.6025390625,
+                    0.798828125,
+                    0.6025390625,
+                    0.7392578125,
+                    0.552734375,
+                    0.798828125,
+                    0.552734375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 122,
+                    "height": 102
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.6025390625
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.7392578125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.552734375
+                    },
+                    {
+                      "u": 0.798828125,
+                      "v": 0.552734375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

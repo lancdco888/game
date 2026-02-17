@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a4b9b622-d7f8-4ffd-a3c2-fd51c39db4af",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 68,
+  "height": 68,
+  "platformSettings": {},
+  "subMetas": {
+    "UI-70_Coin_Rotation_03": {
+      "ver": "1.0.6",
+      "uuid": "ed7b2a52-f2c3-4458-8af1-301152ce9f31",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a4b9b622-d7f8-4ffd-a3c2-fd51c39db4af",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 22,
+      "trimY": 0,
+      "width": 24,
+      "height": 68,
+      "rawWidth": 68,
+      "rawHeight": 68,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

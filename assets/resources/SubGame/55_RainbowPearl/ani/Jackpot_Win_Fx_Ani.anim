@@ -1,0 +1,130 @@
+{
+  "_name": "Jackpot_Win_Fx_Ani",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 8,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Pivot/Fx-80_Fx_Light_1": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 8,
+              "value": -360
+            }
+          ],
+          "opacity": []
+        }
+      },
+      "Pivot/Fx-80_Fx_Light_2": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 8,
+              "value": 360
+            }
+          ]
+        }
+      },
+      "Pivot": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 100
+            },
+            {
+              "frame": 1.0166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1.5166666666666666,
+              "value": 100
+            },
+            {
+              "frame": 2,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 100
+            },
+            {
+              "frame": 3.0166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 3.5166666666666666,
+              "value": 100
+            },
+            {
+              "frame": 4,
+              "value": 255
+            },
+            {
+              "frame": 4.5,
+              "value": 100
+            },
+            {
+              "frame": 5.016666666666667,
+              "value": 255
+            },
+            {
+              "frame": 5.516666666666667,
+              "value": 100
+            },
+            {
+              "frame": 6,
+              "value": 255
+            },
+            {
+              "frame": 6.5,
+              "value": 100
+            },
+            {
+              "frame": 7.016666666666667,
+              "value": 255
+            },
+            {
+              "frame": 7.516666666666667,
+              "value": 100
+            },
+            {
+              "frame": 8,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0,
+                "value": 200
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
