@@ -23,9 +23,6 @@ export default class ReelMachine_RainbowPearl extends ReelMachine_Base {
     /** Jackpot模式下滚轮停止音效播放标记（5列对应5个标记） */
     public flagsPlayReelStopSoundJackpotMode: boolean[] = [false, false, false, false, false];
 
-    /** 暗屏节点（原代码引用但未定义，补充属性以兼容逻辑） */
-    @property({ type: cc.Node, visible: false })
-    public dimmScreenNode: cc.Node | null = null;
 
     /**
      * 获取Linked Jackpot模式下的滚轮状态

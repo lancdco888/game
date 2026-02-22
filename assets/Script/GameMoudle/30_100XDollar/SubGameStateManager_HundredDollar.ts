@@ -1,6 +1,5 @@
 
 import GameComponents_HundredDollar from './GameComponents_HundredDollar';
-import HundredDollarManager from './HundredDollarManager';
 import UserInfo from '../../User/UserInfo';
 import SubGameStateManager_Base from '../../SubGameStateManager_Base';
 import State, { SequencialState } from '../../Slot/State';
@@ -13,6 +12,7 @@ import SlotGameResultManager from '../../manager/SlotGameResultManager';
 import SymbolAnimationController from '../../Slot/SymbolAnimationController';
 import GameComponents_Base from '../../game/GameComponents_Base';
 import SlotGameRuleManager from '../../manager/SlotGameRuleManager';
+import HundredDollarManager from './HundredDollarManager';
 
 const { ccclass, property } = cc._decorator;
 
@@ -198,7 +198,7 @@ export default class SubGameStateManager_HundredDollar extends SubGameStateManag
         const state = new State();
         state.addOnStartCallback(() => {
             const gameComponents = SlotManager.Instance.getComponent(GameComponents_HundredDollar);
-            if (gameComponents?.reelFrameAni) {
+            if (gameComponents.reelFrameAni) {
                 gameComponents.reelFrameAni.playSpinAnimation();
             } else {
                 cc.warn("SubGameStateManager: reelFrameAni组件未挂载，无法播放Spin动画");

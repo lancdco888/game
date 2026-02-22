@@ -11,14 +11,14 @@ export default class ReelFrameAnimation_HundredDollar extends cc.Component {
         type: cc.Animation,
         displayName: "滚轮旋转动画"
     })
-    public spinAnimation: cc.Animation | null = null;
+    public spinAnimation: cc.Animation = null;
 
     /** 中奖动画组件（包含普通/奖励两种动画剪辑） */
     @property({
         type: cc.Animation,
         displayName: "中奖动画"
     })
-    public winAnimation: cc.Animation | null = null;
+    public winAnimation: cc.Animation = null;
 
     /** 旋转动画精灵节点数组（控制显示/隐藏） */
     @property({
@@ -26,6 +26,10 @@ export default class ReelFrameAnimation_HundredDollar extends cc.Component {
         displayName: "旋转动画精灵节点"
     })
     public spinAniSprites: cc.Node[] = [];
+
+    constructor(){
+        super()
+    }
 
     /**
      * 停止所有动画并隐藏动画节点
@@ -65,8 +69,6 @@ export default class ReelFrameAnimation_HundredDollar extends cc.Component {
         for (let i = 0; i < 4; ++i) {
             if (this.spinAniSprites[i]) {
                 this.spinAniSprites[i].active = true;
-            } else {
-                cc.warn(`ReelFrameAnimation: 旋转动画精灵节点索引 ${i} 未配置`);
             }
         }
 
@@ -74,8 +76,6 @@ export default class ReelFrameAnimation_HundredDollar extends cc.Component {
         if (this.spinAnimation) {
             this.spinAnimation.node.active = true;
             this.spinAnimation.play();
-        } else {
-            cc.warn("ReelFrameAnimation: 旋转动画组件未挂载");
         }
     }
 

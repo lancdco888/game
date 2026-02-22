@@ -1,9 +1,10 @@
-import HundredDollarManager from './HundredDollarManager';
-import GameComponents_HundredDollar from './GameComponents_HundredDollar';
+
+// import GameComponents_HundredDollar from './GameComponents_HundredDollar';
 import State from '../../Slot/State';
 import SlotSoundController from '../../Slot/SlotSoundController';
 import SlotManager from '../../manager/SlotManager';
 import SlotGameResultManager from '../../manager/SlotGameResultManager';
+import HundredDollarManager from './HundredDollarManager';
 
 const { ccclass, property } = cc._decorator;
 
@@ -13,33 +14,34 @@ const { ccclass, property } = cc._decorator;
  */
 @ccclass()
 export default class BonusGameComponent_HundredDollar extends cc.Component {
+
     /** 接受奖励按钮 */
     @property({
         type: cc.Button,
         displayName: "接受奖励按钮"
     })
-    public btnTakeOffer: cc.Button | null = null;
+    public btnTakeOffer: cc.Button = null;
 
     /** 再试一次按钮 */
     @property({
         type: cc.Button,
         displayName: "再试一次按钮"
     })
-    public btnTryAgain: cc.Button | null = null;
+    public btnTryAgain: cc.Button = null;
 
     /** 接受奖励按钮动画 */
     @property({
         type: cc.Animation,
         displayName: "接受奖励按钮动画"
     })
-    public aniTakeOffer: cc.Animation | null = null;
+    public aniTakeOffer: cc.Animation = null;
 
     /** 再试一次按钮动画 */
     @property({
         type: cc.Animation,
         displayName: "再试一次按钮动画"
     })
-    public aniTryAgain: cc.Animation | null = null;
+    public aniTryAgain: cc.Animation = null;
 
     /** 顶部文本节点数组（提示、选择、奖励信息等） */
     @property({
@@ -53,25 +55,30 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
         type: cc.Label,
         displayName: "当前奖励金额标签"
     })
-    public labelCurrentOffer: cc.Label | null = null;
+    public labelCurrentOffer: cc.Label = null;
 
     /** 剩余次数标签 */
     @property({
         type: cc.Label,
         displayName: "剩余次数标签"
     })
-    public labelOfferLeft: cc.Label | null = null;
+    public labelOfferLeft: cc.Label = null;
 
     // 内部状态变量
-    private bonusGameStateCallback: Function | null = null; // 奖励游戏状态回调
+    private bonusGameStateCallback: Function = null; // 奖励游戏状态回调
     private _showInfoState: number = 0; // 信息显示状态（0/1 切换文本）
     private _flagPlayRetryAni: boolean = false; // 重试动画播放标记
+
+    constructor(){
+        super()
+    }
 
     /**
      * 组件加载时初始化
      */
-    onLoad(): void {
+    onLoad() {
         // 初始化按钮状态和UI
+
         this.setButtonInteractiveState(false);
         this.setShowButtonChoiceEffect(false);
         this.clearCurrentOfferInfo();
@@ -90,6 +97,7 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
                 bonusState.setDone();
                 this.bonusGameStateCallback = null;
             };
+            
             this.playGame();
         });
 
@@ -104,7 +112,7 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
         SlotSoundController.Instance().playAudio("IntroBGM", "FX");
         
         // 播放顶部UI开始动画
-        const gameComponents = SlotManager.Instance.getComponent(GameComponents_HundredDollar);
+        var gameComponents = SlotManager.Instance.getComponent("GameComponents_HundredDollar") as any;
         gameComponents.topUI.playStartAni();
         
         this._flagPlayRetryAni = false;
@@ -129,7 +137,7 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
             this.playShowDollarLamp();
         } else {
             // 播放重试动画和音效
-            const gameComponents = SlotManager.Instance.getComponent(GameComponents_HundredDollar);
+            const gameComponents = SlotManager.Instance.getComponent("GameComponents_HundredDollar") as any;
             gameComponents.topUI.playRetryAni();
             SlotSoundController.Instance().playAudio("BonusGameTryAgain", "FX");
             
@@ -165,7 +173,7 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
         SlotSoundController.Instance().playAudio("BonusGameDrum", "FXLoop");
 
         let soundIndex = 0;
-        const gameComponents = SlotManager.Instance.getComponent(GameComponents_HundredDollar);
+        const gameComponents = SlotManager.Instance.getComponent("GameComponents_HundredDollar") as any;
         const rewardListRef = gameComponents.topUI._listReward;
 
         // 遍历奖励列表，播放对应灯效和音效
@@ -296,7 +304,8 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
         
         // 还有剩余次数则发送请求，否则直接处理结果
         if (bonusGameState.totalCnt - bonusGameState.spinCnt > 0) {
-            HundredDollarManager.getInstance().sendBonusGameRequestHundredDollar([1], this.processAfterTakeOffer.bind(this));
+            
+            HundredDollarManager.getInstance().sendBonusGameRequestHundredDollar([1], this.processAfterTakeOffer);
         } else {
             this.processAfterTakeOffer();
         }
@@ -305,14 +314,14 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
     /**
      * 再试一次按钮点击事件
      */
-    onClickTryAgain(): void {
+    onClickTryAgain() {
         // 停止相关音效
         SlotSoundController.Instance().stopAudio("BonusGameWait", "FXLoop");
         SlotSoundController.Instance().stopAudio("BonusGameChoice", "FXLoop");
         SlotSoundController.Instance().playAudio("BonusGameButton", "FX");
 
         // 停止顶部UI动画，禁用按钮和特效
-        const gameComponents = SlotManager.Instance.getComponent(GameComponents_HundredDollar);
+        var gameComponents = SlotManager.Instance.getComponent("GameComponents_HundredDollar") as any;
         gameComponents.topUI.stopAni();
         
         this.setButtonInteractiveState(false);
@@ -320,7 +329,7 @@ export default class BonusGameComponent_HundredDollar extends cc.Component {
         this.unscheduleAllCallbacks();
 
         // 发送再试一次请求
-        HundredDollarManager.getInstance().sendBonusGameRequestHundredDollar([0], this.processAfterTryAgain.bind(this));
+        // HundredDollarManager.getInstance().sendBonusGameRequestHundredDollar([0], this.processAfterTryAgain.bind(this));
     }
 
     /**

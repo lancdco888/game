@@ -2,9 +2,9 @@ import GameComponents_HundredDollar from './GameComponents_HundredDollar';
 import UserInfo from '../../User/UserInfo';
 import PayCode from '../../Config/PayCode';
 import CommonServer from '../../Network/CommonServer';
-import UserPromotion, { NewUserMissionPromotion, WelcomeBonusPromotion } from '../../User/UserPromotion';
+import { NewUserMissionPromotion, WelcomeBonusPromotion } from '../../User/UserPromotion';
 import SlotManager from '../../manager/SlotManager';
-import State, { SequencialState } from '../../Slot/State';
+import { SequencialState } from '../../Slot/State';
 import SlotSoundController from '../../Slot/SlotSoundController';
 import SlotGameResultManager from '../../manager/SlotGameResultManager';
 import CameraControl from '../../Slot/CameraControl';
@@ -15,7 +15,7 @@ import ServerStorageManager, { StorageKeyType } from '../../manager/ServerStorag
 import SlotReelSpinStateManager from '../../Slot/SlotReelSpinStateManager';
 import SubGameStateManager_HundredDollar from './SubGameStateManager_HundredDollar';
 
-const { ccclass, property } = cc._decorator;
+const { ccclass } = cc._decorator;
 
 /**
  * 百元老虎机核心管理器
@@ -23,13 +23,15 @@ const { ccclass, property } = cc._decorator;
  */
 @ccclass()
 export default class HundredDollarManager extends SlotManager {
-
-
     /**
-     * 获取管理器单例（关联SlotManager的Instance）
+     * 获取单例实例（复用父类SlotManager的Instance）
      */
-    public static getInstance(): HundredDollarManager {
-        return SlotManager.Instance as HundredDollarManager;
+    static getInstance() {
+        return SlotManager.Instance;
+    }
+
+    constructor(){
+        super()
     }
 
     /**

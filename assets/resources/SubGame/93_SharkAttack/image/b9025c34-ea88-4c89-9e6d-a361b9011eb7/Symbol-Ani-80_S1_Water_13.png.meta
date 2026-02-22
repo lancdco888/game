@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "88b2080f-d214-439f-810f-80856a80cc22",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 200,
+  "height": 200,
+  "platformSettings": {},
+  "subMetas": {
+    "Symbol-Ani-80_S1_Water_13": {
+      "ver": "1.0.6",
+      "uuid": "439b0b4c-136e-4fc1-a2c8-d19acc8ca460",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "88b2080f-d214-439f-810f-80856a80cc22",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3.5,
+      "offsetY": 0.5,
+      "trimX": 5,
+      "trimY": 3,
+      "width": 183,
+      "height": 193,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
