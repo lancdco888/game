@@ -1,0 +1,508 @@
+{
+  "_name": "JP2_jackpot_ex",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Info/major": {
+        "props": {
+          "color": []
+        }
+      },
+      "Info/minor": {
+        "props": {
+          "color": []
+        }
+      },
+      "Info/mini": {
+        "props": {
+          "color": []
+        }
+      },
+      "Fx_select": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Fx_select/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.016666666666666666,
+                "value": 200
+              },
+              {
+                "frame": 0.3333333333333333,
+                "value": 200
+              },
+              {
+                "frame": 0.4,
+                "value": 0
+              }
+            ],
+            "startRadius": [
+              {
+                "frame": 0,
+                "value": 100
+              }
+            ],
+            "endRadius": [
+              {
+                "frame": 0,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "symbol/1_click": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/2_select": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/3_ex": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "symbol/4_win": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/5_dim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicInOut"
+            }
+          ]
+        }
+      },
+      "Fx_win": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/6_idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Info": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            }
+          ],
+          "y": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicInOut"
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.25,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Info/x2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/x4": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/x8": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/x10": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/grand/txt": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/major/txt": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/minor/txt": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Info/mini/txt": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "Fx_select/Fx-80_spot_light2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.016666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 30
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.09791360294117644,
+                0.808189338235294,
+                0.58,
+                1
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx_select/Fx-80_flare_light3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": [
+                0.07751077586206898,
+                0.5725862068965516,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": [
+                0.28110325811359016,
+                0.5387927865111561,
+                0.753760775862069,
+                0.982489224137931
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "x": 1.5,
+                "y": 0.5,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx_select/Fx-80_circle_line_x2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 30
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.08333333333333333,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Info/font": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

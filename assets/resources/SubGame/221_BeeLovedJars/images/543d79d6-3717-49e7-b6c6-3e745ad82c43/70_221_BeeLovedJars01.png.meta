@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "da8e8ef3-c9f4-4889-b901-0e1c0c2259d7",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 119,
+  "height": 154,
+  "platformSettings": {},
+  "subMetas": {
+    "70_221_BeeLovedJars01": {
+      "ver": "1.0.6",
+      "uuid": "ef3ac112-305a-4dc0-b77f-e9279cc8b0ed",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "da8e8ef3-c9f4-4889-b901-0e1c0c2259d7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 115,
+      "height": 150,
+      "rawWidth": 119,
+      "rawHeight": 154,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

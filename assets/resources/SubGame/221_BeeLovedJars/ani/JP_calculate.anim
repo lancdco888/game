@@ -1,0 +1,120 @@
+{
+  "_name": "JP_calculate",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Fx_win": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Info": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "symbol/dim": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "_val": 4286611584
+              }
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicInOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Info/Normal": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "_val": 4286611584
+              }
+            }
+          ]
+        }
+      },
+      "Info/High": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "_val": 4286611584
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

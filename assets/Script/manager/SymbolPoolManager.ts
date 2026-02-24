@@ -11,6 +11,11 @@ export class SymbolInfo {
 
     @property({ type: cc.Prefab })
     public prefab: cc.Prefab = null;
+
+    constructor(){
+        this.symbolid = 0
+        this.prefab = null
+    }
 }
 
 // ===== 核心类 SymbolPoolManager 符号对象池管理器，单例模式+对象池核心逻辑 =====

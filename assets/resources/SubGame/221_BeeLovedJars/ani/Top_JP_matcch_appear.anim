@@ -1,0 +1,3214 @@
+{
+  "_name": "Top_JP_matcch_appear",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "fx_cont": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": true
+            }
+          ]
+        }
+      },
+      "fx_cont/Fx-square2-80_00": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ]
+        },
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.4166666666666667,
+                "value": {
+                  "_name": "Fx-square2-80_00",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 6,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1688,
+                    "y": 589,
+                    "width": 45,
+                    "height": 40
+                  },
+                  "uv": [
+                    0.82421875,
+                    0.30712890625,
+                    0.84619140625,
+                    0.30712890625,
+                    0.82421875,
+                    0.28759765625,
+                    0.84619140625,
+                    0.28759765625
+                  ],
+                  "_texture": {
+                    "_super": null,
+                    "_name": "",
+                    "_objFlags": 0,
+                    "_native": ".webp",
+                    "_format": 16,
+                    "_premultiplyAlpha": false,
+                    "_flipY": false,
+                    "_minFilter": 9729,
+                    "_magFilter": 9729,
+                    "_mipFilter": 9729,
+                    "_wrapS": 33071,
+                    "_wrapT": 33071,
+                    "_isAlphaAtlas": false,
+                    "_genMipmaps": false,
+                    "_packable": false,
+                    "loaded": true,
+                    "_nativeUrl": "https://highrollervegas.akamaized.net/instant/res/assets/main/native/81/813f63ed-bcc9-4fb3-ab94-d1d92115f12e.b6e88.webp",
+                    "_ref": 220,
+                    "_callbackTable": {},
+                    "_id": "Tex.933",
+                    "width": 2048,
+                    "height": 2048,
+                    "_hashDirty": true,
+                    "_hash": 0,
+                    "_texture": {
+                      "_device": {
+                        "_gl": {},
+                        "_extensions": {
+                          "EXT_texture_filter_anisotropic": {},
+                          "EXT_shader_texture_lod": {},
+                          "OES_standard_derivatives": {},
+                          "OES_texture_float": {},
+                          "OES_texture_float_linear": {},
+                          "OES_texture_half_float": {},
+                          "OES_texture_half_float_linear": {},
+                          "OES_vertex_array_object": {},
+                          "WEBGL_compressed_texture_s3tc": {},
+                          "WEBGL_depth_texture": {},
+                          "WEBGL_draw_buffers": {}
+                        },
+                        "_caps": {
+                          "maxVertexStreams": 4,
+                          "maxVertexTextures": 16,
+                          "maxFragUniforms": 1024,
+                          "maxTextureUnits": 16,
+                          "maxVertexAttribs": 16,
+                          "maxTextureSize": 16384,
+                          "maxDrawBuffers": 8,
+                          "maxColorAttachments": 8
+                        },
+                        "_stats": {
+                          "texture": 0,
+                          "vb": 0,
+                          "ib": 0,
+                          "drawcalls": 8,
+                          "tex": null
+                        },
+                        "_current": {
+                          "vertexBuffers": [
+                            {
+                              "_format": {
+                                "_attr2el": {
+                                  "a_position": {
+                                    "name": "a_position",
+                                    "offset": 0,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_uv0": {
+                                    "name": "a_uv0",
+                                    "offset": 8,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5126,
+                                    "num": 2,
+                                    "normalize": false,
+                                    "bytes": 8
+                                  },
+                                  "a_color": {
+                                    "name": "a_color",
+                                    "offset": 16,
+                                    "stride": 20,
+                                    "stream": -1,
+                                    "type": 5121,
+                                    "num": 4,
+                                    "normalize": true,
+                                    "bytes": 4
+                                  }
+                                },
+                                "_elements": [
+                                  null,
+                                  null,
+                                  null
+                                ],
+                                "_bytes": 20,
+                                "_hash": 3742334048,
+                                "name": "vfmtPosUvColor"
+                              },
+                              "_usage": 35048,
+                              "_bytesPerVertex": 20,
+                              "_bytes": 45760,
+                              "_numVertices": 2288,
+                              "_needExpandDataStore": false,
+                              "_glID": {}
+                            },
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            0,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            {
+                              "_width": 2048,
+                              "_height": 2048,
+                              "_genMipmaps": false,
+                              "_compressed": false,
+                              "_anisotropy": 1,
+                              "_minFilter": 1,
+                              "_magFilter": 1,
+                              "_mipFilter": 1,
+                              "_wrapS": 33071,
+                              "_wrapT": 33071,
+                              "_format": 16,
+                              "_target": 3553,
+                              "_id": 277,
+                              "_glID": null,
+                              "_genMipmap": false
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": true,
+                          "blendSep": true,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 770,
+                          "blendDst": 771,
+                          "blendSrcAlpha": 770,
+                          "blendDstAlpha": 771,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": 2,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 0,
+                          "primitiveType": 4,
+                          "maxStream": 0,
+                          "indexBuffer": {
+                            "_format": 5123,
+                            "_usage": 35044,
+                            "_bytesPerIndex": 2,
+                            "_bytes": 8904,
+                            "_numIndices": 4452,
+                            "_needExpandDataStore": false,
+                            "_glID": {}
+                          },
+                          "maxTextureSlot": 0,
+                          "program": {
+                            "_attributes": [
+                              {
+                                "name": "a_position",
+                                "location": 0,
+                                "type": 35665
+                              },
+                              {
+                                "name": "a_color",
+                                "location": 1,
+                                "type": 35666
+                              },
+                              {
+                                "name": "a_uv0",
+                                "location": 2,
+                                "type": 35664
+                              }
+                            ],
+                            "_uniforms": [
+                              {
+                                "name": "cc_matViewProj",
+                                "location": {},
+                                "type": 35676
+                              },
+                              {
+                                "name": "texture",
+                                "location": {},
+                                "type": 35678
+                              }
+                            ],
+                            "_samplers": [],
+                            "_errors": [],
+                            "_linked": true,
+                            "_vertSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\nuniform mat4 cc_matViewProj;\nuniform mat4 cc_matWorld;\nattribute vec3 a_position;\nattribute vec4 a_color;\nvarying vec4 v_color;\n#if USE_TEXTURE\nattribute vec2 a_uv0;\nvarying vec2 v_uv0;\n#endif\nvoid main () {\n  vec4 pos = vec4(a_position, 1);\n  #if CC_USE_MODEL\n  pos = cc_matViewProj * cc_matWorld * pos;\n  #else\n  pos = cc_matViewProj * pos;\n  #endif\n  #if USE_TEXTURE\n  v_uv0 = a_uv0;\n  #endif\n  v_color = a_color;\n  gl_Position = pos;\n}",
+                            "_fragSource": "#define USE_TEXTURE 1\n#define CC_USE_MODEL 0\n#define USE_ALPHA_TEST 0\n#define CC_USE_ALPHA_ATLAS_texture 0\n#define INPUT_IS_GAMMA 0\n#define USE_BGRA 0\n\nprecision highp float;\n#if USE_ALPHA_TEST\n  uniform float alphaThreshold;\n#endif\nvoid ALPHA_TEST (in vec4 color) {\n  #if USE_ALPHA_TEST\n      if (color.a < alphaThreshold) discard;\n  #endif\n}\nvoid ALPHA_TEST (in float alpha) {\n  #if USE_ALPHA_TEST\n      if (alpha < alphaThreshold) discard;\n  #endif\n}\nvarying vec4 v_color;\n#if USE_TEXTURE\nvarying vec2 v_uv0;\nuniform sampler2D texture;\n#endif\nvoid main () {\n  vec4 o = vec4(1, 1, 1, 1);\n  #if USE_TEXTURE\n  vec4 texture_tmp = texture2D(texture, v_uv0);\n  #if CC_USE_ALPHA_ATLAS_texture\n      texture_tmp.a *= texture2D(texture, v_uv0 + vec2(0, 0.5)).r;\n  #endif\n  #if INPUT_IS_GAMMA\n    o.rgb *= (texture_tmp.rgb * texture_tmp.rgb);\n    o.a *= texture_tmp.a;\n  #else\n    o *= texture_tmp;\n  #endif\n  #endif\n  o *= v_color;\n  ALPHA_TEST(o);\n  #if USE_BGRA\n    gl_FragColor = o.bgra;\n  #else\n    gl_FragColor = o.rgba;\n  #endif\n}",
+                            "_glID": {},
+                            "_id": 0
+                          }
+                        },
+                        "_next": {
+                          "vertexBuffers": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "vertexBufferOffsets": [
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "textureUnits": [
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                          ],
+                          "blend": false,
+                          "blendSep": false,
+                          "blendColor": 4294967295,
+                          "blendEq": 32774,
+                          "blendAlphaEq": 32774,
+                          "blendSrc": 1,
+                          "blendDst": 0,
+                          "blendSrcAlpha": 1,
+                          "blendDstAlpha": 0,
+                          "depthTest": false,
+                          "depthWrite": false,
+                          "depthFunc": 513,
+                          "stencilTest": false,
+                          "stencilSep": false,
+                          "stencilFuncFront": 519,
+                          "stencilRefFront": 0,
+                          "stencilMaskFront": 255,
+                          "stencilFailOpFront": 7680,
+                          "stencilZFailOpFront": 7680,
+                          "stencilZPassOpFront": 7680,
+                          "stencilWriteMaskFront": 255,
+                          "stencilFuncBack": 519,
+                          "stencilRefBack": 0,
+                          "stencilMaskBack": 255,
+                          "stencilFailOpBack": 7680,
+                          "stencilZFailOpBack": 7680,
+                          "stencilZPassOpBack": 7680,
+                          "stencilWriteMaskBack": 255,
+                          "cullMode": 1029,
+                          "primitiveType": 4,
+                          "maxStream": -1,
+                          "indexBuffer": null,
+                          "maxTextureSlot": -1,
+                          "program": null
+                        },
+                        "_uniforms": {
+                          "cc_time": {
+                            "dirty": true,
+                            "value": {
+                              "0": 68.87334442138672,
+                              "1": 0.041600000113248825,
+                              "2": 1546,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matView": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": -640,
+                              "13": -806.4865112304688,
+                              "14": -1396.8756103515625,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewInv": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 640,
+                              "13": 806.4865112304688,
+                              "14": 1396.8756103515625,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matProj": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0012399463448673487,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": -1.0004884004592896,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matViewProj": {
+                            "dirty": false,
+                            "value": {
+                              "0": 0.0015625000232830644,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0.0012399463448673487,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": -0.0004884005174972117,
+                              "11": 0,
+                              "12": -1,
+                              "13": -1,
+                              "14": -0.31825369596481323,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_cameraPos": {
+                            "dirty": true,
+                            "value": {
+                              "0": 640,
+                              "1": 806.4865112304688,
+                              "2": 1396.8756103515625,
+                              "3": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_lightViewProjMatrix": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0,
+                              "16": 0,
+                              "17": 0,
+                              "18": 0,
+                              "19": 0,
+                              "20": 0,
+                              "21": 0,
+                              "22": 0,
+                              "23": 0,
+                              "24": 0,
+                              "25": 0,
+                              "26": 0,
+                              "27": 0,
+                              "28": 0,
+                              "29": 0,
+                              "30": 0,
+                              "31": 0,
+                              "32": 0,
+                              "33": 0,
+                              "34": 0,
+                              "35": 0,
+                              "36": 0,
+                              "37": 0,
+                              "38": 0,
+                              "39": 0,
+                              "40": 0,
+                              "41": 0,
+                              "42": 0,
+                              "43": 0,
+                              "44": 0,
+                              "45": 0,
+                              "46": 0,
+                              "47": 0,
+                              "48": 0,
+                              "49": 0,
+                              "50": 0,
+                              "51": 0,
+                              "52": 0,
+                              "53": 0,
+                              "54": 0,
+                              "55": 0,
+                              "56": 0,
+                              "57": 0,
+                              "58": 0,
+                              "59": 0,
+                              "60": 0,
+                              "61": 0,
+                              "62": 0,
+                              "63": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_shadow_info": {
+                            "dirty": true,
+                            "value": {
+                              "0": 0,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 0,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 0,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 0
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorld": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "cc_matWorldIT": {
+                            "dirty": true,
+                            "value": {
+                              "0": 1,
+                              "1": 0,
+                              "2": 0,
+                              "3": 0,
+                              "4": 0,
+                              "5": 1,
+                              "6": 0,
+                              "7": 0,
+                              "8": 0,
+                              "9": 0,
+                              "10": 1,
+                              "11": 0,
+                              "12": 0,
+                              "13": 0,
+                              "14": 0,
+                              "15": 1
+                            },
+                            "isArray": true
+                          },
+                          "texture": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          },
+                          "alphaThreshold": {
+                            "dirty": false,
+                            "value": 0,
+                            "isArray": false
+                          }
+                        },
+                        "_vh": 1865,
+                        "_vw": 1480,
+                        "_vy": 0,
+                        "_vx": 0,
+                        "_sh": 0,
+                        "_sw": 0,
+                        "_sy": 0,
+                        "_sx": 0,
+                        "_framebuffer": null,
+                        "_enabledAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "_newAttributes": [
+                          1,
+                          1,
+                          1,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0,
+                          0
+                        ]
+                      },
+                      "_width": 2048,
+                      "_height": 2048,
+                      "_genMipmaps": false,
+                      "_compressed": false,
+                      "_anisotropy": 1,
+                      "_minFilter": 1,
+                      "_magFilter": 1,
+                      "_mipFilter": 1,
+                      "_wrapS": 33071,
+                      "_wrapT": 33071,
+                      "_format": 16,
+                      "_target": 3553,
+                      "_id": 266,
+                      "_glID": {},
+                      "_genMipmap": false
+                    },
+                    "_image": {
+                      "flipY": false,
+                      "premultiplyAlpha": false
+                    },
+                    "__onLoadInvoked__": true
+                  },
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -15,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.82421875,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.30712890625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.82421875,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.28759765625
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.28759765625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": {
+                  "_name": "Fx-square2-80_01",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 287,
+                    "y": 487,
+                    "width": 61,
+                    "height": 42
+                  },
+                  "uv": [
+                    0.14013671875,
+                    0.25830078125,
+                    0.169921875,
+                    0.25830078125,
+                    0.14013671875,
+                    0.23779296875,
+                    0.169921875,
+                    0.23779296875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -14,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.25830078125
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.14013671875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.23779296875
+                    },
+                    {
+                      "u": 0.169921875,
+                      "v": 0.23779296875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.45,
+                "value": {
+                  "_name": "Fx-square2-80_02",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1548,
+                    "y": 1417,
+                    "width": 77,
+                    "height": 42
+                  },
+                  "uv": [
+                    0.755859375,
+                    0.71240234375,
+                    0.79345703125,
+                    0.71240234375,
+                    0.755859375,
+                    0.69189453125,
+                    0.79345703125,
+                    0.69189453125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -14,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.755859375,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.71240234375
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.755859375,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.69189453125
+                    },
+                    {
+                      "u": 0.79345703125,
+                      "v": 0.69189453125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.4666666666666667,
+                "value": {
+                  "_name": "Fx-square2-80_03",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1064,
+                    "y": 823,
+                    "width": 93,
+                    "height": 44
+                  },
+                  "uv": [
+                    0.51953125,
+                    0.42333984375,
+                    0.56494140625,
+                    0.42333984375,
+                    0.51953125,
+                    0.40185546875,
+                    0.56494140625,
+                    0.40185546875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -13,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.51953125,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.42333984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.40185546875
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.40185546875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.48333333333333334,
+                "value": {
+                  "_name": "Fx-square2-80_04",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 4,
+                    "y": 1103,
+                    "width": 101,
+                    "height": 48
+                  },
+                  "uv": [
+                    0.001953125,
+                    0.56201171875,
+                    0.05126953125,
+                    0.56201171875,
+                    0.001953125,
+                    0.53857421875,
+                    0.05126953125,
+                    0.53857421875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -11,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.001953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.56201171875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53857421875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53857421875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5,
+                "value": {
+                  "_name": "Fx-square2-80_05",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 4,
+                    "y": 1042,
+                    "width": 101,
+                    "height": 54
+                  },
+                  "uv": [
+                    0.001953125,
+                    0.53515625,
+                    0.05126953125,
+                    0.53515625,
+                    0.001953125,
+                    0.5087890625,
+                    0.05126953125,
+                    0.5087890625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -8,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.53515625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.5087890625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.5087890625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5166666666666667,
+                "value": {
+                  "_name": "Fx-square2-80_06",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 112,
+                    "y": 967,
+                    "width": 101,
+                    "height": 62
+                  },
+                  "uv": [
+                    0.0546875,
+                    0.50244140625,
+                    0.10400390625,
+                    0.50244140625,
+                    0.0546875,
+                    0.47216796875,
+                    0.10400390625,
+                    0.47216796875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0546875,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.50244140625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.47216796875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5333333333333333,
+                "value": {
+                  "_name": "Fx-square2-80_07",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 4,
+                    "y": 967,
+                    "width": 101,
+                    "height": 68
+                  },
+                  "uv": [
+                    0.001953125,
+                    0.50537109375,
+                    0.05126953125,
+                    0.50537109375,
+                    0.001953125,
+                    0.47216796875,
+                    0.05126953125,
+                    0.47216796875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.001953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.50537109375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.47216796875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.47216796875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.55,
+                "value": {
+                  "_name": "Fx-square2-80_08",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1805,
+                    "y": 1505,
+                    "width": 101,
+                    "height": 70
+                  },
+                  "uv": [
+                    0.88134765625,
+                    0.76904296875,
+                    0.9306640625,
+                    0.76904296875,
+                    0.88134765625,
+                    0.73486328125,
+                    0.9306640625,
+                    0.73486328125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.76904296875
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.88134765625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.73486328125
+                    },
+                    {
+                      "u": 0.9306640625,
+                      "v": 0.73486328125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5666666666666667,
+                "value": {
+                  "_name": "Fx-square2-80_09",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1913,
+                    "y": 1535,
+                    "width": 101,
+                    "height": 70
+                  },
+                  "uv": [
+                    0.93408203125,
+                    0.78369140625,
+                    0.9833984375,
+                    0.78369140625,
+                    0.93408203125,
+                    0.74951171875,
+                    0.9833984375,
+                    0.74951171875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.78369140625
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.93408203125,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.74951171875
+                    },
+                    {
+                      "u": 0.9833984375,
+                      "v": 0.74951171875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.5833333333333334,
+                "value": {
+                  "_name": "Fx-square2-80_10",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 4,
+                    "y": 813,
+                    "width": 101,
+                    "height": 70
+                  },
+                  "uv": [
+                    0.001953125,
+                    0.43115234375,
+                    0.05126953125,
+                    0.43115234375,
+                    0.001953125,
+                    0.39697265625,
+                    0.05126953125,
+                    0.39697265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.001953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.39697265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "_name": "Fx-square2-80_11",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 7,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 112,
+                    "y": 813,
+                    "width": 101,
+                    "height": 70
+                  },
+                  "uv": [
+                    0.0546875,
+                    0.43115234375,
+                    0.10400390625,
+                    0.43115234375,
+                    0.0546875,
+                    0.39697265625,
+                    0.10400390625,
+                    0.39697265625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0546875,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.43115234375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.39697265625
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.39697265625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6166666666666667,
+                "value": {
+                  "_name": "Fx-square2-80_12",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 4,
+                    "y": 890,
+                    "width": 101,
+                    "height": 70
+                  },
+                  "uv": [
+                    0.001953125,
+                    0.46875,
+                    0.05126953125,
+                    0.46875,
+                    0.001953125,
+                    0.4345703125,
+                    0.05126953125,
+                    0.4345703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.001953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.001953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.05126953125,
+                      "v": 0.4345703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6333333333333333,
+                "value": {
+                  "_name": "Fx-square2-80_13",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 112,
+                    "y": 890,
+                    "width": 101,
+                    "height": 70
+                  },
+                  "uv": [
+                    0.0546875,
+                    0.46875,
+                    0.10400390625,
+                    0.46875,
+                    0.0546875,
+                    0.4345703125,
+                    0.10400390625,
+                    0.4345703125
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0546875,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.46875
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.4345703125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.4345703125
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "_name": "Fx-square2-80_14",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 112,
+                    "y": 1036,
+                    "width": 101,
+                    "height": 62
+                  },
+                  "uv": [
+                    0.0546875,
+                    0.5361328125,
+                    0.10400390625,
+                    0.5361328125,
+                    0.0546875,
+                    0.505859375,
+                    0.10400390625,
+                    0.505859375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 4,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.0546875,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.5361328125
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.0546875,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.505859375
+                    },
+                    {
+                      "u": 0.10400390625,
+                      "v": 0.505859375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "_name": "Fx-square2-80_15",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 632,
+                    "y": 596,
+                    "width": 97,
+                    "height": 56
+                  },
+                  "uv": [
+                    0.30859375,
+                    0.318359375,
+                    0.35595703125,
+                    0.318359375,
+                    0.30859375,
+                    0.291015625,
+                    0.35595703125,
+                    0.291015625
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 7,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.30859375,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.318359375
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.30859375,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.291015625
+                    },
+                    {
+                      "u": 0.35595703125,
+                      "v": 0.291015625
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.6833333333333333,
+                "value": {
+                  "_name": "Fx-square2-80_16",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1064,
+                    "y": 766,
+                    "width": 93,
+                    "height": 50
+                  },
+                  "uv": [
+                    0.51953125,
+                    0.3984375,
+                    0.56494140625,
+                    0.3984375,
+                    0.51953125,
+                    0.3740234375,
+                    0.56494140625,
+                    0.3740234375
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 10,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3984375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.51953125,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3740234375
+                    },
+                    {
+                      "u": 0.56494140625,
+                      "v": 0.3740234375
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "_name": "Fx-square2-80_17",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1740,
+                    "y": 262,
+                    "width": 83,
+                    "height": 48
+                  },
+                  "uv": [
+                    0.849609375,
+                    0.1513671875,
+                    0.89013671875,
+                    0.1513671875,
+                    0.849609375,
+                    0.1279296875,
+                    0.89013671875,
+                    0.1279296875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 11,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1513671875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.849609375,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1279296875
+                    },
+                    {
+                      "u": 0.89013671875,
+                      "v": 0.1279296875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": {
+                  "_name": "Fx-square2-80_18",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 5,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1664,
+                    "y": 636,
+                    "width": 69,
+                    "height": 48
+                  },
+                  "uv": [
+                    0.8125,
+                    0.333984375,
+                    0.84619140625,
+                    0.333984375,
+                    0.8125,
+                    0.310546875,
+                    0.84619140625,
+                    0.310546875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 11,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.8125,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.333984375
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.8125,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.310546875
+                    },
+                    {
+                      "u": 0.84619140625,
+                      "v": 0.310546875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              },
+              {
+                "frame": 0.7333333333333333,
+                "value": {
+                  "_name": "Fx-square2-80_19",
+                  "_objFlags": 0,
+                  "_native": "",
+                  "loaded": true,
+                  "_nativeUrl": "",
+                  "_ref": 8,
+                  "_callbackTable": {},
+                  "_rect": {
+                    "x": 1354,
+                    "y": 679,
+                    "width": 53,
+                    "height": 46
+                  },
+                  "uv": [
+                    0.6611328125,
+                    0.35400390625,
+                    0.68701171875,
+                    0.35400390625,
+                    0.6611328125,
+                    0.33154296875,
+                    0.68701171875,
+                    0.33154296875
+                  ],
+                  "_original": null,
+                  "_offset": {
+                    "x": 0,
+                    "y": 12,
+                    "z": 0
+                  },
+                  "_originalSize": {
+                    "width": 101,
+                    "height": 70
+                  },
+                  "_rotated": false,
+                  "_flipX": false,
+                  "_flipY": false,
+                  "_capInsets": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "uvSliced": [
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.35400390625
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.6611328125,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.33154296875
+                    },
+                    {
+                      "u": 0.68701171875,
+                      "v": 0.33154296875
+                    }
+                  ],
+                  "__onLoadInvoked__": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Txt/Frame-80_JP_top_info1": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.21666666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.38333333333333336,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Frame-80_JP_top_info2": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.26666666666666666,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.35,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.43333333333333335,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Frame-80_JP_top_info3": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.31666666666666665,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.4,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.48333333333333334,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Frame-80_JP_top_info4": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.36666666666666664,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.45,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Txt/Frame-80_JP_top_info5": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5833333333333334,
+              "curve": "sineInOut",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "props": {
+      "scale": [
+        {
+          "frame": 0,
+          "curve": "cubicOut",
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.13333333333333333,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.21666666666666667,
+          "curve": "sineInOut",
+          "value": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.3,
+          "curve": "sineInOut",
+          "value": {
+            "x": 1.05,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "frame": 0.38333333333333336,
+          "value": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

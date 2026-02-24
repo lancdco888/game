@@ -127,7 +127,7 @@ export default class SubGameStateManager_Base {
                 state.setDone();
             };
 
-            if (self.isShowWinMoneyEffect() !== 0) {
+            if (self.isShowWinMoneyEffect()) {
                 const winType = SlotGameResultManager.Instance.getWinType();
                 SlotManager.Instance.bottomUIText.showWinEffect(true);
 
@@ -395,7 +395,7 @@ export default class SubGameStateManager_Base {
                 state.setDone();
             };
 
-            if (self.isShowWinMoneyEffect() !== 0) {
+            if (self.isShowWinMoneyEffect()) {
                 const winType = SlotGameResultManager.Instance.getWinType();
                 SlotManager.Instance.bottomUIText.showWinEffect(true);
 
@@ -1343,9 +1343,9 @@ export default class SubGameStateManager_Base {
      * 判断是否显示奖金特效
      * @returns 0=不显示，1=显示
      */
-    public isShowWinMoneyEffect(): number {
+    public isShowWinMoneyEffect() {
         const payOutResults = SlotGameResultManager.Instance.getSpinResult().payOutResults;
-        return (payOutResults != null && payOutResults.length !== 0) ? 1 : 0;
+        return (payOutResults != null && payOutResults.length !== 0);
     }
 
     /**
@@ -1357,7 +1357,7 @@ export default class SubGameStateManager_Base {
         const state = new State();
         
         state.addOnStartCallback(() => {
-            if (self.isShowWinMoneyEffect() === 1) {
+            if (self.isShowWinMoneyEffect()) {
                 const subGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
                 if (subGameKey === "freeSpin") {
                     SlotManager.Instance.bottomUIText.setBottomTextInfo(BottomTextType.IncreaseWinMoneyFreespin);
@@ -1396,7 +1396,7 @@ export default class SubGameStateManager_Base {
         const state = new State();
         
         state.addOnStartCallback(() => {
-            if (self.isShowWinMoneyEffect() === 1) {
+            if (self.isShowWinMoneyEffect()) {
                 const winType = SlotGameResultManager.Instance.getWinType();
                 const cameraState = CameraControl.Instance.eStateOfCameraPosition;
                 if (winType === SlotGameResultManager.WINSTATE_NORMAL || (cameraState !== 1 && CameraControl.Instance.isOriginalPos())) {
@@ -1432,7 +1432,7 @@ export default class SubGameStateManager_Base {
         const state = new State();
         
         state.addOnStartCallback(() => {
-            if (self.isShowWinMoneyEffect() === 1) {
+            if (self.isShowWinMoneyEffect()) {
                 SlotManager.Instance.setMouseDragEventFlag(false);
                 const cameraState = CameraControl.Instance.eStateOfCameraPosition;
 

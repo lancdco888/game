@@ -1,0 +1,87 @@
+{
+  "_name": "FG_hive_down",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 2,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "PU-80_FG_comb": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": {
+                "_val": 4287935175
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "txt1": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": {
+                "_val": 4287935175
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      },
+      "txt2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "_val": 4294967295
+              }
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": {
+                "_val": 4287935175
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "_val": 4294967295
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

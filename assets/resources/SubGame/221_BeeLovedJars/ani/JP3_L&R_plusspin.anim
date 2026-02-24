@@ -1,0 +1,429 @@
+{
+  "_name": "JP3_L&R_plusspin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Fx/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.016666666666666666,
+                "value": 200
+              },
+              {
+                "frame": 0.35,
+                "value": 200
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 0
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": 0
+              },
+              {
+                "frame": 0.45,
+                "value": 200
+              },
+              {
+                "frame": 0.95,
+                "value": 200
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ],
+            "startRadius": [
+              {
+                "frame": 0,
+                "value": 50
+              },
+              {
+                "frame": 0.05,
+                "value": 100
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 0
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": 50
+              }
+            ],
+            "endRadius": [
+              {
+                "frame": 0,
+                "value": 100
+              },
+              {
+                "frame": 0.05,
+                "value": 10
+              },
+              {
+                "frame": 0.4166666666666667,
+                "value": 0
+              },
+              {
+                "frame": 0.43333333333333335,
+                "value": 100
+              }
+            ]
+          }
+        }
+      },
+      "symbol/2_idle": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 2,
+              "value": true
+            }
+          ]
+        }
+      },
+      "symbol/1_appear": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/3_+1spin": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/4_win_fx_move": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 2,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/5_collect_win": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "symbol/6_hit_fs": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Fx_win": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Fx": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Fx/Fx-80_spot_light2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.85,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.85,
+              "value": 30
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.3333333333333333,
+              "curve": [
+                0.09791360294117644,
+                0.808189338235294,
+                0.58,
+                1
+              ],
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.85,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx/Fx-80_flare_light3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 0
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.4166666666666667,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.5,
+              "curve": "cubicOut",
+              "value": {
+                "x": 2,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": {
+                "x": 3,
+                "y": 0.5,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Fx/Fx-80_circle_line_x2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            }
+          ],
+          "angle": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 1,
+              "value": -40
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0.4166666666666667,
+              "curve": "cubicOut",
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Info1": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": true
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "curve": "sineInOut",
+              "value": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.75,
+              "curve": "linear",
+              "value": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 1
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1.2,
+                "y": 1.2,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.1666666666666667,
+              "curve": "cubicIn",
+              "value": {
+                "x": 1.3,
+                "y": 1.3,
+                "z": 1
+              }
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              }
+            }
+          ]
+        }
+      },
+      "Info2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ],
+          "scale": [
+            {
+              "frame": 0,
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

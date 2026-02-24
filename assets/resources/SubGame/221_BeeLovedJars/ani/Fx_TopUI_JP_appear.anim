@@ -1,0 +1,158 @@
+{
+  "_name": "Fx_TopUI_JP_appear",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": []
+    },
+    "paths": {
+      "Fx": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Fx2/Fx-50_Gradation_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.5,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.25,
+              "value": 2,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 1
+            }
+          ],
+          "x": [
+            {
+              "frame": 0,
+              "value": -160,
+              "curve": [
+                0.3014772727272727,
+                0.09804752066115696,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 148
+            }
+          ]
+        }
+      },
+      "Fx2/particlesystem": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "totalParticles": [
+              {
+                "frame": 0,
+                "value": 0
+              },
+              {
+                "frame": 0.016666666666666666,
+                "value": 200
+              },
+              {
+                "frame": 0.75,
+                "value": 200
+              },
+              {
+                "frame": 0.8333333333333334,
+                "value": 0
+              }
+            ]
+          }
+        },
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -148,
+              "curve": [
+                0.2988496376811594,
+                0.1030344202898551,
+                0.58,
+                1
+              ]
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 164
+            }
+          ]
+        }
+      },
+      "Fx2": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "Txt": {
+        "props": {
+          "scale": [
+            {
+              "frame": 0,
+              "curve": "cubicOut",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

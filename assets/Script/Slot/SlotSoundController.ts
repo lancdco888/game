@@ -3,15 +3,15 @@ import SoundManager from "../manager/SoundManager";
 const { ccclass, property } = cc._decorator;
 
 /** 音效信息实体类 - 原JS内联构造函数 SlotSoundInfo 转换 */
-@ccclass()
+@ccclass('SlotSoundInfo')
 export class SlotSoundInfo {
-    @property({ type: cc.String })
+    @property()
     public soundId: string = "";
 
     @property({ type: cc.AudioClip })
     public soundResource: cc.AudioClip = null;
 
-    @property({ type: Number })
+    @property()
     public volume: number = -1;
 
     constructor(){

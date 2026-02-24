@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "45631929-01b0-4f26-9710-c4b2b1eb9d02",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 184,
+  "height": 54,
+  "platformSettings": {},
+  "subMetas": {
+    "PU-80_FG_comb_freespin2_add": {
+      "ver": "1.0.6",
+      "uuid": "67fc45a1-9fd1-4f94-a106-b7f6919463aa",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "45631929-01b0-4f26-9710-c4b2b1eb9d02",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 183,
+      "height": 53,
+      "rawWidth": 184,
+      "rawHeight": 54,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

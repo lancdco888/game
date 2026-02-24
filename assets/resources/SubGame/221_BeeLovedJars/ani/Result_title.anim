@@ -1,0 +1,47 @@
+{
+  "_name": "Result_title",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "txt1/mask/Fx-100_Gradient_Bust_B": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -230
+            },
+            {
+              "frame": 2.5,
+              "value": 340
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 255
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 2.5,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}
