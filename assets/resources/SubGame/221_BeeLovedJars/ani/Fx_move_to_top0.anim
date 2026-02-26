@@ -1,0 +1,53 @@
+{
+  "_name": "Fx_move_to_top0",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.1666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "symbol": {
+        "comps": {},
+        "props": {
+          "position": [
+            {
+              "frame": 0.75,
+              "value": [
+                -344,
+                136
+              ],
+              "curve": [
+                0.20255991285403055,
+                0.1988017429193899,
+                0.9003267973856208,
+                0.0002723311546841689
+              ],
+              "motionPath": [
+                [
+                  -102,
+                  -73,
+                  -269,
+                  -145,
+                  20,
+                  -12
+                ]
+              ]
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": [
+                0,
+                292
+              ],
+              "motionPath": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [],
+  "__type__": "cc.AnimationClip"
+}

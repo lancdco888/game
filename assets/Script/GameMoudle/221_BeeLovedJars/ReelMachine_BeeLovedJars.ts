@@ -22,11 +22,11 @@ export default class ReelMachine_BeeLovedJars extends ReelMachine_Base {
 
     // 单符号层节点（对应原代码的 oneSymbolLayer）
     @property({
-        type: Node,
+        type: cc.Node,
         displayName: "单符号层",
         tooltip: "单符号显示层节点"
     })
-    oneSymbolLayer: Node | null = null;
+    oneSymbolLayer: cc.Node | null = null;
 
     /**
      * 显示基础滚轮（隐藏Lock&Roll滚轮）
