@@ -21,412 +21,271 @@ import { Window } from '../../manager/SlotGameRuleManager';
 
 const { ccclass, property } = cc._decorator;
 
-/**
- * BeeLovedJars 游戏的滚轮控制器，继承自通用 ReelController_Base 基类
- * 负责滚轮旋转、停止、符号显示/动画、音效播放等核心逻辑
- */
-@ccclass('ReelController_BeeLovedJars')
+@ccclass("ReelController_BeeLovedJars")
 export default class ReelController_BeeLovedJars extends ReelController_Base {
-    // Lock&Roll 模式滚轮标识
-    @property({
-        displayName: "LockNRoll滚轮",
-        tooltip: "是否为Lock&Roll模式专用滚轮"
-    })
+    @property
     lockNRoll_Reel: boolean = false;
 
-    // Lock&Roll 模式占位符号列表
-    private lockNRollDummySymboList: number[] = [0, 90, 0, 0];
-    // 无Wild符号的占位列表
-    private noWildDummy: number[] = [14, 12, 13, 21, 22, 31, 32, 33, 90];
-    // 无Jackpot符号的占位列表
-    private noJackpotDummy: number[] = [14, 12, 13, 21, 22, 31, 32, 33, 71];
-    // 免费旋转模式占位符号列表
-    private freeSpinDummy: number[] = [21, 22, 31, 32, 33];
+    // 保持原变量命名和初始值
+    lockNRollDummySymboList: number[] = [0, 90, 0, 0];
+    noWildDummy: number[] = [14, 12, 13, 21, 22, 31, 32, 33, 90];
+    noJackpotDummy: number[] = [14, 12, 13, 21, 22, 31, 32, 33, 71];
+    freeSpinDummy: number[] = [21, 22, 31, 32, 33];
+    dummySymbolList!: number[];
 
-
-    /**
-     * 生命周期：加载完成
-     */
-    onLoad(): void {
+    onLoad() {
         const self = this;
-        // 初始化默认占位符号列表
         this.dummySymbolList = [14, 12, 13, 21, 22, 31, 32, 33, 71, 90];
-        
-        // 旋转结束的缓动函数列表添加回调（播放停止音效+停止期待音效）
-        this.easingFuncListOnSpinEnd.push(() => {
+        this.easingFuncListOnSpinEnd.push(function () {
             self.playReelStopSound();
             SlotSoundController.Instance().stopAudio("ReelExpect", "FX");
         });
     }
 
-    /**
-     * 播放滚轮停止音效
-     */
-    playReelStopSound(): void {
+    playReelStopSound() {
         const reelComp = this.node.getComponent(Reel);
-        if (!reelComp) return;
-
-        const slotManager = SlotManager.Instance;
-        const reelMachineComp = slotManager.reelMachine.getComponent(ReelMachine_BeeLovedJars);
-        
-        // Lock&Roll模式逻辑
         if (this.lockNRoll_Reel) {
-            if (slotManager.isSkipCurrentSpin === 0 || 
-                reelComp.reelindex === reelMachineComp.getLastLockNRollReelIndex()) {
+            if (!(0 != SlotManager.Instance.isSkipCurrentSpin && reelComp.reelindex != SlotManager.Instance.reelMachine.getComponent(ReelMachine_BeeLovedJars).getLastLockNRollReelIndex())) {
                 SlotSoundController.Instance().playAudio("ReelStop", "FX");
             }
-        } 
-        // 普通模式逻辑
-        else {
-            if (slotManager.isSkipCurrentSpin === 0 || 
-                reelComp.reelindex === slotManager.reelMachine.reels.length - 1) {
+        } else {
+            if (!(0 != SlotManager.Instance.isSkipCurrentSpin && reelComp.reelindex != SlotManager.Instance.reelMachine.reels.length - 1)) {
                 SlotSoundController.Instance().playAudio("ReelStop", "FX");
             }
         }
     }
 
-    /**
-     * 处理旋转结束逻辑
-     * @param callback 旋转结束后的回调函数
-     */
-    processSpinEnd(callback?: () => void): void {
+    processSpinEnd(callback: Function | null) {
         if (this.lockNRoll_Reel) {
-            const reelComp = this.node.getComponent(Reel);
-            if (!reelComp) return;
-
-            const reelIndex = reelComp.reelindex;
+            const reelIndex = this.node.getComponent(Reel).reelindex;
             const lastHistoryWindows = SlotGameResultManager.Instance.getLastHistoryWindows();
-            
-            const windowIdx = Math.floor(reelIndex / 3);
-            const symbolIdx = Math.floor(reelIndex % 3);
+            const o = Math.floor(reelIndex / 3);
+            const a = Math.floor(reelIndex % 3);
 
-            // 隐藏9开头符号的滚轮（Lock&Roll模式）
             if (TSUtility.isValid(lastHistoryWindows)) {
-                const symbolId = lastHistoryWindows.GetWindow(windowIdx).getSymbol(symbolIdx);
-                if (Math.floor(symbolId / 10) === 9) {
+                const symbol = lastHistoryWindows.GetWindow(o).getSymbol(a);
+                if (9 == Math.floor(symbol / 10)) {
                     this.node.active = false;
                 }
             }
         }
-
-        // 执行回调
         if (TSUtility.isValid(callback)) {
-            callback();
+            callback!();
         }
     }
 
-    /**
-     * 检查并播放普通模式下符号出现动画
-     */
-    checkAppearSymbol(): void {
+    checkAppearSymbol() {
         const reelComp = this.node.getComponent(Reel_BeeLovedJars);
-        if (!reelComp) return;
+        let t = false;
+        let n = false;
+        const historyWindow = SlotGameResultManager.Instance.getHistoryWindows().length > 1 
+            ? SlotGameResultManager.Instance.getHistoryWindow(0).GetWindow(reelComp.reelindex) 
+            : SlotGameResultManager.Instance.getLastHistoryWindows().GetWindow(reelComp.reelindex);
 
-        let hasJackpot = false;
-        let hasWild = false;
-        const gameResultMgr = SlotGameResultManager.Instance;
-        
-        // 获取当前滚轮对应的窗口数据
-        const targetWindow = gameResultMgr.getHistoryWindows().length > 1 
-            ? gameResultMgr.getHistoryWindow(0).GetWindow(reelComp.reelindex)
-            : gameResultMgr.getLastHistoryWindows().GetWindow(reelComp.reelindex);
-
-        if (TSUtility.isValid(targetWindow)) {
-            // 遍历窗口内所有符号
-            for (let a = 0; a < targetWindow.size; ++a) {
-                const symbolId = targetWindow.getSymbol(a);
-                
-                // 处理Jackpot符号（9开头，Math.floor(i/9)=10 为原代码逻辑，保留）
-                if (Math.floor(symbolId / 9) === 10) {
-                    const reelIdx = reelComp.reelindex;
-                    const symbolIdx = a;
-                    const symbolInfo = gameResultMgr.getResultSymbolInfoArray()[reelIdx][symbolIdx];
+        if (TSUtility.isValid(historyWindow)) {
+            for (let a = 0; a < historyWindow.size; ++a) {
+                const symbol = historyWindow.getSymbol(a);
+                if (10 == Math.floor(symbol / 9)) {
+                    const r = reelComp.reelindex;
+                    const s = a;
+                    const symbolInfo = SlotGameResultManager.Instance.getResultSymbolInfoArray()[r][s];
                     
-                    // 播放符号动画并设置信息
-                    const animNode = SymbolAnimationController.Instance.playAnimationSymbolAbsoluteCoordinate(
-                        reelComp.reelindex, a, symbolId + 100
-                    );
-                    const jackpotComp = animNode.getComponent(JackpotSymbolComponent_BeeLovedJars);
-                    if (jackpotComp) jackpotComp.setInfo(symbolInfo);
-                    
-                    // 隐藏原符号
+                    SymbolAnimationController.Instance.playAnimationSymbolAbsoluteCoordinate(reelComp.reelindex, a, symbol + 100)
+                        .getComponent(JackpotSymbolComponent_BeeLovedJars).setInfo(symbolInfo);
                     reelComp.hideSymbolInRowForAppear(a);
-                    hasJackpot = true;
+                    n = true;
                 }
 
-                // 处理Wild符号（71）
-                if (symbolId === 71) {
-                    // 播放Wild动画
-                    SymbolAnimationController.Instance.playAnimationSymbolAbsoluteCoordinate(
-                        reelComp.reelindex, a, symbolId + 100
-                    );
-                    // 隐藏原符号
+                if (71 == symbol) {
+                    SymbolAnimationController.Instance.playAnimationSymbolAbsoluteCoordinate(reelComp.reelindex, a, symbol + 100);
                     reelComp.hideSymbolInRowForAppear(a);
-                    // 触发奖池移动事件
                     EventBus.emit("movePot", reelComp.reelindex, a);
-                    hasWild = true;
+                    t = true;
                 }
             }
 
-            // 播放对应音效
-            if (hasJackpot) {
+            if (n) {
                 SlotSoundController.Instance().stopAudio("JackpotAppear", "FX");
                 SlotSoundController.Instance().playAudio("JackpotAppear", "FX");
             }
-            if (hasWild) {
+            if (t) {
                 SlotSoundController.Instance().playAudio("WildAppear", "FX");
             }
         }
-
-        // 重置符号动画的Z轴层级
         SymbolAnimationController.Instance.resetZorderSymbolAnimation();
     }
 
-    /**
-     * 检查并播放免费旋转模式下符号出现动画（92号符号）
-     */
-    checkAppearFreeSpinSymbol(): void {
+    checkAppearFreeSpinSymbol() {
         const reelComp = this.node.getComponent(Reel_BeeLovedJars);
-        if (!reelComp) return;
+        let t = false;
+        const historyWindow = SlotGameResultManager.Instance.getHistoryWindows().length > 1 
+            ? SlotGameResultManager.Instance.getHistoryWindow(0).GetWindow(reelComp.reelindex) 
+            : SlotGameResultManager.Instance.getLastHistoryWindows().GetWindow(reelComp.reelindex);
 
-        let hasJackpot2 = false;
-        const gameResultMgr = SlotGameResultManager.Instance;
-        
-        // 获取当前滚轮对应的窗口数据
-        const targetWindow = gameResultMgr.getHistoryWindows().length > 1 
-            ? gameResultMgr.getHistoryWindow(0).GetWindow(reelComp.reelindex)
-            : gameResultMgr.getLastHistoryWindows().GetWindow(reelComp.reelindex);
-
-        if (TSUtility.isValid(targetWindow)) {
-            // 遍历窗口内所有符号
-            for (let o = 0; o < targetWindow.size; ++o) {
-                const symbolId = targetWindow.getSymbol(o);
-                
-                // 处理免费旋转模式Jackpot符号（92）
-                if (symbolId === 92) {
-                    const reelIdx = reelComp.reelindex;
-                    const symbolIdx = o;
-                    const symbolInfo = gameResultMgr.getResultSymbolInfoArray()[reelIdx][symbolIdx];
+        if (TSUtility.isValid(historyWindow)) {
+            for (let o = 0; o < historyWindow.size; ++o) {
+                const symbol = historyWindow.getSymbol(o);
+                if (92 == symbol) {
+                    const i = reelComp.reelindex;
+                    const r = o;
+                    const symbolInfo = SlotGameResultManager.Instance.getResultSymbolInfoArray()[i][r];
                     
-                    // 播放符号动画并设置信息
-                    const animNode = SymbolAnimationController.Instance.playAnimationSymbolAbsoluteCoordinate(
-                        reelComp.reelindex, o, symbolId + 300
-                    );
-                    const jackpotComp = animNode.getComponent(JackpotSymbolComponent_BeeLovedJars);
-                    if (jackpotComp) jackpotComp.setInfo(symbolInfo);
-                    
-                    // 设置原符号信息并隐藏
-                    const originSymbolNode = reelComp.getSymbol(o);
-                    const originJackpotComp = originSymbolNode.getComponent(JackpotSymbolComponent_BeeLovedJars);
-                    if (originJackpotComp) originJackpotComp.setInfo(symbolInfo);
+                    SymbolAnimationController.Instance.playAnimationSymbolAbsoluteCoordinate(reelComp.reelindex, o, symbol + 300)
+                        .getComponent(JackpotSymbolComponent_BeeLovedJars).setInfo(symbolInfo);
+                    reelComp.getSymbol(o).getComponent(JackpotSymbolComponent_BeeLovedJars).setInfo(symbolInfo);
                     reelComp.hideSymbolInRowForAppear(o);
-                    
-                    hasJackpot2 = true;
+                    t = true;
                 }
             }
-
-            // 播放Jackpot2出现音效
-            if (hasJackpot2) {
+            if (t) {
                 SlotSoundController.Instance().playAudio("Jackpot2Appear", "FX");
             }
         }
     }
 
-    /**
-     * 检查并处理Lock&Roll模式下符号出现逻辑
-     */
-    checkAppeSymbol_LockNRoll(): void {
-        const reelComp = this.node.getComponent(Reel);
-        if (!reelComp) return;
-
-        const reelIndex = reelComp.reelindex;
+    checkAppeSymbol_LockNRoll() {
+        const reelIndex = this.node.getComponent(Reel).reelindex;
         const lastHistoryWindows = SlotGameResultManager.Instance.getLastHistoryWindows();
+        const n = Math.floor(reelIndex / 3);
+        const o = Math.floor(reelIndex % 3);
         const historyWindows = SlotGameResultManager.Instance.getHistoryWindows();
-        
-        const windowIdx = Math.floor(reelIndex / 3);
-        const symbolIdx = Math.floor(reelIndex % 3);
 
         if (TSUtility.isValid(lastHistoryWindows)) {
-            let symbolId = lastHistoryWindows.GetWindow(windowIdx).getSymbol(symbolIdx);
-            
-            // 检查是否有96号符号，有则替换
-            if (Math.floor(symbolId / 10) === 9) {
+            let symbol = lastHistoryWindows.GetWindow(n).getSymbol(o);
+            if (9 == Math.floor(symbol / 10)) {
                 for (let s = 0; s < historyWindows.length; s++) {
-                    if (historyWindows[s].GetWindow(windowIdx).getSymbol(symbolIdx) === 96) {
-                        symbolId = 96;
+                    if (96 == historyWindows[s].GetWindow(n).getSymbol(o)) {
+                        symbol = 96;
                         break;
                     }
                 }
+                BeeLovedJarsManager.getInstance().game_components.lockComponent.getComponent(LockComponent_BeeLovedJars)
+                    .setAppearSymbol(n, o, symbol);
             }
-
-            // 设置Lock组件的出现符号
-            const beeMgr = BeeLovedJarsManager.getInstance();
-            const lockComp = beeMgr.game_components.lockComponent.getComponent(LockComponent_BeeLovedJars);
-            lockComp.setAppearSymbol(windowIdx, symbolIdx, symbolId);
         }
     }
 
-    /**
-     * 获取排除预旋转的滚轮旋转状态（基于旋转请求时间）
-     * @param stopWindows 滚轮停止窗口数据（可选）
-     * @param reelMachine 滚轮管理器实例（可选）
-     * @returns 有序状态对象
-     */
-    getSpinExcludePreSpinUsingSpinRequestTimeState(
-        stopWindows?: Window, 
-        reelMachine?: any
-    ): SequencialState {
+    getSpinExcludePreSpinUsingSpinRequestTimeState(e: any = null, t: any = null) {
         const self = this;
         const seqState = new SequencialState();
         
-        // 滚轮未激活则直接返回空状态
-        if (!this.node.active) return seqState;
+        if (!this.node.active) {
+            return seqState;
+        }
 
-        let stateIdx = 0;
+        let a: any, i: any, l = 0;
         const reelComp = this.node.getComponent(Reel);
-        if (!reelComp) return seqState;
-
-        // 确定停止窗口和滚轮管理器
-        const targetStopWindows = stopWindows ?? SlotGameResultManager.Instance.getReelStopWindows();
-        const targetReelMachine = reelMachine ?? SlotManager.Instance.reelMachine;
         
-        // 获取游戏配置
+        a = null != e ? e : SlotGameResultManager.Instance.getReelStopWindows();
+        i = null != t && null != t ? t : SlotManager.Instance.reelMachine;
+
         const subGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
         const reelStrip = SlotGameRuleManager.Instance.getReelStrip(subGameKey);
         const spinControlInfo = SlotUIRuleManager.Instance.getSpinControlInfo(subGameKey).infoList[reelComp.reelindex];
-
-        // 1. 添加滚轮旋转到停止前的状态（更新前）
-        const spinUntilStopState = ReelSpinBehaviors.Instance.getReelSpinStateUntileStopBeforeReelRenewal(
-            targetReelMachine.reels, reelComp, reelStrip, subGameKey
-        );
-        spinUntilStopState.flagSkipActive = true;
-        spinUntilStopState.addOnStartCallback(() => {
+        
+        const reelSpinState = ReelSpinBehaviors.Instance.getReelSpinStateUntileStopBeforeReelRenewal(i.reels, reelComp, reelStrip, subGameKey);
+        reelSpinState.flagSkipActive = true;
+        reelSpinState.addOnStartCallback(function () {
             reelComp.setShaderValue("blurOffset", 0.02);
         });
-        seqState.insert(stateIdx++, spinUntilStopState);
+        seqState.insert(l++, reelSpinState);
 
-        // 2. 添加滚轮更新状态
-        const reelRenewalState = this.getReelSpinStateCurrentReelRenewal(
-            targetReelMachine.reels, reelComp, reelStrip, subGameKey
-        );
+        const reelRenewalState = this.getReelSpinStateCurrentReelRenewal(i.reels, reelComp, reelStrip, subGameKey);
         reelRenewalState.flagSkipActive = true;
-        seqState.insert(stateIdx++, reelRenewalState);
+        seqState.insert(l++, reelRenewalState);
 
-        // 解析缓动配置
-        const easingType = spinControlInfo?.postEasingType;
-        const easingRate = spinControlInfo?.postEasingRate;
-        const easingDuration = spinControlInfo?.postEasingDuration;
-        const easingDistance = spinControlInfo?.postEasingDistance;
+        let C: any = void 0, v: any = void 0, I: any = void 0, R: any = void 0;
+        if (null != spinControlInfo) {
+            C = spinControlInfo.postEasingType;
+            v = spinControlInfo.postEasingRate;
+            I = spinControlInfo.postEasingDuration;
+            R = spinControlInfo.postEasingDistance;
+        }
 
-        // 3. 获取结果符号列表并添加移动状态
-        const symbolList = this.getResultSymbolList(targetStopWindows.GetWindow(reelComp.reelindex), reelComp);
-        const symbolInfoList = this.getResultSymbolInfoList(targetStopWindows.GetWindow(reelComp.reelindex), reelComp);
-        const specialSymbolInfoList = this.getResultSpecialSymbolInfoList(targetStopWindows.GetWindow(reelComp.reelindex), reelComp);
-
+        const symbolList = this.getResultSymbolList(a.GetWindow(reelComp.reelindex), reelComp);
+        const symbolInfoList = this.getResultSymbolInfoList(a.GetWindow(reelComp.reelindex), reelComp);
+        const specialSymbolInfoList = this.getResultSpecialSymbolInfoList(a.GetWindow(reelComp.reelindex), reelComp);
+        
+        let A: any = void 0;
         const easingInfo = new EasingInfo();
-        easingInfo.easingType = easingType;
-        easingInfo.easingDistance = easingDistance;
-        easingInfo.easingDuration = easingDuration;
-        easingInfo.easingRate = easingRate;
-        easingInfo.onEasingStartFuncList.push(() => {
+        easingInfo.easingType = C;
+        easingInfo.easingDistance = R;
+        easingInfo.easingDuration = I;
+        easingInfo.easingRate = v;
+        easingInfo.onEasingStartFuncList.push(function () {
             self.setShowExpectEffects(false);
         });
+        
         this.addEasingFuncListOnStopEasing(easingInfo);
-
-        const reelMoveState = this.getReelMoveStateWithLastSymbolList(
-            reelComp, symbolList, subGameKey, easingInfo, symbolInfoList, specialSymbolInfoList
-        );
-        reelMoveState.addOnEndCallback(() => {
-            // 第4个滚轮停止时停止旋转音效
-            if (reelComp.reelindex === 4) {
+        A = this.getReelMoveStateWithLastSymbolList(reelComp, symbolList, subGameKey, easingInfo, symbolInfoList, specialSymbolInfoList);
+        A.addOnEndCallback(function () {
+            if (4 == reelComp.reelindex) {
                 SlotManager.Instance.stopReelSpinSound();
             }
         });
-        seqState.insert(stateIdx++, reelMoveState);
+        seqState.insert(l++, A);
 
-        // 4. 添加旋转结束重置状态
-        const resetState = new State();
-        resetState.addOnStartCallback(() => {
+        const T = new State();
+        T.addOnStartCallback(function () {
             reelComp.resetPositionOfReelComponents();
             reelComp.setShaderValue("blurOffset", 0);
-            // 最后一个滚轮停止时重置主音量
-            if (reelComp.reelindex === targetReelMachine.reels.length - 1) {
+            
+            if (i.reels.length - 1 == reelComp.reelindex) {
                 SoundManager.Instance().resetTemporarilyMainVolume();
             }
+            
             SlotManager.Instance.setPlayReelExpectEffectState(reelComp.reelindex + 1);
-            self.processSpinEnd(() => resetState.setDone());
+            self.processSpinEnd(T.setDone.bind(T));
         });
-        seqState.insert(stateIdx++, resetState);
-
+        seqState.insert(l++, T);
+        
         return seqState;
     }
 
-    /**
-     * 获取滚轮更新时的旋转状态
-     * @param reels 滚轮数组
-     * @param reelComp 滚轮组件
-     * @param reelStrip 滚轮条数据
-     * @param subGameKey 子游戏标识
-     * @returns 状态对象
-     */
-    getReelSpinStateCurrentReelRenewal(
-        reels: ReelController_Base[], 
-        reelComp: Reel, 
-        reelStrip: any, 
-        subGameKey: string
-    ): State {
+    getReelSpinStateCurrentReelRenewal(e: any, t: any, n: any, o: any) {
         const self = this;
         const state = new State();
-        let moveAction: any = null;
+        const reelStrip = n.getReel(t.reelindex);
+        let action: any = null;
 
-        state.addOnStartCallback(() => {
-            // 设置滚轮旋转方向为向下
-            reelComp.setReelSpinDirection(Reel.SPINDIRECTION_DOWN);
-            // 检查空白符号并控制下一个符号索引
-            reelStrip.checkBlankSymbolAndControlNextSymbolIndex(reelComp);
-
-            // 获取旋转速度配置
-            const spinControlInfo = SlotUIRuleManager.Instance.getSpinControlInfo(subGameKey)?.infoList[reelComp.reelindex];
-            const oneSymbolMoveSpeed = spinControlInfo?.oneSymbolMoveSpeed;
-            const maxSpeedInExpectEffect = spinControlInfo?.maxSpeedInExpectEffect;
-
-            // 计算旋转时间和速度
-            const spinRequestTime = SlotManager.Instance.getTimeSecSpinRequest();
-            const spinTime = reelComp.getReelSpinTimeRenewal(reels, spinRequestTime, subGameKey);
-            const moveSpeed = SlotUIRuleManager.Instance.getExpectEffectFlag(reelComp.reelindex, SlotGameResultManager.Instance.getVisibleSlotWindows()) 
-                ? maxSpeedInExpectEffect 
-                : oneSymbolMoveSpeed;
-            const symbolMoveCount = Math.floor(spinTime / moveSpeed);
-
-            // 创建移动动作
-            const moveDistance = symbolMoveCount * reelComp.symbolHeight;
-            const moveByAction = cc.moveBy(spinTime, new cc.Vec2(0, -moveDistance));
+        state.addOnStartCallback(function () {
+            let spinTime: number, speed: number, symbolCount: number, p: number, d: number;
             
-            // 设置下一个符号回调
-            reelComp.setNextSymbolIdCallback(() => {
-                const nextSymbolId = reelStrip.getNextSymbolId();
+            t.setReelSpinDirection(Reel.SPINDIRECTION_DOWN);
+            reelStrip.checkBlankSymbolAndControlNextSymbolIndex(t);
+            
+            if (null != o && null != o) {
+                const spinControlInfo = SlotUIRuleManager.Instance.getSpinControlInfo(o).infoList[t.reelindex];
+                p = spinControlInfo.oneSymbolMoveSpeed;
+                d = spinControlInfo.maxSpeedInExpectEffect;
+            }
+
+            const spinRequestTime = SlotManager.Instance.getTimeSecSpinRequest();
+            spinTime = t.getReelSpinTimeRenewal(e, spinRequestTime, o);
+            speed = SlotUIRuleManager.Instance.getExpectEffectFlag(t.reelindex, SlotGameResultManager.Instance.getVisibleSlotWindows()) ? d : p;
+            symbolCount = Math.floor(spinTime / speed);
+
+            const moveAction = cc.moveBy(spinTime, new cc.Vec2(0, -symbolCount * t.symbolHeight));
+            t.setNextSymbolIdCallback(function () {
+                const symbolId = reelStrip.getNextSymbolId();
                 reelStrip.increaseNextSymbolIndex();
-                return nextSymbolId;
+                return symbolId;
             });
 
-            // 执行移动动作
-            moveAction = reelComp.node.runAction(cc.sequence(moveByAction, cc.callFunc(() => state.setDone())));
+            action = t.node.runAction(cc.sequence(moveAction, cc.callFunc(state.setDone.bind(state))));
         });
 
-        state.addOnEndCallback(() => {
-            // 停止未完成的动作
-            if (moveAction && !moveAction.isDone()) {
-                reelComp.node.stopAction(moveAction);
+        state.addOnEndCallback(function () {
+            if (!(null == action || action.isDone())) {
+                t.node.stopAction(action);
             }
-            reelComp.update();
+            t.update(null);
 
-            // 非Lock&Roll模式且是最后一个滚轮时，设置旋转状态为不可跳过
-            const reelMachineComp = SlotManager.Instance.reelMachine.getComponent(ReelMachine_BeeLovedJars);
-            const lastReelIndex = this.lockNRoll_Reel 
-                ? reelMachineComp.getLastLockNRollReelIndex() 
+            const lastReelIndex = self.lockNRoll_Reel 
+                ? SlotManager.Instance.reelMachine.getComponent(ReelMachine_BeeLovedJars).getLastLockNRollReelIndex() 
                 : SlotManager.Instance.reelMachine.reels.length - 1;
-            
-            if (!this.lockNRoll_Reel && reelComp.reelindex === lastReelIndex) {
+
+            if (!self.lockNRoll_Reel && t.reelindex == lastReelIndex) {
                 SlotReelSpinStateManager.Instance.setCurrentState(SlotReelSpinStateManager.STATE_SPINNING_NOTSKIPABLE);
             }
         });
@@ -434,508 +293,374 @@ export default class ReelController_BeeLovedJars extends ReelController_Base {
         return state;
     }
 
-    /**
-     * 获取带最后符号列表的滚轮移动状态（外层封装）
-     * @param reelComp 滚轮组件
-     * @param symbolList 符号列表
-     * @param subGameKey 子游戏标识
-     * @param easingInfo 缓动信息
-     * @param symbolInfoList 符号信息列表（可选）
-     * @param specialSymbolInfoList 特殊符号信息列表（可选）
-     * @returns 有序状态对象
-     */
-    getReelMoveStateWithLastSymbolList(
-        reelComp: Reel, 
-        symbolList: number[], 
-        subGameKey: string, 
-        easingInfo?: EasingInfo, 
-        symbolInfoList?: any[], 
-        specialSymbolInfoList?: SpecialSymbolInfo[]
-    ): SequencialState {
+    getReelMoveStateWithLastSymbolList(e: any, t: any, n: any, o: any, a: any = null, i: any = null) {
         const seqState = new SequencialState();
-        let stateIdx = 0;
-
-        // 添加核心移动状态
-        seqState.insert(stateIdx++, this.getReelMoveStateWithLastSymbolListNew(
-            reelComp, symbolList, subGameKey, easingInfo, symbolInfoList, specialSymbolInfoList
-        ));
-        // 添加旋转结束事件状态
-        seqState.insert(stateIdx++, this.getSpinEndEventState());
-
+        let r = 0;
+        
+        seqState.insert(r++, this.getReelMoveStateWithLastSymbolListNew(e, t, n, o, a, i));
+        seqState.insert(r++, this.getSpinEndEventState());
+        
         return seqState;
     }
 
-    /**
-     * 获取带最后符号列表的滚轮移动状态（核心实现）
-     * @param reelComp 滚轮组件
-     * @param symbolList 符号列表
-     * @param subGameKey 子游戏标识
-     * @param easingInfo 缓动信息（可选）
-     * @param symbolInfoList 符号信息列表（可选）
-     * @param specialSymbolInfoList 特殊符号信息列表（可选）
-     * @returns 状态对象
-     */
-    getReelMoveStateWithLastSymbolListNew(
-        reelComp: Reel, 
-        symbolList: number[], 
-        subGameKey: string, 
-        easingInfo?: EasingInfo, 
-        symbolInfoList?: any[], 
-        specialSymbolInfoList?: SpecialSymbolInfo[]
-    ): State {
+    getReelMoveStateWithLastSymbolListNew(e: any, t: any, n: any, o: any, a: any = null, i: any = null) {
         const self = this;
         const state = new State();
-        let moveAction: any = null;
-        
-        // 符号索引计数器
-        let symbolIdx = 0;
-        let symbolInfoIdx = 0;
-        let specialSymbolInfoIdx = 0;
-        
-        // 获取旋转控制配置
-        const spinControlInfo = subGameKey ? SlotUIRuleManager.Instance.getSpinControlInfo(subGameKey).infoList[reelComp.reelindex] : null;
-        const symbolHeight = spinControlInfo?.symbolHeight || 0;
-        const oneSymbolMoveSpeed = spinControlInfo?.oneSymbolMoveSpeed || 0;
+        let action: any = null;
+        let d = 0, m = 0, S = 0, symbolHeight = 0, moveSpeed = 0;
 
-        state.addOnStartCallback(() => {
-            // 设置旋转方向为向下
-            reelComp.setReelSpinDirection(Reel.SPINDIRECTION_DOWN);
-            
-            // 计算移动距离和时间
-            const lastSymbol = reelComp.getLastSymbol();
-            if (!lastSymbol) {
-                state.setDone();
-                return;
-            }
+        if (null != n && null != n) {
+            const spinControlInfo = SlotUIRuleManager.Instance.getSpinControlInfo(n).infoList[e.reelindex];
+            symbolHeight = spinControlInfo.symbolHeight;
+            moveSpeed = spinControlInfo.oneSymbolMoveSpeed;
+            spinControlInfo.maxSpeedInExpectEffect;
+        }
 
-            const currentY = reelComp.getPositionY(lastSymbol.node.y);
-            const bufferOffset = reelComp.bufferRow * symbolHeight;
+        state.addOnStartCallback(function () {
+            e.setReelSpinDirection(Reel.SPINDIRECTION_DOWN);
             
-            let totalMoveDistance = 0;
-            let easingMoveDistance = 0;
-            
-            // 计算基础移动距离
-            if (easingInfo) {
-                totalMoveDistance = currentY + (symbolList.length * symbolHeight - easingInfo.easingDistance) - bufferOffset;
-                easingMoveDistance = easingInfo.easingDistance;
+            const lastSymbol = e.getLastSymbol();
+            const symbolY = e.getPositionY(lastSymbol.node.y);
+            const bufferHeight = e.bufferRow * symbolHeight;
+
+            let moveDistance: number, easingDistance: number;
+            if (null != o && null != o) {
+                moveDistance = symbolY + (t.length * symbolHeight - o.easingDistance) - bufferHeight;
+                easingDistance = o.easingDistance;
             } else {
-                totalMoveDistance = currentY + symbolList.length * symbolHeight - bufferOffset;
+                moveDistance = symbolY + t.length * symbolHeight - bufferHeight;
             }
-            
-            const moveTime = Math.abs(oneSymbolMoveSpeed * (totalMoveDistance / symbolHeight));
 
-            // 设置符号回调函数
-            reelComp.setNextSymbolIdCallback(() => {
-                if (symbolIdx >= symbolList.length) return undefined;
-                const symbolId = symbolList[symbolIdx];
-                symbolIdx++;
-                return symbolId;
+            const moveTime = Math.abs(moveSpeed * (moveDistance / symbolHeight));
+
+            e.setNextSymbolIdCallback(function () {
+                const symbolId = t[d];
+                if (t.length <= d) {
+                    return void 0;
+                } else {
+                    t[d];
+                    ++d;
+                    return symbolId;
+                }
             });
 
-            reelComp.setNextSymbolInfoCallback(() => {
-                if (!symbolInfoList || symbolInfoIdx >= symbolInfoList.length) return null;
-                const symbolInfo = symbolInfoList[symbolInfoIdx];
-                symbolInfoIdx++;
-                return symbolInfo;
+            e.setNextSymbolInfoCallback(function () {
+                let info = null;
+                if (null != a && a.length > m) {
+                    info = a[m];
+                    ++m;
+                }
+                return info;
             });
 
-            reelComp.setNextSpecialInfoCallback(() => {
-                const defaultSpecialInfo = new SpecialSymbolInfo(SpecialType.NONE);
-                if (!specialSymbolInfoList || specialSymbolInfoIdx >= specialSymbolInfoList.length) return defaultSpecialInfo;
-                const specialInfo = specialSymbolInfoList[specialSymbolInfoIdx];
-                specialSymbolInfoIdx++;
+            e.setNextSpecialInfoCallback(function () {
+                let specialInfo = new SpecialSymbolInfo(0);
+                if (null != i && i.length > S) {
+                    specialInfo = i[S];
+                    ++S;
+                }
                 return specialInfo;
             });
 
-            // 创建基础移动动作
-            const baseMoveAction = cc.moveBy(moveTime, new cc.Vec2(0, -totalMoveDistance));
-            let easingMoveAction: any = null;
+            const moveAction = cc.moveBy(moveTime, new cc.Vec2(0, -moveDistance));
+            let easingAction: any = null;
 
-            // 创建缓动动作（如果有配置）
-            if (easingInfo && easingInfo.easingDuration && easingMoveDistance > 0) {
-                const easeFunc = ReelSpinBehaviors.Instance.getEaseAction(easingInfo.easingType, easingInfo.easingRate);
-                easingMoveAction = cc.moveBy(easingInfo.easingDuration, new cc.Vec2(0, -easingMoveDistance)).easing(easeFunc);
+            if (null != o && null != o) {
+                const easeFunc = ReelSpinBehaviors.Instance.getEaseAction(o.easingType, o.easingRate);
+                easingAction = cc.moveBy(o.easingDuration, new cc.Vec2(0, -easingDistance)).easing(easeFunc);
             }
 
-            // 符号出现检查回调
-            const checkSymbolAppearAction = cc.callFunc(() => {
-                const currentSubGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
-                if (currentSubGameKey === "base") {
+            const checkSymbolCall = cc.callFunc(function () {
+                const subGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
+                if ("base" == subGameKey) {
                     self.checkAppearSymbol();
-                } else if (currentSubGameKey === "freeSpin") {
+                } else if ("freeSpin" == subGameKey) {
                     self.checkAppearFreeSpinSymbol();
                 } else {
                     self.checkAppeSymbol_LockNRoll();
                 }
             });
 
-            // 旋转结束回调
-            const spinEndAction = cc.callFunc(() => {
+            const doneCall = cc.callFunc(function () {
                 state.setDone();
-                // 基础模式下重置滚轮层级
-                if (SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult() === "base") {
-                    reelComp.resetAllSiblingIndex();
-                    reelComp.onOverSizeSortFunction();
+                if ("base" == SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult()) {
+                    self.node.getComponent(Reel).resetAllSiblingIndex();
+                    self.node.getComponent(Reel).onOverSizeSortFunction();
                 }
             });
 
-            // 缓动开始回调
-            const easingStartAction = cc.callFunc(() => {
-                if (easingInfo?.onEasingStartFuncList) {
-                    easingInfo.onEasingStartFuncList.forEach(func => func());
-                }
-            });
-
-            // 组装动作序列
-            const actionSequence: any[] = [];
-            actionSequence.push(baseMoveAction);
-
-            if (easingMoveAction) {
-                if (easingInfo?.onEasingStartFuncList?.length) {
-                    actionSequence.push(easingStartAction);
-                    actionSequence.push(checkSymbolAppearAction);
-                }
-                actionSequence.push(easingMoveAction);
+            if (null == easingAction) {
+                action = e.node.runAction(cc.sequence(moveAction, doneCall));
+            } else if (0 != o.onEasingStartFuncList.length) {
+                const easingStartCall = cc.callFunc(function () {
+                    for (let idx = 0; idx < o.onEasingStartFuncList.length; ++idx) {
+                        o.onEasingStartFuncList[idx]();
+                    }
+                });
+                action = e.node.runAction(cc.sequence([moveAction, easingStartCall, checkSymbolCall, easingAction, doneCall]));
+            } else {
+                action = e.node.runAction(cc.sequence([moveAction, checkSymbolCall, easingAction, doneCall]));
             }
-            
-            actionSequence.push(spinEndAction);
-
-            // 执行动作
-            moveAction = reelComp.node.runAction(cc.sequence(actionSequence));
         });
 
-        state.addOnEndCallback(() => {
-            // 停止未完成的动作
-            if (moveAction) {
-                reelComp.node.stopAction(moveAction);
+        state.addOnEndCallback(function () {
+            e.node.stopAction(action);
+            while (d < t.length) {
+                if (d < t.length) {
+                    const symbolId = t[d];
+                    if (null != a && a.length > m) {
+                        a[m];
+                    }
+                    e.pushSymbolAtTopOfReel(symbolId, null);
+                } else {
+                    cc.error("invalid status tweenAction ");
+                }
+                ++d;
+                ++m;
             }
 
-            // 补充剩余符号到滚轮顶部
-            while (symbolIdx < symbolList.length) {
-                const symbolId = symbolList[symbolIdx];
-                const symbolInfo = symbolInfoList && symbolInfoIdx < symbolInfoList.length ? symbolInfoList[symbolInfoIdx] : null;
-                reelComp.pushSymbolAtTopOfReel(symbolId, symbolInfo);
-                symbolIdx++;
-                symbolInfoIdx++;
-            }
-
-            // 重置滚轮组件位置
-            reelComp.resetPositionOfReelComponents();
-            
-            // 基础模式下处理旋转停止后逻辑
-            if (SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult() === "base") {
-                reelComp.processAfterStopSpin();
+            e.resetPositionOfReelComponents();
+            if ("base" == SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult()) {
+                e.processAfterStopSpin();
             }
         });
 
         return state;
     }
 
-    /**
-     * 获取基础模式下基于下一个子游戏Key的无限旋转状态
-     * @returns 无限旋转状态
-     */
-    getInfiniteSpinUsingNextSubGameKeyState_Base(): State {
+    getInfiniteSpinUsingNextSubGameKeyState_Base() {
         SlotGameResultManager.Instance.getNextSubGameKey();
-        return ReelSpinBehaviors.Instance.getInfiniteSpinStatePreResponseResult(
-            this.node.getComponent(Reel), "base"
-        );
+        return ReelSpinBehaviors.Instance.getInfiniteSpinStatePreResponseResult(this.node.getComponent(Reel), "base");
     }
 
-    /**
-     * 获取Lock&Roll模式下的滚轮旋转状态
-     * @returns 有序状态对象
-     */
-    getLockAndRollState(): SequencialState {
+    getLockAndRollState() {
         const self = this;
         const seqState = new SequencialState();
         
-        // 滚轮未激活则返回空状态
-        if (!this.node.active) return seqState;
+        if (!this.node.active) {
+            return seqState;
+        }
 
-        let stateIdx = 0;
+        let n = 0;
         const reelComp = this.node.getComponent(Reel);
-        if (!reelComp) return seqState;
-
-        // 获取游戏配置和数据
         const subGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
         const lastWindows = SlotGameResultManager.Instance.getSubGameState(subGameKey).lastWindows;
         const reelStrip = SlotGameRuleManager.Instance.getReelStrip(subGameKey);
         const spinControlInfo = SlotUIRuleManager.Instance.getSpinControlInfo(subGameKey).infoList[reelComp.reelindex];
-        const reelMachineComp = SlotManager.Instance.reelMachine.getComponent(ReelMachine_BeeLovedJars);
-        const lockNRollReels = reelMachineComp.lockNRoll_Reels;
+        const lockNRollReels = SlotManager.Instance.reelMachine.getComponent(ReelMachine_BeeLovedJars).lockNRoll_Reels;
 
-        // 1. 添加滚轮旋转到停止前的状态
-        const spinUntilStopState = ReelSpinBehaviors.Instance.getReelSpinStateUntileStopBeforeReelRenewal(
-            lockNRollReels, reelComp, reelStrip, subGameKey
-        );
-        spinUntilStopState.flagSkipActive = true;
-        spinUntilStopState.addOnStartCallback(() => {
+        const reelSpinState = ReelSpinBehaviors.Instance.getReelSpinStateUntileStopBeforeReelRenewal(lockNRollReels, reelComp, reelStrip, subGameKey);
+        reelSpinState.flagSkipActive = true;
+        reelSpinState.addOnStartCallback(function () {
             reelComp.setShaderValue("blurOffset", 0.02);
         });
-        seqState.insert(stateIdx++, spinUntilStopState);
+        seqState.insert(n++, reelSpinState);
 
-        // 2. 添加滚轮更新状态
-        const reelRenewalState = this.getReelSpinStateCurrentReelRenewal(
-            lockNRollReels, reelComp, reelStrip, subGameKey
-        );
+        const reelRenewalState = this.getReelSpinStateCurrentReelRenewal(lockNRollReels, reelComp, reelStrip, subGameKey);
         reelRenewalState.flagSkipActive = true;
-        seqState.insert(stateIdx++, reelRenewalState);
+        seqState.insert(n++, reelRenewalState);
 
-        // 解析缓动配置
-        const easingType = spinControlInfo?.postEasingType;
-        const easingRate = spinControlInfo?.postEasingRate;
-        const easingDuration = spinControlInfo?.postEasingDuration;
-        const easingDistance = spinControlInfo?.postEasingDistance;
+        let _: any = void 0, b: any = void 0, C: any = void 0, I: any = void 0;
+        if (null != spinControlInfo) {
+            _ = spinControlInfo.postEasingType;
+            b = spinControlInfo.postEasingRate;
+            C = spinControlInfo.postEasingDuration;
+            I = spinControlInfo.postEasingDistance;
+        }
 
-        // 3. 获取Lock&Roll结果窗口和符号列表
-        const resultWindow = this.getLockAndRollResultWindow(lastWindows, reelComp.reelindex);
-        const symbolList = this.getResultSymbolListLockNRoll(resultWindow, reelComp);
-        const symbolInfoList = this.getResultSymbolInfoListLockAndRoll(resultWindow, reelComp.reelindex);
-
-        // 构建缓动信息
+        const lockAndRollWindow = this.getLockAndRollResultWindow(lastWindows, reelComp.reelindex);
+        const symbolList = this.getResultSymbolListLockNRoll(lockAndRollWindow, reelComp);
+        const symbolInfoList = this.getResultSymbolInfoListLockAndRoll(lockAndRollWindow, reelComp.reelindex);
+        
+        let O: any = void 0;
         const easingInfo = new EasingInfo();
-        easingInfo.easingType = easingType;
-        easingInfo.easingDistance = easingDistance;
-        easingInfo.easingDuration = easingDuration;
-        easingInfo.easingRate = easingRate;
+        easingInfo.easingType = _;
+        easingInfo.easingDistance = I;
+        easingInfo.easingDuration = C;
+        easingInfo.easingRate = b;
+        easingInfo.onEasingStartFuncList.push(function () { });
+        
         this.addEasingFuncListOnStopEasing(easingInfo);
+        O = this.getReelMoveStateWithLastSymbolListNew(reelComp, symbolList, subGameKey, easingInfo, symbolInfoList);
+        O.addOnEndCallback(function () { });
+        seqState.insert(n++, O);
 
-        // 添加滚轮移动状态
-        const reelMoveState = this.getReelMoveStateWithLastSymbolListNew(
-            reelComp, symbolList, subGameKey, easingInfo, symbolInfoList
-        );
-        seqState.insert(stateIdx++, reelMoveState);
-
-        // 4. 添加重置状态
-        const resetState = new State();
-        resetState.addOnStartCallback(() => {
+        const w = new State();
+        w.addOnStartCallback(function () {
             reelComp.resetPositionOfReelComponents();
-            self.processSpinEnd(() => resetState.setDone());
+            self.processSpinEnd(w.setDone.bind(w));
         });
-        seqState.insert(stateIdx++, resetState);
-
+        seqState.insert(n++, w);
+        
         return seqState;
     }
 
-    /**
-     * 获取Lock&Roll模式的结果窗口
-     * @param lastWindows 最后历史窗口数据
-     * @param reelIndex 滚轮索引
-     * @returns 结果窗口对象
-     */
-    getLockAndRollResultWindow(lastWindows: any[], reelIndex: number): Window {
-        const resultWindow = new Window(3);
-        const windowIdx = Math.floor(reelIndex / 3);
-        const symbolIdx = Math.floor(reelIndex % 3);
-        const targetSymbolId = lastWindows[windowIdx][symbolIdx];
+    getLockAndRollResultWindow(e: any, t: number) {
+        const window = new Window(3);
+        const o = Math.floor(t / 3);
+        const a = Math.floor(t % 3);
+        const symbol = e[o][a];
 
-        // 随机设置上下占位符号，中间为目标符号
-        const randomDummy1 = this.lockNRollDummySymboList[Math.floor(Math.random() * this.lockNRollDummySymboList.length)];
-        const randomDummy2 = this.lockNRollDummySymboList[Math.floor(Math.random() * this.lockNRollDummySymboList.length)];
+        window.setSymbol(0, this.lockNRollDummySymboList[Math.floor(Math.random() * this.lockNRollDummySymboList.length)]);
+        window.setSymbol(1, symbol);
+        window.setSymbol(2, this.lockNRollDummySymboList[Math.floor(Math.random() * this.lockNRollDummySymboList.length)]);
         
-        resultWindow.setSymbol(0, randomDummy1);
-        resultWindow.setSymbol(1, targetSymbolId);
-        resultWindow.setSymbol(2, randomDummy2);
-
-        return resultWindow;
+        return window;
     }
 
-    /**
-     * 获取Lock&Roll模式的结果符号列表
-     * @param resultWindow 结果窗口
-     * @param reelComp 滚轮组件
-     * @returns 符号列表
-     */
-    getResultSymbolListLockNRoll(resultWindow: Window, reelComp: Reel): number[] {
-        const symbolList: number[] = [];
-        // 计算需要补充的符号数量
-        const needAddCount = resultWindow.size < (reelComp.visibleRow + 2 * reelComp.bufferRow) 
-            ? (reelComp.visibleRow + 2 * reelComp.bufferRow - resultWindow.size) / 2 
-            : 0;
+    getResultSymbolListLockNRoll(e: any, t: any) {
+        const symbolList = new Array<number>();
+        let o = 0;
 
-        // 倒序添加窗口内符号
-        for (let a = resultWindow.size - 1; a >= 0; --a) {
-            symbolList.push(resultWindow.getSymbol(a));
+        if (e.size < t.visibleRow + 2 * t.bufferRow) {
+            o = (t.visibleRow + 2 * t.bufferRow - e.size) / 2;
         }
 
-        // 补充占位符号
-        for (let i = 0; i < needAddCount; ++i) {
-            const randomDummy = this.lockNRollDummySymboList[Math.floor(Math.random() * this.lockNRollDummySymboList.length)];
-            symbolList.push(randomDummy);
+        for (let a = e.size - 1; a >= 0; --a) {
+            symbolList.push(e.getSymbol(a));
+        }
+        
+        symbolList.length;
+        for (let i = 0; i < o; ++i) {
+            symbolList.push(this.lockNRollDummySymboList[Math.floor(Math.random() * this.lockNRollDummySymboList.length)]);
         }
 
         return symbolList;
     }
 
-    /**
-     * 获取Lock&Roll模式的结果符号信息列表
-     * @param resultWindow 结果窗口
-     * @param reelIndex 滚轮索引
-     * @returns 符号信息列表
-     */
-    getResultSymbolInfoListLockAndRoll(resultWindow: Window, reelIndex: number): any[] | null {
+    getResultSymbolInfoListLockAndRoll(e: any, t: number) {
+        let symbolInfoList: any = null;
         const subGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
         const subGameState = SlotGameResultManager.Instance.getSubGameState(subGameKey);
-        const lastSymbolInfoWindow = subGameState.lastSymbolInfoWindow;
-        
-        const windowIdx = Math.floor(reelIndex / 3);
-        const symbolIdx = Math.floor(reelIndex % 3);
+        const i = Math.floor(t / 3);
+        const l = Math.floor(t % 3);
+        const symbolInfoWindow = subGameState.lastSymbolInfoWindow;
 
-        // 无符号信息则返回null
-        if (!lastSymbolInfoWindow || !lastSymbolInfoWindow[windowIdx] || !lastSymbolInfoWindow[windowIdx][symbolIdx]) {
-            return null;
-        }
-
-        // 构建符号信息列表（仅中间位置有信息）
-        const symbolInfoList: any[] = [];
-        for (let s = 0; s < 3; s++) {
-            if (s === 1) {
-                symbolInfoList.push(lastSymbolInfoWindow[windowIdx][symbolIdx]);
-            } else {
-                symbolInfoList.push(null);
+        if (null != symbolInfoWindow && null != symbolInfoWindow[i] && null != symbolInfoWindow[i][l]) {
+            symbolInfoList = new Array<any>();
+            for (let s = 0; s < 3; s++) {
+                if (1 == s) {
+                    const info = subGameState.lastSymbolInfoWindow[i][l];
+                    symbolInfoList.push(info);
+                } else {
+                    symbolInfoList.push(null);
+                }
             }
         }
 
         return symbolInfoList;
     }
 
-    /**
-     * 获取普通模式的结果符号列表
-     * @param resultWindow 结果窗口
-     * @param reelComp 滚轮组件
-     * @returns 符号列表
-     */
-    getResultSymbolList(resultWindow: Window, reelComp: Reel): number[] {
-        const symbolList: number[] = [];
-        let hasJackpot = false;
-        let hasWild = false;
+    getResultSymbolList(e: any, t: any) {
+        const symbolList = new Array<number>();
+        let hasWild = false, hasJackpot = false;
 
-        // 检查窗口内是否有Jackpot(90)或Wild(71)符号
-        for (let i = resultWindow.size - 1; i >= 0; --i) {
-            const symbolId = resultWindow.getSymbol(i);
-            if (symbolId === 90) {
-                hasJackpot = true;
-                break;
-            }
-            if (symbolId === 71) {
+        for (let i = e.size - 1; i >= 0; --i) {
+            const symbol = e.getSymbol(i);
+            if (90 == symbol) {
                 hasWild = true;
                 break;
             }
+            if (71 == symbol) {
+                hasJackpot = true;
+                break;
+            }
         }
 
-        // 确定占位符号列表
         const subGameKey = SlotGameResultManager.Instance.getSubGameKeyOfCurrentGameResult();
-        const defaultDummyList = subGameKey === "freeSpin" ? this.freeSpinDummy : this.noWildDummy;
-        const targetDummyList = subGameKey === "freeSpin" 
+        const r = "freeSpin" == subGameKey ? this.freeSpinDummy : this.noWildDummy;
+        const s = "freeSpin" == subGameKey 
             ? this.freeSpinDummy 
-            : hasJackpot ? this.noJackpotDummy : hasWild ? this.noWildDummy : this.dummySymbolList;
+            : (hasWild ? this.noJackpotDummy : (hasJackpot ? this.noWildDummy : this.dummySymbolList));
+        
+        let c = 0;
+        if (e.size < t.visibleRow + 2 * t.bufferRow) {
+            c = (t.visibleRow + 2 * t.bufferRow - e.size) / 2;
+        }
 
-        // 计算需要补充的符号数量
-        const needAddCount = resultWindow.size < (reelComp.visibleRow + 2 * reelComp.bufferRow) 
-            ? (reelComp.visibleRow + 2 * reelComp.bufferRow - resultWindow.size) / 2 
-            : 0;
-
-        // 随机标识（控制占位符号选择）
-        const isRandom = Math.random() < 0.5;
-        // 非首尾滚轮才启用随机逻辑
-        const enableRandom = reelComp.reelindex !== 0 && reelComp.reelindex !== 4;
-
-        // 添加首个占位符号
-        if (enableRandom && resultWindow.getSymbol(resultWindow.size - 1) < 20 && isRandom) {
-            symbolList.push(targetDummyList[Math.floor(Math.random() * targetDummyList.length)]);
+        const randomFlag = Math.random() < 0.5;
+        let f = true;
+        
+        if (0 != t.reelindex && 4 != t.reelindex) {
+            // do nothing
         } else {
-            symbolList.push(defaultDummyList[Math.floor(Math.random() * defaultDummyList.length)]);
+            f = false;
         }
 
-        // 倒序添加窗口内符号
-        for (let i = resultWindow.size - 1; i >= 0; --i) {
-            symbolList.push(resultWindow.getSymbol(i));
+        if (f && e.getSymbol(e.size - 1) < 20 && randomFlag) {
+            symbolList.push(s[Math.floor(Math.random() * s.length)]);
+        } else {
+            symbolList.push(r[Math.floor(Math.random() * r.length)]);
         }
 
-        // 补充末尾占位符号
-        for (let d = 0; d < needAddCount; ++d) {
-            if (enableRandom && isRandom && resultWindow.getSymbol(0) < 20) {
-                symbolList.push(targetDummyList[Math.floor(Math.random() * targetDummyList.length)]);
+        for (let i = e.size - 1; i >= 0; --i) {
+            symbolList.push(e.getSymbol(i));
+        }
+
+        for (let d = 0; d < c; ++d) {
+            if (f && !randomFlag && e.getSymbol(0) < 20) {
+                symbolList.push(s[Math.floor(Math.random() * s.length)]);
             } else {
-                symbolList.push(defaultDummyList[Math.floor(Math.random() * defaultDummyList.length)]);
+                symbolList.push(r[Math.floor(Math.random() * r.length)]);
             }
         }
 
         return symbolList;
     }
 
-    /**
-     * 获取结果符号信息列表
-     * @param resultWindow 结果窗口
-     * @param reelComp 滚轮组件
-     * @returns 符号信息列表
-     */
-    getResultSymbolInfoList(resultWindow: Window, reelComp: Reel): any[] | null {
-        const gameResult = SlotGameResultManager.Instance._gameResult;
-        // 无符号信息则返回null
-        if (!gameResult?.spinResult?.symbolInfoWindow || !gameResult.spinResult.symbolInfoWindow[reelComp.reelindex]) {
-            return null;
-        }
-
-        const symbolInfoList: any[] = [];
-        const targetSymbolInfo = gameResult.spinResult.symbolInfoWindow[reelComp.reelindex];
+    getResultSymbolInfoList(e: any, t: any) {
+        let symbolInfoList: any = null;
         
-        // 添加首个空信息
-        symbolInfoList.push(null);
-
-        // 补充空信息到匹配窗口长度
-        if (resultWindow.size >= targetSymbolInfo.length) {
-            const needAddNullCount = (resultWindow.size - targetSymbolInfo.length) / 2;
-            for (let i = 0; i < needAddNullCount; ++i) {
-                symbolInfoList.push(null);
-            }
-            // 倒序添加符号信息
-            for (let i = targetSymbolInfo.length - 1; i >= 0; --i) {
-                symbolInfoList.push(targetSymbolInfo[i]);
+        if (null != SlotGameResultManager.Instance._gameResult.spinResult.symbolInfoWindow 
+            && null != SlotGameResultManager.Instance._gameResult.spinResult.symbolInfoWindow[t.reelindex]) {
+            
+            symbolInfoList = new Array<any>();
+            const infoWindow = SlotGameResultManager.Instance._gameResult.spinResult.symbolInfoWindow[t.reelindex];
+            
+            symbolInfoList.push(null);
+            if (e.size >= SlotGameResultManager.Instance._gameResult.spinResult.symbolInfoWindow[t.reelindex].length) {
+                const a = e.size - SlotGameResultManager.Instance._gameResult.spinResult.symbolInfoWindow[t.reelindex].length;
+                for (let i = 0; i < a / 2; ++i) {
+                    symbolInfoList.push(null);
+                }
+                for (let i = infoWindow.length - 1; i >= 0; --i) {
+                    symbolInfoList.push(infoWindow[i]);
+                }
             }
         }
 
         return symbolInfoList;
     }
 
-    /**
-     * 获取结果特殊符号信息列表
-     * @param resultWindow 结果窗口
-     * @param reelComp 滚轮组件
-     * @returns 特殊符号信息列表
-     */
-    getResultSpecialSymbolInfoList(resultWindow: Window, reelComp: Reel): SpecialSymbolInfo[] {
-        const specialSymbolInfoList: SpecialSymbolInfo[] = [];
-        // 计算需要补充的符号数量
-        const needAddCount = resultWindow.size < (reelComp.visibleRow + 2 * reelComp.bufferRow) 
-            ? (reelComp.visibleRow + 2 * reelComp.bufferRow - resultWindow.size) / 2 
-            : 0;
+    getResultSpecialSymbolInfoList(e: any, t: any) {
+        const specialInfoList: any[] = [];
+        let o = 0;
 
-        // 添加首个空特殊信息
-        specialSymbolInfoList.push(new SpecialSymbolInfo(SpecialType.NONE));
+        if (e.size < t.visibleRow + 2 * t.bufferRow) {
+            o = (t.visibleRow + 2 * t.bufferRow - e.size) / 2;
+        }
 
-        // 获取窗口范围并遍历符号
+        specialInfoList.push(new SpecialSymbolInfo(SpecialType.NONE));
+        
         const windowRange = SlotManager.Instance.getWindowRange();
-        for (let i = resultWindow.size - 1; i >= 0; --i) {
-            let specialType = SpecialType.NONE;
-            
-            // 检查是否为FEVER类型特殊符号
-            if (TSUtility.isValid(windowRange[reelComp.reelindex])) {
-                const [start, end] = windowRange[reelComp.reelindex];
-                if (start <= i && i < end && SlotManager.Instance.isCheckSpecialInfo(SpecialType.FEVER, reelComp.reelindex, i)) {
+        for (let i = e.size - 1; i >= 0; --i) {
+            if (TSUtility.isValid(windowRange[t.reelindex])) {
+                let specialType = SpecialType.NONE;
+                if (windowRange[t.reelindex][0] <= i && i < windowRange[t.reelindex][1] 
+                    && SlotManager.Instance.isCheckSpecialInfo(SpecialType.FEVER, t.reelindex, i)) {
+                    
                     specialType |= SpecialType.FEVER;
                 }
+                specialInfoList.push(new SpecialSymbolInfo(specialType));
+            } else {
+                specialInfoList.push(new SpecialSymbolInfo(SpecialType.NONE));
             }
-
-            specialSymbolInfoList.push(new SpecialSymbolInfo(specialType));
         }
 
-        // 补充末尾空特殊信息
-        for (let s = 0; s < needAddCount; ++s) {
-            specialSymbolInfoList.push(new SpecialSymbolInfo(SpecialType.NONE));
+        for (let s = 0; s < o; ++s) {
+            specialInfoList.push(new SpecialSymbolInfo(SpecialType.NONE));
         }
 
-        return specialSymbolInfoList;
+        return specialInfoList;
     }
 }

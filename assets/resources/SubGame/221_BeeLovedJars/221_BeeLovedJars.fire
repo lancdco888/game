@@ -17,10 +17,10 @@
         "__id__": 2
       },
       {
-        "__id__": 3497
+        "__id__": 3495
       },
       {
-        "__id__": 3595
+        "__id__": 3599
       }
     ],
     "_active": false,
@@ -90,11 +90,17 @@
         "__id__": 3486
       },
       {
-        "__id__": 3491
+        "__id__": 3489
       }
     ],
     "_active": true,
     "_components": [
+      {
+        "__id__": 3490
+      },
+      {
+        "__id__": 3491
+      },
       {
         "__id__": 3492
       },
@@ -103,12 +109,6 @@
       },
       {
         "__id__": 3494
-      },
-      {
-        "__id__": 3495
-      },
-      {
-        "__id__": 3496
       }
     ],
     "_prefab": null,
@@ -171192,36 +171192,30 @@
     "_enabled": true,
     "infos": [
       {
-        "__id__": 3489
+        "key": "topFrame",
+        "nodes": [
+          {
+            "__id__": 6
+          }
+        ],
+        "scale": 1.22,
+        "posY": 30
       },
       {
-        "__id__": 3490
+        "key": "bottomFrame",
+        "nodes": [
+          {
+            "__id__": 3484
+          },
+          {
+            "__id__": 3405
+          }
+        ],
+        "scale": 1,
+        "posY": 0
       }
     ],
     "_id": "259LCX9eBAiJiMSc7T9gSA"
-  },
-  {
-    "key": "topFrame",
-    "nodes": [
-      {
-        "__id__": 6
-      }
-    ],
-    "scale": 1.22,
-    "posY": 30
-  },
-  {
-    "key": "bottomFrame",
-    "nodes": [
-      {
-        "__id__": 3484
-      },
-      {
-        "__id__": 3405
-      }
-    ],
-    "scale": 1,
-    "posY": 0
   },
   {
     "__type__": "cc.Node",
@@ -171374,7 +171368,7 @@
     },
     "_enabled": true,
     "winEffectLayer": {
-      "__id__": 3491
+      "__id__": 3489
     },
     "coinTarget": {
       "__id__": 73
@@ -171483,6 +171477,9 @@
     },
     "_children": [
       {
+        "__id__": 3496
+      },
+      {
         "__id__": 3498
       },
       {
@@ -171495,16 +171492,13 @@
         "__id__": 3504
       },
       {
-        "__id__": 3506
+        "__id__": 3538
       },
       {
-        "__id__": 3540
+        "__id__": 3546
       },
       {
-        "__id__": 3542
-      },
-      {
-        "__id__": 3593
+        "__id__": 3597
       }
     ],
     "_active": true,
@@ -171562,13 +171556,13 @@
     "_name": "SoundManager",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3499
+        "__id__": 3497
       }
     ],
     "_prefab": null,
@@ -171624,7 +171618,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3498
+      "__id__": 3496
     },
     "_enabled": true,
     "_id": "7fqU5j9G5He4tRYYgMChpJ"
@@ -171634,13 +171628,13 @@
     "_name": "SlotUIRuleManager",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3501
+        "__id__": 3499
       }
     ],
     "_prefab": null,
@@ -171696,7 +171690,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3500
+      "__id__": 3498
     },
     "_enabled": true,
     "uiStateJson": {
@@ -171709,13 +171703,13 @@
     "_name": "SlotGameResultManager",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3503
+        "__id__": 3501
       }
     ],
     "_prefab": null,
@@ -171771,7 +171765,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3502
+      "__id__": 3500
     },
     "_enabled": true,
     "_id": "d5T9gUDQhJNLXPYmNzMZPt"
@@ -171781,13 +171775,13 @@
     "_name": "SlotGameRuleManager",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3505
+        "__id__": 3503
       }
     ],
     "_prefab": null,
@@ -171843,7 +171837,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3504
+      "__id__": 3502
     },
     "_enabled": true,
     "slotID": "beelovedjars",
@@ -171855,13 +171849,13 @@
     "_name": "SlotSoundController",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3507
+        "__id__": 3505
       }
     ],
     "_prefab": null,
@@ -171917,7 +171911,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3506
+      "__id__": 3504
     },
     "_enabled": true,
     "useCommonSound": true,
@@ -171926,6 +171920,12 @@
     "symbolWinSoundList": [],
     "commonList": [],
     "soundList": [
+      {
+        "__id__": 3506
+      },
+      {
+        "__id__": 3507
+      },
       {
         "__id__": 3508
       },
@@ -172015,12 +172015,6 @@
       },
       {
         "__id__": 3537
-      },
-      {
-        "__id__": 3538
-      },
-      {
-        "__id__": 3539
       }
     ],
     "defaultWinSoundList": [],
@@ -172287,13 +172281,13 @@
     "_name": "SlotPrefabManager",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3541
+        "__id__": 3539
       }
     ],
     "_prefab": null,
@@ -172349,24 +172343,85 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3540
+      "__id__": 3538
     },
     "_enabled": true,
-    "prefabs": [],
+    "prefabs": [
+      {
+        "__id__": 3540
+      },
+      {
+        "__id__": 3541
+      },
+      {
+        "__id__": 3542
+      },
+      {
+        "__id__": 3543
+      },
+      {
+        "__id__": 3544
+      },
+      {
+        "__id__": 3545
+      }
+    ],
     "_id": "72yrPxQWxPNKFpsp7hvoGs"
+  },
+  {
+    "__type__": "SlotPrefabInfo",
+    "key": "bottomUI",
+    "prefab": {
+      "__uuid__": "bf0ef3c1-7f69-4122-b03f-d143317cc485"
+    }
+  },
+  {
+    "__type__": "SlotPrefabInfo",
+    "key": "winEffect",
+    "prefab": {
+      "__uuid__": "f24f6d97-3b38-4428-ad13-3244237c4c5a"
+    }
+  },
+  {
+    "__type__": "SlotPrefabInfo",
+    "key": "cheatObject",
+    "prefab": {
+      "__uuid__": "32ea3de5-68d6-453f-b892-0688598fb7bf"
+    }
+  },
+  {
+    "__type__": "SlotPrefabInfo",
+    "key": "machineFrame",
+    "prefab": {
+      "__uuid__": "5649af41-bb14-4784-b78b-e73e84ca000c"
+    }
+  },
+  {
+    "__type__": "SlotPrefabInfo",
+    "key": "Background",
+    "prefab": {
+      "__uuid__": "48dd5a4e-07fb-4574-8f60-213727fae8e8"
+    }
+  },
+  {
+    "__type__": "SlotPrefabInfo",
+    "key": "PayTable",
+    "prefab": {
+      "__uuid__": "5cb93dfd-0b4d-428a-8833-08f4ee081d59"
+    }
   },
   {
     "__type__": "cc.Node",
     "_name": "SymbolPoolManager",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3543
+        "__id__": 3547
       }
     ],
     "_prefab": null,
@@ -172422,23 +172477,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3542
+      "__id__": 3546
     },
     "_enabled": true,
     "initialsize": 10,
     "symbolinfo": [
-      {
-        "__id__": 3544
-      },
-      {
-        "__id__": 3545
-      },
-      {
-        "__id__": 3546
-      },
-      {
-        "__id__": 3547
-      },
       {
         "__id__": 3548
       },
@@ -172471,9 +172514,7 @@
       },
       {
         "__id__": 3558
-      }
-    ],
-    "symbolaniinfo": [
+      },
       {
         "__id__": 3559
       },
@@ -172485,7 +172526,9 @@
       },
       {
         "__id__": 3562
-      },
+      }
+    ],
+    "symbolaniinfo": [
       {
         "__id__": 3563
       },
@@ -172575,6 +172618,18 @@
       },
       {
         "__id__": 3592
+      },
+      {
+        "__id__": 3593
+      },
+      {
+        "__id__": 3594
+      },
+      {
+        "__id__": 3595
+      },
+      {
+        "__id__": 3596
       }
     ],
     "layerInitSymbolAni": null,
@@ -172928,13 +172983,13 @@
     "_name": "SymbolAnimationController",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 3497
+      "__id__": 3495
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 3594
+        "__id__": 3598
       }
     ],
     "_prefab": null,
@@ -172990,11 +173045,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3593
+      "__id__": 3597
     },
     "_enabled": true,
-    "animationRoot": null,
-    "animationLayer": null,
+    "animationRoot": {
+      "__id__": 3390
+    },
+    "animationLayer": {
+      "__id__": 3391
+    },
     "animationReels": [],
     "symbolsReverseOrder": false,
     "symbolAnimationModule": null,
@@ -173011,7 +173070,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 3596
+        "__id__": 3600
       }
     ],
     "_prefab": null,
@@ -173067,7 +173126,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 3595
+      "__id__": 3599
     },
     "_enabled": true,
     "_id": "baoQ/L37JJj4YEc0bdgIo+"

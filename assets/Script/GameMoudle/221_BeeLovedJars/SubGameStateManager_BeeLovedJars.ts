@@ -1557,7 +1557,7 @@ export default class SubGameStateManager_BeeLovedJars extends SubGameStateManage
                 t.setDone()
         }),
         t.addOnEndCallback(function() {
-            t.onEnd()
+            //t.onEnd()
         }),
         t
     }

@@ -1,3 +1,8 @@
+import SlotSoundController from "../../Slot/SlotSoundController";
+import SlotGameResultManager from "../../manager/SlotGameResultManager";
+import { EventBus } from "./BeeLovedJarsManager";
+import MoveComponent_BeeLovedJars from "./MoveComponent_BeeLovedJars";
+
 const { ccclass, property } = cc._decorator;
 
 
@@ -31,8 +36,8 @@ export default class MovePotComponent_BeeLovedJars extends cc.Component {
 
     onLoad() {
         // 监听 movePot 事件，绑定回调函数（保持 this 指向）
-        if (BeeLovedJarsManager.EventBus) {
-            BeeLovedJarsManager.EventBus.on("movePot", this.moveSymbol, this);
+        if (EventBus) {
+            EventBus.on("movePot", this.moveSymbol, this);
         } else {
             cc.error("BeeLovedJarsManager.EventBus 不存在，请检查事件总线定义！");
         }
@@ -40,8 +45,8 @@ export default class MovePotComponent_BeeLovedJars extends cc.Component {
 
     onDestroy() {
         // 移除事件监听，防止内存泄漏
-        if (BeeLovedJarsManager.EventBus) {
-            BeeLovedJarsManager.EventBus.off("movePot", this.moveSymbol, this);
+        if (EventBus) {
+            EventBus.off("movePot", this.moveSymbol, this);
         }
     }
 
@@ -100,8 +105,8 @@ export default class MovePotComponent_BeeLovedJars extends cc.Component {
         prefabInstance.runAction(cc.sequence(
             cc.delayTime(1.17),
             cc.callFunc(() => {
-                if (BeeLovedJarsManager.EventBus) {
-                    BeeLovedJarsManager.EventBus.emit("alivePot");
+                if (EventBus) {
+                    EventBus.emit("alivePot");
                 }
             })
         ));
