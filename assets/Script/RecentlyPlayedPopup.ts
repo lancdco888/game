@@ -35,7 +35,7 @@ export default class RecentlyPlayedPopup extends DialogBase {
     public prefab: cc.Prefab = null!;
 
     // ===================== 私有成员变量 (原代码全部保留，补全精准TS类型注解，初始值完全一致) =====================
-    private _pivotBanner: cc.Node | null = null;
+    private _pivotBanner: cc.Node = null;
     private _posXTargetBanner: number = -420;
     private _arrSlotItem: Array<SlotBannerItem> = [];
 

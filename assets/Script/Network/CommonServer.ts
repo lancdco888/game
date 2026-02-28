@@ -647,7 +647,7 @@ export default class CommonServer {
     public async getUserInfo(uid: number): Promise<any> {
         return new Promise((resolve) => {
             const req = new ReqParamModel();
-            req.url = this.commonServerBaseURL + "users/" + uid;
+            req.url = this.commonServerBaseURL + "user/GetUserInfo";
             this.gsHttpCall(req, (res) => { resolve(res); }, 0);
         });
     }

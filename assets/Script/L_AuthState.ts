@@ -116,24 +116,26 @@ export default class L_AuthState extends State {
             const accessToken = authResult.token;
         
 
+            UserInfo.setToken(accessToken)
+
             // // 6. 获取用户详细信息，更新进度
             // LoginProcess.Instance().onProgress("Authenticating ...", 0.3);
-            // const userInfoResult: any = await CommonServer.Instance().getUserInfo(userId);
-            // cc.log("UserInfo Result: ", JSON.stringify(userInfoResult));
+            const userInfoResult: any = await CommonServer.Instance().getUserInfo(userId);
+            cc.log("UserInfo Result: ", JSON.stringify(userInfoResult));
 
-            // // 7. 校验用户信息响应错误
-            // if (CommonServer.isServerResponseError(userInfoResult)) {
-            //     LocalStorageManager.resetLoginType();
-            //     CommonPopup.loginErrorPopup("Get UserInfo fail.");
+            // 7. 校验用户信息响应错误
+            if (CommonServer.isServerResponseError(userInfoResult)) {
+                LocalStorageManager.resetLoginType();
+                CommonPopup.loginErrorPopup("Get UserInfo fail.");
                 
-            //     const statusCode = CommonServer.getErrorStatusCode(userInfoResult);
-            //     const errorMsg = CommonServer.getErrorMsg(userInfoResult);
-            //     throw new Error(`getUserInfo fail code:${statusCode.toString()} msg:${errorMsg}`);
-            // }
+                const statusCode = CommonServer.getErrorStatusCode(userInfoResult);
+                const errorMsg = CommonServer.getErrorMsg(userInfoResult);
+                throw new Error(`getUserInfo fail code:${statusCode.toString()} msg:${errorMsg}`);
+            }
 
             // 8. 初始化用户信息实例
             // const accountStatus = ServiceInfoManager.NUMBER_ACCOUNT_STATUS;
-            if (!UserInfo.setInstance(authResult.resp, accessToken)) {
+            if (!UserInfo.setInstance(userInfoResult, accessToken)) {
                 // if (0 !== accountStatus) {
                     CommonPopup.getCommonPopup((isCancel: Error, popup: any) => {
                         popup.open()

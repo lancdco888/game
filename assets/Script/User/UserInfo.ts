@@ -495,9 +495,15 @@ export default class UserInfo extends cc.Component {
         return UserInfo._instance;
     }
 
+    public static setToken(token:string){
+        Utility.isAuth = true
+        Utility.AccessToken = token
+    }
+
     public static setInstance(userData: any, token: string): boolean {
         if (UserInfo.instance() !== null) return false;
 
+        var tmpData = JSON.parse(JSON.stringify(userData))
         const userInfoData = userData;
         // if (!userInfoData.init(userData)) {
         //     console.error("MyUserInfo setInstance fail.");
@@ -513,6 +519,7 @@ export default class UserInfo extends cc.Component {
         userInfo._userInfo = userInfoData;
         userInfo._userInfo.userPromotion = new UserPromotion()
         userInfo._userInfo.userGameInfo = new UserGameInfo()
+        userInfo._userInfo.userGameInfo.recentPlaySlots = tmpData.userGameInfo.recentPlaySlots
         userInfo._accessToken = token;
 
         if (!userData.serverTime) {
@@ -532,8 +539,7 @@ export default class UserInfo extends cc.Component {
         // userInfo.pingScheduleWebWorker();
         // HyperBountyManager.instance.initialize();
         UserInfo.isAuth = true
-        Utility.isAuth = true
-        Utility.AccessToken = token
+    
 
         return true;
     }
