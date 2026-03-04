@@ -14,7 +14,7 @@ import TSUtility from "../global_utility/TSUtility";
 import ServerStorageManager, { StorageKeyType } from "../manager/ServerStorageManager";
 import { Utility } from "../global_utility/Utility";
 
-@ccclass
+@ccclass('ADFreeOfferPopup')
 export default class ADFreeOfferPopup extends DialogBase {
     // ===================== 编辑器绑定属性 =====================
     @property(cc.Animation)
