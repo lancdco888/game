@@ -222,7 +222,7 @@
       }
     ],
     "paused": false,
-    "defaultSkin": "",
+    "defaultSkin": "default",
     "defaultAnimation": "Scatter_Appear",
     "_preCacheMode": 0,
     "_cacheMode": 0,
@@ -239,7 +239,9 @@
     "_headAniInfo": null,
     "_playTimes": 0,
     "_isAniComplete": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "da41cd16-3389-4210-90ce-606e8320b754"
+    },
     "_N$_defaultCacheMode": 0,
     "_N$debugSlots": false,
     "_N$debugBones": false,
@@ -300,7 +302,11 @@
     "symbolId": 151,
     "zOrder": 1,
     "animationNode": null,
-    "animationList": [],
+    "animationList": [
+      {
+        "__id__": 3
+      }
+    ],
     "_id": ""
   },
   {

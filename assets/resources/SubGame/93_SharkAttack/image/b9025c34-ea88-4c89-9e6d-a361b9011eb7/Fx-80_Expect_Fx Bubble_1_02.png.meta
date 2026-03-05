@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "fc74a846-41b3-45df-8de3-7f558116facd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 51,
+  "height": 216,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_Expect_Fx Bubble_1_02": {
+      "ver": "1.0.6",
+      "uuid": "2c9dda87-44c4-4dbd-b9d8-85f6ee7858a5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "fc74a846-41b3-45df-8de3-7f558116facd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -1,
+      "trimX": 3,
+      "trimY": 5,
+      "width": 46,
+      "height": 208,
+      "rawWidth": 51,
+      "rawHeight": 216,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

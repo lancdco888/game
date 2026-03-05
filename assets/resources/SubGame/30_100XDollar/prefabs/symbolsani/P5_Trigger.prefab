@@ -511,7 +511,9 @@
     "_enabled": true,
     "symbolId": 21,
     "zOrder": 0,
-    "animationNode": null,
+    "animationNode": {
+      "__id__": 1
+    },
     "animationList": [],
     "_id": ""
   },

@@ -575,7 +575,7 @@ export default class SubGameStateManager_HoundOfHades extends SubGameStateManage
             };
 
             // 不显示奖励特效时直接结算
-            if (this.isShowWinMoneyEffect() === 0) {
+            if (!this.isShowWinMoneyEffect()) {
                 completeCallback();
                 return;
             }
