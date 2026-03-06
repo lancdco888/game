@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "7a7459a5-a2c2-411c-9b12-ea367b65ef51",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 140,
+  "height": 92,
+  "platformSettings": {},
+  "subMetas": {
+    "70_173_ZeusThunderShower_1": {
+      "ver": "1.0.6",
+      "uuid": "5c75fae0-22dd-4fbc-aee4-9db4107e1421",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "7a7459a5-a2c2-411c-9b12-ea367b65ef51",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 13,
+      "trimY": 10,
+      "width": 114,
+      "height": 72,
+      "rawWidth": 140,
+      "rawHeight": 92,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

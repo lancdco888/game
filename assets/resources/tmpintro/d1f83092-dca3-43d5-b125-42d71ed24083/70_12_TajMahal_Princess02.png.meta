@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6704e1e3-5106-4b2d-a7e7-5cff4c1661b5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 109,
+  "platformSettings": {},
+  "subMetas": {
+    "70_12_TajMahal_Princess02": {
+      "ver": "1.0.6",
+      "uuid": "2d9f0123-48da-4b3a-96d1-3b6f58c3e0ff",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6704e1e3-5106-4b2d-a7e7-5cff4c1661b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 128,
+      "height": 109,
+      "rawWidth": 130,
+      "rawHeight": 109,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

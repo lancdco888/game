@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8b00fadd-f702-4440-b1d5-6dd92823c42a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 133,
+  "height": 168,
+  "platformSettings": {},
+  "subMetas": {
+    "70_84_Mayantemplemagic01": {
+      "ver": "1.0.6",
+      "uuid": "aa3d6e0a-a874-4a65-84cf-0b68eab8f6aa",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8b00fadd-f702-4440-b1d5-6dd92823c42a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 131,
+      "height": 163,
+      "rawWidth": 133,
+      "rawHeight": 168,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

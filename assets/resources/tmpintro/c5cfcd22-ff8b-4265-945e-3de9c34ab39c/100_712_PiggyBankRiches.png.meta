@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "19e39a32-f485-4ffb-8b0c-1c8c6bcaa9b9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 340,
+  "height": 340,
+  "platformSettings": {},
+  "subMetas": {
+    "100_712_PiggyBankRiches": {
+      "ver": "1.0.6",
+      "uuid": "50cf6a02-394f-42e1-9995-ee3df3414d1f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "19e39a32-f485-4ffb-8b0c-1c8c6bcaa9b9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": 0,
+      "trimX": 21,
+      "trimY": 26,
+      "width": 295,
+      "height": 288,
+      "rawWidth": 340,
+      "rawHeight": 340,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

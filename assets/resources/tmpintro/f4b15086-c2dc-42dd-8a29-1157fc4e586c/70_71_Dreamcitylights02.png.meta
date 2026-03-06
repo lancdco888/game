@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "aa344fc4-b365-45c0-aa13-c7182b301c97",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 74,
+  "platformSettings": {},
+  "subMetas": {
+    "70_71_Dreamcitylights02": {
+      "ver": "1.0.6",
+      "uuid": "efa9cccc-6527-4da8-ad8a-91cb3ccbe621",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "aa344fc4-b365-45c0-aa13-c7182b301c97",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 6,
+      "trimY": 0,
+      "width": 117,
+      "height": 73,
+      "rawWidth": 130,
+      "rawHeight": 74,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "23c380b6-7b47-4ec9-9ab6-05fd343040fb",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 143,
+  "height": 99,
+  "platformSettings": {},
+  "subMetas": {
+    "70_205_KongSmash02": {
+      "ver": "1.0.6",
+      "uuid": "63788344-9923-45da-ad2f-b0f7c42311b0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "23c380b6-7b47-4ec9-9ab6-05fd343040fb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 140,
+      "height": 99,
+      "rawWidth": 143,
+      "rawHeight": 99,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

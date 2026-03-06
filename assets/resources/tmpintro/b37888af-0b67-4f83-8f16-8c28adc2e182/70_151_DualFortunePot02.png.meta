@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "fbf983ee-5982-47ad-b4dd-32a161dcde2c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 133,
+  "height": 127,
+  "platformSettings": {},
+  "subMetas": {
+    "70_151_DualFortunePot02": {
+      "ver": "1.0.6",
+      "uuid": "25f25979-e1e7-4676-b3f5-84200dbc60d4",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "fbf983ee-5982-47ad-b4dd-32a161dcde2c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 2,
+      "trimX": 6,
+      "trimY": 0,
+      "width": 123,
+      "height": 123,
+      "rawWidth": 133,
+      "rawHeight": 127,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

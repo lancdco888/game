@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "20dad839-2177-4e21-95ca-f3945d03bba9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 160,
+  "height": 144,
+  "platformSettings": {},
+  "subMetas": {
+    "80_207_TheOddRanch01": {
+      "ver": "1.0.6",
+      "uuid": "68808298-760b-4be8-aa8d-82d94a9da13f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "20dad839-2177-4e21-95ca-f3945d03bba9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 12,
+      "trimY": 3,
+      "width": 135,
+      "height": 137,
+      "rawWidth": 160,
+      "rawHeight": 144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

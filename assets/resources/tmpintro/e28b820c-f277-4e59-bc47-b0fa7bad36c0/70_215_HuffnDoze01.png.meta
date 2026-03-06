@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "122a2eac-2618-401f-b21a-6d7b5948c891",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 126,
+  "height": 137,
+  "platformSettings": {},
+  "subMetas": {
+    "70_215_HuffnDoze01": {
+      "ver": "1.0.6",
+      "uuid": "4c961bb5-90ee-4018-8a06-d9d691f618cc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "122a2eac-2618-401f-b21a-6d7b5948c891",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 2,
+      "trimX": 0,
+      "trimY": 8,
+      "width": 125,
+      "height": 117,
+      "rawWidth": 126,
+      "rawHeight": 137,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

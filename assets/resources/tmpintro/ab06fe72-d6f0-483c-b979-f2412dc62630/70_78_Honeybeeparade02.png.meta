@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3861b6c1-86ce-45bb-8283-937d7241f6a0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 104,
+  "height": 95,
+  "platformSettings": {},
+  "subMetas": {
+    "70_78_Honeybeeparade02": {
+      "ver": "1.0.6",
+      "uuid": "dda657ef-bae1-42d3-912f-1de182aa29bb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3861b6c1-86ce-45bb-8283-937d7241f6a0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 3,
+      "offsetY": 0,
+      "trimX": 15,
+      "trimY": 3,
+      "width": 80,
+      "height": 89,
+      "rawWidth": 104,
+      "rawHeight": 95,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

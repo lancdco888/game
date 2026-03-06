@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "815dfbda-d198-4990-a4c8-e33296674621",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 340,
+  "height": 340,
+  "platformSettings": {},
+  "subMetas": {
+    "100_718_WitchPumpkins": {
+      "ver": "1.0.6",
+      "uuid": "57fc4a53-89b5-46be-bddc-7ec03d56b74a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "815dfbda-d198-4990-a4c8-e33296674621",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 6,
+      "offsetY": -12.5,
+      "trimX": 26,
+      "trimY": 27,
+      "width": 300,
+      "height": 311,
+      "rawWidth": 340,
+      "rawHeight": 340,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

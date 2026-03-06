@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ad628ab5-2878-44bb-911d-387b954fcc59",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 252,
+  "height": 112,
+  "platformSettings": {},
+  "subMetas": {
+    "70_83_CashShowdown01": {
+      "ver": "1.0.6",
+      "uuid": "1f1c882f-2897-43b6-84d7-44b523eeb9e6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ad628ab5-2878-44bb-911d-387b954fcc59",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 5,
+      "trimY": 4,
+      "width": 241,
+      "height": 103,
+      "rawWidth": 252,
+      "rawHeight": 112,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

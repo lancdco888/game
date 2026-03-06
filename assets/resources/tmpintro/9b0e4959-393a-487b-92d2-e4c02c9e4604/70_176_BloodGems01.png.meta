@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e3b68e17-e507-4502-b931-6f23baeb954d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 139,
+  "height": 101,
+  "platformSettings": {},
+  "subMetas": {
+    "70_176_BloodGems01": {
+      "ver": "1.0.6",
+      "uuid": "ac032437-e0d3-4a81-adc9-02abe1d58f7b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e3b68e17-e507-4502-b931-6f23baeb954d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 139,
+      "height": 101,
+      "rawWidth": 139,
+      "rawHeight": 101,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "47d1305d-6948-4afb-aaf8-a955401a59d0",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 132,
+  "height": 109,
+  "platformSettings": {},
+  "subMetas": {
+    "70_103_GoldenTrain03": {
+      "ver": "1.0.6",
+      "uuid": "c198554d-6d2c-4733-a24c-366e02f844a0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "47d1305d-6948-4afb-aaf8-a955401a59d0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0.5,
+      "trimX": 6,
+      "trimY": 9,
+      "width": 122,
+      "height": 90,
+      "rawWidth": 132,
+      "rawHeight": 109,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

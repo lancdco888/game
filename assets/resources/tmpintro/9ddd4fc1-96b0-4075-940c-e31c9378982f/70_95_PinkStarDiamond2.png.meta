@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d18e734e-9076-4f58-b353-f3f87fe5174e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 161,
+  "height": 126,
+  "platformSettings": {},
+  "subMetas": {
+    "70_95_PinkStarDiamond2": {
+      "ver": "1.0.6",
+      "uuid": "437c6f35-6316-40b2-afc6-71e5f32ddc8a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d18e734e-9076-4f58-b353-f3f87fe5174e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -3,
+      "trimX": 4,
+      "trimY": 6,
+      "width": 153,
+      "height": 120,
+      "rawWidth": 161,
+      "rawHeight": 126,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

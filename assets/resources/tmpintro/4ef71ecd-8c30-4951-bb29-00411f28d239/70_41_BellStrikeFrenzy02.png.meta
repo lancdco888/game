@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "1c02a3c0-62bf-4a80-b214-4395f338776f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 115,
+  "height": 88,
+  "platformSettings": {},
+  "subMetas": {
+    "70_41_BellStrikeFrenzy02": {
+      "ver": "1.0.6",
+      "uuid": "6ceea1e7-e976-4df3-83c6-eac2e4bb3efa",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "1c02a3c0-62bf-4a80-b214-4395f338776f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 7,
+      "width": 109,
+      "height": 74,
+      "rawWidth": 115,
+      "rawHeight": 88,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

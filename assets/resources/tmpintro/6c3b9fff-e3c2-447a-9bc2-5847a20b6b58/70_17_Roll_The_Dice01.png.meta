@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6cf51366-a5b7-48c2-9b55-4357f844b44e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 132,
+  "height": 127,
+  "platformSettings": {},
+  "subMetas": {
+    "70_17_Roll_The_Dice01": {
+      "ver": "1.0.6",
+      "uuid": "382ea046-8673-4d8f-a91a-8a5fceda8bcc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6cf51366-a5b7-48c2-9b55-4357f844b44e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 0,
+      "width": 128,
+      "height": 127,
+      "rawWidth": 132,
+      "rawHeight": 127,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

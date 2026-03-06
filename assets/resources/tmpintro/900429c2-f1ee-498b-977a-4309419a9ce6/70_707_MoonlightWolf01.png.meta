@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8327c4cc-1bb1-413b-97dd-b3ff1c2ab3f9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 137,
+  "height": 133,
+  "platformSettings": {},
+  "subMetas": {
+    "70_707_MoonlightWolf01": {
+      "ver": "1.0.6",
+      "uuid": "b78cf84d-a62c-4dc2-b04b-0257afdb81cb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8327c4cc-1bb1-413b-97dd-b3ff1c2ab3f9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 5,
+      "width": 136,
+      "height": 125,
+      "rawWidth": 137,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

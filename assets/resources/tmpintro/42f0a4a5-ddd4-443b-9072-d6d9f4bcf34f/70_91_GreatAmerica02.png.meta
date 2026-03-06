@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b3ba7cb5-52c0-42e4-a7b8-7028cd33b3f1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 30,
+  "height": 160,
+  "platformSettings": {},
+  "subMetas": {
+    "70_91_GreatAmerica02": {
+      "ver": "1.0.6",
+      "uuid": "810d1f6a-4454-4eee-87c8-6d7fcf7faca7",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b3ba7cb5-52c0-42e4-a7b8-7028cd33b3f1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 28,
+      "height": 158,
+      "rawWidth": 30,
+      "rawHeight": 160,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

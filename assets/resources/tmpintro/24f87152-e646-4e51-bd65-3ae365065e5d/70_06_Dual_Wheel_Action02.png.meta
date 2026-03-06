@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "00a665ef-9367-42ac-ab89-ea45994087d1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 113,
+  "height": 113,
+  "platformSettings": {},
+  "subMetas": {
+    "70_06_Dual_Wheel_Action02": {
+      "ver": "1.0.6",
+      "uuid": "44f3418f-a00c-42f8-91d4-a7d2b62bc0fb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "00a665ef-9367-42ac-ab89-ea45994087d1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 113,
+      "height": 113,
+      "rawWidth": 113,
+      "rawHeight": 113,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

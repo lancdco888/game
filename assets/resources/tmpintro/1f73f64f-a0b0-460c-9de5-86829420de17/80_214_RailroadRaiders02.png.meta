@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "327b016a-90d0-4ae4-be7c-9d61924984ac",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 160,
+  "height": 96,
+  "platformSettings": {},
+  "subMetas": {
+    "80_214_RailroadRaiders02": {
+      "ver": "1.0.6",
+      "uuid": "8c33b0b9-99f3-49b0-a79b-c5b1ed3d831a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "327b016a-90d0-4ae4-be7c-9d61924984ac",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 153,
+      "height": 90,
+      "rawWidth": 160,
+      "rawHeight": 96,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5b4a3ff9-3444-4cd7-b85a-ec3d67dc97bd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 125,
+  "height": 119,
+  "platformSettings": {},
+  "subMetas": {
+    "70_153_LadyLibertyRespins02": {
+      "ver": "1.0.6",
+      "uuid": "c3f1a110-62ce-4fa1-b09e-fe3a3e7e7399",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5b4a3ff9-3444-4cd7-b85a-ec3d67dc97bd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 125,
+      "height": 115,
+      "rawWidth": 125,
+      "rawHeight": 119,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

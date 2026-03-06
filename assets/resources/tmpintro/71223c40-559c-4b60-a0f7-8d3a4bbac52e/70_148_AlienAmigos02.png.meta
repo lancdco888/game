@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "923629a0-7ed9-4d79-b742-37db3434dec8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 113,
+  "height": 123,
+  "platformSettings": {},
+  "subMetas": {
+    "70_148_AlienAmigos02": {
+      "ver": "1.0.6",
+      "uuid": "a7feffdf-bb1a-4e28-83ec-a25845369759",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "923629a0-7ed9-4d79-b742-37db3434dec8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 112,
+      "height": 123,
+      "rawWidth": 113,
+      "rawHeight": 123,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

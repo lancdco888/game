@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f90fad50-0e33-4224-b51a-e9c814c6be79",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 133,
+  "height": 116,
+  "platformSettings": {},
+  "subMetas": {
+    "70_107_BighBucksBounty01": {
+      "ver": "1.0.6",
+      "uuid": "c11f995f-a337-49cd-a93c-ab022eb0bae8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f90fad50-0e33-4224-b51a-e9c814c6be79",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 131,
+      "height": 115,
+      "rawWidth": 133,
+      "rawHeight": 116,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

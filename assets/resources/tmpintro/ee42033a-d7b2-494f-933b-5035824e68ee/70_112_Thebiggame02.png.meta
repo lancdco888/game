@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "80f7ca8c-2318-4bdd-9b8b-9a94a02936cd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 129,
+  "height": 101,
+  "platformSettings": {},
+  "subMetas": {
+    "70_112_Thebiggame02": {
+      "ver": "1.0.6",
+      "uuid": "dadaf755-a4f7-46d6-b2d9-22c225c9fe49",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "80f7ca8c-2318-4bdd-9b8b-9a94a02936cd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 128,
+      "height": 100,
+      "rawWidth": 129,
+      "rawHeight": 101,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

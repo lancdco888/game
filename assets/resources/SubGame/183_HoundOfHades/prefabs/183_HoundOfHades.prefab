@@ -151,7 +151,7 @@
         "__id__": 54
       }
     ],
-    "_active": false,
+    "_active": true,
     "_components": [],
     "_prefab": {
       "__id__": 57
@@ -337,8 +337,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 210.39,
-      "height": 55.44
+      "width": 161.25,
+      "height": 44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -394,7 +394,9 @@
     "_fontSize": 40,
     "_lineHeight": 44,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
@@ -445,8 +447,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1016.81,
-      "height": 94.92
+      "width": 853,
+      "height": 84
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -502,7 +504,9 @@
     "_fontSize": 32,
     "_lineHeight": 42,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
@@ -874,8 +878,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 449.22,
-      "height": 55.44
+      "width": 348.75,
+      "height": 44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -931,7 +935,9 @@
     "_fontSize": 40,
     "_lineHeight": 44,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
@@ -982,8 +988,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1016.81,
-      "height": 262.92
+      "width": 930,
+      "height": 252
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1039,9 +1045,11 @@
     "_fontSize": 32,
     "_lineHeight": 42,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
-    "_spacingX": 0,
+    "_spacingX": 1,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
     "_underlineHeight": 0,

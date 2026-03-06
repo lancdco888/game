@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bf429e39-2ebe-4f7c-92ad-fccec60318ca",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 136,
+  "height": 119,
+  "platformSettings": {},
+  "subMetas": {
+    "70_109_Winyourheart02": {
+      "ver": "1.0.6",
+      "uuid": "4f2c734a-b0d8-473f-95b8-db3f55a2f1b9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bf429e39-2ebe-4f7c-92ad-fccec60318ca",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 4,
+      "trimY": 10,
+      "width": 128,
+      "height": 98,
+      "rawWidth": 136,
+      "rawHeight": 119,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

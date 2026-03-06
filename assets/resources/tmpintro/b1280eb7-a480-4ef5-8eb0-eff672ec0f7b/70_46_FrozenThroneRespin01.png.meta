@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "adcdc0b8-00ca-4fa2-b439-ac5ed0d351b2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 104,
+  "height": 92,
+  "platformSettings": {},
+  "subMetas": {
+    "70_46_FrozenThroneRespin01": {
+      "ver": "1.0.6",
+      "uuid": "f90f2995-7aa3-4d83-a1e0-87d88c064255",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "adcdc0b8-00ca-4fa2-b439-ac5ed0d351b2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 103,
+      "height": 92,
+      "rawWidth": 104,
+      "rawHeight": 92,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

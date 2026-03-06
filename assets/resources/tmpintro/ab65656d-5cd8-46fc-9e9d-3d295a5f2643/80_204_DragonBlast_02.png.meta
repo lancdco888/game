@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "bda893a0-13d2-4e50-90c7-095ee9f2450c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 160,
+  "height": 160,
+  "platformSettings": {},
+  "subMetas": {
+    "80_204_DragonBlast_02": {
+      "ver": "1.0.6",
+      "uuid": "146c6e35-a75b-4e6b-8c78-7437d807cab6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "bda893a0-13d2-4e50-90c7-095ee9f2450c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 18,
+      "trimY": 19,
+      "width": 124,
+      "height": 122,
+      "rawWidth": 160,
+      "rawHeight": 160,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

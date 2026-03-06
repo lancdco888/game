@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5cbabd5f-c408-436b-a871-fb7b19697129",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 111,
+  "height": 84,
+  "platformSettings": {},
+  "subMetas": {
+    "70_02_SevenRush01": {
+      "ver": "1.0.6",
+      "uuid": "350e8c69-a878-43d3-9867-24f610589ba5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5cbabd5f-c408-436b-a871-fb7b19697129",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 111,
+      "height": 84,
+      "rawWidth": 111,
+      "rawHeight": 84,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

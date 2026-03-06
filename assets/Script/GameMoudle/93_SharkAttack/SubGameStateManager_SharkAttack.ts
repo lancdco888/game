@@ -768,7 +768,7 @@ export default class SubGameStateManager_SharkAttack extends SubGameStateManager
                     const paylineRenderer = SlotManager.Instance.paylineRenderer;
                     paylineRenderer.drawWinningRect(winningCells, 176, 140, null, 0);
                     for (let l = 0; l < paylineRenderer.listPayBox.length; ++l) {
-                        const aniComp = paylineRenderer.listPayBox[l].getComponent(Animation)!;
+                        const aniComp = paylineRenderer.listPayBox[l].getComponent(cc.Animation);
                         aniComp.setCurrentTime(0);
                         aniComp.play();
                     }
@@ -994,7 +994,7 @@ export default class SubGameStateManager_SharkAttack extends SubGameStateManager
                         paylineRenderer.clearAll();
                         paylineRenderer.drawWinningRect(winningVec2, 176, 140, null, 0);
                         for (let y = 0; y < paylineRenderer.listPayBox.length; ++y) {
-                            const aniComp = paylineRenderer.listPayBox[y].getComponent(Animation)!;
+                            const aniComp = paylineRenderer.listPayBox[y].getComponent(cc.Animation);
                             aniComp.setCurrentTime(0);
                             aniComp.play();
                         }

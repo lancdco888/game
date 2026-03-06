@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "ec4a11ef-0283-43dd-a40f-ed9c90510066",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 113,
+  "platformSettings": {},
+  "subMetas": {
+    "70_24_KingOfSafari02": {
+      "ver": "1.0.6",
+      "uuid": "df3bee11-506e-4153-9eac-511aaf68f340",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "ec4a11ef-0283-43dd-a40f-ed9c90510066",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 129,
+      "height": 113,
+      "rawWidth": 130,
+      "rawHeight": 113,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

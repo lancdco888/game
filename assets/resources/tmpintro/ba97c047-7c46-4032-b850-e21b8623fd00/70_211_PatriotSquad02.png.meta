@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "154b28ad-be6f-4dd2-beee-2a29f3e4df3a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 106,
+  "height": 109,
+  "platformSettings": {},
+  "subMetas": {
+    "70_211_PatriotSquad02": {
+      "ver": "1.0.6",
+      "uuid": "f4b29163-9f54-4b61-a067-e4fcb85b0556",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "154b28ad-be6f-4dd2-beee-2a29f3e4df3a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 103,
+      "height": 107,
+      "rawWidth": 106,
+      "rawHeight": 109,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

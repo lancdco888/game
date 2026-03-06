@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d3631e6a-b957-4d2d-bc93-07d6ccaa92ae",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 146,
+  "height": 106,
+  "platformSettings": {},
+  "subMetas": {
+    "70_159_CandyCastle_01": {
+      "ver": "1.0.6",
+      "uuid": "cca11068-dedf-4b53-8f5b-a00963e8ce94",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d3631e6a-b957-4d2d-bc93-07d6ccaa92ae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -1,
+      "trimX": 20,
+      "trimY": 3,
+      "width": 108,
+      "height": 102,
+      "rawWidth": 146,
+      "rawHeight": 106,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

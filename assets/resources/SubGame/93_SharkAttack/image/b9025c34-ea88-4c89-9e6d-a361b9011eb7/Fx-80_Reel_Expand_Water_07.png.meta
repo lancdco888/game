@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "76289b67-c2f1-43cd-ae50-027d780301ae",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 104,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "Fx-80_Reel_Expand_Water_07": {
+      "ver": "1.0.6",
+      "uuid": "2af1a774-6791-43d0-b238-fba5417f12b1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "76289b67-c2f1-43cd-ae50-027d780301ae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 104,
+      "height": 128,
+      "rawWidth": 104,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

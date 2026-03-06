@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "3b0a4060-13c6-4c63-be28-0fbc7630a9d6",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 196,
+  "height": 102,
+  "platformSettings": {},
+  "subMetas": {
+    "70_189_ShanghaiExpress02": {
+      "ver": "1.0.6",
+      "uuid": "d80f30f9-86b1-443d-a1a4-02f2b1441e59",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "3b0a4060-13c6-4c63-be28-0fbc7630a9d6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 192,
+      "height": 99,
+      "rawWidth": 196,
+      "rawHeight": 102,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

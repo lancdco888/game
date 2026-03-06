@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "245eba67-d134-4e53-bd4f-2b2159b79774",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 143,
+  "height": 126,
+  "platformSettings": {},
+  "subMetas": {
+    "70_203_EmeraldIsleGold02": {
+      "ver": "1.0.6",
+      "uuid": "cf032592-2fea-4b51-afe2-440dda4b1266",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "245eba67-d134-4e53-bd4f-2b2159b79774",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 5,
+      "width": 137,
+      "height": 116,
+      "rawWidth": 143,
+      "rawHeight": 126,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

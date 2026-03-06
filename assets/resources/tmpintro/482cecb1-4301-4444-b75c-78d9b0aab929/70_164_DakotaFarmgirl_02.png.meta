@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "56c3084e-f388-46bf-a3a9-cb226a36286d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 127,
+  "height": 162,
+  "platformSettings": {},
+  "subMetas": {
+    "70_164_DakotaFarmgirl_02": {
+      "ver": "1.0.6",
+      "uuid": "43c4f16f-cd98-4b42-89d3-4cd699e20213",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "56c3084e-f388-46bf-a3a9-cb226a36286d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 127,
+      "height": 162,
+      "rawWidth": 127,
+      "rawHeight": 162,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e59a01b8-0775-40b7-8e75-327d3fc47190",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 108,
+  "height": 98,
+  "platformSettings": {},
+  "subMetas": {
+    "70_52_Canivalrio02": {
+      "ver": "1.0.6",
+      "uuid": "023c93d5-efb0-4bd2-8ae0-f921e1b031da",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e59a01b8-0775-40b7-8e75-327d3fc47190",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 8,
+      "width": 108,
+      "height": 84,
+      "rawWidth": 108,
+      "rawHeight": 98,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

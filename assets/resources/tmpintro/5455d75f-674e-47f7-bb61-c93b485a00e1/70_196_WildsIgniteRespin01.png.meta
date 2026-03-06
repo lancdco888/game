@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b98f4823-4be5-4937-9b76-b1db1518678c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 146,
+  "height": 123,
+  "platformSettings": {},
+  "subMetas": {
+    "70_196_WildsIgniteRespin01": {
+      "ver": "1.0.6",
+      "uuid": "0a084bf6-f265-48a0-ae2f-65de771ec7c1",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b98f4823-4be5-4937-9b76-b1db1518678c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 8,
+      "width": 146,
+      "height": 106,
+      "rawWidth": 146,
+      "rawHeight": 123,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

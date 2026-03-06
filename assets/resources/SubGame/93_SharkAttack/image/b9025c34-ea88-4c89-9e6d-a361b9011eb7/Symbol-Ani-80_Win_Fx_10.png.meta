@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d11b9e6a-5c8c-439f-9d24-2f232928d25b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 88,
+  "height": 72,
+  "platformSettings": {},
+  "subMetas": {
+    "Symbol-Ani-80_Win_Fx_10": {
+      "ver": "1.0.6",
+      "uuid": "82a407fd-6e9a-47fe-8fa9-96a3228cea02",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d11b9e6a-5c8c-439f-9d24-2f232928d25b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 82,
+      "height": 67,
+      "rawWidth": 88,
+      "rawHeight": 72,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

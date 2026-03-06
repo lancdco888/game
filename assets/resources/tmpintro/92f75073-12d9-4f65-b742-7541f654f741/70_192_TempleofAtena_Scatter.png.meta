@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "deef6789-6679-4441-9586-44482cbcecdc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 126,
+  "height": 112,
+  "platformSettings": {},
+  "subMetas": {
+    "70_192_TempleofAtena_Scatter": {
+      "ver": "1.0.6",
+      "uuid": "b4b7ba01-0ac3-43d6-983b-6ed70d47a578",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "deef6789-6679-4441-9586-44482cbcecdc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 125,
+      "height": 110,
+      "rawWidth": 126,
+      "rawHeight": 112,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

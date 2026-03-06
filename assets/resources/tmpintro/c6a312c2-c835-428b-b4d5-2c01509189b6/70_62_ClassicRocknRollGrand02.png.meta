@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "44d7643c-fe54-4ad6-b00d-e7a4626ec20d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 125,
+  "height": 123,
+  "platformSettings": {},
+  "subMetas": {
+    "70_62_ClassicRocknRollGrand02": {
+      "ver": "1.0.6",
+      "uuid": "c1e655a0-96ad-46a2-9ae6-ab9399b88feb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "44d7643c-fe54-4ad6-b00d-e7a4626ec20d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 125,
+      "height": 123,
+      "rawWidth": 125,
+      "rawHeight": 123,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

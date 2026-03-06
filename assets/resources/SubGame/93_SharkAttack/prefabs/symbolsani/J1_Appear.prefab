@@ -1804,10 +1804,12 @@
     "_N$string": "60.0M",
     "_fontSize": 52,
     "_lineHeight": 56,
-    "_enableWrapText": true,
-    "_N$file": null,
+    "_enableWrapText": false,
+    "_N$file": {
+      "__uuid__": "77098a80-0e27-4df9-b57c-7bf624e4224d"
+    },
     "_isSystemFontUsed": false,
-    "_spacingX": -12,
+    "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
     "_underlineHeight": 0,

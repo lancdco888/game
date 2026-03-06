@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a96f7c84-0184-487c-9f18-ffc00aa2cce3",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 132,
+  "height": 100,
+  "platformSettings": {},
+  "subMetas": {
+    "70_22_Dragon_Tales_02": {
+      "ver": "1.0.6",
+      "uuid": "433a39c8-957d-4c06-8296-d8d40007c2de",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a96f7c84-0184-487c-9f18-ffc00aa2cce3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 132,
+      "height": 98,
+      "rawWidth": 132,
+      "rawHeight": 100,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

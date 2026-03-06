@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "527fb4fd-f10b-4e44-9fb9-12db2c10a34e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 140,
+  "height": 143,
+  "platformSettings": {},
+  "subMetas": {
+    "70_114_bunnybank02": {
+      "ver": "1.0.6",
+      "uuid": "4e9b38e1-75e9-4e9c-8ccd-3e600bac438e",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "527fb4fd-f10b-4e44-9fb9-12db2c10a34e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 138,
+      "height": 140,
+      "rawWidth": 140,
+      "rawHeight": 143,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

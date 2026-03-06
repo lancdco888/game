@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cf4e2177-2466-4e9e-a244-910945905283",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 126,
+  "height": 126,
+  "platformSettings": {},
+  "subMetas": {
+    "70_198_PoseidonWildWaves01": {
+      "ver": "1.0.6",
+      "uuid": "2e670914-530c-4d24-94a8-cbfdd992f692",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cf4e2177-2466-4e9e-a244-910945905283",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 125,
+      "height": 125,
+      "rawWidth": 126,
+      "rawHeight": 126,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

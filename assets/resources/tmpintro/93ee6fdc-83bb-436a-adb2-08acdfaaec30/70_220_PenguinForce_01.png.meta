@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "adcec8df-db11-49ef-bc0e-0c399c3e1dce",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 127,
+  "height": 106,
+  "platformSettings": {},
+  "subMetas": {
+    "70_220_PenguinForce_01": {
+      "ver": "1.0.6",
+      "uuid": "3bdde8fc-13f6-4117-a1b8-f3cec7841fc3",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "adcec8df-db11-49ef-bc0e-0c399c3e1dce",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 127,
+      "height": 106,
+      "rawWidth": 127,
+      "rawHeight": 106,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

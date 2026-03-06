@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e74cec11-b536-4794-9d49-1f3df51e609f",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 119,
+  "height": 119,
+  "platformSettings": {},
+  "subMetas": {
+    "70_218_DavyJonessLocker02": {
+      "ver": "1.0.6",
+      "uuid": "2703f2b5-75e6-4fc8-bc55-164087f88fbc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e74cec11-b536-4794-9d49-1f3df51e609f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 10,
+      "width": 113,
+      "height": 99,
+      "rawWidth": 119,
+      "rawHeight": 119,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -600,8 +600,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 50.4
+      "width": 86,
+      "height": 40
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -657,9 +657,11 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
-    "_spacingX": -6,
+    "_spacingX": 2,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
     "_underlineHeight": 0,
@@ -815,8 +817,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 432.09,
-      "height": 104.32
+      "width": 334.13,
+      "height": 96
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -872,7 +874,9 @@
     "_fontSize": 36,
     "_lineHeight": 32,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
@@ -1004,8 +1008,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 142.25,
-      "height": 50.4
+      "width": 119.25,
+      "height": 40
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1061,9 +1065,11 @@
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
-    "_spacingX": -6,
+    "_spacingX": 2,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
     "_underlineHeight": 0,
@@ -1219,8 +1225,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 535.52,
-      "height": 168.32
+      "width": 419.63,
+      "height": 160
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1276,7 +1282,9 @@
     "_fontSize": 36,
     "_lineHeight": 32,
     "_enableWrapText": true,
-    "_N$file": null,
+    "_N$file": {
+      "__uuid__": "05d92ede-6d2e-449e-af5b-04340873c9fa"
+    },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,

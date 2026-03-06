@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "31c8fa96-aef5-4780-a4fb-0f32fb3c5e28",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 108,
+  "height": 92,
+  "platformSettings": {},
+  "subMetas": {
+    "70_50_FortuneTree02": {
+      "ver": "1.0.6",
+      "uuid": "b31c9977-636d-408b-8bdd-b431015c325b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "31c8fa96-aef5-4780-a4fb-0f32fb3c5e28",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 106,
+      "height": 91,
+      "rawWidth": 108,
+      "rawHeight": 92,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

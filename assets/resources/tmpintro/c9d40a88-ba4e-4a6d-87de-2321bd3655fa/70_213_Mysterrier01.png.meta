@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9e0c6978-71ca-499f-b777-64a915e1f961",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 140,
+  "height": 146,
+  "platformSettings": {},
+  "subMetas": {
+    "70_213_Mysterrier01": {
+      "ver": "1.0.6",
+      "uuid": "20cbe1ee-53f4-43b9-894f-1b98a643c1dc",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9e0c6978-71ca-499f-b777-64a915e1f961",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -2,
+      "trimX": 3,
+      "trimY": 5,
+      "width": 133,
+      "height": 140,
+      "rawWidth": 140,
+      "rawHeight": 146,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

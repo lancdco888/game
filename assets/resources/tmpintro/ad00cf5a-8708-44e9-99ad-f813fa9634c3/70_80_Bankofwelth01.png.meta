@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0abae9c3-3420-48e7-ada8-be6fb02657ca",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 101,
+  "height": 94,
+  "platformSettings": {},
+  "subMetas": {
+    "70_80_Bankofwelth01": {
+      "ver": "1.0.6",
+      "uuid": "58a13d7e-973e-407d-901c-6adb9ac3dae7",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0abae9c3-3420-48e7-ada8-be6fb02657ca",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 101,
+      "height": 94,
+      "rawWidth": 101,
+      "rawHeight": 94,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

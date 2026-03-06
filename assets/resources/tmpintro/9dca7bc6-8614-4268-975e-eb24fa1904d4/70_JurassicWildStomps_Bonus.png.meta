@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "20ecc878-239d-4ef2-95d6-f156da23e4d8",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 123,
+  "height": 124,
+  "platformSettings": {},
+  "subMetas": {
+    "70_JurassicWildStomps_Bonus": {
+      "ver": "1.0.6",
+      "uuid": "1d531aae-7de5-46f5-8ffd-0bc2b879f2aa",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "20ecc878-239d-4ef2-95d6-f156da23e4d8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 123,
+      "height": 124,
+      "rawWidth": 123,
+      "rawHeight": 124,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

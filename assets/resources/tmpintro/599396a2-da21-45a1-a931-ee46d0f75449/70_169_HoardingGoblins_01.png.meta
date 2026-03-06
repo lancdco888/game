@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c9dc960f-73cd-4a9e-b4f8-892b086bf3f5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 140,
+  "platformSettings": {},
+  "subMetas": {
+    "70_169_HoardingGoblins_01": {
+      "ver": "1.0.6",
+      "uuid": "3f9f8d34-ed5e-48e8-be6f-92d61ffd477b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c9dc960f-73cd-4a9e-b4f8-892b086bf3f5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 130,
+      "height": 140,
+      "rawWidth": 130,
+      "rawHeight": 140,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

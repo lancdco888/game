@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "26fd2651-d73f-482d-b603-e070f5943561",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 136,
+  "platformSettings": {},
+  "subMetas": {
+    "80_216_ApocalypseLasthope02": {
+      "ver": "1.0.6",
+      "uuid": "55cb97eb-c73e-4f29-8e11-4cdbf7f16f4a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "26fd2651-d73f-482d-b603-e070f5943561",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 0,
+      "width": 125,
+      "height": 135,
+      "rawWidth": 128,
+      "rawHeight": 136,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

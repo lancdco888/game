@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cdabe108-49eb-4126-974b-f6e8fe6b451a",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 144,
+  "height": 129,
+  "platformSettings": {},
+  "subMetas": {
+    "70_129_VampressMansion02": {
+      "ver": "1.0.6",
+      "uuid": "9b0d7d5a-2835-4a2c-bbb0-1e6d4bd3174c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cdabe108-49eb-4126-974b-f6e8fe6b451a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 144,
+      "height": 128,
+      "rawWidth": 144,
+      "rawHeight": 129,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

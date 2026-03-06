@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "be4c3512-c230-43b9-a6dd-d3405eac3e60",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 138,
+  "height": 116,
+  "platformSettings": {},
+  "subMetas": {
+    "70_168_LocknRollFiver2": {
+      "ver": "1.0.6",
+      "uuid": "e6098a03-2786-4350-9d55-428a1f5dfda8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "be4c3512-c230-43b9-a6dd-d3405eac3e60",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2,
+      "offsetY": 0,
+      "trimX": 6,
+      "trimY": 1,
+      "width": 130,
+      "height": 114,
+      "rawWidth": 138,
+      "rawHeight": 116,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

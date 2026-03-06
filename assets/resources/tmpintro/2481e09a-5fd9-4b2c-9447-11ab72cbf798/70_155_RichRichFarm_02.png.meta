@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "5828ef26-5f79-43c8-9a2d-e57830e52cae",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 126,
+  "height": 99,
+  "platformSettings": {},
+  "subMetas": {
+    "70_155_RichRichFarm_02": {
+      "ver": "1.0.6",
+      "uuid": "9d3a74e9-c9b9-41ac-8940-49dc3d67ef36",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "5828ef26-5f79-43c8-9a2d-e57830e52cae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -0.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 124,
+      "height": 96,
+      "rawWidth": 126,
+      "rawHeight": 99,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

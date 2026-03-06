@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6e48163e-45eb-46a1-9976-e7f23a90e0d9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 147,
+  "height": 133,
+  "platformSettings": {},
+  "subMetas": {
+    "70_191_SmashNCash02": {
+      "ver": "1.0.6",
+      "uuid": "6b9cb53c-9bf2-4381-8ce6-8219ba1b412c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6e48163e-45eb-46a1-9976-e7f23a90e0d9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 6,
+      "trimY": 0,
+      "width": 133,
+      "height": 133,
+      "rawWidth": 147,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

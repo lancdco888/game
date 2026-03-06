@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c70aedfd-9c36-4ad5-8ac3-e6fe1f0ed621",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 161,
+  "height": 161,
+  "platformSettings": {},
+  "subMetas": {
+    "70_Magmaficent_02": {
+      "ver": "1.0.6",
+      "uuid": "9ce5f37d-8140-4c93-a2f5-acac7f9088ad",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c70aedfd-9c36-4ad5-8ac3-e6fe1f0ed621",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 161,
+      "height": 161,
+      "rawWidth": 161,
+      "rawHeight": 161,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

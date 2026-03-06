@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "afb605c5-8dc5-46fe-b863-2cea5e00f70e",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 112,
+  "height": 114,
+  "platformSettings": {},
+  "subMetas": {
+    "100_45_Warhofzeus_B1": {
+      "ver": "1.0.6",
+      "uuid": "8870981f-b0d9-40c1-aadb-0f4dd16ea388",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "afb605c5-8dc5-46fe-b863-2cea5e00f70e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 111,
+      "height": 113,
+      "rawWidth": 112,
+      "rawHeight": 114,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

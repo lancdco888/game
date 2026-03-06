@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "cd22a388-8793-4da3-869c-ca73a3edb9e1",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 83,
+  "platformSettings": {},
+  "subMetas": {
+    "70_25_BOB_BoomBurst01": {
+      "ver": "1.0.6",
+      "uuid": "3ea12da4-8f8b-4a09-9ee9-9e24aa063f5b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "cd22a388-8793-4da3-869c-ca73a3edb9e1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 2,
+      "width": 125,
+      "height": 79,
+      "rawWidth": 130,
+      "rawHeight": 83,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

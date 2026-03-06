@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f679dd7e-7708-44eb-9655-34895628a1c4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 67,
+  "height": 62,
+  "platformSettings": {},
+  "subMetas": {
+    "70_89_BingoTrio01": {
+      "ver": "1.0.6",
+      "uuid": "d7d54962-cc03-4c3d-ba87-cf717b16cecf",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f679dd7e-7708-44eb-9655-34895628a1c4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 6,
+      "width": 67,
+      "height": 51,
+      "rawWidth": 67,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6626d8ad-a328-492b-9441-639f7f492eda",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 91,
+  "height": 88,
+  "platformSettings": {},
+  "subMetas": {
+    "70_74_MegatonDynamite2": {
+      "ver": "1.0.6",
+      "uuid": "efcc20e3-27a7-4e8d-a346-14ea3c08aaba",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6626d8ad-a328-492b-9441-639f7f492eda",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 91,
+      "height": 87,
+      "rawWidth": 91,
+      "rawHeight": 88,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

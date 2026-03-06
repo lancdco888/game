@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e0150181-3728-4334-bce6-3d9eec13bccc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 169,
+  "height": 161,
+  "platformSettings": {},
+  "subMetas": {
+    "70_187_DragonOrbs_jackpot": {
+      "ver": "1.0.6",
+      "uuid": "f69ea1c2-31c6-4bd5-afb9-d84576aabadb",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e0150181-3728-4334-bce6-3d9eec13bccc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 168,
+      "height": 161,
+      "rawWidth": 169,
+      "rawHeight": 161,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

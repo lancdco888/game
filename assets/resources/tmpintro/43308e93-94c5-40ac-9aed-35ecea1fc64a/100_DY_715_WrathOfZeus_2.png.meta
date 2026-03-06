@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "984a211f-0cbb-4045-a30b-a95939bec176",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "100_DY_715_WrathOfZeus_2": {
+      "ver": "1.0.6",
+      "uuid": "353235d6-b0b8-4c2a-ae2c-1a745b7a09f5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "984a211f-0cbb-4045-a30b-a95939bec176",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 120,
+      "height": 120,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

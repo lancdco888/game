@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "c6341612-9b12-4b89-99dd-2a9f501cc7b9",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 129,
+  "height": 95,
+  "platformSettings": {},
+  "subMetas": {
+    "70_85_FlameFuryWheel01": {
+      "ver": "1.0.6",
+      "uuid": "f7304f02-7792-4ff9-9ce4-e6e592c9e64f",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "c6341612-9b12-4b89-99dd-2a9f501cc7b9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 3,
+      "width": 129,
+      "height": 89,
+      "rawWidth": 129,
+      "rawHeight": 95,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

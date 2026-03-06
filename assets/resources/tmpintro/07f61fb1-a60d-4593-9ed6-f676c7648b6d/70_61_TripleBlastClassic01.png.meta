@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b7929592-a733-485f-86db-cc8741ace537",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 138,
+  "height": 85,
+  "platformSettings": {},
+  "subMetas": {
+    "70_61_TripleBlastClassic01": {
+      "ver": "1.0.6",
+      "uuid": "17e0c6d9-bd43-45f7-af52-253e44e3bac0",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b7929592-a733-485f-86db-cc8741ace537",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 138,
+      "height": 85,
+      "rawWidth": 138,
+      "rawHeight": 85,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

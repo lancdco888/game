@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e9475cf3-2b11-4ca7-a79a-44c4a69d09c5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 113,
+  "height": 88,
+  "platformSettings": {},
+  "subMetas": {
+    "70_105_BabySantaWild01": {
+      "ver": "1.0.6",
+      "uuid": "c9d57dd8-9456-4a89-9777-014dcf9a48b5",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e9475cf3-2b11-4ca7-a79a-44c4a69d09c5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 6,
+      "trimY": 0,
+      "width": 101,
+      "height": 88,
+      "rawWidth": 113,
+      "rawHeight": 88,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

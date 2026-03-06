@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "37d07ffa-caf6-43ae-8ece-a6316705e27b",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 378,
+  "platformSettings": {},
+  "subMetas": {
+    "70_13_The_Mighty_Viking02": {
+      "ver": "1.0.6",
+      "uuid": "478162ec-95eb-46ad-b8ec-ebc806cb9a9a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "37d07ffa-caf6-43ae-8ece-a6316705e27b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 130,
+      "height": 378,
+      "rawWidth": 130,
+      "rawHeight": 378,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

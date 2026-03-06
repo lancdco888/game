@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "09fa023b-233d-4181-931b-8f47bb73ae83",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 340,
+  "height": 340,
+  "platformSettings": {},
+  "subMetas": {
+    "100_711_NudgingLockClassic": {
+      "ver": "1.0.6",
+      "uuid": "4dad087d-d98c-4840-ae04-eeacd7daa556",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "09fa023b-233d-4181-931b-8f47bb73ae83",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 12.5,
+      "offsetY": 0,
+      "trimX": 25,
+      "trimY": 26,
+      "width": 315,
+      "height": 288,
+      "rawWidth": 340,
+      "rawHeight": 340,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

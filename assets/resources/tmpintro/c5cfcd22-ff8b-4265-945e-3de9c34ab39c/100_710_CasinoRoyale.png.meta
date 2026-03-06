@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a68090d9-9d18-46ec-a03b-387fbc8601bf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 340,
+  "height": 340,
+  "platformSettings": {},
+  "subMetas": {
+    "100_710_CasinoRoyale": {
+      "ver": "1.0.6",
+      "uuid": "be89df2f-efe7-4419-8d28-bf2dd76ae5da",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a68090d9-9d18-46ec-a03b-387fbc8601bf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 340,
+      "height": 340,
+      "rawWidth": 340,
+      "rawHeight": 340,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

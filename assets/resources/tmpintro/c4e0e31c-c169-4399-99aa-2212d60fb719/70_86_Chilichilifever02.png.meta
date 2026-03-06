@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a87e056f-bed4-4ad3-9381-cec9a9f33dc4",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 130,
+  "platformSettings": {},
+  "subMetas": {
+    "70_86_Chilichilifever02": {
+      "ver": "1.0.6",
+      "uuid": "ca4684e6-2905-4fc4-8bc8-e775513bf39b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a87e056f-bed4-4ad3-9381-cec9a9f33dc4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 1,
+      "trimY": 3,
+      "width": 128,
+      "height": 123,
+      "rawWidth": 130,
+      "rawHeight": 130,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

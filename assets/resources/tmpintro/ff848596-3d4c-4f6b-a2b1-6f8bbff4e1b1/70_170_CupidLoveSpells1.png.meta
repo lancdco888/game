@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "94a04239-b467-4dcf-97c0-af2f9da5e829",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 126,
+  "height": 112,
+  "platformSettings": {},
+  "subMetas": {
+    "70_170_CupidLoveSpells1": {
+      "ver": "1.0.6",
+      "uuid": "779fc8bb-a254-4c6e-9f21-d14ba8f9c7be",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "94a04239-b467-4dcf-97c0-af2f9da5e829",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -2,
+      "trimX": 6,
+      "trimY": 4,
+      "width": 114,
+      "height": 108,
+      "rawWidth": 126,
+      "rawHeight": 112,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

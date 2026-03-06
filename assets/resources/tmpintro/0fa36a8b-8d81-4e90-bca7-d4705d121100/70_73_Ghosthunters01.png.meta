@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6a7dcd52-b1b3-4f27-8420-2641c264110c",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 112,
+  "height": 94,
+  "platformSettings": {},
+  "subMetas": {
+    "70_73_Ghosthunters01": {
+      "ver": "1.0.6",
+      "uuid": "04c1b37f-5d69-412f-80bd-9a04267397f8",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6a7dcd52-b1b3-4f27-8420-2641c264110c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 4,
+      "trimY": 3,
+      "width": 104,
+      "height": 91,
+      "rawWidth": 112,
+      "rawHeight": 94,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

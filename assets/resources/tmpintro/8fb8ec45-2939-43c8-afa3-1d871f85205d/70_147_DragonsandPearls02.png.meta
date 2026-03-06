@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d56e165a-3ebd-4c5a-9252-2c6c9be748eb",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 203,
+  "height": 125,
+  "platformSettings": {},
+  "subMetas": {
+    "70_147_DragonsandPearls02": {
+      "ver": "1.0.6",
+      "uuid": "e20a8078-62d0-4596-a013-220c7c75b38b",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d56e165a-3ebd-4c5a-9252-2c6c9be748eb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 203,
+      "height": 125,
+      "rawWidth": 203,
+      "rawHeight": 125,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "0df14bb8-4185-495e-833e-6498d119ee37",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 112,
+  "height": 133,
+  "platformSettings": {},
+  "subMetas": {
+    "70_192_TempleofAtena_High": {
+      "ver": "1.0.6",
+      "uuid": "8ee66203-7fa7-43de-bfba-db2024c231fd",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "0df14bb8-4185-495e-833e-6498d119ee37",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 1,
+      "width": 108,
+      "height": 131,
+      "rawWidth": 112,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

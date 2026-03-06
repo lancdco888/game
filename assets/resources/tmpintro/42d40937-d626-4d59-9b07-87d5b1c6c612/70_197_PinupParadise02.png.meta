@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d5cb8bd7-27f1-4020-9ea9-fcc4cadddfba",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 175,
+  "height": 140,
+  "platformSettings": {},
+  "subMetas": {
+    "70_197_PinupParadise02": {
+      "ver": "1.0.6",
+      "uuid": "fe94db7d-34f2-40cc-a085-3047a354ae55",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d5cb8bd7-27f1-4020-9ea9-fcc4cadddfba",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 9,
+      "trimY": 7,
+      "width": 157,
+      "height": 125,
+      "rawWidth": 175,
+      "rawHeight": 140,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

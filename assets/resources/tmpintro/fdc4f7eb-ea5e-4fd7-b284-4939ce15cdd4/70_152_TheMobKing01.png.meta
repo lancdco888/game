@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "f76a3549-bac0-469b-b7de-e582a13a9eaf",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 130,
+  "height": 158,
+  "platformSettings": {},
+  "subMetas": {
+    "70_152_TheMobKing01": {
+      "ver": "1.0.6",
+      "uuid": "978d5002-397b-44df-a770-1bb2295ba451",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "f76a3549-bac0-469b-b7de-e582a13a9eaf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 129,
+      "height": 158,
+      "rawWidth": 130,
+      "rawHeight": 158,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
